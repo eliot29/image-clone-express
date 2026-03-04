@@ -53,10 +53,10 @@ const CasConcretsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
-            Cas concrets
+            Cinq situations concrètes. Cinq gains mesurables.
           </h2>
           <p className="font-dm text-blanc-casse/60 max-w-2xl mx-auto">
-            Bien utilisée, l'IA est un avantage concurrentiel réel. Mal calibrée, elle fait perdre du temps.
+            Bien utilisée, l'IA est un avantage concurrentiel réel. Mal calibrée, elle fait perdre du temps. La différence tient à la façon dont elle est mise en place.
           </p>
         </div>
 

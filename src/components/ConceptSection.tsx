@@ -33,7 +33,7 @@ const ConceptSection = () => {
           </div>
 
           <Button variant="ctaOutline" size="lg" className="mt-10" asChild>
-            <a href="#prestations">Découvrir les prestations</a>
+            <a href="#prestations">Découvrir le concept</a>
           </Button>
         </div>
       </div>

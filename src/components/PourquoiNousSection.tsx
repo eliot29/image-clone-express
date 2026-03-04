@@ -1,13 +1,5 @@
 import { Shield } from "lucide-react";
 
-const facts = [
-  "+3 ans de tests et documentation des outils IA",
-  "Parcours terrain : chef de rayon, puis chef de secteur GMS",
-  "73 000 vues · +800 abonnés · +15 % CA — cas réel, poissonnerie locale",
-  "Implémenteur IA, pas ingénieur IA",
-  "Nombre de missions volontairement limité",
-];
-
 const PourquoiNousSection = () => {
   return (
     <section id="approche" className="bg-blanc-casse py-24">
@@ -17,8 +9,8 @@ const PourquoiNousSection = () => {
             <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-navy mb-4">
               Pourquoi Semaine 54
             </h2>
-            <p className="font-dm text-gris-bleu text-lg">
-              Un profil terrain. Pas une agence parisienne. Pas un ingénieur IA.
+          <p className="font-dm text-gris-bleu text-lg">
+              Un profil terrain. Pas une agence parisienne. Pas un ingénieur IA. Mon approche part de la réalité opérationnelle, pas d'une démonstration théorique.
             </p>
           </div>
 
@@ -27,22 +19,25 @@ const PourquoiNousSection = () => {
           </p>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-            Je suis Clément, fondateur de Semaine 54. Chef de rayon en grande distribution, puis chef de secteur GMS côté marques. Ce parcours m'a donné une lecture opérationnelle des priorités d'un dirigeant.
+            Je suis Clément, 35 ans, fondateur de Semaine 54. Chef de rayon en grande distribution, puis chef de secteur GMS côté marques. Ce parcours m'a donné une lecture opérationnelle des priorités d'un dirigeant.
           </p>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-10">
-            Depuis plus de trois ans, je teste et documente les outils IA dans des contextes opérationnels réels. Le déclencheur a été un cas terrain : une poissonnerie locale, accompagnée sans budget externe. En structurant une stratégie nourrie par l'IA, les résultats ont été mesurables.
+          <p className="punchline text-ardoise text-lg mb-6">
+            Apprendre à utiliser l'IA correctement prend du temps. Je l'ai pris pour vous.
           </p>
 
-          {/* Facts as gain cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-            {facts.map((fact, i) => (
-              <div key={i} className="bg-card rounded-xl border border-border shadow-card p-5 flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-or-mat mt-2 shrink-0" />
-                <span className="font-dm text-sm text-ardoise/80">{fact}</span>
-              </div>
-            ))}
-          </div>
+          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
+            Depuis plus de trois ans, je teste et documente les outils IA dans des contextes professionnels réels. Le déclencheur de Semaine 54 a été un cas terrain : une poissonnerie locale d'une amie, accompagnée sans budget externe. En structurant une stratégie nourrie par l'IA, puis en la mettant en œuvre avec des outils assistés par IA, les résultats ont été mesurables : 73 000 vues, +800 abonnés et +15 % de chiffre d'affaires.
+          </p>
+
+          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
+            Ce cas m'a confirmé une chose : l'IA 2025–2026 n'est plus expérimentale. Elle devient un outil de performance accessible aux petites structures.
+          </p>
+
+          <p className="punchline text-ardoise text-lg mb-10">
+            Je ne suis pas ingénieur IA. Je suis implémenteur IA.
+          </p>
+
 
           {/* RGPD block */}
           <div className="bg-gris-perle rounded-xl p-6 border border-border">
@@ -52,8 +47,8 @@ const PourquoiNousSection = () => {
               </div>
               <div>
                 <h3 className="font-syne font-bold text-lg text-navy mb-2">Sécurité & RGPD</h3>
-                <p className="font-dm text-sm text-ardoise/70 leading-relaxed">
-                  Les automatisations sont déployées via n8n, une infrastructure professionnelle. Les accès sont configurés au strict nécessaire. La conformité RGPD est abordée dès la phase de diagnostic.
+              <p className="font-dm text-sm text-ardoise/70 leading-relaxed">
+                  Les automatisations sont déployées via n8n, une infrastructure professionnelle dédiée aux workflows automatisés. Les accès sont configurés au strict nécessaire, avec gestion sécurisée des identifiants et des connexions. La conformité RGPD dépend de votre organisation et est abordée dès la phase de diagnostic. Semaine 54 conçoit les automatisations selon les bonnes pratiques, sans se substituer à vos obligations légales.
                 </p>
               </div>
             </div>
