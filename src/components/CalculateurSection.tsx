@@ -2,17 +2,17 @@ import { useState } from "react";
 import { Calculator } from "lucide-react";
 
 const presets = [
-  { label: "Artisan : rédaction d'un devis", minutes: 40, perWeek: 5 },
-  { label: "Avocat : recherche d'un texte de loi", minutes: 25, perWeek: 15 },
-  { label: "Commerce : planification des posts", minutes: 45, perWeek: 5 },
-  { label: "Cabinet comptable : relance impayé", minutes: 20, perWeek: 10 },
-];
+{ label: "Artisan : rédaction d'un devis", minutes: 40, perWeek: 5 },
+{ label: "Avocat : recherche d'un texte de loi", minutes: 25, perWeek: 15 },
+{ label: "Commerce : planification des posts", minutes: 45, perWeek: 5 },
+{ label: "Cabinet comptable : relance impayé", minutes: 20, perWeek: 10 }];
+
 
 const CalculateurSection = () => {
   const [minutes, setMinutes] = useState(30);
   const [perWeek, setPerWeek] = useState(5);
 
-  const hoursPerYear = Math.round((minutes * perWeek * 52) / 60);
+  const hoursPerYear = Math.round(minutes * perWeek * 52 / 60);
   const weeksEquiv = (hoursPerYear / 40).toFixed(1);
   const gainHours = Math.round(hoursPerYear * 0.8);
 
@@ -24,8 +24,8 @@ const CalculateurSection = () => {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
               <Calculator size={24} className="text-or-mat" />
             </div>
-            <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-3">
-              Combien vous coûte cette tâche chaque année ?
+            <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-3">Combien vous coûte 
+cette tâche chaque année ?
             </h2>
             <p className="font-dm text-gris-bleu">
               Entrez le temps passé et la fréquence.
@@ -45,8 +45,8 @@ const CalculateurSection = () => {
                   max={120}
                   value={minutes}
                   onChange={(e) => setMinutes(Number(e.target.value))}
-                  className="w-full accent-or-mat"
-                />
+                  className="w-full accent-or-mat" />
+                
                 <div className="font-syne text-2xl font-bold text-navy mt-1">{minutes} min</div>
               </div>
               <div>
@@ -59,8 +59,8 @@ const CalculateurSection = () => {
                   max={30}
                   value={perWeek}
                   onChange={(e) => setPerWeek(Number(e.target.value))}
-                  className="w-full accent-or-mat"
-                />
+                  className="w-full accent-or-mat" />
+                
                 <div className="font-syne text-2xl font-bold text-navy mt-1">{perWeek}×/sem</div>
               </div>
             </div>
@@ -84,20 +84,20 @@ const CalculateurSection = () => {
 
           {/* Presets */}
           <div className="flex flex-wrap gap-2 justify-center">
-            {presets.map((p, i) => (
-              <button
-                key={i}
-                onClick={() => { setMinutes(p.minutes); setPerWeek(p.perWeek); }}
-                className="font-dm text-xs px-4 py-2 rounded-full border border-navy/15 text-ardoise hover:border-or-mat hover:text-or-mat transition-colors"
-              >
+            {presets.map((p, i) =>
+            <button
+              key={i}
+              onClick={() => {setMinutes(p.minutes);setPerWeek(p.perWeek);}}
+              className="font-dm text-xs px-4 py-2 rounded-full border border-navy/15 text-ardoise hover:border-or-mat hover:text-or-mat transition-colors">
+              
                 {p.label}
               </button>
-            ))}
+            )}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CalculateurSection;
