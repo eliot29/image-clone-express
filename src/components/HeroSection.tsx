@@ -18,8 +18,8 @@ const valueProps = [
 
 
 const HeroSection = () => {
-  return (
-    <section id="accueil" className="relative bg-navy flex items-center overflow-hidden">
+    return (<>
+      <section id="accueil" className="relative bg-navy flex items-center overflow-hidden">
       {/* Subtle grid pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -81,11 +81,19 @@ de Bretagne
               de travail récupérées.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Second block — fond clair */}
+    <section className="bg-blanc-casse py-14">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center">
 
           {/* Ce que je fais concrètement */}
           <div className="mb-10 max-w-2xl mx-auto text-left">
-            <h2 className="font-dm font-bold text-xl text-blanc-casse mb-4">Ce que je fais concrètement</h2>
-            <p className="font-dm text-blanc-casse/70 text-sm mb-3">Je détermine la meilleure solution :</p>
+            <h2 className="font-dm font-bold text-xl text-navy mb-4">Ce que je fais concrètement</h2>
+            <p className="font-dm text-ardoise/80 text-sm mb-3">Je détermine la meilleure solution :</p>
             <ul className="space-y-2 mb-4">
               {[
               "automatisation via n8n",
@@ -93,16 +101,16 @@ de Bretagne
               "formation ciblée aux outils LLM en visio ou en présentiel en Bretagne",
               "ou combinaison des trois"].
               map((item, i) =>
-              <li key={i} className="flex items-start gap-2 font-dm text-sm text-blanc-casse/70">
+              <li key={i} className="flex items-start gap-2 font-dm text-sm text-ardoise/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-1.5 shrink-0" />
                   {item}
                 </li>
               )}
             </ul>
-            <p className="font-dm text-blanc-casse/70 text-sm mb-2">
+            <p className="font-dm text-ardoise/80 text-sm mb-2">
               Je mets en place ce qui est pertinent.
             </p>
-            <p className="font-dm text-blanc-casse/70 text-sm">
+            <p className="font-dm text-ardoise/80 text-sm">
               Pour les outils : vous devenez autonome. Pour les processus : votre organisation est allégée.
             </p>
           </div>
@@ -110,14 +118,14 @@ de Bretagne
           {/* Value propositions */}
           <div className="space-y-3 mb-10 max-w-2xl mx-auto text-left">
             {valueProps.map((prop, i) =>
-            <div key={i} className="flex items-start gap-3 bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg px-4 py-3">
+            <div key={i} className="flex items-start gap-3 bg-card border border-border rounded-lg px-4 py-3 shadow-card">
                 <CheckCircle size={16} className="text-or-mat mt-0.5 shrink-0" />
-                <p className="font-dm text-sm text-blanc-casse/80">{prop}</p>
+                <p className="font-dm text-sm text-ardoise/80">{prop}</p>
               </div>
             )}
           </div>
 
-          <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="punchline text-ardoise text-lg mb-10 max-w-2xl mx-auto">
             Un objectif : vous faire gagner du temps utile et du savoir stratégique.
           </p>
 
@@ -129,16 +137,17 @@ de Bretagne
                 <ArrowRight size={18} />
               </a>
             </Button>
-            <p className="font-dm text-xs text-blanc-casse/40 self-center">
+            <p className="font-dm text-xs text-gris-bleu self-center">
               30 à 45 min · sans engagement
             </p>
           </div>
-          <p className="font-dm text-xs text-blanc-casse/40">
+          <p className="font-dm text-xs text-gris-bleu">
             Données dans votre environnement · Accès limités au strict nécessaire · RGPD abordé dès le diagnostic
           </p>
         </div>
       </div>
-    </section>);
+    </section>
+    </>);
 
 };
 
