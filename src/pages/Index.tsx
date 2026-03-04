@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import LogoHeader from "@/components/LogoHeader";
 import HeroSection from "@/components/HeroSection";
 import CasConcretsSection from "@/components/CasConcretsSection";
 import SecteursSection from "@/components/SecteursSection";
@@ -14,6 +15,7 @@ const Index = () => {
     <>
       <Navigation />
       <main>
+        <LogoHeader />
         <HeroSection />
         <CasConcretsSection />
         <SecteursSection />
