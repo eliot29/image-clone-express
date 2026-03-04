@@ -37,7 +37,7 @@ const Navigation = () => {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -49,13 +49,13 @@ const Navigation = () => {
           ))}
         </div>
 
-        <Button variant="ctaNav" size="sm" className="ml-3 hidden lg:inline-flex" asChild>
+        <Button variant="ctaNav" size="sm" className="ml-3 hidden md:inline-flex" asChild>
           <a href="#contact">Audit gratuit</a>
         </Button>
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden ml-2 text-blanc-casse"
+          className="md:hidden ml-2 text-blanc-casse"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
@@ -65,7 +65,7 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden mt-3 pb-3 flex flex-col gap-2 border-t border-blanc-casse/10 pt-3">
+        <div className="md:hidden mt-3 pb-3 flex flex-col gap-2 border-t border-blanc-casse/10 pt-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
