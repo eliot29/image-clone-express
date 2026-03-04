@@ -3,10 +3,10 @@ import { ArrowRight, MapPin, Mail, Phone } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-navy py-24">
+    <section id="contact" className="bg-navy py-14">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
             Prêt à récupérer votre Semaine 54 ?
           </h2>
           <p className="font-dm text-blanc-casse/60 mb-10">

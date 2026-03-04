@@ -19,7 +19,7 @@ const valueProps = [
 
 const HeroSection = () => {
   return (
-    <section id="accueil" className="relative bg-navy min-h-screen flex items-center overflow-hidden">
+    <section id="accueil" className="relative bg-navy flex items-center overflow-hidden">
       {/* Subtle grid pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -28,7 +28,7 @@ const HeroSection = () => {
         }} />
       </div>
 
-      <div className="container mx-auto px-6 py-32 lg:py-24 relative z-10">
+      <div className="container mx-auto px-6 py-16 lg:py-14 relative z-10">
         <div className="max-w-4xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20 mb-8">
@@ -39,7 +39,7 @@ const HeroSection = () => {
           </div>
 
           {/* H1 */}
-          <h1 className="font-syne font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">
+          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">
             Agence IA & automatisation pour les{" "}
             <span className="text-or-mat">indépendants, TPE et PME</span>{" "}
             de Bretagne
@@ -82,7 +82,7 @@ const HeroSection = () => {
 
           {/* Ce que je fais concrètement */}
           <div className="mb-10 max-w-2xl">
-            <h2 className="font-syne font-bold text-xl text-blanc-casse mb-4">Ce que je fais concrètement</h2>
+            <h2 className="font-dm font-bold text-xl text-blanc-casse mb-4">Ce que je fais concrètement</h2>
             <p className="font-dm text-blanc-casse/70 text-sm mb-3">Je détermine la meilleure solution :</p>
             <ul className="space-y-2 mb-4">
               {[

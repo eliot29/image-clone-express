@@ -14,10 +14,10 @@ const sectors = [
 
 const SecteursSection = () => {
   return (
-    <section id="secteurs" className="bg-navy py-24">
+    <section id="secteurs" className="bg-navy py-14">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
+        <div className="text-center mb-10">
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
             Votre activité est-elle concernée ?
           </h2>
         </div>

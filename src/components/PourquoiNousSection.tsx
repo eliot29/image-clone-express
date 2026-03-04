@@ -2,11 +2,11 @@ import { Shield } from "lucide-react";
 
 const PourquoiNousSection = () => {
   return (
-    <section id="approche" className="bg-blanc-casse py-24">
+    <section id="approche" className="bg-blanc-casse py-14">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-navy mb-4">
+          <div className="text-center mb-10">
+            <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
               Pourquoi Semaine 54
             </h2>
           <p className="font-dm text-gris-bleu text-lg">
@@ -46,7 +46,7 @@ const PourquoiNousSection = () => {
                 <Shield size={18} className="text-or-mat" />
               </div>
               <div>
-                <h3 className="font-syne font-bold text-lg text-navy mb-2">Sécurité & RGPD</h3>
+                <h3 className="font-dm font-bold text-lg text-navy mb-2">Sécurité & RGPD</h3>
               <p className="font-dm text-sm text-ardoise/70 leading-relaxed">
                   Les automatisations sont déployées via n8n, une infrastructure professionnelle dédiée aux workflows automatisés. Les accès sont configurés au strict nécessaire, avec gestion sécurisée des identifiants et des connexions. La conformité RGPD dépend de votre organisation et est abordée dès la phase de diagnostic. Semaine 54 conçoit les automatisations selon les bonnes pratiques, sans se substituer à vos obligations légales.
                 </p>
