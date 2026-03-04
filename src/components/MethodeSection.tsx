@@ -32,7 +32,9 @@ const MethodeSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-navy mb-4">Un accompagnement<br /> structuré, étape par étape.</h2>
+            <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-navy mb-4">Un accompagnement structuré, 
+étape par étape.
+            </h2>
             <p className="punchline text-ardoise text-lg mx-auto max-w-xl inline-block">
               Proposer une solution avant de comprendre le problème, c'est exactement ce que nous ne faisons pas.
             </p>
