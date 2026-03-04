@@ -45,18 +45,18 @@ const MethodeSection = () => {
             <div key={i} className="flex gap-6 group">
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-full bg-navy flex items-center justify-center shrink-0">
-                    <span className="font-syne text-sm font-bold text-or-mat">{step.num}</span>
+                  <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+                    <span className="font-dm text-sm font-bold text-or-mat">{step.num}</span>
                   </div>
                   {i < steps.length - 1 &&
-                <div className="w-px h-full bg-navy/15 my-1" />
+                <div className="w-px h-full bg-blanc-casse/15 my-1" />
                 }
                 </div>
 
                 {/* Content */}
                 <div className="pb-10">
-                  <h3 className="font-syne font-bold text-lg text-navy mb-1">{step.title}</h3>
-                  <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
+                  <h3 className="font-dm font-bold text-lg text-blanc-casse mb-1">{step.title}</h3>
+                  <p className="font-dm text-sm text-blanc-casse/60 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             )}
