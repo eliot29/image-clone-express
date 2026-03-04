@@ -50,13 +50,13 @@
     font-family: 'DM Sans', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'DM Sans', sans-serif;
   }
 }
 
 /* Punchline with gold bar */
 .punchline {
-  font-family: 'Syne', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   position: relative;
   padding-left: 20px;

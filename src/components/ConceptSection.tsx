@@ -3,18 +3,18 @@ import { Button } from "@/components/ui/button";
 
 const ConceptSection = () => {
   return (
-    <section id="concept" className="bg-blanc-casse py-24">
+    <section id="concept" className="bg-blanc-casse py-14">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-6">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
             <Lightbulb size={24} className="text-or-mat" />
           </div>
 
-          <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-navy mb-6">
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-6">
             Le concept Semaine 54
           </h2>
 
-          <p className="font-syne font-bold text-xl text-or-mat mb-8">
+          <p className="font-dm font-bold text-xl text-or-mat mb-8">
             Une année compte 52 semaines. Semaine 54, c'est le temps que vous récupérez.
           </p>
 
