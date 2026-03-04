@@ -26,9 +26,17 @@ const ContactSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-blanc-casse/50 font-dm text-sm">
             <span className="font-syne font-bold text-or-mat">semaine54.bzh</span>
             <div className="flex items-center gap-2">
-              <MapPin size={14} className="text-or-mat" />
-              <span>29 · 22 · 56 · 35</span>
+              <Mail size={14} className="text-or-mat" />
+              <span>[À renseigner]</span>
             </div>
+            <div className="flex items-center gap-2">
+              <Phone size={14} className="text-or-mat" />
+              <span>[À renseigner]</span>
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-2 mt-4 text-blanc-casse/50 font-dm text-sm">
+            <MapPin size={14} className="text-or-mat" />
+            <span>Finistère (29) · Côtes-d'Armor (22) · Morbihan (56) · Ille-et-Vilaine (35)</span>
           </div>
 
           {/* Tool logos bar */}

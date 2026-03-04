@@ -25,7 +25,7 @@ const prestations = [
   {
     icon: GraduationCap,
     title: "Formation & acculturation IA",
-    badge: "Visio ou présentiel",
+    badge: "Visio ou présentiel en Bretagne",
     items: [
       "ChatGPT · Claude · Gemini · Copilot",
       "Usage structuré et professionnel",
