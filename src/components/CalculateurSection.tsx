@@ -17,7 +17,7 @@ const CalculateurSection = () => {
   const gainHours = Math.round(hoursPerYear * 0.8);
 
   return (
-    <section className="bg-blanc-casse py-14">
+    <section className="bg-gris-perle py-14">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
