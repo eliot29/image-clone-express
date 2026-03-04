@@ -2,20 +2,20 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Mail, FileText, Share2, FolderOpen, Search, CheckCircle } from "lucide-react";
 
 const painPoints = [
-  { icon: FileText, text: "Devis rédigés à la main" },
-  { icon: Search, text: "Recherches d'informations répétitives" },
-  { icon: Mail, text: "Relances de mails chronophages" },
-  { icon: Share2, text: "Publications irrégulières sur les réseaux" },
-  { icon: FolderOpen, text: "Administratif qui s'accumule" },
-  { icon: Clock, text: "Comparaisons fournisseurs fastidieuses" },
-];
+{ icon: FileText, text: "Devis rédigés à la main" },
+{ icon: Search, text: "Recherches d'informations répétitives" },
+{ icon: Mail, text: "Relances de mails chronophages" },
+{ icon: Share2, text: "Publications irrégulières sur les réseaux" },
+{ icon: FolderOpen, text: "Administratif qui s'accumule" },
+{ icon: Clock, text: "Comparaisons fournisseurs fastidieuses" }];
+
 
 const valueProps = [
-  "Un seul responsable, du diagnostic à la mise en production. Présence locale en Bretagne.",
-  "Une approche ancrée dans la réalité des dirigeants, pas dans la démonstration technologique.",
-  "Suivi réel après déploiement, pas une prestation ponctuelle. Une relation construite dans la durée.",
-  "Pas une usine à projets. Je limite volontairement le nombre de missions simultanées.",
-];
+"Un seul responsable, du diagnostic à la mise en production. Présence locale en Bretagne.",
+"Une approche ancrée dans la réalité des dirigeants, pas dans la démonstration technologique.",
+"Suivi réel après déploiement, pas une prestation ponctuelle. Une relation construite dans la durée.",
+"Pas une usine à projets. Je limite volontairement le nombre de missions simultanées."];
+
 
 const HeroSection = () => {
   return (
@@ -39,9 +39,9 @@ const HeroSection = () => {
           </div>
 
           {/* H1 */}
-          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">
-            Agence IA & automatisation pour
-            <br />
+          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">Agence IA & automatisation pour
+Indépendants, TPE et PME
+de Bretagne<br />
             les <span className="text-or-mat">indépendants, TPE et PME</span>
             <br />
             de Bretagne
@@ -59,12 +59,12 @@ const HeroSection = () => {
 
           {/* Pain points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-            {painPoints.map((point, i) => (
-              <div key={i} className="flex items-center gap-3 text-blanc-casse/60 font-dm text-sm">
+            {painPoints.map((point, i) =>
+            <div key={i} className="flex items-center gap-3 text-blanc-casse/60 font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
                 <span>{point.text}</span>
               </div>
-            ))}
+            )}
           </div>
 
           <p className="font-dm text-blanc-casse/50 text-sm mb-10 italic">
@@ -88,16 +88,16 @@ const HeroSection = () => {
             <p className="font-dm text-blanc-casse/70 text-sm mb-3">Je détermine la meilleure solution :</p>
             <ul className="space-y-2 mb-4">
               {[
-                "automatisation via n8n",
-                "assistant IA configuré sur-mesure (GPTs, Gems)",
-                "formation ciblée aux outils LLM en visio ou en présentiel en Bretagne",
-                "ou combinaison des trois",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 font-dm text-sm text-blanc-casse/70">
+              "automatisation via n8n",
+              "assistant IA configuré sur-mesure (GPTs, Gems)",
+              "formation ciblée aux outils LLM en visio ou en présentiel en Bretagne",
+              "ou combinaison des trois"].
+              map((item, i) =>
+              <li key={i} className="flex items-start gap-2 font-dm text-sm text-blanc-casse/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-1.5 shrink-0" />
                   {item}
                 </li>
-              ))}
+              )}
             </ul>
             <p className="font-dm text-blanc-casse/70 text-sm mb-2">
               Je mets en place ce qui est pertinent.
@@ -109,12 +109,12 @@ const HeroSection = () => {
 
           {/* Value propositions */}
           <div className="space-y-3 mb-10 max-w-2xl">
-            {valueProps.map((prop, i) => (
-              <div key={i} className="flex items-start gap-3 bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg px-4 py-3">
+            {valueProps.map((prop, i) =>
+            <div key={i} className="flex items-start gap-3 bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg px-4 py-3">
                 <CheckCircle size={16} className="text-or-mat mt-0.5 shrink-0" />
                 <p className="font-dm text-sm text-blanc-casse/80">{prop}</p>
               </div>
-            ))}
+            )}
           </div>
 
           <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl">
@@ -138,8 +138,8 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
