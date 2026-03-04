@@ -29,7 +29,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 py-16 lg:py-14 relative z-10">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-or-mat animate-pulse" />
@@ -48,17 +48,17 @@ de Bretagne
           </h1>
 
           {/* Subtitle */}
-          <p className="font-dm text-lg sm:text-xl text-blanc-casse/70 mb-4 max-w-2xl">
+          <p className="font-dm text-lg sm:text-xl text-blanc-casse/70 mb-4 max-w-2xl mx-auto">
             Récupérez du temps. Gagnez en productivité. Gagnez en rentabilité.
           </p>
 
           {/* Punchline */}
-          <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl">
+          <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl mx-auto">
             L'IA ne remplace pas votre expertise. Elle élimine le temps inutile autour.
           </p>
 
           {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-w-2xl mx-auto text-left">
             {painPoints.map((point, i) =>
             <div key={i} className="flex items-center gap-3 text-blanc-casse/60 font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
@@ -72,7 +72,7 @@ de Bretagne
           </p>
 
           {/* Stat highlight */}
-          <div className="bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg p-5 mb-10 max-w-lg">
+          <div className="bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg p-5 mb-10 max-w-lg mx-auto">
             <p className="font-dm text-blanc-casse/80 text-sm leading-relaxed">
               <span className="font-syne text-or-mat text-2xl font-bold">30 min</span>{" "}
               gagnées par jour ={" "}
@@ -83,7 +83,7 @@ de Bretagne
           </div>
 
           {/* Ce que je fais concrètement */}
-          <div className="mb-10 max-w-2xl">
+          <div className="mb-10 max-w-2xl mx-auto text-left">
             <h2 className="font-dm font-bold text-xl text-blanc-casse mb-4">Ce que je fais concrètement</h2>
             <p className="font-dm text-blanc-casse/70 text-sm mb-3">Je détermine la meilleure solution :</p>
             <ul className="space-y-2 mb-4">
@@ -108,7 +108,7 @@ de Bretagne
           </div>
 
           {/* Value propositions */}
-          <div className="space-y-3 mb-10 max-w-2xl">
+          <div className="space-y-3 mb-10 max-w-2xl mx-auto text-left">
             {valueProps.map((prop, i) =>
             <div key={i} className="flex items-start gap-3 bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg px-4 py-3">
                 <CheckCircle size={16} className="text-or-mat mt-0.5 shrink-0" />
@@ -117,12 +117,12 @@ de Bretagne
             )}
           </div>
 
-          <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl">
+          <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl mx-auto">
             Un objectif : vous faire gagner du temps utile et du savoir stratégique.
           </p>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-4">
+          <div className="flex flex-col sm:flex-row gap-4 mb-4 justify-center">
             <Button variant="cta" size="lg" asChild>
               <a href="#contact">
                 Réserver mon audit gratuit
