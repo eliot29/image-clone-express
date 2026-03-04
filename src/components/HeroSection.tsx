@@ -40,7 +40,7 @@ const HeroSection = () => {
 
           {/* H1 */}
           <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">Agence IA & automatisation pour
-Indépendants, TPE et PME
+les indépendants, TPE et PME
 de Bretagne<br />
             les <span className="text-or-mat">indépendants, TPE et PME</span>
             <br />
