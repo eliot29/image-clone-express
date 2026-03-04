@@ -1,6 +1,6 @@
 const LogoHeader = () => {
   return (
-    <section className="bg-blanc-casse flex items-center justify-center py-3 md:py-4 px-4">
+    <section className="bg-blanc-casse flex items-center justify-center pt-16 md:pt-20 pb-6 md:pb-8 px-4">
       <div className="max-w-[280px] md:max-w-[400px] lg:max-w-[500px] w-full overflow-hidden mx-auto">
         <img
           src="/logo-semaine54.png?v=4"
