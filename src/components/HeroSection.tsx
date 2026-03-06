@@ -28,8 +28,9 @@ const HeroSection = () => {
 
           {/* H1 */}
           <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-navy leading-[1.1] mb-6">
-            Agence IA & automatisation pour{" "}
-            <span className="text-or-mat">TPE et PME</span> de Bretagne
+            Agence IA & automatisation
+            <br />
+            pour <span className="text-or-mat">TPE et PME</span> de Bretagne
           </h1>
 
           {/* Subtitle */}
