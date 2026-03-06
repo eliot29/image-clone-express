@@ -40,7 +40,7 @@ const PropositionSection = () => {
             </p>
           </div>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug max-w-2xl mx-auto">
+          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug max-w-4xl mx-auto">
             Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
             <br />
             <span className="text-or-mat">Je ne suis pas ingénieur IA. Je suis implémenteur IA.</span>

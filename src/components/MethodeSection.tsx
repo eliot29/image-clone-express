@@ -45,7 +45,7 @@ const MethodeSection = () => {
             </h2>
           </div>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl mb-12 text-center leading-snug max-w-2xl mx-auto">
+          <p className="font-syne font-bold text-navy text-xl sm:text-2xl mb-12 text-center leading-snug max-w-4xl mx-auto">
             Une solution IA n'a de valeur que si elle s'intègre dans le fonctionnement réel de votre entreprise.
           </p>
 
