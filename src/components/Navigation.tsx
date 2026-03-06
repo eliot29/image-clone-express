@@ -32,8 +32,12 @@ const Navigation = () => {
       }`}
     >
       <div className="flex items-center gap-1">
-        <a href="#accueil" className="font-syne font-extrabold text-blanc-casse text-lg mr-4 whitespace-nowrap">
-          S54
+        <a href="#accueil" className="mr-4 flex-shrink-0">
+          <img
+            src="/logo-semaine54.png?v=4"
+            alt="Semaine 54"
+            className="h-7 w-auto brightness-0 invert"
+          />
         </a>
 
         {/* Desktop links */}
