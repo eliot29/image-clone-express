@@ -33,7 +33,7 @@ const PropositionSection = () => {
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 Je mets en place ou je forme, l'entreprise teste, puis j'ajuste selon les retours terrain.
               </p>
-              <p className="font-dm text-ardoise/80 leading-relaxed">
+              <p className="font-dm text-ardoise/80 leading-relaxed md:col-span-2 md:text-center">
                 Objectif : une solution utile, progressive et adaptée à votre réalité.
               </p>
             </div>
