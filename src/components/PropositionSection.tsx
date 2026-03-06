@@ -2,7 +2,7 @@ const PropositionSection = () => {
   return (
     <section className="bg-blanc-casse py-14">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-8 text-center">
             Ce que je propose concrètement
           </h2>
@@ -40,7 +40,7 @@ const PropositionSection = () => {
             </p>
           </div>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug max-w-2xl">
+          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug max-w-2xl mx-auto">
             Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
             <br />
             <span className="text-or-mat">Je ne suis pas ingénieur IA. Je suis implémenteur IA.</span>
