@@ -29,8 +29,8 @@ const PourquoiNousSection = () => {
             Depuis trois ans, je teste et documente ces outils dans des usages professionnels concrets. Dorénavant j'ai la certitude profonde que l'intelligence artificielle apporte de la productivité.
           </p>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl mb-10 leading-snug">
-            Mon approche vient du terrain, pas d'une démonstration théorique.
+          <p className="font-syne font-bold text-navy text-xl sm:text-2xl mb-10 leading-snug">Mon approche vient du terrain, 
+pas d'une démonstration théorique.
           </p>
 
           <p className="font-dm font-semibold text-navy mb-6">
@@ -54,12 +54,12 @@ const PourquoiNousSection = () => {
           </div>
 
           <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug">
-            Ces expériences confirment une chose : l'IA n'est plus un gadget. <span className="text-or-mat">Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
+            Ces expériences confirment une chose : l'IA n'est plus un gadget. <span className="text-or-mat">
+Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
 };
 
 export default PourquoiNousSection;
