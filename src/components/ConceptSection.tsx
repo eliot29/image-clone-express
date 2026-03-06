@@ -38,30 +38,6 @@ const ConceptSection = () => {
           </p>
         </div>
 
-        {/* Tools marquee */}
-        <div className="mt-16 pt-8 border-t border-blanc-casse/10">
-          <p className="font-dm text-xs text-blanc-casse/30 mb-6 uppercase tracking-wider text-center">
-            Les outils que j'utilise — ceux qui correspondent à votre situation
-          </p>
-          <div className="relative overflow-hidden">
-            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
-            <div className="flex gap-12 animate-marquee hover:[animation-play-state:paused]">
-              {[...Array(2)].map((_, setIdx) => (
-                <div key={setIdx} className="flex gap-12 shrink-0 items-center">
-                  {["n8n", "Claude", "ChatGPT", "Gemini", "Notion AI", "Noota", "Copilot", "Perplexity"].map((tool) => (
-                    <span
-                      key={`${setIdx}-${tool}`}
-                      className="font-syne font-bold text-lg text-blanc-casse/20 hover:text-blanc-casse/50 transition-colors whitespace-nowrap"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
