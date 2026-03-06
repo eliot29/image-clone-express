@@ -53,10 +53,12 @@ const PourquoiNousSection = () => {
             </div>
           </div>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug">
-            Ces expériences confirment une chose : l'IA n'est plus un gadget. <span className="text-or-mat">
-Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
-          </p>
+          <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+            <p className="font-dm text-ardoise/80 leading-relaxed">
+              Ces expériences confirment une chose : l'IA n'est plus un gadget.
+              <strong className="text-navy">Bien utilisée, elle devient un outil de performance pour toutes les structures.</strong>
+            </p>
+          </div>
         </div>
       </div>
     </section>);
