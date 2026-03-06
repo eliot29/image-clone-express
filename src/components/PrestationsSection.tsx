@@ -41,9 +41,6 @@ const PrestationsSection = () => {
     <section id="prestations" className="bg-navy py-14">
       <div className="container mx-auto px-6">
         <div className="text-center mb-4">
-          <p className="font-syne font-bold text-or-mat text-xl sm:text-2xl mb-10 max-w-4xl mx-auto leading-snug">Le marché a des centaines d'outils. 
-Mon rôle de partenaire : faire le filtre.
-          </p>
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
             Trois leviers possibles
           </h2>
