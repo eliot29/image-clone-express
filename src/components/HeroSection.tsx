@@ -9,13 +9,11 @@ const painPoints = [
 { icon: FolderOpen, text: "Administratif qui s'accumule" },
 { icon: Clock, text: "Comparaisons fournisseurs fastidieuses" }];
 
-
 const valueProps = [
 "Un seul responsable, du diagnostic à la mise en production. Présence locale en Bretagne.",
 "Une approche ancrée dans la réalité des dirigeants, pas dans la démonstration technologique.",
 "Suivi réel après déploiement, pas une prestation ponctuelle. Une relation construite dans la durée.",
 "Pas une usine à projets. Je limite volontairement le nombre de missions simultanées."];
-
 
 const HeroSection = () => {
   return <>
@@ -33,18 +31,13 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-or-mat animate-pulse" />
-            <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">BASÉ DANS LE FINISTÈRE (29) 
-
+            <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">BASÉ DANS LE FINISTÈRE (29)
             </span>
           </div>
 
           {/* H1 */}
           <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">Agence IA & automatisation pour 
-TPE et PME de Bretagne
-            <br />
-            les <span className="text-or-mat">indépendants, TPE et PME</span>
-            <br />
-            de Bretagne
+            <span className="text-or-mat">TPE et PME</span> de Bretagne
           </h1>
 
           {/* Subtitle */}
@@ -74,10 +67,10 @@ TPE et PME de Bretagne
           {/* Stat highlight */}
           <div className="bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg p-5 mb-10 max-w-lg mx-auto">
             <p className="font-dm text-blanc-casse/80 text-sm leading-relaxed">
-              <span className="font-syne text-or-mat text-2xl font-bold">30 min</span>{" "}
-              gagnées par jour ={" "}
-              <span className="font-syne text-or-mat text-2xl font-bold">120h</span>/an ={" "}
-              <span className="font-syne text-or-mat text-2xl font-bold">3 semaines</span>{" "}
+              <span className="font-syne text-or-mat text-2xl font-bold">30 min</span>
+              gagnées par jour =
+              <span className="font-syne text-or-mat text-2xl font-bold">120h</span>/an =
+              <span className="font-syne text-or-mat text-2xl font-bold">3 semaines</span>
               de travail récupérées.
             </p>
           </div>
