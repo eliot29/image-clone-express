@@ -49,13 +49,13 @@ const cases = [
 
 const CasConcretsSection = () => {
   return (
-    <section id="cas" className="bg-blanc-casse py-14">
+    <section id="cas" className="bg-navy py-14">
       <div className="container mx-auto px-6">
         <div className="text-center mb-10">
-          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
             Cinq situations concrètes. Cinq gains mesurables.
           </h2>
-          <p className="font-dm text-gris-bleu max-w-2xl mx-auto">
+          <p className="font-dm text-blanc-casse/60 max-w-2xl mx-auto">
             Bien utilisée, l'IA est un avantage concurrentiel réel. Mal calibrée, elle fait perdre du temps. La différence tient à la façon dont elle est mise en place.
           </p>
         </div>
@@ -63,14 +63,14 @@ const CasConcretsSection = () => {
         {/* Infinite scroll marquee */}
         <div className="relative overflow-hidden">
           {/* Fade edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-blanc-casse to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-blanc-casse to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
 
           <div className="flex gap-6 animate-marquee hover:[animation-play-state:paused]">
             {[...cases, ...cases].map((cas, i) => (
               <div
                 key={i}
-                className="rounded-xl p-6 border border-navy/10 bg-card shadow-card hover:shadow-card-hover transition-shadow min-w-[340px] max-w-[380px] shrink-0"
+                className="rounded-xl p-6 border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors min-w-[340px] max-w-[380px] shrink-0"
               >
                 {/* Header */}
                 <div className="flex items-center gap-3 mb-4">
@@ -78,20 +78,20 @@ const CasConcretsSection = () => {
                     {cas.location}
                   </span>
                 </div>
-                <h3 className="font-dm font-bold text-xl text-navy mb-2">{cas.sector}</h3>
+                <h3 className="font-dm font-bold text-xl text-blanc-casse mb-2">{cas.sector}</h3>
 
                 {/* Problem */}
-                <p className="font-dm text-sm text-gris-bleu mb-3">{cas.problem}</p>
+                <p className="font-dm text-sm text-blanc-casse/50 mb-3">{cas.problem}</p>
 
                 {/* Solution */}
-                <p className="font-dm text-sm text-ardoise/80 mb-5">{cas.solution}</p>
+                <p className="font-dm text-sm text-blanc-casse/70 mb-5">{cas.solution}</p>
 
                 {/* Results */}
-                <div className="space-y-2 pt-4 border-t border-border">
+                <div className="space-y-2 pt-4 border-t border-blanc-casse/10">
                   {cas.results.map((r, j) => (
                     <div key={j} className="flex items-center gap-2">
                       <r.icon size={16} className="text-or-mat shrink-0" />
-                      <span className="font-dm text-sm text-ardoise/70">{r.label}</span>
+                      <span className="font-dm text-sm text-blanc-casse/60">{r.label}</span>
                     </div>
                   ))}
                 </div>

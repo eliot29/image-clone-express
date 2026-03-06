@@ -16,72 +16,55 @@ const valueProps = [
 "Pas une usine à projets. Je limite volontairement le nombre de missions simultanées."];
 
 const HeroSection = () => {
-  return <>
-      <section id="accueil" className="relative bg-navy flex items-center overflow-hidden">
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "linear-gradient(hsl(var(--or-mat) / 0.15) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--or-mat) / 0.15) 1px, transparent 1px)",
-          backgroundSize: "64px 64px"
-        }} />
-      </div>
-
+  return (
+    <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
       <div className="container mx-auto px-6 py-16 lg:py-14 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-or-mat animate-pulse" />
-            <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">BASÉ DANS LE FINISTÈRE (29)
-            </span>
+            <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">BASÉ DANS LE FINISTÈRE (29)</span>
           </div>
 
           {/* H1 */}
-          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6"> TPE et PME
-
+          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-navy leading-[1.1] mb-6">
+            Agence IA & automatisation pour{" "}
             <span className="text-or-mat">TPE et PME</span> de Bretagne
           </h1>
 
           {/* Subtitle */}
-          <p className="font-dm text-lg sm:text-xl text-blanc-casse/70 mb-4 max-w-2xl mx-auto">
+          <p className="font-dm text-lg sm:text-xl text-ardoise/70 mb-4 max-w-2xl mx-auto">
             Récupérez du temps. Gagnez en productivité. Gagnez en rentabilité.
           </p>
 
           {/* Punchline */}
-          <p className="punchline text-blanc-casse/90 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="punchline text-navy/90 text-lg mb-10 max-w-2xl mx-auto">
             L'IA ne remplace pas votre expertise. Elle élimine le temps inutile autour.
           </p>
 
           {/* Pain points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-w-2xl mx-auto text-left">
-            {painPoints.map((point, i) => <div key={i} className="flex items-center gap-3 text-blanc-casse/60 font-dm text-sm">
+            {painPoints.map((point, i) => <div key={i} className="flex items-center gap-3 text-ardoise/60 font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
                 <span>{point.text}</span>
               </div>
             )}
           </div>
 
-          <p className="font-dm text-blanc-casse/50 text-sm mb-10 italic">
+          <p className="font-dm text-ardoise/50 text-sm mb-10 italic">
             Ces tâches ne créent pas de valeur. Elles consomment du temps.
           </p>
 
           {/* Stat highlight */}
-          <div className="bg-blanc-casse/5 border border-blanc-casse/10 rounded-lg p-5 mb-10 max-w-lg mx-auto">
-            <p className="font-dm text-blanc-casse/80 text-sm leading-relaxed">
+          <div className="bg-navy/5 border border-navy/10 rounded-lg p-5 mb-10 max-w-lg mx-auto">
+            <p className="font-dm text-ardoise/80 text-sm leading-relaxed">
               <span className="font-syne text-or-mat text-2xl font-bold">30 min</span>
-              gagnées par jour =
-              <span className="font-syne text-or-mat text-2xl font-bold">120h</span>/an =
+              {" "}gagnées par jour ={" "}
+              <span className="font-syne text-or-mat text-2xl font-bold">120h</span>/an ={" "}
               <span className="font-syne text-or-mat text-2xl font-bold">3 semaines</span>
-              de travail récupérées.
+              {" "}de travail récupérées.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    {/* Second block — fond clair */}
-    <section className="bg-blanc-casse py-14">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
 
           {/* Ce que je fais concrètement */}
           <div className="mb-10 max-w-2xl mx-auto text-left">
@@ -92,8 +75,7 @@ const HeroSection = () => {
               "automatisation via n8n",
               "assistant IA configuré sur-mesure (GPTs, Gems)",
               "formation ciblée aux outils LLM en visio ou en présentiel en Bretagne",
-              "ou combinaison des trois"].
-              map((item, i) =>
+              "ou combinaison des trois"].map((item, i) =>
               <li key={i} className="flex items-start gap-2 font-dm text-sm text-ardoise/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-1.5 shrink-0" />
                   {item}
@@ -118,7 +100,7 @@ const HeroSection = () => {
             )}
           </div>
 
-          <p className="punchline text-ardoise text-lg mb-10 max-w-2xl mx-auto">
+          <p className="punchline text-navy text-lg mb-10 max-w-2xl mx-auto">
             Un objectif : vous faire gagner du temps utile et du savoir stratégique.
           </p>
 
@@ -140,8 +122,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-    </>;
-
+  );
 };
 
 export default HeroSection;

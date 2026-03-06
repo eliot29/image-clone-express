@@ -25,17 +25,16 @@ const steps = [
   desc: "Les outils évoluent, votre activité aussi. On reste disponibles."
 }];
 
-
 const MethodeSection = () => {
   return (
-    <section id="methode" className="bg-gris-perle py-24">
+    <section id="methode" className="bg-navy py-14">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-navy mb-4">Un accompagnement structuré, 
+            <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">Un accompagnement structuré, 
 étape par étape.
             </h2>
-            <p className="punchline text-ardoise text-lg mx-auto max-w-xl inline-block">
+            <p className="punchline text-blanc-casse/70 text-lg mx-auto max-w-xl inline-block">
               Proposer une solution avant de comprendre le problème, c'est exactement ce que nous ne faisons pas.
             </p>
           </div>
@@ -64,7 +63,6 @@ const MethodeSection = () => {
         </div>
       </div>
     </section>);
-
 };
 
 export default MethodeSection;
