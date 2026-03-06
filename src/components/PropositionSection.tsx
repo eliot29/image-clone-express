@@ -11,7 +11,7 @@ const PropositionSection = () => {
             Après un audit gratuit, je détermine la solution la plus pertinente :
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 mb-4">
             <ul className="space-y-3">
               {[
                 "automatisation via n8n",
@@ -33,11 +33,12 @@ const PropositionSection = () => {
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 Je mets en place ou je forme, l'entreprise teste, puis j'ajuste selon les retours terrain.
               </p>
-              <p className="font-dm text-ardoise/80 leading-relaxed md:col-span-2 md:text-center">
-                Objectif : une solution utile, progressive et adaptée à votre réalité.
-              </p>
             </div>
           </div>
+
+          <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-10">
+            Objectif : une solution utile, progressive et adaptée à votre réalité.
+          </p>
 
           <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug max-w-4xl mx-auto text-center">
             Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
