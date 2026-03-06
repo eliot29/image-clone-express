@@ -1,17 +1,6 @@
-import { Search, Cog, GraduationCap, Filter } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Cog, GraduationCap, Filter } from "lucide-react";
 
 const prestations = [
-  {
-    icon: Search,
-    title: "Audit stratégique",
-    badge: "Gratuit",
-    items: [
-      "Diagnostic opérationnel de 30 à 45 minutes",
-      "Identification des priorités",
-      "Aucune vente forcée",
-    ],
-  },
   {
     icon: Cog,
     title: "Automatisation sur-mesure",
@@ -19,17 +8,19 @@ const prestations = [
     items: [
       "Workflows via n8n",
       "Connexion à vos outils existants",
-      "Logique simple, robuste, évolutive",
+      "Automatisation des tâches répétitives",
+      "Logique simple, robuste et évolutive",
     ],
   },
   {
     icon: GraduationCap,
     title: "Formation & acculturation IA",
-    badge: "Visio ou présentiel en Bretagne",
+    badge: "ChatGPT · Claude · Gemini · Copilot",
     items: [
-      "ChatGPT · Claude · Gemini · Copilot",
       "Usage structuré et professionnel",
-      "Sessions adaptées à votre niveau",
+      "Maîtrise du prompt",
+      "Formation adaptée à votre niveau",
+      "Mise en pratique sur vos cas réels",
     ],
   },
   {
@@ -37,44 +28,45 @@ const prestations = [
     title: "Conseil & choix d'outils",
     badge: null,
     items: [
-      "Filtrer le marché",
+      "Le marché compte des centaines d'outils IA",
+      "Filtrer les solutions pertinentes",
       "Éviter les abonnements inutiles",
-      "Choisir ce qui correspond à votre réalité",
+      "Choisir ce qui correspond vraiment à votre activité",
     ],
   },
 ];
 
 const PrestationsSection = () => {
   return (
-    <section id="prestations" className="bg-blanc-casse py-14">
+    <section id="prestations" className="bg-navy py-14">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-10">
-          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
-            Trois leviers. Le bon selon votre situation.
-          </h2>
-          <p className="punchline text-ardoise text-lg mx-auto max-w-xl inline-block">
-            Pas de package imposé avant diagnostic.
+        <div className="text-center mb-4">
+          <p className="font-syne font-bold text-or-mat text-xl sm:text-2xl mb-10 max-w-2xl mx-auto leading-snug">
+            Le marché a des centaines d'outils. Mon rôle de partenaire : faire le filtre.
           </p>
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
+            Trois leviers possibles
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
           {prestations.map((p, i) => (
             <div
               key={i}
-              className="bg-card rounded-xl border border-border shadow-card hover:shadow-card-hover transition-shadow p-6 flex flex-col"
+              className="rounded-xl border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors p-6 flex flex-col"
             >
               <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                 <p.icon size={22} className="text-or-mat" />
               </div>
-              <h3 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h3>
+              <h3 className="font-dm font-bold text-lg text-blanc-casse mb-1">{p.title}</h3>
               {p.badge && (
-                <span className="font-dm text-xs font-semibold uppercase tracking-wider text-or-mat mb-3">
+                <span className="font-dm text-xs font-semibold text-or-mat mb-3">
                   {p.badge}
                 </span>
               )}
-              <ul className="space-y-2 mt-auto pt-4">
+              <ul className="space-y-2 mt-auto pt-4 border-t border-blanc-casse/10">
                 {p.items.map((item, j) => (
-                  <li key={j} className="font-dm text-sm text-ardoise/70 flex items-start gap-2">
+                  <li key={j} className="font-dm text-sm text-blanc-casse/60 flex items-start gap-2">
                     <span className="w-1 h-1 rounded-full bg-or-mat mt-2 shrink-0" />
                     {item}
                   </li>
@@ -84,8 +76,8 @@ const PrestationsSection = () => {
           ))}
         </div>
 
-        <p className="punchline text-ardoise text-center mt-12 text-lg max-w-xl mx-auto">
-          Le marché a des centaines d'outils. Mon rôle : faire le filtre.
+        <p className="font-syne font-bold text-blanc-casse text-xl sm:text-2xl text-center max-w-2xl mx-auto leading-snug">
+          Je ne vends pas de l'IA. <span className="text-or-mat">Je vous aide à gagner votre Semaine 54.</span>
         </p>
       </div>
     </section>
