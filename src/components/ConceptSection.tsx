@@ -8,7 +8,7 @@ const ConceptSection = () => {
             <span className="text-or-mat">Mais sous certaines conditions.</span>
           </h2>
 
-          <div className="space-y-6 text-left max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 text-left max-w-3xl mx-auto">
             <p className="font-dm text-blanc-casse/70 leading-relaxed">
               Aujourd'hui, les outils d'intelligence artificielle se multiplient.
               Pourtant, beaucoup d'entreprises se retrouvent seules face à ces technologies.
@@ -28,7 +28,7 @@ const ConceptSection = () => {
               La plupart des solutions et formations proposées sont génériques et rarement construites à partir de la réalité du terrain.
             </p>
 
-            <p className="font-dm text-blanc-casse/70 leading-relaxed">
+            <p className="font-dm text-blanc-casse/70 leading-relaxed md:col-span-2 md:text-center">
               Or chaque entreprise est différente.
             </p>
           </div>

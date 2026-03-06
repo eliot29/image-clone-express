@@ -14,7 +14,7 @@ const painPoints = [
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 py-16 lg:py-14 relative z-10">
+      <div className="container mx-auto px-6 pt-28 pb-16 lg:pt-32 lg:pb-14 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Tagline badges */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -48,22 +48,23 @@ const HeroSection = () => {
           {/* Pain points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-w-2xl mx-auto text-left">
             {painPoints.map((point, i) => (
-              <div key={i} className="flex items-center gap-3 text-ardoise/60 font-dm text-sm">
+              <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
                 <span>{point.text}</span>
               </div>
             ))}
           </div>
 
-          <p className="font-dm text-ardoise/50 text-sm mb-10 italic">
+          <p className="font-dm text-ardoise text-sm mb-10 italic">
             Ces tâches ne créent pas de valeur. Elles consomment votre temps.
           </p>
 
           {/* Stat highlight - punchline style */}
-          <div className="bg-navy/5 border border-navy/10 rounded-lg p-6 max-w-lg mx-auto">
-            <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-relaxed">
+          <div className="bg-navy/5 border border-navy/10 rounded-lg p-8 sm:p-10 max-w-2xl mx-auto">
+            <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide">
               <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
-              <br />
+            </p>
+            <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide mt-2">
               Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
             </p>
           </div>
