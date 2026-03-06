@@ -37,10 +37,7 @@ const SecteursSection = () => {
         </div>
 
         {/* Brittany map placeholder — gold dots */}
-        <div className="flex justify-center mb-10">
-          <div className="relative w-64 h-48">
-            {/* Stylized Brittany outline */}
-            
+        
 
 
 
@@ -69,9 +66,12 @@ const SecteursSection = () => {
 
 
 
-            
-          </div>
-        </div>
+
+
+
+
+
+        
 
         <div className="text-center">
           <Button variant="ctaOutline" size="lg" className="text-or-mat border-or-mat" asChild>
