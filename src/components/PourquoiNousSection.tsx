@@ -10,6 +10,14 @@ const PourquoiNousSection = () => {
           </div>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
+            Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+          </p>
+
+          <p className="font-dm font-semibold text-navy mb-8">
+            Je ne suis pas ingénieur IA. Je suis implémenteur IA.
+          </p>
+
+          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
             Je suis Clément, fondateur de Semaine 54.
           </p>
 
