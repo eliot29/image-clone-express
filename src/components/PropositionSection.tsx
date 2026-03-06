@@ -11,22 +11,24 @@ const PropositionSection = () => {
             Après un audit gratuit, je détermine la solution la plus pertinente :
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 mb-4">
-            <ul className="space-y-3">
-              {[
-                "automatisation via n8n",
-                "outil ou assistant IA configuré sur-mesure",
-                "formation ciblée aux LLM et aux outils à base d'IA",
-                "ou combinaison de ces solutions",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
-                  <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+            <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
+              <ul className="space-y-3">
+                {[
+                  "automatisation via n8n",
+                  "outil ou assistant IA configuré sur-mesure",
+                  "formation ciblée aux LLM et aux outils à base d'IA",
+                  "ou combinaison de ces solutions",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                    <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-            <div className="space-y-4">
+            <div className="bg-gris-perle rounded-2xl p-6 shadow-sm space-y-4">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 On avance étape par étape. Je commence par identifier les priorités : ce qui doit réellement être traité, simplifié ou assisté par l'IA.
               </p>
