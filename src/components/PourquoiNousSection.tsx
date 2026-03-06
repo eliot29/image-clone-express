@@ -9,19 +9,11 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-            Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
-          </p>
+          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">Maîtriser les outils IA demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
 
-          <p className="font-dm font-semibold text-navy mb-8">
-            Je ne suis pas ingénieur IA. Je suis implémenteur IA.
           </p>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-            Je suis Clément, fondateur de Semaine 54.
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">J'ai travaillé plusieurs années en grande distribution, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques. Mon approche vient du terrain pas d'une démonstration théorique :  depuis trois ans, je teste et documente les outils IA dans des usages professionnels concrets. 
 
           </p>
 
@@ -61,13 +53,10 @@ const PourquoiNousSection = () => {
             </div>
           </div>
 
-          <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
-            <p className="font-dm text-ardoise/80 leading-relaxed">
-              Ces expériences confirment une chose : l'IA n'est plus un gadget.
-              <br />
-              <strong className="text-navy">Bien utilisée, elle devient un outil de performance pour toutes les structures.</strong>
-            </p>
-          </div>
+          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug">
+            Ces expériences confirment une chose : l'IA n'est plus un gadget. <span className="text-or-mat">
+Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
+          </p>
         </div>
       </div>
     </section>);
