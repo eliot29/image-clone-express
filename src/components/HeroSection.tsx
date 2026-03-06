@@ -36,7 +36,8 @@ const HeroSection = () => {
           </div>
 
           {/* H1 */}
-          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6">Agence IA & automatisation pour 
+          <h1 className="font-dm font-extrabold text-4xl sm:text-5xl lg:text-6xl text-blanc-casse leading-[1.1] mb-6"> TPE et PME
+
             <span className="text-or-mat">TPE et PME</span> de Bretagne
           </h1>
 
@@ -52,8 +53,7 @@ const HeroSection = () => {
 
           {/* Pain points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-w-2xl mx-auto text-left">
-            {painPoints.map((point, i) =>
-            <div key={i} className="flex items-center gap-3 text-blanc-casse/60 font-dm text-sm">
+            {painPoints.map((point, i) => <div key={i} className="flex items-center gap-3 text-blanc-casse/60 font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
                 <span>{point.text}</span>
               </div>
