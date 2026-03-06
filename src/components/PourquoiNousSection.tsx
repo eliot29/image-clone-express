@@ -13,28 +13,28 @@ const PourquoiNousSection = () => {
             Je suis Clément, fondateur de Semaine 54.
           </p>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-            J'ai travaillé plusieurs années en grande distribution, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
+          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">J'ai travaillé plusieurs années en grande distribution, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques. Mon approche vient du terrain pas d'une démonstration théorique :  depuis trois ans, je teste et documente les outils IA dans des usages professionnels concrets. 
+
           </p>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-            Dans ces fonctions, on apprend vite une chose : le temps n'a de valeur que lorsqu'il produit un résultat concret.
+
           </p>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-            C'est exactement la logique que j'applique aujourd'hui à l'IA.
+
           </p>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-8">
-            Depuis trois ans, je teste et documente ces outils dans des usages professionnels concrets. Dorénavant j'ai la certitude profonde que l'intelligence artificielle apporte de la productivité.
+
           </p>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl mb-10 leading-snug">Mon approche vient du terrain, 
-pas d'une démonstration théorique.
-          </p>
+          
 
-          <p className="font-dm font-semibold text-navy mb-6">
-            Deux expériences concrètes ont renforcé cette conviction.
+          
+
+          <p className="font-dm font-semibold text-navy mb-6">Puis deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :
+
           </p>
 
           <div className="space-y-6 mb-10">
@@ -53,7 +53,7 @@ pas d'une démonstration théorique.
             </div>
           </div>
 
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug max-w-4xl mx-auto">
+          <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-snug">
             Ces expériences confirment une chose : l'IA n'est plus un gadget. <span className="text-or-mat">
 Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
           </p>
