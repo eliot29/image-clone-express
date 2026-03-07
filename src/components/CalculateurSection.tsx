@@ -47,7 +47,7 @@ cette tâche chaque année ?
                   onChange={(e) => setMinutes(Number(e.target.value))}
                   className="w-full accent-or-mat" />
                 
-                <div className="font-syne text-2xl font-bold text-navy mt-1">{minutes} min</div>
+                <div className="font-dm text-2xl font-bold text-navy mt-1">{minutes} min</div>
               </div>
               <div>
                 <label className="font-dm text-sm font-semibold text-ardoise mb-2 block">
@@ -61,22 +61,22 @@ cette tâche chaque année ?
                   onChange={(e) => setPerWeek(Number(e.target.value))}
                   className="w-full accent-or-mat" />
                 
-                <div className="font-syne text-2xl font-bold text-navy mt-1">{perWeek}×/sem</div>
+                <div className="font-dm text-2xl font-bold text-navy mt-1">{perWeek}×/sem</div>
               </div>
             </div>
 
             {/* Results */}
             <div className="grid grid-cols-3 gap-4 text-center">
               <div className="bg-gris-perle rounded-lg p-4">
-                <div className="font-syne text-3xl font-bold text-navy">{hoursPerYear}</div>
+                <div className="font-dm text-3xl font-bold text-navy">{hoursPerYear}</div>
                 <div className="font-dm text-xs text-gris-bleu mt-1">heures perdues/an</div>
               </div>
               <div className="bg-gris-perle rounded-lg p-4">
-                <div className="font-syne text-3xl font-bold text-or-mat">{weeksEquiv}</div>
+                <div className="font-dm text-3xl font-bold text-or-mat">{weeksEquiv}</div>
                 <div className="font-dm text-xs text-gris-bleu mt-1">semaines de travail</div>
               </div>
               <div className="bg-navy rounded-lg p-4">
-                <div className="font-syne text-3xl font-bold text-or-mat">{gainHours}h</div>
+                <div className="font-dm text-3xl font-bold text-or-mat">{gainHours}h</div>
                 <div className="font-dm text-xs text-blanc-casse/60 mt-1">gain si automatisé</div>
               </div>
             </div>

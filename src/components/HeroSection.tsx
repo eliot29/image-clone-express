@@ -36,7 +36,7 @@ const HeroSection = () => {
           </p>
 
           {/* Punchline */}
-          <p className="font-syne font-bold text-navy text-xl sm:text-2xl mb-12 max-w-4xl mx-auto leading-snug">
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl mb-12 max-w-4xl mx-auto leading-snug">
             L'IA ne remplace pas votre expertise. Elle vous libère du temps pour vous concentrer sur ce qui crée réellement de la valeur.
           </p>
 
@@ -61,11 +61,11 @@ const HeroSection = () => {
 
           {/* Stat highlight - punchline style */}
           <div className="bg-navy/5 border border-navy/10 rounded-lg p-8 sm:p-10 max-w-2xl mx-auto">
-            <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide">
-              <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
-            </p>
-            <p className="font-syne font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide mt-2">
-              Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
+             <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide">
+               <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
+             </p>
+             <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide mt-2">
+               Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
             </p>
           </div>
         </div>

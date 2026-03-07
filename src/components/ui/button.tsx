@@ -15,9 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-accent text-accent-foreground font-syne font-semibold rounded-[4px] shadow-cta hover:-translate-y-0.5 hover:shadow-lg",
-        ctaOutline: "border-2 border-accent text-accent bg-transparent font-syne font-semibold rounded-[4px] hover:-translate-y-0.5 hover:bg-accent/10",
-        ctaNav: "bg-accent text-accent-foreground font-syne font-semibold rounded-[4px] text-sm",
+         cta: "bg-accent text-accent-foreground font-dm font-semibold rounded-[4px] shadow-cta hover:-translate-y-0.5 hover:shadow-lg",
+         ctaOutline: "border-2 border-accent text-accent bg-transparent font-dm font-semibold rounded-[4px] hover:-translate-y-0.5 hover:bg-accent/10",
+         ctaNav: "bg-accent text-accent-foreground font-dm font-semibold rounded-[4px] text-sm",
       },
       size: {
         default: "h-10 px-4 py-2 text-sm",
