@@ -6,7 +6,7 @@ const ContactSection = () => {
     <section id="contact" className="bg-navy py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-8 text-center">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
             Audit stratégique — <span className="text-or-mat">Gratuit</span>
           </h2>
 

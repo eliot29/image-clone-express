@@ -40,7 +40,7 @@ const MethodeSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
+            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
               La méthode Semaine 54
             </h2>
           </div>
