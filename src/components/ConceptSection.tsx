@@ -5,7 +5,8 @@ const ConceptSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-6">
             L'IA peut être une solution.{" "}
-            <span className="text-or-mat">Mais sous certaines conditions.</span>
+            <span className="text-or-mat">
+Mais sous certaines conditions.</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
@@ -38,7 +39,6 @@ const ConceptSection = () => {
 
       </div>
     </section>);
-
 };
 
 export default ConceptSection;
