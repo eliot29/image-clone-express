@@ -36,7 +36,7 @@ const HeroSection = () => {
           </p>
 
           {/* Punchline */}
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-8 max-w-5xl mx-auto leading-snug">
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl mb-8 max-w-6xl mx-auto leading-snug">
             L'IA ne remplace pas votre expertise. Elle vous libère du temps pour vous concentrer sur ce qui crée réellement de la valeur.
           </p>
 
@@ -60,7 +60,7 @@ const HeroSection = () => {
           </p>
 
           {/* Stat highlight */}
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-6xl mx-auto text-center">
             <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
             <br />
             Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
