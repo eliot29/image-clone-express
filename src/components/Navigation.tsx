@@ -35,7 +35,7 @@ const Navigation = () => {
           <img
             src="/logo-semaine54.png?v=4"
             alt="Semaine 54"
-            className="h-9 w-auto brightness-0 invert"
+            className="h-11 w-auto brightness-0 invert"
           />
         </a>
 
