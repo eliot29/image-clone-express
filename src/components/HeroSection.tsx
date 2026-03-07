@@ -37,7 +37,9 @@ const HeroSection = () => {
 
           {/* Punchline */}
           <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-8 max-w-full mx-auto leading-snug">
-            L'IA ne remplace pas votre expertise. Elle vous libère du temps pour vous concentrer sur ce qui crée réellement de la valeur.
+            L'IA ne remplace pas votre expertise.
+            <br />
+            Elle vous libère du temps pour vous concentrer sur ce qui crée réellement de la valeur.
           </p>
 
           {/* Intro text */}
