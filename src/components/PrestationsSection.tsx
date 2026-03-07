@@ -38,7 +38,7 @@ const prestations = [
 
 const PrestationsSection = () => {
   return (
-    <section id="prestations" className="bg-blanc-casse py-14">
+    <section id="prestations" className="bg-blanc-casse py-10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-4">
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
@@ -46,7 +46,7 @@ const PrestationsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
           {prestations.map((p, i) =>
           <div
             key={i}

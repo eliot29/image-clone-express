@@ -14,16 +14,16 @@ const sectors = [
 
 const SecteursSection = () => {
   return (
-    <section id="secteurs" className="bg-navy py-14">
+    <section id="secteurs" className="bg-navy py-10">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
             Votre activité est-elle concernée ?
           </h2>
         </div>
 
         {/* Horizontal scroll on mobile, grid on desktop */}
-        <div className="relative overflow-hidden mb-12">
+        <div className="relative overflow-hidden mb-8">
           <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none sm:hidden" />
           <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none sm:hidden" />
           

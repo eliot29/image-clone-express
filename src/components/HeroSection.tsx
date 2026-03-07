@@ -36,7 +36,7 @@ const HeroSection = () => {
           </p>
 
           {/* Punchline */}
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-12 max-w-5xl mx-auto leading-snug">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-8 max-w-5xl mx-auto leading-snug">
             L'IA ne remplace pas votre expertise. Elle vous libère du temps pour vous concentrer sur ce qui crée réellement de la valeur.
           </p>
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
           </p>
 
           {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-w-2xl mx-auto text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
             {painPoints.map((point, i) => (
               <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
@@ -55,7 +55,7 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <p className="font-dm text-ardoise text-sm mb-10 italic">
+          <p className="font-dm text-ardoise text-sm mb-6 italic">
             Ces tâches ne créent pas de valeur. Elles consomment votre temps.
           </p>
 

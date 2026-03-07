@@ -36,7 +36,7 @@ const steps = [
 
 const MethodeSection = () => {
   return (
-    <section id="methode" className="bg-blanc-casse py-14">
+    <section id="methode" className="bg-blanc-casse py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-6">
@@ -45,11 +45,11 @@ const MethodeSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-12 text-center leading-snug max-w-5xl mx-auto">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-8 text-center leading-snug max-w-5xl mx-auto">
 
           </p>
 
-          <p className="font-dm text-ardoise/70 text-center mb-12">
+          <p className="font-dm text-ardoise/70 text-center mb-8">
             Un accompagnement structuré, étape par étape.
           </p>
 
@@ -88,7 +88,7 @@ const MethodeSection = () => {
             )}
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center mt-12">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center mt-8">
             Je ne suis pas ingénieur IA. <span className="text-or-mat">Je suis implémenteur IA.</span>
           </p>
         </div>

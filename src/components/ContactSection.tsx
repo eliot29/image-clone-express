@@ -3,7 +3,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-navy py-14">
+    <section id="contact" className="bg-navy py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-6">
@@ -31,7 +31,7 @@ const ContactSection = () => {
             Sans engagement.
           </p>
 
-          <Button variant="cta" size="lg" className="mb-10" asChild>
+          <Button variant="cta" size="lg" className="mb-6" asChild>
             <a href="#contact">
               Réserver mon audit
               <ArrowRight size={18} />
