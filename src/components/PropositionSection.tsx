@@ -42,8 +42,8 @@ const PropositionSection = () => {
             Objectif : une solution utile, progressive et adaptée à votre réalité.
           </p>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. 
-Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">
+
             <br />
             
           </p>
