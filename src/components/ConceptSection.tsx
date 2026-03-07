@@ -32,8 +32,8 @@ Mais sous certaines conditions.</span>
             </div>
           </div>
 
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-5xl mx-auto leading-snug">
-            L'IA devient un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
+          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-5xl mx-auto leading-snug">L'IA peut devenir un avantage concurrentiel 
+lorsqu'elle est adaptée à votre entreprise.
           </p>
         </div>
 
