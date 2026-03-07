@@ -40,7 +40,10 @@ const HeroSection = () => {
             L'IA ne remplace pas votre expertise. Elle vous libère du temps pour vous concentrer sur ce qui crée réellement de la valeur.
           </p>
 
+          {/* Intro text */}
+          
 
+          
 
           {/* Pain points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
