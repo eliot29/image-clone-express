@@ -59,15 +59,12 @@ const HeroSection = () => {
             Ces tâches ne créent pas de valeur. Elles consomment votre temps.
           </p>
 
-          {/* Stat highlight - punchline style */}
-          <div className="bg-navy/5 border border-navy/10 rounded-lg p-8 sm:p-10 max-w-2xl mx-auto">
-             <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide">
-               <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
-             </p>
-             <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-loose tracking-wide mt-2">
-               Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
-            </p>
-          </div>
+          {/* Stat highlight */}
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-4xl mx-auto text-center">
+            <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
+            <br />
+            Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
+          </p>
         </div>
       </div>
     </section>
