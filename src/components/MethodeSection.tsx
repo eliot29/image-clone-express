@@ -45,7 +45,7 @@ const MethodeSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl mb-8 text-center leading-snug max-w-full mx-auto">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-8 text-center leading-snug max-w-full mx-auto">
 
           </p>
 

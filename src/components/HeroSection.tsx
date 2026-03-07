@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
 
           {/* Punchline */}
-          <h1 className="font-dm font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-6 max-w-3xl mx-auto leading-tight tracking-tight">
+          <h1 className="font-dm font-bold text-lg sm:text-xl text-navy mb-6 max-w-full mx-auto leading-snug tracking-tight">
             Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
           </h1>
 
@@ -62,7 +62,7 @@ const HeroSection = () => {
           </p>
 
           {/* Stat highlight */}
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
             <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
             <br />
             Soit près de <span className="text-or-mat">3 semaines</span> de travail à récupérer.

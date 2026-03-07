@@ -23,7 +23,7 @@ const OutilsSection = () => {
             ))}
           </div>
         </div>
-        <p className="font-dm font-bold text-blanc-casse text-xl sm:text-2xl text-center max-w-full mx-auto leading-snug">
+        <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl text-center max-w-full mx-auto leading-snug">
         </p>
       </div>
     </section>
