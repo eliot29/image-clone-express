@@ -42,15 +42,15 @@ const PropositionSection = () => {
             Objectif : une solution utile, progressive et adaptée à votre réalité.
           </p>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">
-            Maîtriser et tester les outils IA demande du temps.
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">Maîtriser et tester les outils IA demande du temps.
+Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+
             <br />
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
         </div>
       </div>
     </section>);
-
 };
 
 export default PropositionSection;
