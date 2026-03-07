@@ -63,7 +63,7 @@ const HeroSection = () => {
           <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center">
             <span className="text-or-mat">30 minutes</span> perdues par jour = <span className="text-or-mat">120 heures</span> par an.
             <br />
-            Soit près de <span className="text-or-mat">3 semaines</span> de travail perdues.
+            Soit près de <span className="text-or-mat">3 semaines</span> de travail à récupérer.
           </p>
         </div>
       </div>
