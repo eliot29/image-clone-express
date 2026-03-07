@@ -70,9 +70,9 @@ const PrestationsSection = () => {
           )}
         </div>
 
-        <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
-          Je vous aide à gagner votre <span className="text-or-mat">Semaine 54</span>.
-        </p>
+        
+
+        
       </div>
     </section>);
 };
