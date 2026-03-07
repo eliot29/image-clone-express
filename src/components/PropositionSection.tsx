@@ -44,11 +44,13 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-6">
-            {'>'} Un seul interlocuteur, de l'audit jusqu'à la mise en service
-            <br />
-            {'>'} Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
-          </p>
+          <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
+            <p className="font-dm text-ardoise/80 leading-relaxed text-center">
+              {'>'} Un seul interlocuteur, de l'audit jusqu'à la mise en service
+              <br />
+              {'>'} Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
+            </p>
+          </div>
 
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
             Maîtriser et tester les outils IA demande du temps.
