@@ -54,12 +54,12 @@ const PourquoiNousSection = () => {
           </div>
 
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl">
-            Ces expériences confirment une chose : l'IA n'est plus un gadget. <span className="text-or-mat">
+
+            <span className="text-or-mat">
 Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
           </p>
         </div>
       </div>
-    </section>);
-};
+    </section>);};
 
 export default PourquoiNousSection;
