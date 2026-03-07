@@ -28,13 +28,19 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            <div className="bg-gris-perle rounded-2xl p-6 shadow-sm space-y-4">
-              <p className="font-dm text-ardoise/80 leading-relaxed">
-                On avance étape par étape. Je commence par identifier les priorités : ce qui doit réellement être traité, simplifié ou assisté par l'IA.
-              </p>
-              <p className="font-dm text-ardoise/80 leading-relaxed">
-                Je mets en place ou je forme, l'entreprise teste, puis j'ajuste selon les retours terrain.
-              </p>
+            <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
+              <ul className="space-y-3">
+                {[
+                "Identification des priorités",
+                "Mise en place ou formation ciblée",
+                "Test en conditions réelles",
+                "Ajustements selon les retours terrain"].map((item, i) =>
+                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                    <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
+                    {item}
+                  </li>
+                )}
+              </ul>
             </div>
           </div>
 
