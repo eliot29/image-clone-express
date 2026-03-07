@@ -14,7 +14,7 @@ const painPoints = [
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 pt-28 pb-16 lg:pt-32 lg:pb-14 relative z-10">
+      <div className="container mx-auto px-6 pt-24 pb-10 lg:pt-28 lg:pb-10 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Tagline badges */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
