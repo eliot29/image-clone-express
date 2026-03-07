@@ -36,8 +36,8 @@ const PourquoiNousSection = () => {
             </div>
           </div>
 
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full">
-            Mon approche vient du terrain, <span className="text-or-mat">pas d'une démonstration théorique.</span>
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full">Mon approche vient du terrain
+Pas d'une démonstration théorique.<span className="text-or-mat">pas d'une démonstration théorique.</span>
           </p>
         </div>
       </div>
