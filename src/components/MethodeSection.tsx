@@ -88,9 +88,9 @@ const MethodeSection = () => {
             )}
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-8">Le marché a des centaines d'outils. Mon rôle de partenaire : faire le filtre.
-            <span className="text-or-mat"></span>
-          </p>
+          
+
+          
         </div>
       </div>
     </section>);
