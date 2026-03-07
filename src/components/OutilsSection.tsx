@@ -2,8 +2,8 @@ const OutilsSection = () => {
   return (
     <section className="bg-navy py-6">
       <div className="container mx-auto px-6">
-        <p className="font-dm text-xs text-blanc-casse/40 mb-6 uppercase tracking-wider text-center">
-          Les outils que j'utilise — ceux qui correspondent à votre situation
+        <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl mb-6 text-center max-w-full mx-auto leading-snug">
+          Le marché a des centaines d'outils. <span className="text-or-mat">Mon rôle de partenaire : faire le filtre.</span>
         </p>
         <div className="relative overflow-hidden mb-6">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
@@ -23,9 +23,6 @@ const OutilsSection = () => {
             ))}
           </div>
         </div>
-        <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl text-center max-w-full mx-auto leading-snug">
-          Le marché a des centaines d'outils. <span className="text-or-mat">Mon rôle de partenaire : faire le filtre.</span>
-        </p>
       </div>
     </section>
   );
