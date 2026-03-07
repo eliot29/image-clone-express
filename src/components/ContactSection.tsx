@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -41,11 +41,6 @@ const ContactSection = () => {
               </Button>
             </div>
           </div>
-
-          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl text-center mt-6 leading-snug max-w-full mx-auto">Une semaine compte 52 semaines. La Semaine 54 est celle que vous récupérez
-
-            <span className="text-or-mat"></span>
-          </p>
 
         </div>
       </div>
