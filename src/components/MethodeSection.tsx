@@ -63,7 +63,7 @@ const MethodeSection = () => {
                 </div>
 
                 {/* Content */}
-                <div className="pb-10">
+                <div className={`${i < 3 ? 'pb-10' : 'pb-2'}`}>
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.items &&
@@ -84,9 +84,6 @@ const MethodeSection = () => {
             )}
           </div>
 
-          
-
-          
         </div>
       </div>
     </section>);
