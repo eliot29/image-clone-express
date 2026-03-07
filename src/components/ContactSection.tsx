@@ -33,14 +33,18 @@ const ContactSection = () => {
 
             {/* Right: CTA */}
             <div className="flex-shrink-0">
-              <Button variant="cta" size="lg" asChild>
+              <Button variant="cta" size="lg" asChild className="text-lg px-10 py-6">
                 <a href="#contact">
                   Réserver mon audit
-                  <ArrowRight size={18} />
+                  <ArrowRight size={20} />
                 </a>
               </Button>
             </div>
           </div>
+
+          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl text-center mt-6 leading-snug max-w-full mx-auto">
+            Gagnez votre <span className="text-or-mat">Semaine 54</span>
+          </p>
 
         </div>
       </div>
