@@ -38,8 +38,10 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-6">> Un seul interlocuteur, de l'audit jusqu'à la mise en service
-> Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
+          <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-6">
+            {'>'} Un seul interlocuteur, de l'audit jusqu'à la mise en service
+            <br />
+            {'>'} Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
           </p>
 
           <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center">
