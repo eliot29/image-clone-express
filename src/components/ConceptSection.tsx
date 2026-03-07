@@ -10,8 +10,8 @@ Mais sous certaines conditions.</span>
           </h2>
 
           <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 max-w-3xl mx-auto text-left">
-            <p className="font-dm text-blanc-casse/70 leading-relaxed mb-4">
-              Les outils d'IA se multiplient. Sans accompagnement, beaucoup d'entreprises perdent du temps à les tester avec des solutions trop génériques et peu adaptées au terrain.
+            <p className="font-dm text-blanc-casse/70 leading-relaxed mb-4">Les outils d'IA se multiplient. Sans accompagnement, beaucoup d'entreprises perdent du temps à les tester avec des solutions trop génériques et éloignées du terrain.
+
             </p>
             <p className="font-dm text-blanc-casse/80 leading-relaxed">
               Le problème n'est pas l'IA.
