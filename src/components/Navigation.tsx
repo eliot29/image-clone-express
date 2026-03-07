@@ -71,16 +71,18 @@ const Navigation = () => {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden mt-3 pb-3 flex flex-col gap-2 border-t border-blanc-casse/10 pt-3">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="px-3 py-2 text-sm font-dm text-blanc-casse/80 hover:text-or-mat transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks
+            .filter((link) => link.label !== "Audit")
+            .map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="px-3 py-2 text-sm font-dm text-blanc-casse/80 hover:text-or-mat transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           <Button variant="cta" size="sm" className="mt-2" asChild>
             <a href="#contact" onClick={() => setMobileOpen(false)}>Audit gratuit</a>
           </Button>
