@@ -21,6 +21,7 @@ const ContactSection = () => {
                   "comprendre votre activité",
                   "identifier les tâches chronophages",
                   "voir si une solution pertinente existe",
+                  "sans engagement",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 font-dm text-sm text-blanc-casse/60">
                     <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-1.5 shrink-0" />
@@ -41,9 +42,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <p className="font-dm text-xs text-blanc-casse/40 mt-6 text-center">
-            Sans engagement.
-          </p>
         </div>
       </div>
     </section>
