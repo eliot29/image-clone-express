@@ -56,7 +56,6 @@ const CasConcretsSection = () => {
             Cinq situations concrètes. Cinq gains mesurables.
           </h2>
           <p className="font-dm text-blanc-casse/60 max-w-2xl mx-auto">
-            Bien utilisée, l'IA est un avantage concurrentiel réel. Mal calibrée, elle fait perdre du temps. La différence tient à la façon dont elle est mise en place.
           </p>
         </div>
 
