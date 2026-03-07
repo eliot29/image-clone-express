@@ -45,7 +45,7 @@ const MethodeSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl mb-8 text-center leading-snug max-w-6xl mx-auto">
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl mb-8 text-center leading-snug max-w-full mx-auto">
 
           </p>
 
@@ -88,7 +88,7 @@ const MethodeSection = () => {
             )}
           </div>
 
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-6xl mx-auto text-center mt-8">
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center mt-8">
             Je ne suis pas ingénieur IA. <span className="text-or-mat">Je suis implémenteur IA.</span>
           </p>
         </div>
