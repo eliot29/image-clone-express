@@ -24,8 +24,6 @@ const OutilsSection = () => {
           </div>
         </div>
         <p className="font-dm font-bold text-blanc-casse text-xl sm:text-2xl text-center max-w-full mx-auto leading-snug">
-          Le marché a des centaines d'outils.{" "}
-          <span className="text-or-mat">Mon rôle de partenaire : faire le filtre.</span>
         </p>
       </div>
     </section>
