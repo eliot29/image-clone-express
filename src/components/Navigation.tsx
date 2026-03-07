@@ -30,7 +30,7 @@ const Navigation = () => {
           : "bg-navy/70 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center gap-1">
+      <div className="flex items-center w-full">
         <a href="#accueil" className="mr-4 flex-shrink-0">
           <img
             src="/logo-semaine54.png?v=4"
@@ -40,17 +40,19 @@ const Navigation = () => {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="px-3 py-1.5 text-sm font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
-            >
-              {link.label}
-            </a>
-          ))}
-          <Button variant="ctaNav" size="sm" className="ml-1" asChild>
+        <div className="hidden md:flex items-center justify-between flex-1">
+          <div className="flex items-center justify-around flex-1">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="px-2 py-1.5 text-base font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <Button variant="ctaNav" size="sm" className="ml-3 flex-shrink-0" asChild>
             <a href="#contact">Audit gratuit</a>
           </Button>
         </div>
