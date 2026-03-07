@@ -9,27 +9,15 @@ const ConceptSection = () => {
 Mais sous certaines conditions.</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
-            <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10">
-              <p className="font-dm text-blanc-casse/70 leading-relaxed mb-4">
-                Aujourd'hui, les outils d'intelligence artificielle se multiplient.
-                Pourtant, beaucoup d'entreprises se retrouvent seules face à ces technologies.
-              </p>
-              <p className="font-dm text-blanc-casse/70 leading-relaxed">
-                Faute de recul, elles finissent souvent par perdre du temps plutôt que d'en gagner.
-              </p>
-            </div>
-
-            <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10">
-              <p className="font-dm text-blanc-casse/70 leading-relaxed mb-4">
-                La plupart des solutions et formations proposées sont génériques et rarement construites à partir de la réalité du terrain.
-              </p>
-              <p className="font-dm text-blanc-casse/80 leading-relaxed">
-                Le problème n'est pas l'IA.
-                <br />
-                Le problème est le <strong className="text-blanc-casse">manque d'accompagnement adapté aux PME</strong>.
-              </p>
-            </div>
+          <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 max-w-3xl mx-auto text-left">
+            <p className="font-dm text-blanc-casse/70 leading-relaxed mb-4">
+              Les outils d'IA se multiplient. Sans accompagnement, beaucoup d'entreprises perdent du temps à les tester avec des solutions trop génériques et peu adaptées au terrain.
+            </p>
+            <p className="font-dm text-blanc-casse/80 leading-relaxed">
+              Le problème n'est pas l'IA.
+              <br />
+              Le problème est le <strong className="text-blanc-casse">manque d'accompagnement adapté aux PME</strong>.
+            </p>
           </div>
 
           <p className="font-dm font-bold text-or-mat text-xl sm:text-2xl mt-6 max-w-full mx-auto leading-snug text-center">L'IA peut devenir un avantage concurrentiel 
