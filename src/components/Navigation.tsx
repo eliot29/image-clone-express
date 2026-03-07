@@ -4,12 +4,11 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
-  { label: "Le concept", href: "#concept" },
+  { label: "Solutions", href: "#prestations" },
   { label: "Cas concrets", href: "#cas" },
-  { label: "Prestations", href: "#prestations" },
+  { label: "Pourquoi S54 ?", href: "#approche" },
   { label: "Méthode", href: "#methode" },
-  { label: "Pourquoi nous", href: "#approche" },
-  { label: "Secteurs", href: "#secteurs" },
+  { label: "Audit", href: "#contact" },
   { label: "Contact", href: "#contact" },
 ];
 
