@@ -14,7 +14,7 @@ const OutilsSection = () => {
                 {["n8n", "Claude", "ChatGPT", "Gemini", "Notion AI", "Noota", "Copilot", "Perplexity"].map((tool) => (
                   <span
                     key={`${setIdx}-${tool}`}
-                    className="font-dm font-bold text-lg text-blanc-casse/20 hover:text-blanc-casse/50 transition-colors whitespace-nowrap"
+                    className="font-dm font-bold text-lg text-blanc-casse/60 hover:text-blanc-casse/80 transition-colors whitespace-nowrap"
                   >
                     {tool}
                   </span>
