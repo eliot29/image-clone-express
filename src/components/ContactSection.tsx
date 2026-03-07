@@ -42,9 +42,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <p className="font-dm text-xs text-blanc-casse/40 mt-6 text-center">
-            Sans engagement.
-          </p>
         </div>
       </div>
     </section>
