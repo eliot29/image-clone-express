@@ -9,8 +9,7 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">Maîtriser les outils IA demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
-
+          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
           </p>
 
           <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
