@@ -7,8 +7,8 @@ const PropositionSection = () => {
             Ce que je propose concrètement
           </h2>
 
-          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">
-            Après un audit gratuit, je détermine la solution la plus pertinente :
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, la solution la plus pertinente est définie à partir de votre réalité terrain :
+
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
@@ -69,8 +69,8 @@ const PropositionSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PropositionSection;
