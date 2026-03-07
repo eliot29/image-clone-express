@@ -10,7 +10,6 @@ const prestations = [
   "Connexion à vos outils existants",
   "Automatisation des tâches répétitives",
   "Logique simple, robuste et évolutive"]
-
 },
 {
   icon: GraduationCap,
@@ -21,7 +20,6 @@ const prestations = [
   "Maîtrise du prompt",
   "Formation adaptée à votre niveau",
   "Mise en pratique sur vos cas réels"]
-
 },
 {
   icon: Filter,
@@ -32,7 +30,6 @@ const prestations = [
   "Filtrer les solutions pertinentes",
   "Éviter les abonnements inutiles",
   "Choisir ce qui correspond vraiment à votre activité"]
-
 }];
 
 
@@ -73,10 +70,11 @@ const PrestationsSection = () => {
           )}
         </div>
 
-        <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">Je vous aide à gagner votre Semaine 54
-          <span className="text-or-mat">Semaine 54</span>.
+        <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
+          Je vous aide à gagner votre <span className="text-or-mat">Semaine 54</span>.
         </p>
       </div>
-    </section>);};
+    </section>);
+};
 
 export default PrestationsSection;
