@@ -1,15 +1,15 @@
 import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image } from "lucide-react";
 
 const painPoints = [
-  { icon: FileText, text: "Devis rédigés à la main" },
-  { icon: Search, text: "Recherches d'informations répétitives" },
-  { icon: Mail, text: "Relances de mails chronophages" },
-  { icon: Share2, text: "Publications irrégulières sur les réseaux" },
-  { icon: FolderOpen, text: "Administratif qui s'accumule" },
-  { icon: Clock, text: "Comparaisons fournisseurs fastidieuses" },
-  { icon: BarChart3, text: "Longues analyses de fichiers Excel" },
-  { icon: Image, text: "Productions laborieuses de supports visuels" },
-];
+{ icon: FileText, text: "Devis rédigés à la main" },
+{ icon: Search, text: "Recherches d'informations répétitives" },
+{ icon: Mail, text: "Relances de mails chronophages" },
+{ icon: Share2, text: "Publications irrégulières sur les réseaux" },
+{ icon: FolderOpen, text: "Administratif qui s'accumule" },
+{ icon: Clock, text: "Comparaisons fournisseurs fastidieuses" },
+{ icon: BarChart3, text: "Longues analyses de fichiers Excel" },
+{ icon: Image, text: "Productions laborieuses de supports visuels" }];
+
 
 const HeroSection = () => {
   return (
@@ -41,18 +41,18 @@ const HeroSection = () => {
           </p>
 
           {/* Intro text */}
-          <p className="font-dm text-ardoise/70 text-base mb-6 max-w-2xl mx-auto">
-            Dans le quotidien de nombreuses entreprises de Bretagne, beaucoup de tâches chronophages, pénibles, mal maîtrisées, ou redondantes :
+          <p className="font-dm text-ardoise/70 text-base mb-6 max-w-2xl mx-auto">Dans le quotidien de nombreuses entreprises de Bretagne :
+
           </p>
 
           {/* Pain points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
-            {painPoints.map((point, i) => (
-              <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
+            {painPoints.map((point, i) =>
+            <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
                 <span>{point.text}</span>
               </div>
-            ))}
+            )}
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-6 italic">
@@ -67,8 +67,8 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;

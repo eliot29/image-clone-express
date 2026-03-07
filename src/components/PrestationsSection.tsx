@@ -73,7 +73,7 @@ const PrestationsSection = () => {
           )}
         </div>
 
-        <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center">Je vous aide à gagner votre Semaine 54.
+        <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center">Je vous aide à gagner votre Semaine 54
           <span className="text-or-mat">Semaine 54</span>.
         </p>
       </div>
