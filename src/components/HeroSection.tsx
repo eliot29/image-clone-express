@@ -16,6 +16,15 @@ const HeroSection = () => {
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
       <div className="container mx-auto px-6 pt-24 pb-6 lg:pt-28 lg:pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img
+              src="/logo-hero.svg"
+              alt="Semaine 54"
+              className="h-16 sm:h-20 lg:h-24 w-auto"
+            />
+          </div>
+
           {/* Tagline badges */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
