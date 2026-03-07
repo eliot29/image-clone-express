@@ -44,7 +44,7 @@ const PropositionSection = () => {
             {'>'} Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
           </p>
 
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
             Maîtriser et tester les outils IA demande du temps.
             <br />
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
