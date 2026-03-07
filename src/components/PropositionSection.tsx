@@ -54,9 +54,9 @@ const PropositionSection = () => {
                   {item}
                 </li>
               )}
-              <li className="flex items-start gap-3 font-dm text-ardoise/70 font-bold">Objectif : vous libérer de vos tâches chronophages, répétitives, pénibles ou mal maîtrisées
+              <li className="flex items-start gap-3 font-dm text-ardoise/70 font-bold">
                 <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
-                Objectif : déléguer vos tâches chronophages, répétitives, pénibles ou mal maîtrisées
+                Objectif : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées, pour vous concentrer sur ce qui crée réellement de la valeur.
               </li>
             </ul>
           </div>
