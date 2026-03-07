@@ -73,12 +73,12 @@ const PrestationsSection = () => {
           )}
         </div>
 
-        <p className="font-dm font-bold text-navy text-lg sm:text-xl text-center max-w-5xl mx-auto leading-snug">
-          Je ne vends pas de l'IA. <span className="text-or-mat">
+        <p className="font-dm font-bold text-navy text-lg sm:text-xl text-center max-w-5xl mx-auto leading-snug">Je ne suis pas ingénieur IA. Je suis implémenteur IA.
+
+Je ne vends pas de l'IA. Je vous aide à gagner votre Semaine 54.<span className="text-or-mat">
 Je vous aide à gagner votre Semaine 54.</span>
         </p>
       </div>
-    </section>);
-};
+    </section>);};
 
 export default PrestationsSection;

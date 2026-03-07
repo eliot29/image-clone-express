@@ -15,16 +15,16 @@ const PropositionSection = () => {
             <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
               <ul className="space-y-3">
                 {[
-                  "automatisation via n8n",
-                  "outil ou assistant IA configuré sur-mesure",
-                  "formation ciblée aux LLM et aux outils à base d'IA",
-                  "ou combinaison de ces solutions",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                "automatisation via n8n",
+                "outil ou assistant IA configuré sur-mesure",
+                "formation ciblée aux LLM et aux outils à base d'IA",
+                "ou combinaison de ces solutions"].
+                map((item, i) =>
+                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
                     <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
                     {item}
                   </li>
-                ))}
+                )}
               </ul>
             </div>
 
@@ -42,15 +42,15 @@ const PropositionSection = () => {
             Objectif : une solution utile, progressive et adaptée à votre réalité.
           </p>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">
-            Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">Les outils IA sont devenus plus accessibles. Mais les maîtriser demande du temps. 
+Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
             <br />
-            <span className="text-or-mat">Je ne suis pas ingénieur IA. Je suis implémenteur IA.</span>
+            
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PropositionSection;
