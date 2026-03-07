@@ -88,8 +88,8 @@ const MethodeSection = () => {
             )}
           </div>
 
-          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center mt-8">
-            Je ne suis pas ingénieur IA. <span className="text-or-mat">Je suis implémenteur IA.</span>
+          <p className="font-dm font-bold text-navy text-xl sm:text-2xl leading-snug max-w-full mx-auto text-center mt-8">Le marché a des centaines d'outils. Mon rôle de partenaire : faire le filtre.
+            <span className="text-or-mat"></span>
           </p>
         </div>
       </div>
