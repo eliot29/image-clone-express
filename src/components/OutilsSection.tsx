@@ -14,7 +14,7 @@ const OutilsSection = () => {
                 {["n8n", "Claude", "ChatGPT", "Gemini", "Notion AI", "Noota", "Copilot", "Perplexity"].map((tool) => (
                   <span
                     key={`${setIdx}-${tool}`}
-                    className="font-syne font-bold text-lg text-blanc-casse/20 hover:text-blanc-casse/50 transition-colors whitespace-nowrap"
+                    className="font-dm font-bold text-lg text-blanc-casse/20 hover:text-blanc-casse/50 transition-colors whitespace-nowrap"
                   >
                     {tool}
                   </span>
@@ -23,7 +23,7 @@ const OutilsSection = () => {
             ))}
           </div>
         </div>
-        <p className="font-syne font-bold text-blanc-casse text-xl sm:text-2xl text-center max-w-4xl mx-auto leading-snug">
+        <p className="font-dm font-bold text-blanc-casse text-xl sm:text-2xl text-center max-w-4xl mx-auto leading-snug">
           Le marché a des centaines d'outils.{" "}
           <span className="text-or-mat">Mon rôle de partenaire : faire le filtre.</span>
         </p>
