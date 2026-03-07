@@ -8,7 +8,7 @@ const OutilsSection = () => {
         <div className="relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
-          <div className="flex gap-12 animate-marquee hover:[animation-play-state:paused]">
+          <div className="flex gap-12 animate-marquee md:animate-marquee-slow hover:[animation-play-state:paused]">
             {[...Array(2)].map((_, setIdx) => (
               <div key={setIdx} className="flex gap-12 shrink-0 items-center">
                 {["Claude", "ChatGPT", "Gemini", "Notion AI", "Noota", "Copilot", "Perplexity"].map((tool) => (
