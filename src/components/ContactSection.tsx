@@ -18,16 +18,16 @@ const ContactSection = () => {
               </p>
               <ul className="space-y-2">
                 {[
-                  "comprendre votre activité",
-                  "identifier les tâches chronophages",
-                  "voir si une solution pertinente existe",
-                  "sans engagement",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 font-dm text-sm text-blanc-casse/60">
+                "comprendre votre activité",
+                "identifier les tâches chronophages",
+                "voir si une solution pertinente existe",
+                "sans engagement"].
+                map((item, i) =>
+                <li key={i} className="flex items-start gap-3 font-dm text-sm text-blanc-casse/60">
                     <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-1.5 shrink-0" />
                     {item}
                   </li>
-                ))}
+                )}
               </ul>
             </div>
 
@@ -42,14 +42,14 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl text-center mt-6 leading-snug max-w-full mx-auto">
-            Gagnez votre <span className="text-or-mat">Semaine 54</span>
+          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl text-center mt-6 leading-snug max-w-full mx-auto">Une semaine compte 52 semaines.
+La Semaine 54 est celle que vous récupérez
+            <span className="text-or-mat">Semaine 54</span>
           </p>
 
         </div>
       </div>
-    </section>
-  );
+    </section>);
 };
 
 export default ContactSection;
