@@ -45,11 +45,16 @@ const PropositionSection = () => {
           </div>
 
           <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
-            <p className="font-dm text-ardoise/80 leading-relaxed text-center">
-              {'>'} Un seul interlocuteur, de l'audit jusqu'à la mise en service
-              <br />
-              {'>'} Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
-            </p>
+            <ul className="space-y-3">
+              {[
+              "Un seul interlocuteur, de l'audit jusqu'à la mise en service",
+              "Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi"].map((item, i) =>
+              <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                  <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
+                  {item}
+                </li>
+              )}
+            </ul>
           </div>
 
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
