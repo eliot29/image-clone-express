@@ -41,15 +41,17 @@ const Navigation = () => {
         {/* Desktop links */}
         <div className="hidden md:flex items-center justify-between flex-1">
           <div className="flex items-center justify-around flex-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="px-2 py-1.5 text-base font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks
+              .filter((link) => link.label !== "Audit")
+              .map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="px-2 py-1.5 text-base font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
+                >
+                  {link.label}
+                </a>
+              ))}
           </div>
           <Button variant="ctaNav" size="sm" className="ml-3 flex-shrink-0" asChild>
             <a href="#contact">Audit gratuit</a>
