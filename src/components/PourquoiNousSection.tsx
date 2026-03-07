@@ -54,9 +54,7 @@ const PourquoiNousSection = () => {
           </div>
 
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl">
-
-            <span className="text-or-mat">
-Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
+            <span className="text-or-mat">Bien utilisée, elle devient un outil de performance pour toutes les structures.</span>
           </p>
         </div>
       </div>
