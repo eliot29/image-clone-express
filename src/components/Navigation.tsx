@@ -43,18 +43,17 @@ const Navigation = () => {
         <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
               className="px-3 py-1.5 text-sm font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
             >
               {link.label}
             </a>
           ))}
+          <Button variant="ctaNav" size="sm" className="ml-1" asChild>
+            <a href="#contact">Audit gratuit</a>
+          </Button>
         </div>
-
-        <Button variant="ctaNav" size="sm" className="ml-3 hidden md:inline-flex" asChild>
-          <a href="#contact">Audit gratuit</a>
-        </Button>
 
         {/* Mobile toggle */}
         <button
