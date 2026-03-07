@@ -52,7 +52,7 @@ const CasConcretsSection = () => {
     <section id="cas" className="bg-navy py-6">
       <div className="container mx-auto px-6">
         <div className="text-center mb-6">
-          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-4">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4">
             Cinq situations concrètes. Cinq gains mesurables.
           </h2>
           <p className="font-dm text-blanc-casse/60 max-w-2xl mx-auto">
