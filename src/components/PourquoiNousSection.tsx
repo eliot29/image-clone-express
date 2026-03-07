@@ -9,24 +9,8 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-          </p>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
 
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-8">
-
-          </p>
 
           
 
