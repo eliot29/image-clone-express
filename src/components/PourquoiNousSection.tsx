@@ -32,7 +32,7 @@ const PourquoiNousSection = () => {
 
           
 
-          <p className="font-dm font-semibold text-navy mb-6">Puis deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :
+          <p className="font-dm font-semibold text-navy mb-6">Deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :
 
           </p>
 
