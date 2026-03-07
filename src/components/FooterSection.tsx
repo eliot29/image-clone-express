@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-navy py-10 border-t border-blanc-casse/10">
+    <footer className="bg-navy py-6 border-t border-blanc-casse/10">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <p className="font-dm text-blanc-casse/70 text-sm mb-2">

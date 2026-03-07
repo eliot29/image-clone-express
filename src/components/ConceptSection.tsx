@@ -1,6 +1,6 @@
 const ConceptSection = () => {
   return (
-    <section id="concept" className="bg-navy py-10">
+    <section id="concept" className="bg-navy py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-6">
