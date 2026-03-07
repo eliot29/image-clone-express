@@ -30,10 +30,10 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* Subtitle */}
-          <p className="font-dm text-lg sm:text-xl text-ardoise/70 mb-4 max-w-2xl mx-auto">
+          {/* Punchline */}
+          <h1 className="font-dm font-bold text-2xl sm:text-3xl lg:text-4xl text-navy mb-6 max-w-3xl mx-auto leading-tight tracking-tight">
             Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
-          </p>
+          </h1>
 
           {/* Punchline */}
           
