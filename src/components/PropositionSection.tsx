@@ -39,7 +39,7 @@ const PropositionSection = () => {
           </div>
 
           <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-10">
-
+            &gt; Un seul interlocuteur, de l'audit jusqu'à la mise en service
           </p>
 
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">Maîtriser et tester les outils IA demande du temps.
