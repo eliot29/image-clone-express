@@ -61,10 +61,7 @@ const PropositionSection = () => {
             </ul>
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">Maîtriser et tester les outils IA demande du temps. 
-
-Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.<br />
-            Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">Maîtriser et tester les outils IA demande du temps. Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
         </div>
       </div>
