@@ -1,6 +1,6 @@
 const PourquoiNousSection = () => {
   return (
-    <section id="approche" className="bg-blanc-casse py-10">
+    <section id="approche" className="bg-blanc-casse py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-6">
@@ -8,13 +8,6 @@ const PourquoiNousSection = () => {
               Pourquoi Semaine 54 ?
             </h2>
           </div>
-
-
-
-
-          
-
-          
 
           <p className="font-dm font-semibold text-navy mb-6">Deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :
 

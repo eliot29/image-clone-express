@@ -1,6 +1,6 @@
 const OutilsSection = () => {
   return (
-    <section className="bg-navy py-10">
+    <section className="bg-navy py-6">
       <div className="container mx-auto px-6">
         <p className="font-dm text-xs text-blanc-casse/40 mb-6 uppercase tracking-wider text-center">
           Les outils que j'utilise — ceux qui correspondent à votre situation

@@ -36,7 +36,7 @@ const steps = [
 
 const MethodeSection = () => {
   return (
-    <section id="methode" className="bg-blanc-casse py-10">
+    <section id="methode" className="bg-blanc-casse py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-6">
@@ -45,11 +45,7 @@ const MethodeSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-8 text-center leading-snug max-w-full mx-auto">
-
-          </p>
-
-          <p className="font-dm text-ardoise/70 text-center mb-8">
+          <p className="font-dm text-ardoise/70 text-center mb-6">
             Un accompagnement structuré, étape par étape.
           </p>
 
