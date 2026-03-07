@@ -87,6 +87,10 @@ const MethodeSection = () => {
               </div>
             )}
           </div>
+
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center mt-12">
+            Je ne suis pas ingénieur IA. <span className="text-or-mat">Je suis implémenteur IA.</span>
+          </p>
         </div>
       </div>
     </section>);
