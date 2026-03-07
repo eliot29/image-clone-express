@@ -8,7 +8,6 @@ const navLinks = [
   { label: "Cas concrets", href: "#cas" },
   { label: "Pourquoi S54 ?", href: "#approche" },
   { label: "Méthode", href: "#methode" },
-  
   { label: "Contact", href: "#contact" },
 ];
 
