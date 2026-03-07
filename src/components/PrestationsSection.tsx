@@ -72,6 +72,10 @@ const PrestationsSection = () => {
             </div>
           )}
         </div>
+
+        <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-5xl mx-auto text-center">
+          Je ne vends pas de l'IA. Je vous aide à gagner votre <span className="text-or-mat">Semaine 54</span>.
+        </p>
       </div>
     </section>);};
 
