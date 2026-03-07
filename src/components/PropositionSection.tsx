@@ -1,13 +1,13 @@
 const PropositionSection = () => {
   return (
-    <section className="bg-blanc-casse py-14">
+    <section className="bg-blanc-casse py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-8 text-center">
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-5 text-center">
             Ce que je propose concrètement
           </h2>
 
-          <p className="font-dm text-ardoise/80 text-base mb-6 text-center">
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">
             Après un audit gratuit, je détermine la solution la plus pertinente :
           </p>
 
@@ -38,7 +38,7 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-10">
+          <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-6">
             &gt; Un seul interlocuteur, de l'audit jusqu'à la mise en service
           </p>
 

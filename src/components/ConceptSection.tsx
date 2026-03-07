@@ -1,9 +1,9 @@
 const ConceptSection = () => {
   return (
-    <section id="concept" className="bg-navy py-14">
+    <section id="concept" className="bg-navy py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-8">
+          <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-6">
             L'IA peut être une solution.{" "}
             <span className="text-or-mat">Mais sous certaines conditions.</span>
           </h2>
@@ -31,7 +31,7 @@ const ConceptSection = () => {
             </div>
           </div>
 
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-10 max-w-5xl mx-auto leading-snug">
+          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-5xl mx-auto leading-snug">
             L'IA devient un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
           </p>
         </div>

@@ -1,11 +1,11 @@
 const OutilsSection = () => {
   return (
-    <section className="bg-navy py-14">
+    <section className="bg-navy py-10">
       <div className="container mx-auto px-6">
         <p className="font-dm text-xs text-blanc-casse/40 mb-6 uppercase tracking-wider text-center">
           Les outils que j'utilise — ceux qui correspondent à votre situation
         </p>
-        <div className="relative overflow-hidden mb-10">
+        <div className="relative overflow-hidden mb-6">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
           <div className="flex gap-12 animate-marquee hover:[animation-play-state:paused]">

@@ -1,32 +1,16 @@
 const PourquoiNousSection = () => {
   return (
-    <section id="approche" className="bg-blanc-casse py-14">
+    <section id="approche" className="bg-blanc-casse py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-center mb-6">
             <h2 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
               Pourquoi Semaine 54 ?
             </h2>
           </div>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-          </p>
 
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
 
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-6">
-
-          </p>
-
-          <p className="font-dm text-ardoise/80 leading-relaxed mb-8">
-
-          </p>
 
           
 
@@ -36,7 +20,7 @@ const PourquoiNousSection = () => {
 
           </p>
 
-          <div className="space-y-6 mb-10">
+          <div className="space-y-4 mb-6">
             <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 J'ai accompagné une poissonnerie du Pays d'Iroise.

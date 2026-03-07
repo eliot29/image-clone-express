@@ -2,7 +2,7 @@ import { Shield } from "lucide-react";
 
 const SecuritySection = () => {
   return (
-    <section className="bg-blanc-casse py-14">
+    <section className="bg-blanc-casse py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="bg-gris-perle rounded-xl p-8 border border-border">
