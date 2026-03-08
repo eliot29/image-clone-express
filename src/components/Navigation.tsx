@@ -23,7 +23,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 rounded-full px-4 py-2 ${
+      className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 rounded-full px-6 py-3 ${
         scrolled
           ? "bg-navy/95 backdrop-blur-md shadow-lg"
           : "bg-navy/70 backdrop-blur-sm"
@@ -34,7 +34,7 @@ const Navigation = () => {
           <img
             src="/logo-semaine54-blanc.svg"
             alt="Semaine 54"
-            className="h-11 w-auto"
+            className="h-14 w-auto"
           />
         </a>
 
@@ -45,13 +45,13 @@ const Navigation = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="px-2 py-1.5 text-base font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
+                className="px-2 py-1.5 text-lg font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
             ))}
           </div>
-          <Button variant="ctaNav" size="sm" className="ml-3 flex-shrink-0" asChild>
+          <Button variant="ctaNav" size="default" className="ml-3 flex-shrink-0 text-base" asChild>
             <a href="#contact">Audit gratuit</a>
           </Button>
         </div>
