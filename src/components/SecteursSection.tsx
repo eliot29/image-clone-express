@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Hammer, Scale, ShoppingBag, Building, UtensilsCrossed, Calculator, Users, Briefcase, Megaphone, FileText, BarChart3, Headphones } from "lucide-react";
+import { Hammer, Scale, ShoppingBag, Building, UtensilsCrossed, Calculator, Users, Briefcase, Megaphone, FileText, BarChart3, Headphones, Bot, BrainCircuit, Zap, LayoutDashboard, PenTool, Radar } from "lucide-react";
 
 const domains = [
   { icon: Megaphone, label: "Marketing & Prospection" },
