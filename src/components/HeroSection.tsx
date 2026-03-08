@@ -16,12 +16,12 @@ const HeroSection = () => {
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
       <div className="container mx-auto px-6 pt-24 pb-6 lg:pt-28 lg:pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo */}
-          <div className="flex justify-center mb-8">
+          {/* Logo - hidden on mobile */}
+          <div className="hidden sm:flex justify-center mb-8">
             <img
               src="/logo-semaine54-dark-new.svg"
               alt="Semaine 54"
-              className="h-16 sm:h-20 lg:h-24 w-auto"
+              className="h-20 lg:h-24 w-auto"
             />
           </div>
 
