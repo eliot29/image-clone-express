@@ -47,13 +47,23 @@ const FooterSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-4 mt-8 pt-6 border-t border-blanc-casse/10">
-          <div className="w-48 md:w-56">
+        {/* Mobile: centré vertical */}
+        <div className="flex flex-col items-center justify-center gap-4 mt-8 pt-6 border-t border-blanc-casse/10 md:hidden">
+          <div className="w-48">
             <img src="/logo-semaine54-blanc-new.svg" alt="Semaine 54" className="w-full h-auto" />
           </div>
           <p className="font-dm text-or-mat text-base text-center">
             semaine54.fr<br />Site réalisé à l'aide d'intelligence artificielle
           </p>
+        </div>
+        {/* Desktop: texte à gauche, logo à droite */}
+        <div className="hidden md:flex items-center justify-between mt-8 pt-6 border-t border-blanc-casse/10">
+          <p className="font-dm text-or-mat text-base">
+            semaine54.fr<br />Site réalisé à l'aide d'intelligence artificielle
+          </p>
+          <div className="w-72">
+            <img src="/logo-semaine54-blanc-new.svg" alt="Semaine 54" className="w-full h-auto" />
+          </div>
         </div>
       </div>
     </footer>
