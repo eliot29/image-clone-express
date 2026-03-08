@@ -1,10 +1,10 @@
 import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair } from "lucide-react";
 
 const solutions = [
-  { icon: Workflow, text: "automatisation via n8n" },
-  { icon: Bot, text: "outil ou assistant IA configuré sur-mesure" },
-  { icon: GraduationCap, text: "formation ciblée aux LLM et aux outils d'IA" },
-  { icon: Puzzle, text: "ou combinaison de ces solutions" },
+  { icon: Workflow, text: "Automatisation via n8n" },
+  { icon: Bot, text: "Outil ou assistant IA configuré sur-mesure" },
+  { icon: GraduationCap, text: "Formation ciblée aux LLM et aux outils d'IA" },
+  { icon: Puzzle, text: "Ou combinaison de ces solutions" },
 ];
 
 const etapes = [
