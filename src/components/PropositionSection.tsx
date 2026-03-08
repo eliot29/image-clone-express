@@ -49,7 +49,7 @@ const PropositionSection = () => {
               {[
               "Un seul interlocuteur en Bretagne, de l'audit jusqu'à la mise en service",
               "Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi"].map((item, i) =>
-              <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+              <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70 font-bold">
                   <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
                   {item}
                 </li>
