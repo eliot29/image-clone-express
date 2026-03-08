@@ -23,7 +23,10 @@ const PourquoiNousSection = () => {
               <strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'IA dans des contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.</strong>
             </p>
             <p className="font-semibold text-navy">
-              Mon constat : l'IA n'est plus réservée aux grandes entreprises. Deux expériences concrètes ont renforcé ma volonté d'accompagner les PME :
+              Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.
+            </p>
+            <p className="font-semibold text-navy">
+              Deux expériences concrètes ont confirmé cette conviction :
             </p>
           </div>
 
