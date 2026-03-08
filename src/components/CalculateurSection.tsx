@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { Calculator } from "lucide-react";
 
-const presets = [
-{ label: "Artisan : rédaction d'un devis", minutes: 40, perWeek: 5 },
-{ label: "Avocat : recherche d'un texte de loi", minutes: 25, perWeek: 15 },
-{ label: "Commerce : planification des posts", minutes: 45, perWeek: 5 },
-{ label: "Cabinet comptable : relance impayé", minutes: 20, perWeek: 10 }];
+const presets: { label: string; minutes: number; perWeek: number }[] = [];
 
 
 const CalculateurSection = () => {
