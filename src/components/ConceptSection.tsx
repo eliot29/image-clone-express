@@ -2,7 +2,7 @@ const ConceptSection = () => {
   return (
     <section id="concept" className="bg-navy py-6">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-6">
             L'IA peut être une solution.{" "}
             <span className="text-or-mat">
