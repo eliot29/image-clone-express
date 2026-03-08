@@ -16,9 +16,6 @@ const PourquoiNousSection = () => {
             <p>
               J'ai travaillé plusieurs années en <strong className="text-navy">grande distribution</strong>, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
             </p>
-            <p>
-              Dans ces fonctions, une chose devient vite évidente : <strong className="text-navy">le temps n'a de valeur que lorsqu'il produit un résultat mesurable.</strong>
-            </p>
             <p className="text-ardoise/80">
               Depuis trois ans, je teste et utilise les outils d'IA dans des <strong className="text-navy">contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.</strong>
             </p>
