@@ -29,9 +29,6 @@ const ContactSection = () => {
                   </li>
                 )}
               </ul>
-              <p className="font-dm text-blanc-casse/70 text-sm mt-4 text-center md:text-left">
-                Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.
-              </p>
             </div>
 
             {/* Right: CTA */}
@@ -44,6 +41,10 @@ const ContactSection = () => {
               </Button>
             </div>
           </div>
+
+          <p className="font-dm text-blanc-casse/70 text-sm mt-4 text-center">
+            Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.
+          </p>
 
           <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl mt-8 text-center max-w-full mx-auto leading-snug">
             Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
