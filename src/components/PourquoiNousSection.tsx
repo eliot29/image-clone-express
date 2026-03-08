@@ -2,7 +2,7 @@ const PourquoiNousSection = () => {
   return (
     <section id="approche" className="bg-blanc-casse py-6">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl lg:max-w-7xl mx-auto">
+        <div className="max-w-3xl lg:max-w-6xl mx-auto">
           <div className="text-center mb-6">
             <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
               Pourquoi Semaine 54 ?
@@ -13,7 +13,7 @@ const PourquoiNousSection = () => {
 
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+          <div className="space-y-4 mb-6">
             <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 J'ai accompagné une poissonnerie du Pays d'Iroise.
