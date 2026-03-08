@@ -25,7 +25,7 @@ const OutilsSection = () => {
           </div>
         </div>
 
-        <p className="font-dm font-medium text-blanc-casse/70 text-sm sm:text-base mt-4 mb-3 text-center">
+        <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl mt-4 mb-3 text-center max-w-full mx-auto leading-snug">
           Des outils qui se connectent avec ceux que vous utilisez déjà :
         </p>
         <div className="relative overflow-hidden">
