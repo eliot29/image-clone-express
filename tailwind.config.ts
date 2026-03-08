@@ -101,6 +101,8 @@ export default {
         "counter": "counter 0.4s ease-out both",
         "marquee": "marquee 8s linear infinite",
         "marquee-slow": "marquee 30s linear infinite",
+        "marquee-reverse": "marquee-reverse 8s linear infinite",
+        "marquee-reverse-slow": "marquee-reverse 30s linear infinite",
       },
     },
   },
