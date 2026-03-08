@@ -9,12 +9,17 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm font-semibold text-navy mb-6">Je suis Clément, 35 ans, fondateur de Semaine 54. J’ai travaillé plusieurs années en grande distribution, d’abord comme chef de rayon, puis comme chef de secteur GMS côté marques. Depuis maintenant trois ans je teste les IA dans des contextes professionnels réels. 
+          <p className="font-dm font-semibold text-navy mb-6">Je suis Clément, 35 ans, fondateur de Semaine 54.
+J’ai travaillé plusieurs années en grande distribution, d’abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
+
+Dans ces fonctions, une chose devient vite évidente : le temps n’a de valeur que lorsqu’il produit un résultat concret.
+
+Depuis trois ans, je teste et utilise les outils d’intelligence artificielle dans des contextes professionnels réels afin d’en comprendre les usages réellement utiles pour les entreprises.
 
 
-Deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :
 
-          </p>
+
+Deux expériences concrètes ont renforcé ma volonté d’accompagner les PME :</p>
 
           <div className="space-y-4 mb-6">
             <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
