@@ -17,7 +17,7 @@ const PourquoiNousSection = () => {
             <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 J'ai accompagné une poissonnerie du Pays d'Iroise.
-                En structurant une stratégie nourrie par l'IA et en utilisant des outils assistés par IA, les résultats ont été mesurables : <strong className="text-navy">73 000 vues</strong>, plus de <strong className="text-navy">800 abonnés</strong> et <strong className="text-or-mat">+15 % de chiffre d'affaires</strong>.
+                En structurant une stratégie nourrie par l'IA et en utilisant des outils assistés par IA, les résultats ont été mesurables : <strong className="text-navy">73 000 vues</strong>, plus de <strong className="text-navy">800 abonnés gagnés</strong> et <strong className="text-or-mat">+15 % de chiffre d'affaires</strong>.
               </p>
             </div>
 
