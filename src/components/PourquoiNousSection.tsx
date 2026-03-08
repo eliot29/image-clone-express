@@ -11,17 +11,19 @@ const PourquoiNousSection = () => {
 
           <div className="font-dm text-ardoise/80 space-y-4 mb-6 leading-relaxed">
             <p>
-              Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de <strong className="text-navy">Semaine 54</strong>.
+              Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de Semaine 54.
             </p>
             <p>
               J'ai travaillé plusieurs années en <strong className="text-navy">grande distribution</strong>, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
             </p>
-            <p>
-              Dans ces fonctions, une chose devient vite évidente : <strong className="text-navy">le temps n'a de valeur que lorsqu'il produit un résultat mesurable.</strong>
-              <br />C'est exactement la logique que j'applique aujourd'hui à l'intelligence artificielle.
+            <p>Dans ces fonctions, une chose devient vite évidente : le temps n'a de valeur que lorsqu'il produit un résultat mesurable.
+C'est exactement la logique que j'applique aujourd'hui à l'intelligence artificielle.<strong className="text-navy">le temps n'a de valeur que lorsqu'il produit un résultat mesurable.
+
+</strong>
             </p>
-            <p>
-              <strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'intelligence artificielle dans des contextes professionnels afin d'en comprendre les usages réellement utiles pour les entreprises.</strong>
+            <p>Depuis trois ans, je teste et utilise les outils IA dans des contextes professionnels
+afin d'en comprendre les usages réellement utiles pour les entreprises.<strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'intelligence artificielle dans des contextes professionnels afin d'en comprendre 
+les usages réellement utiles pour les entreprises.</strong> afin d'en comprendre les usages réellement utiles pour les entreprises.
             </p>
             <p className="font-semibold text-navy">
               Deux expériences concrètes ont renforcé ma volonté d'accompagner les PME :
