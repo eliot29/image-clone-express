@@ -47,7 +47,7 @@ const PropositionSection = () => {
           <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
             <ul className="space-y-3">
               {[
-              "Un seul interlocuteur, de l'audit jusqu'à la mise en service",
+              "Un seul interlocuteur en Bretagne, de l'audit jusqu'à la mise en service",
               "Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi"].map((item, i) =>
               <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
