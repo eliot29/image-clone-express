@@ -7,7 +7,7 @@ const FooterSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
             {/* Col 1: Contact + réseaux */}
-            <div className="flex flex-col items-center md:items-start gap-2">
+            <div className="flex flex-col items-center gap-2">
               <div className="flex items-center gap-3 mb-1">
                 <h3 className="font-dm font-bold text-blanc-casse text-sm uppercase tracking-wider">Contact</h3>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse/50 hover:text-or-mat transition-colors">
