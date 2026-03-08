@@ -18,7 +18,6 @@ const PourquoiNousSection = () => {
             </p>
             <p>
               Dans ces fonctions, une chose devient vite évidente : <strong className="text-navy">le temps n'a de valeur que lorsqu'il produit un résultat mesurable.</strong>
-              <br />C'est exactement la logique que j'applique aujourd'hui à l'intelligence artificielle.
             </p>
             <p>
               <strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'intelligence artificielle dans des contextes professionnels afin d'en comprendre les usages réellement utiles pour les entreprises.</strong>
