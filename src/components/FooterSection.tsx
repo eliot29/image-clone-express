@@ -35,7 +35,7 @@ const FooterSection = () => {
                 Basé à Brest (Finistère)
               </div>
               <p className="font-dm text-blanc-casse text-base">
-                Accompagnement des PME et TPE en Bretagne
+                Accompagnement des PME et TPE
               </p>
             </div>
 
