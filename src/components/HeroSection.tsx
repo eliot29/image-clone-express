@@ -19,7 +19,7 @@ const HeroSection = () => {
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img
-              src="/logo-hero.svg"
+              src="/logo-semaine54-dark-new.svg"
               alt="Semaine 54"
               className="h-16 sm:h-20 lg:h-24 w-auto"
             />
