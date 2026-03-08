@@ -47,7 +47,7 @@ const FooterSection = () => {
             </div>
           </div>
         </div>
-        <p className="font-dm text-blanc-casse/30 text-xs text-center mt-6">
+        <p className="font-dm font-bold text-blanc-casse/40 text-sm text-center mt-6">
           semaine54.fr — site réalisé à l'aide d'intelligence artificielle
         </p>
       </div>
