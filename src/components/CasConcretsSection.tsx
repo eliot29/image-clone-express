@@ -80,7 +80,7 @@ const CasConcretsSection = () => {
                   {cas.results.map((r, j) => (
                     <div key={j} className="flex items-center gap-1.5">
                       <r.icon size={13} className="text-or-mat shrink-0" />
-                      <span className="font-dm text-xs text-blanc-casse/60">{r.label}</span>
+                      <span className="font-dm text-xs text-blanc-casse/80">{r.label}</span>
                     </div>
                   ))}
                 </div>
