@@ -32,7 +32,7 @@ const HeroSection = () => {
               <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">Basé à Brest (Finistère)</span>
             </span>
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
-              <span className="font-dm text-sm text-navy font-medium">Agence IA pour PME TPE Bretonne</span>
+              <span className="font-dm text-sm text-navy font-medium">Agence IA pour TPE et PME bretonnes</span>
             </span>
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
               <span className="font-dm text-sm text-navy font-medium">Automatisations & conseils IA sur-mesure</span>
