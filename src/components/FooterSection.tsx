@@ -40,7 +40,7 @@ const FooterSection = () => {
             </div>
 
             {/* Col 3: Zone d'intervention */}
-            <div className="flex flex-col items-center md:items-end gap-2 text-center md:text-right">
+            <div className="flex flex-col items-center gap-2 text-center">
               <h3 className="font-dm font-bold text-blanc-casse text-sm uppercase tracking-wider mb-1">Zone d'intervention</h3>
               <p className="font-dm text-blanc-casse/50 text-sm">Finistère · Côtes-d'Armor</p>
               <p className="font-dm text-blanc-casse/50 text-sm">Morbihan · Ille-et-Vilaine</p>
