@@ -42,6 +42,9 @@ const ContactSection = () => {
             </div>
           </div>
 
+          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl mt-8 text-center max-w-full mx-auto leading-snug">
+            Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
+          </p>
         </div>
       </div>
     </section>);
