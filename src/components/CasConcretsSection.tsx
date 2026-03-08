@@ -51,46 +51,36 @@ const CasConcretsSection = () => {
   return (
     <section id="cas" className="bg-navy py-6">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-6">
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4">
+        <div className="text-center mb-4">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse">
             Cinq situations concrètes. Cinq gains mesurables.
           </h2>
-          <p className="font-dm text-blanc-casse/60 max-w-2xl mx-auto">
-          </p>
         </div>
 
         {/* Infinite scroll marquee */}
         <div className="relative overflow-hidden">
-          {/* Fade edges */}
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
 
-          <div className="flex gap-6 animate-marquee md:animate-marquee-slow hover:[animation-play-state:paused]">
+          <div className="flex gap-4 animate-marquee md:animate-marquee-slow hover:[animation-play-state:paused]">
             {[...cases, ...cases].map((cas, i) => (
               <div
                 key={i}
-                className="rounded-xl p-6 border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors min-w-[340px] max-w-[380px] shrink-0"
+                className="rounded-xl px-5 py-4 border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors min-w-[300px] max-w-[320px] shrink-0"
               >
-                {/* Header */}
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="font-dm text-xs font-semibold uppercase tracking-wider text-or-mat bg-or-mat/10 px-3 py-1 rounded-full">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-dm font-bold text-base text-blanc-casse">{cas.sector}</h3>
+                  <span className="font-dm text-[11px] font-semibold uppercase tracking-wider text-or-mat bg-or-mat/10 px-2 py-0.5 rounded-full shrink-0 ml-2">
                     {cas.location}
                   </span>
                 </div>
-                <h3 className="font-dm font-bold text-xl text-blanc-casse mb-2">{cas.sector}</h3>
-
-                {/* Problem */}
-                <p className="font-dm text-sm text-blanc-casse/50 mb-3">{cas.problem}</p>
-
-                {/* Solution */}
-                <p className="font-dm text-sm text-blanc-casse/70 mb-5">{cas.solution}</p>
-
-                {/* Results */}
-                <div className="space-y-2 pt-4 border-t border-blanc-casse/10">
+                <p className="font-dm text-xs text-blanc-casse/50 mb-1.5 leading-snug">{cas.problem}</p>
+                <p className="font-dm text-xs text-blanc-casse/70 mb-3 leading-snug">{cas.solution}</p>
+                <div className="flex flex-wrap gap-x-3 gap-y-1 pt-2 border-t border-blanc-casse/10">
                   {cas.results.map((r, j) => (
-                    <div key={j} className="flex items-center gap-2">
-                      <r.icon size={16} className="text-or-mat shrink-0" />
-                      <span className="font-dm text-sm text-blanc-casse/60">{r.label}</span>
+                    <div key={j} className="flex items-center gap-1.5">
+                      <r.icon size={13} className="text-or-mat shrink-0" />
+                      <span className="font-dm text-xs text-blanc-casse/60">{r.label}</span>
                     </div>
                   ))}
                 </div>
