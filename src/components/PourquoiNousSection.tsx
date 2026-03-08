@@ -13,7 +13,7 @@ const PourquoiNousSection = () => {
 
           </p>
 
-          <div className="space-y-4 mb-6">
+          <div className="space-y-4 mb-6 lg:max-w-none">
             <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 J'ai accompagné une poissonnerie du Pays d'Iroise.
