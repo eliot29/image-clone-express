@@ -1,3 +1,24 @@
+import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair } from "lucide-react";
+
+const solutions = [
+  { icon: Workflow, text: "automatisation via n8n" },
+  { icon: Bot, text: "outil ou assistant IA configuré sur-mesure" },
+  { icon: GraduationCap, text: "formation ciblée aux LLM et aux outils à base d'IA" },
+  { icon: Puzzle, text: "ou combinaison de ces solutions" },
+];
+
+const etapes = [
+  { icon: Target, text: "Identification des priorités" },
+  { icon: Wrench, text: "Mise en place ou formation ciblée" },
+  { icon: FlaskConical, text: "Test en conditions réelles" },
+  { icon: RefreshCw, text: "Ajustements selon les retours terrain" },
+];
+
+const engagements = [
+  { icon: User, bold: "Un seul interlocuteur en Bretagne", rest: ", de l'audit jusqu'à la mise en service" },
+  { icon: ShieldCheck, bold: "Les projets sont volontairement limités", rest: " pour garantir disponibilité et qualité de suivi" },
+];
+
 const PropositionSection = () => {
   return (
     <section className="bg-blanc-casse py-6">
@@ -7,22 +28,15 @@ const PropositionSection = () => {
             Ce que je propose concrètement
           </h2>
 
-          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, la solution la plus pertinente est définie à partir de votre réalité terrain :
-
-          </p>
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, la solution la plus pertinente est définie à partir de votre réalité terrain :</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
               <ul className="space-y-3">
-                {[
-                "automatisation via n8n",
-                "outil ou assistant IA configuré sur-mesure",
-                "formation ciblée aux LLM et aux outils à base d'IA",
-                "ou combinaison de ces solutions"].
-                map((item, i) =>
-                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
-                    <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
-                    {item}
+                {solutions.map((item, i) =>
+                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                    {item.text}
                   </li>
                 )}
               </ul>
@@ -30,14 +44,10 @@ const PropositionSection = () => {
 
             <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
               <ul className="space-y-3">
-                {[
-                "Identification des priorités",
-                "Mise en place ou formation ciblée",
-                "Test en conditions réelles",
-                "Ajustements selon les retours terrain"].map((item, i) =>
-                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
-                    <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
-                    {item}
+                {etapes.map((item, i) =>
+                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                    {item.text}
                   </li>
                 )}
               </ul>
@@ -46,17 +56,14 @@ const PropositionSection = () => {
 
           <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
             <ul className="space-y-3">
-              {[
-              { bold: "Un seul interlocuteur en Bretagne", rest: ", de l'audit jusqu'à la mise en service" },
-              { bold: "Les projets sont volontairement limités", rest: " pour garantir disponibilité et qualité de suivi" },
-              ].map((item, i) =>
-              <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
-                  <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
+              {engagements.map((item, i) =>
+                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                  <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
                   <span><strong className="font-bold text-ardoise">{item.bold}</strong>{item.rest}</span>
                 </li>
               )}
               <li className="flex items-start gap-3 font-dm text-ardoise font-bold">
-                <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
+                <Crosshair size={16} className="text-or-mat mt-0.5 shrink-0" />
                 <span>Objectif : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées,<br />pour vous concentrer sur ce qui crée réellement de la valeur.</span>
               </li>
             </ul>
@@ -70,8 +77,8 @@ const PropositionSection = () => {
           </p>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default PropositionSection;
