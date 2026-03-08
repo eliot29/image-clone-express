@@ -9,9 +9,12 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <p className="font-dm font-semibold text-navy mb-6">Deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :
+          <p className="font-dm font-semibold text-navy mb-6">Je suis Clément, 35 ans, fondateur de Semaine 54.
+J’ai travaillé plusieurs années en grande distribution, d’abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
+Depuis maintenant trois ans je teste les IA dans des contextes professionnels réels.
 
-          </p>
+
+Deux expériences concrètes ont renforcé ma volonté de proposer mes service aux PME :</p>
 
           <div className="space-y-4 mb-6">
             <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
@@ -35,6 +38,4 @@ const PourquoiNousSection = () => {
 
         </div>
       </div>
-    </section>);};
-
-export default PourquoiNousSection;
+    </section>);};export default PourquoiNousSection;
