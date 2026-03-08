@@ -23,7 +23,7 @@ const PropositionSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-6">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl lg:max-w-6xl mx-auto">
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
             Ce que je propose concrètement
           </h2>
