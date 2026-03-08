@@ -26,7 +26,7 @@ const OutilsSection = () => {
         </div>
 
         <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl mt-4 mb-3 text-center max-w-full mx-auto leading-snug">
-          Des outils qui complètent et comprennent ceux que vous utilisez déjà :
+          Des outils qui s'intègrent à ceux que vous utilisez déjà :
         </p>
         <div className="relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
