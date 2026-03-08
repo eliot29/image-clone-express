@@ -2,7 +2,7 @@ const PourquoiNousSection = () => {
   return (
     <section id="approche" className="bg-blanc-casse py-6">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl lg:max-w-5xl mx-auto">
           <div className="text-center mb-6">
             <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
               Pourquoi Semaine 54 ?
