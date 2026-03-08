@@ -10,18 +10,18 @@ const FooterSection = () => {
             <div className="flex flex-col items-center gap-2">
               <div className="flex items-center gap-3 mb-1">
                 <h3 className="font-dm font-bold text-blanc-casse text-sm uppercase tracking-wider">Contact</h3>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse/50 hover:text-or-mat transition-colors">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse hover:text-or-mat transition-colors">
                   <Facebook size={16} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse/50 hover:text-or-mat transition-colors">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse hover:text-or-mat transition-colors">
                   <Instagram size={16} />
                 </a>
               </div>
-              <a href="tel:0610322082" className="flex items-center gap-2 font-dm text-blanc-casse/70 text-sm hover:text-or-mat transition-colors">
+              <a href="tel:0610322082" className="flex items-center gap-2 font-dm text-blanc-casse text-sm hover:text-or-mat transition-colors">
                 <Phone size={14} className="text-or-mat" />
                 06 10 32 20 82
               </a>
-              <a href="mailto:semaine54ia@gmail.com" className="flex items-center gap-2 font-dm text-blanc-casse/70 text-sm hover:text-or-mat transition-colors">
+              <a href="mailto:semaine54ia@gmail.com" className="flex items-center gap-2 font-dm text-blanc-casse text-sm hover:text-or-mat transition-colors">
                 <Mail size={14} className="text-or-mat" />
                 semaine54ia@gmail.com
               </a>
@@ -30,11 +30,11 @@ const FooterSection = () => {
             {/* Col 2: Localisation */}
             <div className="flex flex-col items-center gap-2 text-center">
               <h3 className="font-dm font-bold text-blanc-casse text-sm uppercase tracking-wider mb-1">Localisation</h3>
-              <div className="flex items-center gap-2 font-dm text-blanc-casse/70 text-sm">
+              <div className="flex items-center gap-2 font-dm text-blanc-casse text-sm">
                 <MapPin size={14} className="text-or-mat shrink-0" />
                 Basé à Brest (Finistère)
               </div>
-              <p className="font-dm text-blanc-casse/50 text-sm">
+              <p className="font-dm text-blanc-casse text-sm">
                 Accompagnement des PME et TPE en Bretagne
               </p>
             </div>
@@ -42,12 +42,12 @@ const FooterSection = () => {
             {/* Col 3: Zone d'intervention */}
             <div className="flex flex-col items-center gap-2 text-center">
               <h3 className="font-dm font-bold text-blanc-casse text-sm uppercase tracking-wider mb-1">Zone d'intervention</h3>
-              <p className="font-dm text-blanc-casse/50 text-sm">Finistère · Côtes-d'Armor</p>
-              <p className="font-dm text-blanc-casse/50 text-sm">Morbihan · Ille-et-Vilaine</p>
+              <p className="font-dm text-blanc-casse text-sm">Finistère · Côtes-d'Armor</p>
+              <p className="font-dm text-blanc-casse text-sm">Morbihan · Ille-et-Vilaine</p>
             </div>
           </div>
         </div>
-        <p className="font-dm font-bold text-blanc-casse/40 text-sm text-center mt-6">
+        <p className="font-dm font-bold text-blanc-casse text-sm text-center mt-6">
           semaine54.fr — site réalisé à l'aide d'intelligence artificielle
         </p>
       </div>
