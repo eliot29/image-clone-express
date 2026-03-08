@@ -55,9 +55,9 @@ const PropositionSection = () => {
                   <span><strong className="font-bold text-ardoise">{item.bold}</strong>{item.rest}</span>
                 </li>
               )}
-              <li className="flex items-start gap-3 font-dm text-ardoise/70 font-bold">
+              <li className="flex items-start gap-3 font-dm text-ardoise/70">
                 <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-2 shrink-0" />
-                Objectif : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées,<br />pour vous concentrer sur ce qui crée réellement de la valeur.
+                <span><strong className="font-bold text-ardoise">Objectif</strong> : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées,<br />pour vous concentrer sur ce qui crée réellement de la valeur.</span>
               </li>
             </ul>
           </div>
