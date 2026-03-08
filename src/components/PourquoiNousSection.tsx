@@ -21,8 +21,7 @@ const PourquoiNousSection = () => {
               <br />C'est exactement la logique que j'applique aujourd'hui à l'intelligence artificielle.
             </p>
             <p>
-<strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'intelligence artificielle dans des contextes professionnels afin d'en comprendre 
-les usages réellement utiles pour les entreprises.</strong> afin d'en comprendre les usages réellement utiles pour les entreprises.
+              <strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'intelligence artificielle dans des contextes professionnels afin d'en comprendre les usages réellement utiles pour les entreprises.</strong>
             </p>
             <p className="font-semibold text-navy">
               Deux expériences concrètes ont renforcé ma volonté d'accompagner les PME :
