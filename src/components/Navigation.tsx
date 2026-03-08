@@ -29,12 +29,13 @@ const Navigation = () => {
           : "bg-navy/70 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center w-full">
-        <a href="#accueil" className="mr-4 flex-shrink-0">
+      <div className="flex items-center justify-between w-full">
+        {/* Logo - centered on mobile */}
+        <a href="#accueil" className="flex-shrink-0 md:mr-4">
           <img
             src="/logo-semaine54-blanc-new.svg"
             alt="Semaine 54"
-            className="h-14 w-auto"
+            className="h-10 md:h-14 w-auto"
           />
         </a>
 
@@ -58,28 +59,28 @@ const Navigation = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden ml-2 text-blanc-casse"
+          className="md:hidden text-blanc-casse p-1"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
-          {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden mt-3 pb-3 flex flex-col gap-2 border-t border-blanc-casse/10 pt-3">
+        <div className="md:hidden mt-3 pb-4 flex flex-col gap-1 border-t border-blanc-casse/20 pt-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="px-3 py-2 text-sm font-dm text-blanc-casse/80 hover:text-or-mat transition-colors"
+              className="px-4 py-2.5 text-base font-dm text-blanc-casse hover:text-or-mat hover:bg-blanc-casse/5 rounded-lg transition-colors"
             >
               {link.label}
             </a>
           ))}
-          <Button variant="cta" size="sm" className="mt-2" asChild>
+          <Button variant="cta" size="default" className="mt-3 mx-4" asChild>
             <a href="#contact" onClick={() => setMobileOpen(false)}>Audit gratuit</a>
           </Button>
         </div>
