@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Hammer, Scale, ShoppingBag, Building, UtensilsCrossed, Calculator, Users, Briefcase } from "lucide-react";
 
+const domains = [
+  "Marketing & Prospection",
+  "Administratif & Comptabilité",
+  "Pilotage & Analyse",
+  "Service client & Support",
+];
+
 const sectors = [
   { icon: Hammer, label: "Artisans & BTP" },
   { icon: Scale, label: "Professions libérales" },
@@ -16,10 +23,20 @@ const SecteursSection = () => {
   return (
     <section id="secteurs" className="bg-navy py-6">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-6">
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4">
-            Votre activité est-elle concernée ?
-          </h2>
+        {/* Bandeau domaines */}
+        <div className="relative overflow-hidden mb-6">
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
+          <div className="flex gap-6 animate-marquee md:animate-marquee-slow hover:[animation-play-state:paused]">
+            {[...domains, ...domains].map((d, i) => (
+              <span
+                key={i}
+                className="font-syne font-extrabold text-xl sm:text-2xl text-blanc-casse whitespace-nowrap"
+              >
+                {d}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Marquee scrolling */}
