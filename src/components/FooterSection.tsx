@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-navy py-10 border-t border-blanc-casse/10">
+    <footer id="contact" className="bg-navy py-10 border-t border-blanc-casse/10">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 items-start">
