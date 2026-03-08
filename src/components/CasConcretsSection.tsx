@@ -74,13 +74,13 @@ const CasConcretsSection = () => {
                     {cas.location}
                   </span>
                 </div>
-                <p className="font-dm text-xs text-blanc-casse/50 mb-1.5 leading-snug">{cas.problem}</p>
-                <p className="font-dm text-xs text-blanc-casse/70 mb-3 leading-snug">{cas.solution}</p>
+                <p className="font-dm text-xs text-blanc-casse/80 mb-1.5 leading-snug">{cas.problem}</p>
+                <p className="font-dm text-xs text-blanc-casse/90 mb-3 leading-snug">{cas.solution}</p>
                 <div className="flex flex-wrap gap-x-3 gap-y-1 pt-2 border-t border-blanc-casse/10">
                   {cas.results.map((r, j) => (
                     <div key={j} className="flex items-center gap-1.5">
                       <r.icon size={13} className="text-or-mat shrink-0" />
-                      <span className="font-dm text-xs text-blanc-casse/60">{r.label}</span>
+                      <span className="font-dm text-xs text-blanc-casse/80">{r.label}</span>
                     </div>
                   ))}
                 </div>
