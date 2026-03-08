@@ -1,4 +1,4 @@
-import { Cog, GraduationCap, Filter } from "lucide-react";
+import { Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, ShieldCheck, Ban, Compass } from "lucide-react";
 
 const prestations = [
 {
@@ -6,30 +6,33 @@ const prestations = [
   title: "Automatisation sur-mesure",
   badge: null,
   items: [
-  "Workflows via n8n",
-  "Connexion à vos outils existants",
-  "Automatisation des tâches répétitives",
-  "Logique simple, robuste et évolutive"]
+    { icon: Workflow, text: "Workflows via n8n" },
+    { icon: Link2, text: "Connexion à vos outils existants" },
+    { icon: RotateCcw, text: "Automatisation des tâches répétitives" },
+    { icon: Lightbulb, text: "Logique simple, robuste et évolutive" }
+  ]
 },
 {
   icon: GraduationCap,
   title: "Formation & acculturation IA",
   badge: "ChatGPT · Claude · Gemini · Copilot",
   items: [
-  "Usage structuré et professionnel",
-  "Maîtrise du prompt",
-  "Formation adaptée à votre niveau",
-  "Mise en pratique sur vos cas réels"]
+    { icon: MessageSquare, text: "Usage structuré et professionnel" },
+    { icon: PenTool, text: "Maîtrise du prompt" },
+    { icon: Users, text: "Formation adaptée à votre niveau" },
+    { icon: SlidersHorizontal, text: "Mise en pratique sur vos cas réels" }
+  ]
 },
 {
   icon: Filter,
   title: "Conseil & choix d'outils",
   badge: null,
   items: [
-  "Le marché compte des centaines d'outils IA",
-  "Filtrer les solutions pertinentes",
-  "Éviter les abonnements inutiles",
-  "Choisir ce qui correspond vraiment à votre activité"]
+    { icon: Compass, text: "Le marché compte des centaines d'outils IA" },
+    { icon: ShieldCheck, text: "Filtrer les solutions pertinentes" },
+    { icon: Ban, text: "Éviter les abonnements inutiles" },
+    { icon: Lightbulb, text: "Choisir ce qui correspond vraiment à votre activité" }
+  ]
 }];
 
 
@@ -61,8 +64,8 @@ const PrestationsSection = () => {
               <ul className="space-y-2 mt-auto pt-4 border-t border-navy/10">
                 {p.items.map((item, j) =>
               <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
-                    <span className="w-1 h-1 rounded-full bg-or-mat mt-2 shrink-0" />
-                    {item}
+                    <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
+                    {item.text}
                   </li>
               )}
               </ul>

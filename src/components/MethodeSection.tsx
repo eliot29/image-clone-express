@@ -1,3 +1,5 @@
+import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp } from "lucide-react";
+
 const steps = [
 {
   num: "01",
@@ -10,10 +12,11 @@ const steps = [
   title: "Proposition sous trois jours ouvrés",
   desc: "Une proposition adaptée à votre situation réelle. Je prends le temps de :",
   items: [
-  "lister les solutions possibles",
-  "prioriser les actions",
-  "estimer les gains potentiels"],
-
+    { icon: Target, text: "Identification des priorités" },
+    { icon: Wrench, text: "Mise en place ou formation ciblée" },
+    { icon: FlaskConical, text: "Test en conditions réelles" },
+    { icon: RefreshCw, text: "Ajustements selon les retours terrain" }
+  ],
   note: "Objectif : une vision claire avant toute mise en place."
 },
 {
@@ -27,10 +30,10 @@ const steps = [
   title: "Suivi",
   desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour :",
   items: [
-  "ajuster les solutions mises en place",
-  "répondre aux questions",
-  "approfondir certains usages si nécessaire"]
-
+    { icon: Settings, text: "Ajuster les solutions mises en place" },
+    { icon: MessageCircle, text: "Répondre aux questions" },
+    { icon: TrendingUp, text: "Approfondir certains usages si nécessaire" }
+  ]
 }];
 
 
@@ -70,8 +73,8 @@ const MethodeSection = () => {
                 <ul className="mt-3 space-y-1.5">
                       {step.items.map((item, j) =>
                   <li key={j} className="flex items-start gap-2 font-dm text-sm text-ardoise/70">
-                          <span className="w-1.5 h-1.5 rounded-full bg-or-mat mt-1.5 shrink-0" />
-                          {item}
+                          <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
+                          {item.text}
                         </li>
                   )}
                     </ul>
