@@ -32,9 +32,9 @@ const Navigation = () => {
       <div className="flex items-center w-full">
         <a href="#accueil" className="mr-4 flex-shrink-0">
           <img
-            src="/logo-semaine54.png?v=4"
+            src="/logo-semaine54-blanc.svg"
             alt="Semaine 54"
-            className="h-11 w-auto brightness-0 invert"
+            className="h-11 w-auto"
           />
         </a>
 
