@@ -51,7 +51,7 @@ const FooterSection = () => {
           <p className="font-dm text-or-mat text-base">
             semaine54.fr — site réalisé à l'aide d'intelligence artificielle
           </p>
-          <img src="/logo-semaine54-blanc.svg" alt="Semaine 54" className="h-16" />
+          <img src="/logo-semaine54-blanc.svg" alt="Semaine 54" className="h-20" />
         </div>
       </div>
     </footer>
