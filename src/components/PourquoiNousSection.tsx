@@ -19,13 +19,13 @@ const PourquoiNousSection = () => {
             <p>
               Dans ces fonctions, une chose devient vite évidente : <strong className="text-navy">le temps n'a de valeur que lorsqu'il produit un résultat mesurable.</strong>
             </p>
-            <p>
-              <strong className="text-navy">Depuis trois ans, je teste et utilise les outils d'IA dans des contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.</strong>
+            <p className="text-ardoise/80">
+              Depuis trois ans, je teste et utilise les outils d'IA dans des contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.
             </p>
             <p className="font-semibold text-navy">
               Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.
             </p>
-            <p className="font-semibold text-navy">
+            <p className="text-ardoise/80">
               Deux expériences concrètes ont confirmé cette conviction :
             </p>
           </div>
