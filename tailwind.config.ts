@@ -89,6 +89,10 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -97,6 +101,8 @@ export default {
         "counter": "counter 0.4s ease-out both",
         "marquee": "marquee 8s linear infinite",
         "marquee-slow": "marquee 30s linear infinite",
+        "marquee-reverse": "marquee-reverse 8s linear infinite",
+        "marquee-reverse-slow": "marquee-reverse 30s linear infinite",
       },
     },
   },
