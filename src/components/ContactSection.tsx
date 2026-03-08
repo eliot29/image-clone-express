@@ -29,6 +29,9 @@ const ContactSection = () => {
                   </li>
                 )}
               </ul>
+              <p className="font-dm text-blanc-casse/70 text-sm mt-4 text-center md:text-left">
+                Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.
+              </p>
             </div>
 
             {/* Right: CTA */}
