@@ -1,4 +1,6 @@
 import { Clock, TrendingUp, Shield, Eye, Users, FileCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const cases = [
   {
