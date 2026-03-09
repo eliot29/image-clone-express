@@ -90,6 +90,12 @@ const CasConcretsSection = () => {
             ))}
           </div>
         </div>
+
+        <div className="text-center mt-6">
+          <Button variant="cta" size="lg" asChild>
+            <Link to="/secteurs">Mon secteur est-il concerné ?</Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
