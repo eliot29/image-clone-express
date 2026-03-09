@@ -1,4 +1,6 @@
 import { Clock, TrendingUp, Shield, Eye, Users, FileCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const cases = [
   {
@@ -87,6 +89,12 @@ const CasConcretsSection = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="text-center mt-6">
+          <Button variant="cta" size="lg" asChild>
+            <Link to="/secteurs">Mon secteur est-il concerné ?</Link>
+          </Button>
         </div>
       </div>
     </section>

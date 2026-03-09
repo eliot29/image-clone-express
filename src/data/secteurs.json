@@ -1,0 +1,669 @@
+{
+  "meta": {
+    "brand": "Semaine 54",
+    "cta_label": "Prendre un audit gratuit",
+    "cta_url": "/contact"
+  },
+  "secteurs": [
+    {
+      "id": "agriculture",
+      "label": "Agriculture",
+      "categorie": "Ressources naturelles",
+      "emoji": "🌾",
+      "problemes": [
+        "Vous ressaisissez chaque semaine vos données de rendement dans plusieurs fichiers sans jamais avoir une vue claire.",
+        "Vous relancez vos clients pour les factures impayées à la main, par email ou téléphone."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos fichiers de production",
+          "description": "Il génère un rapport hebdomadaire clair en quelques secondes, sans que vous ayez à ouvrir Excel."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Vos relances de factures partent automatiquement",
+          "description": "À J+15 et J+30, votre client reçoit un rappel par email. Vous êtes notifié seulement si c'est toujours impayé."
+        }
+      ]
+    },
+    {
+      "id": "elevage",
+      "label": "Élevage",
+      "categorie": "Ressources naturelles",
+      "emoji": "🐄",
+      "problemes": [
+        "Vous notez les traitements et naissances dans un cahier ou un fichier, mais rien ne vous alerte quand une intervention approche.",
+        "Vous passez du temps à organiser les visites vétérinaires par téléphone et email."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA suit l'historique sanitaire de votre troupeau",
+          "description": "Il vous génère un planning des prochaines interventions à partir de vos données existantes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Un rappel automatique avant chaque intervention vétérinaire",
+          "description": "Dès qu'une date approche dans votre planning, vous recevez une alerte email ou SMS sans rien faire."
+        }
+      ]
+    },
+    {
+      "id": "peche",
+      "label": "Pêche & aquaculture",
+      "categorie": "Ressources naturelles",
+      "emoji": "🐟",
+      "problemes": [
+        "Vous gérez vos commandes clients par téléphone et email, et la confirmation manuelle vous prend un temps fou.",
+        "La traçabilité des captures se fait à la main dans des fichiers épars."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA génère vos rapports de traçabilité",
+          "description": "Il compile vos données de captures et produit le document réglementaire en quelques clics."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque commande reçue génère automatiquement un bon de livraison",
+          "description": "L'email de commande est lu, le bon est créé et le stock est mis à jour. Zéro saisie manuelle."
+        }
+      ]
+    },
+    {
+      "id": "sylviculture",
+      "label": "Sylviculture",
+      "categorie": "Ressources naturelles",
+      "emoji": "🌲",
+      "problemes": [
+        "La coordination de vos équipes chantier se fait par appels et messages, sans trace centralisée.",
+        "Vos documents réglementaires (autorisations, rapports) sont éparpillés et difficiles à retrouver."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA résume vos comptes-rendus terrain",
+          "description": "Il transforme vos notes brutes en rapport de chantier structuré, prêt à envoyer."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque document est automatiquement archivé et notifié",
+          "description": "À la réception d'un fichier, il est classé dans votre Drive et l'équipe concernée est avertie par email."
+        }
+      ]
+    },
+    {
+      "id": "industries-extractives",
+      "label": "Industries extractives",
+      "categorie": "Ressources naturelles",
+      "emoji": "⛏️",
+      "problemes": [
+        "Vous consolidez manuellement les journaux de production chaque semaine depuis plusieurs sources.",
+        "Les rapports de sécurité et de conformité sont rédigés à la main et envoyés avec du retard."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos données de sécurité",
+          "description": "Il détecte les incidents récurrents et génère le rapport mensuel prêt à soumettre."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque incident signalé déclenche automatiquement un rapport",
+          "description": "Le formulaire rempli sur le terrain génère un PDF et l'envoie aux responsables sans délai."
+        }
+      ]
+    },
+    {
+      "id": "agroalimentaire",
+      "label": "Industrie agroalimentaire",
+      "categorie": "Production et industrie",
+      "emoji": "🏭",
+      "problemes": [
+        "Vos non-conformités qualité sont notées à la main et les actions correctives peinent à être suivies.",
+        "La traçabilité des matières premières impose des saisies dans plusieurs outils qui ne se parlent pas."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA propose des actions correctives immédiatement",
+          "description": "Décrivez votre incident qualité : il analyse et vous propose un plan d'action en quelques secondes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque non-conformité ouvre automatiquement un ticket et alerte le responsable",
+          "description": "Plus de post-its ou d'emails oubliés : le suivi est tracé dès la déclaration."
+        }
+      ]
+    },
+    {
+      "id": "manufacturier",
+      "label": "Industrie manufacturière",
+      "categorie": "Production et industrie",
+      "emoji": "⚙️",
+      "problemes": [
+        "Vos commandes sont saisies à la main entre le CRM et l'outil de production, source d'erreurs et de perte de temps.",
+        "Votre reporting de production hebdomadaire est construit à partir d'exports Excel par plusieurs personnes."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos KPI de production",
+          "description": "Il génère le rapport direction chaque semaine sans qu'on lui demande, à partir de vos données."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque commande CRM crée automatiquement l'ordre de fabrication",
+          "description": "L'atelier est notifié en temps réel. La synchronisation entre outils est invisible pour vos équipes."
+        }
+      ]
+    },
+    {
+      "id": "textile",
+      "label": "Industrie textile & habillement",
+      "categorie": "Production et industrie",
+      "emoji": "👗",
+      "problemes": [
+        "Mettre à jour vos fiches produits sur plusieurs canaux (site, marketplaces) vous prend des heures à chaque nouvelle collection.",
+        "Votre reporting ventes par collection est reconstruit à la main depuis des exports différents."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA rédige vos fiches produits optimisées",
+          "description": "Donnez-lui les caractéristiques : il génère une fiche claire, vendeuse et adaptée à chaque canal."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "L'ajout d'un produit sur Shopify se synchronise automatiquement sur vos marketplaces",
+          "description": "Une seule saisie suffit. Le reste se propage sans intervention."
+        }
+      ]
+    },
+    {
+      "id": "chimique-pharma",
+      "label": "Industrie chimique & pharmaceutique",
+      "categorie": "Production et industrie",
+      "emoji": "🧪",
+      "problemes": [
+        "Vos documents réglementaires (fiches de sécurité, notices) sont mis à jour manuellement et diffusés avec retard.",
+        "Le suivi des lots demande des rapprochements entre plusieurs systèmes, faits à la main."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse et résume vos documents de conformité",
+          "description": "Il identifie les points critiques et prépare une synthèse pour l'équipe réglementaire."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque nouveau document est archivé et notifié à l'équipe concernée",
+          "description": "Réception du fichier → classement automatique dans le bon dossier → email de notification. Rien à faire."
+        }
+      ]
+    },
+    {
+      "id": "energie",
+      "label": "Énergie & électricité",
+      "categorie": "Production et industrie",
+      "emoji": "⚡",
+      "problemes": [
+        "Vous consolidez les données de production depuis plusieurs systèmes pour produire un reporting qui prend des heures.",
+        "Vos rapports environnementaux et réglementaires sont rédigés manuellement chaque mois."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA génère votre rapport mensuel de production",
+          "description": "Il analyse vos données et produit le document structuré, prêt à envoyer aux parties prenantes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Vos données capteurs sont collectées et stockées automatiquement",
+          "description": "Le workflow récupère les données en temps réel via API et les organise pour vos dashboards."
+        }
+      ]
+    },
+    {
+      "id": "eau-assainissement",
+      "label": "Eau & assainissement",
+      "categorie": "Environnement",
+      "emoji": "💧",
+      "problemes": [
+        "Les demandes clients (pannes, interventions, réclamations) arrivent par plusieurs canaux et sont traitées sans priorisation.",
+        "Vos rapports de qualité de l'eau pour les autorités sont produits manuellement depuis plusieurs sources."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA synthétise vos tickets support et priorise les urgences",
+          "description": "Il trie, résume et classe les demandes pour que votre équipe terrain sache quoi traiter en premier."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque formulaire d'incident crée un ticket et notifie l'équipe terrain",
+          "description": "Plus rien ne se perd entre les canaux. Chaque demande est tracée dès la réception."
+        }
+      ]
+    },
+    {
+      "id": "dechets-recyclage",
+      "label": "Déchets & recyclage",
+      "categorie": "Environnement",
+      "emoji": "♻️",
+      "problemes": [
+        "La planification des tournées est mise à jour à la main et les changements de dernière minute créent de la confusion.",
+        "Vos rapports de tonnage réglementaires sont compilés manuellement depuis plusieurs fichiers."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos volumes et optimise vos tournées",
+          "description": "Il détecte les anomalies de charge et vous suggère des ajustements avant la semaine."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Le planning de collecte est envoyé automatiquement à chaque chauffeur",
+          "description": "Dès la mise à jour du planning, chaque conducteur reçoit sa feuille de route par email ou SMS."
+        }
+      ]
+    },
+    {
+      "id": "construction-btp",
+      "label": "Construction & BTP",
+      "categorie": "Construction",
+      "emoji": "🏗️",
+      "problemes": [
+        "Vos comptes-rendus de chantier sont rédigés à la main le soir, souvent incomplets ou en retard.",
+        "La coordination avec vos sous-traitants se fait par appels et SMS, sans trace écrite centralisée."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA transforme vos notes vocales en compte-rendu de chantier",
+          "description": "Parlez dans votre téléphone sur le chantier. Le compte-rendu structuré est prêt en 30 secondes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque rapport de chantier est envoyé automatiquement à toutes les parties",
+          "description": "Validé → distribué. Maître d'œuvre, sous-traitants et client reçoivent leur version sans manipulation."
+        }
+      ]
+    },
+    {
+      "id": "artisans-batiment",
+      "label": "Artisans du bâtiment",
+      "categorie": "Construction",
+      "emoji": "🔨",
+      "problemes": [
+        "Vous perdez des chantiers parce que vos devis ne sont pas relancés à temps.",
+        "Vous passez trop de temps à qualifier des demandes qui ne correspondent pas à votre activité."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse les demandes entrantes et vous prépare une première réponse",
+          "description": "Il qualifie la demande, détecte si elle vous correspond, et rédige un email de réponse à valider."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Vos devis sans réponse sont relancés automatiquement à J+7 et J+14",
+          "description": "Un email de relance personnalisé part sans que vous y pensiez. Vous êtes notifié si le client répond."
+        }
+      ]
+    },
+    {
+      "id": "commerce-gros",
+      "label": "Commerce de gros",
+      "categorie": "Commerce",
+      "emoji": "📦",
+      "problemes": [
+        "Vos catalogues tarifaires sont envoyés à la main par email à chaque mise à jour.",
+        "Votre reporting commercial par client est reconstruit chaque mois depuis des exports différents."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos ventes et identifie vos clients à risque ou à potentiel",
+          "description": "Il lit vos données et vous signale les comptes en baisse ou les opportunités à saisir."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque mise à jour tarifaire est envoyée automatiquement aux clients concernés",
+          "description": "Le catalogue est mis à jour → les bons clients reçoivent la nouvelle grille par email. Immédiatement."
+        }
+      ]
+    },
+    {
+      "id": "commerce-detail",
+      "label": "Commerce de détail",
+      "categorie": "Commerce",
+      "emoji": "🛍️",
+      "problemes": [
+        "Vous gérez les ruptures de stock à la main et commandez vos fournisseurs trop tard.",
+        "Vos campagnes de fidélité et emailings sont préparés et envoyés manuellement."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos ventes et anticipe vos besoins de réassort",
+          "description": "Il détecte les tendances et vous alerte avant la rupture, pas après."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Dès qu'un seuil de stock est atteint, une commande fournisseur est déclenchée",
+          "description": "Vous définissez le seuil une fois. Le workflow commande à votre place quand c'est nécessaire."
+        }
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "label": "E-commerce",
+      "categorie": "Commerce",
+      "emoji": "🛒",
+      "problemes": [
+        "Votre service client répond manuellement aux mêmes questions de suivi de commande toute la journée.",
+        "La mise à jour de vos produits sur plusieurs marketplaces est une tâche répétitive qui prend des heures."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA répond à vos questions clients fréquentes 24h/24",
+          "description": "Il traite les demandes standard (délais, retours, suivi) et vous escalade uniquement les cas complexes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque commande génère automatiquement l'email de suivi et la mise à jour du statut",
+          "description": "De la confirmation à la livraison, le client est informé sans que vous interveniez."
+        }
+      ]
+    },
+    {
+      "id": "transport-marchandises",
+      "label": "Transport de marchandises",
+      "categorie": "Transport et logistique",
+      "emoji": "🚚",
+      "problemes": [
+        "L'affectation des tournées se fait manuellement et prend du temps chaque matin.",
+        "Vos clients appellent pour savoir où est leur livraison parce qu'ils ne reçoivent aucune notification."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos ordres de transport et optimise les affectations",
+          "description": "Il tient compte des contraintes et vous propose un plan de tournée cohérent en quelques secondes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Le client reçoit un SMS automatique à la prise en charge et à la livraison",
+          "description": "Plus d'appels entrants pour savoir où est le colis. Le client est informé à chaque étape."
+        }
+      ]
+    },
+    {
+      "id": "transport-personnes",
+      "label": "Transport de personnes",
+      "categorie": "Transport et logistique",
+      "emoji": "🚌",
+      "problemes": [
+        "Vos réservations arrivent par plusieurs canaux et sont centralisées à la main dans un planning.",
+        "Les passagers ne reçoivent pas d'information automatique en cas de modification ou d'annulation."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA répond aux questions fréquentes de vos voyageurs",
+          "description": "Horaires, tarifs, conditions : il gère les demandes répétitives et libère votre équipe."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque réservation déclenche automatiquement un email de confirmation",
+          "description": "Et en cas de modification, le passager est prévenu sans délai, sans intervention de votre part."
+        }
+      ]
+    },
+    {
+      "id": "logistique",
+      "label": "Logistique & entreposage",
+      "categorie": "Transport et logistique",
+      "emoji": "🏢",
+      "problemes": [
+        "Vos KPIs logistiques (taux de service, erreurs, délais) sont construits chaque semaine à la main.",
+        "La synchronisation entre votre ERP, votre WMS et votre e-commerce se fait avec des décalages et des erreurs."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse vos KPIs et identifie les causes d'erreurs de préparation",
+          "description": "Il lit vos données et vous donne une lecture claire de ce qui freine votre performance."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque nouvelle commande crée automatiquement la tâche de préparation dans votre outil",
+          "description": "Votre équipe entrepôt reçoit les instructions en temps réel sans ressaisie."
+        }
+      ]
+    },
+    {
+      "id": "hotellerie",
+      "label": "Hôtellerie",
+      "categorie": "Tourisme et restauration",
+      "emoji": "🏨",
+      "problemes": [
+        "Vous gérez les réservations de plusieurs plateformes (Booking, Airbnb, site direct) dans des outils séparés.",
+        "Vous rédigez manuellement les mêmes emails de bienvenue, check-in et départ pour chaque client."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA rédige vos réponses clients personnalisées en quelques secondes",
+          "description": "Donnez-lui le contexte de la demande : il produit un message adapté à relire et envoyer."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque réservation déclenche automatiquement les emails de check-in et d'informations pratiques",
+          "description": "Le client reçoit tout ce dont il a besoin avant son arrivée, sans que vous touchiez à rien."
+        }
+      ]
+    },
+    {
+      "id": "restauration",
+      "label": "Restauration",
+      "categorie": "Tourisme et restauration",
+      "emoji": "🍽️",
+      "problemes": [
+        "Vous répondez manuellement à tous vos avis Google, souvent avec du retard.",
+        "Vos commandes fournisseurs sont passées par téléphone ou email sans suivi centralisé."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA rédige une réponse à chaque avis Google, prête à publier",
+          "description": "Il adapte le ton selon la note reçue. Vous relisez et publiez en 10 secondes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque nouvel avis Google déclenche la rédaction automatique d'un brouillon de réponse",
+          "description": "Vous êtes notifié avec la réponse prête. Plus d'avis sans réponse qui traînent."
+        }
+      ]
+    },
+    {
+      "id": "tourisme-loisirs",
+      "label": "Tourisme & loisirs",
+      "categorie": "Tourisme et restauration",
+      "emoji": "🎯",
+      "problemes": [
+        "Vous consolidez les réservations de plusieurs canaux à la main dans votre planning.",
+        "Vous envoyez manuellement les emails de rappel et d'informations pratiques avant chaque activité."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA crée le contenu de présentation de vos activités",
+          "description": "Descriptions, FAQ, emails d'accueil : il rédige vos contenus en accord avec votre style."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque réservation déclenche un email de rappel automatique la veille de l'activité",
+          "description": "Le participant reçoit les infos pratiques au bon moment. Vous ne pensez plus à le faire."
+        }
+      ]
+    },
+    {
+      "id": "banque-finance",
+      "label": "Banque & finance",
+      "categorie": "Finance et immobilier",
+      "emoji": "🏦",
+      "problemes": [
+        "Le traitement des dossiers clients (KYC, crédits) implique une vérification manuelle de nombreux documents.",
+        "Vos tableaux de bord financiers et reportings réglementaires sont construits manuellement depuis plusieurs sources."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse et résume vos dossiers clients en quelques secondes",
+          "description": "Il lit les documents, identifie les pièces manquantes et vous produit une synthèse prête à instruire."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque dépôt de dossier déclenche l'extraction automatique des données clés",
+          "description": "Les informations sont organisées dans votre outil de suivi sans ressaisie."
+        }
+      ]
+    },
+    {
+      "id": "assurance",
+      "label": "Assurance",
+      "categorie": "Finance et immobilier",
+      "emoji": "🛡️",
+      "problemes": [
+        "Vos clients tardent à envoyer les pièces justificatives pour leurs dossiers sinistres, et vous relancez à la main.",
+        "Le traitement des demandes de devis reçues par formulaire ou email est long et non priorisé."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA résume chaque dossier sinistre et identifie les pièces manquantes",
+          "description": "Il vous donne une vue instantanée de l'état du dossier sans que vous ayez à tout relire."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque dossier sinistre déclenche automatiquement des relances de documents à J+3, J+7",
+          "description": "Le client reçoit un rappel clair avec la liste des pièces à fournir. Vous êtes notifié à réception."
+        }
+      ]
+    },
+    {
+      "id": "immobilier",
+      "label": "Immobilier",
+      "categorie": "Finance et immobilier",
+      "emoji": "🏠",
+      "problemes": [
+        "Vous qualifiez manuellement les leads entrants des portails, souvent pour des prospects peu sérieux.",
+        "L'organisation des visites demande de nombreux allers-retours par email ou téléphone."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA rédige vos annonces immobilières optimisées",
+          "description": "Donnez-lui les caractéristiques du bien : il produit une annonce percutante pour les portails."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque lead portail est créé automatiquement dans votre CRM et reçoit un SMS de prise de contact",
+          "description": "Vous êtes le premier à répondre, sans effort. La visite peut être proposée dans la foulée."
+        }
+      ]
+    },
+    {
+      "id": "conseil-entreprises",
+      "label": "Conseil & services aux entreprises",
+      "categorie": "Services professionnels",
+      "emoji": "💼",
+      "problemes": [
+        "Votre suivi commercial (relances, opportunités en cours) repose sur votre mémoire ou un fichier Excel.",
+        "Vous passez trop de temps à produire des rapports et synthèses pour vos clients."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA génère vos synthèses de mission à partir de vos notes",
+          "description": "Donnez-lui vos notes de réunion : il produit le compte-rendu client structuré en quelques secondes."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Votre CRM envoie automatiquement des relances à chaque opportunité sans réponse",
+          "description": "À J+7 sans réponse, votre prospect reçoit un email de relance. Vous êtes alerté s'il répond."
+        }
+      ]
+    },
+    {
+      "id": "marketing-communication",
+      "label": "Marketing & communication",
+      "categorie": "Services professionnels",
+      "emoji": "📣",
+      "problemes": [
+        "Vous publiez manuellement sur plusieurs réseaux sociaux sans planification centralisée.",
+        "Vos rapports de performance pour les clients sont construits à la main depuis plusieurs outils."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA génère vos posts et contenus pour chaque réseau",
+          "description": "Donnez-lui le sujet et le ton : il produit les variantes adaptées à chaque plateforme."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Vos publications planifiées sont distribuées automatiquement sur tous vos réseaux",
+          "description": "Vous préparez le contenu une fois. Le workflow se charge de la publication au bon moment."
+        }
+      ]
+    },
+    {
+      "id": "informatique-tech",
+      "label": "Informatique & technologies",
+      "categorie": "Services professionnels",
+      "emoji": "💻",
+      "problemes": [
+        "Vos tickets support arrivent en vrac et sont triés et assignés à la main.",
+        "Vos données sont intégrées manuellement entre vos outils (CRM, facturation, outil produit)."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA analyse chaque ticket et suggère une réponse ou une solution",
+          "description": "Il classe la priorité et rédige une première réponse que votre équipe valide en un clic."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque ticket entrant est automatiquement trié et assigné au bon membre de l'équipe",
+          "description": "Finis les tickets qui tombent dans le vide. Chaque demande est prise en charge immédiatement."
+        }
+      ]
+    },
+    {
+      "id": "sante-associations",
+      "label": "Santé, éducation & associations",
+      "categorie": "Services à la société",
+      "emoji": "🤝",
+      "problemes": [
+        "La prise de rendez-vous et la planification des interventions mobilisent trop de temps administratif.",
+        "Vos rapports d'activité pour les financeurs ou tutelles sont produits manuellement chaque trimestre."
+      ],
+      "solutions": [
+        {
+          "type": "Assistant IA",
+          "titre": "Un assistant IA synthétise vos dossiers et prépare vos rapports d'activité",
+          "description": "Il compile vos données et génère le document structuré attendu par vos financeurs."
+        },
+        {
+          "type": "Workflow n8n",
+          "titre": "Chaque prise de rendez-vous en ligne est ajoutée au calendrier avec un rappel automatique",
+          "description": "Le bénéficiaire reçoit une confirmation et un rappel SMS la veille. Zéro appel de confirmation."
+        }
+      ]
+    }
+  ]
+}
