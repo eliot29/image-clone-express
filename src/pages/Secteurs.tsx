@@ -51,34 +51,38 @@ const Secteurs = () => {
         </p>
       </header>
 
-      {/* Category filter */}
+      {/* Category filter – horizontal scroll */}
       <div className="container mx-auto px-6 pb-4">
-        <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => setActiveCategory(null)}
-            className={`px-4 py-2 rounded-full font-dm text-sm font-medium transition-colors ${
-              activeCategory === null
-                ? "bg-accent text-accent-foreground"
-                : "bg-blanc-casse/10 text-blanc-casse/70 hover:bg-blanc-casse/20"
-            }`}
-          >
-            Tous
-          </button>
-          {categories.map((cat) => (
+        <div className="relative overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
+          <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-2 snap-x">
             <button
-              key={cat}
-              onClick={() =>
-                setActiveCategory(activeCategory === cat ? null : cat)
-              }
-              className={`px-4 py-2 rounded-full font-dm text-sm font-medium transition-colors ${
-                activeCategory === cat
+              onClick={() => setActiveCategory(null)}
+              className={`px-5 py-2.5 rounded-full font-dm text-sm font-medium transition-colors shrink-0 snap-start ${
+                activeCategory === null
                   ? "bg-accent text-accent-foreground"
                   : "bg-blanc-casse/10 text-blanc-casse/70 hover:bg-blanc-casse/20"
               }`}
             >
-              {cat}
+              Tous
             </button>
-          ))}
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() =>
+                  setActiveCategory(activeCategory === cat ? null : cat)
+                }
+                className={`px-5 py-2.5 rounded-full font-dm text-sm font-medium transition-colors shrink-0 snap-start ${
+                  activeCategory === cat
+                    ? "bg-accent text-accent-foreground"
+                    : "bg-blanc-casse/10 text-blanc-casse/70 hover:bg-blanc-casse/20"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
