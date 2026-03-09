@@ -52,39 +52,22 @@ const Secteurs = () => {
         </p>
       </header>
 
-      {/* Category filter – horizontal scroll */}
-      <div className="container mx-auto px-6 pb-4">
-        <div className="relative overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-navy to-transparent z-10 pointer-events-none" />
-          <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-2 snap-x">
-            <button
-              onClick={() => setActiveCategory(null)}
-              className={`px-5 py-2.5 rounded-full font-dm text-sm font-medium transition-colors shrink-0 snap-start ${
-                activeCategory === null
-                  ? "bg-accent text-accent-foreground"
-                  : "bg-blanc-casse/10 text-blanc-casse/70 hover:bg-blanc-casse/20"
-              }`}
-            >
-              Tous
-            </button>
+      {/* Category filter – dropdown */}
+      <div className="container mx-auto px-6 pb-6">
+        <Select
+          value={activeCategory ?? "all"}
+          onValueChange={(val) => setActiveCategory(val === "all" ? null : val)}
+        >
+          <SelectTrigger className="w-full sm:w-72 bg-blanc-casse/10 border-blanc-casse/20 text-blanc-casse font-dm">
+            <SelectValue placeholder="Filtrer par catégorie" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">Tous les secteurs</SelectItem>
             {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() =>
-                  setActiveCategory(activeCategory === cat ? null : cat)
-                }
-                className={`px-5 py-2.5 rounded-full font-dm text-sm font-medium transition-colors shrink-0 snap-start ${
-                  activeCategory === cat
-                    ? "bg-accent text-accent-foreground"
-                    : "bg-blanc-casse/10 text-blanc-casse/70 hover:bg-blanc-casse/20"
-                }`}
-              >
-                {cat}
-              </button>
+              <SelectItem key={cat} value={cat}>{cat}</SelectItem>
             ))}
-          </div>
-        </div>
+          </SelectContent>
+        </Select>
       </div>
 
       {/* Secteurs grid */}
