@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import FooterSection from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
