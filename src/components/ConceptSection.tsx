@@ -24,9 +24,19 @@ Mais sous certaines conditions.</span>
           </div>
 
           <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-center">L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.</p>
+
+          <div className="flex justify-center mt-6">
+            <Button variant="ctaOutline" size="lg" asChild>
+              <a href="/solutions">
+                Découvrir les solutions en détail
+                <ArrowRight size={18} />
+              </a>
+            </Button>
+          </div>
         </div>
 
       </div>
-    </section>);};
+    </section>);
+};
 
 export default ConceptSection;
