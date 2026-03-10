@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-
 const PourquoiNousSection = () => {
   return (
     <section id="approche" className="bg-blanc-casse py-6">
@@ -50,15 +46,6 @@ const PourquoiNousSection = () => {
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-center mt-6">
             Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
           </p>
-
-          <div className="text-center mt-6">
-            <Button variant="ctaOutline" size="lg" asChild>
-              <Link to="/comment-ca-marche">
-                En savoir plus sur la méthode
-                <ArrowRight size={18} />
-              </Link>
-            </Button>
-          </div>
 
         </div>
       </div>
