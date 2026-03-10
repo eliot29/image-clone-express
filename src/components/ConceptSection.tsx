@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
 const ConceptSection = () => {
   return (
     <section id="concept" className="bg-navy py-6">

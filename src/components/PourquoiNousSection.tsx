@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
 const PourquoiNousSection = () => {
   return (
     <section id="approche" className="bg-blanc-casse py-6">
