@@ -73,6 +73,8 @@ const Solutions = () => {
     document.querySelector('meta[name="description"]')?.setAttribute("content", "Workflows n8n, assistant IA sur-mesure, formation ciblée. Comparatif avant/après sur cas réels, FAQ technique, RGPD. Consultant IA basé en Finistère, interventions en Bretagne.");
     window.scrollTo(0, 0);
   }, []);
+
+  return (
     <>
       <Navigation />
       <main>

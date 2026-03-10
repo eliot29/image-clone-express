@@ -70,6 +70,8 @@ const CommentCaMarche = () => {
     document.querySelector('meta[name="description"]')?.setAttribute("content", "Audit gratuit, proposition sous 5 jours, calibration sur vos conditions réelles, suivi dans la durée. Un seul interlocuteur de bout en bout. Consultant IA Bretagne, disponible soirées et week-ends.");
     window.scrollTo(0, 0);
   }, []);
+
+  return (
     <>
       <Navigation />
       <main>
