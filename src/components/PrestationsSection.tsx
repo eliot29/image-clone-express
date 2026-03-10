@@ -1,4 +1,6 @@
-import { Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, ShieldCheck, Ban, Compass } from "lucide-react";
+import { Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, ShieldCheck, Ban, Compass, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const prestations = [
 {
@@ -73,9 +75,14 @@ const PrestationsSection = () => {
           )}
         </div>
 
-        
-
-        
+        <div className="text-center mt-6">
+          <Button variant="ctaOutline" size="lg" asChild>
+            <Link to="/solutions">
+              Découvrir les solutions en détail
+              <ArrowRight size={18} />
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>);
 };
