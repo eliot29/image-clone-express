@@ -75,9 +75,14 @@ const PrestationsSection = () => {
           )}
         </div>
 
-        
-
-        
+        <div className="text-center mt-6">
+          <Button variant="ctaOutline" size="lg" asChild>
+            <Link to="/solutions">
+              Découvrir les solutions en détail
+              <ArrowRight size={18} />
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>);
 };
