@@ -1,14 +1,14 @@
 import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image } from "lucide-react";
 
 const painPoints = [
-{ icon: FileText, text: "Devis rédigés à la main" },
-{ icon: Search, text: "Recherches d'informations répétitives" },
-{ icon: Mail, text: "Relances de mails chronophages" },
-{ icon: Share2, text: "Publications irrégulières sur les réseaux" },
-{ icon: FolderOpen, text: "Administratif qui s'accumule" },
-{ icon: Clock, text: "Comparaisons fournisseurs fastidieuses" },
-{ icon: BarChart3, text: "Longues analyses de fichiers Excel" },
-{ icon: Image, text: "Productions laborieuses de supports visuels" }];
+{ icon: FileText, text: "Devis générés en quelques minutes" },
+{ icon: Search, text: "Informations trouvées instantanément" },
+{ icon: Mail, text: "Relances clients envoyés automatiquement" },
+{ icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
+{ icon: FolderOpen, text: "Administratif traité sans y toucher" },
+{ icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
+{ icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
+{ icon: Image, text: "Supports visuels créés sans designer" }];
 
 
 const HeroSection = () => {
