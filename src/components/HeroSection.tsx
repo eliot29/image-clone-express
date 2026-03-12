@@ -67,7 +67,7 @@ const HeroSection = () => {
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-6 italic">
-            Ces tâches ne créent pas de valeur. Elles consomment votre temps.
+            Et si toutes ces tâches se faisaient automatiquement ?
           </p>
 
           {/* Stat highlight */}
