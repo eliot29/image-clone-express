@@ -83,6 +83,14 @@ const MethodeSection = () => {
             )}
           </div>
 
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/comment-ca-marche#leviers">
+                Voir toutes les solutions
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>);

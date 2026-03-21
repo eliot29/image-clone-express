@@ -51,6 +51,15 @@ const PourquoiNousSection = () => {
             Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
           </p>
 
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/pourquoi-semaine-54#preuves">
+                Voir les résultats concrets
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
+
 
         </div>
       </div>

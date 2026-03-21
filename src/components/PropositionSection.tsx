@@ -77,6 +77,15 @@ const PropositionSection = () => {
           <p className="font-dm font-bold text-or-mat text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-2">
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
+
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/pourquoi-semaine-54#parcours">
+                Découvrir mon parcours et ma méthode
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
