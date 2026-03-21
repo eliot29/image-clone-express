@@ -1,4 +1,6 @@
-import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair } from "lucide-react";
+import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const solutions = [
   { icon: Workflow, text: "Automatisation via n8n" },
