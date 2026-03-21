@@ -1,4 +1,6 @@
-import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp } from "lucide-react";
+import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const steps = [
 {
@@ -81,6 +83,14 @@ const MethodeSection = () => {
             )}
           </div>
 
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/comment-ca-marche#leviers">
+                Voir toutes les solutions
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>);

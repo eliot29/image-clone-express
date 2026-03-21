@@ -1,4 +1,6 @@
-
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 
 const PourquoiNousSection = () => {
@@ -48,6 +50,15 @@ const PourquoiNousSection = () => {
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-center mt-6">
             Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
           </p>
+
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/pourquoi-semaine-54#preuves">
+                Voir les résultats concrets
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
 
 
         </div>

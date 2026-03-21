@@ -1,4 +1,6 @@
-import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair } from "lucide-react";
+import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const solutions = [
   { icon: Workflow, text: "Automatisation via n8n" },
@@ -75,6 +77,15 @@ const PropositionSection = () => {
           <p className="font-dm font-bold text-or-mat text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-2">
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
+
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/pourquoi-semaine-54#parcours">
+                Découvrir mon parcours et ma méthode
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

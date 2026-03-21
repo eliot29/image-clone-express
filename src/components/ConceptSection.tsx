@@ -1,4 +1,6 @@
-
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 
 const ConceptSection = () => {
@@ -25,6 +27,15 @@ const ConceptSection = () => {
           <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-center">
             L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
           </p>
+
+          <div className="text-center mt-4">
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/pourquoi-semaine-54#constat">
+                Pourquoi l'IA générique ne suffit pas
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
 
         </div>
       </div>
