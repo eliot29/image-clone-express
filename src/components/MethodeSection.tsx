@@ -10,13 +10,7 @@ const steps = [
 {
   num: "02",
   title: "Proposition sous trois jours ouvrés",
-  desc: "Une proposition adaptée à votre situation réelle. Je prends le temps de :",
-  items: [
-    { icon: Target, text: "Identification des priorités" },
-    { icon: Wrench, text: "Mise en place ou formation ciblée" },
-    { icon: FlaskConical, text: "Test en conditions réelles" },
-    { icon: RefreshCw, text: "Ajustements selon les retours terrain" }
-  ],
+  desc: "Une proposition adaptée à votre situation réelle, avec les priorités identifiées et les solutions recommandées.",
   note: "Objectif : une vision claire avant toute mise en place."
 },
 {
