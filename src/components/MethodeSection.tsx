@@ -16,7 +16,7 @@ const steps = [
 {
   num: "03",
   title: "Mise en place : calibration et/ou transmission",
-  desc: "La solution est configurée et testée dans vos conditions réelles. Nous travaillons sur des cas concrets de votre quotidien afin de garantir une utilisation simple et efficace.",
+  desc: "La solution est configurée et testée dans vos conditions réelles.",
   note: "Selon les besoins : automatisation, outil IA ou formation."
 },
 {
