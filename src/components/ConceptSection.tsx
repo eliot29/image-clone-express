@@ -26,14 +26,6 @@ const ConceptSection = () => {
             L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
           </p>
 
-          <div className="flex justify-center mt-6">
-            <Button variant="ctaOutline" size="lg" asChild>
-              <a href="/solutions">
-                Découvrir les solutions en détail
-                <ArrowRight size={18} />
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     </section>
