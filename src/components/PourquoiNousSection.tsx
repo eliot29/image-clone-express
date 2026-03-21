@@ -19,8 +19,7 @@ const PourquoiNousSection = () => {
             <p>
               J'ai travaillé plusieurs années en <strong className="text-navy">grande distribution</strong>, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
             </p>
-            <p className="text-ardoise/80">Depuis plus de trois ans, je teste et utilise les outils d'IA dans des contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.
-              <strong className="text-navy">outils d'IA dans des</strong> <strong className="text-navy">contextes professionnels afin d'en comprendre les usages pertinents pour les entreprises.</strong>
+            <p className="text-ardoise/80">Depuis plus de trois ans, je teste et utilise les <strong className="text-navy">outils d'IA dans des contextes professionnels</strong> afin d'en comprendre les <strong className="text-navy">usages pertinents pour les entreprises.</strong>
             </p>
             <p className="font-semibold text-navy">
               Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.
