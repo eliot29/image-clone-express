@@ -2,7 +2,7 @@ import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, Ref
 
 const solutions = [
   { icon: Workflow, text: "Automatisation via n8n" },
-  { icon: Bot, text: "Outil ou assistant IA configuré sur-mesure" },
+  { icon: Bot, text: "Application ou assistant IA configuré sur-mesure" },
   { icon: GraduationCap, text: "Formation ciblée aux LLM et aux outils d'IA" },
   { icon: Puzzle, text: "Ou combinaison de ces solutions" },
 ];
