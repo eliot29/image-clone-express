@@ -11,7 +11,7 @@ const steps = [
   num: "02",
   title: "Proposition sous trois jours ouvrés",
   desc: "Une proposition adaptée à votre situation réelle, avec les priorités identifiées et les solutions recommandées.",
-  note: "Objectif : une vision claire avant toute mise en place."
+  note: "Selon les besoins : automatisation, outil IA ou formation."
 },
 {
   num: "03",
