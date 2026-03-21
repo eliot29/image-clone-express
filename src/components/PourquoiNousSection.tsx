@@ -21,7 +21,7 @@ const PourquoiNousSection = () => {
             </p>
             <p className="text-ardoise/80">Depuis plus de trois ans, je teste et utilise les <strong className="text-navy">outils d'IA dans des contextes professionnels</strong> afin d'en comprendre les <strong className="text-navy">usages pertinents pour les entreprises.</strong>
             </p>
-            <p className="font-semibold text-navy">
+            <p className="font-dm font-semibold text-navy">
               Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.
             </p>
             <p className="text-ardoise/80">
