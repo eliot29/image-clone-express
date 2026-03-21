@@ -3,7 +3,7 @@ import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageC
 const steps = [
 {
   num: "01",
-  title: "Diagnostic gratuit (30 min)",
+  title: "Diagnostic gratuit (20/30 min)",
   desc: "Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion pour vous de savoir ce que l'IA peut réaliser de manière concrète.",
   note: "Sans engagement. Aucune vente forcée."
 },
