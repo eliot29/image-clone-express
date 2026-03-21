@@ -7,8 +7,6 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Secteurs from "./pages/Secteurs";
-import Solutions from "./pages/Solutions";
-import CommentCaMarche from "./pages/CommentCaMarche";
 
 const queryClient = new QueryClient();
 
