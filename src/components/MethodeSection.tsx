@@ -1,4 +1,6 @@
-import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp } from "lucide-react";
+import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const steps = [
 {
