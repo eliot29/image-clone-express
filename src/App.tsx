@@ -7,6 +7,8 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Secteurs from "./pages/Secteurs";
+import CommentCaMarche from "./pages/CommentCaMarche";
+import PourquoiSemaine54 from "./pages/PourquoiSemaine54";
 
 const queryClient = new QueryClient();
 
