@@ -27,7 +27,7 @@ const ContactSection = () => {
       return;
     }
 
-    const subject = encodeURIComponent("Demande d'audit stratégique — " + nom.trim());
+    const subject = encodeURIComponent("Demande de diagnostic gratuit — " + nom.trim());
     const body = encodeURIComponent(
       `Nom : ${nom.trim()}\nEmail : ${email.trim()}\nTéléphone : ${telephone.trim()}\n\nMessage :\n${message.trim()}`
     );
