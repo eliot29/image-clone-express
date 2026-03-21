@@ -51,11 +51,11 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
-            Audit stratégique — <span className="text-or-mat">Gratuit</span>
+            Diagnostic gratuit — <span className="text-or-mat">20/30 min</span>
           </h2>
 
           <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
-            Un premier échange de 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
+            Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
           </p>
 
           <div className="text-center mb-8">
