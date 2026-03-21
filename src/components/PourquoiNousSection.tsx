@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+
+
 
 const PourquoiNousSection = () => {
   return (
@@ -49,14 +49,6 @@ const PourquoiNousSection = () => {
             Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
           </p>
 
-          <div className="flex justify-center mt-6">
-            <Button variant="ctaOutline" size="lg" asChild className="border-navy text-navy hover:bg-navy/10">
-              <a href="/comment-ca-marche">
-                En savoir plus sur la méthode
-                <ArrowRight size={18} />
-              </a>
-            </Button>
-          </div>
 
         </div>
       </div>
