@@ -144,7 +144,7 @@ const PourquoiSemaine54 = () => {
         <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '80px' }}>
+              <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
                 Pourquoi Semaine 54 ?
               </h2>
 
