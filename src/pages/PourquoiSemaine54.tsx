@@ -12,6 +12,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { useToast } from "@/hooks/use-toast";
 
 const PourquoiSemaine54 = () => {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");

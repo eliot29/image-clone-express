@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/accordion";
 
 const CommentCaMarche = () => {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");
