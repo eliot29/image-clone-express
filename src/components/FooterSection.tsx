@@ -49,7 +49,7 @@ const FooterSection = () => {
         </div>
         {/* Mobile: centré vertical */}
         <div className="flex flex-col items-center justify-center gap-4 mt-8 pt-6 border-t border-blanc-casse/10 md:hidden">
-          <div className="w-48">
+          <div className="w-72">
             <img src="/logo-semaine54-blanc-new.svg" alt="Semaine 54" className="w-full h-auto" />
           </div>
           <p className="font-dm text-or-mat text-base text-center">
