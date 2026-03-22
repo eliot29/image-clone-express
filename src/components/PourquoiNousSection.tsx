@@ -53,8 +53,8 @@ const PourquoiNousSection = () => {
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/pourquoi-semaine-54#preuves">
-                Voir les résultats concrets
+              <Link to="/pourquoi-semaine-54">
+                En savoir plus
                 <ArrowRight size={16} />
               </Link>
             </Button>
