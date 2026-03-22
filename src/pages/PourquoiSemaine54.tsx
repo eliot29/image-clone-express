@@ -307,9 +307,6 @@ const PourquoiSemaine54 = () => {
               <p className="font-dm text-blanc-casse/70 italic mb-2">
                 On commence par comprendre votre situation. On propose ensuite — et uniquement si c'est pertinent.
               </p>
-              <p className="font-dm text-blanc-casse/70 italic mb-4">
-                Pas de grand discours. Des solutions qui fonctionnent dans votre contexte réel.
-              </p>
               <p className="font-dm text-blanc-casse/80 mb-6">
                 Je m'adapte à vos disponibilités, y compris en soirée et le week-end.
               </p>
