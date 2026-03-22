@@ -203,14 +203,8 @@ const PourquoiSemaine54 = () => {
                 Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
               </p>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/pourquoi-semaine-54#preuves">
-                    Voir les résultats concrets
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>

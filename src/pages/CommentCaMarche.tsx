@@ -196,14 +196,8 @@ const CommentCaMarche = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/comment-ca-marche#leviers">
-                    Voir toutes les solutions
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>
