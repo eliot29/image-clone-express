@@ -30,7 +30,7 @@ const ContactSection = () => {
 
     const subject = encodeURIComponent("Demande de diagnostic gratuit — " + nom.trim());
     const body = encodeURIComponent(
-      `Nom : ${nom.trim()}\nEmail : ${email.trim()}\nTéléphone : ${telephone.trim()}\n\nMessage :\n${message.trim()}`
+      `Nom : ${nom.trim()}\nEmail : ${email.trim()}\nTéléphone : ${telephone.trim()}\nCréneau idéal : ${creneau.trim() || "Non précisé"}\n\nMessage :\n${message.trim()}`
     );
 
     window.location.href = `mailto:contact@semaine54.com?subject=${subject}&body=${body}`;
