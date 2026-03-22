@@ -77,7 +77,7 @@ cette tâche chaque année ?
               </div>
             </div>
 
-            <p className="font-dm font-bold text-navy text-lg sm:text-xl mt-8 text-center leading-snug">
+            <p className="font-dm font-extrabold text-navy text-2xl sm:text-3xl md:text-4xl mt-8 text-center leading-snug">
               Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
             </p>
           </div>
