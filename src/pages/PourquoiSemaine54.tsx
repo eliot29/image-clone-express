@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -47,7 +47,7 @@ const PourquoiSemaine54 = () => {
     <>
       <Helmet>
         <title>Pourquoi Semaine 54 — Consultant IA terrain pour TPE et PME bretonnes | Semaine 54</title>
-        <meta name="description" content="L'IA générique ne suffit pas. Semaine 54 est un partenaire IA de terrain, dédié aux TPE et PME de Bretagne, avec une approche construite sur des résultats mesurables." />
+        <meta name="description" content="L'IA générique ne suffit pas. Semaine 54 est un consultant IA de terrain, dédié aux TPE et PME de Bretagne. Accompagnement sur-mesure, agent IA, automation Bretagne. Approche humaine, résultats mesurables." />
       </Helmet>
       <Navigation />
       <main>
@@ -55,7 +55,7 @@ const PourquoiSemaine54 = () => {
         <section className="bg-blanc-casse pt-28 pb-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
-              <h1 id="constat" className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4" style={{ scrollMarginTop: '120px' }}>
+              <h1 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
                 L'IA, une solution de productivité.{" "}
                 <span className="text-or-mat">Sous certaines conditions.</span>
               </h1>
@@ -67,16 +67,16 @@ const PourquoiSemaine54 = () => {
         </section>
 
         {/* Le constat */}
-        <section id="constat" className="bg-navy py-6">
+        <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center">
+              <h2 id="constat" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
                 Le constat : l'IA générique ne suffit pas
               </h2>
 
               <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4 mb-6">
                 <p>
-                  Les outils IA se multiplient. <strong className="text-blanc-casse">Beaucoup sont trop génériques pour s'adapter à la réalité des entreprises.</strong> Utilisés sans cadre ni méthode, ils produisent des résultats irréguliers et inadaptés aux contraintes d'un artisan ou d'une PME.
+                  <strong className="text-blanc-casse">Les outils IA se multiplient. La majorité des structures qui se lancent le font sans accompagnement, avec des solutions génériques inadaptées à leur réalité terrain. Le discours est partout. Les résultats concrets, beaucoup moins.</strong>
                 </p>
                 <p>Trois raisons expliquent la plupart des échecs :</p>
               </div>
@@ -96,44 +96,85 @@ const PourquoiSemaine54 = () => {
 
               <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4 mb-6">
                 <p>
-                  Une formation IA délivrée en visio à 40 entreprises en même temps ne résout pas le problème d'un plombier de Landerneau. Elle lui apprend à utiliser un outil — <strong className="text-blanc-casse">elle ne lui dit pas lequel choisir, ni comment l'adapter à ses devis, ses clients et son agenda.</strong>
+                  Une formation IA délivrée en visio à 40 entreprises en même temps ne résout pas le problème d'un chef d'entreprise de Landerneau. Elle lui apprend à utiliser un outil — <strong className="text-blanc-casse">elle ne lui dit pas lequel choisir, ni comment l'adapter à ses devis, ses clients et son agenda.</strong>
                 </p>
                 <p><strong className="text-blanc-casse">Le vrai sujet : l'accompagnement et la personnalisation.</strong></p>
               </div>
 
-              <p className="font-dm text-blanc-casse/70 italic leading-relaxed mb-6">
+              <p className="font-dm text-blanc-casse/70 italic leading-relaxed">
                 L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise. Mal calibrée, elle fait perdre du temps plutôt qu'en gagner.
               </p>
+            </div>
+          </div>
+        </section>
 
+        {/* Vous hésitez */}
+        <section className="bg-blanc-casse py-6">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl lg:max-w-4xl mx-auto">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center">
+                Vous hésitez à vous lancer ? C'est normal.
+              </h2>
 
+              <p className="font-dm text-ardoise/70 italic leading-relaxed mb-6">
+                Vous n'avez pas le temps de tester des outils qui ne serviront peut-être à rien. Vous ne voulez pas mettre vos données n'importe où. Vous ne voulez pas d'un projet que plus personne ne comprend au bout de six mois.
+              </p>
 
+              <p className="font-dm text-ardoise/80 leading-relaxed mb-4">
+                Ces freins sont légitimes. Ils sont partagés par la majorité des dirigeants de TPE et PME. Et ils sont exactement ce que l'approche Semaine 54 est construite pour adresser :
+              </p>
+
+              <ul className="space-y-3 mb-4">
+                {[
+                  "Pas de grand projet risqué — on avance par étapes, vous arrêtez quand vous voulez.",
+                  "Vos données ne circulent pas sans raison — les accès sont limités au strict nécessaire.",
+                  "Pour les données sensibles, des solutions d'IA souveraine comme Mistral peuvent être privilégiées.",
+                  "Vous savez exactement ce qui tourne chez vous, avec quels outils et pourquoi.",
+                  "L'IA n'est pas là pour remplacer vos équipes — mais pour les débarrasser du répétitif.",
+                ].map((text, i) => (
+                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/80">
+                    <span className="text-or-mat mt-1 shrink-0">•</span>
+                    {text}
+                  </li>
+                ))}
+                <li className="flex items-start gap-3 font-dm text-ardoise/80">
+                  <span className="text-or-mat mt-1 shrink-0">•</span>
+                  <strong className="text-navy">On commence petit, mais utile. Vous gardez la main à chaque étape.</strong>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
 
         {/* Pourquoi l'IA en 2026 */}
-        <section className="bg-blanc-casse py-6">
+        <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center">
                 Pourquoi l'IA en 2026 ?
               </h2>
 
-              <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4">
                 <p>
                   Pendant des années, certaines solutions étaient inaccessibles aux petites structures — pas parce qu'elles étaient trop complexes, mais parce qu'elles nécessitaient des équipes dédiées, des mois de développement et des budgets hors de portée.
                 </p>
                 <p>
-                  <strong className="text-navy">L'IA générative a changé la donne.</strong> Ce qui nécessitait autrefois un développeur et plusieurs milliers d'euros peut aujourd'hui être mis en place en quelques jours, pour une fraction du coût. Les barrières techniques ont baissé. Les barrières financières aussi.
+                  <strong className="text-blanc-casse">L'IA générative a changé la donne.</strong>
                 </p>
                 <p>
-                  En 2026, <strong className="text-navy">les outils ont atteint un niveau de maturité suffisant pour être utilisés de façon fiable dans un contexte professionnel réel.</strong> Les agents IA actuels peuvent exécuter des tâches complètes, s'intégrer à vos outils existants, et produire des résultats reproductibles. La technologie n'est plus expérimentale. Elle est opérationnelle.
+                  Ce qui nécessitait autrefois un développeur et plusieurs milliers d'euros peut aujourd'hui être mis en place en quelques jours, pour une fraction du coût. Les barrières techniques ont baissé. Les barrières financières aussi.
                 </p>
-                <p className="italic text-ardoise/70">
+                <p>
+                  <strong className="text-blanc-casse">Automatisation des process, génération de contenu, analyse de données, agents IA, chatbots, reporting automatisé : les outils sont opérationnels. Pas expérimentaux.</strong>
+                </p>
+                <p className="italic text-blanc-casse/70">
+                  Les prochains mois verront émerger une nouvelle génération d'outils — agents IA autonomes, plateformes comme Claude Cowork qui automatisent directement depuis le bureau — qui vont encore accélérer les gains possibles pour les PME qui auront déjà pris de l'avance.
+                </p>
+                <p className="italic text-blanc-casse/70">
                   Les entreprises qui intègrent l'IA aujourd'hui ne font pas un pari technologique. Elles prennent une avance opérationnelle sur celles qui attendent.
                 </p>
                 <p>
-                  <strong className="text-navy">Une automatisation bien ciblée est souvent amortie en moins d'un an.</strong> Plus tôt elle est en place, plus tôt elle produit du retour.
+                  <strong className="text-blanc-casse">Une automatisation bien ciblée est souvent amortie en moins d'un an.</strong> Plus tôt elle est en place, plus tôt elle produit du retour.
                 </p>
               </div>
             </div>
@@ -141,87 +182,84 @@ const PourquoiSemaine54 = () => {
         </section>
 
         {/* Pourquoi Semaine 54 */}
-        <section className="bg-navy py-6">
+        <section className="bg-blanc-casse py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
                 Pourquoi Semaine 54 ?
               </h2>
 
-              <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4 mb-6">
+              <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
                 <p>
-                  Je suis <strong className="text-blanc-casse">Clément, 35 ans, fondateur de Semaine 54.</strong> Mon parcours est commercial avant d'être technique : plusieurs années en grande distribution comme chef de rayon, puis chef de secteur GMS côté marques.
-                </p>
-                <p>
-                  J'ai aussi brièvement vendu des sites internet — une expérience qui m'a appris ce que je ne voulais pas faire : conclure vite, packager à l'avance, passer au suivant sans vraiment comprendre l'entreprise en face.
-                </p>
-                <p className="italic text-blanc-casse/70">
-                  En grande distribution, chaque mètre linéaire se rentabilise. En entreprise, chaque heure doit l'être aussi.
+                  Je suis <strong className="text-navy">Clément, 35 ans, fondateur de Semaine 54</strong>. Mon parcours est commercial avant d'être technique : plusieurs années en grande distribution comme chef de rayon, puis chef de secteur GMS côté marques.
                 </p>
                 <p>
-                  Depuis plus de trois ans, je consacre entre cinq et huit heures par semaine à tester, documenter et expérimenter les outils d'intelligence artificielle. <strong className="text-blanc-casse">Ces tests, je les mène dans ma vie personnelle, dans mon quotidien professionnel, et avec des amis chefs d'entreprise</strong> — autant de contextes réels qui m'ont permis de comprendre ce qui fonctionne vraiment, et ce qui ne fonctionne pas. Ce temps investi, c'est du temps que vous n'avez pas à passer.
+                  J'ai aussi brièvement vendu des sites internet — une expérience qui m'a appris ce que je ne voulais pas faire : conclure en un rendez-vous sans vraiment comprendre l'entreprise en face.
                 </p>
                 <p>
-                  <strong className="text-blanc-casse">Je ne suis pas ingénieur IA. Je suis un praticien de terrain — on appelle ça un AI Implémenteur.</strong>
+                  Depuis plus de trois ans, je consacre entre cinq et huit heures par semaine à tester, documenter et expérimenter les outils d'intelligence artificielle. <strong className="text-navy">Ces tests, je les mène dans ma vie personnelle, dans mon quotidien professionnel, et avec des amis chefs d'entreprise</strong> — autant de contextes réels qui m'ont permis de comprendre ce qui fonctionne vraiment, et ce qui ne fonctionne pas. Ce temps investi, c'est du temps que vous n'avez pas à passer.
                 </p>
-                <p className="italic text-blanc-casse/70">
+                <p>
+                  <strong className="text-navy">Je ne suis pas ingénieur IA. Je suis un praticien de terrain — on appelle ça un AI Implémenteur.</strong>
+                </p>
+                <p className="italic text-ardoise/70">
                   L'IA avance vite. Mon travail est d'en suivre l'évolution pour vous — et de garder de l'humain au centre de chaque solution mise en place. Un outil qui tourne sans être compris ni surveillé, ce n'est pas une solution. C'est un risque.
                 </p>
+                <p className="italic text-ardoise/70">
+                  Je travaille en langage clair, avec vos équipes. Vous gardez toujours la main sur vos données et vos décisions.
+                </p>
+                <p>
+                  <strong className="text-navy">Mon point de départ : comprendre votre métier avant de parler technologie.</strong>
+                </p>
               </div>
-
-
-
             </div>
           </div>
         </section>
 
-        {/* Deux preuves terrain */}
-        <section id="preuves" className="bg-blanc-casse py-6">
+        {/* Deux exemples concrets */}
+        <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-6 text-center">
-                Deux preuves terrain
+              <h2 id="preuves" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-6 text-center" style={{ scrollMarginTop: '120px' }}>
+                Deux exemples concrets. Deux gains mesurables.
               </h2>
 
               <div className="space-y-4 mb-6">
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
-                  <h3 className="font-dm font-bold text-lg text-navy mb-2">Poissonnerie — Pays d'Iroise</h3>
-                  <p className="font-dm text-ardoise/80 leading-relaxed">
-                    Une amie tenait une poissonnerie dans une zone artisanale que personne ne connaissait. Sans budget communication, sans agence. En structurant une stratégie nourrie par l'IA et en la mettant en œuvre avec des outils assistés : <strong className="text-navy">73 000 vues, 622 partages, +800 abonnés, +15 % de chiffre d'affaires</strong> sur la période.
+                <div className="bg-blanc-casse/5 border border-blanc-casse/10 rounded-xl p-6">
+                  <h3 className="font-dm font-bold text-lg text-or-mat mb-2">Poissonnerie — Pays d'Iroise</h3>
+                  <p className="font-dm text-blanc-casse/80 leading-relaxed">
+                    Une amie tenait une poissonnerie dans une zone artisanale que personne ne connaissait. Sans budget communication, sans agence. En structurant une stratégie nourrie par l'IA et en la mettant en œuvre avec des outils assistés : <strong className="text-blanc-casse">73 000 vues, 622 partages, +800 abonnés, +15 % de chiffre d'affaires</strong> sur la période.
                   </p>
                 </div>
 
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
-                  <h3 className="font-dm font-bold text-lg text-navy mb-2">Électricien — Pays d'Iroise</h3>
-                  <p className="font-dm text-ardoise/80 leading-relaxed">
-                    Comparaison manuelle de plusieurs sites fournisseurs, plusieurs fois par semaine. Mise en place d'un assistant dédié : <strong className="text-navy">environ 10 minutes économisées par jour, soit près de 40 heures récupérées par an.</strong>
+                <div className="bg-blanc-casse/5 border border-blanc-casse/10 rounded-xl p-6">
+                  <h3 className="font-dm font-bold text-lg text-or-mat mb-2">Électricien — Pays d'Iroise</h3>
+                  <p className="font-dm text-blanc-casse/80 leading-relaxed">
+                    Comparaison manuelle de plusieurs sites fournisseurs, plusieurs fois par semaine. Mise en place d'un assistant IA dédié : <strong className="text-blanc-casse">environ 10 minutes économisées par jour, soit près de 40 heures récupérées par an.</strong>
                   </p>
                 </div>
               </div>
 
-              <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-center mb-6">
+              <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl leading-snug text-center mb-2">
                 Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
               </p>
-
-
-
             </div>
           </div>
         </section>
 
         {/* Ce qui différencie */}
-        <section className="bg-navy py-6">
+        <section className="bg-blanc-casse py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center">
                 Ce qui différencie cette approche
               </h2>
 
-              <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4 mb-6">
+              <div className="font-dm text-ardoise/80 leading-relaxed space-y-4 mb-6">
                 <p>
-                  Le marché propose souvent deux modèles : une formation générique délivrée à de nombreuses entreprises simultanément, ou une solution vendue rapidement sans diagnostic sérieux. Dans les deux cas : un outil qui ne correspond pas à votre réalité, sans personne pour ajuster après la livraison.
+                  Le marché propose souvent deux modèles : une formation générique délivrée à de nombreuses entreprises simultanément, ou une solution vendue en un rendez-vous sans diagnostic sérieux. Dans les deux cas : un outil qui ne correspond pas à votre réalité, sans personne pour ajuster après la livraison.
                 </p>
-                <p className="italic text-blanc-casse/70">
+                <p className="italic text-ardoise/70">
                   Chez Semaine 54, rien n'est vendu avant d'être compris. Rien n'est installé avant d'être calibré. Rien n'est livré sans s'assurer que ça fonctionne dans vos conditions réelles.
                 </p>
               </div>
@@ -232,23 +270,27 @@ const PourquoiSemaine54 = () => {
                   "Pas d'engagement sur plusieurs solutions avant d'en avoir vu une fonctionner.",
                   "Pas de formation standard délivrée à des dizaines d'entreprises en même temps.",
                 ].map((text, i) => (
-                  <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80">
+                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/80">
                     <span className="text-or-mat mt-1 shrink-0">•</span>
                     {text}
                   </li>
                 ))}
-                <li className="flex items-start gap-3 font-dm text-blanc-casse/80">
+                <li className="flex items-start gap-3 font-dm text-ardoise/80">
                   <span className="text-or-mat mt-1 shrink-0">•</span>
-                  <strong className="text-blanc-casse">Une relation construite dans la durée, pas une prestation one-shot.</strong>
+                  <strong className="text-navy">Une relation construite dans la durée, pas une prestation one-shot.</strong>
+                </li>
+                <li className="flex items-start gap-3 font-dm text-ardoise/80">
+                  <span className="text-or-mat mt-1 shrink-0">•</span>
+                  Vous savez exactement ce qui est fait, avec quels outils et pourquoi.
                 </li>
               </ul>
 
-              <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4">
-                <p className="italic text-blanc-casse/70">
-                  Que l'on travaille ensemble ou non, mon implication commence dès la fin de l'audit. Si j'identifie une piste pertinente pour votre activité, je la note. Si une solution simple existe, je vous la signale — même si elle ne nécessite pas de me mandater.
+              <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
+                <p className="italic text-ardoise/70">
+                  Que l'on travaille ensemble ou non, mon implication commence dès la fin de l'audit. Si j'identifie une piste pertinente pour votre activité, je la note — et je vous la communique dans la proposition.
                 </p>
                 <p>
-                  <strong className="text-blanc-casse">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes — pour des solutions d'intelligence artificielle construites sur mesure, autour de votre métier et de votre organisation.</strong>
+                  <strong className="text-navy">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes — pour des solutions d'IA générative et d'automation construites sur mesure, autour de votre métier et de votre organisation.</strong>
                 </p>
               </div>
             </div>
@@ -256,16 +298,19 @@ const PourquoiSemaine54 = () => {
         </section>
 
         {/* CTA final */}
-        <section className="bg-blanc-casse py-6">
+        <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4">
                 Prêt à en parler ?
               </h2>
-              <p className="font-dm text-ardoise/70 italic mb-4">
+              <p className="font-dm text-blanc-casse/70 italic mb-2">
                 On commence par comprendre votre situation. On propose ensuite — et uniquement si c'est pertinent.
               </p>
-              <p className="font-dm text-ardoise/80 mb-6">
+              <p className="font-dm text-blanc-casse/70 italic mb-4">
+                Pas de grand discours. Des solutions qui fonctionnent dans votre contexte réel.
+              </p>
+              <p className="font-dm text-blanc-casse/80 mb-6">
                 Je m'adapte à vos disponibilités, y compris en soirée et le week-end.
               </p>
 
@@ -308,13 +353,13 @@ const PourquoiSemaine54 = () => {
               </Dialog>
 
               <div className="mt-6 max-w-lg mx-auto">
-                <p className="font-dm text-ardoise/60 text-sm leading-relaxed">
+                <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
                   Je vous contacte pour répondre à vos éventuelles questions et planifier votre audit — en appel ou en visio, selon votre préférence.
                 </p>
-                <p className="font-dm text-ardoise/60 text-sm mt-3 leading-relaxed">
+                <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
                   Vous pouvez aussi m'appeler, m'envoyer un SMS ou un email directement.
                 </p>
-                <p className="font-dm text-ardoise/50 text-xs mt-2 italic">
+                <p className="font-dm text-blanc-casse/50 text-xs mt-2 italic">
                   Également disponible en soirée et le week-end.
                 </p>
               </div>
