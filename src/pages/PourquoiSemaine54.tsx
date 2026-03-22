@@ -105,14 +105,8 @@ const PourquoiSemaine54 = () => {
                 L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise. Mal calibrée, elle fait perdre du temps plutôt qu'en gagner.
               </p>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/pourquoi-semaine-54#constat">
-                    Pourquoi l'IA générique ne suffit pas
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>
@@ -175,14 +169,8 @@ const PourquoiSemaine54 = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/pourquoi-semaine-54#parcours">
-                    Découvrir mon parcours et ma méthode
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>
@@ -215,14 +203,8 @@ const PourquoiSemaine54 = () => {
                 Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
               </p>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/pourquoi-semaine-54#preuves">
-                    Voir les résultats concrets
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>

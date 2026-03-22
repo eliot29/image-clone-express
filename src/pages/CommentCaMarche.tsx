@@ -123,14 +123,7 @@ const CommentCaMarche = () => {
                 Mon travail consiste à vous faire gagner le vôtre.
               </p>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/pourquoi-semaine-54#parcours">
-                    Découvrir mon parcours et ma méthode
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
             </div>
           </div>
         </section>
@@ -203,14 +196,8 @@ const CommentCaMarche = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/comment-ca-marche#leviers">
-                    Voir toutes les solutions
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>
