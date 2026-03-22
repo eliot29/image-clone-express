@@ -116,6 +116,19 @@ const ContactSection = () => {
                     />
                   </div>
                   <div className="space-y-2">
+                    <Label htmlFor="creneau" className="text-blanc-casse/80 font-dm text-sm">
+                      Créneau idéal pour l'appel
+                    </Label>
+                    <Input
+                      id="creneau"
+                      value={creneau}
+                      onChange={(e) => setCreneau(e.target.value)}
+                      placeholder="Ex : mardi matin, en soirée après 18h…"
+                      maxLength={150}
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                    />
+                  </div>
+                  <div className="space-y-2">
                     <Label htmlFor="message" className="text-blanc-casse/80 font-dm text-sm">
                       Message
                     </Label>
