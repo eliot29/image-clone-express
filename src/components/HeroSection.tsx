@@ -78,8 +78,8 @@ const HeroSection = () => {
             Soit près de <span className="text-or-mat">3 semaines</span> de travail retrouvées.
           </p>
 
-          <div className="mt-8">
-            <Button variant="cta" size="lg" asChild>
+          <div className="mt-8 flex justify-center">
+            <Button variant="cta" size="lg" className="w-full sm:w-auto text-center whitespace-normal" asChild>
               <a href="#calculateur">Découvrez combien de temps vous pourriez gagner</a>
             </Button>
           </div>
