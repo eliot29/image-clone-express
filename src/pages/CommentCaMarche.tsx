@@ -26,6 +26,15 @@ const CommentCaMarche = () => {
   const [message, setMessage] = useState("");
   const { toast } = useToast();
 
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, [location.hash]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!nom.trim() || !email.trim()) {
