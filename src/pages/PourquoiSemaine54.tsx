@@ -105,14 +105,8 @@ const PourquoiSemaine54 = () => {
                 L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise. Mal calibrée, elle fait perdre du temps plutôt qu'en gagner.
               </p>
 
-              <div className="text-center">
-                <Button variant="ctaOutline" size="lg" asChild>
-                  <Link to="/pourquoi-semaine-54#constat">
-                    Pourquoi l'IA générique ne suffit pas
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
-              </div>
+
+
             </div>
           </div>
         </section>
