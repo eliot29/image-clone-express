@@ -80,7 +80,7 @@ const PropositionSection = () => {
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/comment-ca-marche">
+              <Link to="/comment-ca-marche#solutions">
                 Les solutions en détails
                 <ArrowRight size={16} />
               </Link>

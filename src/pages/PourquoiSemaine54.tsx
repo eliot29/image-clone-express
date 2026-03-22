@@ -55,7 +55,7 @@ const PourquoiSemaine54 = () => {
         <section className="bg-blanc-casse pt-28 pb-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
-              <h1 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
+              <h1 id="constat" className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4" style={{ scrollMarginTop: '80px' }}>
                 L'IA, une solution de productivité.{" "}
                 <span className="text-or-mat">Sous certaines conditions.</span>
               </h1>
@@ -141,10 +141,10 @@ const PourquoiSemaine54 = () => {
         </section>
 
         {/* Pourquoi Semaine 54 */}
-        <section id="parcours" className="bg-navy py-6">
+        <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center">
+              <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '80px' }}>
                 Pourquoi Semaine 54 ?
               </h2>
 

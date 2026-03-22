@@ -30,7 +30,7 @@ const ConceptSection = () => {
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/pourquoi-semaine-54">
+              <Link to="/pourquoi-semaine-54#constat">
                 Pourquoi l'IA générique ne suffit pas
                 <ArrowRight size={16} />
               </Link>
