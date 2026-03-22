@@ -44,6 +44,7 @@ const ContactSection = () => {
     setNom("");
     setEmail("");
     setTelephone("");
+    setCreneau("");
     setMessage("");
   };
 
