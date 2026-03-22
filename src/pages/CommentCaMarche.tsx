@@ -126,7 +126,7 @@ const CommentCaMarche = () => {
         </section>
 
         {/* Méthode 4 étapes */}
-        <section className="bg-blanc-casse py-6">
+        <section id="methode-details" className="bg-blanc-casse py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-6 text-center">
