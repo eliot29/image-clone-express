@@ -75,7 +75,7 @@ const CommentCaMarche = () => {
         <section className="bg-navy py-6">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center">
+              <h2 id="solutions" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '80px' }}>
                 Ce que Semaine 54 propose concrètement
               </h2>
               <p className="font-dm text-blanc-casse/70 italic text-center mb-6">
