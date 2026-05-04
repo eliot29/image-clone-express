@@ -24,7 +24,7 @@ const steps = [
 {
   num: "04",
   title: "Suivi",
-  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions, répondre aux questions et approfondir certains usages si nécessaire."
+  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions."
 }];
 
 
