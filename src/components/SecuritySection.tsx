@@ -1,4 +1,4 @@
-import { Shield, Lock, Server, Scale } from "lucide-react";
+import { Shield, Scale } from "lucide-react";
 
 const SecuritySection = () => {
   return (
@@ -12,19 +12,7 @@ const SecuritySection = () => {
               </div>
               <h2 className="font-dm font-bold text-2xl text-navy">Sécurité & RGPD</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex items-start gap-3">
-                <Server size={18} className="text-or-mat shrink-0 mt-1" />
-                <p className="font-dm text-ardoise/80 text-sm leading-relaxed">
-                  Les automatisations sont déployées via <span className="font-semibold text-navy">n8n</span>, une infrastructure professionnelle dédiée aux workflows automatisés.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Lock size={18} className="text-or-mat shrink-0 mt-1" />
-                <p className="font-dm text-ardoise/80 text-sm leading-relaxed">
-                  Les accès sont configurés au strict nécessaire, avec <span className="font-semibold text-navy">gestion sécurisée</span> des identifiants et des connexions.
-                </p>
-              </div>
+            <div className="grid grid-cols-1 gap-6">
               <div className="flex items-start gap-3">
                 <Scale size={18} className="text-or-mat shrink-0 mt-1" />
                 <p className="font-dm text-ardoise/80 text-sm leading-relaxed">
