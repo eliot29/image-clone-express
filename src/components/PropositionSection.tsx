@@ -98,11 +98,11 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-4 shadow-sm border-2 border-navy">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-4 shadow-sm">
             <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Audit
             </h3>
-            <div className="bg-blanc-casse rounded-2xl p-6">
+            <div className="rounded-2xl p-6">
               <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
                 {comprehension.map((item, i) =>
                   <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
@@ -114,7 +114,7 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm border-2 border-navy">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
             <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Solutions IA sur-mesure
             </h3>
@@ -122,7 +122,7 @@ const PropositionSection = () => {
               {prestations.slice(0, 3).map((p, i) =>
                 <div
                   key={i}
-                  className="rounded-2xl bg-blanc-casse shadow-sm p-6 flex flex-col">
+                  className="rounded-2xl p-6 flex flex-col">
                   <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                     <p.icon size={22} className="text-or-mat" />
                   </div>
@@ -154,7 +154,7 @@ const PropositionSection = () => {
               )}
             </div>
           </div>
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm border-2 border-navy">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
             <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Accompagnement & montée en compétence IA
             </h3>
@@ -162,7 +162,7 @@ const PropositionSection = () => {
               {prestations.slice(3).map((p, i) =>
                 <div
                   key={i}
-                  className="rounded-2xl bg-blanc-casse shadow-sm p-6 flex flex-col">
+                  className="rounded-2xl p-6 flex flex-col">
                   <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                     <p.icon size={22} className="text-or-mat" />
                   </div>
