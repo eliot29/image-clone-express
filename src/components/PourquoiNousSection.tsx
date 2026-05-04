@@ -15,11 +15,8 @@ const PourquoiNousSection = () => {
           </div>
 
           <div className="font-dm text-ardoise/80 space-y-4 mb-6 leading-relaxed">
-            <p>
-              Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de <strong className="text-navy">Semaine 54</strong>.
-            </p>
-            <p>
-              J'ai travaillé plusieurs années en <strong className="text-navy">grande distribution</strong>, d'abord comme chef de rayon, puis comme chef de secteur GMS côté marques.
+            <p className="text-ardoise/80">
+              Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de <strong className="text-navy">Semaine 54</strong>. J'ai travaillé plusieurs années sur plusieurs métiers du secteur de la <strong className="text-navy">grande distribution</strong>.
             </p>
             <p className="text-ardoise/80">Depuis plus de trois ans, je teste et utilise les <strong className="text-navy">outils d'IA dans des contextes professionnels</strong> afin d'en comprendre les <strong className="text-navy">usages pertinents pour les entreprises.</strong>
             </p>
