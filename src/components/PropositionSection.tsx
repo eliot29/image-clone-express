@@ -101,7 +101,7 @@ const PropositionSection = () => {
           <div className="flex justify-center mb-4">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-                Audit
+                Audit gratuit
               </h3>
               <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
                 {comprehension.map((item, i) =>
@@ -147,7 +147,7 @@ const PropositionSection = () => {
           <div className="flex justify-center mb-6">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-                Accompagnement & montée en compétence IA
+                Solutions d'accompagnement IA
               </h3>
               <div className="flex flex-wrap justify-center gap-6">
                 {prestations.slice(3).map((p, i) =>
