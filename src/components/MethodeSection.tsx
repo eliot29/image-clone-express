@@ -6,25 +6,25 @@ const steps = [
 {
   num: "01",
   title: "Diagnostic gratuit (20/30 min)",
-  desc: "Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion pour vous de savoir ce que l'IA peut réaliser de manière concrète.",
+  desc: "Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion de déterminer si le besoin relève d'une mise en place de solution ou d'un accompagnement.",
   note: "Sans engagement. Aucune vente forcée."
 },
 {
   num: "02",
   title: "Proposition sous trois jours ouvrés",
   desc: "Une proposition adaptée à votre situation réelle, avec les priorités identifiées et les solutions recommandées.",
-  note: "Selon les besoins : automatisation, outil IA ou formation."
+  note: "Selon les besoins : mise en place de solutions IA sur-mesure, accompagnement à l'usage, ou combinaison des deux."
 },
 {
   num: "03",
-  title: "Mise en place : calibration et/ou transmission",
-  desc: "La solution est configurée et testée dans vos conditions réelles.",
-  note: "Objectif : une solution qui fonctionne vraiment, adaptée à votre quotidien."
+  title: "Mise en place ou accompagnement",
+  desc: "La solution est configurée et testée dans vos conditions réelles, ou les équipes sont accompagnées dans l'utilisation des outils.",
+  note: "Objectif : une solution ou un usage qui fonctionne vraiment, adapté à votre quotidien."
 },
 {
   num: "04",
   title: "Suivi",
-  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions."
+  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages."
 }];
 
 
