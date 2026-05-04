@@ -118,7 +118,7 @@ const PropositionSection = () => {
             <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Solutions IA sur-mesure
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {prestations.slice(0, 3).map((p, i) =>
                 <div
                   key={i}
@@ -140,8 +140,6 @@ const PropositionSection = () => {
                 </div>
               )}
             </div>
-          </div>
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
             <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Accompagnement & montée en compétence IA
             </h3>
