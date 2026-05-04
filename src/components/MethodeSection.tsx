@@ -60,16 +60,6 @@ const MethodeSection = () => {
                 <div className={`${i < 3 ? 'pb-10' : 'pb-2'}`}>
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
-                  {step.items &&
-                <ul className="mt-3 space-y-1.5">
-                      {step.items.map((item, j) =>
-                  <li key={j} className="flex items-start gap-2 font-dm text-sm text-ardoise/70">
-                          <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
-                          {item.text}
-                        </li>
-                  )}
-                    </ul>
-                }
                   {step.note &&
                 <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
                 }
