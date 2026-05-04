@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
-import { ArrowRight, Settings, MessageCircle, TrendingUp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import FooterSection from "@/components/FooterSection";
@@ -10,12 +10,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const CommentCaMarche = () => {
   const location = useLocation();
@@ -62,358 +56,390 @@ const CommentCaMarche = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
               <h1 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
-                Comment ça marche
+                Comment ça fonctionne avec Semaine 54
               </h1>
-              <p className="font-dm text-ardoise/70 text-lg italic">
-                De l'audit à la mise en place, un seul interlocuteur. Du début à la fin.
+              <p className="font-dm text-ardoise/80 text-lg leading-relaxed mb-5">
+                Un accompagnement simple, structuré, avec un seul interlocuteur du début à la mise en place.
               </p>
+              <div className="font-dm text-ardoise/80 leading-relaxed space-y-3 text-left sm:text-center max-w-2xl mx-auto">
+                <p>
+                  L'objectif n'est pas de transformer votre entreprise, mais d'améliorer ce qui existe déjà.
+                </p>
+                <p>Pas de projet complexe, pas de changement d'organisation.</p>
+                <p>Des solutions concrètes, adaptées à votre réalité terrain.</p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Ce que Semaine 54 propose */}
-        <section className="bg-navy py-6">
+        {/* À qui s'adresse Semaine 54 */}
+        <section className="bg-navy py-10">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl lg:max-w-4xl mx-auto">
+              <h2 id="qui" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-6 text-center" style={{ scrollMarginTop: '120px' }}>
+                À qui s'adresse Semaine 54 ?
+              </h2>
+
+              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-5">
+                <p>
+                  Semaine 54 s'adresse aux TPE et PME qui souhaitent gagner du temps sans complexifier leur fonctionnement.
+                </p>
+                <p>
+                  Dirigeant, assistant(e), équipe administrative ou opérationnelle : tous les profils sont concernés.
+                </p>
+                <p>
+                  Dans la plupart des entreprises, une grande partie du temps est absorbée par :
+                </p>
+                <ul className="space-y-2 pl-1">
+                  {[
+                    "des tâches répétitives",
+                    "des recherches d'informations",
+                    "des relances manuelles",
+                    "des actions à faible valeur ajoutée",
+                  ].map((t, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                      <span className="text-blanc-casse/80">{t}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p>
+                  Une automatisation bien ciblée sur une seule tâche peut représenter plusieurs heures gagnées chaque semaine.
+                </p>
+                <p>
+                  Multipliées par le nombre de collaborateurs concernés, ces gains deviennent rapidement significatifs.
+                </p>
+                <p>
+                  Les solutions proposées s'intègrent dans votre organisation actuelle.
+                </p>
+                <p>
+                  Elles s'appuient sur vos outils existants et s'adaptent à vos habitudes de travail.
+                </p>
+                <p className="font-dm font-bold text-or-mat text-lg leading-snug pt-2">
+                  L'IA n'a de valeur que si elle est utilisée dans un cadre concret, compréhensible et maîtrisé.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* La méthode Semaine 54 */}
+        <section className="bg-blanc-casse py-10">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl lg:max-w-4xl mx-auto">
+              <h2 id="methode" className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
+                La méthode Semaine 54
+              </h2>
+              <p className="font-dm text-ardoise/80 text-center mb-8">
+                Un accompagnement structuré en quatre étapes, avec deux approches possibles selon votre besoin.
+              </p>
+
+              {/* Étape 01 */}
+              <div className="mb-10">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">01. Diagnostic (20 à 30 minutes)</h3>
+                <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
+                  <p>Un échange par téléphone ou en visio pour comprendre votre activité, vos contraintes et vos objectifs.</p>
+                  <p>Nous identifions ensemble :</p>
+                  <ul className="space-y-2 pl-1">
+                    {[
+                      "les tâches chronophages",
+                      "les points de friction dans votre organisation",
+                      "les actions offrant le meilleur retour sur investissement",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p>Ce premier échange permet de déterminer rapidement si une solution pertinente existe.</p>
+                  <p className="italic text-ardoise/70">Sans engagement. Aucune vente forcée.</p>
+                </div>
+              </div>
+
+              {/* Étape 02 */}
+              <div className="mb-10">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">02. Orientation et proposition</h3>
+                <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
+                  <p>À l'issue du diagnostic, une orientation claire est définie.</p>
+                  <p>Deux approches sont possibles :</p>
+                  <div className="pl-1 space-y-3">
+                    <div>
+                      <p className="font-bold text-navy">Mise en place de solutions IA sur-mesure</p>
+                      <p>Lorsque le gain provient de l'automatisation ou de la création d'outils.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-navy">Accompagnement et montée en compétence</p>
+                      <p>Lorsque le gain repose sur l'usage direct de l'IA par vos équipes.</p>
+                    </div>
+                  </div>
+                  <p>Dans certains cas, les deux approches sont combinées.</p>
+                  <p>Une proposition vous est transmise sous quelques jours, avec :</p>
+                  <ul className="space-y-2 pl-1">
+                    {[
+                      "les solutions retenues",
+                      "les gains attendus",
+                      "les outils utilisés",
+                      "le calendrier de mise en place",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p>Vous savez précisément ce qui est prévu, et pourquoi.</p>
+                </div>
+              </div>
+
+              {/* Étape 03 */}
+              <div className="mb-10">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">03. Déploiement et ajustement</h3>
+                <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
+                  <p>Les solutions sont mises en place dans vos conditions réelles.</p>
+                  <p>Selon le besoin :</p>
+                  <div className="pl-1 space-y-3">
+                    <div>
+                      <p className="font-bold text-navy">Pour les solutions techniques :</p>
+                      <ul className="space-y-2 pl-1 mt-2">
+                        {[
+                          "configuration des automatisations",
+                          "connexion aux outils existants",
+                          "tests et ajustements",
+                        ].map((t, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                            <span>{t}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-bold text-navy">Pour l'accompagnement :</p>
+                      <ul className="space-y-2 pl-1 mt-2">
+                        {[
+                          "sessions de formation ciblées",
+                          "mise en pratique sur vos cas réels",
+                          "structuration des usages",
+                        ].map((t, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                            <span>{t}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <p>Chaque solution est ajustée pour correspondre à votre quotidien.</p>
+                  <p className="italic text-ardoise/70">L'objectif n'est pas de livrer un outil, mais une solution réellement utilisée.</p>
+                </div>
+              </div>
+
+              {/* Étape 04 */}
+              <div>
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">04. Autonomie et suivi</h3>
+                <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
+                  <p>L'objectif est votre autonomie, pas votre dépendance.</p>
+                  <p>Vous comprenez :</p>
+                  <ul className="space-y-2 pl-1">
+                    {[
+                      "comment fonctionne la solution",
+                      "comment l'utiliser",
+                      "comment l'adapter si nécessaire",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p>Un suivi reste possible pour :</p>
+                  <ul className="space-y-2 pl-1">
+                    {[
+                      "ajuster les automatisations",
+                      "répondre aux questions",
+                      "approfondir certains usages",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-bold text-navy pt-2">Un seul interlocuteur, du diagnostic jusqu'au suivi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Les solutions proposées */}
+        <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 id="solutions" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
-                Ce que Semaine 54 propose concrètement
+                Les solutions proposées
               </h2>
-              <p className="font-dm text-blanc-casse/70 italic text-center mb-2">
-                L'IA ne remplace pas votre expertise. Elle élimine le temps inutile autour.
+              <p className="font-dm text-blanc-casse/80 text-center mb-10">
+                Deux leviers complémentaires, selon votre situation.
               </p>
-              <p className="font-dm text-blanc-casse/70 italic text-center mb-6">
-                Pas de grand projet risqué, pas de jargon technique. Des gains concrets, rapides, adaptés à votre réalité — avec vos outils actuels, sans changer votre organisation.
-              </p>
-
-              <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4 mb-6">
-                <p>
-                  Semaine 54 s'adresse à toute l'entreprise — pas seulement au dirigeant. Au <strong className="text-blanc-casse">chef d'entreprise qui veut gagner du temps sur son pilotage</strong>, à la <strong className="text-blanc-casse">secrétaire qui gère les relances et les agendas</strong>, à <strong className="text-blanc-casse">l'adjoint de direction qui produit des rapports et des synthèses</strong>, à <strong className="text-blanc-casse">l'équipe terrain qui saisit et transmet des informations toute la journée</strong>. Une automatisation bien ciblée sur un collaborateur, c'est souvent plusieurs heures récupérées chaque semaine — multipliées par le nombre de personnes concernées.
-                </p>
-                <p>
-                  Après un audit gratuit, la solution la plus pertinente est définie à partir de votre réalité terrain :
-                </p>
-              </div>
-
-              <ul className="space-y-3 mb-6">
-                {[
-                  "Automatisation et workflows via n8n",
-                  "Agent IA ou assistant IA métier configuré sur-mesure",
-                  "Formation ciblée aux outils d'IA générative",
-                  "Ou combinaison de ces solutions",
-                ].map((text, i) => (
-                  <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80">
-                    <span className="text-or-mat mt-1 shrink-0">•</span>
-                    {text}
-                  </li>
-                ))}
-              </ul>
-
-              <p className="font-dm text-blanc-casse/80 leading-relaxed mb-2">
-                <strong className="text-blanc-casse">Un seul interlocuteur en Bretagne, de l'audit jusqu'à la mise en service.</strong>
-              </p>
-              <p className="font-dm text-blanc-casse/80 leading-relaxed mb-6">
-                Les projets sont volontairement limités pour garantir disponibilité et qualité de suivi.
-              </p>
-
-              <p className="font-dm text-blanc-casse/70 italic leading-relaxed mb-6">
-                Objectif : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées — pour vous concentrer sur ce qui crée réellement de la valeur.
-              </p>
-
-              <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl leading-snug text-center mb-2">
-                Maîtriser et tester les outils IA demande du temps. Ce temps, je l'ai pris.
-              </p>
-              <p className="font-dm font-bold text-or-mat text-lg sm:text-xl leading-snug text-center">
-                Mon travail consiste à vous faire gagner le vôtre.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Méthode 4 étapes */}
-        <section className="bg-blanc-casse py-6">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="methode" className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-6 text-center" style={{ scrollMarginTop: '120px' }}>
-                La méthode Semaine 54 — 4 étapes
-              </h2>
-
-              {/* Step 01 */}
-              <div className="mb-8">
-                <h3 className="font-dm font-bold text-lg text-navy mb-2">01. Audit gratuit (20 à 30 min)</h3>
-                <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
-                  <p>
-                    Par téléphone ou visio. On cartographie ensemble vos tâches répétitives, chronophages ou mal maîtrisées, et on identifie ce qui a le meilleur retour sur investissement. C'est un échange de diagnostic — pas une présentation commerciale.
-                  </p>
-                  <p><strong className="text-navy">Sans engagement. Aucune vente forcée.</strong></p>
-                  <p>Je m'adapte à vos disponibilités, y compris en soirée et le week-end.</p>
-                </div>
-              </div>
-
-              {/* Step 02 */}
-              <div className="mb-8">
-                <h3 className="font-dm font-bold text-lg text-navy mb-2">02. Proposition (sous 3 jours ouvrés)</h3>
-                <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
-                  <p>
-                    <strong className="text-navy">Une proposition adaptée à votre situation réelle</strong> — pas une solution générique copiée-collée. Elle précise la ou les solutions retenues, le gain attendu, les outils impliqués, et le calendrier de mise en place.
-                  </p>
-                  <p className="italic text-ardoise/70">
-                    Vous savez exactement ce qui est prévu, avec quels outils et pourquoi. Aucune surprise.
-                  </p>
-                  <p className="italic text-ardoise/70">
-                    Si une solution simple existe et ne nécessite pas de me mandater, je vous la signale à ce stade.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 03 */}
-              <div className="mb-8">
-                <h3 className="font-dm font-bold text-lg text-navy mb-2">03. Mise en place & calibration</h3>
-                <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
-                  <p>
-                    Je configure la solution et la teste dans vos conditions réelles. <strong className="text-navy">Vous validez le résultat — sans y passer de temps vous-même.</strong> Si quelque chose ne correspond pas à votre usage quotidien, j'ajuste avant de livrer.
-                  </p>
-                  <p>Durée : 3 à 15 jours ouvrés selon la complexité.</p>
-                  <p className="italic text-ardoise/70">
-                    L'IA avance vite. Garder de l'humain au centre de chaque solution, c'est s'assurer qu'elle reste comprise, maîtrisée et utile dans la durée.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 04 */}
-              <div className="mb-6">
-                <h3 className="font-dm font-bold text-lg text-navy mb-2">04. Transmission & suivi</h3>
-                <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
-                  <p><strong className="text-navy">L'objectif est votre autonomie, pas votre dépendance.</strong></p>
-                  <p>
-                    À la fin de la mission, vous savez comment fonctionne la solution : vous pouvez la surveiller, identifier un dysfonctionnement, demander une modification. Vous n'êtes pas dépendant d'un prestataire pour savoir ce qui se passe chez vous.
-                  </p>
-                  <p>Les outils évoluent. Votre activité aussi. Je reste disponible pour :</p>
-                </div>
-                <ul className="space-y-2 mt-3 mb-4">
-                  {[
-                    { icon: Settings, text: "Ajuster les solutions mises en place" },
-                    { icon: MessageCircle, text: "Répondre aux questions" },
-                    { icon: TrendingUp, text: "Approfondir certains usages si nécessaire" },
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70 text-sm">
-                      <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
-                      {item.text}
-                    </li>
-                  ))}
-                </ul>
-                <p className="font-dm text-ardoise/70 italic text-sm">
-                  Un seul interlocuteur, du diagnostic jusqu'au suivi. Pas de transfert de dossier. Pas de passage au suivant.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Trois leviers */}
-        <section className="bg-navy py-6">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="leviers" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-6 text-center" style={{ scrollMarginTop: '120px' }}>
-                Trois leviers. Le bon, selon votre situation.
-              </h2>
 
               {/* Levier 1 */}
-              <div className="mb-8">
-                <h3 className="font-dm font-bold text-xl text-or-mat mb-3">1. Automatisation sur-mesure</h3>
-                <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
-                  <strong className="text-blanc-casse">Des workflows automatisés via n8n</strong> — une plateforme professionnelle qui connecte vos outils existants entre eux, sans que vos données ne quittent votre environnement sans raison.
+              <div className="mb-10">
+                <h3 className="font-dm font-bold text-2xl text-or-mat mb-2">Solutions IA sur-mesure</h3>
+                <p className="font-dm text-blanc-casse/80 mb-6">
+                  Des solutions concrètes qui automatisent et simplifient votre quotidien.
                 </p>
-                <ul className="space-y-2 mb-4">
-                  {[
-                    "Prise de rendez-vous et confirmation client automatique",
-                    "Relances clients, suivi de devis, génération de documents",
-                    "Veille fournisseurs et comparaison de prix en temps réel",
-                    "Tri, gestion et réponse aux mails entrants",
-                    "Génération et publication automatique de contenu (Facebook, Instagram, LinkedIn)",
-                    "Rapprochement de factures, comptabilité assistée",
-                    "Chatbot de service client ou de prise de contact",
-                    "Reporting et analyse de données automatisés",
-                  ].map((text, i) => (
-                    <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/70 text-sm">
-                      <span className="text-or-mat mt-1 shrink-0">•</span>
-                      {text}
-                    </li>
-                  ))}
-                </ul>
-                <p className="font-dm text-blanc-casse/70 italic text-sm">
-                  Cette liste n'est pas exhaustive. Les agents IA permettent aujourd'hui des automatisations que l'on n'imaginait pas il y a deux ans — c'est souvent lors de l'audit qu'émergent les pistes les plus utiles.
-                </p>
+
+                {/* Automatisation */}
+                <div className="mb-6 bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-2">Automatisation</h4>
+                  <p className="font-dm text-blanc-casse/75 italic mb-3">
+                    Des tâches répétitives qui disparaissent de votre quotidien.
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      "Workflows conçus sur-mesure",
+                      "Connexion à vos outils existants (email, CRM, fichiers, etc.)",
+                      "Automatisation des tâches chronophages",
+                      "Déclenchements automatiques selon vos processus métier",
+                      "Fonctionnement fiable et évolutif",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-dm text-blanc-casse/70 text-sm mt-3">
+                    Ces automatisations permettent de supprimer les actions manuelles répétitives et de réduire les erreurs.
+                  </p>
+                </div>
+
+                {/* Assistant IA métier */}
+                <div className="mb-6 bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-2">Assistant IA métier</h4>
+                  <p className="font-dm text-blanc-casse/75 italic mb-3">
+                    Un assistant qui vous accompagne dans votre travail au quotidien.
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      "Connecté à vos données et documents internes",
+                      "Capable d'analyser et de synthétiser rapidement",
+                      "Adapté à votre activité et à vos besoins",
+                      "Utilisation simple, sans compétence technique",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-dm text-blanc-casse/70 text-sm mt-3">
+                    L'objectif est d'accélérer vos prises de décision et de faciliter l'accès à l'information.
+                  </p>
+                </div>
+
+                {/* Outils métier */}
+                <div className="bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-2">Outils métier</h4>
+                  <p className="font-dm text-blanc-casse/75 italic mb-3">
+                    Des outils simples, conçus pour répondre à un besoin précis.
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      "Interfaces claires et rapides à prendre en main",
+                      "Connexion à vos outils et à vos données",
+                      "Automatisation intégrée directement dans l'outil",
+                      "Utilisation quotidienne sans complexité",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-dm text-blanc-casse/70 text-sm mt-3">
+                    Pas de logiciel lourd à déployer.<br />
+                    Des outils simples, conçus pour être utilisés immédiatement.
+                  </p>
+                </div>
               </div>
 
               {/* Levier 2 */}
-              <div className="mb-8">
-                <h3 className="font-dm font-bold text-xl text-or-mat mb-3">2. Formation & acculturation IA</h3>
-                <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
-                  Quand la meilleure solution est d'apprendre à utiliser l'IA générative directement dans votre quotidien. Sessions calibrées sur votre activité, vos outils, vos questions réelles — <strong className="text-blanc-casse">pas un cours standard délivré à des dizaines d'entreprises en même temps.</strong>
-                </p>
-                <ul className="space-y-2 mb-4">
-                  {[
-                    "Prendre en main un assistant IA : ChatGPT, Claude, Gemini, Mistral",
-                    "Maîtriser le prompting pour des résultats professionnels et reproductibles",
-                    "Générer du texte, des images, des vidéos ou des voix avec ElevenLabs",
-                    "Créer des présentations complètes avec Gamma en quelques minutes",
-                    "Produire des visuels professionnels avec Canva IA — sans designer",
-                    "Identifier les bons cas d'usage pour votre secteur",
-                    "Découvrir des outils IA métiers : Noota, Copilot, Notion AI",
-                  ].map((text, i) => (
-                    <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/70 text-sm">
-                      <span className="text-or-mat mt-1 shrink-0">•</span>
-                      {text}
-                    </li>
-                  ))}
-                </ul>
-                <p className="font-dm text-blanc-casse/70 italic text-sm mb-3">
-                  L'IA générative ne se limite pas au texte. Vos équipes peuvent produire en quelques minutes des visuels, des vidéos, des voix synthétiques ou des diaporamas complets — sans compétence technique, sans agence.
-                </p>
-                <p className="font-dm text-blanc-casse/80 leading-relaxed">
-                  <strong className="text-blanc-casse">L'objectif : des collaborateurs plus efficaces, pas remplacés.</strong>
-                </p>
-              </div>
-
-              {/* Levier 3 */}
               <div>
-                <h3 className="font-dm font-bold text-xl text-or-mat mb-3">3. Conseil & aide au choix d'outils</h3>
-                <p className="font-dm text-blanc-casse/80 leading-relaxed mb-3">
-                  Quand vous avez besoin d'un regard extérieur pour y voir clair, sans vous engager dans un projet. <strong className="text-blanc-casse">Le marché propose des centaines d'outils IA.</strong> Semaine 54 joue un rôle de filtre : identifier ce qui correspond à vos besoins, éviter les abonnements inutiles, et vous conseiller une solution simple plutôt qu'une infrastructure coûteuse.
+                <h3 className="font-dm font-bold text-2xl text-or-mat mb-2">Accompagnement et montée en compétence IA</h3>
+                <p className="font-dm text-blanc-casse/80 mb-6">
+                  Quand la meilleure solution est d'apprendre à utiliser l'IA efficacement en interne.
                 </p>
-                <p className="font-dm text-blanc-casse/70 italic text-sm mb-3">
-                  Les agents IA, les outils comme Claude Cowork ou les nouvelles plateformes d'automatisation évoluent vite. Mon rôle est de faire le tri pour vous — et de vous orienter vers ce qui sera utile demain, pas seulement aujourd'hui.
-                </p>
-                <p className="font-dm text-blanc-casse/70 italic text-sm">
-                  Vous évitez les faux départs, les projets qui s'éternisent et les coûts cachés.
-                </p>
+
+                {/* Formation */}
+                <div className="mb-6 bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-3">Formation & acculturation IA</h4>
+                  <ul className="space-y-2">
+                    {[
+                      "Comprendre les usages concrets de l'IA",
+                      "Structurer une utilisation professionnelle",
+                      "Maîtriser les bons réflexes et le prompt",
+                      "Appliquer directement sur vos cas réels",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-dm text-blanc-casse/70 text-sm mt-3">
+                    L'objectif est de rendre vos équipes autonomes et efficaces rapidement.
+                  </p>
+                </div>
+
+                {/* Conseil */}
+                <div className="bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-3">Conseil & choix d'outils</h4>
+                  <ul className="space-y-2">
+                    {[
+                      "Analyse de vos besoins réels",
+                      "Sélection des outils pertinents",
+                      "Éviter les abonnements inutiles",
+                      "Mise en cohérence avec votre organisation",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-dm text-blanc-casse/70 text-sm mt-3">
+                    Le marché des outils IA évolue rapidement.<br />
+                    L'objectif est de vous orienter vers des solutions utiles, adaptées et durables.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Outils utilisés */}
-        <section className="bg-blanc-casse py-6">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center">
-                Les outils utilisés
-              </h2>
-              <p className="font-dm text-ardoise/80 leading-relaxed text-center mb-6">
-                <strong className="text-navy">Aucun outil n'est imposé. Chaque solution est choisie selon votre activité, vos contraintes et votre budget.</strong>
-              </p>
-
-              <div className="space-y-4">
-                {[
-                  { label: "Assistants IA", tools: "ChatGPT · Claude · Gemini · Mistral · Microsoft Copilot · Perplexity" },
-                  { label: "Automatisation & agents IA", tools: "n8n · Claude Cowork" },
-                  { label: "Création de contenu", tools: "Canva IA · Gamma · ElevenLabs" },
-                  { label: "Outils métiers", tools: "Notion AI · Noota · et d'autres selon vos besoins" },
-                  { label: "Intégrations courantes", tools: "Gmail · Outlook · Google Sheets · HubSpot · Slack · WhatsApp Business · Facebook · Instagram · LinkedIn · Stripe · Calendly" },
-                ].map((cat, i) => (
-                  <div key={i} className="bg-gris-perle rounded-xl p-4">
-                    <p className="font-dm text-sm">
-                      <strong className="text-navy">{cat.label} :</strong>{" "}
-                      <span className="text-ardoise/70">{cat.tools}</span>
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              <p className="font-dm text-ardoise/70 italic text-sm text-center mt-4">
-                Ces outils s'intègrent à ce que vous utilisez déjà. Pas besoin de tout changer.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Sécurité & RGPD */}
-        <section className="bg-navy py-6">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center">
-                Sécurité & RGPD
-              </h2>
-              <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-4">
-                <p>
-                  <strong className="text-blanc-casse">Vos données transitent déjà par des services cloud — Gmail, Google Drive, Outlook. n8n fonctionne sur le même principe : un service cloud professionnel, pas une boîte noire.</strong>
-                </p>
-                <p>
-                  Avant de connecter quoi que ce soit, on identifie ensemble ce qui est sensible et ce qui ne l'est pas. Les accès sont limités au strict nécessaire — et les données critiques ne transitent jamais sans raison.
-                </p>
-                <p className="italic text-blanc-casse/70">
-                  Pour les entreprises qui souhaitent privilégier la souveraineté des données, des solutions comme Mistral — modèle IA français — peuvent être intégrées dans les workflows.
-                </p>
-                <p>
-                  <strong className="text-blanc-casse">La conformité RGPD est abordée dès le diagnostic.</strong> Semaine 54 conçoit selon les bonnes pratiques, sans se substituer à vos obligations légales.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="bg-blanc-casse py-6">
+        {/* Conclusion */}
+        <section className="bg-blanc-casse py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-6 text-center">
-                Questions fréquentes
+                Conclusion
               </h2>
-
-              <Accordion type="single" collapsible className="space-y-2">
-                {[
-                  {
-                    q: "Faut-il changer ses outils pour automatiser ?",
-                    a: "Non. Les solutions s'intègrent à ce que vous utilisez déjà."
-                  },
-                  {
-                    q: "Et si je n'ai pas de logiciel de gestion ?",
-                    a: "Pas de problème. Beaucoup de solutions fonctionnent depuis un formulaire Google, une feuille Excel ou des emails entrants."
-                  },
-                  {
-                    q: "Est-ce que ça demande des compétences techniques ?",
-                    a: "Non. Une prise en main est incluse. Rien n'est une boîte noire."
-                  },
-                  {
-                    q: "L'IA va-t-elle remplacer mes collaborateurs ?",
-                    a: "Non. L'objectif est de les débarrasser des tâches répétitives — pour qu'ils se concentrent sur ce qui crée vraiment de la valeur."
-                  },
-                  {
-                    q: "Mes données sont-elles en sécurité ?",
-                    a: "Vos données transitent déjà par Gmail ou Google Drive. n8n fonctionne sur le même principe. Les accès sont configurés au strict nécessaire. Pour les données sensibles, des solutions souveraines comme Mistral peuvent être privilégiées."
-                  },
-                  {
-                    q: "Quel est le tarif ?",
-                    a: "**Il dépend de la solution retenue. Communiqué dans la proposition, après diagnostic. L'audit initial est gratuit et sans engagement.**"
-                  },
-                  {
-                    q: "Combien d'entreprises Semaine 54 accompagne-t-il simultanément ?",
-                    a: "Volontairement limité — pour garantir disponibilité et qualité de suivi."
-                  },
-                  {
-                    q: "Que se passe-t-il si la solution ne fonctionne pas comme prévu ?",
-                    a: "J'ajuste jusqu'à ce que ça fonctionne dans vos conditions réelles, avant toute livraison."
-                  },
-                  {
-                    q: "Semaine 54 intervient-il uniquement en Bretagne ?",
-                    a: "Les échanges se font par téléphone ou visio. Intervention prioritaire en Bretagne : Finistère (29), Côtes-d'Armor (22), Morbihan (56), Ille-et-Vilaine (35)."
-                  },
-                ].map((faq, i) => (
-                  <AccordionItem key={i} value={`faq-${i}`} className="bg-gris-perle rounded-xl border-none px-4">
-                    <AccordionTrigger className="font-dm font-bold text-navy text-left hover:no-underline">
-                      {faq.q}
-                    </AccordionTrigger>
-                    <AccordionContent className="font-dm text-ardoise/80 leading-relaxed">
-                      {faq.a.split("**").map((part, j) =>
-                        j % 2 === 1 ? <strong key={j} className="text-navy">{part}</strong> : part
-                      )}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <div className="font-dm text-ardoise/85 leading-relaxed space-y-4 text-center">
+                <p>
+                  Dans la plupart des entreprises, plusieurs heures de travail peuvent être automatisées chaque semaine.
+                </p>
+                <p>Encore faut-il identifier les bonnes actions.</p>
+                <p className="font-bold text-navy">
+                  Le diagnostic permet de faire ce tri rapidement et de prioriser les solutions réellement utiles.
+                </p>
+              </div>
             </div>
           </div>
         </section>
+
 
         {/* CTA final */}
         <section className="bg-navy py-6">
