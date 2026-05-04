@@ -98,19 +98,20 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="flex flex-col gap-6 mb-4">
-            {[comprehension].map((group, gi) => (
-              <div key={gi} className="bg-gris-perle rounded-2xl p-6 shadow-sm">
-                <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
-                  {group.map((item, i) =>
-                    <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
-                      <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
-                      {item.text}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            ))}
+          <div className="bg-navy rounded-2xl p-6 md:p-8 mb-4 shadow-sm">
+            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-blanc-casse mb-5 text-center">
+              Audit
+            </h3>
+            <div className="bg-gris-perle rounded-2xl p-6">
+              <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
+                {comprehension.map((item, i) =>
+                  <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
+                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                    {item.text}
+                  </li>
+                )}
+              </ul>
+            </div>
           </div>
 
           <div className="bg-navy rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
