@@ -114,7 +114,7 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm border-2 border-navy">
             <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Solutions IA sur-mesure
             </h3>
