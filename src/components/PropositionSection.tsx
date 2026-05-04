@@ -53,7 +53,7 @@ const prestations = [
     icon: GraduationCap,
     title: "Formation & acculturation IA",
     badge: "ChatGPT · Claude · Gemini · Copilot",
-    tagline: "Comprendre et utiliser l'IA de manière concrète dans votre activité.",
+    tagline: null,
     items: [
       { icon: MessageSquare, text: "Formation aux outils : ChatGPT, Claude, Gemini, Copilot" },
       { icon: SlidersHorizontal, text: "Structuration des usages professionnels" },
@@ -146,9 +146,12 @@ const PropositionSection = () => {
 
           <div className="flex justify-center mb-6">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-3 text-center">
                 Solutions d'accompagnement IA
               </h3>
+              <p className="font-dm font-bold text-ardoise text-center mb-5">
+                Comprendre et utiliser l'IA de manière concrète dans votre activité.
+              </p>
               <div className="flex flex-wrap justify-center gap-6">
                 {prestations.slice(3).map((p, i) =>
                   <div
