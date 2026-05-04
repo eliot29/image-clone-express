@@ -206,10 +206,16 @@ const PropositionSection = () => {
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
 
-          <div className="text-center mt-4">
+          <div className="flex flex-wrap justify-center gap-3 mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/comment-ca-marche#solutions">
                 Les solutions en détails
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
+            <Button variant="ctaOutline" size="default" asChild>
+              <Link to="/secteurs">
+                À qui s'adresse Semaine 54 ?
                 <ArrowRight size={16} />
               </Link>
             </Button>
