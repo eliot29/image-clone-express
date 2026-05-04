@@ -113,43 +113,45 @@ const PropositionSection = () => {
             ))}
           </div>
 
-          <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-4 text-center">
-            Solutions IA sur-mesure
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-            {prestations.slice(0, 3).map((p, i) =>
-              <div
-                key={i}
-                className="rounded-2xl bg-gris-perle shadow-sm p-6 flex flex-col">
-                <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
-                  <p.icon size={22} className="text-or-mat" />
+          <div className="bg-navy rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
+            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-blanc-casse mb-5 text-center">
+              Solutions IA sur-mesure
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {prestations.slice(0, 3).map((p, i) =>
+                <div
+                  key={i}
+                  className="rounded-2xl bg-gris-perle shadow-sm p-6 flex flex-col">
+                  <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
+                    <p.icon size={22} className="text-or-mat" />
+                  </div>
+                  <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
+                  {p.badge &&
+                    <span className="font-dm text-xs font-semibold text-or-mat mb-3">
+                      {p.badge}
+                    </span>
+                  }
+                  {p.tagline &&
+                    <p className="font-dm text-sm italic text-ardoise/70 mb-3">
+                      {p.tagline}
+                    </p>
+                  }
+                  <ul className="space-y-2 pt-4 border-t border-ardoise/10">
+                    {p.items.map((item, j) =>
+                      <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
+                        <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
+                        {item.text}
+                      </li>
+                    )}
+                  </ul>
+                  {p.objectif &&
+                    <p className="font-dm text-sm font-semibold text-navy mt-4 pt-4 border-t border-ardoise/10">
+                      👉 {p.objectif}
+                    </p>
+                  }
                 </div>
-                <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
-                {p.badge &&
-                  <span className="font-dm text-xs font-semibold text-or-mat mb-3">
-                    {p.badge}
-                  </span>
-                }
-                {p.tagline &&
-                  <p className="font-dm text-sm italic text-ardoise/70 mb-3">
-                    {p.tagline}
-                  </p>
-                }
-                <ul className="space-y-2 pt-4 border-t border-ardoise/10">
-                  {p.items.map((item, j) =>
-                    <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
-                      <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
-                      {item.text}
-                    </li>
-                  )}
-                </ul>
-                {p.objectif &&
-                  <p className="font-dm text-sm font-semibold text-navy mt-4 pt-4 border-t border-ardoise/10">
-                    👉 {p.objectif}
-                  </p>
-                }
-              </div>
-            )}
+              )}
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {prestations.slice(3).map((p, i) =>
