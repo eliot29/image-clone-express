@@ -191,7 +191,7 @@ const PourquoiSemaine54 = () => {
 
               <div className="font-dm text-ardoise/80 leading-relaxed space-y-4">
                 <p>
-                  Je suis <strong className="text-navy">Clément, 35 ans, fondateur de Semaine 54</strong>. Mon parcours est commercial avant d'être technique : plusieurs années en grande distribution comme chef de rayon, puis chef de secteur GMS côté marques.
+                  Je suis <strong className="text-navy">Clément, 35 ans, fondateur de Semaine 54</strong>. J'ai travaillé plusieurs années dans plusieurs métiers du secteur de la grande distribution.
                 </p>
                 <p>
                   J'ai aussi brièvement vendu des sites internet — une expérience qui m'a appris ce que je ne voulais pas faire : conclure en un rendez-vous sans vraiment comprendre l'entreprise en face.
