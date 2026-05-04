@@ -58,9 +58,16 @@ const CommentCaMarche = () => {
               <h1 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
                 Comment ça fonctionne avec Semaine 54
               </h1>
-              <p className="font-dm text-ardoise/70 text-lg italic">
+              <p className="font-dm text-ardoise/80 text-lg leading-relaxed mb-5">
                 Un accompagnement simple, structuré, avec un seul interlocuteur du début à la mise en place.
               </p>
+              <div className="font-dm text-ardoise/80 leading-relaxed space-y-3 text-left sm:text-center max-w-2xl mx-auto">
+                <p>
+                  L'objectif n'est pas de transformer votre entreprise, mais d'améliorer ce qui existe déjà.
+                </p>
+                <p>Pas de projet complexe, pas de changement d'organisation.</p>
+                <p>Des solutions concrètes, adaptées à votre réalité terrain.</p>
+              </div>
             </div>
           </div>
         </section>
