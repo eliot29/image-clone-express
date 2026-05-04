@@ -5,7 +5,7 @@ const SecuritySection = () => {
     <section className="bg-blanc-casse pt-2 pb-6">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-gris-perle rounded-xl p-8 md:p-10 border border-border">
+          <div className="rounded-xl p-8 md:p-10">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Shield size={22} className="text-or-mat shrink-0" />
               <h2 className="font-dm font-bold text-2xl text-navy">Sécurité & RGPD</h2>
