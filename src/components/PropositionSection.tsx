@@ -153,7 +153,7 @@ const PropositionSection = () => {
                 {prestations.slice(3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-4 flex flex-col items-center text-center max-w-xs">
+                    className="rounded-2xl p-4 flex flex-col items-center text-center">
                     <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
                       <p.icon size={22} className="text-or-mat" />
                     </div>
@@ -164,7 +164,7 @@ const PropositionSection = () => {
                       </span>
                     }
                     {p.tagline &&
-                      <p className="font-dm text-sm italic text-ardoise/70">
+                      <p className="font-dm text-sm italic text-ardoise/70 whitespace-nowrap">
                         {p.tagline}
                       </p>
                     }
