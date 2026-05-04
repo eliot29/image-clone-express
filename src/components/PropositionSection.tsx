@@ -197,12 +197,14 @@ const PropositionSection = () => {
 
           <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
             <ul className="space-y-3 flex flex-col items-center text-center">
-              {validation.map((item, i) =>
-                <li key={`v-${i}`} className="flex items-start gap-3 font-dm font-bold text-ardoise text-center">
-                  <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
-                  <span>{item.text}</span>
-                </li>
-              )}
+              <li className="flex flex-wrap items-start justify-center gap-x-6 gap-y-2">
+                {validation.map((item, i) =>
+                  <span key={`v-${i}`} className="flex items-start gap-3 font-dm font-bold text-ardoise">
+                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                    <span>{item.text}</span>
+                  </span>
+                )}
+              </li>
               {engagements.map((item, i) =>
                 <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70 text-center">
                   <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
