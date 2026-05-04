@@ -137,19 +137,6 @@ const PropositionSection = () => {
                       {p.tagline}
                     </p>
                   }
-                  <ul className="space-y-2 pt-4 border-t border-ardoise/10">
-                    {p.items.map((item, j) =>
-                      <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
-                        <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
-                        {item.text}
-                      </li>
-                    )}
-                  </ul>
-                  {p.objectif &&
-                    <p className="font-dm text-sm font-semibold text-navy mt-4 pt-4 border-t border-ardoise/10">
-                      👉 {p.objectif}
-                    </p>
-                  }
                 </div>
               )}
             </div>
@@ -175,19 +162,6 @@ const PropositionSection = () => {
                   {p.tagline &&
                     <p className="font-dm text-sm italic text-ardoise/70 mb-3">
                       {p.tagline}
-                    </p>
-                  }
-                  <ul className="space-y-2 pt-4 border-t border-ardoise/10">
-                    {p.items.map((item, j) =>
-                      <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
-                        <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
-                        {item.text}
-                      </li>
-                    )}
-                  </ul>
-                  {p.objectif &&
-                    <p className="font-dm text-sm font-semibold text-navy mt-4 pt-4 border-t border-ardoise/10">
-                      👉 {p.objectif}
                     </p>
                   }
                 </div>
