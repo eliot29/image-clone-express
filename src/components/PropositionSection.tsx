@@ -50,14 +50,14 @@ const PropositionSection = () => {
           </div>
 
           <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-col items-center text-center">
               {engagements.map((item, i) =>
-                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70 text-center">
                   <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
                   <span><strong className="font-bold text-ardoise">{item.bold}</strong>{item.rest}</span>
                 </li>
               )}
-              <li className="flex items-start gap-3 font-dm text-ardoise font-bold">
+              <li className="flex items-start gap-3 font-dm text-ardoise font-bold text-center">
                 <Crosshair size={16} className="text-or-mat mt-0.5 shrink-0" />
                 <span>Objectif : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées,<br />pour vous concentrer sur ce qui crée réellement de la valeur.</span>
               </li>
