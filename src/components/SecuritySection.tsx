@@ -14,7 +14,9 @@ const SecuritySection = () => {
               <div className="flex items-start gap-3 justify-center">
                 <Scale size={18} className="text-or-mat shrink-0 mt-1" />
                 <p className="font-dm text-ardoise/80 text-sm leading-relaxed text-center">
-                  La conformité RGPD est abordée dès le diagnostic. Semaine 54 conçoit selon les <span className="font-semibold text-navy">bonnes pratiques</span>, sans se substituer à vos obligations légales.
+                  Les solutions sont conçues avec une <span className="font-semibold text-navy">gestion stricte des accès</span> et une attention portée à la <span className="font-semibold text-navy">confidentialité des données</span>.
+                  <br /><br />
+                  La conformité RGPD est intégrée dès le diagnostic, sans se substituer à vos obligations légales.
                 </p>
               </div>
             </div>
