@@ -1,4 +1,4 @@
-import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -24,12 +24,7 @@ const steps = [
 {
   num: "04",
   title: "Suivi",
-  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour :",
-  items: [
-    { icon: Settings, text: "Ajuster les solutions mises en place" },
-    { icon: MessageCircle, text: "Répondre aux questions" },
-    { icon: TrendingUp, text: "Approfondir certains usages si nécessaire" }
-  ]
+  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions, répondre aux questions et approfondir certains usages si nécessaire."
 }];
 
 
