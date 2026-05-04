@@ -114,59 +114,63 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
-            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-              Solutions IA sur-mesure
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {prestations.slice(0, 3).map((p, i) =>
-                <div
-                  key={i}
-                  className="rounded-2xl p-6 flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
-                    <p.icon size={22} className="text-or-mat" />
+          <div className="flex justify-center mb-6">
+            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+                Solutions IA sur-mesure
+              </h3>
+              <div className="flex flex-wrap justify-center gap-6">
+                {prestations.slice(0, 3).map((p, i) =>
+                  <div
+                    key={i}
+                    className="rounded-2xl p-4 flex flex-col items-center text-center max-w-xs">
+                    <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
+                      <p.icon size={22} className="text-or-mat" />
+                    </div>
+                    <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
+                    {p.badge &&
+                      <span className="font-dm text-xs font-semibold text-or-mat mb-2">
+                        {p.badge}
+                      </span>
+                    }
+                    {p.tagline &&
+                      <p className="font-dm text-sm italic text-ardoise/70">
+                        {p.tagline}
+                      </p>
+                    }
                   </div>
-                  <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
-                  {p.badge &&
-                    <span className="font-dm text-xs font-semibold text-or-mat mb-3">
-                      {p.badge}
-                    </span>
-                  }
-                  {p.tagline &&
-                    <p className="font-dm text-sm italic text-ardoise/70 mb-3">
-                      {p.tagline}
-                    </p>
-                  }
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </div>
 
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
-            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-              Accompagnement & montée en compétence IA
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {prestations.slice(3).map((p, i) =>
-                <div
-                  key={i}
-                  className="rounded-2xl p-6 flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
-                    <p.icon size={22} className="text-or-mat" />
+          <div className="flex justify-center mb-6">
+            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+                Accompagnement & montée en compétence IA
+              </h3>
+              <div className="flex flex-wrap justify-center gap-6">
+                {prestations.slice(3).map((p, i) =>
+                  <div
+                    key={i}
+                    className="rounded-2xl p-4 flex flex-col items-center text-center max-w-xs">
+                    <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
+                      <p.icon size={22} className="text-or-mat" />
+                    </div>
+                    <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
+                    {p.badge &&
+                      <span className="font-dm text-xs font-semibold text-or-mat mb-2">
+                        {p.badge}
+                      </span>
+                    }
+                    {p.tagline &&
+                      <p className="font-dm text-sm italic text-ardoise/70">
+                        {p.tagline}
+                      </p>
+                    }
                   </div>
-                  <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
-                  {p.badge &&
-                    <span className="font-dm text-xs font-semibold text-or-mat mb-3">
-                      {p.badge}
-                    </span>
-                  }
-                  {p.tagline &&
-                    <p className="font-dm text-sm italic text-ardoise/70 mb-3">
-                      {p.tagline}
-                    </p>
-                  }
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </div>
 
