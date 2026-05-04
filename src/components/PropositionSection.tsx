@@ -175,7 +175,7 @@ const PropositionSection = () => {
           </div>
 
           <div className="flex justify-center mb-6">
-            <div className="inline-block rounded-2xl px-6 py-6 md:px-8">
+            <div className="inline-block rounded-2xl px-6 py-6 md:px-8 border border-navy/30">
               <ul className="space-y-3 flex flex-col items-center text-center">
                 <li className="flex flex-wrap items-start justify-center gap-x-6 gap-y-2">
                   {validation.map((item, i) =>
