@@ -98,11 +98,11 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-4 shadow-sm">
-            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-              Audit
-            </h3>
-            <div className="rounded-2xl p-6">
+          <div className="flex justify-center mb-4">
+            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+                Audit
+              </h3>
               <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
                 {comprehension.map((item, i) =>
                   <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
