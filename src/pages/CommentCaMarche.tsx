@@ -56,10 +56,10 @@ const CommentCaMarche = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
               <h1 className="font-dm font-extrabold text-3xl sm:text-4xl text-navy mb-4">
-                Comment ça marche
+                Comment ça fonctionne avec Semaine 54
               </h1>
               <p className="font-dm text-ardoise/70 text-lg italic">
-                De l'audit à la mise en place, un seul interlocuteur. Du début à la fin.
+                Un accompagnement simple, structuré, avec un seul interlocuteur du début à la mise en place.
               </p>
             </div>
           </div>
