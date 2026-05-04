@@ -122,7 +122,7 @@ const PropositionSection = () => {
               {prestations.slice(0, 3).map((p, i) =>
                 <div
                   key={i}
-                  className="rounded-2xl p-6 flex flex-col">
+                  className="rounded-2xl p-6 flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                     <p.icon size={22} className="text-or-mat" />
                   </div>
@@ -147,7 +147,7 @@ const PropositionSection = () => {
               {prestations.slice(3).map((p, i) =>
                 <div
                   key={i}
-                  className="rounded-2xl p-6 flex flex-col">
+                  className="rounded-2xl p-6 flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                     <p.icon size={22} className="text-or-mat" />
                   </div>
