@@ -1,16 +1,10 @@
-import { Workflow, Bot, GraduationCap, Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight } from "lucide-react";
+import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const comprehension = [
   { icon: Eye, text: "Compréhension de votre activité" },
   { icon: Target, text: "Identification des priorités" },
-];
-
-const solutions = [
-  { icon: Workflow, text: "Automatisation via n8n" },
-  { icon: Bot, text: "Application ou assistant IA configuré sur-mesure" },
-  { icon: GraduationCap, text: "Formation ciblée aux LLM et aux outils d'IA" },
 ];
 
 const validation = [
@@ -35,7 +29,7 @@ const PropositionSection = () => {
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
           <div className="flex flex-col gap-6 mb-4">
-            {[comprehension, solutions, validation].map((group, gi) => (
+            {[comprehension, validation].map((group, gi) => (
               <div key={gi} className="bg-gris-perle rounded-2xl p-6 shadow-sm">
                 <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
                   {group.map((item, i) =>
