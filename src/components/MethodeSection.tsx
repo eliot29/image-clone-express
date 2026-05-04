@@ -1,4 +1,4 @@
-import { Target, Wrench, FlaskConical, RefreshCw, ListChecks, Settings, MessageCircle, TrendingUp, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -24,12 +24,7 @@ const steps = [
 {
   num: "04",
   title: "Suivi",
-  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour :",
-  items: [
-    { icon: Settings, text: "Ajuster les solutions mises en place" },
-    { icon: MessageCircle, text: "Répondre aux questions" },
-    { icon: TrendingUp, text: "Approfondir certains usages si nécessaire" }
-  ]
+  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions, répondre aux questions et approfondir certains usages si nécessaire."
 }];
 
 
@@ -65,16 +60,6 @@ const MethodeSection = () => {
                 <div className={`${i < 3 ? 'pb-10' : 'pb-2'}`}>
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
-                  {step.items &&
-                <ul className="mt-3 space-y-1.5">
-                      {step.items.map((item, j) =>
-                  <li key={j} className="flex items-start gap-2 font-dm text-sm text-ardoise/70">
-                          <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
-                          {item.text}
-                        </li>
-                  )}
-                    </ul>
-                }
                   {step.note &&
                 <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
                 }
