@@ -37,9 +37,9 @@ const PropositionSection = () => {
           <div className="flex flex-col gap-6 mb-4">
             {[comprehension, solutions, validation].map((group, gi) => (
               <div key={gi} className="bg-gris-perle rounded-2xl p-6 shadow-sm">
-                <ul className="space-y-3">
+                <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
                   {group.map((item, i) =>
-                    <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                    <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
                       <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
                       {item.text}
                     </li>
