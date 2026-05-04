@@ -83,7 +83,7 @@ const PropositionSection = () => {
             {prestations.map((p, i) =>
               <div
                 key={i}
-                className="rounded-xl border border-navy/10 bg-navy/5 hover:bg-navy/[0.08] transition-colors p-6 flex flex-col">
+                className="rounded-2xl bg-gris-perle shadow-sm p-6 flex flex-col">
                 <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                   <p.icon size={22} className="text-or-mat" />
                 </div>
@@ -93,7 +93,7 @@ const PropositionSection = () => {
                     {p.badge}
                   </span>
                 }
-                <ul className="space-y-2 mt-auto pt-4 border-t border-navy/10">
+                <ul className="space-y-2 mt-auto pt-4 border-t border-ardoise/10">
                   {p.items.map((item, j) =>
                     <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
                       <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
