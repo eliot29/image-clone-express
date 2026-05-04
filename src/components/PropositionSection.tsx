@@ -1,17 +1,19 @@
-import { Workflow, Bot, GraduationCap, Puzzle, Target, Wrench, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight } from "lucide-react";
+import { Workflow, Bot, GraduationCap, Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const comprehension = [
+  { icon: Eye, text: "Compréhension de votre activité" },
+  { icon: Target, text: "Identification des priorités" },
+];
 
 const solutions = [
   { icon: Workflow, text: "Automatisation via n8n" },
   { icon: Bot, text: "Application ou assistant IA configuré sur-mesure" },
   { icon: GraduationCap, text: "Formation ciblée aux LLM et aux outils d'IA" },
-  { icon: Puzzle, text: "Ou combinaison de ces solutions" },
 ];
 
-const etapes = [
-  { icon: Target, text: "Identification des priorités" },
-  { icon: Wrench, text: "Mise en place ou formation ciblée" },
+const validation = [
   { icon: FlaskConical, text: "Test en conditions réelles" },
   { icon: RefreshCw, text: "Ajustements selon les retours terrain" },
 ];
@@ -32,28 +34,19 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-            <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
-              <ul className="space-y-3">
-                {etapes.map((item, i) =>
-                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
-                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
-                    {item.text}
-                  </li>
-                )}
-              </ul>
-            </div>
-
-            <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
-              <ul className="space-y-3">
-                {solutions.map((item, i) =>
-                  <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
-                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
-                    {item.text}
-                  </li>
-                )}
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            {[comprehension, solutions, validation].map((group, gi) => (
+              <div key={gi} className="bg-gris-perle rounded-2xl p-6 shadow-sm">
+                <ul className="space-y-3">
+                  {group.map((item, i) =>
+                    <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
+                      <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                      {item.text}
+                    </li>
+                  )}
+                </ul>
+              </div>
+            ))}
           </div>
 
           <div className="bg-gris-perle rounded-2xl p-6 shadow-sm mb-6">
