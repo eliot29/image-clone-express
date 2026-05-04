@@ -98,8 +98,8 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="bg-navy rounded-2xl p-6 md:p-8 mb-4 shadow-sm">
-            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-blanc-casse mb-5 text-center">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-4 shadow-sm">
+            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Audit
             </h3>
             <div className="bg-gris-perle rounded-2xl p-6">
@@ -114,8 +114,8 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="bg-navy rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
-            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-blanc-casse mb-5 text-center">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
+            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Solutions IA sur-mesure
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -154,8 +154,8 @@ const PropositionSection = () => {
               )}
             </div>
           </div>
-          <div className="bg-navy rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
-            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-blanc-casse mb-5 text-center">
+          <div className="bg-gris-perle rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
+            <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
               Accompagnement & montée en compétence IA
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
