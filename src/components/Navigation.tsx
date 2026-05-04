@@ -25,8 +25,8 @@ const Navigation = () => {
     <nav
       className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 rounded-full px-6 py-3 ${
         scrolled
-          ? "bg-navy/95 backdrop-blur-md shadow-lg"
-          : "bg-navy/70 backdrop-blur-sm"
+          ? "bg-navy/80 backdrop-blur-md shadow-lg"
+          : "bg-navy shadow-md"
       }`}
     >
       <div className="flex items-center justify-between w-full">
