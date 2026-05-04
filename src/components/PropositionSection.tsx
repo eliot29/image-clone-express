@@ -11,7 +11,7 @@ const comprehension = [
 const prestations = [
   {
     icon: Cog,
-    title: "Automatisation sur-mesure",
+    title: "Automatisation",
     badge: null,
     tagline: "Des tâches répétitives qui disparaissent de votre quotidien.",
     items: [
@@ -25,7 +25,7 @@ const prestations = [
   },
   {
     icon: Bot,
-    title: "Assistant IA métier (sur-mesure)",
+    title: "Assistant IA métier",
     badge: null,
     tagline: "Un assistant qui vous accompagne dans votre travail au quotidien.",
     items: [
@@ -38,7 +38,7 @@ const prestations = [
   },
   {
     icon: Puzzle,
-    title: "Outils métier sur-mesure",
+    title: "Outils métier",
     badge: null,
     tagline: "Des outils simples, conçus pour répondre à un besoin précis.",
     items: [
