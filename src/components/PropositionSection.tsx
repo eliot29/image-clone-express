@@ -1,4 +1,4 @@
-import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator } from "lucide-react";
+import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -13,34 +13,67 @@ const prestations = [
     icon: Cog,
     title: "Automatisation sur-mesure",
     badge: null,
+    tagline: "Des tâches répétitives qui disparaissent de votre quotidien.",
     items: [
-      { icon: Workflow, text: "Workflows via n8n" },
-      { icon: Link2, text: "Connexion à vos outils existants" },
-      { icon: RotateCcw, text: "Automatisation des tâches répétitives" },
-      { icon: Lightbulb, text: "Logique simple, robuste et évolutive" }
-    ]
+      { icon: Workflow, text: "Workflows conçus sur-mesure via n8n" },
+      { icon: Link2, text: "Connexion à vos outils existants (email, CRM, fichiers, etc.)" },
+      { icon: RotateCcw, text: "Automatisation des tâches chronophages" },
+      { icon: Zap, text: "Déclenchements automatiques selon vos processus métier" },
+      { icon: Lightbulb, text: "Logique simple, fiable et évolutive" }
+    ],
+    objectif: "Supprimer les actions répétitives et réduire les erreurs."
+  },
+  {
+    icon: Bot,
+    title: "Assistant IA métier (sur-mesure)",
+    badge: null,
+    tagline: "Un assistant qui vous accompagne dans votre travail au quotidien.",
+    items: [
+      { icon: Database, text: "Connecté à vos données et à vos documents internes" },
+      { icon: BarChart3, text: "Capable d'analyser, synthétiser et répondre rapidement" },
+      { icon: Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
+      { icon: MousePointerClick, text: "Utilisable simplement, sans compétence technique" }
+    ],
+    objectif: "Accélérer vos prises de décision et votre productivité."
+  },
+  {
+    icon: Puzzle,
+    title: "Outils métier sur-mesure",
+    badge: null,
+    tagline: "Des outils simples, conçus pour répondre à un besoin précis.",
+    items: [
+      { icon: Layers, text: "Création d'interfaces claires et rapides à prendre en main" },
+      { icon: Link2, text: "Connexion à vos données et à vos outils existants" },
+      { icon: Zap, text: "Automatisation intégrée directement dans l'outil" },
+      { icon: MousePointerClick, text: "Utilisation quotidienne, sans complexité technique" }
+    ],
+    objectif: "Pas de logiciel complexe. Des outils simples qui font gagner du temps immédiatement."
   },
   {
     icon: GraduationCap,
     title: "Formation & acculturation IA",
     badge: "ChatGPT · Claude · Gemini · Copilot",
+    tagline: "Comprendre et utiliser l'IA de manière concrète dans votre activité.",
     items: [
-      { icon: MessageSquare, text: "Usage structuré et professionnel" },
-      { icon: PenTool, text: "Maîtrise du prompt" },
-      { icon: Users, text: "Formation adaptée à votre niveau" },
-      { icon: SlidersHorizontal, text: "Mise en pratique sur vos cas réels" }
-    ]
+      { icon: MessageSquare, text: "Formation aux outils : ChatGPT, Claude, Gemini, Copilot" },
+      { icon: SlidersHorizontal, text: "Structuration des usages professionnels" },
+      { icon: PenTool, text: "Apprentissage des bons réflexes et du prompt" },
+      { icon: Users, text: "Mise en pratique sur vos cas réels" }
+    ],
+    objectif: "Rendre vos équipes autonomes et efficaces rapidement."
   },
   {
     icon: Filter,
     title: "Conseil & choix d'outils",
     badge: null,
+    tagline: "Faire les bons choix dans un marché saturé.",
     items: [
-      { icon: Compass, text: "Le marché compte des centaines d'outils IA" },
-      { icon: ShieldCheck, text: "Filtrer les solutions pertinentes" },
-      { icon: Ban, text: "Éviter les abonnements inutiles" },
-      { icon: Lightbulb, text: "Choisir ce qui correspond vraiment à votre activité" }
-    ]
+      { icon: Search, text: "Analyse de vos besoins réels" },
+      { icon: CheckCircle2, text: "Sélection des outils les plus pertinents" },
+      { icon: Wallet, text: "Éviter les abonnements inutiles" },
+      { icon: Compass, text: "Mise en cohérence avec votre organisation" }
+    ],
+    objectif: "Aller à l'essentiel, sans perte de temps ni d'argent."
   }
 ];
 
@@ -80,7 +113,7 @@ const PropositionSection = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {prestations.map((p, i) =>
               <div
                 key={i}
@@ -94,7 +127,12 @@ const PropositionSection = () => {
                     {p.badge}
                   </span>
                 }
-                <ul className="space-y-2 mt-auto pt-4 border-t border-ardoise/10">
+                {p.tagline &&
+                  <p className="font-dm text-sm italic text-ardoise/70 mb-3">
+                    {p.tagline}
+                  </p>
+                }
+                <ul className="space-y-2 pt-4 border-t border-ardoise/10">
                   {p.items.map((item, j) =>
                     <li key={j} className="font-dm text-sm text-ardoise/60 flex items-start gap-2">
                       <item.icon size={14} className="text-or-mat mt-0.5 shrink-0" />
@@ -102,6 +140,11 @@ const PropositionSection = () => {
                     </li>
                   )}
                 </ul>
+                {p.objectif &&
+                  <p className="font-dm text-sm font-semibold text-navy mt-4 pt-4 border-t border-ardoise/10">
+                    👉 {p.objectif}
+                  </p>
+                }
               </div>
             )}
           </div>
