@@ -34,7 +34,7 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un audit gratuit, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+          <div className="flex flex-col gap-6 mb-4">
             {[comprehension, solutions, validation].map((group, gi) => (
               <div key={gi} className="bg-gris-perle rounded-2xl p-6 shadow-sm">
                 <ul className="space-y-3">
