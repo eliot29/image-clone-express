@@ -35,7 +35,7 @@ const PropositionSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
               <ul className="space-y-3">
-                {solutions.map((item, i) =>
+                {etapes.map((item, i) =>
                   <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
                     <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
                     {item.text}
@@ -46,7 +46,7 @@ const PropositionSection = () => {
 
             <div className="bg-gris-perle rounded-2xl p-6 shadow-sm">
               <ul className="space-y-3">
-                {etapes.map((item, i) =>
+                {solutions.map((item, i) =>
                   <li key={i} className="flex items-start gap-3 font-dm text-ardoise/70">
                     <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
                     {item.text}
