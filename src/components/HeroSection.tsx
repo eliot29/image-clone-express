@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Logo - hidden on mobile */}
           <div className="hidden sm:flex justify-center mb-10">
             <img
-              src="/logo-semaine54-text-only.svg"
+              src="/logo-semaine54-dark-new.svg"
               alt="Semaine 54"
               className="h-20 lg:h-24 w-auto"
             />
