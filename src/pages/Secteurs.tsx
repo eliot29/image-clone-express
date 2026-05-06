@@ -30,7 +30,7 @@ const Secteurs = () => {
 
   const filtered = activeCategory
     ? secteurs.filter((s) => s.categorie === activeCategory)
-    : secteurs;
+    : [];
 
   return (
     <div className="min-h-screen bg-navy text-blanc-casse">
@@ -52,31 +52,47 @@ const Secteurs = () => {
         </p>
       </header>
 
-      {/* Category filter – dropdown */}
-      <div className="container mx-auto px-6 pb-6">
-        <Select
-          value={activeCategory ?? "all"}
-          onValueChange={(val) => setActiveCategory(val === "all" ? null : val)}
-        >
-          <SelectTrigger className="w-full sm:w-72 bg-blanc-casse/10 border-blanc-casse/20 text-blanc-casse font-dm">
-            <SelectValue placeholder="Filtrer par catégorie" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">Tous les secteurs</SelectItem>
+      {/* Category selector — boutons au départ, dropdown ensuite */}
+      <div className="container mx-auto px-6 pb-8">
+        {activeCategory === null ? (
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-center sm:justify-center gap-3">
             {categories.map((cat) => (
-              <SelectItem key={cat} value={cat}>{cat}</SelectItem>
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className="w-full sm:w-auto rounded-xl border border-or-mat/40 bg-or-mat/10 hover:bg-or-mat/20 hover:border-or-mat text-blanc-casse font-dm font-semibold px-5 py-3 transition-all duration-200 hover:-translate-y-0.5 shadow-sm"
+              >
+                {cat}
+              </button>
             ))}
-          </SelectContent>
-        </Select>
+          </div>
+        ) : (
+          <div className="flex justify-center sm:justify-start">
+            <Select
+              value={activeCategory}
+              onValueChange={(val) => setActiveCategory(val)}
+            >
+              <SelectTrigger className="w-full sm:w-80 rounded-xl bg-or-mat/10 border-or-mat/40 text-blanc-casse font-dm font-semibold">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {categories.map((cat) => (
+                  <SelectItem key={cat} value={cat}>{cat}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        )}
       </div>
 
       {/* Secteurs grid */}
       <section className="container mx-auto px-6 pb-16">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((secteur) => (
+        <div key={activeCategory ?? "empty"} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {filtered.map((secteur, idx) => (
             <div
               key={secteur.id}
-              className="rounded-xl border border-blanc-casse/10 bg-blanc-casse/5 p-5 hover:bg-blanc-casse/[0.08] transition-colors"
+              style={{ animationDelay: `${idx * 60}ms`, animationFillMode: "both" }}
+              className="rounded-xl border border-blanc-casse/10 bg-blanc-casse/5 p-5 hover:bg-blanc-casse/[0.08] transition-colors animate-fade-in"
             >
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-2xl">{secteur.emoji}</span>
