@@ -183,13 +183,13 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Label centré + trait horizontal à sa gauche (sans le toucher) */}
-            <div className="relative mt-4 mb-2 flex items-center justify-center gap-2">
-              <div className="h-px bg-or-mat/70 flex-1 max-w-[calc(50%-7.5rem)]" aria-hidden="true" />
-              <span className="font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
+            {/* Label centré + trait horizontal partant de sa gauche jusqu'au rail (sans toucher le texte) */}
+            <div className="relative mt-4 mb-2 h-5">
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 px-2 bg-blanc-casse font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
                 Conception IA et/ou Accompagnement IA
               </span>
-              <div className="flex-1" aria-hidden="true" />
+              {/* Trait horizontal du rail (left-2) jusque sous le label */}
+              <div className="absolute left-2 right-1/2 top-1/2 h-px -translate-y-px bg-or-mat/70" aria-hidden="true" />
             </div>
 
             {/* Bloc 1 - Conception IA avec connecteur en L continu (vertical descendant + horizontal vers le bloc) */}
