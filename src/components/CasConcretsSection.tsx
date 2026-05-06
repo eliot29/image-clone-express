@@ -39,7 +39,7 @@ const cases = [
   {
     sector: "Cabinet comptable / Agence de recrutement",
     location: "Bretagne",
-    problem: "Relances manuelles oubliées ou bâclées — impayés, candidats, prospects.",
+    problem: "Relances manuelles oubliées ou bâclées : impayés, candidats, prospects.",
     solution: "Déclencheur selon statut dossier → séquence d'emails personnalisés → suivi automatique.",
     results: [
       { icon: Users, label: "Réduction des oublis de relance" },
