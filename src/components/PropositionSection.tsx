@@ -161,7 +161,7 @@ const PropositionSection = () => {
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
-                Conception IA et/ou Accompagnement IA
+                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
             </div>
           </div>
@@ -186,7 +186,7 @@ const PropositionSection = () => {
             {/* Label centré + trait horizontal partant de sa gauche jusqu'au rail (sans toucher le texte) */}
             <div className="relative mt-4 mb-2 h-5">
               <span className="absolute left-1/2 -translate-x-1/2 top-0 px-2 bg-blanc-casse font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
-                Conception IA et/ou Accompagnement IA
+                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
               {/* Trait horizontal du rail (left-2) jusque sous le label */}
               <div className="absolute left-2 right-1/2 top-1/2 h-px -translate-y-px bg-or-mat/70" aria-hidden="true" />
