@@ -169,7 +169,8 @@ const PropositionSection = () => {
           {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
           <div className="md:hidden mb-6">
             {/* Audit (le rail démarre depuis son bord inférieur gauche) */}
-            <div className="relative bg-gris-perle rounded-2xl px-6 py-6 shadow-sm">
+            <div className="relative bg-gris-perle rounded-2xl px-6 py-6 shadow-sm ml-1">
+              <div className="absolute left-0 top-1/2 -translate-x-full w-1 h-[calc(50%+1.5rem)] bg-or-mat/70" aria-hidden="true" />
               <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                 Audit gratuit
               </h3>
@@ -183,10 +184,8 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Espace avec rail partant du bord gauche du bloc Audit */}
-            <div className="relative h-6" aria-hidden="true">
-              <div className="absolute left-1 top-0 bottom-0 w-1 bg-or-mat/70" />
-            </div>
+            {/* Espace : prolongement du rail sous le bloc Audit */}
+            <div className="relative h-6" aria-hidden="true" />
 
             {/* Bloc 1 - Conception IA (rail traverse toute la hauteur) */}
             <div className="relative pl-7">
