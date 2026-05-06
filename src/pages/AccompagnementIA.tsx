@@ -4,6 +4,7 @@ import FooterSection from "@/components/FooterSection";
 import ContactCTA from "@/components/secondary/ContactCTA";
 import InternalLinks from "@/components/secondary/InternalLinks";
 import ScrollToHash from "@/components/secondary/ScrollToHash";
+import Highlight from "@/components/secondary/Highlight";
 
 const AccompagnementIA = () => {
   return (
@@ -35,15 +36,18 @@ const AccompagnementIA = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
-                Mieux utiliser l'IA déjà à votre portée
+                <span className="text-or-mat">Mieux utiliser l'IA</span> déjà à votre portée
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
                 <p>
-                  Toutes les entreprises n'ont pas besoin de développer des solutions techniques complexes. Pour beaucoup, le vrai sujet est de <strong className="text-blanc-casse">structurer les usages</strong> et de mieux utiliser les outils IA déjà accessibles&nbsp;: ChatGPT, Claude, Gemini, Copilot. Bien employés, ils suffisent à transformer le quotidien d'un service entier.
+                  Toutes les entreprises n'ont pas besoin de développer des solutions techniques complexes. Pour beaucoup, le vrai sujet est de <strong className="text-blanc-casse">structurer les usages</strong> et de mieux utiliser les outils IA déjà accessibles&nbsp;: <strong className="text-or-mat">ChatGPT</strong>, <strong className="text-or-mat">Claude</strong>, <strong className="text-or-mat">Gemini</strong>, <strong className="text-or-mat">Copilot</strong>. Bien employés, ils suffisent à transformer le quotidien d'un service entier.
                 </p>
                 <p>
-                  L'enjeu est avant tout <strong className="text-blanc-casse">humain et organisationnel</strong>&nbsp;: aider les équipes à adopter l'IA sans la subir, dans un cadre clair et utile. L'objectif est une <strong className="text-blanc-casse">adoption progressive</strong>, ancrée dans la pratique, qui produit des résultats sans bouleverser le quotidien.
+                  L'enjeu est avant tout <strong className="text-blanc-casse">humain et organisationnel</strong>&nbsp;: aider les équipes à adopter l'IA sans la subir, dans un cadre clair et utile.
                 </p>
+                <Highlight variant="soft-dark">
+                  L'objectif est une <span className="text-or-mat">adoption progressive</span>, ancrée dans la pratique, qui produit des résultats sans bouleverser le quotidien.
+                </Highlight>
               </div>
             </div>
           </div>
@@ -54,18 +58,19 @@ const AccompagnementIA = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-3">
-                Formation aux outils IA
+                <span className="text-or-mat">Formation</span> aux outils IA
               </h2>
               <p className="font-dm text-or-mat font-semibold mb-5">
                 ChatGPT · Claude · Gemini · Copilot
               </p>
               <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
                 <p>
-                  Une formation concrète, basée sur des cas réels rencontrés dans votre entreprise. L'objectif n'est pas d'enseigner la théorie de l'IA, mais de <strong className="text-navy">transformer rapidement l'usage des outils en gains de temps mesurables</strong>.
+                  Une formation concrète, basée sur des <strong className="text-navy">cas réels d'entreprise</strong>. L'objectif n'est pas d'enseigner la théorie de l'IA, mais de transformer rapidement l'usage des outils en <strong className="text-or-mat">gains de temps mesurables</strong>.
                 </p>
 
-                <h3 className="font-dm font-bold text-xl text-navy pt-2">Ce qui est couvert</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qui est couvert</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "apprentissage concret des outils du marché : ChatGPT, Claude, Gemini, Copilot",
                     "compréhension des forces, limites et coûts de chaque outil",
@@ -80,15 +85,16 @@ const AccompagnementIA = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
                 <h3 className="font-dm font-bold text-xl text-navy pt-2">Format</h3>
                 <p>
                   Sessions ciblées, en petit groupe ou en individuel, sur site ou en visio. Pas de formation standard délivrée à des dizaines d'entreprises en même temps. Chaque session est calée sur vos cas concrets&nbsp;: rédaction de devis, réponses clients, comptes-rendus de réunion, analyses, recherche d'information, organisation du travail.
                 </p>
 
-                <p className="font-bold text-navy pt-2">
-                  L'objectif&nbsp;: rendre vos équipes autonomes et efficaces rapidement, avec un gain directement applicable dès la fin de la session.
-                </p>
+                <Highlight variant="soft-light">
+                  L'objectif&nbsp;: rendre vos équipes <span className="text-or-mat">autonomes et efficaces rapidement</span>, avec un gain directement applicable dès la fin de la session.
+                </Highlight>
               </div>
             </div>
           </div>
@@ -99,18 +105,19 @@ const AccompagnementIA = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-3">
-                Intégration des usages IA dans l'entreprise
+                <span className="text-or-mat">Intégration des usages IA</span> dans l'entreprise
               </h2>
               <p className="font-dm text-or-mat italic mb-5">
                 Adapter l'IA aux habitudes de travail et aux besoins réels.
               </p>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
                 <p>
-                  Donner accès à des outils IA ne suffit pas. Sans cadre, les usages deviennent rapidement désorganisés&nbsp;: chacun teste de son côté, les pratiques s'éparpillent, les résultats restent décevants. L'intégration consiste à <strong className="text-blanc-casse">structurer ces usages dans la durée</strong>, pour qu'ils deviennent réellement utiles à l'entreprise.
+                  Donner accès à des outils IA ne suffit pas. Sans cadre, les usages deviennent rapidement désorganisés&nbsp;: chacun teste de son côté, les pratiques s'éparpillent, les résultats restent décevants. L'intégration consiste à <strong className="text-blanc-casse">structurer les usages</strong> dans la durée, dans un <strong className="text-blanc-casse">cadre clair</strong>, pour qu'ils deviennent réellement utiles à l'entreprise.
                 </p>
 
-                <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Ce qui est mis en place</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-blanc-casse mb-3">Ce qui est mis en place</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "identification des bons cas d'usage par service",
                     "cadrage des pratiques et règles internes (données, confidentialité, vérification)",
@@ -125,14 +132,18 @@ const AccompagnementIA = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
                 <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Une logique humaine et progressive</h3>
+                <Highlight variant="accent-dark">
+                  <span className="text-or-mat">L'IA n'est jamais imposée.</span> Elle est introduite là où elle apporte un bénéfice immédiat&nbsp;: gagner du temps sur une tâche précise, fiabiliser un livrable, réduire la charge mentale.
+                </Highlight>
                 <p>
-                  L'IA n'est jamais imposée. Elle est introduite là où elle apporte un bénéfice immédiat&nbsp;: gagner du temps sur une tâche précise, fiabiliser un livrable, réduire la charge mentale. Les collaborateurs concernés sont accompagnés directement, sans jargon, jusqu'à ce que l'usage devienne naturel.
+                  Les collaborateurs concernés sont accompagnés directement, sans jargon, jusqu'à ce que l'usage devienne naturel.
                 </p>
 
                 <p>
-                  Cette étape évite l'écueil le plus fréquent&nbsp;: une IA présente partout, mais mal utilisée. Elle ancre des pratiques concrètes dans le fonctionnement réel de l'entreprise.
+                  Cette étape évite l'écueil le plus fréquent&nbsp;: une IA présente partout, mais mal utilisée. Elle ancre des <strong className="text-blanc-casse">usages utiles, durables et partagés</strong> dans le fonctionnement réel de l'entreprise.
                 </p>
               </div>
             </div>
@@ -144,18 +155,19 @@ const AccompagnementIA = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-3">
-                Conseil et choix des outils IA
+                <span className="text-or-mat">Conseil et choix</span> des outils IA
               </h2>
               <p className="font-dm text-or-mat italic mb-5">
                 Faire les bons choix dans un marché saturé.
               </p>
               <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
                 <p>
-                  Le marché des outils IA évolue chaque semaine. Des centaines de solutions apparaissent, souvent payantes, parfois redondantes. Sans cadre, les abonnements se multiplient sans véritable bénéfice. Le rôle du conseil est de <strong className="text-navy">vous orienter vers ce qui correspond à votre niveau, à vos besoins réels et à votre organisation</strong>.
+                  Le <strong className="text-navy">marché saturé</strong> des outils IA évolue chaque semaine. Des centaines de solutions apparaissent, souvent payantes, parfois redondantes. Sans cadre, les abonnements se multiplient sans véritable bénéfice. Le rôle du conseil est de vous orienter vers ce qui correspond à votre niveau, à vos <strong className="text-navy">besoins réels</strong> et à votre organisation.
                 </p>
 
-                <h3 className="font-dm font-bold text-xl text-navy pt-2">Ce qui est apporté</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qui est apporté</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "analyse de vos besoins réels et de votre maturité IA",
                     "sélection des outils les plus pertinents par fonction",
@@ -170,10 +182,11 @@ const AccompagnementIA = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
-                <p className="font-bold text-navy pt-2">
-                  L'objectif est d'aller à l'essentiel, sans perte de temps ni d'argent.
-                </p>
+                <Highlight variant="soft-light">
+                  L'objectif&nbsp;: des <span className="text-or-mat">outils simples, adaptés et durables</span>, sans perte de temps ni d'argent.
+                </Highlight>
               </div>
             </div>
           </div>
