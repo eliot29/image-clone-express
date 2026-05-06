@@ -27,8 +27,8 @@ const HeroSection = () => {
           </div>
 
           {/* Punchline élégante */}
-          <p className="font-bold italic text-navy text-xs sm:text-sm mb-8 leading-tight" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
-            Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
+          <p className="font-bold italic text-navy text-xs sm:text-sm mt-8 sm:mt-0 mb-8 leading-tight" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
+            Une année compte 52 semaines.<br className="sm:hidden" /> <span className="text-or-mat">Gagnez votre Semaine 54.</span>
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
