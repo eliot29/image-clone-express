@@ -162,7 +162,7 @@ const PropositionSection = () => {
               </svg>
             </div>
             <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-3">
-              ou les deux
+              Conception IA et/ou Accompagnement IA
             </span>
           </div>
 
@@ -217,7 +217,7 @@ const PropositionSection = () => {
             <div className="relative pl-7 py-2">
               <div className="absolute left-1 top-0 bottom-0 w-1 bg-or-mat/70" aria-hidden="true" />
               <span className="relative inline-block -ml-2 bg-blanc-casse px-2 font-dm text-xs uppercase tracking-wider text-or-mat font-bold">
-                ou les deux
+                Conception IA et/ou Accompagnement IA
               </span>
             </div>
 
