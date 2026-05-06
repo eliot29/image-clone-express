@@ -160,7 +160,7 @@ const PropositionSection = () => {
               <svg className="absolute -bottom-[6px] right-1/4 translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
-              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs uppercase tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
+              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
                 Conception IA et/ou Accompagnement IA
               </span>
             </div>
@@ -189,7 +189,7 @@ const PropositionSection = () => {
               <svg className="text-or-mat/70 -mt-[2px]" width="14" height="10" viewBox="0 0 14 10" fill="none">
                 <path d="M1 1 L7 8 L13 1" stroke="currentColor" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
-              <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-2 text-center">
+              <span className="font-dm text-xs tracking-wider text-or-mat font-bold mt-2 text-center">
                 Conception IA et/ou Accompagnement IA
               </span>
             </div>
