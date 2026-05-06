@@ -128,17 +128,17 @@ const PropositionSection = () => {
 
           {/* Connecteur branché : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
           <div className="flex flex-col items-center mb-2" aria-hidden="true">
-            <div className="w-px h-6 bg-or-mat/50" />
-            <div className="relative w-full max-w-3xl h-6">
-              <div className="absolute top-0 left-1/4 right-1/4 h-px bg-or-mat/50" />
-              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-px h-6 bg-or-mat/50" />
-              <div className="absolute top-0 right-1/4 translate-x-1/2 w-px h-6 bg-or-mat/50" />
+            <div className="w-1 h-6 bg-or-mat/70 rounded-full" />
+            <div className="relative w-full max-w-3xl h-1">
+              <div className="absolute top-0 left-1/4 right-1/4 h-1 bg-or-mat/70 rounded-full" />
             </div>
-            <div className="relative w-full max-w-3xl flex justify-between px-[calc(25%-9px)] -mt-1">
-              <ArrowDown size={18} className="text-or-mat" />
-              <ArrowDown size={18} className="text-or-mat" />
+            <div className="relative w-full max-w-3xl h-8">
+              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1 h-8 bg-or-mat/70 rounded-full" />
+              <div className="absolute top-0 right-1/4 translate-x-1/2 w-1 h-8 bg-or-mat/70 rounded-full" />
+              <ArrowDown size={22} strokeWidth={2.5} className="absolute -bottom-2 left-1/4 -translate-x-1/2 text-or-mat" />
+              <ArrowDown size={22} strokeWidth={2.5} className="absolute -bottom-2 right-1/4 translate-x-1/2 text-or-mat" />
             </div>
-            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-1">
+            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-2">
               ou les deux
             </span>
           </div>
@@ -146,7 +146,7 @@ const PropositionSection = () => {
           <div className="grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <div className="bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-                Solutions IA sur-mesure
+                Conception IA sur-mesure
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
                 {prestations.slice(0, 3).map((p, i) =>
@@ -174,7 +174,7 @@ const PropositionSection = () => {
 
             <div className="bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-                Solutions d'accompagnement IA
+                Accompagnement IA
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
                 {prestations.slice(3).map((p, i) =>
