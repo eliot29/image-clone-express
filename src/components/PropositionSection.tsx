@@ -250,7 +250,9 @@ const PropositionSection = () => {
           <div className="mb-6">
             <div className="w-full rounded-2xl px-6 py-5 md:px-8 bg-or-mat/40 border border-or-mat/60 shadow-sm">
               <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
-                <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées. <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
+                <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
+                <br />
+                <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
               </p>
             </div>
           </div>
