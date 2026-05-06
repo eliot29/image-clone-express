@@ -175,11 +175,11 @@ const PropositionSection = () => {
               </h3>
               <div className="flex flex-col gap-3 items-center">
                 {comprehension.map((item, i) =>
-                  <div key={i} className="flex items-start gap-3">
+                  <div key={i} className="flex flex-col items-center gap-2 text-center">
                     <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
                       <item.icon size={18} className="text-or-mat" />
                     </div>
-                    <span className="font-dm font-bold text-base text-navy leading-tight pt-2">{item.text}</span>
+                    <span className="font-dm font-bold text-base text-navy leading-tight">{item.text}</span>
                   </div>
                 )}
               </div>
