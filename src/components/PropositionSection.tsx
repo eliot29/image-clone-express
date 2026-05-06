@@ -1,4 +1,4 @@
-import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
+import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, ArrowDownLeft, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -189,9 +189,12 @@ const PropositionSection = () => {
               <svg className="text-or-mat/70 -mt-[2px]" width="14" height="10" viewBox="0 0 14 10" fill="none">
                 <path d="M1 1 L7 8 L13 1" stroke="currentColor" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
-              <span className="font-dm text-xs tracking-wider text-or-mat font-bold mt-2 text-center">
-                Conception IA et/ou Accompagnement IA
-              </span>
+              <div className="flex items-center gap-2 mt-2">
+                <ArrowDownLeft size={18} className="text-or-mat" />
+                <span className="font-dm text-xs tracking-wider text-or-mat font-bold text-center">
+                  Conception IA et/ou Accompagnement IA
+                </span>
+              </div>
             </div>
 
             {/* Bloc 1 - Conception IA (rail traverse toute la hauteur) */}
