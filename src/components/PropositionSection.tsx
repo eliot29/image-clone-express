@@ -51,9 +51,9 @@ const prestations = [
   },
   {
     icon: GraduationCap,
-    title: "Formation & acculturation IA",
+    title: "Formation aux outils IA",
     badge: "ChatGPT · Claude · Gemini · Copilot",
-    tagline: null,
+    tagline: "Comprendre et utiliser les outils IA de manière concrète dans votre activité.",
     items: [
       { icon: MessageSquare, text: "Formation aux outils : ChatGPT, Claude, Gemini, Copilot" },
       { icon: SlidersHorizontal, text: "Structuration des usages professionnels" },
@@ -61,6 +61,18 @@ const prestations = [
       { icon: Users, text: "Mise en pratique sur vos cas réels" }
     ],
     objectif: "Rendre vos équipes autonomes et efficaces rapidement."
+  },
+  {
+    icon: Compass,
+    title: "Intégration & usages IA",
+    badge: null,
+    tagline: "Adapter l'IA aux habitudes de travail et aux besoins réels de l'entreprise.",
+    items: [
+      { icon: Users, text: "Cadrage des usages au sein des équipes" },
+      { icon: SlidersHorizontal, text: "Adaptation aux processus existants" },
+      { icon: Workflow, text: "Mise en place progressive et accompagnée" }
+    ],
+    objectif: "Ancrer l'IA dans le quotidien de l'entreprise."
   },
   {
     icon: Filter,
