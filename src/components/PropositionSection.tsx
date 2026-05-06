@@ -169,8 +169,9 @@ const PropositionSection = () => {
           {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
           <div className="md:hidden mb-6">
             {/* Audit (le rail démarre depuis son bord inférieur gauche) */}
-            <div className="relative bg-gris-perle rounded-2xl px-6 py-6 shadow-sm ml-1">
-              <div className="absolute left-0 top-1/2 -translate-x-full w-1 h-[calc(50%+1.5rem)] bg-or-mat/70" aria-hidden="true" />
+            <div className="relative bg-gris-perle rounded-2xl px-6 py-6 shadow-sm ml-2">
+              {/* rail collé au bord gauche du bloc, partant du milieu et descendant */}
+              <div className="absolute -left-1 top-1/2 w-1 h-[calc(50%+1.5rem)] bg-or-mat/70" aria-hidden="true" />
               <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                 Audit gratuit
               </h3>
