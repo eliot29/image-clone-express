@@ -43,7 +43,7 @@ const ConceptionIASurMesure = () => {
                   La Conception IA sur-mesure regroupe les solutions <strong className="text-blanc-casse">conçues spécifiquement pour votre entreprise</strong>. Elles ne reposent pas sur un produit générique, mais sur ce dont vous avez réellement besoin au quotidien&nbsp;: un workflow précis, un assistant connecté à vos données, ou un outil simple pour remplacer un fonctionnement bricolé.
                 </p>
                 <p>
-                  Ces solutions s'intègrent à vos <strong className="text-or-mat">outils existants</strong> (email, CRM, fichiers, ERP, agenda, comptabilité…), <strong className="text-blanc-casse">suppriment les tâches répétitives</strong> et fiabilisent vos opérations en limitant les erreurs et les oublis. L'objectif est toujours le même&nbsp;: <strong className="text-or-mat">gain de temps réel</strong> pour vos équipes, sur ce qui crée vraiment de la valeur.
+                  Ces solutions s'intègrent à vos <strong className="text-or-mat">outils existants</strong> (email, agenda, comptabilité…), <strong className="text-blanc-casse">suppriment les tâches répétitives</strong> et fiabilisent vos opérations en limitant les erreurs et les oublis. L'objectif est toujours le même&nbsp;: <strong className="text-or-mat">gain de temps réel</strong> pour vos équipes, sur ce qui crée vraiment de la valeur.
                 </p>
                 <p>
                   Trois grandes familles d'outils sont possibles, séparément ou combinées.
@@ -76,7 +76,7 @@ const ConceptionIASurMesure = () => {
                 <ul className="space-y-3 pl-1">
                   {[
                     "workflows conçus sur-mesure pour vos processus internes",
-                    "connexion entre vos outils (email, CRM, fichiers, ERP, agenda, comptabilité)",
+                    "connexion entre vos outils (email, agenda, comptabilité)",
                     "suppression des tâches répétitives et chronophages",
                     "déclenchements automatiques selon des règles métier claires",
                     "suppression des ressaisies manuelles d'un outil à l'autre",
@@ -100,7 +100,6 @@ const ConceptionIASurMesure = () => {
                     "relances clients ou fournisseurs déclenchées selon le bon délai",
                     "consolidation hebdomadaire des chiffres de vente, de stock ou d'activité",
                     "tri et classement automatique des emails ou pièces jointes",
-                    "synchronisation entre un CRM, une boîte mail et un agenda",
                     "extraction de données depuis des PDF entrants vers un fichier exploitable",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
