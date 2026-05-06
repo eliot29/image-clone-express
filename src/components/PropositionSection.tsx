@@ -183,22 +183,33 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Label centré + trait partant de sa gauche */}
-            <div className="relative mt-4 mb-2 h-5">
-              <span className="absolute left-1/2 -translate-x-1/2 top-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap" id="mobile-label-conception">
+            {/* Label centré */}
+            <div className="relative mt-4 mb-2 flex justify-center">
+              <span className="font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
                 Conception IA et/ou Accompagnement IA
               </span>
-              {/* Trait horizontal partant de la gauche du label vers le rail de gauche */}
-              <div className="absolute left-2 top-1/2 -translate-y-px h-px bg-or-mat/70" style={{ right: 'calc(50% + 7.5rem)' }} aria-hidden="true" />
             </div>
 
-            {/* Bloc 1 - Conception IA avec connecteur (descend à gauche puis touche le bloc à mi-hauteur) */}
+            {/* Bloc 1 - Conception IA avec connecteur en L continu */}
             <div className="relative pl-8">
-              {/* segment vertical descendant à gauche jusqu'à mi-hauteur du bloc */}
-              <div className="absolute left-2 top-0 h-1/2 w-px bg-or-mat/70" aria-hidden="true" />
+              {/* Connecteur SVG continu : horizontal partant à droite (sous le label) -> angle -> vertical -> horizontal vers le bloc */}
+              <svg
+                className="absolute left-2 top-0 text-or-mat/70 pointer-events-none"
+                style={{ width: 'calc(50% - 0.5rem)', height: '50%' }}
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <polyline
+                  points="100,0 0,0 0,100"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  vectorEffect="non-scaling-stroke"
+                />
+              </svg>
               {/* segment horizontal vers le bloc à mi-hauteur */}
               <div className="absolute left-2 top-1/2 w-5 h-px bg-or-mat/70 -translate-y-px" aria-hidden="true" />
-              {/* Pointe de flèche entrant dans le bloc */}
               <svg className="absolute left-[26px] top-1/2 -translate-y-1/2 text-or-mat/70" width="8" height="10" viewBox="0 0 8 10" fill="none" aria-hidden="true">
                 <path d="M1 1 L6 5 L1 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
               </svg>
