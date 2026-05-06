@@ -148,18 +148,18 @@ const PropositionSection = () => {
             </span>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-6 items-stretch">
-            <div className="bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm flex flex-col">
+          <div className="grid md:grid-cols-2 gap-4 mb-6 items-start">
+            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-3">
                 {prestations.slice(0, 3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-3 flex flex-col items-center text-center max-w-xs">
-                    <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
-                      <p.icon size={22} className="text-or-mat" />
+                    className="rounded-2xl p-2 flex flex-col items-center text-center max-w-[200px]">
+                    <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center mb-2">
+                      <p.icon size={20} className="text-or-mat" />
                     </div>
                     <h4 className="font-dm font-bold text-base text-navy mb-1">{p.title}</h4>
                     {p.badge &&
@@ -168,7 +168,7 @@ const PropositionSection = () => {
                       </span>
                     }
                     {p.tagline &&
-                      <p className="font-dm text-sm italic text-ardoise/70">
+                      <p className="font-dm text-xs italic text-ardoise/70 leading-snug">
                         {p.tagline}
                       </p>
                     }
@@ -177,17 +177,17 @@ const PropositionSection = () => {
               </div>
             </div>
 
-            <div className="bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm flex flex-col">
+            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Accompagnement IA
               </h3>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-3">
                 {prestations.slice(3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-3 flex flex-col items-center text-center max-w-xs">
-                    <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
-                      <p.icon size={22} className="text-or-mat" />
+                    className="rounded-2xl p-2 flex flex-col items-center text-center max-w-[200px]">
+                    <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center mb-2">
+                      <p.icon size={20} className="text-or-mat" />
                     </div>
                     <h4 className="font-dm font-bold text-base text-navy mb-1">{p.title}</h4>
                     {p.badge &&
@@ -196,7 +196,7 @@ const PropositionSection = () => {
                       </span>
                     }
                     {p.tagline &&
-                      <p className="font-dm text-sm italic text-ardoise/70">
+                      <p className="font-dm text-xs italic text-ardoise/70 leading-snug">
                         {p.tagline}
                       </p>
                     }
