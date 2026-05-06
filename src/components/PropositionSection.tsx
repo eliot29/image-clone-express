@@ -165,15 +165,19 @@ const PropositionSection = () => {
             </span>
           </div>
 
-          {/* Connecteur MOBILE : rail à gauche descendant vers chaque bloc */}
-          <div className="md:hidden relative pl-7 mb-6 space-y-4">
-            {/* Rail vertical à gauche */}
-            <div className="absolute left-1 top-0 bottom-10 w-1 bg-or-mat/70" aria-hidden="true" />
+          {/* Connecteur MOBILE : part du bloc Audit, descend puis longe à gauche */}
+          <div className="md:hidden mb-6">
+            {/* L-connector depuis le bas du bloc Audit gratuit (centre) vers le rail à gauche */}
+            <div className="relative h-10" aria-hidden="true">
+              <div className="absolute left-1/2 -translate-x-1/2 top-0 w-1 h-6 bg-or-mat/70" />
+              <div className="absolute left-1 top-5 h-1 bg-or-mat/70" style={{ right: "calc(50% - 2px)" }} />
+            </div>
 
-            {/* Bloc 1 - Conception IA */}
-            <div className="relative">
-              <div className="absolute -left-6 top-7 w-5 h-1 bg-or-mat/70" aria-hidden="true" />
-              <svg className="absolute -left-2 top-[22px] text-or-mat/70" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
+            {/* Bloc 1 - Conception IA (rail traverse toute la hauteur) */}
+            <div className="relative pl-7">
+              <div className="absolute left-1 top-0 bottom-0 w-1 bg-or-mat/70" aria-hidden="true" />
+              <div className="absolute left-1 top-7 w-5 h-1 bg-or-mat/70" aria-hidden="true" />
+              <svg className="absolute left-5 top-[22px] text-or-mat/70" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
                 <path d="M1 1 L12 9 L1 17" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
               <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
@@ -188,17 +192,19 @@ const PropositionSection = () => {
               </div>
             </div>
 
-            {/* Label "ou les deux" sur le rail */}
-            <div className="relative flex items-center -my-1">
-              <span className="bg-blanc-casse pl-1 pr-2 -ml-3 font-dm text-xs uppercase tracking-wider text-or-mat font-bold">
+            {/* Label "ou les deux" superposé au rail */}
+            <div className="relative pl-7 py-2">
+              <div className="absolute left-1 top-0 bottom-0 w-1 bg-or-mat/70" aria-hidden="true" />
+              <span className="relative inline-block -ml-2 bg-blanc-casse px-2 font-dm text-xs uppercase tracking-wider text-or-mat font-bold">
                 ou les deux
               </span>
             </div>
 
-            {/* Bloc 2 - Accompagnement */}
-            <div className="relative">
-              <div className="absolute -left-6 top-7 w-5 h-1 bg-or-mat/70" aria-hidden="true" />
-              <svg className="absolute -left-2 top-[22px] text-or-mat/70" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
+            {/* Bloc 2 - Accompagnement (rail s'arrête au niveau de la flèche) */}
+            <div className="relative pl-7">
+              <div className="absolute left-1 top-0 h-7 w-1 bg-or-mat/70" aria-hidden="true" />
+              <div className="absolute left-1 top-7 w-5 h-1 bg-or-mat/70" aria-hidden="true" />
+              <svg className="absolute left-5 top-[22px] text-or-mat/70" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
                 <path d="M1 1 L12 9 L1 17" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
               <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
