@@ -96,7 +96,6 @@ const validation = [
 
 const engagements = [
   { icon: User, bold: "Un seul interlocuteur en Bretagne", rest: ", de l'audit jusqu'à la mise en service" },
-  { icon: ShieldCheck, bold: "Les projets sont volontairement limités", rest: " pour garantir disponibilité et qualité de suivi" },
 ];
 
 const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
@@ -265,9 +264,18 @@ const PropositionSection = () => {
                     <span><strong className="font-bold text-ardoise">{item.bold}</strong>{item.rest}</span>
                   </li>
                 )}
-                <li className="flex items-start gap-3 font-dm text-ardoise font-bold text-center">
-                  <Crosshair size={16} className="text-or-mat mt-0.5 shrink-0" />
-                  <span>Objectif : vous libérer de vos tâches chronophages, répétitives ou mal maîtrisées,<br />pour vous concentrer sur ce qui crée réellement de la valeur.</span>
+                <li className="flex items-start gap-3 font-dm text-ardoise text-center pt-2">
+                  <Crosshair size={16} className="text-or-mat mt-1 shrink-0" />
+                  <div>
+                    <p className="font-bold text-navy mb-1">Objectif</p>
+                    <p className="text-ardoise/80">Vous libérer des tâches :</p>
+                    <ul className="font-dm text-ardoise/80 mt-1 mb-2">
+                      <li>chronophages</li>
+                      <li>répétitives</li>
+                      <li>mal maîtrisées</li>
+                    </ul>
+                    <p className="font-bold text-ardoise">Pour vous concentrer sur ce qui crée réellement de la valeur.</p>
+                  </div>
                 </li>
               </ul>
             </div>
