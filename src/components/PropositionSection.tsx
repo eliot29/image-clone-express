@@ -1,4 +1,4 @@
-import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
+import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -114,7 +114,13 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mb-6">
+          {/* Connecteur : Audit -> Solutions IA */}
+          <div className="flex flex-col items-center mb-4">
+            <div className="w-px h-6 bg-or-mat/50" />
+            <ArrowDown size={18} className="text-or-mat -mt-1" />
+          </div>
+
+          <div className="flex justify-center mb-4">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Solutions IA sur-mesure
@@ -142,6 +148,13 @@ const PropositionSection = () => {
                 )}
               </div>
             </div>
+          </div>
+
+          {/* Connecteur : et / ou -> Accompagnement */}
+          <div className="flex flex-col items-center mb-4">
+            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mb-1">et / ou</span>
+            <div className="w-px h-6 bg-or-mat/50" />
+            <ArrowDown size={18} className="text-or-mat -mt-1" />
           </div>
 
           <div className="flex justify-center mb-6">
