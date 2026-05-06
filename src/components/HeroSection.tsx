@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 pt-20 pb-6 lg:pt-24 lg:pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo - hidden on mobile */}
-          <div className="hidden sm:flex justify-center mt-6 mb-6">
+          <div className="hidden sm:flex justify-center mt-12 mb-6">
             <img
               src="/logo-semaine54-dark-new.svg"
               alt="Semaine 54"
