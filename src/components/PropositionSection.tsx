@@ -1,4 +1,4 @@
-import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
+import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -111,6 +111,21 @@ const PropositionSection = () => {
                   </li>
                 )}
               </ul>
+            </div>
+          </div>
+
+          {/* Connecteur schématique : Audit -> Solutions IA / Accompagnement */}
+          <div className="flex flex-col items-center mb-4" aria-hidden="true">
+            <div className="w-px h-6 bg-or-mat/50" />
+            <div className="relative w-full max-w-md md:max-w-lg h-6">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] h-px bg-or-mat/50" />
+              <div className="absolute top-0 left-4 md:left-8 w-px h-6 bg-or-mat/50" />
+              <div className="absolute top-0 right-4 md:right-8 w-px h-6 bg-or-mat/50" />
+            </div>
+            <div className="flex justify-between w-full max-w-md md:max-w-lg px-2 md:px-4 -mt-1">
+              <ArrowDown size={16} className="text-or-mat" />
+              <span className="font-dm text-xs italic text-ardoise/70">et / ou</span>
+              <ArrowDown size={16} className="text-or-mat" />
             </div>
           </div>
 
