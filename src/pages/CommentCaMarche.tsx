@@ -61,12 +61,19 @@ const CommentCaMarche = () => {
               <p className="font-dm text-ardoise/80 text-lg leading-relaxed mb-5">
                 Un accompagnement simple, structuré, avec un seul interlocuteur du début à la mise en place.
               </p>
-              <div className="font-dm text-ardoise/80 leading-relaxed space-y-3 text-left sm:text-center max-w-2xl mx-auto">
+              <div className="font-dm text-ardoise/85 leading-relaxed space-y-4 text-left max-w-2xl mx-auto">
                 <p>
-                  L'objectif n'est pas de transformer votre entreprise, mais d'améliorer ce qui existe déjà.
+                  L'objectif n'est pas de transformer brutalement votre entreprise, ni de remplacer vos outils. Il s'agit d'améliorer ce qui existe déjà, là où vous perdez du temps aujourd'hui.
                 </p>
-                <p>Pas de projet complexe, pas de changement d'organisation.</p>
-                <p>Des solutions concrètes, adaptées à votre réalité terrain.</p>
+                <p>
+                  Les solutions s'intègrent dans votre organisation actuelle, s'appuient sur vos logiciels et s'adaptent aux habitudes de vos équipes. Pas besoin de tout changer pour obtenir des résultats concrets.
+                </p>
+                <p>
+                  Le sujet principal reste simple&nbsp;: <strong className="text-navy">le gain de temps mesurable</strong> sur les tâches qui pèsent sur le quotidien — sans complexité technique inutile, sans projet long et risqué.
+                </p>
+                <p>
+                  La démarche est progressive, pragmatique et toujours ancrée dans votre réalité terrain.
+                </p>
               </div>
             </div>
           </div>
@@ -82,20 +89,22 @@ const CommentCaMarche = () => {
 
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-5">
                 <p>
-                  Semaine 54 s'adresse aux TPE et PME qui souhaitent gagner du temps sans complexifier leur fonctionnement.
+                  Semaine 54 s'adresse aux TPE et PME qui souhaitent gagner du temps sans complexifier leur fonctionnement, et sans engager un projet de transformation lourd.
                 </p>
                 <p>
-                  Dirigeant, assistant(e), équipe administrative ou opérationnelle : tous les profils sont concernés.
+                  Contrairement à une idée reçue, l'IA en entreprise ne concerne pas uniquement les dirigeants. Tous les profils peuvent être concernés, à partir du moment où une partie du quotidien repose sur des tâches répétitives ou peu valorisantes.
                 </p>
-                <p>
-                  Dans la plupart des entreprises, une grande partie du temps est absorbée par :
-                </p>
+
+                <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Des profils variés, dans tous les services</h3>
+                <p>Les solutions Semaine 54 s'adaptent aux besoins des équipes&nbsp;:</p>
                 <ul className="space-y-2 pl-1">
                   {[
-                    "des tâches répétitives",
-                    "des recherches d'informations",
-                    "des relances manuelles",
-                    "des actions à faible valeur ajoutée",
+                    "fonctions administratives",
+                    "gestion et back-office",
+                    "commerce et relation client",
+                    "équipes terrain et opérationnelles",
+                    "coordination et pilotage",
+                    "support et services internes",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -103,17 +112,33 @@ const CommentCaMarche = () => {
                     </li>
                   ))}
                 </ul>
+
+                <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Les tâches concernées</h3>
+                <p>Dans la plupart des entreprises, une grande partie du temps est absorbée par des actions à faible valeur ajoutée&nbsp;:</p>
+                <ul className="space-y-2 pl-1">
+                  {[
+                    "saisie et ressaisie d'informations",
+                    "relances clients ou fournisseurs",
+                    "recherche d'informations dans plusieurs outils",
+                    "suivi commercial et suivi client",
+                    "organisation de l'activité et planning",
+                    "reporting et tableaux de suivi",
+                    "génération de documents (devis, comptes-rendus, courriers)",
+                    "centralisation et mise à jour des données",
+                  ].map((t, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                      <span className="text-blanc-casse/80">{t}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Des gains rapidement significatifs</h3>
                 <p>
-                  Une automatisation bien ciblée sur une seule tâche peut représenter plusieurs heures gagnées chaque semaine.
+                  Une automatisation bien ciblée, même sur une seule tâche, peut représenter plusieurs heures gagnées chaque semaine. Multipliés par le nombre de collaborateurs concernés, ces gains deviennent rapidement importants à l'échelle d'une équipe ou d'une entreprise.
                 </p>
                 <p>
-                  Multipliées par le nombre de collaborateurs concernés, ces gains deviennent rapidement significatifs.
-                </p>
-                <p>
-                  Les solutions proposées s'intègrent dans votre organisation actuelle.
-                </p>
-                <p>
-                  Elles s'appuient sur vos outils existants et s'adaptent à vos habitudes de travail.
+                  Les solutions proposées s'intègrent dans votre organisation actuelle. Elles s'appuient sur vos outils existants et respectent vos habitudes de travail. L'objectif n'est jamais de remplacer vos équipes, mais de les libérer du travail à faible valeur pour qu'elles se concentrent sur l'essentiel.
                 </p>
                 <p className="font-dm font-bold text-or-mat text-lg leading-snug pt-2">
                   L'IA n'a de valeur que si elle est utilisée dans un cadre concret, compréhensible et maîtrisé.
