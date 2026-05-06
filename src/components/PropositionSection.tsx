@@ -291,7 +291,7 @@ const PropositionSection = () => {
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/conception-ia-sur-mesure">
-                Découvrir les solutions techniques
+                Découvrir les conceptions IA sur-mesure
                 <ArrowRight size={16} />
               </Link>
             </Button>
