@@ -183,22 +183,28 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Flèche descendante + label sous le bloc Audit */}
-            <div className="flex flex-col items-center my-3" aria-hidden="true">
-              <div className="w-1 h-6 bg-or-mat/70" />
-              <svg className="text-or-mat/70 -mt-[2px]" width="14" height="10" viewBox="0 0 14 10" fill="none">
-                <path d="M1 1 L7 8 L13 1" stroke="currentColor" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter" />
-              </svg>
-              <div className="flex items-center gap-2 mt-2">
-                <ArrowDownLeft size={18} className="text-or-mat" />
-                <span className="font-dm text-xs tracking-wider text-or-mat font-bold text-center">
+            {/* Label + connecteur en L vers le bloc Conception */}
+            <div className="mt-4">
+              {/* Ligne horizontale haute : part de la gauche du label vers la gauche */}
+              <div className="relative h-6">
+                <div className="absolute left-2 right-2 bottom-2 h-1 bg-or-mat/70" aria-hidden="true" />
+                <span className="absolute right-2 bottom-0 bg-blanc-casse pl-2 font-dm text-xs tracking-wider text-or-mat font-bold">
                   Conception IA et/ou Accompagnement IA
                 </span>
               </div>
             </div>
 
-            {/* Bloc 1 - Conception IA (rail traverse toute la hauteur) */}
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+            {/* Bloc 1 - Conception IA avec rail vertical à gauche + flèche horizontale au milieu */}
+            <div className="relative pl-8 mt-0">
+              {/* Rail vertical descendant à gauche */}
+              <div className="absolute left-2 top-0 h-1/2 w-1 bg-or-mat/70" aria-hidden="true" />
+              {/* Segment horizontal vers la droite, touchant le bloc à mi-hauteur */}
+              <div className="absolute left-2 top-1/2 w-5 h-1 -translate-y-1/2 bg-or-mat/70" aria-hidden="true" />
+              {/* Pointe de flèche entrant dans le bloc */}
+              <svg className="absolute left-[26px] top-1/2 -translate-y-1/2 text-or-mat/70" width="10" height="14" viewBox="0 0 10 14" fill="none" aria-hidden="true">
+                <path d="M1 1 L8 7 L1 13" stroke="currentColor" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter" />
+              </svg>
+              <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                   Conception IA sur-mesure
                 </h3>
@@ -207,6 +213,7 @@ const PropositionSection = () => {
                     <PrestationItem key={i} p={p} />
                   )}
                 </div>
+              </div>
             </div>
 
             {/* Bloc 2 - Accompagnement */}
