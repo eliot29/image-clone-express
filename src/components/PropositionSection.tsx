@@ -183,17 +183,17 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Label centré */}
-            <div className="flex justify-center mt-4 mb-2">
-              <span className="font-dm text-xs tracking-wider text-or-mat font-bold text-center">
+            {/* Label centré + trait partant de sa gauche */}
+            <div className="relative mt-4 mb-2 h-5">
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap" id="mobile-label-conception">
                 Conception IA et/ou Accompagnement IA
               </span>
+              {/* Trait horizontal partant de la gauche du label vers le rail de gauche */}
+              <div className="absolute left-2 top-1/2 -translate-y-px h-px bg-or-mat/70" style={{ right: 'calc(50% + 7.5rem)' }} aria-hidden="true" />
             </div>
 
-            {/* Bloc 1 - Conception IA avec connecteur en U (centre haut -> gauche -> bas -> droite -> bloc) */}
+            {/* Bloc 1 - Conception IA avec connecteur (descend à gauche puis touche le bloc à mi-hauteur) */}
             <div className="relative pl-8">
-              {/* segment horizontal du centre vers la gauche */}
-              <div className="absolute left-2 right-1/2 top-0 h-px bg-or-mat/70" aria-hidden="true" />
               {/* segment vertical descendant à gauche jusqu'à mi-hauteur du bloc */}
               <div className="absolute left-2 top-0 h-1/2 w-px bg-or-mat/70" aria-hidden="true" />
               {/* segment horizontal vers le bloc à mi-hauteur */}
