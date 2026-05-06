@@ -46,8 +46,8 @@ const CommentCaMarche = () => {
   return (
     <>
       <Helmet>
-        <title>Comment utiliser l'IA dans mon entreprise — Méthode et solutions sur-mesure | Semaine 54</title>
-        <meta name="description" content="Audit gratuit, proposition sous 3 jours, mise en place calibrée, suivi dans la durée. Automatisation n8n, agent IA, formation IA générative — un seul interlocuteur pour TPE et PME bretonnes." />
+        <title>Conception IA sur-mesure et Accompagnement IA pour TPE/PME | Semaine 54</title>
+        <meta name="description" content="Méthode, solutions et accompagnement IA pour TPE et PME en Bretagne : automatisation, assistant IA métier, outils métier, formation, intégration et conseil. Diagnostic gratuit, mise en place concrète, gain de temps mesurable." />
       </Helmet>
       <Navigation />
       <main>
