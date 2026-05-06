@@ -132,10 +132,12 @@ const PropositionSection = () => {
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Audit gratuit
               </h3>
-              <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
+              <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 justify-center">
                 {comprehension.map((item, i) =>
-                  <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
-                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                  <li key={i} className="flex items-center gap-3 font-dm font-bold text-base text-navy">
+                    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+                      <item.icon size={18} className="text-or-mat" />
+                    </div>
                     {item.text}
                   </li>
                 )}
