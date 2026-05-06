@@ -179,7 +179,7 @@ const PropositionSection = () => {
                     <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
                       <item.icon size={18} className="text-or-mat" />
                     </div>
-                    <span className="font-dm text-base text-navy leading-tight pt-2">{item.text}</span>
+                    <span className="font-dm font-bold text-base text-navy leading-tight pt-2">{item.text}</span>
                   </div>
                 )}
               </div>
