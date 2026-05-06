@@ -99,6 +99,23 @@ const engagements = [
   { icon: ShieldCheck, bold: "Les projets sont volontairement limités", rest: " pour garantir disponibilité et qualité de suivi" },
 ];
 
+const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
+  <div className="flex items-start gap-3">
+    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+      <p.icon size={18} className="text-or-mat" />
+    </div>
+    <div className="min-w-0">
+      <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
+      {p.badge && (
+        <span className="block font-dm text-xs font-semibold text-or-mat">{p.badge}</span>
+      )}
+      {p.tagline && (
+        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
+      )}
+    </div>
+  </div>
+);
+
 const PropositionSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-6">
@@ -126,8 +143,8 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          {/* Connecteur branché : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
-          <div className="flex flex-col items-center mb-2" aria-hidden="true">
+          {/* Connecteur branché DESKTOP : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
+          <div className="hidden md:flex flex-col items-center mb-2" aria-hidden="true">
             <div className="w-1 h-6 bg-or-mat/70" />
             <div className="relative w-full max-w-3xl h-10">
               {/* horizontal bar spanning between the two branches */}
@@ -148,33 +165,63 @@ const PropositionSection = () => {
             </span>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-6 items-stretch">
+          {/* Connecteur MOBILE : rail à gauche descendant vers chaque bloc */}
+          <div className="md:hidden relative pl-7 mb-6 space-y-4">
+            {/* Rail vertical à gauche */}
+            <div className="absolute left-1 top-0 bottom-10 w-1 bg-or-mat/70" aria-hidden="true" />
+
+            {/* Bloc 1 - Conception IA */}
+            <div className="relative">
+              <div className="absolute -left-6 top-7 w-5 h-1 bg-or-mat/70" aria-hidden="true" />
+              <svg className="absolute -left-2 top-[22px] text-or-mat/70" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
+                <path d="M1 1 L12 9 L1 17" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
+              </svg>
+              <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                  Conception IA sur-mesure
+                </h3>
+                <div className="flex flex-col gap-3">
+                  {prestations.slice(0, 3).map((p, i) =>
+                    <PrestationItem key={i} p={p} />
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Label "ou les deux" sur le rail */}
+            <div className="relative flex items-center -my-1">
+              <span className="bg-blanc-casse pl-1 pr-2 -ml-3 font-dm text-xs uppercase tracking-wider text-or-mat font-bold">
+                ou les deux
+              </span>
+            </div>
+
+            {/* Bloc 2 - Accompagnement */}
+            <div className="relative">
+              <div className="absolute -left-6 top-7 w-5 h-1 bg-or-mat/70" aria-hidden="true" />
+              <svg className="absolute -left-2 top-[22px] text-or-mat/70" width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
+                <path d="M1 1 L12 9 L1 17" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
+              </svg>
+              <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                  Accompagnement IA
+                </h3>
+                <div className="flex flex-col gap-3">
+                  {prestations.slice(3).map((p, i) =>
+                    <PrestationItem key={i} p={p} />
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
               <div className="flex flex-col gap-3">
                 {prestations.slice(0, 3).map((p, i) =>
-                  <div
-                    key={i}
-                    className="flex items-start gap-3">
-                    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
-                      <p.icon size={18} className="text-or-mat" />
-                    </div>
-                    <div className="min-w-0">
-                      <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
-                      {p.badge &&
-                        <span className="block font-dm text-xs font-semibold text-or-mat">
-                          {p.badge}
-                        </span>
-                      }
-                      {p.tagline &&
-                        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">
-                          {p.tagline}
-                        </p>
-                      }
-                    </div>
-                  </div>
+                  <PrestationItem key={i} p={p} />
                 )}
               </div>
             </div>
@@ -185,26 +232,7 @@ const PropositionSection = () => {
               </h3>
               <div className="flex flex-col gap-3">
                 {prestations.slice(3).map((p, i) =>
-                  <div
-                    key={i}
-                    className="flex items-start gap-3">
-                    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
-                      <p.icon size={18} className="text-or-mat" />
-                    </div>
-                    <div className="min-w-0">
-                      <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
-                      {p.badge &&
-                        <span className="block font-dm text-xs font-semibold text-or-mat">
-                          {p.badge}
-                        </span>
-                      }
-                      {p.tagline &&
-                        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">
-                          {p.tagline}
-                        </p>
-                      }
-                    </div>
-                  </div>
+                  <PrestationItem key={i} p={p} />
                 )}
               </div>
             </div>
