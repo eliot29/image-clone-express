@@ -183,24 +183,20 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Label centré + trait horizontal partant de sa gauche jusqu'au rail (sans toucher le texte) */}
-            <div className="relative mt-4 mb-2 h-5">
-              <span className="absolute left-1/2 -translate-x-1/2 top-0 px-2 bg-blanc-casse font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
-                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
-              </span>
-              {/* Trait horizontal du rail (left-2) jusque sous le label */}
-              <div className="absolute left-2 right-1/2 top-1/2 h-px -translate-y-px bg-or-mat/70" aria-hidden="true" />
+            {/* Flèche descendante entre Audit et le label */}
+            <div className="flex justify-center mt-3" aria-hidden="true">
+              <ArrowDown size={20} className="text-or-mat" />
             </div>
 
-            {/* Bloc 1 - Conception IA avec connecteur en L continu (vertical descendant + horizontal vers le bloc) */}
-            <div className="relative pl-8">
-              {/* segment vertical descendant à gauche depuis l'angle */}
-              <div className="absolute left-2 -top-2 h-[calc(50%+0.5rem)] w-px bg-or-mat/70" aria-hidden="true" />
-              {/* segment horizontal vers le bloc à mi-hauteur */}
-              <div className="absolute left-2 top-1/2 w-5 h-px bg-or-mat/70 -translate-y-px" aria-hidden="true" />
-              <svg className="absolute left-[26px] top-1/2 -translate-y-1/2 text-or-mat/70" width="8" height="10" viewBox="0 0 8 10" fill="none" aria-hidden="true">
-                <path d="M1 1 L6 5 L1 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
-              </svg>
+            {/* Label encadré centré */}
+            <div className="flex justify-center mt-2 mb-3">
+              <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
+                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
+              </span>
+            </div>
+
+            {/* Bloc 1 - Conception IA */}
+            <div>
               <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                   Conception IA sur-mesure
