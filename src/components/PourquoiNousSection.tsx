@@ -50,8 +50,8 @@ const PourquoiNousSection = () => {
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/pourquoi-semaine-54#parcours">
-                En savoir plus
+              <Link to="/pourquoi-ia-generique-ne-suffit-pas#parcours">
+                Comprendre l'approche Semaine 54
                 <ArrowRight size={16} />
               </Link>
             </Button>

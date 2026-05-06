@@ -70,8 +70,8 @@ const MethodeSection = () => {
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/comment-ca-marche#methode">
-                La méthode en détail
+              <Link to="/methode-semaine-54">
+                Découvrir la méthode
                 <ArrowRight size={16} />
               </Link>
             </Button>
