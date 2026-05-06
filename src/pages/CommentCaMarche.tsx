@@ -155,21 +155,24 @@ const CommentCaMarche = () => {
               <h2 id="methode" className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
                 La méthode Semaine 54
               </h2>
-              <p className="font-dm text-ardoise/80 text-center mb-8">
-                Un accompagnement structuré en quatre étapes, avec deux approches possibles selon votre besoin.
+              <p className="font-dm text-ardoise/80 text-center mb-8 max-w-2xl mx-auto">
+                Un accompagnement structuré en quatre étapes, avec deux approches complémentaires&nbsp;: la <strong className="text-navy">Conception IA sur-mesure</strong> et l'<strong className="text-navy">Accompagnement IA</strong>.
               </p>
 
               {/* Étape 01 */}
               <div className="mb-10">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">01. Diagnostic (20 à 30 minutes)</h3>
                 <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
-                  <p>Un échange par téléphone ou en visio pour comprendre votre activité, vos contraintes et vos objectifs.</p>
-                  <p>Nous identifions ensemble :</p>
+                  <p>
+                    Un échange par téléphone ou en visio pour comprendre votre activité, votre organisation, vos contraintes et vos objectifs réels. C'est la première étape, indispensable, pour ne proposer que ce qui aura un véritable impact.
+                  </p>
+                  <p>Ensemble, nous identifions&nbsp;:</p>
                   <ul className="space-y-2 pl-1">
                     {[
-                      "les tâches chronophages",
+                      "les tâches chronophages et répétitives",
                       "les points de friction dans votre organisation",
-                      "les actions offrant le meilleur retour sur investissement",
+                      "les zones où l'information circule mal",
+                      "les actions offrant le meilleur retour sur investissement (ROI)",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -177,7 +180,9 @@ const CommentCaMarche = () => {
                       </li>
                     ))}
                   </ul>
-                  <p>Ce premier échange permet de déterminer rapidement si une solution pertinente existe.</p>
+                  <p>
+                    Le ROI est évalué de manière simple et concrète&nbsp;: temps gagné par semaine, fiabilité accrue, charge mentale réduite. Ce premier échange permet de déterminer rapidement si une solution pertinente existe — ou non.
+                  </p>
                   <p className="italic text-ardoise/70">Sans engagement. Aucune vente forcée.</p>
                 </div>
               </div>
@@ -186,25 +191,33 @@ const CommentCaMarche = () => {
               <div className="mb-10">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">02. Orientation et proposition</h3>
                 <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
-                  <p>À l'issue du diagnostic, une orientation claire est définie.</p>
-                  <p>Deux approches sont possibles :</p>
+                  <p>
+                    À l'issue du diagnostic, une orientation claire est définie. Toutes les entreprises n'ont pas le même besoin&nbsp;: certaines cherchent à supprimer des tâches techniques, d'autres à mieux utiliser les outils IA déjà disponibles.
+                  </p>
+                  <p>Deux approches sont possibles, et peuvent se combiner&nbsp;:</p>
                   <div className="pl-1 space-y-3">
                     <div>
-                      <p className="font-bold text-navy">Mise en place de solutions IA sur-mesure</p>
-                      <p>Lorsque le gain provient de l'automatisation ou de la création d'outils.</p>
+                      <p className="font-bold text-navy">Conception IA sur-mesure</p>
+                      <p>
+                        Pour les entreprises qui ont besoin de <strong>solutions techniques concrètes</strong>&nbsp;: automatisations, assistant IA métier, outils internes. Le gain provient de la suppression de tâches manuelles et de la fiabilisation des opérations.
+                      </p>
                     </div>
                     <div>
-                      <p className="font-bold text-navy">Accompagnement et montée en compétence</p>
-                      <p>Lorsque le gain repose sur l'usage direct de l'IA par vos équipes.</p>
+                      <p className="font-bold text-navy">Accompagnement IA</p>
+                      <p>
+                        Pour les entreprises qui ont surtout besoin de <strong>structurer leurs usages internes</strong>&nbsp;: formation aux outils IA, intégration dans les habitudes de travail, conseil sur le choix des outils. Le gain repose sur la montée en compétence et l'organisation.
+                      </p>
                     </div>
                   </div>
-                  <p>Dans certains cas, les deux approches sont combinées.</p>
-                  <p>Une proposition vous est transmise sous quelques jours, avec :</p>
+                  <p>
+                    Dans la pratique, beaucoup d'entreprises bénéficient d'un mélange des deux&nbsp;: quelques automatisations ciblées pour libérer du temps, et un accompagnement pour que les équipes utilisent l'IA correctement au quotidien.
+                  </p>
+                  <p>Une proposition vous est transmise sous quelques jours, avec&nbsp;:</p>
                   <ul className="space-y-2 pl-1">
                     {[
                       "les solutions retenues",
-                      "les gains attendus",
-                      "les outils utilisés",
+                      "les gains attendus, exprimés en temps et en simplicité",
+                      "les outils utilisés et leur articulation avec votre existant",
                       "le calendrier de mise en place",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3">
@@ -221,16 +234,19 @@ const CommentCaMarche = () => {
               <div className="mb-10">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">03. Déploiement et ajustement</h3>
                 <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
-                  <p>Les solutions sont mises en place dans vos conditions réelles.</p>
+                  <p>
+                    Les solutions sont mises en place directement dans vos conditions réelles, avec vos données et vos outils. Cette étape est essentielle&nbsp;: une solution ne vaut que si elle fonctionne sur le terrain, pas en démonstration.
+                  </p>
                   <p>Selon le besoin :</p>
                   <div className="pl-1 space-y-3">
                     <div>
-                      <p className="font-bold text-navy">Pour les solutions techniques :</p>
+                      <p className="font-bold text-navy">Pour la Conception IA sur-mesure&nbsp;:</p>
                       <ul className="space-y-2 pl-1 mt-2">
                         {[
                           "configuration des automatisations",
                           "connexion aux outils existants",
-                          "tests et ajustements",
+                          "tests en conditions réelles",
+                          "ajustements selon les retours terrain",
                         ].map((t, i) => (
                           <li key={i} className="flex items-start gap-3">
                             <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -240,12 +256,13 @@ const CommentCaMarche = () => {
                       </ul>
                     </div>
                     <div>
-                      <p className="font-bold text-navy">Pour l'accompagnement :</p>
+                      <p className="font-bold text-navy">Pour l'Accompagnement IA&nbsp;:</p>
                       <ul className="space-y-2 pl-1 mt-2">
                         {[
                           "sessions de formation ciblées",
                           "mise en pratique sur vos cas réels",
-                          "structuration des usages",
+                          "structuration des usages internes",
+                          "intégration progressive dans les habitudes de travail",
                         ].map((t, i) => (
                           <li key={i} className="flex items-start gap-3">
                             <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -255,7 +272,9 @@ const CommentCaMarche = () => {
                       </ul>
                     </div>
                   </div>
-                  <p>Chaque solution est ajustée pour correspondre à votre quotidien.</p>
+                  <p>
+                    Chaque solution est ajustée pour correspondre à votre quotidien, et non l'inverse. Les retours utilisateurs guident les corrections jusqu'à ce que l'usage devienne naturel.
+                  </p>
                   <p className="italic text-ardoise/70">L'objectif n'est pas de livrer un outil, mais une solution réellement utilisée.</p>
                 </div>
               </div>
@@ -264,13 +283,15 @@ const CommentCaMarche = () => {
               <div>
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">04. Autonomie et suivi</h3>
                 <div className="font-dm text-ardoise/80 leading-relaxed space-y-3">
-                  <p>L'objectif est votre autonomie, pas votre dépendance.</p>
+                  <p>
+                    L'objectif est votre <strong className="text-navy">autonomie</strong>, pas votre dépendance. Une solution n'a d'intérêt que si elle vit dans la durée, sans intervention permanente d'un prestataire externe.
+                  </p>
                   <p>Vous comprenez :</p>
                   <ul className="space-y-2 pl-1">
                     {[
                       "comment fonctionne la solution",
                       "comment l'utiliser",
-                      "comment l'adapter si nécessaire",
+                      "comment l'adapter si vos besoins évoluent",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
