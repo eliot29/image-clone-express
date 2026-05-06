@@ -15,10 +15,10 @@ const painPoints = [
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 pt-24 pb-6 lg:pt-28 lg:pb-6 relative z-10">
+      <div className="container mx-auto px-6 pt-32 pb-6 lg:pt-36 lg:pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo - hidden on mobile */}
-          <div className="hidden sm:flex justify-center mb-8">
+          <div className="hidden sm:flex justify-center mb-10">
             <img
               src="/logo-semaine54-dark-new.svg"
               alt="Semaine 54"
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
           {/* Punchline élégante */}
           <p
-            className="text-navy text-sm sm:text-base mb-3 -mt-16 leading-tight italic"
+            className="text-navy text-sm sm:text-base mb-4 leading-tight italic"
             style={{ fontFamily: "'Lora', serif", fontWeight: 700 }}
           >
             Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
