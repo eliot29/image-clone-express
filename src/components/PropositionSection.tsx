@@ -99,6 +99,23 @@ const engagements = [
   { icon: ShieldCheck, bold: "Les projets sont volontairement limités", rest: " pour garantir disponibilité et qualité de suivi" },
 ];
 
+const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
+  <div className="flex items-start gap-3">
+    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+      <p.icon size={18} className="text-or-mat" />
+    </div>
+    <div className="min-w-0">
+      <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
+      {p.badge && (
+        <span className="block font-dm text-xs font-semibold text-or-mat">{p.badge}</span>
+      )}
+      {p.tagline && (
+        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
+      )}
+    </div>
+  </div>
+);
+
 const PropositionSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-6">
