@@ -16,9 +16,9 @@ interface ContactCTAProps {
 }
 
 const ContactCTA = ({
-  title = "Prêt à en parler ?",
-  intro = "Un premier échange de 20 à 30 minutes suffit souvent à identifier plusieurs heures de tâches automatisables chaque semaine.",
-  subIntro = "On commence petit, mais utile. Vous arrêtez quand vous voulez.",
+  title = "Demander un diagnostic gratuit",
+  intro = "Un premier échange permet souvent d'identifier rapidement les premières automatisations utiles dans votre activité.",
+  subIntro,
   buttonLabel = "Demander un diagnostic",
   idPrefix = "cta",
 }: ContactCTAProps) => {
@@ -46,12 +46,34 @@ const ContactCTA = ({
   return (
     <section id="contact" className="bg-navy py-10" style={{ scrollMarginTop: '120px' }}>
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl lg:max-w-4xl mx-auto text-center">
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5">
             {title}
           </h2>
-          <p className="font-dm text-blanc-casse/70 italic mb-2">{intro}</p>
-          {subIntro && <p className="font-dm text-blanc-casse/70 italic mb-4">{subIntro}</p>}
+          <p className="font-dm text-blanc-casse/85 text-lg leading-relaxed mb-5 max-w-xl mx-auto">
+            {intro}
+          </p>
+
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-or-mat/30 bg-or-mat/5 mb-8">
+            <span className="font-dm text-xs sm:text-sm text-or-mat">
+              Sans engagement • Aucun discours commercial forcé
+            </span>
+          </div>
+
+          {subIntro && <p className="font-dm text-blanc-casse/70 italic mb-4 max-w-xl mx-auto">{subIntro}</p>}
+
+          <div className="space-y-3 mb-8 max-w-xl mx-auto">
+            <p className="font-dm text-blanc-casse/80 leading-relaxed">
+              Vous laissez vos coordonnées. Je vous rappelle personnellement pour un premier échange simple et concret.
+            </p>
+            <p className="font-dm text-blanc-casse/70 leading-relaxed">
+              Cet appel permet déjà de répondre à vos premières questions et de voir rapidement si une solution pertinente existe pour votre activité.
+            </p>
+            <p className="font-dm text-blanc-casse/70 leading-relaxed">
+              Si le besoin est confirmé, le diagnostic est ensuite réalisé en appel ou en visio, selon votre préférence.
+            </p>
+          </div>
+
           <p className="font-dm text-blanc-casse/80 mb-6">
             Je m'adapte à vos disponibilités, y compris en soirée et le week-end.
           </p>
@@ -96,13 +118,7 @@ const ContactCTA = ({
 
           <div className="mt-6 max-w-lg mx-auto">
             <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
-              Je vous contacte pour répondre à vos éventuelles questions et planifier votre audit — en appel ou en visio, selon votre préférence.
-            </p>
-            <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
-              Vous pouvez aussi m'appeler, m'envoyer un SMS ou un email directement.
-            </p>
-            <p className="font-dm text-blanc-casse/50 text-xs mt-2 italic">
-              Également disponible en soirée et le week-end.
+              Vous pouvez également me contacter directement par téléphone, SMS ou email.
             </p>
           </div>
         </div>
