@@ -4,6 +4,7 @@ import FooterSection from "@/components/FooterSection";
 import ContactCTA from "@/components/secondary/ContactCTA";
 import InternalLinks from "@/components/secondary/InternalLinks";
 import ScrollToHash from "@/components/secondary/ScrollToHash";
+import Highlight from "@/components/secondary/Highlight";
 
 const ConceptionIASurMesure = () => {
   return (
@@ -42,7 +43,7 @@ const ConceptionIASurMesure = () => {
                   La Conception IA sur-mesure regroupe les solutions <strong className="text-blanc-casse">conçues spécifiquement pour votre entreprise</strong>. Elles ne reposent pas sur un produit générique, mais sur ce dont vous avez réellement besoin au quotidien&nbsp;: un workflow précis, un assistant connecté à vos données, ou un outil simple pour remplacer un fonctionnement bricolé.
                 </p>
                 <p>
-                  Ces solutions <strong className="text-blanc-casse">s'intègrent à vos outils existants</strong> (email, CRM, fichiers, ERP, agenda, comptabilité…), <strong className="text-blanc-casse">suppriment les tâches répétitives</strong> et <strong className="text-blanc-casse">fiabilisent vos opérations</strong> en limitant les erreurs et les oublis. L'objectif est toujours le même&nbsp;: redonner du temps à vos équipes pour qu'elles se concentrent sur ce qui crée vraiment de la valeur.
+                  Ces solutions s'intègrent à vos <strong className="text-or-mat">outils existants</strong> (email, CRM, fichiers, ERP, agenda, comptabilité…), <strong className="text-blanc-casse">suppriment les tâches répétitives</strong> et fiabilisent vos opérations en limitant les erreurs et les oublis. L'objectif est toujours le même&nbsp;: <strong className="text-or-mat">gain de temps réel</strong> pour vos équipes, sur ce qui crée vraiment de la valeur.
                 </p>
                 <p>
                   Trois grandes familles d'outils sont possibles, séparément ou combinées.
@@ -64,23 +65,24 @@ const ConceptionIASurMesure = () => {
               </p>
               <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
                 <p>
-                  L'automatisation consiste à confier à un système des actions que vous réalisez aujourd'hui à la main, dans plusieurs outils différents. L'objectif est simple&nbsp;: que ces actions s'exécutent toutes seules, au bon moment, sans erreur.
+                  L'<strong className="text-navy">automatisation des tâches</strong> consiste à confier à un système des actions que vous réalisez aujourd'hui à la main, dans plusieurs outils différents. L'objectif est simple&nbsp;: que ces actions s'exécutent toutes seules, au bon moment, sans erreur.
                 </p>
                 <p>
-                  Les workflows sont conçus à partir de votre fonctionnement réel, pas d'un modèle théorique. Ils respectent vos règles métier, vos validations, vos exceptions. Ils s'adaptent à votre organisation — pas l'inverse.
+                  Les <strong className="text-navy">workflows sur-mesure</strong> sont conçus à partir de votre fonctionnement réel, pas d'un modèle théorique. Ils respectent vos règles métier, vos validations, vos exceptions. Ils s'adaptent à votre organisation — pas l'inverse.
                 </p>
 
-                <h3 className="font-dm font-bold text-xl text-navy pt-2">Ce qu'on met en place</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qu'on met en place</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "workflows conçus sur-mesure pour vos processus internes",
                     "connexion entre vos outils (email, CRM, fichiers, ERP, agenda, comptabilité)",
-                    "automatisation des tâches chronophages et répétitives",
+                    "suppression des tâches répétitives et chronophages",
                     "déclenchements automatiques selon des règles métier claires",
                     "suppression des ressaisies manuelles d'un outil à l'autre",
                     "reporting automatisé envoyé aux bonnes personnes, au bon rythme",
                     "analyse documentaire (devis, factures, contrats, comptes-rendus)",
-                    "réduction significative des erreurs et des oublis",
+                    "réduction des erreurs et des oublis",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -88,9 +90,11 @@ const ConceptionIASurMesure = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
-                <h3 className="font-dm font-bold text-xl text-navy pt-2">Cas d'usage fréquents</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">Cas d'usage fréquents</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "génération automatique de devis ou de comptes-rendus à partir d'informations existantes",
                     "relances clients ou fournisseurs déclenchées selon le bon délai",
@@ -105,6 +109,7 @@ const ConceptionIASurMesure = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
                 <p>
                   Une fois en place, ces automatisations fonctionnent en continu, sans supervision constante. Elles libèrent du temps réel, chaque semaine, sur des tâches souvent invisibles mais très consommatrices.
@@ -126,11 +131,12 @@ const ConceptionIASurMesure = () => {
               </p>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
                 <p>
-                  Il ne s'agit pas d'un chatbot gadget. Un assistant IA métier est un véritable <strong className="text-blanc-casse">assistant connecté à vos données et à vos documents internes</strong>. Il vous aide à retrouver une information, à synthétiser un dossier, à préparer une décision en quelques secondes là où vous mettriez plusieurs minutes — voire plusieurs heures — à la main.
+                  Il ne s'agit pas d'un chatbot gadget. Un <strong className="text-or-mat">Assistant IA métier</strong> est un véritable assistant <strong className="text-blanc-casse">connecté à vos données</strong> et à vos documents internes. Il vous aide à <strong className="text-blanc-casse">retrouver rapidement une information</strong>, à <strong className="text-blanc-casse">synthétiser un dossier</strong>, à préparer une décision en quelques secondes là où vous mettriez plusieurs minutes — voire plusieurs heures — à la main.
                 </p>
 
-                <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Ce qu'il sait faire</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-blanc-casse mb-3">Ce qu'il sait faire</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "centraliser l'information dispersée entre plusieurs outils",
                     "retrouver rapidement un devis, un échange, une fiche client ou un document",
@@ -145,6 +151,7 @@ const ConceptionIASurMesure = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
                 <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Pour qui</h3>
                 <p>
@@ -152,7 +159,7 @@ const ConceptionIASurMesure = () => {
                 </p>
 
                 <p>
-                  L'objectif est d'<strong className="text-blanc-casse">accélérer vos prises de décision</strong> et de <strong className="text-blanc-casse">réduire le temps passé à chercher l'information au lieu de la traiter</strong>.
+                  L'objectif est d'apporter une véritable <strong className="text-or-mat">aide à la décision</strong> et de réduire le temps passé à chercher l'information au lieu de la traiter.
                 </p>
               </div>
             </div>
@@ -171,11 +178,12 @@ const ConceptionIASurMesure = () => {
               </p>
               <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
                 <p>
-                  Beaucoup d'entreprises fonctionnent encore avec des fichiers Excel partagés, des feuilles bricolées ou des méthodes informelles. Ces solutions tiennent un temps, puis deviennent vite ingérables&nbsp;: erreurs, doublons, version à jour introuvable, dépendance à une personne. Les outils métier remplacent ces solutions dispersées par des <strong className="text-navy">interfaces simples, claires et adaptées à un usage quotidien</strong>.
+                  Beaucoup d'entreprises fonctionnent encore avec des <strong className="text-navy">fichiers Excel partagés</strong>, des feuilles bricolées ou des méthodes informelles. Ces solutions tiennent un temps, puis deviennent vite ingérables&nbsp;: erreurs, doublons, version à jour introuvable, dépendance à une personne. Les <strong className="text-or-mat">Outils métier internes</strong> remplacent ces solutions dispersées par des <strong className="text-navy">interfaces simples</strong>, claires et adaptées à un usage quotidien.
                 </p>
 
-                <h3 className="font-dm font-bold text-xl text-navy pt-2">Ce qu'on construit</h3>
-                <ul className="space-y-2 pl-1">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qu'on construit</h3>
+                <ul className="space-y-3 pl-1">
                   {[
                     "interfaces claires et rapides à prendre en main",
                     "dashboards opérationnels pour piloter une activité, un service ou une équipe",
@@ -190,6 +198,7 @@ const ConceptionIASurMesure = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
 
                 <p>
                   Pas de logiciel complexe à déployer, pas de mois de paramétrage. Des outils simples, conçus pour être utilisés immédiatement et faire gagner du temps dès la mise en service.
@@ -203,14 +212,14 @@ const ConceptionIASurMesure = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
-                Des gains mesurables, pas des promesses
-              </h2>
+              <Highlight variant="accent-dark" className="text-center text-2xl sm:text-3xl font-extrabold mb-6">
+                Des <span className="text-or-mat">gains mesurables</span>, pas des promesses.
+              </Highlight>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
                 <p>
-                  Chaque solution est pensée pour produire un effet concret, mesurable&nbsp;: temps gagné par semaine, erreurs évitées, fiabilité des opérations, charge mentale réduite. Les gains les plus fréquents observés sur des cas réels&nbsp;:
+                  Chaque solution est pensée pour produire un effet concret, mesurable&nbsp;: <strong className="text-blanc-casse">temps gagné</strong> par semaine, <strong className="text-blanc-casse">erreurs évitées</strong>, fiabilité des opérations, <strong className="text-blanc-casse">charge mentale réduite</strong>. Les gains les plus fréquents observés sur des cas réels&nbsp;:
                 </p>
-                <ul className="space-y-2 pl-1">
+                <ul className="space-y-3 pl-1">
                   {[
                     "plusieurs heures récupérées chaque semaine par collaborateur concerné",
                     "réduction significative des erreurs de saisie et des oublis",
@@ -225,7 +234,7 @@ const ConceptionIASurMesure = () => {
                   ))}
                 </ul>
                 <p className="font-bold text-blanc-casse pt-2">
-                  Une automatisation bien ciblée est souvent amortie en moins d'un an.
+                  Une automatisation bien ciblée est souvent <span className="text-or-mat">amortie en moins d'un an</span>.
                 </p>
               </div>
             </div>
