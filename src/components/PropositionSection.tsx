@@ -183,26 +183,22 @@ const PropositionSection = () => {
               </ul>
             </div>
 
-            {/* Label + connecteur en L vers le bloc Conception */}
-            <div className="mt-4">
-              {/* Ligne horizontale haute : part de la gauche du label vers la gauche */}
-              <div className="relative h-6">
-                <div className="absolute left-2 right-2 bottom-2 h-1 bg-or-mat/70" aria-hidden="true" />
-                <span className="absolute right-2 bottom-0 bg-blanc-casse pl-2 font-dm text-xs tracking-wider text-or-mat font-bold">
-                  Conception IA et/ou Accompagnement IA
-                </span>
-              </div>
+            {/* Label centré */}
+            <div className="flex justify-center mt-4 mb-2">
+              <span className="font-dm text-xs tracking-wider text-or-mat font-bold text-center">
+                Conception IA et/ou Accompagnement IA
+              </span>
             </div>
 
-            {/* Bloc 1 - Conception IA avec rail vertical à gauche + flèche horizontale au milieu */}
-            <div className="relative pl-8 mt-0">
-              {/* Rail vertical descendant à gauche */}
-              <div className="absolute left-2 top-0 h-1/2 w-1 bg-or-mat/70" aria-hidden="true" />
-              {/* Segment horizontal vers la droite, touchant le bloc à mi-hauteur */}
-              <div className="absolute left-2 top-1/2 w-5 h-1 -translate-y-1/2 bg-or-mat/70" aria-hidden="true" />
-              {/* Pointe de flèche entrant dans le bloc */}
-              <svg className="absolute left-[26px] top-1/2 -translate-y-1/2 text-or-mat/70" width="10" height="14" viewBox="0 0 10 14" fill="none" aria-hidden="true">
-                <path d="M1 1 L8 7 L1 13" stroke="currentColor" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter" />
+            {/* Bloc 1 - Conception IA avec connecteur en L (centre -> gauche -> bas -> droite -> bloc) */}
+            <div className="relative pl-10">
+              <svg className="absolute left-0 top-0 h-1/2 text-or-mat/70" style={{ width: 'calc(50% + 8px)' }} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <polyline points="100,0 4,0 4,96" fill="none" stroke="currentColor" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+              </svg>
+              {/* segment horizontal vers le bloc à mi-hauteur */}
+              <div className="absolute left-1 top-1/2 w-7 h-px bg-or-mat/70 -translate-y-1/2" aria-hidden="true" />
+              <svg className="absolute left-[28px] top-1/2 -translate-y-1/2 text-or-mat/70" width="10" height="12" viewBox="0 0 10 12" fill="none" aria-hidden="true">
+                <path d="M1 1 L8 6 L1 11" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
               <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
