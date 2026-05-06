@@ -53,7 +53,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
-            Diagnostic gratuit — <span className="text-or-mat">20/30 min</span>
+            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['—_']">20/30 min</span>
           </h2>
 
           <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">

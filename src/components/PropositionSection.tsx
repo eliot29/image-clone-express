@@ -124,7 +124,7 @@ const PropositionSection = () => {
             Ce que je propose concrètement
           </h2>
 
-          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
           {/* Audit block - DESKTOP centered */}
           <div className="hidden md:flex justify-center mb-4">

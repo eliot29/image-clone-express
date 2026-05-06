@@ -45,7 +45,7 @@ const PourquoiNousSection = () => {
           </div>
 
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-center mt-6">
-            Mon approche vient du terrain. <span className="text-or-mat">Pas d'une démonstration théorique.</span>
+            Mon approche vient du terrain.<br className="sm:hidden" /> <span className="text-or-mat">Pas d'une démonstration théorique.</span>
           </p>
 
           <div className="text-center mt-4">
