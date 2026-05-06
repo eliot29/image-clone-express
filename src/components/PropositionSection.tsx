@@ -128,17 +128,22 @@ const PropositionSection = () => {
 
           {/* Connecteur branché : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
           <div className="flex flex-col items-center mb-2" aria-hidden="true">
-            <div className="w-1 h-6 bg-or-mat/70 rounded-full" />
-            <div className="relative w-full max-w-3xl h-1">
-              <div className="absolute top-0 left-1/4 right-1/4 h-1 bg-or-mat/70 rounded-full" />
+            <div className="w-1 h-6 bg-or-mat/70" />
+            <div className="relative w-full max-w-3xl h-10">
+              {/* horizontal bar spanning between the two branches */}
+              <div className="absolute top-0 left-1/4 right-1/4 h-1 bg-or-mat/70" />
+              {/* vertical branches, overlap horizontal bar to form clean square corners */}
+              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1 h-10 bg-or-mat/70" />
+              <div className="absolute top-0 right-1/4 translate-x-1/2 w-1 h-10 bg-or-mat/70" />
+              {/* Arrow heads matching bar color/thickness */}
+              <svg className="absolute -bottom-[6px] left-1/4 -translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
+                <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
+              </svg>
+              <svg className="absolute -bottom-[6px] right-1/4 translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
+                <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
+              </svg>
             </div>
-            <div className="relative w-full max-w-3xl h-8">
-              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1 h-8 bg-or-mat/70 rounded-full" />
-              <div className="absolute top-0 right-1/4 translate-x-1/2 w-1 h-8 bg-or-mat/70 rounded-full" />
-              <ArrowDown size={22} strokeWidth={2.5} className="absolute -bottom-2 left-1/4 -translate-x-1/2 text-or-mat" />
-              <ArrowDown size={22} strokeWidth={2.5} className="absolute -bottom-2 right-1/4 translate-x-1/2 text-or-mat" />
-            </div>
-            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-2">
+            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-3">
               ou les deux
             </span>
           </div>
