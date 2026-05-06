@@ -148,58 +148,62 @@ const PropositionSection = () => {
             </span>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-6 items-start">
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+          <div className="grid md:grid-cols-2 gap-4 mb-6 items-stretch">
+            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-col gap-3">
                 {prestations.slice(0, 3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-2 flex flex-col items-center text-center max-w-[200px]">
-                    <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center mb-2">
-                      <p.icon size={20} className="text-or-mat" />
+                    className="flex items-start gap-3">
+                    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+                      <p.icon size={18} className="text-or-mat" />
                     </div>
-                    <h4 className="font-dm font-bold text-base text-navy mb-1">{p.title}</h4>
-                    {p.badge &&
-                      <span className="font-dm text-xs font-semibold text-or-mat mb-2">
-                        {p.badge}
-                      </span>
-                    }
-                    {p.tagline &&
-                      <p className="font-dm text-xs italic text-ardoise/70 leading-snug">
-                        {p.tagline}
-                      </p>
-                    }
+                    <div className="min-w-0">
+                      <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
+                      {p.badge &&
+                        <span className="block font-dm text-xs font-semibold text-or-mat">
+                          {p.badge}
+                        </span>
+                      }
+                      {p.tagline &&
+                        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">
+                          {p.tagline}
+                        </p>
+                      }
+                    </div>
                   </div>
                 )}
               </div>
             </div>
 
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Accompagnement IA
               </h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-col gap-3">
                 {prestations.slice(3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-2 flex flex-col items-center text-center max-w-[200px]">
-                    <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center mb-2">
-                      <p.icon size={20} className="text-or-mat" />
+                    className="flex items-start gap-3">
+                    <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+                      <p.icon size={18} className="text-or-mat" />
                     </div>
-                    <h4 className="font-dm font-bold text-base text-navy mb-1">{p.title}</h4>
-                    {p.badge &&
-                      <span className="font-dm text-xs font-semibold text-or-mat mb-2">
-                        {p.badge}
-                      </span>
-                    }
-                    {p.tagline &&
-                      <p className="font-dm text-xs italic text-ardoise/70 leading-snug">
-                        {p.tagline}
-                      </p>
-                    }
+                    <div className="min-w-0">
+                      <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
+                      {p.badge &&
+                        <span className="block font-dm text-xs font-semibold text-or-mat">
+                          {p.badge}
+                        </span>
+                      }
+                      {p.tagline &&
+                        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">
+                          {p.tagline}
+                        </p>
+                      }
+                    </div>
                   </div>
                 )}
               </div>
