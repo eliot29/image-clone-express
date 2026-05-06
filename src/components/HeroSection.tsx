@@ -26,10 +26,10 @@ const HeroSection = () => {
             />
           </div>
 
-          {/* Tagline badges */}
+          {/* Punchline élégante */}
           <p
-            className="text-navy text-lg sm:text-xl mb-4 leading-tight"
-            style={{ fontFamily: "'Caveat', cursive", fontWeight: 500 }}
+            className="text-navy text-base sm:text-lg mb-3 -mt-4 leading-tight italic"
+            style={{ fontFamily: "'Fraunces', serif", fontWeight: 400 }}
           >
             Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
           </p>
