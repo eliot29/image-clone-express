@@ -264,9 +264,8 @@ const PourquoiIAGenerique = () => {
         />
 
         <ContactCTA
-          title="Demander un diagnostic"
+          title="Demander un diagnostic gratuit"
           intro="Un premier échange suffit souvent à voir si l'IA peut réellement vous faire gagner du temps."
-          subIntro="Sans engagement. Aucune vente forcée."
           idPrefix="pq-ia"
         />
       </main>
