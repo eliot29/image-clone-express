@@ -53,7 +53,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-4">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">
               <CalendarCheck size={24} className="text-or-mat" />
             </div>
           </div>
