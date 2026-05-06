@@ -247,8 +247,8 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="mb-6">
-            <div className="w-full rounded-2xl px-6 py-5 md:px-8 bg-or-mat/40 border border-or-mat/60 shadow-sm">
+          <div className="flex justify-center mb-6">
+            <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-or-mat/40 border border-or-mat/60 shadow-sm">
               <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
                 <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
                 <br />
