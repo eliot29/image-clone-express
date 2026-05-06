@@ -207,6 +207,14 @@ const PropositionSection = () => {
                     <PrestationItem key={i} p={p} />
                   )}
                 </div>
+                <div className="flex justify-center mt-5">
+                  <Button variant="ctaOutline" size="default" asChild>
+                    <Link to="/conception-ia-sur-mesure">
+                      Découvrir les conceptions IA sur-mesure
+                      <ArrowRight size={16} />
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
 
@@ -219,6 +227,14 @@ const PropositionSection = () => {
                   {prestations.slice(3).map((p, i) =>
                     <PrestationItem key={i} p={p} />
                   )}
+                </div>
+                <div className="flex justify-center mt-5">
+                  <Button variant="ctaOutline" size="default" asChild>
+                    <Link to="/accompagnement-ia">
+                      Découvrir l'accompagnement IA
+                      <ArrowRight size={16} />
+                    </Link>
+                  </Button>
                 </div>
             </div>
           </div>
@@ -233,6 +249,14 @@ const PropositionSection = () => {
                   <PrestationItem key={i} p={p} />
                 )}
               </div>
+              <div className="flex justify-center mt-auto pt-5">
+                <Button variant="ctaOutline" size="default" asChild>
+                  <Link to="/conception-ia-sur-mesure">
+                    Découvrir les conceptions IA sur-mesure
+                    <ArrowRight size={16} />
+                  </Link>
+                </Button>
+              </div>
             </div>
 
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
@@ -243,6 +267,14 @@ const PropositionSection = () => {
                 {prestations.slice(3).map((p, i) =>
                   <PrestationItem key={i} p={p} />
                 )}
+              </div>
+              <div className="flex justify-center mt-auto pt-5">
+                <Button variant="ctaOutline" size="default" asChild>
+                  <Link to="/accompagnement-ia">
+                    Découvrir l'accompagnement IA
+                    <ArrowRight size={16} />
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -265,18 +297,6 @@ const PropositionSection = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mt-4">
-            <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/conception-ia-sur-mesure">
-                Découvrir les conceptions IA sur-mesure
-                <ArrowRight size={16} />
-              </Link>
-            </Button>
-            <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/accompagnement-ia">
-                Découvrir l'accompagnement IA
-                <ArrowRight size={16} />
-              </Link>
-            </Button>
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/secteurs">
                 À qui s'adresse Semaine 54 ?
