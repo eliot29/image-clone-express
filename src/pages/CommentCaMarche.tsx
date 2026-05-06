@@ -326,16 +326,24 @@ const CommentCaMarche = () => {
               <h2 id="solutions" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-4 text-center" style={{ scrollMarginTop: '120px' }}>
                 Les solutions proposées
               </h2>
-              <p className="font-dm text-blanc-casse/80 text-center mb-10">
-                Deux leviers complémentaires, selon votre situation.
+              <p className="font-dm text-blanc-casse/80 text-center mb-10 max-w-2xl mx-auto">
+                Deux familles de solutions complémentaires&nbsp;: la <strong className="text-or-mat">Conception IA sur-mesure</strong> pour les besoins techniques, l'<strong className="text-or-mat">Accompagnement IA</strong> pour structurer les usages.
               </p>
 
               {/* Levier 1 */}
               <div className="mb-10">
-                <h3 className="font-dm font-bold text-2xl text-or-mat mb-2">Solutions IA sur-mesure</h3>
-                <p className="font-dm text-blanc-casse/80 mb-6">
-                  Des solutions concrètes qui automatisent et simplifient votre quotidien.
-                </p>
+                <h3 className="font-dm font-bold text-2xl text-or-mat mb-2">Conception IA sur-mesure</h3>
+                <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-3 mb-6">
+                  <p>
+                    La Conception IA sur-mesure regroupe les solutions <strong>conçues spécifiquement pour votre entreprise</strong>. Elles ne reposent pas sur un produit générique, mais sur ce dont vous avez réellement besoin au quotidien.
+                  </p>
+                  <p>
+                    Ces solutions <strong>s'intègrent à vos outils existants</strong> (email, CRM, fichiers, ERP, agenda…), <strong>suppriment les tâches répétitives</strong> et <strong>fiabilisent vos opérations</strong> en limitant les erreurs et les oublis.
+                  </p>
+                  <p>
+                    Trois grandes familles d'outils sont possibles, séparément ou combinées.
+                  </p>
+                </div>
 
                 {/* Automatisation */}
                 <div className="mb-6 bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
@@ -343,13 +351,17 @@ const CommentCaMarche = () => {
                   <p className="font-dm text-blanc-casse/75 italic mb-3">
                     Des tâches répétitives qui disparaissent de votre quotidien.
                   </p>
+                  <p className="font-dm text-blanc-casse/80 text-sm mb-3 leading-relaxed">
+                    L'automatisation consiste à confier à un système des actions que vous réalisez aujourd'hui à la main, dans plusieurs outils différents. L'objectif est simple&nbsp;: que ces actions s'exécutent toutes seules, au bon moment, sans erreur.
+                  </p>
                   <ul className="space-y-2">
                     {[
-                      "Workflows conçus sur-mesure",
-                      "Connexion à vos outils existants (email, CRM, fichiers, etc.)",
-                      "Automatisation des tâches chronophages",
-                      "Déclenchements automatiques selon vos processus métier",
-                      "Fonctionnement fiable et évolutif",
+                      "Workflows conçus sur-mesure pour vos processus",
+                      "Connexion entre vos outils (email, CRM, fichiers, ERP, agenda...)",
+                      "Automatisation des tâches chronophages et répétitives",
+                      "Déclenchements automatiques selon des règles métier claires",
+                      "Suppression des ressaisies manuelles",
+                      "Réduction significative des erreurs et des oublis",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
                         <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -358,7 +370,7 @@ const CommentCaMarche = () => {
                     ))}
                   </ul>
                   <p className="font-dm text-blanc-casse/70 text-sm mt-3">
-                    Ces automatisations permettent de supprimer les actions manuelles répétitives et de réduire les erreurs.
+                    Une fois en place, ces automatisations fonctionnent en continu, sans supervision constante. Elles libèrent du temps réel, chaque semaine, sur des tâches souvent invisibles mais très consommatrices.
                   </p>
                 </div>
 
@@ -368,11 +380,16 @@ const CommentCaMarche = () => {
                   <p className="font-dm text-blanc-casse/75 italic mb-3">
                     Un assistant qui vous accompagne dans votre travail au quotidien.
                   </p>
+                  <p className="font-dm text-blanc-casse/80 text-sm mb-3 leading-relaxed">
+                    Il ne s'agit pas d'un chatbot gadget, mais d'un véritable <strong>assistant connecté à vos données et à vos documents internes</strong>. Il vous aide à retrouver une information, à synthétiser un dossier ou à préparer une décision en quelques secondes.
+                  </p>
                   <ul className="space-y-2">
                     {[
-                      "Connecté à vos données et documents internes",
-                      "Capable d'analyser et de synthétiser rapidement",
-                      "Adapté à votre activité et à vos besoins",
+                      "Accès rapide à vos informations internes",
+                      "Synthèse de documents, comptes-rendus, échanges",
+                      "Analyse de données et aide à la décision",
+                      "Centralisation des connaissances dispersées",
+                      "Adapté à votre activité et à votre vocabulaire métier",
                       "Utilisation simple, sans compétence technique",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
@@ -382,7 +399,7 @@ const CommentCaMarche = () => {
                     ))}
                   </ul>
                   <p className="font-dm text-blanc-casse/70 text-sm mt-3">
-                    L'objectif est d'accélérer vos prises de décision et de faciliter l'accès à l'information.
+                    L'objectif est d'accélérer vos prises de décision et de réduire le temps passé à chercher l'information au lieu de la traiter.
                   </p>
                 </div>
 
@@ -392,12 +409,17 @@ const CommentCaMarche = () => {
                   <p className="font-dm text-blanc-casse/75 italic mb-3">
                     Des outils simples, conçus pour répondre à un besoin précis.
                   </p>
+                  <p className="font-dm text-blanc-casse/80 text-sm mb-3 leading-relaxed">
+                    Beaucoup d'entreprises fonctionnent encore avec des fichiers Excel partagés, des feuilles bricolées ou des méthodes informelles. Les outils métier remplacent ces solutions dispersées par des <strong>interfaces simples, claires et adaptées à un usage quotidien</strong>.
+                  </p>
                   <ul className="space-y-2">
                     {[
                       "Interfaces claires et rapides à prendre en main",
-                      "Connexion à vos outils et à vos données",
+                      "Connexion à vos données et à vos outils existants",
                       "Automatisation intégrée directement dans l'outil",
-                      "Utilisation quotidienne sans complexité",
+                      "Simplification des processus internes",
+                      "Remplacement des méthodes dispersées ou bricolées",
+                      "Utilisation quotidienne sans complexité technique",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
                         <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -406,28 +428,38 @@ const CommentCaMarche = () => {
                     ))}
                   </ul>
                   <p className="font-dm text-blanc-casse/70 text-sm mt-3">
-                    Pas de logiciel lourd à déployer.<br />
-                    Des outils simples, conçus pour être utilisés immédiatement.
+                    Pas de logiciel complexe à déployer. Des outils simples, conçus pour être utilisés immédiatement et faire gagner du temps dès la mise en service.
                   </p>
                 </div>
               </div>
 
               {/* Levier 2 */}
               <div>
-                <h3 className="font-dm font-bold text-2xl text-or-mat mb-2">Accompagnement et montée en compétence IA</h3>
-                <p className="font-dm text-blanc-casse/80 mb-6">
-                  Quand la meilleure solution est d'apprendre à utiliser l'IA efficacement en interne.
-                </p>
+                <h3 className="font-dm font-bold text-2xl text-or-mat mb-2">Accompagnement IA</h3>
+                <div className="font-dm text-blanc-casse/80 leading-relaxed space-y-3 mb-6">
+                  <p>
+                    Toutes les entreprises n'ont pas besoin de développer des solutions techniques. Pour beaucoup, le vrai sujet est de <strong>structurer les usages</strong> et de mieux utiliser les outils IA déjà accessibles.
+                  </p>
+                  <p>
+                    L'enjeu est avant tout <strong>humain et organisationnel</strong>&nbsp;: aider les équipes à adopter l'IA sans la subir, dans un cadre clair et utile. L'objectif est une <strong>adoption progressive</strong>, ancrée dans la pratique, qui produit des résultats sans bouleverser le quotidien.
+                  </p>
+                </div>
 
                 {/* Formation */}
                 <div className="mb-6 bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
-                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-3">Formation & acculturation IA</h4>
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-1">Formation aux outils IA</h4>
+                  <p className="font-dm text-or-mat text-sm font-semibold mb-3">ChatGPT · Claude · Gemini · Copilot</p>
+                  <p className="font-dm text-blanc-casse/80 text-sm mb-3 leading-relaxed">
+                    Une formation concrète, basée sur des cas réels rencontrés dans votre entreprise. L'objectif n'est pas d'enseigner la théorie, mais de <strong>transformer rapidement l'usage des outils IA en gains de temps mesurables</strong>.
+                  </p>
                   <ul className="space-y-2">
                     {[
-                      "Comprendre les usages concrets de l'IA",
-                      "Structurer une utilisation professionnelle",
-                      "Maîtriser les bons réflexes et le prompt",
-                      "Appliquer directement sur vos cas réels",
+                      "Apprentissage concret sur les outils du marché (ChatGPT, Claude, Gemini, Copilot)",
+                      "Mise en pratique sur vos cas réels d'entreprise",
+                      "Cadrage des usages professionnels",
+                      "Maîtrise des bons réflexes et du prompt",
+                      "Qualité et fiabilité des résultats produits",
+                      "Gain de temps directement applicable au quotidien",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
                         <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -440,15 +472,23 @@ const CommentCaMarche = () => {
                   </p>
                 </div>
 
-                {/* Conseil */}
-                <div className="bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
-                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-3">Conseil & choix d'outils</h4>
+                {/* Intégration & usages IA */}
+                <div className="mb-6 bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-2">Intégration &amp; usages IA</h4>
+                  <p className="font-dm text-blanc-casse/75 italic mb-3">
+                    Adapter l'IA aux habitudes de travail et aux besoins réels de l'entreprise.
+                  </p>
+                  <p className="font-dm text-blanc-casse/80 text-sm mb-3 leading-relaxed">
+                    Donner accès à des outils IA ne suffit pas. Sans cadre, les usages deviennent rapidement désorganisés&nbsp;: chacun teste de son côté, les pratiques s'éparpillent, et les résultats restent décevants. L'intégration consiste à <strong>structurer ces usages dans la durée</strong>, pour qu'ils deviennent réellement utiles à l'entreprise.
+                  </p>
                   <ul className="space-y-2">
                     {[
-                      "Analyse de vos besoins réels",
-                      "Sélection des outils pertinents",
-                      "Éviter les abonnements inutiles",
-                      "Mise en cohérence avec votre organisation",
+                      "Identification des bons cas d'usage par service",
+                      "Cadrage des pratiques et règles internes",
+                      "Adaptation aux processus et aux outils existants",
+                      "Mise en place progressive et accompagnée",
+                      "Suivi de la montée en compétence des équipes",
+                      "Construction d'usages utiles, durables et partagés",
                     ].map((t, i) => (
                       <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
                         <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
@@ -457,8 +497,35 @@ const CommentCaMarche = () => {
                     ))}
                   </ul>
                   <p className="font-dm text-blanc-casse/70 text-sm mt-3">
-                    Le marché des outils IA évolue rapidement.<br />
-                    L'objectif est de vous orienter vers des solutions utiles, adaptées et durables.
+                    Cette étape évite l'écueil le plus fréquent&nbsp;: une IA présente partout, mais mal utilisée. Elle ancre des pratiques concrètes dans le fonctionnement réel de l'entreprise.
+                  </p>
+                </div>
+
+                {/* Conseil */}
+                <div className="bg-blanc-casse/5 rounded-2xl p-5 border border-blanc-casse/10">
+                  <h4 className="font-dm font-bold text-lg text-blanc-casse mb-2">Conseil &amp; choix d'outils</h4>
+                  <p className="font-dm text-blanc-casse/75 italic mb-3">
+                    Faire les bons choix dans un marché saturé.
+                  </p>
+                  <p className="font-dm text-blanc-casse/80 text-sm mb-3 leading-relaxed">
+                    Le marché des outils IA évolue chaque semaine. Des centaines de solutions apparaissent, souvent payantes, parfois redondantes. Sans cadre, les abonnements se multiplient sans véritable bénéfice. Le rôle du conseil est de <strong>vous orienter vers ce qui correspond à votre niveau, à vos besoins réels et à votre organisation</strong>.
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      "Analyse de vos besoins réels et de votre maturité",
+                      "Sélection des outils les plus pertinents",
+                      "Suppression des abonnements inutiles ou redondants",
+                      "Mise en cohérence avec votre organisation",
+                      "Choix d'outils simples, adaptés et durables",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 font-dm text-blanc-casse/80 text-sm">
+                        <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-dm text-blanc-casse/70 text-sm mt-3">
+                    L'objectif est d'aller à l'essentiel, sans perte de temps ni d'argent.
                   </p>
                 </div>
               </div>
@@ -473,13 +540,18 @@ const CommentCaMarche = () => {
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-6 text-center">
                 Conclusion
               </h2>
-              <div className="font-dm text-ardoise/85 leading-relaxed space-y-4 text-center">
+              <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
                 <p>
-                  Dans la plupart des entreprises, plusieurs heures de travail peuvent être automatisées chaque semaine.
+                  Dans la plupart des entreprises, plusieurs heures de travail peuvent être récupérées chaque semaine. Pas en bouleversant l'organisation, mais en supprimant les tâches qui n'apportent pas de valeur réelle.
                 </p>
-                <p>Encore faut-il identifier les bonnes actions.</p>
-                <p className="font-bold text-navy">
-                  Le diagnostic permet de faire ce tri rapidement et de prioriser les solutions réellement utiles.
+                <p>
+                  Tout n'a pas vocation à être automatisé. Le vrai sujet n'est pas de tout confier à l'IA, mais d'<strong className="text-navy">identifier les actions à forte valeur</strong> et de remettre du temps là où il compte vraiment&nbsp;: la relation client, la qualité du travail, le pilotage, la prise de décision.
+                </p>
+                <p>
+                  C'est tout l'objet de la démarche Semaine 54&nbsp;: un <strong className="text-navy">diagnostic clair</strong>, une <strong className="text-navy">priorisation réaliste</strong>, une <strong className="text-navy">approche terrain</strong> et un <strong className="text-navy">gain de temps concret</strong>, mesurable dès les premières semaines.
+                </p>
+                <p className="font-bold text-navy text-center pt-2">
+                  Pas de promesses excessives. Des résultats utiles, durables, et adaptés à votre réalité.
                 </p>
               </div>
             </div>
