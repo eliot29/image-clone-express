@@ -58,7 +58,7 @@ const ContactSection = () => {
             </div>
           </div>
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
-            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['—_']">20/30 min</span>
+            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['·_']">20/30 min</span>
           </h2>
 
           <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
@@ -161,7 +161,7 @@ const ContactSection = () => {
 
             <div className="mt-6 max-w-lg mx-auto">
               <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
-                Je vous contacte en premier lieu pour répondre à vos éventuelles questions et planifier votre audit ensemble — l'audit se tient ensuite en appel ou en visio, selon votre préférence.
+                Je vous contacte en premier lieu pour répondre à vos éventuelles questions et planifier votre audit ensemble. L'audit se tient ensuite en appel ou en visio, selon votre préférence.
               </p>
               <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
                 Vous pouvez aussi m'appeler, m'envoyer un SMS ou un email directement.
