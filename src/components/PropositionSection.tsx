@@ -127,7 +127,8 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          <div className="flex justify-center mb-4">
+          {/* Audit block - DESKTOP centered */}
+          <div className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Audit gratuit
@@ -165,12 +166,27 @@ const PropositionSection = () => {
             </span>
           </div>
 
-          {/* Connecteur MOBILE : part du bloc Audit, descend puis longe à gauche */}
+          {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
           <div className="md:hidden mb-6">
-            {/* L-connector depuis le bas du bloc Audit gratuit (centre) vers le rail à gauche */}
-            <div className="relative h-10" aria-hidden="true">
-              <div className="absolute left-1/2 -translate-x-1/2 top-0 w-1 h-6 bg-or-mat/70" />
-              <div className="absolute left-1 top-5 h-1 bg-or-mat/70" style={{ right: "calc(50% - 2px)" }} />
+            {/* Audit avec rail partant de son côté gauche (mi-hauteur -> bas) */}
+            <div className="relative bg-gris-perle rounded-2xl px-6 py-6 shadow-sm ml-7">
+              <div className="absolute -left-6 top-1/2 bottom-0 w-1 bg-or-mat/70" aria-hidden="true" />
+              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                Audit gratuit
+              </h3>
+              <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
+                {comprehension.map((item, i) =>
+                  <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
+                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                    {item.text}
+                  </li>
+                )}
+              </ul>
+            </div>
+
+            {/* Espace avec rail continu */}
+            <div className="relative h-6 ml-7" aria-hidden="true">
+              <div className="absolute -left-6 top-0 bottom-0 w-1 bg-or-mat/70" />
             </div>
 
             {/* Bloc 1 - Conception IA (rail traverse toute la hauteur) */}
