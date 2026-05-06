@@ -53,7 +53,7 @@ const prestations = [
     icon: GraduationCap,
     title: "Formation aux outils IA",
     badge: "ChatGPT · Claude · Gemini · Copilot",
-    tagline: "Comprendre et utiliser les outils IA de manière concrète dans votre activité.",
+    tagline: null,
     items: [
       { icon: MessageSquare, text: "Formation aux outils : ChatGPT, Claude, Gemini, Copilot" },
       { icon: SlidersHorizontal, text: "Structuration des usages professionnels" },
