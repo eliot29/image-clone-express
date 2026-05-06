@@ -190,15 +190,17 @@ const PropositionSection = () => {
               </span>
             </div>
 
-            {/* Bloc 1 - Conception IA avec connecteur en L (centre -> gauche -> bas -> droite -> bloc) */}
-            <div className="relative pl-10">
-              <svg className="absolute left-0 top-0 h-1/2 text-or-mat/70" style={{ width: 'calc(50% + 8px)' }} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <polyline points="100,0 4,0 4,96" fill="none" stroke="currentColor" strokeWidth="2" vectorEffect="non-scaling-stroke" />
-              </svg>
+            {/* Bloc 1 - Conception IA avec connecteur en U (centre haut -> gauche -> bas -> droite -> bloc) */}
+            <div className="relative pl-8">
+              {/* segment horizontal du centre vers la gauche */}
+              <div className="absolute left-2 right-1/2 top-0 h-px bg-or-mat/70" aria-hidden="true" />
+              {/* segment vertical descendant à gauche jusqu'à mi-hauteur du bloc */}
+              <div className="absolute left-2 top-0 h-1/2 w-px bg-or-mat/70" aria-hidden="true" />
               {/* segment horizontal vers le bloc à mi-hauteur */}
-              <div className="absolute left-1 top-1/2 w-7 h-px bg-or-mat/70 -translate-y-1/2" aria-hidden="true" />
-              <svg className="absolute left-[28px] top-1/2 -translate-y-1/2 text-or-mat/70" width="10" height="12" viewBox="0 0 10 12" fill="none" aria-hidden="true">
-                <path d="M1 1 L8 6 L1 11" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter" />
+              <div className="absolute left-2 top-1/2 w-5 h-px bg-or-mat/70 -translate-y-px" aria-hidden="true" />
+              {/* Pointe de flèche entrant dans le bloc */}
+              <svg className="absolute left-[26px] top-1/2 -translate-y-1/2 text-or-mat/70" width="8" height="10" viewBox="0 0 8 10" fill="none" aria-hidden="true">
+                <path d="M1 1 L6 5 L1 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
               </svg>
               <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
