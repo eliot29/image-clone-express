@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, X, CalendarCheck } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 
@@ -52,6 +52,11 @@ const ContactSection = () => {
     <section id="audit" className="bg-navy py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-4">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
+              <CalendarCheck size={24} className="text-or-mat" />
+            </div>
+          </div>
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
             Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['—_']">20/30 min</span>
           </h2>
