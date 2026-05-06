@@ -114,26 +114,37 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          {/* Connecteur : Audit -> Solutions IA */}
-          <div className="flex flex-col items-center mb-4">
+          {/* Connecteur branché : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
+          <div className="flex flex-col items-center mb-2" aria-hidden="true">
             <div className="w-px h-6 bg-or-mat/50" />
-            <ArrowDown size={18} className="text-or-mat -mt-1" />
+            <div className="relative w-full max-w-3xl h-6">
+              <div className="absolute top-0 left-1/4 right-1/4 h-px bg-or-mat/50" />
+              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-px h-6 bg-or-mat/50" />
+              <div className="absolute top-0 right-1/4 translate-x-1/2 w-px h-6 bg-or-mat/50" />
+            </div>
+            <div className="relative w-full max-w-3xl flex justify-between px-[calc(25%-9px)] -mt-1">
+              <ArrowDown size={18} className="text-or-mat" />
+              <ArrowDown size={18} className="text-or-mat" />
+            </div>
+            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mt-1">
+              ou les deux
+            </span>
           </div>
 
-          <div className="flex justify-center mb-4">
-            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+          <div className="grid md:grid-cols-2 gap-4 mb-6 items-stretch">
+            <div className="bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Solutions IA sur-mesure
               </h3>
-              <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex flex-wrap justify-center gap-4">
                 {prestations.slice(0, 3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-4 flex flex-col items-center text-center max-w-xs">
+                    className="rounded-2xl p-3 flex flex-col items-center text-center max-w-xs">
                     <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
                       <p.icon size={22} className="text-or-mat" />
                     </div>
-                    <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
+                    <h4 className="font-dm font-bold text-base text-navy mb-1">{p.title}</h4>
                     {p.badge &&
                       <span className="font-dm text-xs font-semibold text-or-mat mb-2">
                         {p.badge}
@@ -148,36 +159,27 @@ const PropositionSection = () => {
                 )}
               </div>
             </div>
-          </div>
 
-          {/* Connecteur : et / ou -> Accompagnement */}
-          <div className="flex flex-col items-center mb-4">
-            <span className="font-dm text-xs uppercase tracking-wider text-or-mat font-bold mb-1">et / ou</span>
-            <div className="w-px h-6 bg-or-mat/50" />
-            <ArrowDown size={18} className="text-or-mat -mt-1" />
-          </div>
-
-          <div className="flex justify-center mb-6">
-            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+            <div className="bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Solutions d'accompagnement IA
               </h3>
-              <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex flex-wrap justify-center gap-4">
                 {prestations.slice(3).map((p, i) =>
                   <div
                     key={i}
-                    className="rounded-2xl p-4 flex flex-col items-center text-center">
+                    className="rounded-2xl p-3 flex flex-col items-center text-center max-w-xs">
                     <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-3">
                       <p.icon size={22} className="text-or-mat" />
                     </div>
-                    <h4 className="font-dm font-bold text-lg text-navy mb-1">{p.title}</h4>
+                    <h4 className="font-dm font-bold text-base text-navy mb-1">{p.title}</h4>
                     {p.badge &&
                       <span className="font-dm text-xs font-semibold text-or-mat mb-2">
                         {p.badge}
                       </span>
                     }
                     {p.tagline &&
-                      <p className="font-dm text-sm italic text-ardoise/70 whitespace-nowrap">
+                      <p className="font-dm text-sm italic text-ardoise/70">
                         {p.tagline}
                       </p>
                     }
