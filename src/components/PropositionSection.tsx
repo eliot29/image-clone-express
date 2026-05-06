@@ -168,25 +168,31 @@ const PropositionSection = () => {
 
           {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
           <div className="md:hidden mb-6">
-            {/* Audit (le rail démarre depuis son bord inférieur gauche) */}
-            <div className="relative bg-gris-perle rounded-2xl px-6 py-6 shadow-sm ml-2">
-              {/* rail collé au bord gauche du bloc, partant du milieu et descendant */}
-              <div className="absolute -left-1 top-1/2 w-1 h-[calc(50%+1.5rem)] bg-or-mat/70" aria-hidden="true" />
-              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
-                Audit gratuit
-              </h3>
-              <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
-                {comprehension.map((item, i) =>
-                  <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
-                    <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
-                    {item.text}
-                  </li>
-                )}
-              </ul>
+            {/* Audit (même largeur que les blocs ci-dessous, rail à gauche avec angle droit) */}
+            <div className="relative pl-7">
+              {/* segment horizontal qui touche le bord gauche du bloc à mi-hauteur */}
+              <div className="absolute left-1 top-1/2 w-6 h-1 bg-or-mat/70" aria-hidden="true" />
+              {/* segment vertical : descend depuis ce point vers les blocs suivants */}
+              <div className="absolute left-1 top-1/2 bottom-0 w-1 bg-or-mat/70" aria-hidden="true" />
+              <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                  Audit gratuit
+                </h3>
+                <ul className="flex flex-wrap items-start gap-x-6 gap-y-3 justify-center">
+                  {comprehension.map((item, i) =>
+                    <li key={i} className="flex items-start gap-2 font-dm text-ardoise/70">
+                      <item.icon size={16} className="text-or-mat mt-0.5 shrink-0" />
+                      {item.text}
+                    </li>
+                  )}
+                </ul>
+              </div>
             </div>
 
             {/* Espace : prolongement du rail sous le bloc Audit */}
-            <div className="relative h-6" aria-hidden="true" />
+            <div className="relative h-6" aria-hidden="true">
+              <div className="absolute left-1 top-0 bottom-0 w-1 bg-or-mat/70" />
+            </div>
 
             {/* Bloc 1 - Conception IA (rail traverse toute la hauteur) */}
             <div className="relative pl-7">
