@@ -196,9 +196,8 @@ const MethodeSemaine54 = () => {
         />
 
         <ContactCTA
-          title="Demander un diagnostic"
+          title="Demander un diagnostic gratuit"
           intro="Un premier échange de 20 à 30 minutes suffit pour identifier plusieurs heures de tâches automatisables chaque semaine."
-          subIntro="On commence petit, mais utile. Vous arrêtez quand vous voulez."
           idPrefix="methode"
         />
       </main>

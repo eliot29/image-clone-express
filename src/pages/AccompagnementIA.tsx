@@ -201,9 +201,8 @@ const AccompagnementIA = () => {
         />
 
         <ContactCTA
-          title="Demander un diagnostic"
+          title="Demander un diagnostic gratuit"
           intro="Un premier échange suffit à identifier les usages IA les plus utiles pour vos équipes."
-          subIntro="Sans engagement. Aucune vente forcée."
           idPrefix="accompagnement"
         />
       </main>

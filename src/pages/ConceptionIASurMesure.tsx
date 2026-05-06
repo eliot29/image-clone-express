@@ -249,9 +249,8 @@ const ConceptionIASurMesure = () => {
         />
 
         <ContactCTA
-          title="Demander un diagnostic"
+          title="Demander un diagnostic gratuit"
           intro="Un premier échange suffit à identifier les premières automatisations utiles dans votre activité."
-          subIntro="Sans engagement. Aucune vente forcée."
           idPrefix="conception"
         />
       </main>
