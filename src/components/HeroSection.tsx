@@ -27,6 +27,12 @@ const HeroSection = () => {
           </div>
 
           {/* Tagline badges */}
+          <p
+            className="text-navy text-2xl sm:text-3xl mb-4 leading-tight"
+            style={{ fontFamily: "'Caveat', cursive", fontWeight: 700 }}
+          >
+            Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
+          </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
               <span className="w-2 h-2 rounded-full bg-or-mat animate-pulse" />
