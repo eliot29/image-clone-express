@@ -1,10 +1,11 @@
-import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image } from "lucide-react";
+import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
 { icon: FileText, text: "Devis générés en quelques minutes" },
 { icon: Search, text: "Informations trouvées instantanément" },
 { icon: Mail, text: "Relances clients envoyés automatiquement" },
+{ icon: PhoneCall, text: "Appels entrants traités 24h/24" },
 { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
 { icon: FolderOpen, text: "Administratif traité sans y toucher" },
 { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
@@ -61,7 +62,7 @@ const HeroSection = () => {
           
 
           {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-3 mb-4 max-w-3xl mx-auto text-left">
             {painPoints.map((point, i) =>
             <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
