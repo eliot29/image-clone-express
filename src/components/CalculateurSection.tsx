@@ -15,7 +15,7 @@ const CalculateurSection = () => {
   return (
     <section id="calculateur" className="bg-gris-perle py-16 md:py-24">
       <div className="section-shell">
-        <div className="max-w-3xl lg:max-w-4xl mx-auto">
+        <div className="">
           <div className="text-center mb-6">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
               <Calculator size={24} className="text-or-mat" />

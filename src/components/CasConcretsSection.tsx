@@ -58,7 +58,7 @@ const CasConcretsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5  mt-8">
           {cases.map((cas, i) => (
             <div
               key={i}

@@ -9,14 +9,14 @@ const PourquoiNousSection = () => {
   return (
     <section id="approche" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
-        <div className="max-w-3xl lg:max-w-6xl mx-auto">
+        <div className="">
           <div className="text-center mb-6">
             <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               Pourquoi travailler avec moi
             </h2>
           </div>
 
-          <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-8 max-w-4xl mx-auto">
+          <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-8 ">
             <p className="font-dm text-navy font-bold text-lg sm:text-xl leading-snug mb-2">
               La personne qui comprend votre métier est celle qui construit l'outil.
             </p>

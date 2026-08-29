@@ -35,7 +35,7 @@ const MethodeSection = () => {
   return (
     <section id="methode" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
-        <div className="max-w-3xl lg:max-w-4xl mx-auto">
+        <div className="">
           <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10">
             <p className="font-dm text-ardoise/90 leading-relaxed">
               Les outils d'IA changent tous les quinze jours. Ce qui était la bonne solution en janvier ne l'est plus en juin. <strong className="text-navy">C'est pour ça que je ne vends pas une prestation, mais une présence.</strong>
