@@ -52,11 +52,15 @@ const PoissonnerieSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-5 mt-8">
           {blocks.map((block, i) => (
             <div
               key={i}
-              className="card-lift rounded-xl px-6 py-5 bg-card shadow-card"
+              className={`card-lift h-full rounded-xl px-6 py-5 bg-card shadow-card${
+                i === blocks.length - 1 && blocks.length % 2 === 1
+                  ? " md:col-span-2 md:max-w-[560px] md:mx-auto md:w-full"
+                  : ""
+              }`}
             >
               <h3 className="font-dm font-bold text-lg text-navy mb-3">
                 {block.title}
@@ -78,19 +82,21 @@ const PoissonnerieSection = () => {
           <p className="font-dm text-blanc-casse/90 text-lg sm:text-xl leading-relaxed">
             Onze automatisations connectées entre elles.
           </p>
-          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-2xl leading-relaxed mt-2 max-w-3xl mx-auto">
-            Environ 2 h 30 récupérées chaque semaine, soit{" "}
-            <span
-              ref={ref as React.RefObject<HTMLSpanElement>}
-              className="font-dm font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none align-middle mx-2 tabular-nums"
-            >
-              {value}
-            </span>{" "}
+          <span
+            ref={ref as React.RefObject<HTMLSpanElement>}
+            className="block font-dm font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none tabular-nums mt-4"
+          >
+            {value}
+          </span>
+          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-2xl leading-relaxed mt-3 max-w-2xl mx-auto">
             heures par an — sa Semaine 54.
+          </p>
+          <p className="font-dm text-blanc-casse/70 text-[15px] mt-2 max-w-2xl mx-auto leading-relaxed">
+            Environ 2 h 30 récupérées chaque semaine.
           </p>
         </div>
 
-        <p className="font-dm text-ardoise/60 text-[13px] mt-3">
+        <p className="font-dm text-ardoise/60 text-[13px] mt-3 text-center">
           Mise en service prochainement.
         </p>
       </div>

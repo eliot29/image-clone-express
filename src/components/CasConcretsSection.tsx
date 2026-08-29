@@ -63,17 +63,17 @@ const CasConcretsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-5 mt-8">
           {cases.map((cas, i) => (
             <div
               key={i}
-              className="card-lift rounded-xl px-6 py-5 bg-card shadow-card"
+              className="card-lift h-full rounded-xl px-6 py-5 bg-card shadow-card"
             >
               <h3 className="font-dm font-bold text-lg text-navy mb-3">{cas.sector}</h3>
               <p className="font-dm text-[15px] text-ardoise/85 mb-2 leading-relaxed">{cas.problem}</p>
               <p className="font-dm text-[15px] text-ardoise/85 mb-4 leading-relaxed">{cas.solution}</p>
               <FlowDiagram steps={cas.flow} className="mb-4" />
-              <div className="flex flex-wrap gap-x-4 gap-y-2 pt-3 border-t border-navy/10">
+              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 pt-3 border-t border-navy/10">
                 {cas.results.map((r, j) => (
                   <div key={j} className="flex items-center gap-1.5">
                     <r.icon size={15} className="text-or-mat shrink-0" />
