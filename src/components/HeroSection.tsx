@@ -1,15 +1,25 @@
-import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image, Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
-{ icon: FileText, text: "Devis générés en quelques minutes" },
-{ icon: Search, text: "Documents lus et classés instantanément" },
-{ icon: Mail, text: "Relances clients envoyés automatiquement" },
-{ icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
-{ icon: PhoneCall, text: "Appels entrants traités 24h/24" },
-{ icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
-{ icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
-{ icon: Image, text: "Supports visuels créés sans designer" }];
+  { icon: FileText, text: "Devis générés en quelques minutes" },
+  { icon: Search, text: "Documents lus et classés instantanément" },
+  { icon: Mail, text: "Relances clients envoyés automatiquement" },
+  { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
+  { icon: PhoneCall, text: "Appels entrants traités 24h/24" },
+  { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
+  { icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
+  { icon: Image, text: "Supports visuels créés sans designer" },
+  { icon: Mic, text: "Stock mis à jour à la voix" },
+];
+
+const GROUP_SIZE = 3;
+const groups: typeof painPoints[] = [];
+for (let i = 0; i < painPoints.length; i += GROUP_SIZE) {
+  groups.push(painPoints.slice(i, i + GROUP_SIZE));
+}
+const SLIDE_INTERVAL = 2200;
 
 
 const HeroSection = () => {
