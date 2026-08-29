@@ -1,4 +1,3 @@
-import { Clock, TrendingUp, Shield, Eye, FileCheck, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,6 @@ type CaseItem = {
   location: string;
   problem: string;
   solution: string;
-  results?: { icon: LucideIcon; label: string }[];
 };
 
 const cases: CaseItem[] = [
@@ -16,33 +14,18 @@ const cases: CaseItem[] = [
     location: "Pays d'Iroise",
     problem: "Devis rédigés manuellement. Signatures perdues par email.",
     solution: "Fiche chantier → calcul automatique → PDF → signature électronique → archivage.",
-    results: [
-      { icon: Clock, label: "1h gagnée par devis" },
-      { icon: TrendingUp, label: "Cycle de vente accéléré" },
-      { icon: FileCheck, label: "Moins d'erreurs administratives" },
-    ],
   },
   {
     sector: "Avocat / Notaire",
     location: "Brest",
     problem: "Recherche juridique longue, outils grand public peu fiables et non confidentiels.",
     solution: "Assistant IA configuré pour interroger et synthétiser vos sources juridiques internes.",
-    results: [
-      { icon: Clock, label: "Recherche plus rapide" },
-      { icon: Shield, label: "Confidentialité maîtrisée" },
-      { icon: FileCheck, label: "Préparation de dossier optimisée" },
-    ],
   },
   {
     sector: "Commerce de proximité",
     location: "Saint-Brieuc",
     problem: "Publications réseaux irrégulières, abandonnées faute de temps.",
     solution: "Calendrier éditorial défini une fois → génération assistée → publication planifiée.",
-    results: [
-      { icon: Eye, label: "Présence régulière sans surcharge" },
-      { icon: Clock, label: "Temps de gestion réduit" },
-      { icon: TrendingUp, label: "Visibilité locale plus constante" },
-    ],
   },
   {
     sector: "Cabinet comptable / Agence de recrutement",
@@ -80,17 +63,7 @@ const CasConcretsSection = () => {
                   </span>
                 </div>
                 <p className="font-dm text-xs text-blanc-casse/80 mb-1.5 leading-snug">{cas.problem}</p>
-                <p className="font-dm text-xs text-blanc-casse/90 mb-3 leading-snug">{cas.solution}</p>
-                {cas.results && cas.results.length > 0 && (
-                  <div className="flex flex-wrap gap-x-3 gap-y-1 pt-2 border-t border-blanc-casse/10">
-                    {cas.results.map((r, j) => (
-                      <div key={j} className="flex items-center gap-1.5">
-                        <r.icon size={13} className="text-or-mat shrink-0" />
-                        <span className="font-dm text-xs text-blanc-casse/80">{r.label}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
+                <p className="font-dm text-xs text-blanc-casse/90 leading-snug">{cas.solution}</p>
               </div>
             ))}
           </div>
