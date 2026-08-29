@@ -97,7 +97,7 @@ const HeroSection = () => {
           </div>
 
 
-          <p className="font-dm text-ardoise text-sm mb-2 italic">
+          <p className="font-dm font-bold text-ardoise text-base sm:text-lg mb-2 italic">
             Et si toutes ces tâches se faisaient automatiquement ?
           </p>
 
