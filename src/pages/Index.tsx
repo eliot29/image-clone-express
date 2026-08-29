@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import ConceptSection from "@/components/ConceptSection";
 import PropositionSection from "@/components/PropositionSection";
+import PoissonnerieSection from "@/components/PoissonnerieSection";
 import CasConcretsSection from "@/components/CasConcretsSection";
 import PourquoiNousSection from "@/components/PourquoiNousSection";
 import SecteursSection from "@/components/SecteursSection";
@@ -21,6 +22,7 @@ const Index = () => {
         <HeroSection />
         <Reveal variant="up"><ConceptSection /></Reveal>
         <Reveal variant="up"><PropositionSection /></Reveal>
+        <PoissonnerieSection />
         <CasConcretsSection />
         <PourquoiNousSection />
         <SecteursSection />
