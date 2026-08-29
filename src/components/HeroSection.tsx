@@ -23,6 +23,16 @@ const SLIDE_INTERVAL = 2200;
 
 
 const HeroSection = () => {
+  const [slide, setSlide] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+    const id = setInterval(() => {
+      setSlide((s) => (s + 1) % groups.length);
+    }, SLIDE_INTERVAL);
+    return () => clearInterval(id);
+  }, [paused]);
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
       <div className="container mx-auto px-6 pt-20 pb-6 lg:pt-24 lg:pb-6 relative z-10">
