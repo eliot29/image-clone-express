@@ -32,7 +32,7 @@ const PourquoiNousSection = () => {
           </div>
 
 
-          <div className="font-dm text-ardoise/80 space-y-4 mb-6 leading-relaxed">
+          <div className="font-dm text-ardoise/80 space-y-4 mb-6 leading-relaxed max-w-2xl">
             <p className="text-ardoise/80">
               Je suis <strong className="text-navy">Clément, 35 ans</strong>, et <strong className="text-navy">Semaine 54</strong>, c'est moi. J'ai exercé pendant une dizaine d'années différents métiers dans le secteur de la <strong className="text-navy">grande distribution</strong>.
             </p>
@@ -47,14 +47,14 @@ const PourquoiNousSection = () => {
           </div>
 
           <div className="space-y-4 mb-6">
-            <Reveal delay={60} className="card-lift bg-navy/5 border border-navy/10 hover:border-or-mat/30 rounded-xl p-6">
+            <Reveal delay={60} className="card-lift bg-card rounded-xl shadow-card p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
-                J'ai accompagné une poissonnerie du Pays d'Iroise.
+                J'ai accompagné une poissonnerie du Finistère.
                 En structurant une stratégie nourrie par l'IA et en utilisant des outils assistés par IA, les résultats ont été mesurables : <strong className="text-navy">73 000 vues</strong>, plus de <strong className="text-navy">800 abonnés gagnés</strong> et <strong className="text-or-mat-clair">+15 % de chiffre d'affaires</strong>.
               </p>
             </Reveal>
 
-            <Reveal delay={180} className="card-lift bg-navy/5 border border-navy/10 hover:border-or-mat/30 rounded-xl p-6">
+            <Reveal delay={180} className="card-lift bg-card rounded-xl shadow-card p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 J'ai également aidé un artisan électricien à simplifier la comparaison quotidienne de ses fournisseurs en mettant en place un assistant dédié.
                 Résultat : environ <strong className="text-navy">10 minutes économisées par jour</strong>, soit près de <strong className="text-or-mat-clair">40 heures récupérées par an</strong>.
@@ -63,11 +63,11 @@ const PourquoiNousSection = () => {
           </div>
 
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-center mt-6">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-left mt-6 max-w-2xl">
             Mon approche vient du terrain.<br className="sm:hidden" /> <span className="text-or-mat-clair">Pas d'une démonstration théorique.</span>
           </p>
 
-          <div className="text-center mt-4">
+          <div className="text-left mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-suffit-pas#parcours">
                 Comprendre mon approche
