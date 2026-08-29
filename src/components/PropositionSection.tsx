@@ -128,7 +128,7 @@ const PropositionSection = () => {
 
           {/* Audit block - DESKTOP centered */}
           <div className="hidden md:flex justify-center mb-4">
-            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+            <div className="inline-block card-lift bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
                 Diagnostic gratuit
               </h3>
@@ -170,7 +170,7 @@ const PropositionSection = () => {
           {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
           <div className="md:hidden mb-6">
             {/* Audit */}
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+            <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
                 Diagnostic gratuit
               </h3>
@@ -200,7 +200,7 @@ const PropositionSection = () => {
 
             {/* Bloc 1 - Conception IA */}
             <div>
-              <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+              <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
                   Conception IA sur-mesure
                 </h3>
@@ -221,7 +221,7 @@ const PropositionSection = () => {
             </div>
 
             {/* Bloc 2 - Accompagnement */}
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm mt-4">
+            <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm mt-4">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
                   Accompagnement IA
                 </h3>
@@ -242,7 +242,7 @@ const PropositionSection = () => {
           </div>
 
           <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
+            <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
                 Conception IA sur-mesure
               </h3>
@@ -261,7 +261,7 @@ const PropositionSection = () => {
               </div>
             </div>
 
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
+            <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
                 Accompagnement IA
               </h3>
@@ -281,9 +281,9 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mb-6">
-            <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-or-mat/40 border border-or-mat/60 shadow-sm">
-              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
+          <div className="flex mb-6">
+            <div className="inline-block card-lift rounded-2xl px-6 py-5 md:px-8 bg-or-mat/40 border border-or-mat/60 shadow-sm">
+              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-left">
                 <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
                 <br />
                 <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
@@ -291,14 +291,14 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full text-left">
             Maîtriser et tester les outils IA demande du temps.
           </p>
-          <p className="font-dm font-bold text-or-mat-clair text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-2">
+          <p className="font-dm font-bold text-or-mat-clair text-lg sm:text-xl leading-snug max-w-full text-left mt-2">
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3 mt-4">
+          <div className="flex flex-wrap gap-3 mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/secteurs">
                 À qui s'adresse Semaine 54 ?

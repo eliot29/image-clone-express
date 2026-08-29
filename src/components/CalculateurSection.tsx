@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCountUpInt, useCountUp } from "@/hooks/use-count-up";
 import { Calculator } from "lucide-react";
 
 const presets: { label: string; minutes: number; perWeek: number }[] = [];
@@ -11,6 +12,10 @@ const CalculateurSection = () => {
   const hoursPerYear = Math.round(minutes * perWeek * 52 / 60);
   const weeksEquiv = (hoursPerYear / 40).toFixed(1);
   const gainHours = Math.round(hoursPerYear * 0.8);
+
+  const hoursCounter = useCountUpInt(hoursPerYear);
+  const weeksCounter = useCountUp(Number(weeksEquiv));
+  const gainCounter = useCountUpInt(gainHours);
 
   return (
     <section id="calculateur" className="bg-gris-perle py-16 md:py-24">
@@ -29,7 +34,7 @@ cette tâche chaque année ?
           </div>
 
           {/* Input area */}
-          <div className="bg-card rounded-xl shadow-card p-6 mb-8">
+          <div className="card-lift bg-card rounded-xl shadow-card p-6 mb-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
               <div>
                 <label className="font-dm text-sm font-semibold text-ardoise mb-2 block">
@@ -63,16 +68,16 @@ cette tâche chaque année ?
 
             {/* Results */}
             <div className="grid grid-cols-3 gap-4 text-center">
-              <div className="bg-gris-perle rounded-lg p-4">
-                <div className="font-dm text-3xl font-bold text-navy">{hoursPerYear}</div>
+              <div className="card-lift bg-gris-perle rounded-lg p-4">
+                <div ref={hoursCounter.ref as React.RefObject<HTMLDivElement>} className="font-dm text-3xl font-bold text-navy tabular-nums">{hoursCounter.value}</div>
                 <div className="font-dm text-xs text-ardoise/60 mt-1">heures perdues/an</div>
               </div>
-              <div className="bg-gris-perle rounded-lg p-4">
-                <div className="font-dm text-3xl font-bold text-or-mat-clair">{weeksEquiv}</div>
+              <div className="card-lift bg-gris-perle rounded-lg p-4">
+                <div ref={weeksCounter.ref as React.RefObject<HTMLDivElement>} className="font-dm text-3xl font-bold text-or-mat-clair tabular-nums">{weeksCounter.value.toFixed(1)}</div>
                 <div className="font-dm text-xs text-ardoise/60 mt-1">semaines de travail</div>
               </div>
-              <div className="bg-navy rounded-lg p-4">
-                <div className="font-dm text-3xl font-bold text-or-mat-clair">{gainHours}h</div>
+              <div className="card-lift bg-navy rounded-lg p-4">
+                <div ref={gainCounter.ref as React.RefObject<HTMLDivElement>} className="font-dm text-3xl font-bold text-or-mat tabular-nums">{gainCounter.value}h</div>
                 <div className="font-dm text-xs text-blanc-casse/60 mt-1">gain si automatisé</div>
               </div>
             </div>

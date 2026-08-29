@@ -1,34 +1,44 @@
+import FlowDiagram from "@/components/secondary/FlowDiagram";
+import { useCountUpInt } from "@/hooks/use-count-up";
+
 const blocks = [
   {
     title: "Un standard téléphonique qui répond seul",
     description:
       "Il donne le stock du jour, propose les prochains samedis et enregistre les réservations de plateaux.",
+    flow: ["Appel entrant", "Stock du jour", "Réservation", "Confirmation"],
     result: "Environ un appel sur deux traité sans décrocher",
   },
   {
     title: "Un inventaire dicté en fin de service",
     description:
       "Le comptage se fait à la voix, avec un aperçu de ce qui passe à zéro, et se range tout seul dans le tableur.",
+    flow: ["Dictée vocale", "Comptage", "Alerte stock zéro", "Tableur"],
     result: "25 minutes par jour → 5 minutes",
   },
   {
     title: "Les bons de transport dictés",
     description: "Dictés à la voix, corrigés ligne par ligne, sortis en PDF.",
+    flow: ["Dictée", "Correction", "PDF"],
     result: "15 minutes par bon → 3 minutes",
   },
   {
     title: "Les publications réseaux générées depuis le stock réel",
     description: "Ce qui est annoncé en ligne est ce qui est en vitrine.",
+    flow: ["Stock réel", "Rédaction", "Publication"],
     result: "20 minutes par semaine → zéro",
   },
   {
     title: "La traçabilité photo et les rappels d'hygiène",
     description: "Automatiques, sans intervention.",
+    flow: ["Photo", "Horodatage", "Archivage", "Rappel"],
     result: "Plus d'oubli en fin de service",
   },
 ];
 
 const PoissonnerieSection = () => {
+  const { ref, value } = useCountUpInt(120);
+
   return (
     <section id="poissonnerie" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
@@ -54,6 +64,7 @@ const PoissonnerieSection = () => {
               <p className="font-dm text-[15px] text-ardoise/85 leading-relaxed">
                 {block.description}
               </p>
+              <FlowDiagram steps={block.flow} className="mt-4" />
               <div className="mt-4 pt-3 border-t border-navy/10">
                 <span className="font-dm text-[15px] text-or-mat-clair font-bold">
                   {block.result}
@@ -69,8 +80,11 @@ const PoissonnerieSection = () => {
           </p>
           <p className="font-dm font-bold text-blanc-casse text-lg sm:text-2xl leading-relaxed mt-2 max-w-3xl mx-auto">
             Environ 2 h 30 récupérées chaque semaine, soit{" "}
-            <span className="font-syne font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none align-middle mx-2">
-              120
+            <span
+              ref={ref as React.RefObject<HTMLSpanElement>}
+              className="font-syne font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none align-middle mx-2 tabular-nums"
+            >
+              {value}
             </span>{" "}
             heures par an — sa Semaine 54.
           </p>
