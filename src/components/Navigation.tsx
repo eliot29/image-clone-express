@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import AnimatedLogo from "@/components/AnimatedLogo";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
