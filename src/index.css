@@ -183,9 +183,12 @@ footer[id] {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-row {
-    animation: none !important;
-    transform: none !important;
+  .task-marquee-forward {
+    animation-duration: 30s;
+  }
+
+  .task-marquee-reverse {
+    animation-duration: 36s;
   }
 }
 
