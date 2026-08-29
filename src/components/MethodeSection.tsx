@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/secondary/Reveal";
@@ -7,26 +7,27 @@ import Reveal from "@/components/secondary/Reveal";
 const steps = [
 {
   num: "01",
-  title: "Diagnostic gratuit (20/30 min)",
-  desc: "Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion de déterminer si le besoin relève d'une mise en place de solution ou d'un accompagnement.",
-  note: "Sans engagement. Aucune vente forcée."
+  title: "Je viens vous voir",
+  desc: "Visio ou téléphone, 20 à 30 minutes. Je cherche à comprendre votre activité, vos contraintes et vos objectifs, et à repérer les tâches qui vous coûtent le plus de temps.",
+  note: "Diagnostic gratuit. Sans engagement, aucune vente forcée."
 },
 {
   num: "02",
-  title: "Proposition sous trois jours ouvrés",
-  desc: "Une proposition adaptée à votre situation réelle, avec les priorités identifiées et les solutions recommandées.",
-  note: "Selon les besoins : mise en place de solutions IA sur-mesure, accompagnement à l'usage, ou combinaison des deux."
+  title: "Je chiffre et je priorise",
+  desc: "Sous trois jours ouvrés, je vous adresse une proposition adaptée à votre situation réelle, avec les priorités identifiées et ce que chacune vous fait gagner.",
+  note: "Selon les besoins : mise en place de solutions sur-mesure, accompagnement à l'usage, ou les deux."
 },
 {
   num: "03",
-  title: "Mise en place ou accompagnement",
-  desc: "La solution est configurée et testée dans vos conditions réelles, ou les équipes sont accompagnées dans l'utilisation des outils.",
-  note: "Objectif : une solution ou un usage qui fonctionne vraiment, adapté à votre quotidien."
+  title: "Je construis et je livre",
+  desc: "Je configure la solution, je la teste dans vos conditions réelles et je forme les personnes qui vont s'en servir.",
+  note: "Objectif : un outil qui fonctionne vraiment, adapté à votre quotidien."
 },
 {
   num: "04",
-  title: "Suivi",
-  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages."
+  title: "Je reste",
+  desc: "On mesure ce qui a été gagné, on regarde ce qui a changé côté outils, et on repart sur la priorité suivante.",
+  note: "Et on recommence."
 }];
 
 
@@ -35,6 +36,12 @@ const MethodeSection = () => {
     <section id="methode" className="bg-blanc-casse py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
+          <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10">
+            <p className="font-dm text-ardoise/90 leading-relaxed">
+              Les outils d'IA changent tous les quinze jours. Ce qui était la bonne solution en janvier ne l'est plus en juin. <strong className="text-navy">C'est pour ça que je ne vends pas une prestation, mais une présence.</strong>
+            </p>
+          </div>
+
           <div className="text-center mb-6">
             <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               La méthode Semaine 54
@@ -42,7 +49,7 @@ const MethodeSection = () => {
           </div>
 
           <p className="font-dm text-ardoise/70 text-center mb-6">
-            Un accompagnement structuré, étape par étape.
+            Un cycle, pas un projet qui se termine.
           </p>
 
           <div className="space-y-0">
@@ -53,9 +60,7 @@ const MethodeSection = () => {
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
                     <span className="font-dm text-sm font-bold text-or-mat-clair">{step.num}</span>
                   </div>
-                  {i < steps.length - 1 &&
-                <div className="w-px h-full bg-navy/15 my-1" />
-                }
+                  <div className={`w-px h-full my-1 ${i < steps.length - 1 ? 'bg-navy/15' : 'bg-gradient-to-b from-or-mat/60 to-or-mat/0 border-dashed'}`} />
                 </div>
 
                 {/* Content */}
@@ -70,8 +75,20 @@ const MethodeSection = () => {
             )}
           </div>
 
+          {/* Retour au début du cycle */}
+          <div className="flex items-center gap-3 mt-2 mb-2">
+            <div className="w-10 flex justify-center">
+              <div className="w-9 h-9 rounded-full border border-or-mat/40 bg-or-mat/10 flex items-center justify-center">
+                <RefreshCw size={16} className="text-or-mat-clair" />
+              </div>
+            </div>
+            <p className="font-dm text-sm font-bold text-or-mat-clair">
+              … et on repart à l'étape 01 avec la priorité suivante.
+            </p>
+          </div>
 
-          <div className="text-center mt-4">
+
+          <div className="text-center mt-6">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode

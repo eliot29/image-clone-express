@@ -16,23 +16,22 @@ const painPoints = [
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 pt-28 pb-16 lg:pt-32 lg:pb-24 relative z-10">
+      <div className="container mx-auto px-6 pt-24 pb-16 lg:pt-28 lg:pb-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo - hidden on mobile */}
-          <div className="hidden sm:flex justify-center mb-6">
-            <img
-              src="/logo-semaine54-dark-new.svg"
-              alt="Semaine 54"
-              className="h-14 lg:h-16 w-auto"
-            />
-          </div>
-
           {/* Punchline élégante */}
-          <p className="font-bold italic text-navy text-[17px] sm:text-[18px] mb-8 leading-snug" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
+          <p className="font-bold italic text-navy text-[17px] sm:text-[18px] mb-4 leading-snug" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
             Une année compte 52 semaines.<br className="sm:hidden" /> <span className="text-or-mat-clair">Gagnez votre Semaine 54.</span>
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <h1 className="font-dm font-extrabold text-[34px] sm:text-[44px] lg:text-[54px] text-navy mb-4 max-w-4xl mx-auto leading-[1.1] tracking-[-0.02em]">
+            L'IA qui rend 120 heures par an aux PME bretonnes.
+          </h1>
+
+          <p className="font-dm font-bold text-ardoise text-[20px] sm:text-[22px] mb-8 leading-snug">
+            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
               <span className="w-2 h-2 rounded-full bg-or-mat" />
               <span className="font-dm text-[13px] text-or-mat-clair font-medium tracking-wide uppercase">Basé à Brest (Finistère)</span>
@@ -44,14 +43,6 @@ const HeroSection = () => {
               <span className="font-dm text-[13px] text-navy font-medium">Automatisations & conseils IA sur-mesure</span>
             </span>
           </div>
-
-          <h1 className="font-dm font-extrabold text-[34px] sm:text-[44px] lg:text-[54px] text-navy mb-4 max-w-4xl mx-auto leading-[1.1] tracking-[-0.02em]">
-            L'IA qui rend 120 heures par an aux PME bretonnes.
-          </h1>
-
-          <p className="font-dm font-bold text-ardoise text-[20px] sm:text-[22px] mb-10 leading-snug">
-            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
-          </p>
 
           {/* Pain points - grille statique */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 text-left max-w-4xl mx-auto mb-10">
