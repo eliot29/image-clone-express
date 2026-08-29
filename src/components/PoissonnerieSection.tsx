@@ -42,11 +42,11 @@ const PoissonnerieSection = () => {
   return (
     <section id="poissonnerie" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
-        <div className="text-left mb-4">
+        <div className="text-center mb-4">
           <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy">
             Le cas d'une poissonnerie du Finistère
           </h2>
-          <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed">
+          <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed mx-auto">
             Un commerce où l'on a les mains mouillées et pas de clavier. Tout se
             pilote à la voix.
           </p>

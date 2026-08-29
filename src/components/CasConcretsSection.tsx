@@ -54,11 +54,11 @@ const CasConcretsSection = () => {
   return (
     <section id="cas" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
-        <div className="text-left mb-4">
+        <div className="text-center mb-4">
           <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy">
             Des exemples d'automatisations possibles
           </h2>
-          <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed">
+          <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed mx-auto">
             Des situations représentatives des demandes que je reçois. Ce qui vous concerne se décide au diagnostic.
           </p>
         </div>
@@ -85,7 +85,7 @@ const CasConcretsSection = () => {
           ))}
         </div>
 
-        <div className="text-left mt-8">
+        <div className="text-center mt-8">
           <Button variant="cta" size="lg" asChild>
             <Link to="/secteurs">Mon secteur est-il concerné ?</Link>
           </Button>

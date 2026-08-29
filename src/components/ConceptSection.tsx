@@ -7,7 +7,7 @@ const ConceptSection = () => {
   return (
     <section id="concept" className="bg-navy py-16 md:py-24">
       <div className="section-shell">
-        <div className="text-left">
+        <div className="text-center">
           <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-6">
             L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
             <span className="text-or-mat">
@@ -15,7 +15,7 @@ const ConceptSection = () => {
             </span>
           </h2>
 
-          <div className="card-lift bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 max-w-3xl text-left">
+          <div className="card-lift bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 max-w-3xl text-center mx-auto">
             <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
               Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accompagnement et la personnalisation.</strong>
             </p>
@@ -24,11 +24,11 @@ const ConceptSection = () => {
             </p>
           </div>
 
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 leading-snug text-left max-w-2xl">
+          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 leading-snug text-center max-w-2xl mx-auto">
             L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
           </p>
 
-          <div className="text-left mt-4">
+          <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-suffit-pas">
                 Comprendre mon approche

@@ -4,7 +4,7 @@ const OutilsSection = () => {
   return (
     <section className="bg-gris-perle py-16 md:py-24">
       <div className="section-shell">
-        <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-3 text-left max-w-2xl leading-snug">
+        <p className="font-dm font-bold text-navy text-lg sm:text-xl mb-3 text-center max-w-2xl leading-snug mx-auto">
           Le marché a des centaines d'outils. <span className="text-or-mat-clair">Mon rôle de partenaire : faire le tri pour vous.</span>
         </p>
         <div className="relative overflow-hidden">
@@ -25,7 +25,7 @@ const OutilsSection = () => {
           </div>
         </div>
 
-        <p className="font-dm font-bold text-navy text-lg sm:text-xl mt-4 mb-3 text-left max-w-2xl leading-snug">
+        <p className="font-dm font-bold text-navy text-lg sm:text-xl mt-4 mb-3 text-center max-w-2xl leading-snug mx-auto">
           Des outils qui s'intègrent à ceux que vous utilisez déjà :
         </p>
         <div className="relative overflow-hidden">
