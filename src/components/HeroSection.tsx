@@ -45,10 +45,7 @@ const HeroSection = () => {
 
           {/* Punchline */}
           <h1 className="font-dm font-bold text-lg sm:text-xl text-navy mb-6 max-w-full mx-auto leading-snug tracking-tight">
-            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.  
-            <br />
-            <br />
-            Une année compte 52 semaines. Gagnez votre semaine 54
+            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
           </h1>
 
           {/* Punchline */}
@@ -73,13 +70,13 @@ const HeroSection = () => {
             )}
           </div>
 
-          <p className="font-dm text-ardoise text-sm mb-6 italic">
+          <p className="font-dm text-ardoise text-sm mb-2 italic">
             Et si toutes ces tâches se faisaient automatiquement ?
           </p>
 
           {/* Stat highlight */}
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
-            {"\n"}
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mb-6">
+            Une année compte 52 semaines. Gagnez votre semaine 54
           </p>
 
           <div className="mt-8 flex justify-center">
