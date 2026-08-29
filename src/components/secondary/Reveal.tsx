@@ -5,7 +5,8 @@ type RevealProps = {
   /** delay in ms before the reveal animation starts */
   delay?: number;
   /** animation variant */
-  variant?: "up" | "fade" | "left" | "right" | "scale";
+  variant?: "up" | "fade" | "left" | "right" | "scale" | "pop" | "flip" | "tilt" | "blur";
+
   className?: string;
   as?: "div" | "section" | "li" | "span";
 };

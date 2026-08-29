@@ -129,10 +129,48 @@ footer[id] {
 .reveal-scale {
   transform: scale(0.97);
 }
+
+/* --- Variantes dynamiques --- */
+/* Rebond ascendant avec léger dépassement */
+.reveal-pop {
+  transform: translateY(44px) scale(0.92);
+  transition:
+    opacity 0.55s ease-out,
+    transform 0.85s cubic-bezier(0.16, 1.28, 0.42, 1);
+}
+/* Bascule 3D depuis le bas */
+.reveal-flip {
+  transform: perspective(1200px) rotateX(14deg) translateY(38px);
+  transform-origin: bottom center;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.9s cubic-bezier(0.16, 1.2, 0.36, 1);
+}
+/* Arrivée en biais avec rotation */
+.reveal-tilt {
+  transform: translateX(-42px) rotate(-3deg) scale(0.96);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.85s cubic-bezier(0.16, 1.24, 0.4, 1);
+}
+/* Zoom net depuis un flou */
+.reveal-blur {
+  transform: scale(1.06);
+  filter: blur(10px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.8s ease-out;
+}
+.reveal-blur.is-visible {
+  filter: blur(0);
+}
+
 .reveal.is-visible {
   opacity: 1;
   transform: none;
 }
+
 
 /* ---- Card interactions ---- */
 .card-lift {
@@ -154,6 +192,7 @@ footer[id] {
   .reveal {
     opacity: 1;
     transform: none;
+    filter: none;
   }
   .card-lift:hover {
     transform: none;
@@ -162,4 +201,5 @@ footer[id] {
     scroll-behavior: auto;
   }
 }
+
 
