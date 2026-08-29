@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -15,19 +14,6 @@ const painPoints = [
 
 
 const HeroSection = () => {
-  const [offset, setOffset] = useState(0);
-  const [paused, setPaused] = useState(false);
-
-  useEffect(() => {
-    if (paused) return;
-    const id = setInterval(() => {
-      setOffset((o) => (o + 2) % painPoints.length);
-    }, 1600);
-    return () => clearInterval(id);
-  }, [paused]);
-
-  const visible = [0, 1].map((k) => painPoints[(offset + k) % painPoints.length]);
-
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
       <div className="container mx-auto px-6 pt-20 pb-6 lg:pt-24 lg:pb-6 relative z-10">
