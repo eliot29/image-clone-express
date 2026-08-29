@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Solutions", href: "#prestations" },
   { label: "Cas concrets", href: "#cas" },
-  { label: "Pourquoi nous", href: "#approche" },
+  { label: "Pourquoi moi", href: "#approche" },
   { label: "Méthode", href: "#methode" },
   { label: "Contact", href: "#contact" },
 ];
@@ -77,7 +77,7 @@ const Navigation = () => {
             ))}
           </div>
           <Button variant="ctaNav" size="default" className="ml-8 flex-shrink-0 text-[15px]" asChild>
-            <a href="#contact">Audit gratuit</a>
+            <a href="#contact">Diagnostic gratuit</a>
           </Button>
         </div>
 
@@ -107,7 +107,7 @@ const Navigation = () => {
             </a>
           ))}
           <Button variant="cta" size="default" className="mt-3 mx-4" asChild>
-            <a href="#contact" onClick={() => setMobileOpen(false)}>Audit gratuit</a>
+            <a href="#contact" onClick={() => setMobileOpen(false)}>Diagnostic gratuit</a>
           </Button>
         </div>
       )}
