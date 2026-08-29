@@ -20,7 +20,7 @@ const Index = () => {
     <>
       <Navigation />
       <main>
-        <Reveal variant="up"><HeroSection /></Reveal>
+        <HeroSection />
         <Reveal variant="up"><ImpactSection /></Reveal>
         <Reveal variant="up"><ConceptSection /></Reveal>
         <Reveal variant="up"><PropositionSection /></Reveal>
