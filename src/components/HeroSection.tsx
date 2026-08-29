@@ -71,7 +71,7 @@ const HeroSection = () => {
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-6 italic">
-            Et si toutes ces tâches se faisaient automatiquement ?
+            {"\n"}
           </p>
 
           {/* Stat highlight */}
