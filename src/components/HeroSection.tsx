@@ -75,14 +75,21 @@ const HeroSection = () => {
 
           
 
-          {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-3 mb-4 max-w-3xl mx-auto text-left">
-            {painPoints.map((point, i) =>
-            <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
+          {/* Pain points — carrousel 2 colonnes */}
+          <div
+            className="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 max-w-2xl mx-auto text-left min-h-[3.5rem] items-center"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            {visible.map((point, k) => (
+              <div
+                key={`${offset}-${k}`}
+                className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm animate-slide-in-right"
+              >
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
                 <span>{point.text}</span>
               </div>
-            )}
+            ))}
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-2 italic">
