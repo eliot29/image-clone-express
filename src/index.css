@@ -53,9 +53,16 @@
     line-height: 1.7;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Syne', 'DM Sans', sans-serif;
   }
 }
+
+@layer components {
+  .section-shell {
+    @apply w-full max-w-[1140px] mx-auto px-6;
+  }
+}
+
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {

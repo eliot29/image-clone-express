@@ -50,14 +50,14 @@ const ContactSection = () => {
 
   return (
     <section id="audit" className="bg-navy py-16 md:py-24">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+      <div className="section-shell">
+        <div className="">
           <div className="text-center mb-4">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">
               <CalendarCheck size={24} className="text-or-mat" />
             </div>
           </div>
-          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-8 text-center">
+          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-8 text-center">
             Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['·_']">20/30 min</span>
           </h2>
 

@@ -14,13 +14,13 @@ const CalculateurSection = () => {
 
   return (
     <section id="calculateur" className="bg-gris-perle py-16 md:py-24">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          <div className="text-center mb-6">
+      <div className="section-shell">
+        <div className="">
+          <div className="text-left mb-6">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
               <Calculator size={24} className="text-or-mat" />
             </div>
-            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-3">Combien vous coûte 
+            <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-3">Combien vous coûte 
 cette tâche chaque année ?
             </h2>
             <p className="font-dm text-ardoise/60">
@@ -72,7 +72,7 @@ cette tâche chaque année ?
                 <div className="font-dm text-xs text-ardoise/60 mt-1">semaines de travail</div>
               </div>
               <div className="bg-navy rounded-lg p-4">
-                <div className="font-dm text-3xl font-bold text-or-mat">{gainHours}h</div>
+                <div className="font-dm text-3xl font-bold text-or-mat-clair">{gainHours}h</div>
                 <div className="font-dm text-xs text-blanc-casse/60 mt-1">gain si automatisé</div>
               </div>
             </div>

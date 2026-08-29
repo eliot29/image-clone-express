@@ -50,9 +50,9 @@ const prestations = [
 const PrestationsSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-4">
-          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
+      <div className="section-shell">
+        <div className="text-left mb-4">
+          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
             Trois façons de vous faire gagner du temps
           </h2>
         </div>

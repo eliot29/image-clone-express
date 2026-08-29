@@ -1,4 +1,4 @@
-import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image, Mic } from "lucide-react";
+import { Clock, Mail, FileText, Share2, PhoneCall, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
@@ -8,23 +8,21 @@ const painPoints = [
   { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
   { icon: PhoneCall, text: "Appels entrants traités 24h/24" },
   { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
-  { icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
-  { icon: Image, text: "Supports visuels créés sans designer" },
-  { icon: Mic, text: "Stock mis à jour à la voix" },
 ];
+
 
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 pt-24 pb-16 lg:pt-28 lg:pb-24 relative z-10">
+      <div className="section-shell pt-24 pb-16 lg:pt-28 lg:pb-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Punchline élégante */}
-          <p className="font-bold italic text-navy text-[17px] sm:text-[18px] mb-4 leading-snug" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
+          <p className="font-syne font-bold italic text-navy text-[18px] mb-4 leading-snug">
             Une année compte 52 semaines.<br className="sm:hidden" /> <span className="text-or-mat-clair">Gagnez votre Semaine 54.</span>
           </p>
 
-          <h1 className="font-dm font-extrabold text-[34px] sm:text-[44px] lg:text-[54px] text-navy mb-4 max-w-4xl mx-auto leading-[1.1] tracking-[-0.02em]">
-            L'IA qui rend 120 heures par an aux PME bretonnes.
+          <h1 className="font-syne font-extrabold text-[30px] sm:text-[38px] lg:text-[46px] text-navy mb-4 max-w-4xl mx-auto leading-[1.1] tracking-[-0.02em]">
+            Je comprends votre métier, puis j'automatise ce qui vous fait perdre du temps.
           </h1>
 
           <p className="font-dm font-bold text-ardoise text-[20px] sm:text-[22px] mb-8 leading-snug">
@@ -34,7 +32,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
               <span className="w-2 h-2 rounded-full bg-or-mat" />
-              <span className="font-dm text-[13px] text-or-mat-clair font-medium tracking-wide uppercase">Basé à Brest (Finistère)</span>
+              <span className="font-dm text-[13px] text-or-mat-clair font-semibold tracking-wide uppercase">Basé à Brest (Finistère)</span>
             </span>
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
               <span className="font-dm text-[13px] text-navy font-medium">Agence IA pour TPE et PME bretonnes</span>
@@ -45,17 +43,18 @@ const HeroSection = () => {
           </div>
 
           {/* Pain points - grille statique */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 text-left max-w-4xl mx-auto mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch gap-x-6 gap-y-4 text-left max-w-4xl mx-auto mb-10">
             {painPoints.map((point, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 text-ardoise font-dm text-[16px] leading-[1.7]"
+                className="flex items-center gap-3 min-h-[64px] h-full text-ardoise font-dm text-[16px] leading-[1.5]"
               >
                 <point.icon size={18} className="text-or-mat shrink-0" />
                 <span>{point.text}</span>
               </div>
             ))}
           </div>
+
 
           {/* Stat highlight */}
           <p className="font-dm font-bold text-navy text-[20px] sm:text-[22px] leading-snug max-w-full mx-auto text-center">
