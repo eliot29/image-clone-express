@@ -102,8 +102,11 @@ const HeroSection = () => {
           </p>
 
           {/* Punchline */}
-          <p className="font-dm font-bold italic text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mb-6">
-            Une année compte 52 semaines. Gagnez votre Semaine 54.
+          <p className="inline-block bg-navy rounded-2xl px-6 sm:px-8 py-4 sm:py-5 shadow-lg mb-6">
+            <span className="font-dm font-bold italic text-blanc-casse text-lg sm:text-xl leading-snug">
+              Une année compte 52 semaines. Gagnez votre{" "}
+              <span className="text-or-mat">Semaine 54</span>.
+            </span>
           </p>
 
           <div className="mt-8 flex justify-center">
