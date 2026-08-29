@@ -1,5 +1,6 @@
-import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TaskFlow from "@/components/TaskFlow";
+
 
 const painPoints = [
 { icon: FileText, text: "Devis générés en quelques minutes" },
