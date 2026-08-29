@@ -45,7 +45,9 @@ const HeroSection = () => {
 
           {/* Punchline */}
           <h1 className="font-dm font-bold text-lg sm:text-xl text-navy mb-6 max-w-full mx-auto leading-snug tracking-tight">
-            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité. 
+            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.  
+            <br />
+            <br />
             Une année compte 52 semaines. Gagnez votre semaine 54
           </h1>
 
