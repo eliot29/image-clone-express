@@ -76,9 +76,7 @@ const HeroSection = () => {
 
           {/* Stat highlight */}
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
-            <span className="text-or-mat">30 minutes</span> gagnées par jour = <span className="text-or-mat">120 heures</span> par an.
-            <br />
-            Soit près de <span className="text-or-mat">3 semaines</span> de travail retrouvées.
+            {"\n"}
           </p>
 
           <div className="mt-8 flex justify-center">
