@@ -7,7 +7,7 @@ const ConceptSection = () => {
   return (
     <section id="concept" className="bg-navy py-16 md:py-24">
       <div className="section-shell">
-        <div className=" text-center">
+        <div className="text-left">
           <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-6">
             L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
             <span className="text-or-mat">
@@ -24,11 +24,11 @@ const ConceptSection = () => {
             </p>
           </div>
 
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-center">
+          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-left max-w-2xl">
             L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
           </p>
 
-          <div className="text-center mt-4">
+          <div className="text-left mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-suffit-pas">
                 Comprendre mon approche

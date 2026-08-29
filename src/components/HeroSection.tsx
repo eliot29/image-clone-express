@@ -21,7 +21,7 @@ const HeroSection = () => {
             Une année compte 52 semaines.<br className="sm:hidden" /> <span className="text-or-mat-clair">Gagnez votre Semaine 54.</span>
           </p>
 
-          <h1 className="font-syne font-extrabold text-[32px] sm:text-[42px] lg:text-[52px] text-navy mb-4 max-w-4xl mx-auto leading-[1.1] tracking-[-0.02em]">
+          <h1 className="font-syne font-extrabold text-[30px] sm:text-[38px] lg:text-[46px] text-navy mb-4 max-w-4xl mx-auto leading-[1.1] tracking-[-0.02em]">
             Je comprends votre métier, puis j'automatise ce qui vous fait perdre du temps.
           </h1>
 
