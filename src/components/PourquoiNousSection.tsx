@@ -47,8 +47,6 @@ const PourquoiNousSection = () => {
           </div>
 
           <div className="space-y-4 mb-6">
-            <Reveal delay={60} className="card-lift bg-card rounded-xl shadow-card p-6">
-
             <Reveal delay={180} className="card-lift bg-card rounded-xl shadow-card p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
                 J'ai également aidé un artisan électricien à simplifier la comparaison quotidienne de ses fournisseurs en mettant en place un assistant dédié.
