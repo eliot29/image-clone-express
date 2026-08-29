@@ -1,4 +1,4 @@
-import { Clock, TrendingUp, Shield, Eye, Users, FileCheck } from "lucide-react";
+import { Clock, TrendingUp, Shield, Eye, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -41,11 +41,6 @@ const cases = [
     location: "Bretagne",
     problem: "Relances manuelles oubliées ou bâclées : impayés, candidats, prospects.",
     solution: "Déclencheur selon statut dossier → séquence d'emails personnalisés → suivi automatique.",
-    results: [
-      { icon: Users, label: "Réduction des oublis de relance" },
-      { icon: Clock, label: "Temps commercial récupéré" },
-      { icon: TrendingUp, label: "Meilleure trésorerie / suivi candidats" },
-    ],
   },
 ];
 
@@ -78,14 +73,16 @@ const CasConcretsSection = () => {
                 </div>
                 <p className="font-dm text-xs text-blanc-casse/80 mb-1.5 leading-snug">{cas.problem}</p>
                 <p className="font-dm text-xs text-blanc-casse/90 mb-3 leading-snug">{cas.solution}</p>
-                <div className="flex flex-wrap gap-x-3 gap-y-1 pt-2 border-t border-blanc-casse/10">
-                  {cas.results.map((r, j) => (
-                    <div key={j} className="flex items-center gap-1.5">
-                      <r.icon size={13} className="text-or-mat shrink-0" />
-                      <span className="font-dm text-xs text-blanc-casse/80">{r.label}</span>
-                    </div>
-                  ))}
-                </div>
+                {cas.results && cas.results.length > 0 && (
+                  <div className="flex flex-wrap gap-x-3 gap-y-1 pt-2 border-t border-blanc-casse/10">
+                    {cas.results.map((r, j) => (
+                      <div key={j} className="flex items-center gap-1.5">
+                        <r.icon size={13} className="text-or-mat shrink-0" />
+                        <span className="font-dm text-xs text-blanc-casse/80">{r.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
