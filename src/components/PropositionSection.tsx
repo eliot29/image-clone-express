@@ -15,7 +15,7 @@ const prestations = [
     badge: null,
     tagline: "Des tâches répétitives qui disparaissent de votre quotidien.",
     items: [
-      { icon: Workflow, text: "Workflows conçus sur-mesure via n8n" },
+      { icon: Workflow, text: "Automatisations connectées à vos outils" },
       { icon: Link2, text: "Connexion à vos outils existants (email, CRM, fichiers, etc.)" },
       { icon: RotateCcw, text: "Automatisation des tâches chronophages" },
       { icon: Zap, text: "Déclenchements automatiques selon vos processus métier" },
