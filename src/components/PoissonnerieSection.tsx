@@ -67,15 +67,12 @@ const PoissonnerieSection = () => {
           <p className="font-dm text-blanc-casse/90 text-lg sm:text-xl leading-relaxed">
             Onze automatisations connectées entre elles.
           </p>
-          <p className="font-dm text-blanc-casse text-lg sm:text-xl leading-relaxed mt-2 max-w-3xl mx-auto">
-            Environ{" "}
-            <span className="font-syne font-extrabold text-or-mat text-[72px] sm:text-[96px] leading-none align-middle mx-2">
+          <p className="font-dm font-bold text-blanc-casse text-lg sm:text-2xl leading-relaxed mt-2 max-w-3xl mx-auto">
+            Environ 2 h 30 récupérées chaque semaine, soit{" "}
+            <span className="font-syne font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none align-middle mx-2">
               120
             </span>{" "}
             heures par an — sa Semaine 54.
-          </p>
-          <p className="font-dm text-blanc-casse/90 text-lg sm:text-xl leading-relaxed mt-2">
-            2 h 30 récupérées chaque semaine.
           </p>
         </div>
 
