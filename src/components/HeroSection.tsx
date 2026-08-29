@@ -1,10 +1,11 @@
-import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image } from "lucide-react";
+import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
 { icon: FileText, text: "Devis générés en quelques minutes" },
 { icon: Search, text: "Informations trouvées instantanément" },
 { icon: Mail, text: "Relances clients envoyés automatiquement" },
+{ icon: PhoneCall, text: "Appels entrants traités 24h/24" },
 { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
 { icon: FolderOpen, text: "Administratif traité sans y toucher" },
 { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
