@@ -1,16 +1,9 @@
-import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TaskFlow from "@/components/TaskFlow";
 
-const painPoints = [
-{ icon: FileText, text: "Devis générés en quelques minutes" },
-{ icon: Search, text: "Informations trouvées instantanément" },
-{ icon: Mail, text: "Relances clients envoyés automatiquement" },
-{ icon: PhoneCall, text: "Appels entrants traités 24h/24" },
-{ icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
-{ icon: FolderOpen, text: "Administratif traité sans y toucher" },
-{ icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
-{ icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
-{ icon: Image, text: "Supports visuels créés sans designer" }];
+
+
+
 
 
 const HeroSection = () => {
@@ -61,30 +54,9 @@ const HeroSection = () => {
 
           
 
-          {/* Pain points — 2 colonnes x 3 lignes, défilement vertical continu */}
-          <div className="group grid grid-cols-2 gap-x-4 sm:gap-x-8 mb-4 max-w-2xl mx-auto text-left">
-            {[0, 1].map((col) => {
-              const items = painPoints.filter((_, i) => i % 2 === col);
-              const track = [...items, ...items];
-              return (
-                <div key={col} className="overflow-hidden h-36">
-                  <div
-                    className={`flex flex-col ${col === 0 ? "animate-marquee-vertical" : "animate-marquee-vertical-reverse"} group-hover:[animation-play-state:paused]`}
-                  >
-                    {track.map((point, k) => (
-                      <div
-                        key={`${col}-${k}`}
-                        className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm h-12"
-                      >
-                        <point.icon size={18} className="text-or-mat/60 shrink-0" />
-                        <span>{point.text}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          {/* Pain points — flux continu de cartes */}
+          <TaskFlow />
+
 
           <p className="font-dm text-ardoise text-sm mb-2 italic">
             Et si toutes ces tâches se faisaient automatiquement ?
