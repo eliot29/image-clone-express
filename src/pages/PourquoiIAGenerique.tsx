@@ -200,13 +200,13 @@ const PourquoiIAGenerique = () => {
                 Deux exemples concrets, deux gains mesurables
               </h2>
               <div className="space-y-4 mb-4">
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6">
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">Poissonnerie · Pays d'Iroise</h3>
                   <p className="font-dm text-ardoise/85 leading-relaxed">
                     Une poissonnerie située dans une zone artisanale peu visible, sans budget communication. En structurant une stratégie nourrie par l'IA et en la mettant en œuvre avec des outils assistés&nbsp;: <strong className="text-or-mat">73&nbsp;000 vues</strong>, 622 partages, plus de 800 abonnés gagnés et <strong className="text-or-mat">+15&nbsp;% de chiffre d'affaires</strong> sur la période.
                   </p>
                 </div>
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6">
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">Électricien · Pays d'Iroise</h3>
                   <p className="font-dm text-ardoise/85 leading-relaxed">
                     Comparaison manuelle de plusieurs sites fournisseurs, plusieurs fois par semaine. Mise en place d'un assistant IA dédié&nbsp;: environ 10 minutes économisées par jour, soit <strong className="text-or-mat">près de 40 heures récupérées par an</strong>.
