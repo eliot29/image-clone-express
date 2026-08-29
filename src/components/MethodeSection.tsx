@@ -34,11 +34,35 @@ const steps = [
 
 
 const MethodeSection = () => {
+  const loopRef = useRef<HTMLDivElement | null>(null);
+  const [loopVisible, setLoopVisible] = useState(false);
+
+  useEffect(() => {
+    const el = loopRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setLoopVisible(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setLoopVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="methode" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="">
-          <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10 max-w-2xl">
+          <div className="card-lift border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10 max-w-2xl">
             <p className="font-dm text-ardoise/90 leading-relaxed">
               <strong className="text-navy">Une automatisation qui tourne en révèle une autre.</strong> On avance à votre rythme, un chantier à la fois — et je reste joignable entre les deux.
             </p>
@@ -54,7 +78,38 @@ const MethodeSection = () => {
             Un cycle, pas un projet qui se termine.
           </p>
 
-          <div className="space-y-0">
+          <div
+            ref={loopRef}
+            className={`relative space-y-0 ${loopVisible ? "loop-visible" : ""}`}
+          >
+            {/* Flèche de retour : dernière étape → première étape */}
+            <svg
+              className="hidden md:block absolute -left-12 top-5 bottom-5 h-[calc(100%-2.5rem)] w-12 text-or-mat overflow-visible"
+              viewBox="0 0 48 400"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <path
+                className="loop-path"
+                d="M44 396 C 6 396, 6 360, 6 200 C 6 40, 6 4, 44 4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeDasharray="400"
+                vectorEffect="non-scaling-stroke"
+              />
+              <path
+                className="loop-path"
+                d="M36 -2 L45 4 L36 10"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                vectorEffect="non-scaling-stroke"
+              />
+            </svg>
+
             {steps.map((step, i) =>
             <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group">
                 {/* Timeline */}
