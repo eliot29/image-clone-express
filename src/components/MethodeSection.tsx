@@ -1,124 +1,61 @@
-import { ArrowRight, RefreshCw } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/secondary/Reveal";
-
 
 
 const steps = [
 {
   num: "01",
-  title: "Je viens vous voir",
-  desc: "Visio ou téléphone, 20 à 30 minutes. Je cherche à comprendre votre activité, vos contraintes et vos objectifs, et à repérer les tâches qui vous coûtent le plus de temps.",
-  note: "Diagnostic gratuit. Sans engagement, aucune vente forcée."
+  title: "Diagnostic gratuit (20/30 min)",
+  desc: "Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion de déterminer si le besoin relève d'une mise en place de solution ou d'un accompagnement.",
+  note: "Sans engagement. Aucune vente forcée."
 },
 {
   num: "02",
-  title: "Je chiffre et je priorise",
-  desc: "Sous trois jours ouvrés, je vous adresse une proposition adaptée à votre situation réelle, avec les priorités identifiées et ce que chacune vous fait gagner.",
-  note: "Selon les besoins : mise en place de solutions sur-mesure, accompagnement à l'usage, ou les deux."
+  title: "Proposition sous trois jours ouvrés",
+  desc: "Une proposition adaptée à votre situation réelle, avec les priorités identifiées et les solutions recommandées.",
+  note: "Selon les besoins : mise en place de solutions IA sur-mesure, accompagnement à l'usage, ou combinaison des deux."
 },
 {
   num: "03",
-  title: "Je construis et je livre",
-  desc: "Je configure la solution, je la teste dans vos conditions réelles et je forme les personnes qui vont s'en servir.",
-  note: "Objectif : un outil qui fonctionne vraiment, adapté à votre quotidien."
+  title: "Mise en place ou accompagnement",
+  desc: "La solution est configurée et testée dans vos conditions réelles, ou les équipes sont accompagnées dans l'utilisation des outils.",
+  note: "Objectif : une solution ou un usage qui fonctionne vraiment, adapté à votre quotidien."
 },
 {
   num: "04",
-  title: "Je reste",
-  desc: "On mesure ce qui a été gagné, on regarde ce qui a changé côté outils, et on repart sur la priorité suivante.",
-  note: "Et on recommence."
+  title: "Suivi",
+  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages."
 }];
 
 
 const MethodeSection = () => {
-  const loopRef = useRef<HTMLDivElement | null>(null);
-  const [loopVisible, setLoopVisible] = useState(false);
-
-  useEffect(() => {
-    const el = loopRef.current;
-    if (!el || typeof IntersectionObserver === "undefined") {
-      setLoopVisible(true);
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setLoopVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section id="methode" className="bg-blanc-casse py-16 md:py-24">
-      <div className="section-shell">
-        <div className="">
-          <div className="card-lift border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10 max-w-2xl mx-auto">
-            <p className="font-dm text-ardoise/90 leading-relaxed">
-              <strong className="text-navy">Une automatisation qui tourne en révèle une autre.</strong> On avance à votre rythme, un chantier à la fois — et je reste joignable entre les deux.
-            </p>
-          </div>
-
+    <section id="methode" className="bg-blanc-casse py-6">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl lg:max-w-4xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
+            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
               La méthode Semaine 54
             </h2>
           </div>
 
-          <p className="font-dm text-ardoise/70 text-center mb-6 max-w-2xl mx-auto">
-            Un cycle, pas un projet qui se termine.
+          <p className="font-dm text-ardoise/70 text-center mb-6">
+            Un accompagnement structuré, étape par étape.
           </p>
 
-          <div
-            ref={loopRef}
-            className={`relative space-y-0 ${loopVisible ? "loop-visible" : ""}`}
-          >
-            {/* Flèche de retour : dernière étape → première étape */}
-            <svg
-              className="hidden md:block absolute -left-12 top-5 bottom-5 h-[calc(100%-2.5rem)] w-12 text-or-mat overflow-visible"
-              viewBox="0 0 48 400"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <path
-                className="loop-path"
-                d="M44 396 C 6 396, 6 360, 6 200 C 6 40, 6 4, 44 4"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeDasharray="400"
-                vectorEffect="non-scaling-stroke"
-              />
-              <path
-                className="loop-path"
-                d="M36 -2 L45 4 L36 10"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-
+          <div className="space-y-0">
             {steps.map((step, i) =>
             <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group">
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <span className="font-dm text-sm font-bold text-or-mat-clair">{step.num}</span>
+                    <span className="font-dm text-sm font-bold text-or-mat">{step.num}</span>
                   </div>
-
-                  <div className={`w-px h-full my-1 ${i < steps.length - 1 ? 'bg-navy/15' : 'bg-gradient-to-b from-or-mat/60 to-or-mat/0 border-dashed'}`} />
+                  {i < steps.length - 1 &&
+                <div className="w-px h-full bg-navy/15 my-1" />
+                }
                 </div>
 
                 {/* Content */}
@@ -126,27 +63,15 @@ const MethodeSection = () => {
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.note &&
-                <p className="font-dm text-xs text-or-mat-clair mt-3 italic">{step.note}</p>
+                <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
                 }
                 </div>
               </Reveal>
             )}
           </div>
 
-          {/* Retour au début du cycle */}
-          <div className="flex items-center gap-3 mt-2 mb-2">
-            <div className="w-10 flex justify-center">
-              <div className="w-9 h-9 rounded-full border border-or-mat/40 bg-or-mat/10 flex items-center justify-center">
-                <RefreshCw size={16} className="text-or-mat-clair" />
-              </div>
-            </div>
-            <p className="font-dm text-sm font-bold text-or-mat-clair">
-              … et on repart à l'étape 01 avec la priorité suivante.
-            </p>
-          </div>
 
-
-          <div className="text-center mt-6">
+          <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode

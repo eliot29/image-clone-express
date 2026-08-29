@@ -1,4 +1,4 @@
-import { Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, ShieldCheck, Ban, Compass, Repeat, CalendarCheck, Eye, Wrench, MessageCircle } from "lucide-react";
+import { Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, ShieldCheck, Ban, Compass } from "lucide-react";
 
 const prestations = [
 {
@@ -6,7 +6,7 @@ const prestations = [
   title: "Automatisation sur-mesure",
   badge: null,
   items: [
-    { icon: Workflow, text: "Automatisations connectées à vos outils" },
+    { icon: Workflow, text: "Workflows via n8n" },
     { icon: Link2, text: "Connexion à vos outils existants" },
     { icon: RotateCcw, text: "Automatisation des tâches répétitives" },
     { icon: Lightbulb, text: "Logique simple, robuste et évolutive" }
@@ -14,11 +14,11 @@ const prestations = [
 },
 {
   icon: GraduationCap,
-  title: "Formation à l'IA",
+  title: "Formation & acculturation IA",
   badge: "ChatGPT · Claude · Gemini · Copilot",
   items: [
     { icon: MessageSquare, text: "Usage structuré et professionnel" },
-    { icon: PenTool, text: "Savoir formuler vos demandes" },
+    { icon: PenTool, text: "Maîtrise du prompt" },
     { icon: Users, text: "Formation adaptée à votre niveau" },
     { icon: SlidersHorizontal, text: "Mise en pratique sur vos cas réels" }
   ]
@@ -33,35 +33,24 @@ const prestations = [
     { icon: Ban, text: "Éviter les abonnements inutiles" },
     { icon: Lightbulb, text: "Choisir ce qui correspond vraiment à votre activité" }
   ]
-},
-{
-  icon: Repeat,
-  title: "Accompagnement continu",
-  badge: null,
-  items: [
-    { icon: CalendarCheck, text: "Point régulier sur vos priorités" },
-    { icon: Eye, text: "Veille sur les outils qui bougent" },
-    { icon: Wrench, text: "Ajustement des automatisations existantes" },
-    { icon: MessageCircle, text: "Disponibilité entre deux points" }
-  ]
 }];
 
 
 const PrestationsSection = () => {
   return (
-    <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
-      <div className="section-shell">
-        <div className="text-left mb-4">
-          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
-            Trois façons de vous faire gagner du temps
+    <section id="prestations" className="bg-blanc-casse pt-6 pb-2">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-4">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
+            Trois leviers possibles
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
           {prestations.map((p, i) =>
           <div
             key={i}
-            className="card-lift rounded-xl border border-navy/10 bg-navy/5 hover:bg-navy/[0.08] transition-colors p-6 flex flex-col">
+            className="rounded-xl border border-navy/10 bg-navy/5 hover:bg-navy/[0.08] transition-colors p-6 flex flex-col">
             
               <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                 <p.icon size={22} className="text-or-mat" />
@@ -83,6 +72,10 @@ const PrestationsSection = () => {
             </div>
           )}
         </div>
+
+        
+
+        
       </div>
     </section>);
 };

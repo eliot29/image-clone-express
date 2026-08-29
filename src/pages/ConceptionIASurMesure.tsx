@@ -71,7 +71,7 @@ const ConceptionIASurMesure = () => {
                   Les <strong className="text-navy">workflows sur-mesure</strong> sont conçus à partir de votre fonctionnement réel, pas d'un modèle théorique. Ils respectent vos règles métier, vos validations, vos exceptions. Ils s'adaptent à votre organisation — pas l'inverse.
                 </p>
 
-                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qu'on met en place</h3>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -92,7 +92,7 @@ const ConceptionIASurMesure = () => {
                 </ul>
                 </div>
 
-                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">Cas d'usage fréquents</h3>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -133,7 +133,7 @@ const ConceptionIASurMesure = () => {
                   Il ne s'agit pas d'un chatbot gadget. Un <strong className="text-or-mat">Assistant IA métier</strong> est un véritable assistant <strong className="text-blanc-casse">connecté à vos données</strong> et à vos documents internes. Il vous aide à <strong className="text-blanc-casse">retrouver rapidement une information</strong>, à <strong className="text-blanc-casse">synthétiser un dossier</strong>, à préparer une décision en quelques secondes là où vous mettriez plusieurs minutes — voire plusieurs heures — à la main.
                 </p>
 
-                <div className="card-lift bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
+                <div className="bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-blanc-casse mb-3">Ce qu'il sait faire</h3>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -180,7 +180,7 @@ const ConceptionIASurMesure = () => {
                   Beaucoup d'entreprises fonctionnent encore avec des <strong className="text-navy">fichiers Excel partagés</strong>, des feuilles bricolées ou des méthodes informelles. Ces solutions tiennent un temps, puis deviennent vite ingérables&nbsp;: erreurs, doublons, version à jour introuvable, dépendance à une personne. Les <strong className="text-or-mat">Outils métier internes</strong> remplacent ces solutions dispersées par des <strong className="text-navy">interfaces simples</strong>, claires et adaptées à un usage quotidien.
                 </p>
 
-                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qu'on construit</h3>
                 <ul className="space-y-3 pl-1">
                   {[

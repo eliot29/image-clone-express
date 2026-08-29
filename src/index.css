@@ -7,7 +7,6 @@
     /* Semaine 54 — Design System */
     --navy: 215 48% 21%;        /* #1B2D4F */
     --or-mat: 41 52% 54%;       /* #C9A84C */
-    --or-mat-clair: 41 60% 33%; /* #8A6B23 — 4,5:1 sur blanc cassé */
     --blanc-casse: 36 38% 94%;  /* #F4F1EB */
     --gris-perle: 216 27% 94%;  /* #EDF0F4 */
     --ardoise: 210 32% 24%;     /* #2A3E52 */
@@ -49,20 +48,20 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'DM Sans', sans-serif;
-    font-size: 17px;
-    line-height: 1.7;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Sans', sans-serif;
   }
 }
 
-@layer components {
-  .section-shell {
-    @apply w-full max-w-[1140px] mx-auto px-6;
-  }
+/* Punchline with gold bar */
+.punchline {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid hsl(var(--or-mat));
 }
-
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
@@ -130,12 +129,10 @@ footer[id] {
 .reveal-scale {
   transform: scale(0.97);
 }
-
 .reveal.is-visible {
   opacity: 1;
   transform: none;
 }
-
 
 /* ---- Card interactions ---- */
 .card-lift {
@@ -149,73 +146,6 @@ footer[id] {
   box-shadow: var(--shadow-card-hover);
 }
 
-/* ---- Schémas de flux ---- */
-.flow-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.4rem 0.7rem;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(6px);
-  transition:
-    opacity 0.45s ease-out,
-    transform 0.45s ease-out;
-}
-.flow-diagram.is-visible .flow-box {
-  opacity: 1;
-  transform: none;
-}
-.flow-box-frame {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-}
-.flow-arrow {
-  stroke-dasharray: 40;
-  stroke-dashoffset: 40;
-  transition: stroke-dashoffset 0.45s ease-out;
-}
-.flow-diagram.is-visible .flow-arrow {
-  stroke-dashoffset: 0;
-}
-
-/* ---- Boucle de la méthode ---- */
-.loop-path {
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  transition: stroke-dashoffset 1.1s ease-out;
-}
-.loop-visible .loop-path {
-  stroke-dashoffset: 0;
-}
-
-/* ---- Cascade d'entrée (au chargement) ---- */
-.hero-stagger > * {
-  opacity: 0;
-  animation: hero-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-.hero-stagger > *:nth-child(1) { animation-delay: 0ms; }
-.hero-stagger > *:nth-child(2) { animation-delay: 90ms; }
-.hero-stagger > *:nth-child(3) { animation-delay: 180ms; }
-.hero-stagger > *:nth-child(4) { animation-delay: 270ms; }
-.hero-stagger > *:nth-child(5) { animation-delay: 360ms; }
-.hero-stagger > *:nth-child(6) { animation-delay: 450ms; }
-
-@keyframes hero-in {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .card-lift {
@@ -224,35 +154,12 @@ footer[id] {
   .reveal {
     opacity: 1;
     transform: none;
-    filter: none;
   }
   .card-lift:hover {
     transform: none;
-  }
-  .flow-box,
-  .flow-arrow,
-  .loop-path {
-    transition: none !important;
-  }
-  .flow-box {
-    opacity: 1;
-    transform: none;
-  }
-  .flow-arrow,
-  .loop-path {
-    stroke-dashoffset: 0;
-  }
-  .hero-stagger > * {
-    opacity: 1;
-    animation: none !important;
   }
   html {
     scroll-behavior: auto;
   }
 }
 
-
-/* Logos de marques : monochrome, couleur au survol */
-.brand-logo:hover {
-  fill: var(--brand-color);
-}

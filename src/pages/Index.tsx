@@ -1,9 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import ImpactSection from "@/components/ImpactSection";
 import ConceptSection from "@/components/ConceptSection";
 import PropositionSection from "@/components/PropositionSection";
-import PoissonnerieSection from "@/components/PoissonnerieSection";
 import CasConcretsSection from "@/components/CasConcretsSection";
 import PourquoiNousSection from "@/components/PourquoiNousSection";
 import SecteursSection from "@/components/SecteursSection";
@@ -21,18 +19,16 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        <Reveal variant="up"><ImpactSection /></Reveal>
-        <Reveal variant="up"><ConceptSection /></Reveal>
-        <Reveal variant="up"><PropositionSection /></Reveal>
-        <Reveal variant="up"><PoissonnerieSection /></Reveal>
-        <Reveal variant="up"><CasConcretsSection /></Reveal>
-        <Reveal variant="up"><PourquoiNousSection /></Reveal>
-        <Reveal variant="up"><SecteursSection /></Reveal>
-        <Reveal variant="up"><MethodeSection /></Reveal>
-        <Reveal variant="up"><OutilsSection /></Reveal>
-        <Reveal variant="up"><SecuritySection /></Reveal>
-        <Reveal variant="up"><CalculateurSection /></Reveal>
-        <Reveal variant="up"><ContactSection /></Reveal>
+        <Reveal><ConceptSection /></Reveal>
+        <Reveal><PropositionSection /></Reveal>
+        <Reveal><CasConcretsSection /></Reveal>
+        <Reveal><PourquoiNousSection /></Reveal>
+        <Reveal><SecteursSection /></Reveal>
+        <Reveal><MethodeSection /></Reveal>
+        <Reveal><OutilsSection /></Reveal>
+        <Reveal><SecuritySection /></Reveal>
+        <Reveal><ContactSection /></Reveal>
+        <Reveal><CalculateurSection /></Reveal>
       </main>
       <FooterSection />
     </>

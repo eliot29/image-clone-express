@@ -1,84 +1,95 @@
-import { Clock, Mail, FileText, Share2, PhoneCall, Search } from "lucide-react";
+import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroMecanisme from "@/assets/hero-mecanisme.jpg";
 
 const painPoints = [
-  { icon: FileText, text: "Devis générés en quelques minutes" },
-  { icon: Search, text: "Documents lus et classés instantanément" },
-  { icon: Mail, text: "Relances clients envoyées automatiquement" },
-  { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
-  { icon: PhoneCall, text: "Appels entrants traités 24h/24" },
-  { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
-];
+{ icon: FileText, text: "Devis générés en quelques minutes" },
+{ icon: Search, text: "Informations trouvées instantanément" },
+{ icon: Mail, text: "Relances clients envoyés automatiquement" },
+{ icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
+{ icon: FolderOpen, text: "Administratif traité sans y toucher" },
+{ icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
+{ icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
+{ icon: Image, text: "Supports visuels créés sans designer" }];
+
 
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="section-shell pt-24 pb-16 lg:pt-28 lg:pb-24 relative z-10">
-        <div className="hero-stagger text-center">
-          <p className="font-dm font-bold italic text-navy text-[17px] mb-5 leading-snug">
-            Une année compte 52 semaines.<br className="sm:hidden" />{" "}
-            <span className="text-or-mat-clair">Gagnez votre Semaine 54.</span>
-          </p>
-
-          <h1 className="font-dm font-extrabold text-[34px] sm:text-[46px] lg:text-[56px] text-navy mb-5 leading-[1.1] tracking-[-0.02em] max-w-3xl mx-auto">
-            J'automatise ce qui vous fait perdre du temps.
-          </h1>
-
-          <p className="font-dm text-ardoise text-[18px] sm:text-[20px] mb-8 leading-snug max-w-2xl mx-auto">
-            Je comprends d'abord votre métier. Ensuite seulement, je construis.
-          </p>
-
-          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mb-10">
-            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
-              <span className="w-2 h-2 rounded-full bg-or-mat" />
-              <span className="font-dm text-[12px] sm:text-[13px] text-or-mat-clair font-semibold tracking-wide uppercase whitespace-nowrap">
-                Basé à Brest (Finistère)
-              </span>
-            </span>
-            <span className="inline-flex items-center px-3 sm:px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
-              <span className="font-dm text-[12px] sm:text-[13px] text-navy font-medium whitespace-nowrap">
-                Agence IA pour TPE et PME bretonnes
-              </span>
-            </span>
-            <span className="inline-flex items-center px-3 sm:px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
-              <span className="font-dm text-[12px] sm:text-[13px] text-navy font-medium whitespace-nowrap">
-                Automatisations sur mesure
-              </span>
-            </span>
-          </div>
-
-          <div className="max-w-[560px] mx-auto mb-10">
+      <div className="container mx-auto px-6 pt-20 pb-6 lg:pt-24 lg:pb-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Logo - hidden on mobile */}
+          <div className="hidden sm:flex justify-center mt-12 mb-6">
             <img
-              src={heroMecanisme}
-              alt="Schéma : des tâches répétitives entrent dans un mécanisme d'engrenages et ressortent en temps gagné"
-              width={1024}
-              height={1024}
-              className="w-full h-auto rounded-xl mix-blend-multiply"
+              src="/logo-semaine54-dark-new.svg"
+              alt="Semaine 54"
+              className="h-20 lg:h-24 w-auto"
             />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch gap-x-6 gap-y-4 mb-10">
-            {painPoints.map((point, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center gap-3 min-h-[56px] h-full text-ardoise font-dm text-[16px] leading-[1.5] text-center"
-              >
-                <point.icon size={18} className="text-or-mat shrink-0" />
-                <span>{point.text}</span>
-              </div>
-            ))}
+          {/* Punchline élégante */}
+          <p className="font-bold italic text-navy text-xs sm:text-sm mt-8 sm:mt-0 mb-8 leading-tight" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
+            Une année compte 52 semaines.<br className="sm:hidden" /> <span className="text-or-mat">Gagnez votre Semaine 54.</span>
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
+              <span className="w-2 h-2 rounded-full bg-or-mat animate-pulse" />
+              <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">Basé à Brest (Finistère)</span>
+            </span>
+            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
+              <span className="font-dm text-sm text-navy font-medium">Agence IA pour TPE et PME bretonnes</span>
+            </span>
+            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
+              <span className="font-dm text-sm text-navy font-medium">Automatisations & conseils IA sur-mesure</span>
+            </span>
           </div>
 
-          <div className="flex justify-center">
+          {/* Punchline */}
+          <h1 className="font-dm font-bold text-lg sm:text-xl text-navy mb-6 max-w-full mx-auto leading-snug tracking-tight">
+            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
+          </h1>
+
+          {/* Punchline */}
+          
+
+
+
+          
+
+          {/* Intro text */}
+          
+
+          
+
+          {/* Pain points */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
+            {painPoints.map((point, i) =>
+            <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
+                <point.icon size={18} className="text-or-mat/60 shrink-0" />
+                <span>{point.text}</span>
+              </div>
+            )}
+          </div>
+
+          <p className="font-dm text-ardoise text-sm mb-6 italic">
+            Et si toutes ces tâches se faisaient automatiquement ?
+          </p>
+
+          {/* Stat highlight */}
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
+            <span className="text-or-mat">30 minutes</span> gagnées par jour = <span className="text-or-mat">120 heures</span> par an.
+            <br />
+            Soit près de <span className="text-or-mat">3 semaines</span> de travail retrouvées.
+          </p>
+
+          <div className="mt-8 flex justify-center">
             <Button variant="cta" size="lg" className="w-full sm:w-auto text-center whitespace-normal" asChild>
-              <a href="#calculateur">Découvrez combien de temps vous pourriez gagner par an</a>
+              <a href="#calculateur">Découvrez combien de temps vous pourriez gagner</a>
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;

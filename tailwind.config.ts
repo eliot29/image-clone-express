@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        syne: ["Syne", "sans-serif"],
         dm: ["DM Sans", "sans-serif"],
       },
       colors: {
@@ -24,7 +25,6 @@ export default {
         foreground: "hsl(var(--foreground))",
         navy: "hsl(var(--navy))",
         "or-mat": "hsl(var(--or-mat))",
-        "or-mat-clair": "hsl(var(--or-mat-clair))",
         "blanc-casse": "hsl(var(--blanc-casse))",
         "gris-perle": "hsl(var(--gris-perle))",
         ardoise: "hsl(var(--ardoise))",

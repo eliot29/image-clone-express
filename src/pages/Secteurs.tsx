@@ -92,7 +92,7 @@ const Secteurs = () => {
             <div
               key={secteur.id}
               style={{ animationDelay: `${idx * 60}ms`, animationFillMode: "both" }}
-              className="card-lift rounded-xl border border-blanc-casse/10 bg-blanc-casse/5 p-5 hover:bg-blanc-casse/[0.08] transition-colors animate-fade-in"
+              className="rounded-xl border border-blanc-casse/10 bg-blanc-casse/5 p-5 hover:bg-blanc-casse/[0.08] transition-colors animate-fade-in"
             >
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-2xl">{secteur.emoji}</span>
