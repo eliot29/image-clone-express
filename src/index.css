@@ -159,32 +159,3 @@ footer[id] {
     scroll-behavior: auto;
   }
 }
-
-
-
-/* Carrousel rapide des points forts (Hero) */
-@keyframes slide-quick-in {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-slide-quick {
-  animation: slide-quick-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.animate-slide-quick-item {
-  animation: slide-quick-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-slide-quick,
-  .animate-slide-quick-item {
-    animation: none !important;
-  }
-}
