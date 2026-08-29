@@ -77,7 +77,7 @@ const Navigation = () => {
             ))}
           </div>
           <Button variant="ctaNav" size="default" className="ml-8 flex-shrink-0 text-[15px]" asChild>
-            <a href="#contact">Diagnostic gratuit</a>
+            <a href="#contact">Être rappelé</a>
           </Button>
         </div>
 
@@ -107,7 +107,7 @@ const Navigation = () => {
             </a>
           ))}
           <Button variant="cta" size="default" className="mt-3 mx-4" asChild>
-            <a href="#contact" onClick={() => setMobileOpen(false)}>Diagnostic gratuit</a>
+            <a href="#contact" onClick={() => setMobileOpen(false)}>Être rappelé</a>
           </Button>
         </div>
       )}
