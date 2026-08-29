@@ -51,7 +51,7 @@ const cases = [
 
 const CasConcretsSection = () => {
   return (
-    <section id="cas" className="bg-navy py-6">
+    <section id="cas" className="bg-navy py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-4">
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse">

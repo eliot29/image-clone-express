@@ -32,7 +32,7 @@ const steps = [
 
 const MethodeSection = () => {
   return (
-    <section id="methode" className="bg-blanc-casse py-6">
+    <section id="methode" className="bg-blanc-casse py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
           <div className="text-center mb-6">

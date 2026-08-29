@@ -30,7 +30,7 @@ const solutions = [
 
 const SecteursSection = () => {
   return (
-    <section id="secteurs" className="bg-navy py-6">
+    <section id="secteurs" className="bg-navy py-16 md:py-24">
       <div className="container mx-auto px-6">
         {/* Bandeau domaines – défile de gauche à droite */}
         <div className="relative overflow-hidden mb-4">
