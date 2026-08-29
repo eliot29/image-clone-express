@@ -8,7 +8,7 @@ const ConceptSection = () => {
     <section id="concept" className="bg-navy py-16 md:py-24">
       <div className="section-shell">
         <div className=" text-center">
-          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-6">
+          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-6">
             L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
             <span className="text-or-mat">
               Sous certaines conditions.

@@ -89,7 +89,7 @@ const SecteursSection = () => {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-left">
           <Button variant="cta" size="lg" asChild>
             <a href="#contact">Découvrir les cas d'usage par secteur</a>
           </Button>

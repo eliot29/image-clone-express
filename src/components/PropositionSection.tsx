@@ -120,16 +120,16 @@ const PropositionSection = () => {
     <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="">
-          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-center">
+          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-left">
             Ce que je propose concrètement
           </h2>
 
-          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-left max-w-2xl">Après un <strong className="text-navy">audit gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
           {/* Audit block - DESKTOP centered */}
           <div className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
                 Diagnostic gratuit
               </h3>
               <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 justify-center">
@@ -171,7 +171,7 @@ const PropositionSection = () => {
           <div className="md:hidden mb-6">
             {/* Audit */}
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
                 Diagnostic gratuit
               </h3>
               <div className="flex flex-col gap-3">
@@ -201,7 +201,7 @@ const PropositionSection = () => {
             {/* Bloc 1 - Conception IA */}
             <div>
               <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
-                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
                   Conception IA sur-mesure
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -222,7 +222,7 @@ const PropositionSection = () => {
 
             {/* Bloc 2 - Accompagnement */}
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm mt-4">
-                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
                   Accompagnement IA
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -243,7 +243,7 @@ const PropositionSection = () => {
 
           <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
                 Conception IA sur-mesure
               </h3>
               <div className="flex flex-col gap-3">
@@ -262,7 +262,7 @@ const PropositionSection = () => {
             </div>
 
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
                 Accompagnement IA
               </h3>
               <div className="flex flex-col gap-3">
