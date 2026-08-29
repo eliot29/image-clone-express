@@ -1,4 +1,6 @@
 import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
+import CalculateurSection from "@/components/CalculateurSection";
+
 
 
 const painPoints = [
@@ -101,14 +103,17 @@ const HeroSection = () => {
             Et si toutes ces tâches se faisaient automatiquement ?
           </p>
 
-          {/* Punchline + CTA côte à côte */}
-          <div className="mt-3 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <p className="inline-block bg-navy rounded-2xl px-6 sm:px-8 py-4 sm:py-5 shadow-lg">
-              <span className="font-dm font-bold italic text-blanc-casse text-lg sm:text-xl leading-snug">
+          {/* Punchline + calculateur compact côte à côte */}
+          <div className="mt-3 flex flex-col sm:flex-row items-stretch justify-center gap-4 sm:gap-5 text-left">
+            <p className="inline-flex items-center bg-navy rounded-2xl px-6 sm:px-7 py-4 sm:py-5 shadow-lg flex-1 sm:max-w-xs">
+              <span className="font-dm font-bold italic text-blanc-casse text-base sm:text-lg leading-snug">
                 Une année compte 52 semaines.{"\n\n"}Gagnez votre{" "}
                 <span className="text-or-mat">Semaine 54</span>.
               </span>
             </p>
+            <div className="flex-1 sm:max-w-xs">
+              <CalculateurSection />
+            </div>
           </div>
         </div>
       </div>

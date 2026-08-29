@@ -9,7 +9,7 @@ import MethodeSection from "@/components/MethodeSection";
 import OutilsSection from "@/components/OutilsSection";
 import SecuritySection from "@/components/SecuritySection";
 import ContactSection from "@/components/ContactSection";
-import CalculateurSection from "@/components/CalculateurSection";
+
 import FooterSection from "@/components/FooterSection";
 import Reveal from "@/components/secondary/Reveal";
 
@@ -28,7 +28,6 @@ const Index = () => {
         <Reveal><OutilsSection /></Reveal>
         <Reveal><SecuritySection /></Reveal>
         <Reveal><ContactSection /></Reveal>
-        <Reveal><CalculateurSection /></Reveal>
       </main>
       <FooterSection />
     </>
