@@ -43,7 +43,7 @@ const PourquoiNousSection = () => {
           <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-6 lg:gap-10 items-start">
             {/* PARCOURS */}
             <Reveal className="lg:sticky lg:top-24">
-              <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-or-mat">
+              <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
                 Parcours
               </span>
               <p className="font-dm text-ardoise/80 leading-relaxed mt-3">
@@ -63,7 +63,7 @@ const PourquoiNousSection = () => {
             {/* DÉCLIC → RÉSULTATS → SOLUTIONS */}
             <div className="space-y-4">
               <Reveal delay={80} className="bg-navy rounded-xl p-5 sm:p-6">
-                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-or-mat">
+                <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
                   Résultats mesurés
                 </span>
                 <p className="font-dm text-sm text-blanc-casse/80 leading-relaxed mt-2">
@@ -88,7 +88,7 @@ const PourquoiNousSection = () => {
               </Reveal>
 
               <Reveal delay={160} className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6">
-                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-or-mat">
+                <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
                   Puis son quotidien
                 </span>
                 <p className="font-dm text-sm text-ardoise/80 leading-relaxed mt-2 mb-4">
