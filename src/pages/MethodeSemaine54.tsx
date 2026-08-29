@@ -103,7 +103,7 @@ const MethodeSemaine54 = () => {
               </p>
 
               <div className="space-y-6">
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6">
                   <h3 className="font-dm font-bold text-xl text-navy mb-2"><span className="text-or-mat">01.</span> Diagnostic (20 à 30 minutes)</h3>
                   <p className="font-dm text-ardoise/85 leading-relaxed mb-2">
                     Un échange par téléphone ou en visio pour comprendre votre activité, votre organisation, vos contraintes et vos objectifs réels. C'est la première étape, indispensable, pour ne proposer que ce qui aura un véritable impact.
@@ -114,7 +114,7 @@ const MethodeSemaine54 = () => {
                   <p className="italic text-or-mat font-semibold mt-2">Sans engagement. Aucune vente forcée.</p>
                 </div>
 
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6">
                   <h3 className="font-dm font-bold text-xl text-navy mb-2"><span className="text-or-mat">02.</span> Orientation et proposition</h3>
                   <p className="font-dm text-ardoise/85 leading-relaxed mb-2">
                     À l'issue du diagnostic, une orientation claire est définie. Toutes les entreprises n'ont pas le même besoin&nbsp;: certaines cherchent à supprimer des tâches techniques, d'autres à mieux utiliser les outils IA déjà accessibles. Deux approches sont possibles, et peuvent se combiner&nbsp;: la <strong className="text-or-mat">Conception IA sur-mesure</strong> et l'<strong className="text-or-mat">Accompagnement IA</strong>.
@@ -124,7 +124,7 @@ const MethodeSemaine54 = () => {
                   </p>
                 </div>
 
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6">
                   <h3 className="font-dm font-bold text-xl text-navy mb-2"><span className="text-or-mat">03.</span> Déploiement et ajustement</h3>
                   <p className="font-dm text-ardoise/85 leading-relaxed mb-2">
                     Les solutions sont mises en place dans vos <strong className="text-navy">conditions réelles</strong>, avec vos données et vos outils. Cette étape est essentielle&nbsp;: une solution ne vaut que si elle fonctionne sur le terrain, pas en démonstration.
@@ -137,7 +137,7 @@ const MethodeSemaine54 = () => {
                   </Highlight>
                 </div>
 
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6">
                   <h3 className="font-dm font-bold text-xl text-navy mb-2"><span className="text-or-mat">04.</span> Autonomie et suivi</h3>
                   <p className="font-dm text-ardoise/85 leading-relaxed mb-2">
                     L'objectif est votre <strong className="text-or-mat">autonomie, pas votre dépendance</strong>. Une solution n'a d'intérêt que si elle vit dans la durée, sans intervention permanente d'un prestataire externe. Vous comprenez comment elle fonctionne, comment l'utiliser et comment l'adapter si vos besoins évoluent.

@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import ImpactSection from "@/components/ImpactSection";
 import ConceptSection from "@/components/ConceptSection";
 import PropositionSection from "@/components/PropositionSection";
 import PoissonnerieSection from "@/components/PoissonnerieSection";
@@ -20,6 +21,7 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
+        <ImpactSection />
         <Reveal variant="up"><ConceptSection /></Reveal>
         <Reveal variant="up"><PropositionSection /></Reveal>
         <PoissonnerieSection />

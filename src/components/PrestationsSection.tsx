@@ -61,7 +61,7 @@ const PrestationsSection = () => {
           {prestations.map((p, i) =>
           <div
             key={i}
-            className="rounded-xl border border-navy/10 bg-navy/5 hover:bg-navy/[0.08] transition-colors p-6 flex flex-col">
+            className="card-lift rounded-xl border border-navy/10 bg-navy/5 hover:bg-navy/[0.08] transition-colors p-6 flex flex-col">
             
               <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center mb-4">
                 <p.icon size={22} className="text-or-mat" />

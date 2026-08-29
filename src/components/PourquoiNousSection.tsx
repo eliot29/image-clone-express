@@ -16,7 +16,7 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <div className="bg-card rounded-xl shadow-card p-6 md:p-8 mb-6 max-w-2xl">
+          <div className="card-lift bg-card rounded-xl shadow-card p-6 md:p-8 mb-6 max-w-2xl">
             <p className="font-dm text-ardoise/85 text-[17px] leading-relaxed">
               <strong className="text-navy font-bold">Je ne suis pas ingénieur.</strong> J'ai passé des années à vendre, donc je sais écouter un dirigeant avant de proposer quoi que ce soit. Et j'utilise l'IA tous les jours depuis assez longtemps pour savoir ce qui marche vraiment et ce qui n'est qu'un effet de mode.
             </p>

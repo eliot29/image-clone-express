@@ -68,7 +68,7 @@ const AccompagnementIA = () => {
                   Une formation concrète, basée sur des <strong className="text-navy">cas réels d'entreprise</strong>. L'objectif n'est pas d'enseigner la théorie de l'IA, mais de transformer rapidement l'usage des outils en <strong className="text-or-mat">gains de temps mesurables</strong>.
                 </p>
 
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qui est couvert</h3>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -115,7 +115,7 @@ const AccompagnementIA = () => {
                   Donner accès à des outils IA ne suffit pas. Sans cadre, les usages deviennent rapidement désorganisés&nbsp;: chacun teste de son côté, les pratiques s'éparpillent, les résultats restent décevants. L'intégration consiste à <strong className="text-blanc-casse">structurer les usages</strong> dans la durée, dans un <strong className="text-blanc-casse">cadre clair</strong>, pour qu'ils deviennent réellement utiles à l'entreprise.
                 </p>
 
-                <div className="bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
+                <div className="card-lift bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-blanc-casse mb-3">Ce qui est mis en place</h3>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -165,7 +165,7 @@ const AccompagnementIA = () => {
                   Le <strong className="text-navy">marché saturé</strong> des outils IA évolue chaque semaine. Des centaines de solutions apparaissent, souvent payantes, parfois redondantes. Sans cadre, les abonnements se multiplient sans véritable bénéfice. Le rôle du conseil est de vous orienter vers ce qui correspond à votre niveau, à vos <strong className="text-navy">besoins réels</strong> et à votre organisation.
                 </p>
 
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
+                <div className="card-lift bg-navy/5 border border-navy/10 rounded-xl p-6 mt-4">
                 <h3 className="font-dm font-bold text-xl text-navy mb-3">Ce qui est apporté</h3>
                 <ul className="space-y-3 pl-1">
                   {[
