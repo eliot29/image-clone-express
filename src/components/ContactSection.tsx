@@ -50,7 +50,7 @@ const ContactSection = () => {
 
   return (
     <section id="audit" className="bg-navy py-16 md:py-24">
-      <div className="container mx-auto px-6">
+      <div className="section-shell">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-4">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">

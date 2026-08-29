@@ -31,7 +31,7 @@ const solutions = [
 const SecteursSection = () => {
   return (
     <section id="secteurs" className="bg-navy py-16 md:py-24">
-      <div className="container mx-auto px-6">
+      <div className="section-shell">
         {/* Bandeau domaines – défile de gauche à droite */}
         <div className="relative overflow-hidden mb-4">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-navy to-transparent z-10 pointer-events-none" />

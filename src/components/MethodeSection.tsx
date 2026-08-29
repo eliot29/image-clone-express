@@ -34,7 +34,7 @@ const steps = [
 const MethodeSection = () => {
   return (
     <section id="methode" className="bg-blanc-casse py-16 md:py-24">
-      <div className="container mx-auto px-6">
+      <div className="section-shell">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
           <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10">
             <p className="font-dm text-ardoise/90 leading-relaxed">

@@ -118,7 +118,7 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
 const PropositionSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
-      <div className="container mx-auto px-6">
+      <div className="section-shell">
         <div className="max-w-4xl lg:max-w-6xl mx-auto">
           <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-center">
             Ce que je propose concrètement

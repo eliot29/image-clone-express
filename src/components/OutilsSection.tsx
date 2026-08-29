@@ -3,7 +3,7 @@ const integrations = ["Gmail", "HubSpot", "Google Sheets", "Slack", "Outlook Cal
 const OutilsSection = () => {
   return (
     <section className="bg-navy py-16 md:py-24">
-      <div className="container mx-auto px-6">
+      <div className="section-shell">
         <p className="font-dm font-bold text-blanc-casse text-lg sm:text-xl mb-3 text-center max-w-full mx-auto leading-snug">
           Le marché a des centaines d'outils. <span className="text-or-mat">Mon rôle de partenaire : faire le tri pour vous.</span>
         </p>
