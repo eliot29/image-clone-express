@@ -80,14 +80,42 @@ const HeroSection = () => {
 
           
 
-          {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
-            {painPoints.map((point, i) =>
-            <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
-                <point.icon size={18} className="text-or-mat/60 shrink-0" />
-                <span>{point.text}</span>
+          {/* Pain points - carrousel par groupes de 3 */}
+          <div
+            className="relative max-w-3xl mx-auto mb-6 overflow-hidden"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+            aria-live="polite"
+          >
+            <div key={slide} className="animate-slide-quick">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
+                {groups[slide].map((point, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 text-ardoise font-dm text-sm animate-slide-quick-item"
+                    style={{ animationDelay: `${i * 70}ms` }}
+                  >
+                    <point.icon size={18} className="text-or-mat/60 shrink-0" />
+                    <span>{point.text}</span>
+                  </div>
+                ))}
               </div>
-            )}
+            </div>
+          </div>
+
+          {/* Points de repère du carrousel */}
+          <div className="flex justify-center gap-2 mb-4">
+            {groups.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`Afficher le groupe ${i + 1}`}
+                onClick={() => setSlide(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === slide ? "w-6 bg-or-mat" : "w-1.5 bg-navy/20 hover:bg-navy/40"
+                }`}
+              />
+            ))}
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-6 italic">
