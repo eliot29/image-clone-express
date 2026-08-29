@@ -1,4 +1,4 @@
-import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image } from "lucide-react";
+import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
