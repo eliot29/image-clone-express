@@ -1,18 +1,38 @@
-import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image, Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
-{ icon: FileText, text: "Devis générés en quelques minutes" },
-{ icon: Search, text: "Documents lus et classés instantanément" },
-{ icon: Mail, text: "Relances clients envoyés automatiquement" },
-{ icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
-{ icon: PhoneCall, text: "Appels entrants traités 24h/24" },
-{ icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
-{ icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
-{ icon: Image, text: "Supports visuels créés sans designer" }];
+  { icon: FileText, text: "Devis générés en quelques minutes" },
+  { icon: Search, text: "Documents lus et classés instantanément" },
+  { icon: Mail, text: "Relances clients envoyés automatiquement" },
+  { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
+  { icon: PhoneCall, text: "Appels entrants traités 24h/24" },
+  { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
+  { icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
+  { icon: Image, text: "Supports visuels créés sans designer" },
+  { icon: Mic, text: "Stock mis à jour à la voix" },
+];
+
+const GROUP_SIZE = 3;
+const groups: typeof painPoints[] = [];
+for (let i = 0; i < painPoints.length; i += GROUP_SIZE) {
+  groups.push(painPoints.slice(i, i + GROUP_SIZE));
+}
+const SLIDE_INTERVAL = 2200;
 
 
 const HeroSection = () => {
+  const [slide, setSlide] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+    const id = setInterval(() => {
+      setSlide((s) => (s + 1) % groups.length);
+    }, SLIDE_INTERVAL);
+    return () => clearInterval(id);
+  }, [paused]);
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
       <div className="container mx-auto px-6 pt-20 pb-6 lg:pt-24 lg:pb-6 relative z-10">
@@ -60,14 +80,42 @@ const HeroSection = () => {
 
           
 
-          {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
-            {painPoints.map((point, i) =>
-            <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
-                <point.icon size={18} className="text-or-mat/60 shrink-0" />
-                <span>{point.text}</span>
+          {/* Pain points - carrousel par groupes de 3 */}
+          <div
+            className="relative max-w-3xl mx-auto mb-6 overflow-hidden"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+            aria-live="polite"
+          >
+            <div key={slide} className="animate-slide-quick">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
+                {groups[slide].map((point, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 text-ardoise font-dm text-sm animate-slide-quick-item"
+                    style={{ animationDelay: `${i * 70}ms` }}
+                  >
+                    <point.icon size={18} className="text-or-mat/60 shrink-0" />
+                    <span>{point.text}</span>
+                  </div>
+                ))}
               </div>
-            )}
+            </div>
+          </div>
+
+          {/* Points de repère du carrousel */}
+          <div className="flex justify-center gap-2 mb-4">
+            {groups.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`Afficher le groupe ${i + 1}`}
+                onClick={() => setSlide(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === slide ? "w-6 bg-or-mat" : "w-1.5 bg-navy/20 hover:bg-navy/40"
+                }`}
+              />
+            ))}
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-6 italic">
