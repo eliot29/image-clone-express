@@ -20,7 +20,7 @@ const PourquoiNousSection = () => {
             <p className="text-ardoise/80">
               Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de <strong className="text-navy">Semaine 54</strong>. J'ai exercé pendant une dizaine d'années différents métiers dans le secteur de la <strong className="text-navy">grande distribution</strong>.
             </p>
-            <p className="text-ardoise/80">Depuis plus de trois ans, je teste et utilise les <strong className="text-navy">outils d'IA dans des contextes professionnels</strong> afin d'en comprendre les <strong className="text-navy">usages pertinents pour les entreprises.</strong>
+            <p className="text-ardoise/80">Depuis plus de trois ans, j'explore et utilise les <strong className="text-navy">outils d'IA dans des contextes professionnels</strong> afin d'en comprendre les <strong className="text-navy">usages pertinents pour les entreprises.</strong>
             </p>
             <p className="text-ardoise/80">
               <strong className="text-navy">Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.</strong>
