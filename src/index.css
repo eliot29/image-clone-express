@@ -147,37 +147,37 @@ footer[id] {
 }
 
 /* ---- Marquee horizontal ---- */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+@keyframes task-marquee-forward {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
-@keyframes marquee-reverse {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
+@keyframes task-marquee-reverse {
+  from { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(0, 0, 0); }
 }
 
-.marquee-row-forward {
-  animation: marquee 26s linear infinite;
+.task-marquee-forward {
+  animation: task-marquee-forward 14s linear infinite;
   will-change: transform;
 }
 
-.marquee-row-reverse {
-  animation: marquee-reverse 32s linear infinite;
+.task-marquee-reverse {
+  animation: task-marquee-reverse 17s linear infinite;
   will-change: transform;
 }
 
 @media (max-width: 639px) {
-  .marquee-row-forward {
-    animation-duration: 38s;
+  .task-marquee-forward {
+    animation-duration: 20s;
   }
 
-  .marquee-row-reverse {
-    animation-duration: 46s;
+  .task-marquee-reverse {
+    animation-duration: 24s;
   }
 }
 
 @media (min-width: 640px) and (hover: hover) {
-  .group:hover .marquee-row {
+  .marquee-row:hover {
     animation-play-state: paused;
   }
 }
