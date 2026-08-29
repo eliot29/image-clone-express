@@ -174,13 +174,13 @@ footer[id] {
   to { transform: translate3d(0, 0, 0); }
 }
 @keyframes task-status-pending {
-  0%, 42% { opacity: 1; }
-  50%, 92% { opacity: 0; }
+  0%, 44% { opacity: 1; }
+  47%, 94% { opacity: 0; }
   100% { opacity: 1; }
 }
 @keyframes task-status-done {
-  0%, 42% { opacity: 0; transform: translateY(2px); }
-  50%, 92% { opacity: 1; transform: translateY(0); }
+  0%, 46% { opacity: 0; transform: translateY(2px); }
+  49%, 94% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(2px); }
 }
 @keyframes task-wave {
