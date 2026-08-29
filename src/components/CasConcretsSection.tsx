@@ -7,7 +7,7 @@ type CaseItem = {
   location: string;
   problem: string;
   solution: string;
-  results?: { icon: React.ComponentType<{ size?: number; className?: string }>; label: string }[];
+  results?: { icon: LucideIcon; label: string }[];
 };
 
 const cases: CaseItem[] = [
