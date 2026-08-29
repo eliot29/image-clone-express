@@ -32,11 +32,7 @@ const Navigation = () => {
       <div className="flex items-center justify-between w-full">
         {/* Logo - centered on mobile */}
         <a href="#accueil" className="flex-shrink-0 md:mr-4">
-          <img
-            src="/logo-semaine54-blanc-new.svg"
-            alt="Semaine 54"
-            className="h-10 md:h-14 w-auto"
-          />
+          <AnimatedLogo className="h-10 md:h-14" />
         </a>
 
         {/* Desktop links */}
