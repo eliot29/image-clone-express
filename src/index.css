@@ -251,3 +251,8 @@ footer[id] {
   }
 }
 
+
+/* Logos de marques : monochrome, couleur au survol */
+.brand-logo:hover {
+  fill: var(--brand-color);
+}

@@ -20,19 +20,19 @@ const Index = () => {
     <>
       <Navigation />
       <main>
-        <HeroSection />
-        <ImpactSection />
+        <Reveal variant="up"><HeroSection /></Reveal>
+        <Reveal variant="up"><ImpactSection /></Reveal>
         <Reveal variant="up"><ConceptSection /></Reveal>
         <Reveal variant="up"><PropositionSection /></Reveal>
-        <PoissonnerieSection />
-        <CasConcretsSection />
-        <PourquoiNousSection />
-        <SecteursSection />
-        <MethodeSection />
-        <OutilsSection />
-        <SecuritySection />
-        <CalculateurSection />
-        <ContactSection />
+        <Reveal variant="up"><PoissonnerieSection /></Reveal>
+        <Reveal variant="up"><CasConcretsSection /></Reveal>
+        <Reveal variant="up"><PourquoiNousSection /></Reveal>
+        <Reveal variant="up"><SecteursSection /></Reveal>
+        <Reveal variant="up"><MethodeSection /></Reveal>
+        <Reveal variant="up"><OutilsSection /></Reveal>
+        <Reveal variant="up"><SecuritySection /></Reveal>
+        <Reveal variant="up"><CalculateurSection /></Reveal>
+        <Reveal variant="up"><ContactSection /></Reveal>
       </main>
       <FooterSection />
     </>
