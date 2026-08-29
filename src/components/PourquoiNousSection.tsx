@@ -42,17 +42,12 @@ const PourquoiNousSection = () => {
               <strong className="text-navy">Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.</strong>
             </p>
             <p className="text-ardoise/80">
-              <strong className="text-navy">Deux expériences concrètes</strong> ont confirmé cette conviction :
+              <strong className="text-navy">Une expérience concrète</strong> a confirmé cette conviction :
             </p>
           </div>
 
           <div className="space-y-4 mb-6">
             <Reveal delay={60} className="card-lift bg-card rounded-xl shadow-card p-6">
-              <p className="font-dm text-ardoise/80 leading-relaxed">
-                J'ai accompagné une poissonnerie du Finistère.
-                En structurant une stratégie nourrie par l'IA et en utilisant des outils assistés par IA, les résultats ont été mesurables : <strong className="text-navy">73 000 vues</strong>, plus de <strong className="text-navy">800 abonnés gagnés</strong> et <strong className="text-or-mat-clair">+15 % de chiffre d'affaires</strong>.
-              </p>
-            </Reveal>
 
             <Reveal delay={180} className="card-lift bg-card rounded-xl shadow-card p-6">
               <p className="font-dm text-ardoise/80 leading-relaxed">
