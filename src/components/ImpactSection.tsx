@@ -9,7 +9,7 @@ const ImpactSection = () => {
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10 text-left">
           <span
             ref={ref as React.RefObject<HTMLSpanElement>}
-            className="font-syne font-extrabold text-or-mat text-[72px] lg:text-[120px] leading-none tabular-nums"
+            className="font-dm font-extrabold text-or-mat text-[72px] lg:text-[120px] leading-none tabular-nums"
           >
             {value}
           </span>

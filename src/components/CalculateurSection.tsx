@@ -25,7 +25,7 @@ const CalculateurSection = () => {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
               <Calculator size={24} className="text-or-mat" />
             </div>
-            <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-3">Combien vous coûte 
+            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-3">Combien vous coûte 
 cette tâche chaque année ?
             </h2>
             <p className="font-dm text-ardoise/60">

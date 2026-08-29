@@ -35,7 +35,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="constat" className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="constat" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Le constat : trop d'outils, trop peu de résultats
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
@@ -73,7 +73,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-blanc-casse py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
                 Les freins légitimes des dirigeants de TPE et PME
               </h2>
               <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
@@ -110,7 +110,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="securite" className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="securite" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Sécurité des données, RGPD et IA souveraine
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
@@ -146,7 +146,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-blanc-casse py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
                 Pourquoi l'IA en 2026 change la donne pour les PME
               </h2>
               <div className="font-dm text-ardoise/85 leading-relaxed space-y-4">
@@ -171,7 +171,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="parcours" className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Un AI Implémenteur de terrain, pas un théoricien
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
@@ -196,7 +196,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-blanc-casse py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="preuves" className="font-syne font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="preuves" className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Deux exemples concrets, deux gains mesurables
               </h2>
               <div className="space-y-4 mb-4">
@@ -224,7 +224,7 @@ const PourquoiIAGenerique = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 Une approche différente des agences et des formations classiques
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">

@@ -11,7 +11,7 @@ const PourquoiNousSection = () => {
       <div className="section-shell">
         <div className="">
           <div className="text-left mb-6">
-            <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
+            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               Pourquoi travailler avec moi
             </h2>
           </div>

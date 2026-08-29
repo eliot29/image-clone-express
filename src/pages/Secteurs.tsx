@@ -96,7 +96,7 @@ const Secteurs = () => {
             >
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-2xl">{secteur.emoji}</span>
-                <h2 className="font-syne font-bold text-lg text-blanc-casse">
+                <h2 className="font-dm font-bold text-lg text-blanc-casse">
                   {secteur.label}
                 </h2>
               </div>

@@ -69,7 +69,7 @@ const MethodeSection = () => {
           </div>
 
           <div className="text-left mb-6">
-            <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
+            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               La méthode Semaine 54
             </h2>
           </div>
@@ -115,7 +115,7 @@ const MethodeSection = () => {
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <span className="font-syne text-sm font-bold text-or-mat-clair">{step.num}</span>
+                    <span className="font-dm text-sm font-bold text-or-mat-clair">{step.num}</span>
                   </div>
 
                   <div className={`w-px h-full my-1 ${i < steps.length - 1 ? 'bg-navy/15' : 'bg-gradient-to-b from-or-mat/60 to-or-mat/0 border-dashed'}`} />

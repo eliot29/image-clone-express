@@ -19,11 +19,11 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-center">
           <div className="hero-stagger text-left">
             {/* Punchline élégante */}
-            <p className="font-syne font-bold italic text-navy text-[18px] mb-4 leading-snug">
+            <p className="font-dm font-bold italic text-navy text-[18px] mb-4 leading-snug">
               Une année compte 52 semaines.<br className="sm:hidden" /> <span className="text-or-mat-clair">Gagnez votre Semaine 54.</span>
             </p>
 
-            <h1 className="font-syne font-extrabold text-[30px] sm:text-[38px] lg:text-[46px] text-navy mb-4 leading-[1.1] tracking-[-0.02em]">
+            <h1 className="font-dm font-extrabold text-[30px] sm:text-[38px] lg:text-[46px] text-navy mb-4 leading-[1.1] tracking-[-0.02em]">
               Je comprends votre métier, puis j'automatise ce qui vous fait perdre du temps.
             </h1>
 

@@ -120,7 +120,7 @@ const PropositionSection = () => {
     <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="">
-          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-left">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-left">
             Ce que je propose concrètement
           </h2>
 

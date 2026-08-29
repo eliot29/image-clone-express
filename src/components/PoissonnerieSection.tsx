@@ -43,7 +43,7 @@ const PoissonnerieSection = () => {
     <section id="poissonnerie" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="text-left mb-4">
-          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy">
             Le cas d'une poissonnerie du Finistère
           </h2>
           <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed">
@@ -58,7 +58,7 @@ const PoissonnerieSection = () => {
               key={i}
               className="card-lift rounded-xl px-6 py-5 bg-card shadow-card"
             >
-              <h3 className="font-syne font-bold text-lg text-navy mb-3">
+              <h3 className="font-dm font-bold text-lg text-navy mb-3">
                 {block.title}
               </h3>
               <p className="font-dm text-[15px] text-ardoise/85 leading-relaxed">
@@ -82,7 +82,7 @@ const PoissonnerieSection = () => {
             Environ 2 h 30 récupérées chaque semaine, soit{" "}
             <span
               ref={ref as React.RefObject<HTMLSpanElement>}
-              className="font-syne font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none align-middle mx-2 tabular-nums"
+              className="font-dm font-extrabold text-or-mat text-[72px] sm:text-[88px] leading-none align-middle mx-2 tabular-nums"
             >
               {value}
             </span>{" "}
