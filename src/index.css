@@ -147,6 +147,13 @@ footer[id] {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .marquee-row {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
   .reveal,
   .card-lift {
     transition: none !important;
