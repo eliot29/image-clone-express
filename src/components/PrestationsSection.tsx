@@ -41,7 +41,7 @@ const PrestationsSection = () => {
     <section id="prestations" className="bg-blanc-casse pt-6 pb-2">
       <div className="container mx-auto px-6">
         <div className="text-center mb-4">
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
             Trois leviers possibles
           </h2>
         </div>

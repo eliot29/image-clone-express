@@ -20,10 +20,10 @@ const CalculateurSection = () => {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/10 mb-4">
               <Calculator size={24} className="text-or-mat" />
             </div>
-            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-3">Combien vous coûte 
+            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-3">Combien vous coûte 
 cette tâche chaque année ?
             </h2>
-            <p className="font-dm text-gris-bleu">
+            <p className="font-dm text-ardoise/60">
               Entrez le temps passé et la fréquence.
             </p>
           </div>
@@ -65,11 +65,11 @@ cette tâche chaque année ?
             <div className="grid grid-cols-3 gap-4 text-center">
               <div className="bg-gris-perle rounded-lg p-4">
                 <div className="font-dm text-3xl font-bold text-navy">{hoursPerYear}</div>
-                <div className="font-dm text-xs text-gris-bleu mt-1">heures perdues/an</div>
+                <div className="font-dm text-xs text-ardoise/60 mt-1">heures perdues/an</div>
               </div>
               <div className="bg-gris-perle rounded-lg p-4">
-                <div className="font-dm text-3xl font-bold text-or-mat">{weeksEquiv}</div>
-                <div className="font-dm text-xs text-gris-bleu mt-1">semaines de travail</div>
+                <div className="font-dm text-3xl font-bold text-or-mat-clair">{weeksEquiv}</div>
+                <div className="font-dm text-xs text-ardoise/60 mt-1">semaines de travail</div>
               </div>
               <div className="bg-navy rounded-lg p-4">
                 <div className="font-dm text-3xl font-bold text-or-mat">{gainHours}h</div>
@@ -78,7 +78,7 @@ cette tâche chaque année ?
             </div>
 
             <p className="font-dm font-extrabold text-navy text-2xl sm:text-3xl md:text-4xl mt-8 text-center leading-snug">
-              Une année compte 52 semaines. <span className="text-or-mat">Gagnez votre Semaine 54.</span>
+              Une année compte 52 semaines. <span className="text-or-mat-clair">Gagnez votre Semaine 54.</span>
             </p>
           </div>
 
