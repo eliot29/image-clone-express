@@ -83,7 +83,7 @@ const HeroSection = () => {
 
           <div className="mt-8 flex justify-center">
             <Button variant="cta" size="lg" className="w-full sm:w-auto text-center whitespace-normal" asChild>
-              <a href="#calculateur">Découvrez combien de temps vous pourriez gagner</a>
+              <a href="#calculateur">Découvrez combien de temps vous pourrez gagner par an</a>
             </Button>
           </div>
         </div>
