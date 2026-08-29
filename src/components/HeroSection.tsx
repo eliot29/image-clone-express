@@ -62,7 +62,7 @@ const HeroSection = () => {
           
 
           {/* Pain points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-2xl mx-auto text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-3 mb-4 max-w-3xl mx-auto text-left">
             {painPoints.map((point, i) =>
             <div key={i} className="flex items-center gap-3 text-ardoise font-dm text-sm">
                 <point.icon size={18} className="text-or-mat/60 shrink-0" />
