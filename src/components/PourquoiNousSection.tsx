@@ -1,57 +1,132 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Eye,
+  Users,
+  TrendingUp,
+  PhoneCall,
+  Mic,
+  FileText,
+  Camera,
+  SprayCan,
+  Inbox,
+} from "lucide-react";
 import Reveal from "@/components/secondary/Reveal";
 
+const resultats = [
+  { icon: Eye, value: "73 000", label: "vues" },
+  { icon: Users, value: "+800", label: "abonnés" },
+  { icon: TrendingUp, value: "+15 %", label: "de CA" },
+];
 
+const solutions = [
+  { icon: PhoneCall, label: "Assistant vocal" },
+  { icon: Mic, label: "Inventaires à la voix" },
+  { icon: FileText, label: "Bons de transport dictés" },
+  { icon: Camera, label: "Photo → traçabilité" },
+  { icon: SprayCan, label: "Suivi des tâches d'hygiène" },
+  { icon: Inbox, label: "Tri des e-mails et documents" },
+];
 
 const PourquoiNousSection = () => {
   return (
-    <section id="approche" className="bg-blanc-casse py-6">
+    <section id="approche" className="bg-blanc-casse py-8">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl lg:max-w-6xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
+            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy">
               Pourquoi Semaine 54 ?
             </h2>
           </div>
 
-          <div className="font-dm text-ardoise/80 space-y-4 mb-6 leading-relaxed">
-            <p className="text-ardoise/80">
-              Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de <strong className="text-navy">Semaine 54</strong>. J'ai exercé pendant une dizaine d'années différents métiers dans le secteur de la <strong className="text-navy">grande distribution</strong>.
-            </p>
-            <p className="text-ardoise/80">Depuis plus de trois ans, j'explore et utilise les <strong className="text-navy">outils d'IA dans des contextes professionnels</strong> afin d'en comprendre les <strong className="text-navy">usages pertinents pour les entreprises.</strong>
-            </p>
-            <p className="text-ardoise/80">
-              <strong className="text-navy">Mon constat : l'IA 2026 est un levier de croissance pour les PME en rendant accessibles des solutions jusque-là réservées aux grands groupes.</strong>
-            </p>
-            <p className="text-ardoise/80">
-              <strong className="text-navy">Deux expériences concrètes</strong> ont confirmé cette conviction :
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-6 lg:gap-10 items-start">
+            {/* PARCOURS */}
+            <Reveal className="lg:sticky lg:top-24">
+              <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+                Parcours
+              </span>
+              <p className="font-dm text-ardoise/80 leading-relaxed mt-3">
+                Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de{" "}
+                <strong className="text-navy">Semaine 54</strong>. Après une dizaine d'années dans
+                différents métiers de la <strong className="text-navy">grande distribution</strong>,
+                j'explore et utilise depuis plus de trois ans les{" "}
+                <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
+              </p>
 
-          <div className="space-y-4 mb-6">
-            <Reveal delay={60} className="card-lift bg-navy/5 border border-navy/10 hover:border-or-mat/30 rounded-xl p-6">
-              <p className="font-dm text-ardoise/80 leading-relaxed">
-                J'ai accompagné une poissonnerie du Pays d'Iroise.
-                En structurant une stratégie nourrie par l'IA et en utilisant des outils assistés par IA, les résultats ont été mesurables : <strong className="text-navy">73 000 vues</strong>, plus de <strong className="text-navy">800 abonnés gagnés</strong> et <strong className="text-or-mat">+15 % de chiffre d'affaires</strong>.
+              <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or-mat">
+                Le déclic est venu en accompagnant{" "}
+                <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
               </p>
             </Reveal>
 
-            <Reveal delay={180} className="card-lift bg-navy/5 border border-navy/10 hover:border-or-mat/30 rounded-xl p-6">
-              <p className="font-dm text-ardoise/80 leading-relaxed">
-                J'ai également aidé un artisan électricien à simplifier la comparaison quotidienne de ses fournisseurs en mettant en place un assistant dédié.
-                Résultat : environ <strong className="text-navy">10 minutes économisées par jour</strong>, soit près de <strong className="text-or-mat">40 heures récupérées par an</strong>.
-              </p>
-            </Reveal>
+            {/* DÉCLIC → RÉSULTATS → SOLUTIONS */}
+            <div className="space-y-4">
+              <Reveal delay={80} className="bg-navy rounded-xl p-5 sm:p-6">
+                <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+                  Résultats mesurés
+                </span>
+                <p className="font-dm text-sm text-blanc-casse/80 leading-relaxed mt-2">
+                  Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
+                </p>
+                <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
+                  {resultats.map((r) => (
+                    <div
+                      key={r.label}
+                      className="rounded-lg border border-or-mat/30 bg-or-mat/10 px-2 py-3 text-center"
+                    >
+                      <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
+                      <div className="font-dm font-extrabold text-blanc-casse text-base sm:text-xl leading-none">
+                        {r.value}
+                      </div>
+                      <div className="font-dm text-[11px] sm:text-xs text-blanc-casse/70 mt-1">
+                        {r.label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </Reveal>
+
+              <Reveal delay={160} className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6">
+                <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+                  Puis son quotidien
+                </span>
+                <p className="font-dm text-sm text-ardoise/80 leading-relaxed mt-2 mb-4">
+                  L'IA étendue au fonctionnement de tous les jours :
+                </p>
+                <ul className="flex flex-wrap gap-2">
+                  {solutions.map((s) => (
+                    <li
+                      key={s.label}
+                      className="flex items-center gap-2 rounded-full border border-navy/10 bg-blanc-casse px-3 py-1.5"
+                    >
+                      <s.icon size={14} className="text-or-mat shrink-0" />
+                      <span className="font-dm text-xs sm:text-sm text-navy">{s.label}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            </div>
           </div>
 
+          {/* TEMPS GAGNÉ → SEMAINE 54 */}
+          <Reveal delay={80} className="mt-6">
+            <div className="rounded-xl border border-or-mat/60 bg-or-mat/40 p-6 text-center">
+              <p className="font-dm font-bold text-navy text-lg sm:text-2xl leading-snug">
+                C'est en constatant le temps que l'IA pouvait libérer au quotidien
+                <br className="hidden sm:block" /> qu'est née Semaine 54.
+              </p>
+              <p className="font-dm text-navy/80 text-sm sm:text-base mt-3">
+                Mettre l'IA au service des entreprises pour leur{" "}
+                <strong className="text-navy underline decoration-navy/40 underline-offset-4">
+                  rendre du temps
+                </strong>
+                .
+              </p>
+            </div>
+          </Reveal>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug text-center mt-6">
-            Mon approche vient du terrain.<br className="sm:hidden" /> <span className="text-or-mat">Pas d'une démonstration théorique.</span>
-          </p>
-
-          <div className="text-center mt-4">
+          <div className="text-center mt-5">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-suffit-pas#parcours">
                 Comprendre l'approche Semaine 54
@@ -59,10 +134,10 @@ const PourquoiNousSection = () => {
               </Link>
             </Button>
           </div>
-
-
         </div>
       </div>
-    </section>);
+    </section>
+  );
 };
+
 export default PourquoiNousSection;
