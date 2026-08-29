@@ -2,7 +2,15 @@ import { Clock, TrendingUp, Shield, Eye, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const cases = [
+type CaseItem = {
+  sector: string;
+  location: string;
+  problem: string;
+  solution: string;
+  results?: { icon: React.ComponentType<{ size?: number; className?: string }>; label: string }[];
+};
+
+const cases: CaseItem[] = [
   {
     sector: "Menuisier / Plombier",
     location: "Pays d'Iroise",
