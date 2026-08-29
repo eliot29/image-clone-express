@@ -11,6 +11,7 @@ import SecuritySection from "@/components/SecuritySection";
 import ContactSection from "@/components/ContactSection";
 import CalculateurSection from "@/components/CalculateurSection";
 import FooterSection from "@/components/FooterSection";
+import Reveal from "@/components/secondary/Reveal";
 
 const Index = () => {
   return (
@@ -18,16 +19,16 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        <ConceptSection />
-        <PropositionSection />
-        <CasConcretsSection />
-        <PourquoiNousSection />
-        <SecteursSection />
-        <MethodeSection />
-        <OutilsSection />
-        <SecuritySection />
-        <ContactSection />
-        <CalculateurSection />
+        <Reveal><ConceptSection /></Reveal>
+        <Reveal><PropositionSection /></Reveal>
+        <Reveal><CasConcretsSection /></Reveal>
+        <Reveal><PourquoiNousSection /></Reveal>
+        <Reveal><SecteursSection /></Reveal>
+        <Reveal><MethodeSection /></Reveal>
+        <Reveal><OutilsSection /></Reveal>
+        <Reveal><SecuritySection /></Reveal>
+        <Reveal><ContactSection /></Reveal>
+        <Reveal><CalculateurSection /></Reveal>
       </main>
       <FooterSection />
     </>

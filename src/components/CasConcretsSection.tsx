@@ -68,7 +68,7 @@ const CasConcretsSection = () => {
             {[...cases, ...cases].map((cas, i) => (
               <div
                 key={i}
-                className="rounded-xl px-5 py-4 border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors min-w-[300px] max-w-[320px] shrink-0"
+                className="card-lift rounded-xl px-5 py-4 border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] hover:border-or-mat/30 min-w-[300px] max-w-[320px] shrink-0"
               >
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-dm font-bold text-base text-blanc-casse">{cas.sector}</h3>

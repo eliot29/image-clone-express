@@ -40,7 +40,7 @@ const SecteursSection = () => {
             {[...domains, ...domains].map((d, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 px-5 py-3 rounded-full border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors shrink-0"
+                className="card-lift flex items-center gap-3 px-5 py-3 rounded-full border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] hover:border-or-mat/30 shrink-0"
               >
                 <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
                   <d.icon size={18} className="text-or-mat" />
@@ -59,7 +59,7 @@ const SecteursSection = () => {
             {[...sectors, ...sectors].map((s, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 px-5 py-3 rounded-full border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors shrink-0"
+                className="card-lift flex items-center gap-3 px-5 py-3 rounded-full border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] hover:border-or-mat/30 shrink-0"
               >
                 <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
                   <s.icon size={18} className="text-or-mat" />
@@ -78,7 +78,7 @@ const SecteursSection = () => {
             {[...solutions, ...solutions].map((s, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 px-5 py-3 rounded-full border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] transition-colors shrink-0"
+                className="card-lift flex items-center gap-3 px-5 py-3 rounded-full border border-blanc-casse/10 bg-blanc-casse/5 hover:bg-blanc-casse/[0.08] hover:border-or-mat/30 shrink-0"
               >
                 <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
                   <s.icon size={18} className="text-or-mat" />
