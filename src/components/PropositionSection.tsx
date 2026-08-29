@@ -15,7 +15,7 @@ const prestations = [
     badge: null,
     tagline: "Des tâches répétitives qui disparaissent de votre quotidien.",
     items: [
-      { icon: Workflow, text: "Workflows conçus sur-mesure via n8n" },
+      { icon: Workflow, text: "Automatisations connectées à vos outils" },
       { icon: Link2, text: "Connexion à vos outils existants (email, CRM, fichiers, etc.)" },
       { icon: RotateCcw, text: "Automatisation des tâches chronophages" },
       { icon: Zap, text: "Déclenchements automatiques selon vos processus métier" },
@@ -130,7 +130,7 @@ const PropositionSection = () => {
           <div className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-                Audit gratuit
+                Diagnostic gratuit
               </h3>
               <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 justify-center">
                 {comprehension.map((item, i) =>
@@ -172,7 +172,7 @@ const PropositionSection = () => {
             {/* Audit */}
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
-                Audit gratuit
+                Diagnostic gratuit
               </h3>
               <div className="flex flex-col gap-3">
                 {comprehension.map((item, i) =>
