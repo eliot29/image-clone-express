@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Reveal from "@/components/secondary/Reveal";
+
 
 const steps = [
 {
@@ -45,10 +47,10 @@ const MethodeSection = () => {
 
           <div className="space-y-0">
             {steps.map((step, i) =>
-            <div key={i} className="flex gap-6 group">
+            <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group">
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
                     <span className="font-dm text-sm font-bold text-or-mat">{step.num}</span>
                   </div>
                   {i < steps.length - 1 &&
@@ -64,9 +66,10 @@ const MethodeSection = () => {
                 <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
                 }
                 </div>
-              </div>
+              </Reveal>
             )}
           </div>
+
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
