@@ -192,6 +192,7 @@ footer[id] {
   .reveal {
     opacity: 1;
     transform: none;
+    filter: none;
   }
   .card-lift:hover {
     transform: none;
@@ -200,4 +201,5 @@ footer[id] {
     scroll-behavior: auto;
   }
 }
+
 
