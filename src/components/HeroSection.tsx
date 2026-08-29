@@ -6,7 +6,7 @@ const painPoints = [
 { icon: Search, text: "Informations trouvées instantanément" },
 { icon: Mail, text: "Relances clients envoyés automatiquement" },
 { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
-{ icon: FolderOpen, text: "Administratif traité sans y toucher" },
+{ icon: PhoneCall, text: "Appels clients pris en charge automatiquement" },
 { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
 { icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
 { icon: Image, text: "Supports visuels créés sans designer" }];
