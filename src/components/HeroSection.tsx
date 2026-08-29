@@ -78,10 +78,8 @@ const HeroSection = () => {
                 <div key={row} className="overflow-hidden">
                   <div
                     className={`flex w-max marquee-row ${
-                      row === 0
-                        ? "animate-[marquee_38s_linear_infinite] sm:animate-[marquee_26s_linear_infinite]"
-                        : "animate-[marquee-reverse_46s_linear_infinite] sm:animate-[marquee-reverse_32s_linear_infinite]"
-                    } group-hover:[animation-play-state:paused]`}
+                      row === 0 ? "marquee-row-forward" : "marquee-row-reverse"
+                    }`}
                   >
                     {track.map((point, k) => (
                       <div
