@@ -89,7 +89,7 @@ const MethodeSection = () => {
           </div>
 
 
-          <div className="text-center mt-6">
+          <div className="text-left mt-6">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode
