@@ -102,14 +102,14 @@ const HeroSection = () => {
           </p>
 
           {/* Punchline */}
-          <p className="inline-block bg-navy rounded-2xl px-6 sm:px-8 py-4 sm:py-5 shadow-lg mb-6">
+          <p className="inline-block bg-navy rounded-2xl px-6 sm:px-8 py-4 sm:py-5 shadow-lg mb-3">
             <span className="font-dm font-bold italic text-blanc-casse text-lg sm:text-xl leading-snug">
               Une année compte 52 semaines. Gagnez votre{" "}
               <span className="text-or-mat">Semaine 54</span>.
             </span>
           </p>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-3 flex justify-center">
             <Button variant="cta" size="lg" className="w-full sm:w-auto text-center whitespace-normal" asChild>
               <a href="#calculateur">Découvrez combien de temps vous pourriez gagner</a>
             </Button>
