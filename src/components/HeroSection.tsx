@@ -1,5 +1,5 @@
 import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 
 const painPoints = [
 { icon: FileText, text: "Devis générés en quelques minutes" },
@@ -109,10 +109,6 @@ const HeroSection = () => {
                 <span className="text-or-mat">Semaine 54</span>.
               </span>
             </p>
-
-            <Button variant="cta" size="lg" className="w-full sm:w-auto text-center whitespace-normal" asChild>
-              <a href="#calculateur">{"\n"}</a>
-            </Button>
           </div>
         </div>
       </div>
