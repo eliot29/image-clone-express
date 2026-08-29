@@ -230,3 +230,44 @@ footer[id] {
     animation: none !important;
   }
 }
+
+/* ---- Logo S54 : rotation brusque du S, du 5 et du 4 au défilement ---- */
+.animated-logo > svg {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.animated-logo .logo-glyph-s,
+.animated-logo .logo-glyph-5,
+.animated-logo .logo-glyph-4 {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes logo-spin-snap {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.logo-spinning .logo-glyph-s {
+  animation: logo-spin-snap 0.55s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+}
+.logo-spinning .logo-glyph-5 {
+  animation: logo-spin-snap 0.55s cubic-bezier(0.3, 1.4, 0.5, 1) 0.06s both;
+}
+.logo-spinning .logo-glyph-4 {
+  animation: logo-spin-snap 0.55s cubic-bezier(0.3, 1.4, 0.5, 1) 0.12s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-spinning .logo-glyph-s,
+  .logo-spinning .logo-glyph-5,
+  .logo-spinning .logo-glyph-4 {
+    animation: none !important;
+  }
+}
