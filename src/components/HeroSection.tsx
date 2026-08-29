@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 const painPoints = [
 { icon: FileText, text: "Devis générés en quelques minutes" },
-{ icon: Search, text: "Informations trouvées instantanément" },
+{ icon: Search, text: "Documents lus et classés instantanément" },
 { icon: Mail, text: "Relances clients envoyés automatiquement" },
 { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
-{ icon: PhoneCall, text: "Appels clients traités automatiquement" },
+{ icon: PhoneCall, text: "Appels entrants traités 24h/24" },
 { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
 { icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
 { icon: Image, text: "Supports visuels créés sans designer" }];
