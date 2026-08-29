@@ -1,4 +1,4 @@
-import { Clock, Mail, FileText, Share2, PhoneCall, Search, BarChart3, Image, Mic } from "lucide-react";
+import { Clock, Mail, FileText, Share2, PhoneCall, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const painPoints = [
@@ -8,10 +8,8 @@ const painPoints = [
   { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
   { icon: PhoneCall, text: "Appels entrants traités 24h/24" },
   { icon: Clock, text: "Comparatifs fournisseurs prêts en un clic" },
-  { icon: BarChart3, text: "Fichiers Excel analysés à la demande" },
-  { icon: Image, text: "Supports visuels créés sans designer" },
-  { icon: Mic, text: "Stock mis à jour à la voix" },
 ];
+
 
 const HeroSection = () => {
   return (
