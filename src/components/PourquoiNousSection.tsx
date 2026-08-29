@@ -10,13 +10,19 @@ const PourquoiNousSection = () => {
     <section id="approche" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="">
-          <div className="text-center mb-6">
-            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
+          <div className="text-left mb-6">
+            <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               Pourquoi travailler avec moi
             </h2>
           </div>
 
-          <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-8 ">
+          <div className="bg-card rounded-xl shadow-card p-6 md:p-8 mb-6 max-w-2xl">
+            <p className="font-dm text-ardoise/85 text-[17px] leading-relaxed">
+              <strong className="text-navy font-bold">Je ne suis pas ingénieur.</strong> J'ai passé des années à vendre, donc je sais écouter un dirigeant avant de proposer quoi que ce soit. Et j'utilise l'IA tous les jours depuis assez longtemps pour savoir ce qui marche vraiment et ce qui n'est qu'un effet de mode.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-8 max-w-2xl">
             <p className="font-dm text-navy font-bold text-lg sm:text-xl leading-snug mb-2">
               La personne qui comprend votre métier est celle qui construit l'outil.
             </p>
@@ -24,6 +30,7 @@ const PourquoiNousSection = () => {
               Pas de commercial, pas de sous-traitance, pas de dossier qui change de mains.
             </p>
           </div>
+
 
           <div className="font-dm text-ardoise/80 space-y-4 mb-6 leading-relaxed">
             <p className="text-ardoise/80">
