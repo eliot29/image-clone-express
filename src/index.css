@@ -146,6 +146,16 @@ footer[id] {
   box-shadow: var(--shadow-card-hover);
 }
 
+/* ---- Marquee horizontal ---- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-row {
     animation: none !important;
