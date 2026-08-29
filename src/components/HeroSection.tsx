@@ -101,9 +101,9 @@ const HeroSection = () => {
             Et si toutes ces tâches se faisaient automatiquement ?
           </p>
 
-          {/* Stat highlight */}
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mb-6">
-            Une année compte 52 semaines. Gagnez votre semaine 54
+          {/* Punchline */}
+          <p className="font-dm font-bold italic text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mb-6">
+            Une année compte 52 semaines. Gagnez votre Semaine 54.
           </p>
 
           <div className="mt-8 flex justify-center">
