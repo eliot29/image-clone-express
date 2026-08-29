@@ -19,17 +19,16 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        {/* Un bloc sur deux reçoit une animation plus dynamique (pop / flip / tilt / blur) */}
-        <Reveal variant="pop"><ConceptSection /></Reveal>
+        <Reveal variant="up"><ConceptSection /></Reveal>
         <Reveal variant="up"><PropositionSection /></Reveal>
-        <Reveal variant="tilt"><CasConcretsSection /></Reveal>
-        <Reveal variant="up"><PourquoiNousSection /></Reveal>
-        <Reveal variant="flip"><SecteursSection /></Reveal>
-        <Reveal variant="up"><MethodeSection /></Reveal>
-        <Reveal variant="blur"><OutilsSection /></Reveal>
-        <Reveal variant="up"><SecuritySection /></Reveal>
-        <Reveal variant="pop"><ContactSection /></Reveal>
-        <Reveal variant="up"><CalculateurSection /></Reveal>
+        <CasConcretsSection />
+        <PourquoiNousSection />
+        <SecteursSection />
+        <MethodeSection />
+        <OutilsSection />
+        <SecuritySection />
+        <ContactSection />
+        <CalculateurSection />
       </main>
       <FooterSection />
     </>

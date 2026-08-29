@@ -106,7 +106,7 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
     <div className="min-w-0">
       <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
       {p.badge && (
-        <span className="block font-dm text-xs font-semibold text-or-mat">{p.badge}</span>
+        <span className="block font-dm text-xs font-semibold text-or-mat-clair">{p.badge}</span>
       )}
       {p.tagline && (
         <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
@@ -117,10 +117,10 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
 
 const PropositionSection = () => {
   return (
-    <section id="prestations" className="bg-blanc-casse py-6">
+    <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl lg:max-w-6xl mx-auto">
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-center">
             Ce que je propose concrètement
           </h2>
 
@@ -161,7 +161,7 @@ const PropositionSection = () => {
               <svg className="absolute -bottom-[6px] right-1/4 translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
-              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
+              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat-clair font-bold whitespace-nowrap bg-blanc-casse px-3">
                 CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
             </div>
@@ -193,7 +193,7 @@ const PropositionSection = () => {
 
             {/* Label encadré centré */}
             <div className="flex justify-center mt-2 mb-3">
-              <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
+              <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-or-mat-clair font-bold whitespace-nowrap">
                 CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
             </div>
@@ -294,7 +294,7 @@ const PropositionSection = () => {
           <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
             Maîtriser et tester les outils IA demande du temps.
           </p>
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-2">
+          <p className="font-dm font-bold text-or-mat-clair text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-2">
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
 

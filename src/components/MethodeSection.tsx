@@ -32,11 +32,11 @@ const steps = [
 
 const MethodeSection = () => {
   return (
-    <section id="methode" className="bg-blanc-casse py-6">
+    <section id="methode" className="bg-blanc-casse py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
+            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               La méthode Semaine 54
             </h2>
           </div>
@@ -51,7 +51,7 @@ const MethodeSection = () => {
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <span className="font-dm text-sm font-bold text-or-mat">{step.num}</span>
+                    <span className="font-dm text-sm font-bold text-or-mat-clair">{step.num}</span>
                   </div>
                   {i < steps.length - 1 &&
                 <div className="w-px h-full bg-navy/15 my-1" />
@@ -63,7 +63,7 @@ const MethodeSection = () => {
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.note &&
-                <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
+                <p className="font-dm text-xs text-or-mat-clair mt-3 italic">{step.note}</p>
                 }
                 </div>
               </Reveal>

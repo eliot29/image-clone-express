@@ -7,6 +7,7 @@
     /* Semaine 54 — Design System */
     --navy: 215 48% 21%;        /* #1B2D4F */
     --or-mat: 41 52% 54%;       /* #C9A84C */
+    --or-mat-clair: 41 60% 33%; /* #8A6B23 — 4,5:1 sur blanc cassé */
     --blanc-casse: 36 38% 94%;  /* #F4F1EB */
     --gris-perle: 216 27% 94%;  /* #EDF0F4 */
     --ardoise: 210 32% 24%;     /* #2A3E52 */
@@ -48,19 +49,12 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Sans', sans-serif;
   }
-}
-
-/* Punchline with gold bar */
-.punchline {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  position: relative;
-  padding-left: 20px;
-  border-left: 3px solid hsl(var(--or-mat));
 }
 
 /* Scrollbar styling */
@@ -130,42 +124,6 @@ footer[id] {
   transform: scale(0.97);
 }
 
-/* --- Variantes dynamiques --- */
-/* Rebond ascendant avec léger dépassement */
-.reveal-pop {
-  transform: translateY(44px) scale(0.92);
-  transition:
-    opacity 0.55s ease-out,
-    transform 0.85s cubic-bezier(0.16, 1.28, 0.42, 1);
-}
-/* Bascule 3D depuis le bas */
-.reveal-flip {
-  transform: perspective(1200px) rotateX(14deg) translateY(38px);
-  transform-origin: bottom center;
-  transition:
-    opacity 0.6s ease-out,
-    transform 0.9s cubic-bezier(0.16, 1.2, 0.36, 1);
-}
-/* Arrivée en biais avec rotation */
-.reveal-tilt {
-  transform: translateX(-42px) rotate(-3deg) scale(0.96);
-  transition:
-    opacity 0.6s ease-out,
-    transform 0.85s cubic-bezier(0.16, 1.24, 0.4, 1);
-}
-/* Zoom net depuis un flou */
-.reveal-blur {
-  transform: scale(1.06);
-  filter: blur(10px);
-  transition:
-    opacity 0.6s ease-out,
-    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.8s ease-out;
-}
-.reveal-blur.is-visible {
-  filter: blur(0);
-}
-
 .reveal.is-visible {
   opacity: 1;
   transform: none;
@@ -199,34 +157,5 @@ footer[id] {
   }
   html {
     scroll-behavior: auto;
-  }
-}
-
-
-
-/* Carrousel rapide des points forts (Hero) */
-@keyframes slide-quick-in {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-slide-quick {
-  animation: slide-quick-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.animate-slide-quick-item {
-  animation: slide-quick-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-slide-quick,
-  .animate-slide-quick-item {
-    animation: none !important;
   }
 }
