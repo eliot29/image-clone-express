@@ -35,7 +35,7 @@ const AccompagnementIA = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 <span className="text-or-mat">Mieux utiliser l'IA</span> déjà à votre portée
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
@@ -57,7 +57,7 @@ const AccompagnementIA = () => {
         <section id="formation" className="bg-blanc-casse py-10" style={{ scrollMarginTop: '120px' }}>
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-navy mb-3">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-3">
                 <span className="text-or-mat">Formation</span> aux outils IA
               </h2>
               <p className="font-dm text-or-mat font-semibold mb-5">
@@ -104,7 +104,7 @@ const AccompagnementIA = () => {
         <section id="integration" className="bg-navy py-10" style={{ scrollMarginTop: '120px' }}>
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-3">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-3">
                 <span className="text-or-mat">Intégration des usages IA</span> dans l'entreprise
               </h2>
               <p className="font-dm text-or-mat italic mb-5">
@@ -154,7 +154,7 @@ const AccompagnementIA = () => {
         <section id="conseil" className="bg-blanc-casse py-10" style={{ scrollMarginTop: '120px' }}>
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-navy mb-3">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-3">
                 <span className="text-or-mat">Conseil et choix</span> des outils IA
               </h2>
               <p className="font-dm text-or-mat italic mb-5">

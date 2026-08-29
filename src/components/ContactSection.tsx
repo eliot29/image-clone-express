@@ -57,7 +57,7 @@ const ContactSection = () => {
               <CalendarCheck size={24} className="text-or-mat" />
             </div>
           </div>
-          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-8 text-center">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-blanc-casse mb-8 text-center">
             Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['·_']">20/30 min</span>
           </h2>
 
@@ -161,7 +161,7 @@ const ContactSection = () => {
 
             <div className="mt-6 max-w-lg mx-auto">
               <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
-                Je vous contacte en premier lieu pour répondre à vos éventuelles questions et planifier votre audit ensemble. L'audit se tient ensuite en appel ou en visio, selon votre préférence.
+                Je vous contacte en premier lieu pour répondre à vos éventuelles questions et planifier votre diagnostic ensemble. Le diagnostic se tient ensuite en appel ou en visio, selon votre préférence.
               </p>
               <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
                 Vous pouvez aussi m'appeler, m'envoyer un SMS ou un email directement.

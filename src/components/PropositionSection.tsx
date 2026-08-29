@@ -120,16 +120,16 @@ const PropositionSection = () => {
     <section id="prestations" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="">
-          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-left">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-5 text-center">
             Ce que je propose concrètement
           </h2>
 
-          <p className="font-dm text-ardoise/80 text-base mb-4 text-left max-w-2xl">Après un <strong className="text-navy">diagnostic gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center max-w-2xl mx-auto">Après un <strong className="text-navy">diagnostic gratuit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
           {/* Audit block - DESKTOP centered */}
           <div className="hidden md:flex justify-center mb-4">
             <div className="inline-block card-lift bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Diagnostic gratuit
               </h3>
               <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 justify-center">
@@ -148,7 +148,7 @@ const PropositionSection = () => {
           {/* Connecteur branché DESKTOP : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
           <div className="hidden md:flex flex-col items-center mb-2" aria-hidden="true">
             <div className="w-1 h-6 bg-or-mat/70" />
-            <div className="relative w-full max-w-3xl h-10">
+            <div className="relative w-full max-w-3xl h-10 mx-auto">
               {/* horizontal bar spanning between the two branches */}
               <div className="absolute top-0 left-1/4 right-1/4 h-1 bg-or-mat/70" />
               {/* vertical branches, overlap horizontal bar to form clean square corners */}
@@ -171,7 +171,7 @@ const PropositionSection = () => {
           <div className="md:hidden mb-6">
             {/* Audit */}
             <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
+              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                 Diagnostic gratuit
               </h3>
               <div className="flex flex-col gap-3">
@@ -201,7 +201,7 @@ const PropositionSection = () => {
             {/* Bloc 1 - Conception IA */}
             <div>
               <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
-                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                   Conception IA sur-mesure
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -222,7 +222,7 @@ const PropositionSection = () => {
 
             {/* Bloc 2 - Accompagnement */}
             <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm mt-4">
-                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-left">
+                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                   Accompagnement IA
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -243,7 +243,7 @@ const PropositionSection = () => {
 
           <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
               <div className="flex flex-col gap-3">
@@ -262,7 +262,7 @@ const PropositionSection = () => {
             </div>
 
             <div className="card-lift bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-left">
+              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Accompagnement IA
               </h3>
               <div className="flex flex-col gap-3">
@@ -283,7 +283,7 @@ const PropositionSection = () => {
 
           <div className="flex mb-6">
             <div className="inline-block card-lift rounded-2xl px-6 py-5 md:px-8 bg-or-mat/40 border border-or-mat/60 shadow-sm">
-              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-left">
+              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
                 <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
                 <br />
                 <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
@@ -291,10 +291,10 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full text-left">
+          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full text-center mx-auto">
             Maîtriser et tester les outils IA demande du temps.
           </p>
-          <p className="font-dm font-bold text-or-mat-clair text-lg sm:text-xl leading-snug max-w-full text-left mt-2">
+          <p className="font-dm font-bold text-or-mat-clair text-lg sm:text-xl leading-snug max-w-full text-center mt-2 mx-auto">
             Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
           </p>
 

@@ -54,26 +54,26 @@ const CasConcretsSection = () => {
   return (
     <section id="cas" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
-        <div className="text-left mb-4">
-          <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy">
+        <div className="text-center mb-4">
+          <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy">
             Des exemples d'automatisations possibles
           </h2>
-          <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed">
+          <p className="font-dm text-ardoise/70 text-[15px] mt-3 max-w-2xl leading-relaxed mx-auto">
             Des situations représentatives des demandes que je reçois. Ce qui vous concerne se décide au diagnostic.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-5 mt-8">
           {cases.map((cas, i) => (
             <div
               key={i}
-              className="card-lift rounded-xl px-6 py-5 bg-card shadow-card"
+              className="card-lift h-full rounded-xl px-6 py-5 bg-card shadow-card"
             >
-              <h3 className="font-syne font-bold text-lg text-navy mb-3">{cas.sector}</h3>
+              <h3 className="font-dm font-bold text-lg text-navy mb-3">{cas.sector}</h3>
               <p className="font-dm text-[15px] text-ardoise/85 mb-2 leading-relaxed">{cas.problem}</p>
               <p className="font-dm text-[15px] text-ardoise/85 mb-4 leading-relaxed">{cas.solution}</p>
               <FlowDiagram steps={cas.flow} className="mb-4" />
-              <div className="flex flex-wrap gap-x-4 gap-y-2 pt-3 border-t border-navy/10">
+              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 pt-3 border-t border-navy/10">
                 {cas.results.map((r, j) => (
                   <div key={j} className="flex items-center gap-1.5">
                     <r.icon size={15} className="text-or-mat shrink-0" />
@@ -85,7 +85,7 @@ const CasConcretsSection = () => {
           ))}
         </div>
 
-        <div className="text-left mt-8">
+        <div className="text-center mt-8">
           <Button variant="cta" size="lg" asChild>
             <Link to="/secteurs">Mon secteur est-il concerné ?</Link>
           </Button>

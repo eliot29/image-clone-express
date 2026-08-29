@@ -35,7 +35,7 @@ const MethodeSemaine54 = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="qui" className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="qui" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 À qui s'adresse Semaine 54
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
@@ -95,7 +95,7 @@ const MethodeSemaine54 = () => {
         <section className="bg-blanc-casse py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 id="etapes" className="font-syne font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
+              <h2 id="etapes" className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Les <span className="text-or-mat">quatre étapes</span> d'un accompagnement
               </h2>
               <p className="font-dm text-ardoise/75 text-center mb-8 max-w-2xl mx-auto">
@@ -156,7 +156,7 @@ const MethodeSemaine54 = () => {
         <section className="bg-navy py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl lg:max-w-4xl mx-auto">
-              <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
+              <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 Une logique simple&nbsp;: <span className="text-or-mat">pragmatisme</span>, <span className="text-or-mat">autonomie</span>, <span className="text-or-mat">progressivité</span>
               </h2>
               <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">

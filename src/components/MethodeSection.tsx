@@ -62,19 +62,19 @@ const MethodeSection = () => {
     <section id="methode" className="bg-blanc-casse py-16 md:py-24">
       <div className="section-shell">
         <div className="">
-          <div className="card-lift border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10 max-w-2xl">
+          <div className="card-lift border-l-4 border-or-mat bg-navy/5 rounded-r-xl p-6 mb-10 max-w-2xl mx-auto">
             <p className="font-dm text-ardoise/90 leading-relaxed">
               <strong className="text-navy">Une automatisation qui tourne en révèle une autre.</strong> On avance à votre rythme, un chantier à la fois — et je reste joignable entre les deux.
             </p>
           </div>
 
-          <div className="text-left mb-6">
-            <h2 className="font-syne font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
+          <div className="text-center mb-6">
+            <h2 className="font-dm font-extrabold text-[28px] sm:text-4xl text-navy mb-4">
               La méthode Semaine 54
             </h2>
           </div>
 
-          <p className="font-dm text-ardoise/70 text-left mb-6 max-w-2xl">
+          <p className="font-dm text-ardoise/70 text-center mb-6 max-w-2xl mx-auto">
             Un cycle, pas un projet qui se termine.
           </p>
 
@@ -115,7 +115,7 @@ const MethodeSection = () => {
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <span className="font-syne text-sm font-bold text-or-mat-clair">{step.num}</span>
+                    <span className="font-dm text-sm font-bold text-or-mat-clair">{step.num}</span>
                   </div>
 
                   <div className={`w-px h-full my-1 ${i < steps.length - 1 ? 'bg-navy/15' : 'bg-gradient-to-b from-or-mat/60 to-or-mat/0 border-dashed'}`} />
@@ -146,7 +146,7 @@ const MethodeSection = () => {
           </div>
 
 
-          <div className="text-left mt-6">
+          <div className="text-center mt-6">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode
