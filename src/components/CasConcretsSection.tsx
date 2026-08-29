@@ -1,4 +1,4 @@
-import { Clock, TrendingUp, Shield, Eye, FileCheck } from "lucide-react";
+import { Clock, TrendingUp, Shield, Eye, FileCheck, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
