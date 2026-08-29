@@ -1,7 +1,9 @@
 import { ArrowRight, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/secondary/Reveal";
+
 
 
 const steps = [
