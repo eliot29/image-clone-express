@@ -75,21 +75,29 @@ const HeroSection = () => {
 
           
 
-          {/* Pain points — carrousel 2 colonnes */}
-          <div
-            className="grid grid-cols-2 gap-x-4 gap-y-3 mb-4 max-w-2xl mx-auto text-left min-h-[3.5rem] items-center"
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
-          >
-            {visible.map((point, k) => (
-              <div
-                key={`${offset}-${k}`}
-                className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm animate-slide-in-right"
-              >
-                <point.icon size={18} className="text-or-mat/60 shrink-0" />
-                <span>{point.text}</span>
-              </div>
-            ))}
+          {/* Pain points — 2 colonnes x 3 lignes, défilement vertical continu */}
+          <div className="group grid grid-cols-2 gap-x-4 sm:gap-x-8 mb-4 max-w-2xl mx-auto text-left">
+            {[0, 1].map((col) => {
+              const items = painPoints.filter((_, i) => i % 2 === col);
+              const track = [...items, ...items];
+              return (
+                <div key={col} className="overflow-hidden h-36">
+                  <div
+                    className={`flex flex-col ${col === 0 ? "animate-marquee-vertical" : "animate-marquee-vertical-reverse"} group-hover:[animation-play-state:paused]`}
+                  >
+                    {track.map((point, k) => (
+                      <div
+                        key={`${col}-${k}`}
+                        className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm h-12"
+                      >
+                        <point.icon size={18} className="text-or-mat/60 shrink-0" />
+                        <span>{point.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <p className="font-dm text-ardoise text-sm mb-2 italic">
