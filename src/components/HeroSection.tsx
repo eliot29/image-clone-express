@@ -109,10 +109,6 @@ const HeroSection = () => {
                 <span className="text-or-mat">Semaine 54</span>.
               </span>
             </p>
-
-            <Button variant="cta" size="lg" className="w-full sm:w-auto text-center whitespace-normal" asChild>
-              <a href="#calculateur">{"\n"}</a>
-            </Button>
           </div>
         </div>
       </div>
