@@ -61,20 +61,32 @@ const HeroSection = () => {
 
           
 
-          {/* Pain points — 2 colonnes x 3 lignes, défilement vertical continu */}
-          <div className="group grid grid-cols-2 gap-x-4 sm:gap-x-8 mb-4 max-w-2xl mx-auto text-left">
-            {[0, 1].map((col) => {
-              const items = painPoints.filter((_, i) => i % 2 === col);
+          {/* Pain points — 2 lignes en flux horizontal continu */}
+          <div
+            className="group mb-4 space-y-3"
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent 0, black 8%, black 92%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0, black 8%, black 92%, transparent 100%)",
+            }}
+          >
+            {[0, 1].map((row) => {
+              const items = painPoints.filter((_, i) => i % 2 === row);
               const track = [...items, ...items];
               return (
-                <div key={col} className="overflow-hidden h-36">
+                <div key={row} className="overflow-hidden">
                   <div
-                    className={`flex flex-col ${col === 0 ? "animate-marquee-vertical" : "animate-marquee-vertical-reverse"} group-hover:[animation-play-state:paused]`}
+                    className={`flex w-max marquee-row ${
+                      row === 0
+                        ? "animate-[marquee_38s_linear_infinite] sm:animate-[marquee_26s_linear_infinite]"
+                        : "animate-[marquee-reverse_46s_linear_infinite] sm:animate-[marquee-reverse_32s_linear_infinite]"
+                    } group-hover:[animation-play-state:paused]`}
                   >
                     {track.map((point, k) => (
                       <div
-                        key={`${col}-${k}`}
-                        className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm h-12"
+                        key={`${row}-${k}`}
+                        className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm whitespace-nowrap px-4 sm:px-6"
                       >
                         <point.icon size={18} className="text-or-mat/60 shrink-0" />
                         <span>{point.text}</span>
@@ -85,6 +97,7 @@ const HeroSection = () => {
               );
             })}
           </div>
+
 
           <p className="font-dm text-ardoise text-sm mb-2 italic">
             Et si toutes ces tâches se faisaient automatiquement ?
