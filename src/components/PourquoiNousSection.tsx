@@ -58,6 +58,13 @@ const PourquoiNousSection = () => {
                 Le déclic est venu en accompagnant{" "}
                 <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
               </p>
+
+              <img
+                src="/__l5e/assets-v1/5d47428d-d8f9-40f1-9a7e-cc66d726dd43/poissonnerie-ecosysteme.png"
+                alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
+                className="w-full rounded-xl mt-6 shadow-lg"
+                loading="lazy"
+              />
             </Reveal>
 
             {/* DÉCLIC → RÉSULTATS → SOLUTIONS */}
