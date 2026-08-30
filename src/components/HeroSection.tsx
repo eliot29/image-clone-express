@@ -1,5 +1,6 @@
 import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import CalculateurSection from "@/components/CalculateurSection";
+import VillesSlideshow from "@/components/VillesSlideshow";
 
 
 
