@@ -16,12 +16,28 @@ const ConceptSection = () => {
           </h2>
 
           <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 max-w-3xl mx-auto text-left">
-            <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
-              Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accompagnement et la personnalisation.</strong>
-            </p>
-            <p className="font-dm text-blanc-casse/80 leading-relaxed">
-              <strong className="text-blanc-casse font-bold">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong>, pour des solutions d'intelligence artificielle construites sur mesure, autour de votre métier et de votre organisation.
-            </p>
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:w-2/5 shrink-0">
+                <img
+                  src="/__l5e/assets-v1/44f5ac5a-cc28-4441-ac4f-1fce4d9af560/poissonnerie-visuel.jpeg"
+                  alt="Accompagnement et solutions Semaine 54"
+                  className="w-full aspect-square object-cover rounded-xl"
+                />
+                <img
+                  src="/__l5e/assets-v1/6ceb3693-3a98-4dd3-9e3b-7a4d0b22175a/concept-visuel.png"
+                  alt="Solutions d'intelligence artificielle sur mesure"
+                  className="w-full aspect-square object-cover rounded-xl"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
+                  Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accompagnement et la personnalisation.</strong>
+                </p>
+                <p className="font-dm text-blanc-casse/80 leading-relaxed">
+                  <strong className="text-blanc-casse font-bold">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong>, pour des solutions d'intelligence artificielle construites sur mesure, autour de votre métier et de votre organisation.
+                </p>
+              </div>
+            </div>
           </div>
 
           <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-center">
