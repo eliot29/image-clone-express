@@ -104,7 +104,7 @@ const HeroSection = () => {
           </p>
 
           {/* Punchline + calculateur dans un même bloc */}
-          <div className="mt-3 bg-card rounded-2xl shadow-lg px-5 sm:px-10 py-6 sm:py-8 text-left max-w-3xl mx-auto">
+          <div className="mt-3 bg-card rounded-2xl shadow-lg px-5 sm:px-10 py-8 sm:py-12 text-left max-w-xl mx-auto">
             <p className="font-bold text-navy text-2xl sm:text-3xl leading-snug text-center mb-6">
               Une année compte 52 semaines.{"\n"}Gagnez votre{" "}
               <span className="text-or-mat">Semaine 54</span>.
