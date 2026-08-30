@@ -15,11 +15,11 @@ const ConceptSection = () => {
             </span>
           </h2>
 
-          <div className="flex flex-col sm:flex-row items-stretch gap-6 max-w-3xl mx-auto text-left">
+          <div className="flex flex-col sm:flex-row items-stretch gap-6 max-w-4xl mx-auto text-left">
             <img
-              src="/__l5e/assets-v1/d04f3b3c-6512-40bd-9589-58ac07291a05/puzzle-s54.png"
+              src="/__l5e/assets-v1/d04f3b3c-6512-40bd-9589-58ac07291a05/puzzle-S54.png"
               alt="Schéma Semaine 54 : métier, équipe, clients, outils, organisation, données, communication, partenaires"
-              className="w-full sm:w-[32%] self-center rounded-2xl object-cover"
+              className="w-full sm:w-[22%] self-center rounded-2xl object-cover"
             />
             <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 flex-1">
               <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
