@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-import conceptVisuel from "@/assets/concept-visuel.png.asset.json";
+import conceptVisuel from "@/assets/puzzle-assets.json";
 import villesVisuel from "@/assets/villes-visuel.asset.json";
 
 const ConceptSection = () => {
