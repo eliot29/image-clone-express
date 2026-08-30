@@ -10,7 +10,7 @@ const CalculateurSection = () => {
   const gainHours = Math.round(hoursPerYear * 0.8);
 
   return (
-    <div className="bg-card rounded-xl shadow-card p-4 sm:p-5 w-full text-left">
+    <div className="w-full text-left">
       <div className="flex items-start gap-3 mb-4">
         <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-or-mat/10 shrink-0">
           <Calculator size={16} className="text-or-mat" />
