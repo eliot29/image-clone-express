@@ -110,8 +110,9 @@ const HeroSection = () => {
               <VillesSlideshow />
             </div>
             <div className="flex-1 bg-card rounded-2xl shadow-lg px-5 sm:px-8 py-6 sm:py-7 text-left flex flex-col justify-center">
-              <p className="font-syne font-bold text-navy text-base sm:text-lg lg:text-2xl leading-snug text-center mb-5">
-                Une année compte 52 semaines. Gagnez votre{" "}
+               <p className="font-syne font-bold text-navy text-base sm:text-lg lg:text-2xl leading-snug text-center mb-5">
+                 Une année compte 52 semaines.
+                 &nbsp;Gagnez votre{" "}
                 <span className="text-or-mat">Semaine 54</span>.
               </p>
               <CalculateurSection />
