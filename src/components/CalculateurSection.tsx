@@ -5,8 +5,8 @@ const CalculateurSection = () => {
   const [minutes, setMinutes] = useState(30);
   const [perWeek, setPerWeek] = useState(5);
 
-  const hoursPerYear = Math.round(minutes * perWeek * 52 / 60);
-  const weeksEquiv = (hoursPerYear / 40).toFixed(1);
+  const hoursPerYear = Math.round((minutes * perWeek * 52) / 60);
+  const weeksEquivalent = (hoursPerYear / 40).toFixed(1);
   const gainHours = Math.round(hoursPerYear * 0.8);
 
   return (
@@ -26,14 +26,11 @@ const CalculateurSection = () => {
       </div>
 
       {/* Inputs */}
-      <div className="space-y-3 mb-4">
-        <div>
-          <div className="flex items-baseline justify-between gap-2 mb-1 whitespace-nowrap">
-            <label className="font-dm text-xs font-semibold text-ardoise">
-              Temps par occurrence (minutes)
-            </label>
-            <span className="font-dm text-sm font-bold text-navy">{minutes} min</span>
-          </div>
+      <div className="grid grid-cols-2 gap-x-4 gap-y-0 mb-4">
+        <div className="min-w-0">
+          <label className="block font-dm text-xs font-semibold text-ardoise whitespace-nowrap">
+            Temps par occurrence
+          </label>
           <input
             type="range"
             min={5}
@@ -42,13 +39,11 @@ const CalculateurSection = () => {
             onChange={(e) => setMinutes(Number(e.target.value))}
             className="w-full accent-or-mat" />
         </div>
-        <div>
-          <div className="flex items-baseline justify-between gap-2 mb-1 whitespace-nowrap">
-            <label className="font-dm text-xs font-semibold text-ardoise">
-              Fréquence par semaine
-            </label>
-            <span className="font-dm text-sm font-bold text-navy">{perWeek}×/sem</span>
-          </div>
+        <div className="min-w-0">
+          <label className="block 
+font-dm text-xs font-semibold text-ardoise whitespace-nowrap">
+            Fréquence / semaine
+          </label>
           <input
             type="range"
             min={1}
@@ -66,7 +61,7 @@ const CalculateurSection = () => {
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">heures perdues/an</div>
         </div>
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{weeksEquiv}</div>
+          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{weeksEquivalent}</div>
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">semaines de travail</div>
         </div>
         <div className="bg-navy rounded-lg p-2.5">
