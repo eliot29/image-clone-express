@@ -33,7 +33,7 @@ const CalculateurSection = () => {
             <label className="font-dm text-xs font-semibold text-ardoise">
               Temps par occurrence
             </label>
-            <span className="font-anonymous text-xs font-bold text-or-mat">
+            <span className="font-dm text-xs font-bold text-or-mat">
               {minutes} min
             </span>
           </div>
@@ -52,7 +52,7 @@ const CalculateurSection = () => {
             <label className="font-dm text-xs font-semibold text-ardoise">
               Fréquence / semaine
             </label>
-            <span className="font-anonymous text-xs font-bold text-or-mat">
+            <span className="font-dm text-xs font-bold text-or-mat">
               {perWeek}×
             </span>
           </div>
