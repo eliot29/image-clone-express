@@ -24,8 +24,7 @@ const ConceptSection = () => {
                   className="w-full aspect-square object-cover rounded-xl"
                 />
                 <img
-                  src="/__l5e/
-assets-v1/6ceb3693-3a98-4dd3-9e3b-7a4d0b22175a/concept-visuel.png"
+                  src="/__l5e/assets-v1/6ceb3693-3a98-4dd3-9e3b-7a4d0b22175a/concept-visuel.png"
                   alt="Solutions d'intelligence artificielle sur mesure"
                   className="w-full aspect-square object-cover rounded-xl"
                 />
