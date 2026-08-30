@@ -48,8 +48,7 @@ Section = () => {
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-pas">
-                Comprendre l'accent
- Semaine 54
+                Comprendre l'approche Semaine 54
                 <ArrowRight size={16} />
               </Link>
             </Button>
