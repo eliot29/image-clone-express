@@ -61,14 +61,12 @@ font-dm text-xs font-semibold text-ardoise whitespace-nowrap">
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">heures perdues/an</div>
         </div>
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{weeksEquiv}</div>
+          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{weeksEquivalent}</div>
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">semaines de travail</div>
         </div>
         <div className="bg-navy rounded-lg p-2.5">
           <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{gainHours}h</div>
-          <div className="font-dm 
-text-[10px] 
-leading-tight text-blanc-casse/60 mt-0.5">gain si automatisé</div>
+          <div className="font-dm text-[10px] leading-tight text-blanc-casse/60 mt-0.5">gain si automatisé</div>
         </div>
       </div>
     </div>
