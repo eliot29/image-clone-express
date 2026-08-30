@@ -24,9 +24,6 @@ const ConceptSection = () => {
             </p>
           </div>
 
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-center">
-            L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
-          </p>
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
