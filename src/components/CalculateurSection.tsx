@@ -28,7 +28,7 @@ const CalculateurSection = () => {
       {/* Inputs */}
       <div className="space-y-3 mb-4">
         <div>
-          <div className="flex items-baseline justify-between mb-1">
+          <div className="flex items-baseline justify-between gap-2 mb-1 whitespace-nowrap">
             <label className="font-dm text-xs font-semibold text-ardoise">
               Temps par occurrence (minutes)
             </label>
@@ -43,7 +43,7 @@ const CalculateurSection = () => {
             className="w-full accent-or-mat" />
         </div>
         <div>
-          <div className="flex items-baseline justify-between mb-1">
+          <div className="flex items-baseline justify-between gap-2 mb-1 whitespace-nowrap">
             <label className="font-dm text-xs font-semibold text-ardoise">
               Fréquence par semaine
             </label>
