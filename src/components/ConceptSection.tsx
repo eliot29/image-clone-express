@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 import conceptVisuel from "@/assets/concept-visuel.png.asset.json";
-import villesVis"
-uel from "@/assets/villes-visuel.png.asset.json";
+import villes'
+Visuel from "@/assets/villes-visuel.png.asset.json";
 
 const ConceptSection = () => {
   return (
@@ -21,9 +21,10 @@ const ConceptSection = () => {
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 text-left">
             <div className="flex-1 bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10">
               <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
-                Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accent et la personnalisation.</strong>
+                Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accent companions.</strong>
               </p>
-              <p className="font-dm text-blanc-casse/80 leading-relaxed">
+              <p className="font-dm text-blanc-casse-
+/80 leading-relaxed">
                 <strong className="text-blanc-casse font-bold">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong>, pour des solutions d'intelligence artificielle construites sur mesure, autour de votre métier et de votre organisation.
               </p>
             </div>
@@ -48,7 +49,7 @@ const ConceptSection = () => {
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-pas">
-                Comprendre l'approche Semaine 54
+                Comprendre l'accent Semaine 54
                 <ArrowRight size={16} />
               </Link>
             </Button>
