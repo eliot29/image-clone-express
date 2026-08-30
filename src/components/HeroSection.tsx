@@ -106,17 +106,18 @@ const HeroSection = () => {
 
           {/* Photos + punchline + calculateur */}
           <div className="mt-3 flex flex-col lg:flex-row items-stretch gap-5 max-w-6xl mx-auto">
-            <div className="w-full lg:w-[28%] shrink-0">
+            <div className="w-full lg:w-[34%] shrink-0 flex">
               <VillesSlideshow />
             </div>
-            <div className="flex-1 bg-card rounded-2xl shadow-lg px-5 sm:px-10 py-8 sm:py-12 text-left">
-              <p className="font-bold text-navy text-lg sm:text-xl lg:text-3xl leading-snug text-center mb-6 whitespace-nowrap">
+            <div className="flex-1 bg-card rounded-2xl shadow-lg px-5 sm:px-8 py-6 sm:py-7 text-left flex flex-col justify-center">
+              <p className="font-syne font-bold text-navy text-base sm:text-lg lg:text-2xl leading-snug text-center mb-5">
                 Une année compte 52 semaines. Gagnez votre{" "}
-                <span className="text-or-lure text-or-mat">Semaine 54</span>.
+                <span className="text-or-mat">Semaine 54</span>.
               </p>
               <CalculateurSection />
             </div>
           </div>
+
         </div>
       </div>
     </section>);
