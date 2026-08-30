@@ -6,8 +6,7 @@ const CalculateurSection = () => {
   const [perWeek, setPerWeek] = useState(5);
 
   const hoursPerYear = Math.round((minutes * perWeek * 52) / 60);
-  const weeksEquiv = (hours
-PerYear / 40).toFixed(1);
+  const weeksEquivalent = (hoursPerYear / 40).toFixed(1);
   const gainHours = Math.round(hoursPerYear * 0.8);
 
   return (
