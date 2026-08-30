@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import puzzle from "@/assets/puzzle-semaine54.jpeg.asset.json";
+import brest from "@/assets/brest.jpg.asset.json";
+import rennes from "@/assets/rennes.jpg.asset.json";
+import saintBrieuc from "@/assets/saint-brieuc.jpg.asset.json";
+import vannes from "@/assets/vannes.jpg.asset.json";
+
+const villes = [
+  { src: brest.url, alt: "Brest, Finistère" },
+  { src: rennes.url, alt: "Rennes, Ille-et-Vilaine" },
+  { src: saintBrieuc.url, alt: "Saint-Brieuc, Côtes-d'Armor" },
+  { src: vannes.url, alt: "Vannes, Morbihan" },
+];
+
+
 
 
 const ConceptSection = () => {
