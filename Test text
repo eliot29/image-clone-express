@@ -1,0 +1,209 @@
+import { useState } from "react";
+import { Calculator }
+  from "lucide-react";
+
+const c = {
+  wrap:
+  "bg-gris-perle " +
+  "rounded-lg p-2.5",
+  label:
+  "font-dm text-xs " +
+  "font-semibold text-ardoise",
+};
+
+function CalculateurSection() {
+  const [minutes, setMinutes] =
+    useState(30);
+  const [perWeek, setPerWeek] =
+    useState(5);
+
+  const hoursPerYear = Math.round(
+    minutes * perWeek * 52 / 60
+  );
+  const weeksEquiv =
+    (hoursPer 
+Year / 40).toFixed(1);
+  const gainHours = Math.round(
+    hoursPerYear * 0.8
+  );
+
+  return (
+    <div
+      className="w-full
+ text-left">
+      <div className=
+"flex items-start gap-3
+ mb-4">
+        <div className=
+"inline-flex items-center
+ justify-center w-8 h-8
+ rounded-full bg-or-mat/10
+ shrink-0">
+          <Calculator
+            size={16}
+            className=
+"text-or-mat" />
+        </div>
+        <div>
+          <h2 className=
+"font-dm font-bold
+ text-sm text-navy
+ leading-snug">
+            Combien vous coûte
+            cette tâche
+            chaque année?
+          </h2>
+          <p className=
+"font
+-dm text-xs
+ text-gris
+-bleu">
+            Entrez le
+            temps
+            passé
+            et
+            la
+            fréquence.
+          </p>
+        </div>
+      </div>
+
+      {/* Inputs */}
+      <div className=
+"grid grid-cols-2
+ gap-x-5 gap-y-2 mb-4">
+        <div>
+          <label
+            className={c
+.label}>
+            Temps /
+            occurrence
+          </label>
+          <input
+            type="range"
+            min={5}
+            max={120}
+            value={minutes}
+            onChange={(e) =>
+              setMinutes(
+                Number(
+                  e
+.target
+.value
+                )
+              )
+            }
+            className=
+"w-full accent
+-or-mass"
+ />
+        </div>
+        <div>
+          <label
+            className={c
+.label}>
+            Fréquence /
+            semaine
+          </label>
+          <input
+            type="range"
+            min={1}
+            max={30}
+            value={perWeek}
+            onChange={(e) =>
+              setPerWeek(
+                Number(
+                  e
+.target
+.value
+                )
+              )
+            }
+            className=
+"w-full accent
+-or-mass"
+ />
+        </div>
+      </div>
+
+      {/* Results */}
+      <div className=
+"grid grid-cols-3
+ gap-2 text-center">
+        <div
+          className={c
+.wrap}>
+          <div
+            className=
+"font-dm text-lg
+ font-bold
+ text-navy">
+            {hours
+PerYear}
+          </div>
+          <div
+            className=
+"font
+-dm text-[10px]
+ leading-tight
+ text-gris
+-bleu">
+            heures
+            perdues / an
+          </div>
+        </div>
+        <div
+          className={c
+.wrap}>
+          <div
+            className=
+"font
+-dm
+ text-lg
+ font-bold
+ text-navy">
+            {weeks
+Equiv}
+          </div>
+          <div
+            className=
+"font
+-dm text-[10px]
+ leading-tight
+ text-gris
+-bleu">
+            semaines
+            de travail
+          </div>
+        </div>
+        <div
+          className=
+"bg-navy
+ rounded-lg
+ p-2.5">
+          <div
+            className=
+"font
+-dm text-lg
+ font-bold
+ text-navy">
+            {gainHours}h
+          </div>
+          <div
+            className=
+"font
+-dm text-[10px]
+ leading-tight
+ text-gris
+-bleue">
+            gain si
+            automatisé
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default
+  CalculateurSection;
