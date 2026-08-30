@@ -62,7 +62,7 @@ const PourquoiNousSection = () => {
               <img
                 src="/__l5e/assets-v1/5d47428d-d8f9-40f1-9a7e-cc66d726dd43/poissonnerie-ecosysteme.png"
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-                className="w-full rounded-xl mt-6 shadow-lg"
+                className="w-full max-w-[260px] mx-auto rounded-xl mt-6 shadow-lg"
                 loading="lazy"
               />
             </Reveal>
