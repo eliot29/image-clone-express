@@ -109,7 +109,7 @@ const HeroSection = () => {
               Une année compte 52 semaines.{"\n"}Gagnez votre{" "}
               <span className="text-or">Semaine 54</span>.
             </p>
-            <CalculateurBlock />
+            <CalculateurSection />
           </div>
         </div>
       </div>
