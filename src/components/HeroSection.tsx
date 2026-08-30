@@ -107,7 +107,7 @@ const HeroSection = () => {
           <div className="mt-3 bg-card rounded-2xl shadow-lg px-5 sm:px-8 py-6 sm:py-8 text-left max-w-xl mx-auto">
             <p className="font-bold text-navy text-2xl sm:text-3xl leading-snug text-center mb-6">
               Une année compte 52 semaines.{"\n"}Gagnez votre{" "}
-              <span className="text-or">Semaine 54</span>.
+              <span className="text-or-mat">Semaine 54</span>.
             </p>
             <CalculateurSection />
           </div>
