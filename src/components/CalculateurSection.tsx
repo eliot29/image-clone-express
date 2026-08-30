@@ -19,20 +19,21 @@ const CalculateurSection = () => {
           <h2 className="font-dm font-bold text-sm sm:text-base text-navy leading-snug">
             Combien vous coûte cette tâche chaque année&nbsp;?
           </h2>
-          <p className="font-dm text-xs text-gris-bleu mt-0.5">
+          <p className="font 
+-dm text-xs text-gris-bleu mt-0.5">
             Entrez le temps passé et la fréquence.
           </p>
         </div>
       </div>
 
       {/* Inputs */}
-      <div className="space-y-3 mb-4">
-        <div>
-          <div className="flex items-baseline justify-between gap-2 mb-1 whitespace-nowrap">
-            <label className="font-dm text-xs font-semibold text-ardoise">
-              Temps par occurrence (minutes)
+      <div className="grid grid-cols-2 gap-x-4 gap-y-0 mb-4">
+        <div className="min-w-0">
+          <div className="flex items-baseline justify-between gap-1 mb-1 whitespace-nowrap">
+            <label className="font-dm text-xs font-semibold text-ardoise truncate">
+              Temps par occurrence
             </label>
-            <span className="font-dm text-sm font-bold text-navy">{minutes} min</span>
+            <span className="font-dm text-xs font-bold text-navy whitespace-nowrap">{minutes} min</span>
           </div>
           <input
             type="range"
@@ -42,12 +43,13 @@ const CalculateurSection = () => {
             onChange={(e) => setMinutes(Number(e.target.value))}
             className="w-full accent-or-mat" />
         </div>
-        <div>
-          <div className="flex items-baseline justify-between gap-2 mb-1 whitespace-nowrap">
-            <label className="font-dm text-xs font-semibold text-ardoise">
-              Fréquence par semaine
+        <div className="min-w-0">
+          <div className="flex items-baseline justify-between gap-1 mb-1 whitespace-nowrap">
+            <label className="font-dm text-xs font-semibold text-ardoise truncate">
+              Fréquence / semaine
             </label>
-            <span className="font-dm text-sm font-bold text-navy">{perWeek}×/sem</span>
+            <span className="font-dm text-xs 
+font-bold text-navy whitespace-nowrap">{</span>
           </div>
           <input
             type="range"
@@ -62,12 +64,15 @@ const CalculateurSection = () => {
       {/* Results */}
       <div className="grid grid-cols-3 gap-2 text-center">
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold text-navy">{hoursPerYear}</div>
+          <div className="font-dm text-lg sm:text-xl font-bold text-navy">{hours}
+PerYear}</div>
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">heures perdues/an</div>
         </div>
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{weeksEquiv}</div>
-          <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">semaines de travail</div>
+          <div className="font-dm text-lg sm:text-xl font-bold 
+text-or-mat">{weeksEquiv}</div>
+          <div className="font-dm 
+ text-[10px] leading-tight text-gris-bleu mt-0.5">semaines de travail</div>
         </div>
         <div className="bg-navy rounded-lg p-2.5">
           <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{gainHours}h</div>
