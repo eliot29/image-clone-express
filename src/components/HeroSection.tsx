@@ -100,7 +100,7 @@ const HeroSection = () => {
 
 
           <p className="font-dm font-bold text-ardoise text-base sm:text-lg mb-2 italic">
-            Et si toutes ces tâches se faisaient automatiquement ?
+            Et si toutes ces tâches se faisaient en autonomie ?
           </p>
 
           {/* Punchline + calculateur dans un même bloc */}
