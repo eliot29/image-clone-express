@@ -45,7 +45,7 @@ const ConceptSection = () => {
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/pourquoi-ia-generique-ne-pas">
+              <Link to="/pourquoi-ia-generique-ne-suffit-pas">
                 Comprendre Semaine 54
                 <ArrowRight size={16} />
               </Link>
