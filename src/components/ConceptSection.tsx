@@ -19,7 +19,7 @@ const ConceptSection = () => {
             <img
               src="/__l5e/assets-v1/d04f3b3c-6512-40bd-9589-58ac07291a05/puzzle-s54.png"
               alt="Schéma Semaine 54 : métier, équipe, clients, outils, organisation, données, communication, partenaires"
-              className="w-full sm:w-1/2 rounded-2xl object-cover"
+              className="w-full sm:w-[32%] self-center rounded-2xl object-cover"
             />
             <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 flex-1">
               <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
