@@ -103,17 +103,13 @@ const HeroSection = () => {
             Et si toutes ces tâches se faisaient automatiquement ?
           </p>
 
-          {/* Punchline + calculateur compact côte à côte */}
-          <div className="mt-3 flex flex-col sm:flex-row items-stretch justify-center gap-4 sm:gap-5 text-left">
-            <p className="inline-flex items-center bg-navy rounded-2xl px-6 sm:px-8 py-4 sm:py-5 shadow-lg flex-1 sm:flex-[1.4] sm:max-w-xl">
-              <span className="block w-full font-dm font-bold italic text-blanc-casse text-2xl sm:text-3xl leading-snug">
-                Une année compte 52 semaines.{"\n"}Gagnez votre{" "}
-                <span className="text-or-mat">Semaine 54</span>.
-              </span>
+          {/* Punchline + calculateur dans un même bloc */}
+          <div className="mt-3 bg-card rounded-2xl shadow-lg px-5 sm:px-8 py-6 sm:py-8 text-left max-w-xl mx-auto">
+            <p className="font-bold text-navy text-2xl sm:text-3xl leading-snug text-center mb-6">
+              Une année compte 52 semaines.{"\n"}Gagnez votre{" "}
+              <span className="text-or-mat">Semaine 54</span>.
             </p>
-            <div className="flex-none sm:w-[45%] sm:max-w-xl">
-              <CalculateurSection />
-            </div>
+            <CalculateurSection />
           </div>
         </div>
       </div>
