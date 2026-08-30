@@ -1,20 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import puzzle from "@/assets/puzzle-semaine54.jpeg.asset.json";
-import brest from "@/assets/brest.jpg.asset.json";
-import rennes from "@/assets/rennes.jpg.asset.json";
-import saintBrieuc from "@/assets/saint-brieuc.jpg.asset.json";
-import vannes from "@/assets/vannes.jpg.asset.json";
-
-const villes = [
-  { src: brest.url, alt: "Brest, Finistère" },
-  { src: rennes.url, alt: "Rennes, Ille-et-Vilaine" },
-  { src: saintBrieuc.url, alt: "Saint-Brieuc, Côtes-d'Armor" },
-  { src: vannes.url, alt: "Vannes, Morbihan" },
-];
-
-
 
 
 const ConceptSection = () => {
@@ -36,28 +22,7 @@ const ConceptSection = () => {
             <p className="font-dm text-blanc-casse/80 leading-relaxed">
               <strong className="text-blanc-casse font-bold">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong>, pour des solutions d'intelligence artificielle construites sur mesure, autour de votre métier et de votre organisation.
             </p>
-
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-4 items-center">
-              <img
-                src={puzzle.url}
-                alt="Les solutions Semaine 54 s'assemblent autour du métier, de l'équipe, des clients, des outils, de l'organisation, des données, de la communication et des partenaires"
-                loading="lazy"
-                className="w-full rounded-xl bg-blanc-casse"
-              />
-              <div className="grid grid-cols-2 gap-3">
-                {villes.map((v) => (
-                  <img
-                    key={v.src}
-                    src={v.src}
-                    alt={v.alt}
-                    loading="lazy"
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                ))}
-              </div>
-            </div>
           </div>
-
 
           <p className="font-dm font-bold text-or-mat text-lg sm:text-xl mt-6 max-w-full mx-auto leading-snug text-center">
             L'IA est un avantage concurrentiel lorsqu'elle est adaptée à votre entreprise.
