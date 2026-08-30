@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Calculator } from "lucide-react";
 
-const CalculateurSection = () => {
+const Calculateur
+ 
+Section = () => {
   const [minutes, setMinutes] = useState(30);
   const [perWeek, setPerWeek] = useState(5);
 
@@ -19,8 +21,7 @@ const CalculateurSection = () => {
           <h2 className="font-dm font-bold text-sm sm:text-base text-navy leading-snug">
             Combien vous coûte cette tâche chaque année&nbsp;?
           </h2>
-          <p className="font 
--dm text-xs text-gris-bleu mt-0.5">
+          <p className="font-dm text-xs text-gris-bleu mt-0.5">
             Entrez le temps passé et la fréquence.
           </p>
         </div>
@@ -33,7 +34,9 @@ const CalculateurSection = () => {
             <label className="font-dm text-xs font-semibold text-ardoise truncate">
               Temps par occurrence
             </label>
-            <span className="font-dm text-xs font-bold text-navy whitespace-nowrap">{minutes} min</span>
+            <span className="font-dm text-xs font-bold text-navy whitespace-nowrap">
+              {minutes} min
+            </span>
           </div>
           <input
             type="range"
@@ -48,34 +51,42 @@ const CalculateurSection = () => {
             <label className="font-dm text-xs font-semibold text-ardoise truncate">
               Fréquence / semaine
             </label>
-            <span className="font-dm text-xs 
-font-bold text-navy whitespace-nowrap">{</span>
+            <span className="font-dm text-xs font-bold 
+text-navy whitespace-nowrap">
+              {perWeek}×/sem
+            </span>
           </div>
           <input
             type="range"
             min={1}
             max={30}
             value={perWeek}
-            onChange={(e) => setPerWeek(Number(e.target.value))}
+            onChange={(e) => 
+setPerWeek(Number(e.target.value))}
             className="w-full accent-or-mat" />
         </div>
       </div>
 
       {/* Results */}
-      <div className="grid grid-cols-3 gap-2 text-center">
+      <div className="grid grid-cols-3 gap-2 
+text-center">
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold text-navy">{hours}
-PerYear}</div>
+          <div className="font-dm text-lg 
+sm:text-xl font-bold text-navy">{hoursPerYear}</div>
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">heures perdues/an</div>
         </div>
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold 
-text-or-mat">{weeksEquiv}</div>
-          <div className="font-dm 
- text-[10px] leading-tight text-gris-bleu mt-0.5">semaines de travail</div>
+          <div className="font-dm text-lg 
+sm:text-xl font-bold text-or-mat">{weeksEquiv}</div>
+          <div className="font-dm text-[10px] leading-tight 
+text-gris-bleu 
+mt-0.5">semaines de travail</div>
         </div>
-        <div className="bg-navy rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{gainHours}h</div>
+        <div className="bg-navy 
+rounded-lg p-2.5">
+          <div className="font-dm text-lg sm:text-xl 
+font-bold text-or-mat">
+{gainHours}h</div>
           <div className="font-dm text-[10px] leading-tight text-blanc-casse/60 mt-0.5">gain si automatisé</div>
         </div>
       </div>
