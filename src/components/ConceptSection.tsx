@@ -2,26 +2,30 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-import conceptVisuel from "@/assets/villes.json";
+import conceptVisuel from "@/assets/concept-visuel.png.asset.json";
+import villesVisuel from "@/assets/villes-visuel.png.asset.json";
 
 const ConceptSection = () => {
   return (
     <section id="concept" className="bg-navy py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-6">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl
+ text-blanc-casse mb-6">
             L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
             <span className="text-or-mat">
               Sous certaines conditions.
             </span>
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 text-left">
-            <div className="flex-1 bg-blanc-casse/5 rounded-2xl p-6 border border.
- /10">
+          <div className="flex flex-col md:flex-row items-center gap-6
+ md:gap-8 text-left">
+            <div className="flex-1
+ bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10">
               <p className="font-dm text-blanc
  leading-relaxed mb-4">
-                Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le sujet : la personnalisation.</strong>
+                Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le sujet
+ la personnalisation.</strong>
               </p>
               <p className="font-dm text-blanc
  leading-relaxed">
@@ -39,8 +43,10 @@ const ConceptSection = () => {
               <img
                 src={villesVisuel}
                 alt="Villes bretonnes desservies : Brest, Rennes, Saint-Brieuc et Vannes"
-                className="w-full rounded-xl object-cover"
-                loading="lazy"
+                className="w-full
+ rounded-xl object-cover"
+                loading
+"lazy"
               />
             </div>
           </div>
