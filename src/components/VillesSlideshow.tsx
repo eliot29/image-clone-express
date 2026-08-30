@@ -22,7 +22,7 @@ const VillesSlideshow = () => {
   }, []);
 
   return (
-    <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-lg">
+    <div className="relative w-full h-full min-h-56 aspect-[16/10] lg:aspect-auto rounded-2xl overflow-hidden shadow-lg">
       {villes.map((ville, i) => (
         <img
           key={ville.url}
