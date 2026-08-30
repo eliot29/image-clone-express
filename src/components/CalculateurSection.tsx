@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { Calculator } from "lucide-react";
 
-const Calculateur
- 
-Section = () => {
+const SLIDERS = [
+  { key: "minutes", label: "Temps par occurrence", min: 5, max: 120 },
+  { key: "freq", label: "Fréquence / semaine", min: 1, max: 30 },
+] as const;
+
+const CalculateurSection = () => {
   const [minutes, setMinutes] = useState(30);
   const [perWeek, setPerWeek] = useState(5);
 
-  const hoursPerYear = Math.round(minutes * perWeek * 52 / 60);
+  const hoursPerYear = Math.round((minutes * perWeek * 52) / 60);
   const weeksEquiv = (hoursPerYear / 40).toFixed(1);
   const gainHours = Math.round(hoursPerYear * 0.8);
 
@@ -28,16 +31,11 @@ Section = () => {
       </div>
 
       {/* Inputs */}
-      <div className="grid grid-cols-2 gap-x-4 gap-y-0 mb-4">
+      <div className="grid grid-cols-2 gap-x-4 mb-4">
         <div className="min-w-0">
-          <div className="flex items-baseline justify-between gap-1 mb-1 whitespace-nowrap">
-            <label className="font-dm text-xs font-semibold text-ardoise truncate">
-              Temps par occurrence
-            </label>
-            <span className="font-dm text-xs font-bold text-navy whitespace-nowrap">
-              {minutes} min
-            </span>
-          </div>
+          <label className="block font-dm text-xs font-semibold text-ardoise whitespace-nowrap truncate">
+            Temps par occurrence
+          </label>
           <input
             type="range"
             min={5}
@@ -45,49 +43,36 @@ Section = () => {
             value={minutes}
             onChange={(e) => setMinutes(Number(e.target.value))}
             className="w-full accent-or-mat" />
+          <div className="font 
+-dm text-xs font-bold text-navy mt-1">{minutes} min</div>
         </div>
         <div className="min-w-0">
-          <div className="flex items-baseline justify-between gap-1 mb-1 whitespace-nowrap">
-            <label className="font-dm text-xs font-semibold text-ardoise truncate">
-              Fréquence / semaine
-            </label>
-            <span className="font-dm text-xs font-bold 
-text-navy whitespace-nowrap">
-              {perWeek}×/sem
-            </span>
-          </div>
+          <label className="block font-dm text-xs font-semibold text-ardoise whitespace-nowrap truncate">
+            Fréquence / semaine
+          </label>
           <input
             type="range"
             min={1}
             max={30}
             value={perWeek}
-            onChange={(e) => 
-setPerWeek(Number(e.target.value))}
+            onChange={(e) => setPerWeek(Number(e.target.value))}
             className="w-full accent-or-mat" />
+          <div className="font-dm text-xs font-bold text-navy mt-1">{perWeek}×/sem</div>
         </div>
       </div>
 
       {/* Results */}
-      <div className="grid grid-cols-3 gap-2 
-text-center">
+      <div className="grid grid-cols-3 gap-2 text-center">
         <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg 
-sm:text-xl font-bold text-navy">{hoursPerYear}</div>
+          <div className="font-dm text-lg sm:text-xl font-bold text-navy">{hoursPerYear}</div>
           <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">heures perdues/an</div>
         </div>
-        <div className="bg-gris-perle rounded-lg p-2.5">
-          <div className="font-dm text-lg 
-sm:text-xl font-bold text-or-mat">{weeksEquiv}</div>
-          <div className="font-dm text-[10px] leading-tight 
-text-gris-bleu 
-mt-0.5">semaines de travail</div>
+        <div className="bg-gris-perle rounded-lg p2.5">
+          <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{weeksEquiv}</div>
+          <div className="font-dm text-[10px] leading-tight text-gris-bleu mt-0.5">semaines de travail</p></div>
         </div>
-        <div className="bg-navy 
-rounded-lg p-2.5">
-          <div className="font-dm text-lg sm:text-xl 
-font-bold text-or-mat">
-{gainHours}h</div>
-          <div className="font-dm text-[10px] leading-tight text-blanc-casse/60 mt-0.5">gain si automatisé</div>
+        <div className="bg-navy rounded-lg p-2.5">
+          <div className="font-dm text-lg sm:text-xl font-bold text-#f39"></div>
         </div>
       </div>
     </div>
