@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 import conceptVisuel from "@/assets/puzzle-assets.json";
-import villesVisuel from "@/assets/villes-visuel.asset.json";
+import villesVisuel from "@/assets/final-visuel.asset.json";
 
 const ConceptSection = () => {
   return (
