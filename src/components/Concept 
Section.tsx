@@ -18,18 +18,16 @@ const ConceptSection = () => {
           <div className="flex flex-col-reverse sm:flex-row items-stretch gap-6 max-w-3xl mx-auto text-left">
             <div className="bg-blanc-casse/5 rounded-2xl p-6 border border-blanc-casse/10 flex-1">
               <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
-                Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accompagnement et la personnalisation.</strong>
+                Les outils IA se multiplient. Beaucoup sont trop génériques<br className="sm:hidden" /> pour s'adapter à la réalité des entreprises. <strong className="text-blanc-font-bold text-blanc-casse font-bold">Le vrai sujet&nbsp;: l'accompagnement et la personnalisation.</strong>
               </p>
-              <p className="font-dm text-blanc-casse/80 leading-relaxed">
+              <p className="font-dm text-blanc-casse/80">
                 <strong className="text-blanc-casse font-bold">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong>, pour des solutions d'intelligence artificielle construites sur mesure, autour de votre métier et de votre organisation.
               </p>
             </div>
             <img
               src="/__l5e/assets-v1/d963ce49-4717-4d63-bc8e-d5403d6ee4c5/villes-bretagne.png"
               alt="Villes desservies par Semaine 54 : Brest, Rennes, Saint-Brieuc et Vannes"
-              className="w-full sm:w-[32%] 
-self-center rounded-2xl 
-object-cover"
+              className="w-full sm:w-[32%] self-center rounded-2xl object-cover"
             />
           </div>
 
@@ -39,7 +37,7 @@ object-cover"
 
           <div className="text-center mt-4">
             <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/pourquoi-ia-generique-ne-suffit-pas">
+              <Link to="/pourquoi-ia-generique-ne-pas">
                 Comprendre l'approche Semaine 54
                 <ArrowRight size={16} />
               </Link>
