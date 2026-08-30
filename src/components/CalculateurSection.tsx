@@ -3,7 +3,9 @@ import { Calculator } from "lucide-react";
 
 const CalculateurSection = () => {
   const [minutes, setMinutes] = useState(30);
-  const [perWeek, setPerWeek] = useState(5);
+  
+ const 
+[perWeek, setPerWeek] = useState(5);
 
   const hoursPerYear = Math.round(minutes * perWeek * 52 / 60);
   const weeksEquiv = (hoursPerYear / 40).toFixed(1);
@@ -26,13 +28,16 @@ const CalculateurSection = () => {
       </div>
 
       {/* Inputs */}
-      <div className="space-y-3 mb-4">
+      <div className="grid grid-cols-2 gap-x-5 gap-y-2 mb-4">
         <div>
-          <div className="flex items-baseline justify-between mb-1">
-            <label className="font-dm text-xs font-semibold text-ardoise">
-              Temps par occurrence (minutes)
+          <div className="flex items-baseline justify-between mb-1 gap-2">
+            <label className="font-dm text-xs font-semibold text-ardois
+              e whitespace-nowrap">
+              Temps / occurrence
             </label>
-            <span className="font-dm text-sm font-bold text-navy">{minutes} min</span>
+            <span className="font-dm text-sm font-bold text-navy whitespace-nowrap">
+              {minutes} min
+            </span>
           </div>
           <input
             type="range"
@@ -40,14 +45,18 @@ const CalculateurSection = () => {
             max={120}
             value={minutes}
             onChange={(e) => setMinutes(Number(e.target.value))}
-            className="w-full accent-or-mat" />
+            className="w-full 
+            accent-or-mat" />
         </div>
         <div>
-          <div className="flex items-baseline justify-between mb-1">
-            <label className="font-dm text-xs font-semibold text-ardoise">
-              Fréquence par semaine
+          <div className="flex items-baseline justify-between mb-1 gap-2">
+            <label className="font-dm text-xs font-semibold text-ardoise whitespace-nowrap">
+              Fréquence / semaine
             </label>
-            <span className="font-dm text-sm font-bold text-navy">{perWeek}×/sem</span>
+            <span className="font-dm 
+             text-sm font-bold text-navy whitespace-nowrap">
+              {perWeek}×
+            </span>
           </div>
           <input
             type="range"
@@ -59,7 +68,8 @@ const CalculateurSection = () => {
         </div>
       </div>
 
-      {/* Results */}
+      {/* 
+ Results */}
       <div className="grid grid-cols-3 gap-2 text-center">
         <div className="bg-gris-perle rounded-lg p-2.5">
           <div className="font-dm text-lg sm:text-xl font-bold text-navy">{hoursPerYear}</div>
