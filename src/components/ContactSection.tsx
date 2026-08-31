@@ -44,3 +44,20 @@ handleSubmit() {
     setEmail("");
     setMessage("");
   };
+
+  return (
+    <section id="audit" className="bg-navy py-6">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-4">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">
+              <CalendarCheck size={24} className="text-or-mat" />
+            </div>
+          </div>
+          <h2 className="font-dm font-extrabold;
+            Diagnostic gratuit
+          </h2>
+
+          <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
+            Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
+          </p>
