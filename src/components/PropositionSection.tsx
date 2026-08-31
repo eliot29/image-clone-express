@@ -291,12 +291,14 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug max-w-full mx-auto text-center">
-            Maîtriser et tester les outils IA demande du temps.
-          </p>
-          <p className="font-dm font-bold text-or-mat text-lg sm:text-xl leading-snug max-w-full mx-auto text-center mt-2">
-            Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
-          </p>
+<div className="rounded-2xl border-2 border-navy bg-gris-perle/60 px-4 py-5 sm:px-6 sm:py-6 mx-auto text-center">
+            <p className="font-dm font-bold text-navy text-lg sm:text-xl lg:text-2xl leading">
+              Maîtriser et tester les outils IA demande du temps.
+            </p>
+            <p className="font-dm font-bold text-or-mat text-lg sm:text-xl lg:text-2xl leading-snug mt-2">
+              Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+            </p>
+          </div>
 
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             <Button variant="ctaOutline" size="default" asChild>
