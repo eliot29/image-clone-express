@@ -79,7 +79,7 @@ const MethodeSection = () => {
               </Link>
             </Button>
           </div>
-          <div className="mt-10 max-w-3xl mx-auto">
+          <div className="mt-10 max-w-4xl mx-auto px-4">
             <img
               src="/__l5e/assets-v1/ebe3bc59-d136-4a3d-a49f-4afd35e0753f/methode-process.png"
               alt="Schéma du processus Semaine 54 : comprendre, concevoir, automatiser, faire évoluer et grandir ensemble"
