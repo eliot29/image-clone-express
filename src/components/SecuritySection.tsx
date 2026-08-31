@@ -19,7 +19,8 @@ const SecuritySection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="rounded-xl p-8 md:p-10">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Shield size={22} className="text-or-mat shrink-0" />
+              <Shield size={22} className="text
+or-mat shrink-0" />
               <h2 className="font-dm font-bold text-2xl text-navy">Sécurité & RGPD</h2>
             </div>
             <div className="flex items-start gap-3 justify-center">
@@ -31,13 +32,15 @@ const SecuritySection = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-            <PhotoSlideshow images={villes} label="Ville de Bretagne" />
-            <PhotoSlideshow images={metiers} label="Métier accompagné" interval={4200} />
+          <div className="rounded-2xl border-2 border-navy p-4 sm:p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <PhotoSlideshow images={villes} label="Ville de Bretagne" />
+              <PhotoSlideshow images={metiers} label="Métier accompagné" interval={4200} />
+            </div>
+            <p className="font-dm font-bold text-lg sm:text-xl text-navy text-center mt-6">
+              Même terrain, même jargon. <span className="text-or-mat">L'IA qui comprend vos enjeux.</span>
+            </p>
           </div>
-          <p className="font-dm font-bold text-lg sm:text-xl text-navy text-center">
-            Même terrain, même jargon. <span className="text-or-mat">L'IA qui comprend vos enjeux.</span>
-          </p>
         </div>
       </div>
     </section>
