@@ -296,7 +296,7 @@ const PropositionSection = () => {
               Maîtriser et tester les outils IA demande du temps.
             </p>
             <p className="font-dm font-bold text-or-mat text-lg sm:text-xl leading-snug text-center mt-2">
-              Ce temps, je l\'ai pris. Mon travail consiste \u00e0 vous faire gagner le v\u00f4tre.
+              Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
             </p>
           </div>
 
