@@ -93,7 +93,8 @@ Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
 
 const validation = [
   { icon: Flask, text: "Test en conditions réelles" },
-  icon: RefreshCw, text: "Ajustements selon les retours terrain" },
+  { icon: RefreshCw,
+text: "Ajustements selon les retours terrain" },
 ];
 
 const engagements = [
