@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import {
   Eye,
   Users,
@@ -15,8 +13,7 @@ import {
 import Reveal from "@/components/secondary/Reveal";
 
 const resultats = [
-  { icon: Eye, 
-value: "73 000", label: "vues" },
+  { icon: Eye, value: "73 000", label: "vues" },
   { icon: Users, value: "+800", label: "abonnés" },
   { icon: TrendingUp, value: "+15 %", label: "de CA" },
 ];
@@ -57,14 +54,7 @@ const PourquoiSection = () => {
                 <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
               </p>
 
-              <p className="font-bold text-navy text-lg 
-sm
-:text-xl 
-leading-snug 
-mt-5 
-pl-4 
-border-l-2 
-border">
+              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or/40">
                 Le déclic est venu en accompagnant{" "}
                 <span className="text-or">une poissonnerie du Pays d'Iroise.</span>
               </p>
@@ -85,7 +75,7 @@ border">
           {/* RÉSULTATS + QUOTIDIEN */}
           <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 mt-6">
             <Reveal delay={80} className="bg-navy rounded-xl p-5 sm:p-6">
-              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-o">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
                 Résultats mesurés
               </span>
               <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2">
@@ -101,9 +91,7 @@ border">
                     <div className="font-bold text-blanc-casse text-base sm:text-xl leading-none">
                       {r.value}
                     </div>
-                    <div className="text-[11px] sm:text-xs 
-text-blanc-casse/70 
-mt-1">
+                    <div className="text-[11px] sm:text-xs text-blanc-casse/70 mt-1">
                       {r.label}
                     </div>
                   </div>
@@ -113,15 +101,9 @@ mt-1">
 
             <Reveal
               delay={160}
-              className="rounded-xl border border-navy/10 
-bg-navy/5 
-p-5 
-sm:p-6"
+              className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6"
             >
-              <span className="font-semibold text-[11px] 
-uppercase 
-tracking-[0.18em] 
-text-o">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
                 Puis son quotidien
               </span>
               <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2 mb-4">
@@ -131,13 +113,10 @@ text-o">
                 {solutions.map((s) => (
                   <li
                     key={s.label}
-                    className="flex items-center gap-2 rounded-full border border-navy/10 
-bg-blanc
--casse 
-px-3 
-py-1.5"
+                    className="flex items-center gap-2 rounded-full border border-navy/10 bg-blanc-casse px-3 py-1.5"
                   >
-                    <p.icon size={16} className="text-or" />
+                    <s.icon size={16} className="text-or" />
+                    <span className="text-xs text-navy">{s.label}</span>
                   </li>
                 ))}
               </ul>
