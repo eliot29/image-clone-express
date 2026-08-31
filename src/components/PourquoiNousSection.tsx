@@ -145,7 +145,22 @@ const PourquoiNousSection = () => {
               </Link>
             </Button>
           </div>
+          </div>
         </div>
+
+        {zoomOpen && (
+          <div
+            className="fixed inset-0 z-50 bg-navy/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-zoom-out"
+            onMouseLeave={() => setZoomOpen(false)}
+            onClick={() => setZoomOpen(false)}
+          >
+            <img
+              src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonne​rie-ecosysteme.png"
+              alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+            />
+          </div>
+        )}
       </div>
     </section>
   );
