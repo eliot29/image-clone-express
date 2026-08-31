@@ -30,6 +30,8 @@ const solutions = [
 ];
 
 const PourquoiNousSection = () => {
+  const [zoomOpen, setZoomOpen] = useState(false);
+
   return (
     <section id="approche" className="bg-blanc-casse py-8">
       <div className="container mx-auto px-6">
