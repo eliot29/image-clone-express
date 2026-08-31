@@ -24,8 +24,6 @@ const steps = [
   },
   {
     num: "04",
-    note: "Suivi",
-    desc: ""
   }
 ];
 
