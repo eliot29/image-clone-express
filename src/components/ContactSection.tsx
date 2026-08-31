@@ -3,16 +3,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { ArrowRight, X, CalendarCheck } from "lucide-react";
+import { ArrowRight, CalendarCheck } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const [open, setOpen] = useState(false);
   const [nom, setNom] = useState("");
+  ;
   const [email, setEmail] = useState("");
-  const [telephone, setTelephone] = useState("");
-  const [creneau, setCreneau] = useState("");
+  const [telephone, ;
+  const [creneau, ;
   const [message, setMessage] = useState("");
   const { toast } = useToast();
 
@@ -30,7 +31,7 @@ const ContactSection = () => {
 
     const subject = encodeURIComponent("Demande de diagnostic gratuit — " + nom.trim());
     const body = encodeURIComponent(
-      `Nom : ${nom.trim()}\nEmail : ${email.trim()}\nTéléphone : ${telephone.trim()}\nCréneau idéal : ${creneau.trim() || "Non précisé"}\n\nMessage :\n${message.trim()}`
+      `Nom : ${nom.trim()}\nEmail : ${email.trim()}\nTéléphone : ${telephone.trim()}\nCréneau idéal : ${;
     );
 
     window.location.href = `mailto:contact@semaine54.com?subject=${subject}&body=${body}`;
@@ -43,8 +44,8 @@ const ContactSection = () => {
     setOpen(false);
     setNom("");
     setEmail("");
-    setTelephone("");
-    setCreneau("");
+    ;
+    ;
     setMessage("");
   };
 
@@ -58,8 +59,7 @@ const ContactSection = () => {
             </div>
           </div>
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
-            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['·_']">20/30 min</span>
-          </h2>
+            Diagnostic gratuit<br className="sm:hidden" /> <span className="text;
 
           <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
             Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
@@ -77,88 +77,79 @@ const ContactSection = () => {
                 <DialogHeader>
                   <DialogTitle className="font-dm font-extrabold text-xl text-blanc-casse text-center">
                     Être rappelé
-                 DialogTitle>
-                DialogHeader>
+                  </DialogTitle>
+                </DialogHeader>
                 <form onSubmit={handleSubmit} className="space-y-4 mt-2">
                   <div className="space-y-2">
                     <Label htmlFor="nom" className="text-blanc-casse/80 font-dm text-sm">
                       Nom *
-                    Label>
+                    </Label>
                     <Input
                       id="nom"
                       value={nom}
                       onChange={(e) => setNom(e.target.value)}
                       placeholder="Votre nom"
                       maxLength={100}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
                     />
-                  div>
+                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-blanc-casse/80 font-dm text-sm">
+                    <Label htmlFor="email" className="text-blanc-casse/;
                       Email *
-                    Label>
+                    </Label>
                     <Input
                       id="email"
                       type="email"
                       value={email}
-                      onChange={(e) => setEmail]}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="votre@email.com"
                       maxLength={255}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
-                    />
-                  div>
+                      className="bg-blanc-casse/;
+                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="telephone" className="text-blanc
-              Telephone
-                    Label>
-                    <Input
-                      id="telephone"
-                      type="tel"
-                      value={telephone}
-                      onChange={(e) => setTelephone]}
-                      placeholder="06 00 00 00 00"
-                      maxLength={20}
-                      className="bg-blanc-casse/5 border-blanc-Casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
+                    <Label htmlFor="telephone" className="text-blanc-casse/80 font-dm text-sm">
+                      Téléphone
+                    </Label>
+                    ;
+                    className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
                     />
-                  div>
+                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="creneau" className="text-blanc-Casse/80 font-dm text-sm">
+                    <Label htmlFor="creneau" className="text-blanc-casse/80 font-dm text-sm">
                       Créneau idéal pour l'appel
-                    Label>
+                    </Label>
                     <Input
                       id="creneau"
                       value={creneau}
-                      onChange={(e) => setCreneau]}
+                      onChange={(e) => setCreneau(e.target.value)}
                       placeholder="Ex : mardi matin, en soirée après 18h…"
                       maxLength={150}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
                     />
-                  div>
+                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-blanc-casse/80 font-dm text-sm">
+                    <Label htmlFor="message" className="text-blanc-casse/;
                       Message
-                    Label>
+                    </Label>
                     <Textarea
                       id="message"
-                      value={message}
-                      onChange={(e) => setMessage]}
+                      ;
+                      onChange={(e) => setMessage(e.target.value)}
                       placeholder="Décrivez brièvement votre activité ou votre besoin..."
                       maxLength={1000}
                       rows={3}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-Casse/30 font-font resize-none"
-                    />
-                  div>
+                      className="bg-blanc-casse/;
                   <Button variant="cta" size="lg" type="submit" className="w-full text-base">
                     Envoyer
                     <ArrowRight size={18} />
-                  Button>
-                form>
-              DialogContent>
-            Dialog>
-          div>
-        div>
-      div>
-    section>
+                  </Button>
+                </form>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
