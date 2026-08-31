@@ -92,6 +92,4 @@ const MethodeSection = () => {
     </section>);
 };
 
-};
-
-export default MethesePlaceholder;
+export default MethodeSection;
