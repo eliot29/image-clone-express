@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  ArrowRight,
   Eye,
   Users,
   TrendingUp,
@@ -16,7 +15,8 @@ import {
 import Reveal from "@/components/secondary/Reveal";
 
 const resultats = [
-  { icon: Eye, value: "73 000", label: "vues" },
+  { icon: Eye, value: "73 000", label
+: "vues" },
   { icon: Users, value: "+800", label: "abonnés" },
   { icon: TrendingUp, value: "+15 %", label: "de CA" },
 ];
@@ -43,13 +43,13 @@ const PourquoiNousSection = () => {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-6 lg:gap-10 items-start">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-start">
             {/* PARCOURS */}
             <Reveal className="lg:sticky lg:top-24">
-              <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
                 Parcours
               </span>
-              <p className="font-dm text-ardoise/80 leading-relaxed mt-3">
+              <p className="text-ardoise/80 leading-relaxed mt-3">
                 Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de{" "}
                 <strong className="text-navy">Semaine 54</strong>. Après une dizaine d'années dans
                 différents métiers de la <strong className="text-navy">grande distribution</strong>,
@@ -57,40 +57,47 @@ const PourquoiNousSection = () => {
                 <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
               </p>
 
-              <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or-mat">
+              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border">
                 Le déclic est venu en accompagnant{" "}
-                <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
+                <span className="text-or">une poissonnerie du Pays d'Iroise.</span>
               </p>
+            </Reveal>
 
+            {/* IMAGE */}
+            <Reveal delay={80} className="flex justify-center lg:justify-end lg:pt-2">
               <img
                 src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-                className="w-full max-w-[260px] mx-auto rounded-xl mt-6 shadow-lg cursor-zoom-in"
+                className="w-full max-w-[260px] rounded-xl shadow-lg cursor-zoom-in"
                 loading="lazy"
                 onMouseEnter={() => setZoomOpen(true)}
               />
-            </Reveal>
+            </R
+eveal>
+          </div>
 
-            {/* DÉCLIC → RÉSULTATS → SOLUTIONS */}
-            <div className="space-y-4">
+          {/* RÉSULTATS + QUOTIDIEN — sur la même ligne */}
+          <div>
+            <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 mt-6">
               <Reveal delay={80} className="bg-navy rounded-xl p-5 sm:p-6">
-                <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+                <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-o">
                   Résultats mesurés
                 </span>
-                <p className="font-dm text-sm text-blanc-casse/80 leading-relaxed mt-2">
+                <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2">
                   Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
                 </p>
                 <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
                   {resultats.map((r) => (
                     <div
                       key={r.label}
-                      className="rounded-lg border border-or-mat/30 bg-or-mat/10 px-2 py-3 text-center"
+                      className="rounded-lg border border-or/30 bg-or/10 px-2 py-3 text-center"
                     >
-                      <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                      <div className="font-dm font-extrabold text-blanc-casse text-base sm:text-xl leading-none">
+                      <r.icon size={16} className="text-or mx-auto mb-1.5" />
+                      <div className="font-bold text-blanc-casse text-base sm:text-xl leading-none">
                         {r.value}
                       </div>
-                      <div className="font-dm text-[11px] sm:text-xs text-blanc-casse/70 mt-1">
+                      <div className="text-[11px] sm:text-xs text-blanc-casse/
+70 mt-1">
                         {r.label}
                       </div>
                     </div>
@@ -98,11 +105,14 @@ const PourquoiNousSection = () => {
                 </div>
               </Reveal>
 
-              <Reveal delay={160} className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6">
-                <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+              <Reveal
+                delay={160}
+                className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6"
+              >
+                <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-o">
                   Puis son quotidien
                 </span>
-                <p className="font-dm text-sm text-ardoise/80 leading-relaxed mt-2 mb-4">
+                <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2 mb-4">
                   L'IA étendue au fonctionnement de tous les jours :
                 </p>
                 <ul className="flex flex-wrap gap-2">
@@ -111,59 +121,16 @@ const PourquoiNousSection = () => {
                       key={s.label}
                       className="flex items-center gap-2 rounded-full border border-navy/10 bg-blanc-casse px-3 py-1.5"
                     >
-                      <s.icon size={14} className="text-or-mat shrink-0" />
-                      <span className="font-dm text-xs sm:text-sm text-navy">{s.label}</span>
+                      <p.icon size={16} className="text-or" />
                     </li>
                   ))}
                 </ul>
-              </Reveal>
+              </R
+eveal>
             </div>
-          </div>
-
-          {/* TEMPS GAGNÉ → SEMAINE 54 */}
-          <Reveal delay={80} className="mt-6">
-            <div className="rounded-xl border border-or-mat/60 bg-or-mat/40 p-6 text-center">
-              <p className="font-dm font-bold text-navy text-lg sm:text-2xl leading-snug">
-                C'est en constatant le temps que l'IA pouvait libérer au quotidien
-                <br className="hidden sm:block" /> qu'est née Semaine 54.
-              </p>
-              <p className="font-dm text-navy/80 text-sm sm:text-base mt-3">
-                Mettre l'IA au service des entreprises pour leur{" "}
-                <strong className="text-navy underline decoration-navy/40 underline-offset-4">
-                  rendre du temps
-                </strong>
-                .
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="text-center mt-5">
-            <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/pourquoi-ia-generique-ne-suffit-pas#parcours">
-                Comprendre l'approche Semaine 54
-                <ArrowRight size={16} />
-              </Link>
-            </Button>
           </div>
         </div>
-
-
-        {zoomOpen && (
-          <div
-            className="fixed inset-0 z-50 bg-navy/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-zoom-out"
-            onMouseLeave={() => setZoomOpen(false)}
-            onClick={() => setZoomOpen(false)}
-          >
-            <img
-              src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
-              alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-              className="max-w-[70vw] max-h-[70vh] object-contain rounded-lg shadow-2xl"
-            />
-          </div>
-        )}
       </div>
     </section>
   );
 };
-
-export default PourquoiNousSection;
