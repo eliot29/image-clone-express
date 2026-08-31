@@ -65,7 +65,7 @@ const ContactSection = () => {
             Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
           </p>
 
-          <div className="text-center mb-8">
+          <div className="text-center">
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
                 <Button variant="cta" size="lg" className="text-lg px-10 py-6">
@@ -77,107 +77,88 @@ const ContactSection = () => {
                 <DialogHeader>
                   <DialogTitle className="font-dm font-extrabold text-xl text-blanc-casse text-center">
                     Être rappelé
-                  </DialogTitle>
-                </DialogHeader>
+                 DialogTitle>
+                DialogHeader>
                 <form onSubmit={handleSubmit} className="space-y-4 mt-2">
                   <div className="space-y-2">
                     <Label htmlFor="nom" className="text-blanc-casse/80 font-dm text-sm">
                       Nom *
-                    </Label>
+                    Label>
                     <Input
                       id="nom"
                       value={nom}
                       onChange={(e) => setNom(e.target.value)}
                       placeholder="Votre nom"
                       maxLength={100}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
                     />
-                  </div>
+                  div>
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-blanc-casse/80 font-dm text-sm">
                       Email *
-                    </Label>
+                    Label>
                     <Input
                       id="email"
                       type="email"
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={(e) => setEmail]}
                       placeholder="votre@email.com"
                       maxLength={255}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
                     />
-                  </div>
+                  div>
                   <div className="space-y-2">
-                    <Label htmlFor="telephone" className="text-blanc-casse/80 font-dm text-sm">
-                      Téléphone
-                    </Label>
+                    <Label htmlFor="telephone" className="text-blanc
+              Telephone
+                    Label>
                     <Input
                       id="telephone"
                       type="tel"
                       value={telephone}
-                      onChange={(e) => setTelephone(e.target.value)}
+                      onChange={(e) => setTelephone]}
                       placeholder="06 00 00 00 00"
                       maxLength={20}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-Casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
                     />
-                  </div>
+                  div>
                   <div className="space-y-2">
-                    <Label htmlFor="creneau" className="text-blanc-casse/80 font-dm text-sm">
+                    <Label htmlFor="creneau" className="text-blanc-Casse/80 font-dm text-sm">
                       Créneau idéal pour l'appel
-                    </Label>
+                    Label>
                     <Input
                       id="creneau"
                       value={creneau}
-                      onChange={(e) => setCreneau(e.target.value)}
+                      onChange={(e) => setCreneau]}
                       placeholder="Ex : mardi matin, en soirée après 18h…"
                       maxLength={150}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-font"
                     />
-                  </div>
+                  div>
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-blanc-casse/80 font-dm text-sm">
                       Message
-                    </Label>
+                    Label>
                     <Textarea
                       id="message"
                       value={message}
-                      onChange={(e) => setMessage(e.target.value)}
+                      onChange={(e) => setMessage]}
                       placeholder="Décrivez brièvement votre activité ou votre besoin..."
                       maxLength={1000}
                       rows={3}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm resize-none"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-Casse/30 font-font resize-none"
                     />
-                  </div>
+                  div>
                   <Button variant="cta" size="lg" type="submit" className="w-full text-base">
                     Envoyer
                     <ArrowRight size={18} />
-                  </Button>
-                  <p className="text-blanc-casse/40 text-xs text-center font-dm">
-                    Votre client mail s'ouvrira avec les informations pré-remplies.
-                  </p>
-                </form>
-              </DialogContent>
-            </Dialog>
-
-            <div className="mt-6 max-w-lg mx-auto">
-              <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
-                Je vous contacte en premier lieu pour répondre à vos éventuelles questions et planifier votre audit ensemble. L'audit se tient ensuite en appel ou en visio, selon votre préférence.
-              </p>
-              <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
-                Vous pouvez aussi m'appeler, m'envoyer un SMS ou un email directement.
-              </p>
-              <p className="font-dm text-blanc-casse/50 text-xs mt-2 italic">
-                Également disponible en soirée et le week-end.
-              </p>
-            </div>
-          </div>
-
-          <p className="font-dm text-blanc-casse/70 text-sm italic text-center">
-            Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.
-          </p>
-        </div>
-      </div>
-    </section>
+                  Button>
+                form>
+              DialogContent>
+            Dialog>
+          div>
+        div>
+      div>
+    section>
   );
 };
 
