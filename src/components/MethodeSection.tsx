@@ -61,7 +61,7 @@ const MethodeSection = () => {
             <p className="font-dm text-sm text-ardoise/70 leading-relaxed max-w-md mx-auto">
               Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages.
             </p>
-            <Button variant="ctaOutline" size="default" className="mt-4">
+            <Button variant="ctaOutline" size="default" className="mt-6">
               Découvrir la méthode
             </Button>
           </div>
