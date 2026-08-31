@@ -15,10 +15,10 @@ import {
 import Reveal from "@/components/secondary/Reveal";
 
 const resultats = [
-  { icon: Eye, value: "73 000", label: "vues" },
+  { icon: Eye,
+value: "73 000", label: "vues" },
   { icon: Users, value: "+800", label: "abonnés" },
-  { icon:
-TrendingUp, value: "+15 %", label: "de CA" },
+  { icon: TrendingUp, value: "+15 %", label: "de CA" },
 ];
 
 const solutions = [
@@ -26,15 +26,11 @@ const solutions = [
   { icon: Mic, label: "Inventaires à la voix" },
   { icon: FileText, label: "Bons de transport dictés" },
   { icon: Camera, label: "Photo → traçabilité" },
-  { icon: Spray
-Can, label: "Suivi des tâches d'hygiène" },
-  {
- Inbox, 
-label: "Tri des e-mails et documents" },
+  { icon: SprayCan, label: "Suivi des tâches d'hygiène" },
+  { icon: Inbox, label: "Tri des e-mails et documents" },
 ];
 
-const PourquoiNous
-Section = () => {
+const PourquoiNousSection = () => {
   const [zoomOpen, setZoomOpen] = useState(false);
 
   return (
@@ -47,13 +43,14 @@ Section = () => {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-start">
+          <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax.
+        (0,1fr)] gap-6 lg:gap-10 items-start">
             {/* PARCOURS */}
             <Reveal className="lg:sticky lg:top-24">
-              <span className="font-dm font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
                 Parcours
               </span>
-              <p className="font-dm text-ardoise/80 leading-relaxed mt-3">
+              <p className="text-ardoise/80 leading-relaxed mt-3">
                 Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de{" "}
                 <strong className="text-navy">Semaine 54</strong>. Après une dizaine d'années dans
                 différents métiers de la <strong className="text-navy">grande distribution</strong>,
@@ -61,11 +58,12 @@ Section = () => {
                 <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
               </p>
 
-              <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or-mat">
+              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border">
                 Le déclic est venu en accompagnant{" "}
-                <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
+                <span className="text-or">une poissonnerie du Pays d'Iroise.</span>
               </p>
-            </Reveal>
+            </R
+eveal>
 
             {/* IMAGE */}
             <Reveal delay={80} className="flex justify-center lg:justify-end lg:pt-2">
@@ -83,7 +81,7 @@ eveal>
           {/* RÉSULTATS + QUOTIDIEN — sur la même ligne */}
           <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 mt-6">
             <Reveal delay={80} className="bg-navy rounded-xl p-5 sm:p-6">
-              <span className="font-semibold text-[11px] uppercase tracking-wide.18em] text-or-mat">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-o">
                 Résultats mesurés
               </span>
               <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2">
@@ -96,23 +94,26 @@ eveal>
                     className="rounded-lg border border-or/30 bg-or/10 px-2 py-3 text-center"
                   >
                     <r.icon size={16} className="text-or mx-auto mb-1.5" />
-                    <div className="font-bold text-blanc-casse text-base sm:text-xl leading-none">
+                    <div className="font-bold text-blanc-casse text-base 
+sm:text-xl leading-none">
                       {r.value}
                     </div>
-                    <div className="text-[11px] sm:text-xs text-blanc-casse/70 mt-1">
+                    <div className="text-[11px] sm:text-xs 
+text-blanc-casse/70 mt-1">
                       {r.label}
                     </div>
                   </div>
                 ))}
               </div>
-            </R
-eveal>
+            </Reveal>
 
             <Reveal
               delay={160}
-              className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6"
+              className="rounded-xl border border-navy/10 bg-navy/5 p-5 
+sm:p-6"
             >
-              <span className="font-semibold text-[11px] uppercase tracking-wide.18em] text-o">
+              <span className="font-semibold 
+text-[11px] uppercase tracking-[0.18em] text-o">
                 Puis son quotidien
               </span>
               <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2 mb-4">
@@ -122,7 +123,8 @@ eveal>
                 {solutions.map((s) => (
                   <li
                     key={s.label}
-                    className="flex items-center gap-2 rounded-full border border-navy/10 bg-blanc-casse px-3 py-1.5"
+                    className="flex items-center gap-2 rounded-full border border-navy/10 
+bg-blanc-casse px-3 py-1.5"
                   >
                     <p.icon size={16} className="text-or" />
                   </li>
