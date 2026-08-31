@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, ArrowDownLeft, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -115,6 +116,37 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
   </div>
 );
 
+const ShakeIn = ({ children }: { children: React.ReactNode }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <span ref={ref} className={visible ? "shake-in inline-block" : "inline-block opacity-0"}>
+      {children}
+    </span>
+  );
+};
+
+const PropositionLabel = () => <ShakeIn>CONCEPTION IA ET/OU ACCOMPAGNEMENT IA</ShakeIn>;
+
 const PropositionSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-6">
@@ -162,8 +194,8 @@ const PropositionSection = () => {
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
-                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
-              </span>
+              <PropositionLabel />
+            </span>
             </div>
           </div>
 
@@ -194,7 +226,7 @@ const PropositionSection = () => {
             {/* Label encadré centré */}
             <div className="flex justify-center mt-2 mb-3">
               <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
-                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
+                PropositionLabel
               </span>
             </div>
 
