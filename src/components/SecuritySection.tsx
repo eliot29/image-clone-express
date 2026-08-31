@@ -9,7 +9,7 @@ import metier2Img from "@/assets/metier-2.png.asset.json";
 import metier3Img from "@/assets/metier-3.png.asset.json";
 import metier4Img from "@/assets/metier-4.png.asset.json";
 
-const villes = [brent];
+const villes = [brestImg, rennesImg, saintImg, vannesImg];
 const metiers = [metier1Img, metier2Img];
 
 const SecurityComponent = () => {
