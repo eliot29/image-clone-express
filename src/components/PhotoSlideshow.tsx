@@ -30,6 +30,11 @@ const PhotoSlideshow = ({ images, label, captions, interval = 3500 }: PhotoSlide
           }`}
         />
       ))}
+      {captions && captions.length > 0 && (
+        <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-blanc-casse text-navy font-medium text-sm px-4 py-1.5 rounded-full whitespace-nowrap">
+          {captions[index % captions.length]}
+        </span>
+      )}
     </div>
   );
 };
