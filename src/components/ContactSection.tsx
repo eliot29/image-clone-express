@@ -1,3 +1,5 @@
-import { useState } from "react";
-import { Button } from "@/components/Button";
-placeholder
+const Contact = () => {
+  const body = null;
+  return body;
+};
+export default Contact;
