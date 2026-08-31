@@ -65,8 +65,9 @@ const PourquoiNousSection = () => {
               <img
                 src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-                className="w-full max-w-[260px] mx-auto rounded-xl mt-6 shadow-lg"
+                className="w-full max-w-[260px] mx-auto rounded-xl mt-6 shadow-lg cursor-zoom-in"
                 loading="lazy"
+                onMouseEnter={() => setZoomOpen(true)}
               />
             </Reveal>
 
