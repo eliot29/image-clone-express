@@ -35,6 +35,9 @@ const SecuritySection = () => {
             <PhotoSlideshow images={villes} label="Ville de Bretagne" />
             <PhotoSlideshow images={metiers} label="Métier accompagné" interval={4200} />
           </div>
+          <p className="font-dm font-bold text-lg sm:text-xl text-navy text-center">
+            Même terrain, même jargon. <span className="text-or-mat">L'IA qui comprend vos enjeux.</span>
+          </p>
         </div>
       </div>
     </section>
