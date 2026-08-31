@@ -61,14 +61,20 @@ const PourquoiSection = () => {
             </Reveal>
 
             {/* IMAGE */}
-            <Reveal delay={80} className="flex justify-center lg:justify-end lg:pt-2">
+            <Reveal
+              delay={80}
+              className="flex flex-col justify-center items-center lg:items-end gap-3 lg:pt-2"
+            >
               <img
                 src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-                className="w-full max-w-[260px] rounded-xl shadow-lg cursor-zoom-in"
+                className="w-full max-w-[340px] rounded-xl shadow-lg cursor-zoom-in transition-transform duration-300 hover:scale-[1.02]"
                 loading="lazy"
                 onMouseEnter={() => setZoomOpen(true)}
               />
+              <span className="text-[11px] text-ardoise/70 italic">
+                Survolez l'image pour l'agrandir
+              </span>
             </Reveal>
           </div>
 
