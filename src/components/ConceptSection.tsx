@@ -32,7 +32,7 @@ const ConceptSection = () => {
               </p>
             </div>
 
-            <div className="w-full max-w-[220px] md:max-w-[270px] mx-auto mr-0 ml-auto shrink-0">
+            <div className="w-full max-w-[185px] md:max-w-[235px] mx-auto mr-0 ml-auto shrink-0">
               <img
                 src={conceptVisuel.url}
                 alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
