@@ -107,7 +107,7 @@ const PourquoiSection = () => {
 
             <Reveal
               delay={160}
-              className="rounded-xl border border-navy/10 bg-navy/5 p-5 sm:p-6"
+              className="rounded-xl bg-navy p-5 sm:p-6"
             >
               <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
                 Puis son quotidien
