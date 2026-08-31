@@ -32,7 +32,8 @@ const prestations = [
     items: [
       { icon: Database, text: "Connecté à vos données et à vos documents internes" },
       { icon: BarChart3, text: "Capable d'analyser, synthétiser et répondre rapidement" },
-      { Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
+      { icon:
+Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
       { icon: MousePointer
 Click, text: "Utilisable simplement, sans compétence technique" }
     ],
@@ -46,7 +47,7 @@ Click, text: "Utilisable simplement, sans compétence technique" }
     items: [
       { icon: Layers, text: "Création d'interfaces claires et rapides à prendre en main" },
       { icon: Link2, text: "Connexion à vos données et à vos outils existants" },
-      { icon: Zap, },"Automatisation intégrée directement dans l'outil" },
+      { icon: Zap, text: "Automatisation intégrée directement dans l'outil" },
       { icon: MousePointerClick, text: "Utilisation quotidienne, sans complexité technique" }
     ],
     objectif: "Pas de logiciel complexe. Des outils simples qui font gagner du temps immédiatement."
