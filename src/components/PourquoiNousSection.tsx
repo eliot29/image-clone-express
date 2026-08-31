@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -30,6 +31,8 @@ const solutions = [
 ];
 
 const PourquoiNousSection = () => {
+  const [zoomOpen, setZoomOpen] = useState(false);
+
   return (
     <section id="approche" className="bg-blanc-casse py-8">
       <div className="container mx-auto px-6">
@@ -62,8 +65,9 @@ const PourquoiNousSection = () => {
               <img
                 src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-                className="w-full max-w-[260px] mx-auto rounded-xl mt-6 shadow-lg"
+                className="w-full max-w-[260px] mx-auto rounded-xl mt-6 shadow-lg cursor-zoom-in"
                 loading="lazy"
+                onMouseEnter={() => setZoomOpen(true)}
               />
             </Reveal>
 
@@ -141,7 +145,22 @@ const PourquoiNousSection = () => {
               </Link>
             </Button>
           </div>
+          </div>
         </div>
+
+        {zoomOpen && (
+          <div
+            className="fixed inset-0 z-50 bg-navy/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-zoom-out"
+            onMouseLeave={() => setZoomOpen(false)}
+            onClick={() => setZoomOpen(false)}
+          >
+            <img
+              src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
+              alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+            />
+          </div>
+        )}
       </div>
     </section>
   );
