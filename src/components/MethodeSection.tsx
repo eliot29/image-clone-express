@@ -47,7 +47,7 @@ const MethodeSection = () => {
 
           <div className="space-y-0">
             {steps.map((step, i) =>
-            <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group">
+            <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group -mx-4 px-4 py-3 rounded-xl transition-colors duration-300 hover:bg-or-mat/5">
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
