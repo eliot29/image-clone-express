@@ -115,6 +115,37 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
   </div>
 );
 
+const ShakeIn = ({ children }: { children: React.ReactNode }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <span ref={ref} className={visible ? "shake-in inline-block" : "inline-block opacity-0"}>
+      {children}
+    </span>
+  );
+};
+
+const PropositionLabel = () => <ShakeIn>CONCEPTION IA ET/OU ACCOMPAGNEMENT IA</ShakeLabel>;
+
 const PropositionSection = () => {
   return (
     <section id="prestations" className="bg-blanc-casse py-6">
