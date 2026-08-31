@@ -24,7 +24,7 @@ const ConceptSection = () => {
                 </strong>
               </p>
               <p className="font-dm text-blanc-casse/80 leading-relaxed">
-                <strong className="text-blanc-casse font-bold">
+                <strong className="text-blanc-casse font-bold text-lg">
                   Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
                 </strong>
                 , pour des solutions d'intelligence artificielle construites sur
