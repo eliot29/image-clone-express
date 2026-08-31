@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 interface PhotoSlideshowProps {
   images: string[];
   label: string;
+  captions?: string[];
   interval?: number;
 }
 
-const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps) => {
+const PhotoSlideshow = ({ images, label, captions, interval = 3500 }: PhotoSlideshowProps) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -29,6 +30,11 @@ const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps)
           }`}
         />
       ))}
+      {captions && captions.length > 0 && (
+        <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-blanc-casse text-navy font-medium text-sm px-4 py-1.5 rounded-full whitespace-nowrap">
+          {captions[index % captions.length]}
+        </span>
+      )}
     </div>
   );
 };
