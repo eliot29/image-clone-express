@@ -92,8 +92,9 @@ Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
 ];
 
 const validation = [
-  { icon: FlaskConical, text: "Test en conditions réelles" },
-  { icon: RefreshCw, text: "Ajustements selon les retours terrain" },
+  { icon: Flask, text: "Test en conditions réelles" },
+  { icon: RefreshCw,
+text: "Ajustements selon les retours terrain" },
 ];
 
 const engagements = [
@@ -242,7 +243,9 @@ pt pt-2">{item.text}</span>
                   <Button variant="ctaOutline" size="default" asChild>
                     <Link to="/accompagnement-ia">
                       Découvrir l'accompagnement IA
-                      <ArrowRight size={16} />
+                      <Arrow
+
+Right size={16} />
                     </Link>
                   </Button>
                 </div>
