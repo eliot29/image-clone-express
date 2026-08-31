@@ -225,7 +225,7 @@ const PropositionSection = () => {
             {/* Label encadré centré */}
             <div className="flex justify-center mt-2 mb-3">
               <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
-                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
+                PropositionLabel
               </span>
             </div>
 
