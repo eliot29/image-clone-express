@@ -161,19 +161,19 @@ const ContactSection = () => {
 
             <div className="mt-6 max-w-lg mx-auto">
               <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
-                Je vous contacte en premier lieu pour répondre à vos éventuelles questions et planifier votre audit ensemble. L'audit se tient ensuite en appel ou en visio, selon votre préférence.
+                {"\n"}
               </p>
               <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
-                Vous pouvez aussi m'appeler, m'envoyer un SMS ou un email directement.
+                {"\n"}
               </p>
               <p className="font-dm text-blanc-casse/50 text-xs mt-2 italic">
-                Également disponible en soirée et le week-end.
+                {"\n"}
               </p>
             </div>
           </div>
 
           <p className="font-dm text-blanc-casse/70 text-sm italic text-center">
-            Un premier échange permet souvent d'identifier immédiatement plusieurs heures de tâches automatisables chaque semaine.
+            {"\n"}
           </p>
         </div>
       </div>
