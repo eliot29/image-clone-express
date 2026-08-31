@@ -48,7 +48,7 @@ const HeroSection = () => {
 
           {/* Punchline */}
           <h1 className="font-dm font-bold text-lg sm:text-xl text-navy mb-6 max-w-full mx-auto leading-snug tracking-tight">
-            Gagnez du temps. Gagnez en productivité. Gagnez en rentabilité.
+            Gagnez du <span className="text-or-mat">temps</span>. Gagnez en <span className="text-or-mat">productivité</span>. Gagnez en <span className="text-or-mat">rentabilité</span>.
           </h1>
 
           {/* Punchline */}
