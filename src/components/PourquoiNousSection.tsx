@@ -63,7 +63,7 @@ const PourquoiSection = () => {
             {/* IMAGE */}
             <Reveal
               delay={80}
-              className="flex flex-col justify-center items-center lg:items-end gap-3 lg:pt-2 lg:pr-2"
+              className="flex flex-col justify-center items-center lg:items-end gap-3 lg:pt-2 lg:pr-10"
             >
               <img
                 src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
