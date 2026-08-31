@@ -172,6 +172,12 @@ const ContactSection = () => {
             </div>
           </div>
 
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+            <PhotoSlideshow images={villes} label="Ville de Bretagne" />
+            <PhotoSlideshow images={metiers} label="Métier accompagné" interval={4200} />
+          </div>
+
+
           <p className="font-dm text-blanc-casse/70 text-sm italic text-center">
             {"\n"}
           </p>
