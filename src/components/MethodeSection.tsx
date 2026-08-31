@@ -61,7 +61,13 @@ const MethodeSection = () => {
             <p className="font-dm text-sm text-ardoise/70 leading-relaxed max-w-md mx-auto">
               Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages.
             </p>
-            <Button variant="ctaOutline" size="default" className="mt-4">
+            <img
+              src="/__l5e/assets-v1/0381a4c0-36a0-4707-b3f0-1f8eb5812678/partenaire-ia-ecosysteme.png"
+              alt="Infographie du parcours partenaire : de l'analyse au suivi"
+              className="mx-auto mt-6 w-full max-w-md rounded-lg shadow-sm"
+              loading="lazy"
+            />
+            <Button variant="ctaOutline" size="default" className="mt-6">
               Découvrir la méthode
             </Button>
           </div>
