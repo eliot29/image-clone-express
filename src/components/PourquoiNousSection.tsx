@@ -112,7 +112,7 @@ const PourquoiSection = () => {
               <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
                 Puis son quotidien
               </span>
-              <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2 mb-4">
+              <p className="text-base sm:text-lg font-semibold text-navy leading-relaxed mt-2 mb-4">
                 L'IA étendue au fonctionnement de tous les jours :
               </p>
               <ul className="flex flex-wrap gap-2">
