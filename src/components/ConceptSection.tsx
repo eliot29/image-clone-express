@@ -19,7 +19,7 @@ const ConceptSection = () => {
               <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
                 s'adapter à la réalité des entreprises.{" "}
-                <strong className="text-blanc-casse font-bold">
+                <strong className="text-blanc-casse font-bold text-lg">
                   Le vrai sujet : l'accompagnement et la personnalisation.
                 </strong>
               </p>
