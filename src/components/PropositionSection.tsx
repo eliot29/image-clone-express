@@ -294,7 +294,7 @@ const PropositionSection = () => {
 <div className="rounded-2xl border-4 border-navy bg-white px-4 py-5 sm:px-6 sm:py-6 mx-auto text-center">
             <p className="font-dm font-extrabold text-navy text-xl sm:text-2xl lg:text-3xl leading-snug">
               Maîtriser et tester les outils IA{' '}
-              <span className="text-or-gold">demande du temps.</span>
+              <span className="text-or-mat">demande du temps.</span>
             </p>
             <p className="font-dm text-navy/70 text-base sm:text-lg leading-snug mt-3">
               Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
