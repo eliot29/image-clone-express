@@ -6,6 +6,18 @@ import { Label } from "@/components/ui/label";
 import { ArrowRight, X, CalendarCheck } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
+import PhotoSlideshow from "@/components/PhotoSlideshow";
+import brest from "@/assets/brest-3.jpg.asset.json";
+import rennes from "@/assets/rennes-3.jpg.asset.json";
+import saintBrieuc from "@/assets/saint-brieuc-3.jpg.asset.json";
+import vannes from "@/assets/vannes-3.jpg.asset.json";
+import metier1 from "@/assets/metier-1.png.asset.json";
+import metier2 from "@/assets/metier-2.png.asset.json";
+import metier3 from "@/assets/metier-3.png.asset.json";
+import metier4 from "@/assets/metier-4.png.asset.json";
+
+const villes = [brest.url, rennes.url, saintBrieuc.url, vannes.url];
+const metiers = [metier1.url, metier2.url, metier3.url, metier4.url];
 
 const ContactSection = () => {
   const [open, setOpen] = useState(false);
