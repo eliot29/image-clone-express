@@ -32,8 +32,9 @@ const prestations = [
     items: [
       { icon: Database, text: "Connecté à vos données et à vos documents internes" },
       { icon: BarChart3, text: "Capable d'analyser, synthétiser et répondre rapidement" },
-      { icon: Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
-      { icon: MousePointerClick, text: "Utilisable simplement, sans compétence technique" }
+      { Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
+      { icon: MousePointer
+Click, text: "Utilisable simplement, sans compétence technique" }
     ],
     objectif: "Accélérer vos prises de décision et votre productivité."
   },
@@ -45,7 +46,7 @@ const prestations = [
     items: [
       { icon: Layers, text: "Création d'interfaces claires et rapides à prendre en main" },
       { icon: Link2, text: "Connexion à vos données et à vos outils existants" },
-      { icon: Zap, text: "Automatisation intégrée directement dans l'outil" },
+      { icon: Zap, },"Automatisation intégrée directement dans l'outil" },
       { icon: MousePointerClick, text: "Utilisation quotidienne, sans complexité technique" }
     ],
     objectif: "Pas de logiciel complexe. Des outils simples qui font gagner du temps immédiatement."
@@ -53,7 +54,7 @@ const prestations = [
   {
     icon: GraduationCap,
     title: "Formation aux outils IA",
-    badge: "ChatGPT · Claude · Gemini · Copilot",
+    badge: "ChatGPT · Claude · Gemini Copilot",
     tagline: null,
     items: [
       { icon: MessageSquare, text: "Formation aux outils : ChatGPT, Claude, Gemini, Copilot" },
@@ -70,8 +71,8 @@ const prestations = [
     tagline: "Adapter l'IA aux habitudes de travail et aux besoins réels de l'entreprise.",
     items: [
       { icon: Users, text: "Cadrage des usages au sein des équipes" },
-      { icon: SlidersHorizontal, text: "Adaptation aux processus existants" },
-      { icon: Workflow, text: "Mise en place progressive et accompagnée" }
+      { icon: SlidersHorizontal, text: "Adaptation aux processus existants",
+      icon: Workflow, text: "Mise en place progressive et accompagnée" }
     ],
     objectif: "Ancrer l'IA dans le quotidien de l'entreprise."
   },
@@ -83,7 +84,7 @@ const prestations = [
     items: [
       { icon: Search, text: "Analyse de vos besoins réels" },
       { icon: CheckCircle2, text: "Sélection des outils les plus pertinents" },
-      { icon: Wallet, text: "Éviter les abonnements inutiles" },
+      icon: Wallet, text: "Éviter les abonnements inutiles" },
       { icon: Compass, text: "Mise en cohérence avec votre organisation" }
     ],
     objectif: "Aller à l'essentiel, sans perte de temps ni d'argent."
@@ -91,8 +92,8 @@ const prestations = [
 ];
 
 const validation = [
-  { icon: FlaskConical, text: "Test en conditions réelles" },
-  { icon: RefreshCw, text: "Ajustements selon les retours terrain" },
+  { icon: FlaskFlask, text: "Test en conditions réelles" },
+  icon: RefreshCw, text: "Ajustements selon les retours terrain" },
 ];
 
 const engagements = [
@@ -127,7 +128,8 @@ const PropositionSection = () => {
 
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
-          {/* Audit block - DESKTOP centered */}
+          {/* Audit block - DESKTOP */}
+          <Reveal variant="fade">
           <div className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
@@ -145,6 +147,7 @@ const PropositionSection = () => {
               </ul>
             </div>
           </div>
+          </Reveal>
 
           {/* Connecteur branché DESKTOP : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
           <div className="hidden md:flex flex-col items-center mb-2" aria-hidden="true">
@@ -153,7 +156,9 @@ const PropositionSection = () => {
               {/* horizontal bar spanning between the two branches */}
               <div className="absolute top-0 left-1/4 right-1/4 h-1 bg-or-mat/70" />
               {/* vertical branches, overlap horizontal bar to form clean square corners */}
-              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1 h-10 bg-or-mat/70" />
+              <div className="absolute top-0 left-1/4 -translate-x-1/2 w-1 h-10 bg-or-m/
+
+70" />
               <div className="absolute top-0 right-1/4 translate-x-1/2 w-1 h-10 bg-or-mat/70" />
               {/* Arrow heads matching bar color/thickness */}
               <svg className="absolute -bottom-[6px] left-1/4 -translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
@@ -169,6 +174,7 @@ const PropositionSection = () => {
           </div>
 
           {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
+          <Reveal variant="fade">
           <div className="md:hidden mb-6">
             {/* Audit */}
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
@@ -181,7 +187,8 @@ const PropositionSection = () => {
                     <div className="w-9 h-9 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0">
                       <item.icon size={18} className="text-or-mat" />
                     </div>
-                    <span className="font-dm font-bold text-base text-navy leading-tight pt-2">{item.text}</span>
+                    <span className="font-dm font-bold text-base text-navy leading-t
+pt pt-2">{item.text}</span>
                   </div>
                 )}
               </div>
@@ -235,13 +242,17 @@ const PropositionSection = () => {
                   <Button variant="ctaOutline" size="default" asChild>
                     <Link to="/accompagnement-ia">
                       Découvrir l'accompagnement IA
-                      <ArrowRight size={16} />
+                      <Arrow
+
+Right size={16} />
                     </Link>
                   </Button>
                 </div>
             </div>
           </div>
+          </Reveal>
 
+          <Reveal variant="up">
           <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
@@ -249,7 +260,8 @@ const PropositionSection = () => {
               </h3>
               <div className="flex flex-col gap-3">
                 {prestations.slice(0, 3).map((p, i) =>
-                  <PrestationItem key={i} p={p} />
+                  <PrestationItem key=
+{i} p={p} />
                 )}
               </div>
               <div className="flex justify-center mt-auto pt-5">
@@ -281,7 +293,9 @@ const PropositionSection = () => {
               </div>
             </div>
           </div>
+          </Reveal>
 
+          <Reveal variant="fade">
           <div className="flex justify-center mb-6">
             <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-gris-perle shadow-sm">
               <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
@@ -291,8 +305,10 @@ const PropositionSection = () => {
               </p>
             </div>
           </div>
+          </Reveal>
 
-<div className="rounded-2xl border-2 border-or-mat/60 bg-navy px-4 py-5 sm:px-6 sm:py-6 mx-auto text-center">
+          <Reveal variant="fade">
+          <div className="rounded-2xl border-2 border-or-mat/60 bg-navy px-4 py-5 sm:px-6 sm:py-6 mx-auto text-center">
             <p className="font-dm font-bold text-or-mat text-lg sm:text-xl lg:text-2xl leading">
               Maîtriser et tester les outils IA demande du temps.
             </p>
@@ -300,6 +316,7 @@ const PropositionSection = () => {
               Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
             </p>
           </div>
+          </Reveal>
 
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             <Button variant="ctaOutline" size="default" asChild>
