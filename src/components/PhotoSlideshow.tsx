@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 interface PhotoSlideshowProps {
   images: string[];
   label: string;
+  captions?: string[];
   interval?: number;
 }
 
-const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps) => {
+const PhotoSlideshow = ({ images, label, captions, interval = 3500 }: PhotoSlideshowProps) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
