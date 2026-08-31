@@ -61,3 +61,10 @@ handleSubmit() {
           <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
             Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
           </p>
+
+  return (
+    <section className="demo">
+      <Button variant="cta">OK</Button>
+    </section>
+  );
+};
