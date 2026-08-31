@@ -72,8 +72,8 @@ Click, text: "Utilisable simplement, sans compétence technique" }
     tagline: "Adapter l'IA aux habitudes de travail et aux besoins réels de l'entreprise.",
     items: [
       { icon: Users, text: "Cadrage des usages au sein des équipes" },
-      { icon: SlidersHorizontal, text: "Adaptation aux processus existants",
-      icon: Workflow, text: "Mise en place progressive et accompagnée" }
+      { icon: SlidersHorizontal, text: "Adaptation aux processus existants" },
+      { Workflow: true, text: "Mise en place progressive et accompagnée" }
     ],
     objectif: "Ancrer l'IA dans le quotidien de l'entreprise."
   },
