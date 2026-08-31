@@ -109,7 +109,7 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
         <span className="block font-dm text-xs font-semibold text-or-mat">{p.badge}</span>
       )}
       {p.tagline && (
-        <p data-x="1" className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
+        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
       )}
     </div>
   </div>
@@ -124,7 +124,7 @@ const PropositionSection = () => {
             Ce que je propose concrètement
           </h2>
 
-          <p data-x="1" className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
 
           {/* Audit block - DESKTOP centered */}
           <div className="hidden md:flex justify-center mb-4">
@@ -283,7 +283,7 @@ const PropositionSection = () => {
 
           <div className="flex justify-center mb-6">
             <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-gris-perle shadow-sm">
-              <p data-x="1" className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
+              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
                 <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
                 <br />
                 <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
@@ -292,10 +292,10 @@ const PropositionSection = () => {
           </div>
 
 <div className="rounded-2xl border-4 border-navy bg-white px-4 py-5 sm:px-6 sm:py-6 mx-auto text-center">
-            <p data-x="1" className="font-dm font-bold text-or-mat text-lg sm:text-xl lg:text-2xl leading">
+            <p className="font-dm font-bold text-or-mat text-lg sm:text-xl lg:text-2xl leading">
               Maîtriser et tester les outils IA demande du temps.
             </p>
-            <p data-x="1" className="font-dm font-bold text-or-mat text-lg sm:text-xl lg:text-2xl leading-snug mt-2">
+            <p className="font-dm font-bold text-or-mat text-lg sm:text-xl lg:text-2xl leading-snug mt-2">
               Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
             </p>
           </div>
