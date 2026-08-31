@@ -14,21 +14,8 @@ const steps = [
 {
   num: "02",
   title: "Proposition sous trois jours ouvrés",
-  desc: "Une proposition adaptée à votre situation réelle, avec les priorités identifiées et les solutions recommandées.",
-  note: "Selon les besoins : mise en place de solutions IA sur-mesure, accompagnement à l'usage, ou combinaison des deux."
-},
-{
-  num: "03",
-  title: "Mise en place ou accompagnement",
-  desc: "La solution est configurée et testée dans vos conditions réelles, ou les équipes sont accompagnées dans l'utilisation des outils.",
-  note: "Objectif : une solution ou un usage qui fonctionne vraiment, adapté à votre quotidien."
-},
-{
-  num: "04",
-  title: "Suivi",
-  desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages."
-}];
-
+],
+};
 
 const MethodeSection = () => {
   return (
@@ -61,18 +48,22 @@ const MethodeSection = () => {
                 {/* Content */}
                 <div className={`${i < 3 ? 'pb-10' : 'pb-2'}`}>
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
-                  <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
-                  {step.note &&
-                <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
-                }
+                  {i < steps.length - 1 &&
+                  <p className="font-dm text-sm text-ardoise/">
+
+{`step.desc}`}
+                  </p>
+                  }
                 </div>
               </Reveal>
             )}
           </div>
 
-
-          <div className="text-center mt-4">
-            <Button variant="ctaOutline" size="default" asChild>
+          <div className="text-center mt-6">
+            <p className="font-dm text-sm text-ardoise/70 leading-relaxed max-w-md mx-auto">
+              Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages.
+            </p>
+            <Button variant="ctaOutline" size="default" asChild className="mt-4">
               <Link to="/methode-semaine-54">
                 Découvrir la méthode
                 <ArrowRight size={16} />
