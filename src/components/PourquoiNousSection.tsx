@@ -66,7 +66,7 @@ const PourquoiSection = () => {
               className="flex flex-col justify-center items-center lg:items-end gap-3 lg:pt-2 lg:pr-10"
             >
               <img
-                src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
+                src="/__l5e/assets-v1/a92c6803-183b-4941-a2e2-ed7c66e2966e/poissonnerie-ecosysteme.png"
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
                 className="w-full max-w-[340px] rounded-xl shadow-lg cursor-zoom-in transition-transform duration-300 hover:scale-[1.02]"
                 loading="lazy"
@@ -138,7 +138,7 @@ const PourquoiSection = () => {
             onClick={() => setZoomOpen(false)}
           >
             <img
-              src="/__l5e/assets-v1/0c26d159-6c98-4e16-9943-bc9f0a777720/poissonnerie-ecosysteme.png"
+              src="/__l5e/assets-v1/a92c6803-183b-4941-a2e2-ed7c66e2966e/poissonnerie-ecosysteme.png"
               alt="Schéma de l'écosystème IA agrandi : automatisations, suivi et communication"
               className="max-w-[85vw] max-h-[85vh] w-auto h-auto rounded-xl shadow-2xl"
             />
