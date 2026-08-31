@@ -34,8 +34,7 @@ const prestations = [
       { icon: BarChart3, text: "Capable d'analyser, synthétiser et répondre rapidement" },
       { icon:
 Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
-      { icon: MousePointer
-Click, text: "Utilisable simplement, sans compétence technique" }
+      { icon: MousePointerClick, text: "Utilisable simplement, sans compétence technique" }
     ],
     objectif: "Accélérer vos prises de décision et votre productivité."
   },
