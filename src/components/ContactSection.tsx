@@ -63,8 +63,76 @@ handleSubmit() {
           </p>
 
   return (
-    <section className="demo">
-      <Button variant="cta">OK</Button>
-    </section>
+    <section id="audit" className="bg-navy py-6">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc;
+            Diagnostic diagnostic gratuit
+          </h2>
+          <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
+            Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
+          </p>
+          <Dialog open={open} onOpenChange={setOpen}>
+            <DialogTrigger asChild>
+              <Button variant="cta" size="lg" className="text-lg px-10 py-6">
+                Être rappelé
+                <ArrowRight size={20} />
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="bg-navy border-blanc-casse/10 sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle className="font-dm ;
+                  Diagnostic diagnostic
+                </DialogTitle>
+              </DialogHeader>
+              <form onSubmit={handleSubmit} className="space-y-4 mt-2">
+                <div className="space-y-2">
+                  <Label htmlFor="nom" className="text-blanc-casse/80 font-dm text-sm">
+                    Nom *
+                  </Label>
+                  <Input
+                    id="nom"
+                    value={nom}
+                    onChange={(e) => setNom(e.target.value)}
+                    placeholder="Votre nom"
+                    maxLength={100}
+                    className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-Casse/30 font-dm"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-blanc-Casse/80 font-dm ;
+                    Email *
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="votre@email.com"
+                    maxLength={255}
+                    className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-Casse placeholder:text-blanc-Casse/30 font-d"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message" className="text-blanc-Casse/80 font-d ;
+                    Message
+                  </Label>
+                  <Textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Décrivez brièvement votre besoin..."
+                    maxLength={1000}
+                    rows={3}
+                    className="bg-blanc-Casse/
+                  <Button variant="cta" size="lg" type="submit" className="w-full text-base">
+                    Envoyer
+                  </Button>
+                </form>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+      </section>
   );
 };
