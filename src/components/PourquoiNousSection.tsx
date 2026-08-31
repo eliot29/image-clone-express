@@ -43,7 +43,7 @@ const PourquoiSection = () => {
           <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-start">
             {/* PARCOURS */}
             <Reveal className="lg:sticky lg:top-24">
-              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
                 Parcours
               </span>
               <p className="text-ardoise/80 leading-relaxed mt-3">
@@ -54,9 +54,9 @@ const PourquoiSection = () => {
                 <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
               </p>
 
-              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or/40">
+              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or-mat/40">
                 Le déclic est venu en accompagnant{" "}
-                <span className="text-or">une poissonnerie du Pays d'Iroise.</span>
+                <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
               </p>
             </Reveal>
 
@@ -81,7 +81,7 @@ const PourquoiSection = () => {
           {/* RÉSULTATS + QUOTIDIEN */}
           <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 mt-6">
             <Reveal delay={80} className="bg-navy rounded-xl p-5 sm:p-6">
-              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
                 Résultats mesurés
               </span>
               <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2">
@@ -91,9 +91,9 @@ const PourquoiSection = () => {
                 {resultats.map((r) => (
                   <div
                     key={r.label}
-                    className="rounded-lg border border-or/30 bg-or/10 px-2 py-3 text-center"
+                    className="rounded-lg border border-or-mat/30 bg-or-mat/10 px-2 py-3 text-center"
                   >
-                    <r.icon size={16} className="text-or mx-auto mb-1.5" />
+                    <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
                     <div className="font-bold text-blanc-casse text-base sm:text-xl leading-none">
                       {r.value}
                     </div>
@@ -109,7 +109,7 @@ const PourquoiSection = () => {
               delay={160}
               className="rounded-xl bg-navy p-5 sm:p-6"
             >
-              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or">
+              <span className="font-semibold text-[11px] uppercase tracking-[0.18em] text-or-mat">
                 Puis son quotidien
               </span>
               <p className="text-sm text-blanc-casse/80 leading-relaxed mt-2 mb-4">
@@ -121,7 +121,7 @@ const PourquoiSection = () => {
                     key={s.label}
                     className="flex items-center gap-2 rounded-full border border-navy/10 bg-blanc-casse px-3 py-1.5"
                   >
-                    <s.icon size={16} className="text-or" />
+                    <s.icon size={16} className="text-or-mat" />
                     <span className="text-xs text-navy">{s.label}</span>
                   </li>
                 ))}
