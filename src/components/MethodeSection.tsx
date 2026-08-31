@@ -22,9 +22,6 @@ const steps = [
     desc: "La solution est configurée et testée dans vos conditions réelles, ou les équipes sont accompagnées dans l'utilisation des outils.",
     note: "Objectif : une solution ou un usage qui fonctionne vraiment, adapté à votre quotidien."
   },
-  {
-    num: "04",
-  }
 ];
 
 const MethodeSection = () => {
