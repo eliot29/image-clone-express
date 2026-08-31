@@ -67,9 +67,7 @@ const MethodeSection = () => {
               className="mx-auto mt-6 w-full max-w-md rounded-lg shadow-sm"
               loading="lazy"
             />
-            <Button variant
-
- placeholder="ctaOutline" size="default" className="mt-6">
+            <Button variant="ctaOutline" size="default" className="mt-6">
               Découvrir la méthode
             </Button>
           </div>
