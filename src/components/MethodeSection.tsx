@@ -79,10 +79,17 @@ const MethodeSection = () => {
               </Link>
             </Button>
           </div>
+          <div className="mt-10 max-w-3xl mx-auto">
+            <img
+              src="/__l5e/assets-v1/ebe3bc59-d136-4a3d-a49f-4afd35e0753f/methode-process.png"
+              alt="Schéma du processus Semaine 54 : comprendre, concevoir, automatiser, faire évoluer et grandir ensemble"
+              className="w-full rounded-xl shadow-lg"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>);
-
 };
 
 export default MethodeSection;
