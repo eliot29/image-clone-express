@@ -17,7 +17,7 @@ const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps)
   }, [images.length, interval]);
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-blanc-casse/10 aspect-[16/10]">
+    <div className="relative overflow-hidden rounded-xl border-2 border-or-mat/70 aspect-[16/10]">
       {images.map((src, i) => (
         <img
           key={src}
