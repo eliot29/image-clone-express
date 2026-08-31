@@ -144,7 +144,7 @@ const ShakeIn = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const PropositionLabel = () => <ShakeIn>CONCEPTION IA ET/OU ACCOMPAGNEMENT IA</ShakeLabel>;
+const PropositionLabel = () => <ShakeIn>CONCEPTION IA ET/OU ACCOMPAGNEMENT IA</ShakeIn>;
 
 const PropositionSection = () => {
   return (
