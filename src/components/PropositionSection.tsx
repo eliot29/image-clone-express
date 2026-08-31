@@ -93,7 +93,7 @@ Click, text: "Utilisable simplement, sans compétence technique" }
 ];
 
 const validation = [
-  { icon: FlaskFlask, text: "Test en conditions réelles" },
+  { icon: Flask, text: "Test en conditions réelles" },
   icon: RefreshCw, text: "Ajustements selon les retours terrain" },
 ];
 
