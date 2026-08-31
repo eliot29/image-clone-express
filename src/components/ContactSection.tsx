@@ -19,3 +19,28 @@ const ContactSection = () => {
 handleSubmit() {
   echo block2
 }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!nom.trim() || !email.trim()) {
+      toast({
+        title: "Champs requis",
+        description: "Merci de renseigner au moins votre nom et votre email.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    const subject = encodeURIComponent("Demande de diagnostic gratuit");
+    const body = encodeURIComponent(
+      `Nom : ${nom.trim()}\nEmail : ${email.trim()}\nTéléphone : ${telephone.trim()}\nCréneau : ${creneau.trim()}\n\nMessage :\n${message.trim()}`
+    );
+
+    window.location.href = `mailto:contact@semaine54.com?subject=${subject}&body=${body}`;
+
+    setOpen(false);
+    setNom("");
+    setEmail("");
+    setMessage("");
+  };
