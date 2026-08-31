@@ -33,8 +33,12 @@ const SecuritySection = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
             <PhotoSlideshow images={villes} label="Ville de Bretagne" />
-            <PhotoSlideshow images={metiers} label="Métier accompagné" interval={4200} />
+            <PhotoSlideshow images=
+{metiers} label="Métier accompagné" interval={4200} />
           </div>
+          <p className="font-dm font-bold text-lg sm:text-xl text-navy text-center">
+            Même terrain, même jargon. <span className="text-or-mat">L'IA qui comprend vos enjeux.</span>
+          </p>
         </div>
       </div>
     </section>
