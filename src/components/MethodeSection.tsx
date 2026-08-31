@@ -22,6 +22,11 @@ const steps = [
     desc: "La solution est configurée et testée dans vos conditions réelles, ou les équipes sont accompagnées dans l'utilisation des outils.",
     note: "Objectif : une solution ou un usage qui fonctionne vraiment, adapté à votre quotidien."
   },
+  {
+    num: "04",
+    title: "Suivi",
+    desc: "Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages."
+  },
 ];
 
 const MethodeSection = () => {
@@ -40,7 +45,7 @@ const MethodeSection = () => {
           </p>
 
           <div className="space-y-0">
-            {steps.slice(0, 3).map((step, i) => (
+            {steps.map((step, i) => (
               <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group">
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
@@ -58,9 +63,6 @@ const MethodeSection = () => {
           </div>
 
           <div className="text-center mt-8">
-            <p className="font-dm text-sm text-ardoise/70 leading-relaxed max-w-md mx-auto">
-              Les outils évoluent. Votre activité aussi. Je reste disponible pour ajuster les solutions ou approfondir les usages.
-            </p>
             <img
               src="/__l5e/assets-v1/0381a4c0-36a0-4707-b3f0-1f8eb5812678/partenaire-ia-ecosysteme.png"
               alt="Infographie du parcours partenaire : de l'analyse au suivi"
