@@ -145,8 +145,8 @@ const PourquoiNousSection = () => {
               </Link>
             </Button>
           </div>
-          </div>
         </div>
+
 
         {zoomOpen && (
           <div
