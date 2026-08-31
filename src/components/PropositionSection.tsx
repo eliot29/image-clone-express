@@ -84,7 +84,7 @@ Briefcase, text: "Adapté à votre métier et à vos besoins spécifiques" },
     items: [
       { icon: Search, text: "Analyse de vos besoins réels" },
       { icon: CheckCircle2, text: "Sélection des outils les plus pertinents" },
-      icon: Wallet, text: "Éviter les abonnements inutiles" },
+      { icon: Wallet, text: "Éviter les abonnements inutiles" },
       { icon: Compass, text: "Mise en cohérence avec votre organisation" }
     ],
     objectif: "Aller à l'essentiel, sans perte de temps ni d'argent."
