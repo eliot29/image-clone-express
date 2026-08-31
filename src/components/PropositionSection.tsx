@@ -193,7 +193,7 @@ const PropositionSection = () => {
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
               <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
-                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
+                CONCEPTION IA ET/OU ACCOMPAGNEMENT IA (label animé)
               </span>
             </div>
           </div>
