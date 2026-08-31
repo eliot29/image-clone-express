@@ -291,8 +291,7 @@ const PropositionSection = () => {
             </div>
           </div>
 
-<div className="rounded-2xl border-2 border-navy bg-gris-perle/60 px-4 py-5 sm:px-6 
-sm:py-6 mx-auto text-center">
+<div className="rounded-2xl border-2 border-navy bg-gris-perle/60 px-4 py-5 sm:px-6 sm:py-6 mx-auto text-center">
             <p className="font-dm font-bold text-navy text-lg sm:text-xl leading-snug">
               Maîtriser et tester les outils IA demande du temps.
             </p>
