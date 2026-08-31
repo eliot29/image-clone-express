@@ -13,3 +13,8 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+const ContactSection = () => {
+  return null;
+};
+
+export default ContactSection;
