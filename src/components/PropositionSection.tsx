@@ -284,10 +284,10 @@ const PropositionSection = () => {
 
           <div className="flex justify-center mb-6">
             <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-gris-perle shadow-sm">
-              <p className="font-dm text-navy text-[18px] sm:text-[20px] font-semibold leading-snug text-center">
-                Objectif : vous libérer des tâches répétitives ou mal maîtrisées.
+              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
+                <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
                 <br />
-                Pour vous concentrer sur ce qui crée réellement de la valeur.
+                <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
               </p>
             </div>
           </div>

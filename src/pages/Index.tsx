@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import PunchlineBand from "@/components/PunchlineBand";
 import ConceptSection from "@/components/ConceptSection";
 import PropositionSection from "@/components/PropositionSection";
 import CasConcretsSection from "@/components/CasConcretsSection";
@@ -20,7 +19,6 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        <PunchlineBand />
         <Reveal><ConceptSection /></Reveal>
         <Reveal><PropositionSection /></Reveal>
         <Reveal><CasConcretsSection /></Reveal>

@@ -159,7 +159,22 @@ const ContactSection = () => {
               </DialogContent>
             </Dialog>
 
+            <div className="mt-6 max-w-lg mx-auto">
+              <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
+                {"\n"}
+              </p>
+              <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
+                {"\n"}
+              </p>
+              <p className="font-dm text-blanc-casse/50 text-xs mt-2 italic">
+                {"\n"}
+              </p>
+            </div>
           </div>
+
+          <p className="font-dm text-blanc-casse/70 text-sm italic text-center">
+            {"\n"}
+          </p>
         </div>
       </div>
     </section>
