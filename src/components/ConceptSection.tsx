@@ -30,6 +30,12 @@ const ConceptSection = () => {
                 , pour des solutions d'intelligence artificielle construites sur
                 mesure, autour de votre métier et de votre organisation.
               </p>
+              <p className="font-dm text-blanc-casse/80 leading-relaxed mt-4 pt-4 border-t border-blanc-casse/10">
+                Maîtriser et tester les outils IA demande du temps.{" "}
+                <strong className="text-or-mat font-bold">
+                  Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+                </strong>
+              </p>
             </div>
 
             <div className="w-full max-w-[160px] md:max-w-[205px] mx-auto mr-0 ml-auto shrink-0">
