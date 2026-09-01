@@ -58,7 +58,7 @@ const PourquoiSection = () => {
                 <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
               </p>
 
-              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or-mat/40">
+              <p className="font-dm font-semibold text-navy text-[18px] sm:text-[20px] leading-snug mt-5 pl-4 border-l-2 border-or-mat/40">
                 Le déclic est venu en accompagnant{" "}
                 <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
               </p>
