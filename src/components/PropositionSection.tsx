@@ -120,13 +120,15 @@ const PropositionSection = () => {
     <section id="prestations" className="bg-blanc-casse py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl lg:max-w-6xl mx-auto">
-          <div className="bg-or-mat rounded-2xl px-6 py-5 shadow-sm mb-8">
-            <p className="font-dm font-bold text-navy text-base sm:text-lg leading-snug text-center">
-              Maîtriser et tester les outils IA demande du temps.
-            </p>
-            <p className="font-dm font-bold text-navy text-base sm:text-lg leading-snug text-center mt-1">
-              Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
-            </p>
+          <div className="flex justify-center mb-8">
+            <div className="inline-block bg-or-mat rounded-2xl px-4 sm:px-6 py-3 sm:py-4 shadow-sm w-fit max-w-full">
+              <p className="font-dm font-bold text-navy text-base sm:text-lg leading-snug text-center">
+                Maîtriser et tester les outils IA demande du temps.
+              </p>
+              <p className="font-dm font-bold text-navy text-base sm:text-lg leading-snug text-center mt-1">
+                Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+              </p>
+            </div>
           </div>
 
           <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
