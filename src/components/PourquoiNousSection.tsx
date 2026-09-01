@@ -38,6 +38,10 @@ const PourquoiSection = () => {
             <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy">
               Pourquoi Semaine 54 ?
             </h2>
+            <p className="font-dm font-extrabold text-[28px] sm:text-[36px] lg:text-[40px] leading-[1.15] tracking-[-0.01em] text-navy max-w-4xl mx-auto py-10">
+              Mon approche vient du réel.{" "}
+              <span className="text-or-mat">Pas d'une démonstration théorique.</span>
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-start">
