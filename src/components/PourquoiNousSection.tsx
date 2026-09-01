@@ -38,6 +38,10 @@ const PourquoiSection = () => {
             <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy">
               Pourquoi Semaine 54 ?
             </h2>
+            <p className="font-dm font-extrabold text-[28px] sm:text-[36px] lg:text-[40px] leading-[1.15] tracking-[-0.01em] text-navy max-w-4xl mx-auto py-10">
+              Mon approche vient du réel.{" "}
+              <span className="text-or-mat">Pas d'une démonstration théorique.</span>
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-start">
@@ -54,7 +58,7 @@ const PourquoiSection = () => {
                 <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
               </p>
 
-              <p className="font-bold text-navy text-lg sm:text-xl leading-snug mt-5 pl-4 border-l-2 border-or-mat/40">
+              <p className="font-dm font-semibold text-navy text-[18px] sm:text-[20px] leading-snug mt-5 pl-4 border-l-2 border-or-mat/40">
                 Le déclic est venu en accompagnant{" "}
                 <span className="text-or-mat">une poissonnerie du Pays d'Iroise.</span>
               </p>
@@ -128,6 +132,13 @@ const PourquoiSection = () => {
               </ul>
             </Reveal>
           </div>
+
+          <Reveal delay={200}>
+            <p className="font-dm font-semibold text-navy text-[18px] sm:text-[20px] leading-snug text-center mt-8">
+              C'est en constatant le temps que l'IA pouvait libérer qu'est née{" "}
+              <span className="text-or-mat">Semaine 54</span>.
+            </p>
+          </Reveal>
         </div>
 
         {/* ZOOM OVERLAY */}
