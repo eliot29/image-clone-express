@@ -19,12 +19,12 @@ const ConceptSection = () => {
               <p className="font-dm text-blanc-casse/80 leading-relaxed mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
                 s'adapter à la réalité des entreprises.{" "}
-                <strong className="text-or-mat font-bold text-lg">
+                <strong className="text-blanc-casse font-bold">
                   Le vrai sujet : l'accompagnement et la personnalisation.
                 </strong>
               </p>
               <p className="font-dm text-blanc-casse/80 leading-relaxed">
-                <strong className="text-or-mat font-bold text-lg">
+                <strong className="text-blanc-casse font-bold">
                   Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
                 </strong>
                 , pour des solutions d'intelligence artificielle construites sur
