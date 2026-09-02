@@ -2,7 +2,7 @@ import { Shield, Scale } from "lucide-react";
 
 const SecuritySection = () => {
   return (
-    <section className="bg-blanc-casse py-10 md:py-12">
+    <section className="bg-gris-perle py-12 md:py-16">
       <div className="section-wrap">
         <div className="bg-card rounded-xl shadow-card p-8 max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-6">

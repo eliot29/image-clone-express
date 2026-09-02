@@ -49,12 +49,12 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="audit" className="bg-navy py-12 md:py-16">
+    <section id="audit" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="max-w-4xl mx-auto">
           {/* PUNCHLINE — collaborateur numérique */}
-          <p className="txt-punchline text-blanc-casse text-center max-w-3xl mx-auto mb-12">
-            Construisons le <span className="text-or-mat">collaborateur numérique</span> adapté à votre entreprise et vos équipes.
+          <p className="txt-punchline text-navy text-center max-w-3xl mx-auto mb-12">
+            Construisons le <span className="text-navy font-extrabold underline decoration-or-mat decoration-4 underline-offset-4">collaborateur numérique</span> adapté à votre entreprise et vos équipes.
           </p>
 
           <div className="text-center mb-4">
@@ -63,12 +63,12 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <h2 className="txt-section text-blanc-casse mb-8 text-center">
-            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['·_']">20/30 min</span>
+          <h2 className="txt-section text-navy mb-8 text-center">
+            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-navy/70 sm:before:content-['·_']">20/30 min</span>
           </h2>
 
 
-          <p className="txt-corps text-blanc-casse/80 text-center max-w-2xl mx-auto mb-8">
+          <p className="txt-corps text-ardoise text-center max-w-2xl mx-auto mb-8">
             Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
           </p>
 
@@ -167,19 +167,19 @@ const ContactSection = () => {
             </Dialog>
 
             <div className="mt-6 max-w-lg mx-auto">
-              <p className="font-dm text-blanc-casse/60 text-sm leading-relaxed">
+              <p className="font-dm text-ardoise/70 text-sm leading-relaxed">
                 {"\n"}
               </p>
-              <p className="font-dm text-blanc-casse/60 text-sm mt-3 leading-relaxed">
+              <p className="font-dm text-ardoise/70 text-sm mt-3 leading-relaxed">
                 {"\n"}
               </p>
-              <p className="font-dm text-blanc-casse/50 text-xs mt-2 italic">
+              <p className="font-dm text-ardoise/60 text-xs mt-2 italic">
                 {"\n"}
               </p>
             </div>
           </div>
 
-          <p className="font-dm text-blanc-casse/70 text-sm italic text-center">
+          <p className="font-dm text-ardoise/70 text-sm italic text-center">
             {"\n"}
           </p>
         </div>

@@ -6,25 +6,25 @@ import conceptVisuel from "@/assets/puzzle-asset.json";
 
 const ConceptSection = () => {
   return (
-    <section id="concept" className="bg-navy py-12 md:py-16">
+    <section id="concept" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="text-center">
-          <h2 className="txt-section text-blanc-casse mb-8">
+          <h2 className="txt-section text-navy mb-8">
             L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
-            <span className="text-or-mat">Sous certaines conditions.</span>
+            <span className="text-navy/70">Sous certaines conditions.</span>
           </h2>
 
           <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8 text-left">
-            <div className="flex-1 h-full bg-blanc-casse/5 rounded-xl p-6 border border-blanc-casse/10">
-              <p className="txt-corps text-blanc-casse/80 mb-4">
+            <div className="flex-1 h-full bg-card rounded-xl p-6 shadow-card card-lift">
+              <p className="txt-corps text-ardoise mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
                 s'adapter à la réalité des entreprises.{" "}
-                <strong className="text-or-mat font-bold">
+                <strong className="text-navy font-bold">
                   Le vrai sujet : l'accompagnement et la personnalisation.
                 </strong>
               </p>
-              <p className="txt-corps text-blanc-casse/80">
-                <strong className="text-or-mat font-bold">
+              <p className="txt-corps text-ardoise">
+                <strong className="text-navy font-bold">
                   Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
                 </strong>
                 , pour des solutions d'intelligence artificielle construites sur

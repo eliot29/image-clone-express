@@ -13,7 +13,7 @@ const metiers = [metier1Img.url, metier2Img.url, metier3Img.url, metier4Img.url]
 
 const PhotosBandeau = () => {
   return (
-    <section className="bg-blanc-casse py-0">
+    <section className="py-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
         <PhotoSlideshow
           images={villes}
