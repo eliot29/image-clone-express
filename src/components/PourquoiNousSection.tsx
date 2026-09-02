@@ -44,7 +44,7 @@ const PourquoiSection = () => {
   }, [zoomOpen]);
 
   return (
-    <section id="approche" className="bg-blanc-casse py-16 md:py-24">
+    <section id="approche" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="text-center mb-8">
           <h2 className="txt-section text-navy">Pourquoi Semaine 54 ?</h2>
@@ -57,9 +57,10 @@ const PourquoiSection = () => {
           </p>
         </Reveal>
 
-        <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-start">
+        {/* RANGÉE 1 */}
+        <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-stretch">
           {/* PARCOURS */}
-          <Reveal>
+          <Reveal className="flex flex-col justify-center">
             <span className="txt-etiquette text-navy">Parcours</span>
             <p className="txt-corps text-ardoise/70 mt-3 max-w-2xl">
               Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de{" "}
@@ -74,54 +75,58 @@ const PourquoiSection = () => {
               Le déclic est venu en accompagnant une poissonnerie du Pays d'Iroise.
             </p>
           </Reveal>
+          </Reveal>
 
-          {/* RÉSULTATS + QUOTIDIEN */}
-          <Reveal className="grid gap-4 sm:grid-cols-2 items-stretch">
-            <div className="card-lift h-full bg-card rounded-xl shadow-card p-5 sm:p-6">
-              <span className="txt-etiquette text-navy">Résultats mesurés</span>
-              <p className="font-dm text-sm text-ardoise/70 leading-relaxed mt-2">
-                Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
-              </p>
-              <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
-                {resultats.map((r) => (
-                  <div
-                    key={r.label}
-                    className="rounded-lg bg-or-mat/15 px-2 py-3 text-center"
-                  >
-                    <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                    <div className="font-bold text-navy text-base sm:text-xl leading-none">
-                      <CountUp
-                        value={r.value}
-                        prefix={r.prefix}
-                        suffix={r.suffix}
-                        group={r.group}
-                      />
-                    </div>
-                    <div className="text-[11px] sm:text-xs text-ardoise/70 mt-1">{r.label}</div>
+          {/* RÉSULTATS MESURÉS */}
+          <Reveal className="h-full">
+          <div className="card-lift h-full bg-card rounded-xl shadow-card p-5 sm:p-6">
+            <span className="txt-etiquette text-navy">Résultats mesurés</span>
+            <p className="font-dm text-sm text-ardoise/70 leading-relaxed mt-2">
+              Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
+            </p>
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
+              {resultats.map((r) => (
+                <div
+                  key={r.label}
+                  className="rounded-lg bg-or-mat/15 px-2 py-3 text-center"
+                >
+                  <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
+                  <div className="font-bold text-navy text-base sm:text-xl leading-none">
+                    <CountUp
+                      value={r.value}
+                      prefix={r.prefix}
+                      suffix={r.suffix}
+                      group={r.group}
+                    />
                   </div>
-                ))}
-              </div>
+                  <div className="text-[11px] sm:text-xs text-ardoise/70 mt-1">{r.label}</div>
+                </div>
+              ))}
             </div>
-
-            <div className="card-lift h-full bg-card rounded-xl shadow-card p-5 sm:p-6">
-              <span className="txt-etiquette text-navy">Puis son quotidien</span>
-              <p className="font-dm text-sm text-ardoise/70 leading-relaxed mt-2 mb-4">
-                L'IA étendue au fonctionnement de tous les jours :
-              </p>
-              <ul className="flex flex-wrap gap-2">
-                {solutions.map((s) => (
-                  <li
-                    key={s.label}
-                    className="flex items-center gap-2 rounded-full bg-gris-perle px-3 py-1.5"
-                  >
-                    <s.icon size={16} className="text-or-mat" />
-                    <span className="text-xs text-navy">{s.label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          </div>
           </Reveal>
         </div>
+
+        {/* RANGÉE 2 — PUIS SON QUOTIDIEN, pleine largeur */}
+        <Reveal className="mt-6">
+          <div className="card-lift h-full bg-card rounded-xl shadow-card p-5 sm:p-6">
+            <span className="txt-etiquette text-navy">Puis son quotidien</span>
+            <p className="font-dm text-sm text-ardoise/70 leading-relaxed mt-2 mb-4">
+              L'IA étendue au fonctionnement de tous les jours :
+            </p>
+            <ul className="flex flex-wrap gap-2">
+              {solutions.map((s) => (
+                <li
+                  key={s.label}
+                  className="flex items-center gap-2 rounded-full bg-gris-perle px-3 py-1.5"
+                >
+                  <s.icon size={16} className="text-or-mat" />
+                  <span className="text-xs text-navy">{s.label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
 
         {/* SCHÉMA POISSONNERIE — pleine largeur */}
         <Reveal className="mt-12">
