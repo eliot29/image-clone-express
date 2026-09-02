@@ -10,10 +10,8 @@ import MethodeSection from "@/components/MethodeSection";
 import OutilsSection from "@/components/OutilsSection";
 import SecuritySection from "@/components/SecuritySection";
 import ContactSection from "@/components/ContactSection";
-import CarteBretagne from "@/components/CarteBretagne";
 
 import FooterSection from "@/components/FooterSection";
-import Reveal from "@/components/secondary/Reveal";
 import PunchlineBand from "@/components/secondary/PunchlineBand";
 
 const Index = () => {

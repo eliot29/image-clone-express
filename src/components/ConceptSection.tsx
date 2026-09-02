@@ -15,7 +15,7 @@ const ConceptSection = () => {
           </h2>
 
           <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8 text-left">
-            <div className="flex-1 h-full bg-card rounded-xl p-6 shadow-card card-lift">
+            <div className="flex-1 bg-card rounded-xl p-6 shadow-card card-lift">
               <p className="txt-corps text-ardoise mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
                 s'adapter à la réalité des entreprises.{" "}
@@ -32,11 +32,11 @@ const ConceptSection = () => {
               </p>
             </div>
 
-            <div className="w-full max-w-[220px] md:max-w-[340px] mx-auto md:mx-0 md:self-center shrink-0">
+            <div className="w-full max-w-[180px] md:max-w-[42%] lg:max-w-[38%] mx-auto md:mx-0 self-center shrink-0">
               <img
                 src={conceptVisuel.url}
                 alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                className="w-full rounded-xl"
+                className="w-full h-auto object-contain rounded-xl"
                 loading="lazy"
               />
             </div>
@@ -51,14 +51,6 @@ const ConceptSection = () => {
             </Button>
           </div>
 
-          {/* PUNCHLINE 2 */}
-          <div className="w-fit max-w-full mx-auto mt-10 bg-or-mat rounded-xl px-6 py-6 md:px-10 md:py-8">
-            <p className="txt-punchline text-navy text-center">
-              Maîtriser et tester les outils IA demande du temps.
-              <br />
-              Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
-            </p>
-          </div>
         </div>
       </div>
     </section>
