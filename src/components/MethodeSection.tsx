@@ -61,7 +61,7 @@ const MethodeSection = () => {
                         stroke="#C9A84C"
                         strokeOpacity="0.55"
                         strokeWidth="2"
-                        className="draw-line is-visible"
+                        className="draw-line"
                         style={{ transitionDelay: `${i * 120}ms` }}
                       />
                     </svg>

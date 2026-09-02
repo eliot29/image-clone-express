@@ -168,16 +168,17 @@ footer[id] {
   stroke-dashoffset: 1;
   transition: stroke-dashoffset 1.2s ease-out;
 }
-.draw-line.is-visible {
+.draw-line.is-visible,
+.reveal.is-visible .draw-line {
   stroke-dashoffset: 0;
 }
 
 /* ---- Card interactions ---- */
 .card-lift {
   transition:
-    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 0.35s ease;
+    transform 0.15s ease-out,
+    box-shadow 0.15s ease-out,
+    border-color 0.15s ease-out;
 }
 .card-lift:hover {
   transform: translateY(-4px);
@@ -268,5 +269,25 @@ footer[id] {
   }
   .txt-etiquette {
     @apply font-dm font-semibold text-[11px] uppercase tracking-[0.18em];
+  }
+}
+/* ---- Accessibilité : mouvement réduit ---- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-text,
+  .reveal-card,
+  .map-dot,
+  .draw-line,
+  .card-lift {
+    transition: none !important;
+    transition-delay: 0ms !important;
+  }
+  .reveal,
+  .map-dot {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .draw-line {
+    stroke-dashoffset: 0 !important;
   }
 }
