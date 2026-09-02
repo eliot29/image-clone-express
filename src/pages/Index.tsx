@@ -10,6 +10,7 @@ import MethodeSection from "@/components/MethodeSection";
 import OutilsSection from "@/components/OutilsSection";
 import SecuritySection from "@/components/SecuritySection";
 import ContactSection from "@/components/ContactSection";
+import CarteBretagne from "@/components/CarteBretagne";
 
 import FooterSection from "@/components/FooterSection";
 import Reveal from "@/components/secondary/Reveal";
@@ -22,19 +23,36 @@ const Index = () => {
       <main>
         <HeroSection />
 
-        {/* PUNCHLINE 1 */}
-        <PunchlineBand>
-          Même terrain, même langage. Le partenaire IA des{" "}
-          <span className="text-or-mat">PME bretonnes</span>.
+        {/* PUNCHLINE 1 + ancrage territorial */}
+        <section className="bg-navy py-12 md:py-16">
+          <div className="section-wrap">
+            <Reveal variant="text">
+              <p className="txt-punchline text-blanc-casse text-center max-w-3xl mx-auto">
+                Même terrain, même langage. Le partenaire IA des{" "}
+                <span className="text-or-mat">PME bretonnes</span>.
+              </p>
+            </Reveal>
+            <Reveal variant="text" delay={120} className="mt-8">
+              <CarteBretagne onNavy />
+            </Reveal>
+          </div>
+        </section>
+
+        <ConceptSection />
+        <PropositionSection />
+        <CasConcretsSection />
+        <PourquoiNousSection />
+        <SecteursSection />
+        <PhotosBandeau />
+        <MethodeSection />
+
+        {/* PUNCHLINE 3 */}
+        <PunchlineBand tone="filet">
+          Mon approche vient du réel. Pas d'une démonstration théorique.
         </PunchlineBand>
 
-        <Reveal><ConceptSection /></Reveal>
-        <Reveal><PropositionSection /></Reveal>
-        <Reveal><CasConcretsSection /></Reveal>
-        <Reveal><PourquoiNousSection /></Reveal>
-        <Reveal><SecteursSection /></Reveal>
-        <Reveal><PhotosBandeau /></Reveal>
-        <Reveal><MethodeSection /></Reveal>
+        <OutilsSection />
+        <SecuritySection />
 
         {/* PUNCHLINE 4 */}
         <PunchlineBand rule>
@@ -42,9 +60,7 @@ const Index = () => {
           <span className="text-or-mat">à la portée des PME</span>.
         </PunchlineBand>
 
-        <Reveal><OutilsSection /></Reveal>
-        <Reveal><SecuritySection /></Reveal>
-        <Reveal><ContactSection /></Reveal>
+        <ContactSection />
       </main>
       <FooterSection />
     </>
