@@ -133,6 +133,14 @@ const PourquoiSection = () => {
               </ul>
             </Reveal>
           </div>
+
+          {/* SOUS-PUNCHLINE 2 */}
+          <Reveal delay={80}>
+            <p className="font-dm font-semibold text-navy text-[18px] sm:text-[20px] leading-snug text-center mt-6">
+              C'est en constatant le temps que l'IA pouvait libérer qu'est née{" "}
+              <span className="text-or-mat">Semaine 54</span>.
+            </p>
+          </Reveal>
         </div>
 
         {/* ZOOM OVERLAY */}
