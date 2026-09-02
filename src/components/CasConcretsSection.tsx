@@ -37,7 +37,7 @@ const cases: CaseItem[] = [
 
 const CasConcretsSection = () => {
   return (
-    <section id="cas" className="bg-blanc-casse py-16 md:py-24">
+    <section id="cas" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="text-center mb-8">
           <h2 className="txt-section text-navy">

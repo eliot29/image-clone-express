@@ -30,7 +30,7 @@ const solutions = [
 
 const SecteursSection = () => {
   return (
-    <section id="secteurs" className="bg-blanc-casse py-16 md:py-24">
+    <section id="secteurs" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         {/* Bandeau domaines – défile de gauche à droite */}
         <div className="relative overflow-hidden mb-4">

@@ -2,7 +2,7 @@ const integrations = ["Gmail", "HubSpot", "Google Sheets", "Slack", "Outlook Cal
 
 const OutilsSection = () => {
   return (
-    <section className="bg-blanc-casse py-16 md:py-24">
+    <section className="bg-blanc-casse py-12 md:py-16">
       <div className="section-wrap">
         <p className="txt-souspunchline text-navy mb-6 text-center max-w-3xl mx-auto">
           Le marché a des centaines d'outils.{" "}

@@ -75,7 +75,7 @@ const PourquoiSection = () => {
               Le déclic est venu en accompagnant une poissonnerie du Pays d'Iroise.
             </p>
           </Reveal>
-          </Reveal>
+
 
           {/* RÉSULTATS MESURÉS */}
           <Reveal className="h-full">
