@@ -13,12 +13,19 @@ const metiers = [metier1Img.url, metier2Img.url, metier3Img.url, metier4Img.url]
 
 const PhotosBandeau = () => {
   return (
-    <section className="bg-blanc-casse py-16 md:py-24">
-      <div className="section-wrap">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
-          <PhotoSlideshow images={villes} label="Ville de Bretagne" />
-          <PhotoSlideshow images={metiers} label="Métier accompagné" interval={4200} />
-        </div>
+    <section className="bg-blanc-casse py-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
+        <PhotoSlideshow
+          images={villes}
+          label="Ville de Bretagne"
+          caption="Brest · Rennes · Saint-Brieuc · Vannes"
+        />
+        <PhotoSlideshow
+          images={metiers}
+          label="Métier accompagné"
+          interval={4200}
+          caption="Artisans, commerces, professions libérales"
+        />
       </div>
     </section>
   );
