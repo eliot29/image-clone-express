@@ -9,11 +9,11 @@ type PunchlineBandProps = {
 };
 
 const PunchlineBand = ({ children, rule = false, id }: PunchlineBandProps) => (
-  <section id={id} className="bg-navy py-16 md:py-24">
+  <section id={id} className="bg-navy py-12 md:py-16">
     <div className="section-wrap">
       <Reveal>
         {rule && <div className="w-[60px] h-[3px] bg-or-mat mx-auto mb-6" />}
-        <p className="txt-punchline text-blanc-casse text-center max-w-4xl mx-auto">
+        <p className="txt-punchline text-blanc-casse text-center max-w-3xl mx-auto">
           {children}
         </p>
       </Reveal>

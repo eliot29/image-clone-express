@@ -216,7 +216,7 @@ footer[id] {
     @apply max-w-[1140px] mx-auto px-6;
   }
   .txt-punchline {
-    @apply font-dm font-extrabold text-[30px] sm:text-[38px] lg:text-[44px] leading-[1.15] tracking-[-0.02em];
+    @apply font-dm font-extrabold text-[26px] sm:text-[32px] lg:text-[38px] leading-[1.15] tracking-[-0.02em];
     text-wrap: balance;
   }
   .txt-section {

@@ -2,24 +2,26 @@ import { Shield, Scale } from "lucide-react";
 
 const SecuritySection = () => {
   return (
-    <section className="bg-blanc-casse py-16 md:py-24">
+    <section className="bg-blanc-casse py-10 md:py-12">
       <div className="section-wrap">
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <Shield size={22} className="text-or-mat shrink-0" />
-          <h2 className="txt-section text-navy">Sécurité & RGPD</h2>
-        </div>
-        <div className="flex items-start gap-3 justify-center max-w-2xl mx-auto">
-          <Scale size={18} className="text-or-mat shrink-0 mt-1" />
-          <p className="txt-corps text-ardoise/70 text-center">
-            Les solutions sont conçues avec une{" "}
-            <span className="font-semibold text-navy">gestion stricte des accès</span> et une
-            attention portée à la{" "}
-            <span className="font-semibold text-navy">confidentialité des données</span>.
-            <br />
-            <br />
-            La conformité RGPD est intégrée dès le diagnostic, sans se substituer à vos obligations
-            légales.
-          </p>
+        <div className="bg-card rounded-xl shadow-card p-8 max-w-3xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <Shield size={22} className="text-or-mat shrink-0" />
+            <h2 className="txt-section text-navy">Sécurité & RGPD</h2>
+          </div>
+          <div className="flex items-start gap-3 justify-center">
+            <Scale size={18} className="text-or-mat shrink-0 mt-1" />
+            <p className="txt-corps text-ardoise/70 text-center">
+              Les solutions sont conçues avec une{" "}
+              <span className="font-semibold text-navy">gestion stricte des accès</span> et une
+              attention portée à la{" "}
+              <span className="font-semibold text-navy">confidentialité des données</span>.
+              <br />
+              <br />
+              La conformité RGPD est intégrée dès le diagnostic, sans se substituer à vos
+              obligations légales.
+            </p>
+          </div>
         </div>
       </div>
     </section>

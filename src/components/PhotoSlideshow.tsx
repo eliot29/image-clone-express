@@ -4,9 +4,10 @@ interface PhotoSlideshowProps {
   images: string[];
   label: string;
   interval?: number;
+  caption?: string;
 }
 
-const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps) => {
+const PhotoSlideshow = ({ images, label, interval = 3500, caption }: PhotoSlideshowProps) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps)
   }, [images.length, interval]);
 
   return (
-    <div className="relative overflow-hidden rounded-xl border-2 border-or-mat/70 aspect-[16/10]">
+    <div className="relative overflow-hidden h-[280px] md:h-[380px]">
       {images.map((src, i) => (
         <img
           key={src}
@@ -29,6 +30,14 @@ const PhotoSlideshow = ({ images, label, interval = 3500 }: PhotoSlideshowProps)
           }`}
         />
       ))}
+      {caption && (
+        <>
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy to-transparent pointer-events-none" />
+          <span className="absolute bottom-0 left-0 p-5 md:p-6 font-dm text-[11px] font-semibold uppercase tracking-[0.18em] text-blanc-casse">
+            {caption}
+          </span>
+        </>
+      )}
     </div>
   );
 };

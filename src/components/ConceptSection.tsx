@@ -6,7 +6,7 @@ import conceptVisuel from "@/assets/puzzle-asset.json";
 
 const ConceptSection = () => {
   return (
-    <section id="concept" className="bg-navy py-16 md:py-24">
+    <section id="concept" className="bg-navy py-12 md:py-16">
       <div className="section-wrap">
         <div className="text-center">
           <h2 className="txt-section text-blanc-casse mb-8">
