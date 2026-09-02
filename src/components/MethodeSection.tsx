@@ -45,16 +45,26 @@ const MethodeSection = () => {
             Un accompagnement structuré, étape par étape.
           </p>
 
-          <div className="space-y-0">
+          <Reveal variant="card" stagger={120} className="space-y-0">
             {steps.map((step, i) =>
-            <Reveal key={i} delay={i * 110} className="flex gap-6 group">
-                {/* Timeline */}
+            <div key={i} className="flex gap-6 group">
+                {/* Frise */}
                 <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <span className="font-dm text-sm font-bold text-navy">{step.num}</span>
+                  <div className="w-12 h-12 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-150 ease-out group-hover:scale-110">
+                    <span className="font-dm text-lg font-bold text-or-mat">{step.num}</span>
                   </div>
                   {i < steps.length - 1 &&
-                <div className="w-px h-full bg-navy/15 my-1" />
+                <svg className="w-px flex-1 my-1 overflow-visible" preserveAspectRatio="none" viewBox="0 0 1 100">
+                      <line
+                        x1="0.5" y1="0" x2="0.5" y2="100"
+                        pathLength={1}
+                        stroke="#C9A84C"
+                        strokeOpacity="0.55"
+                        strokeWidth="2"
+                        className="draw-line is-visible"
+                        style={{ transitionDelay: `${i * 120}ms` }}
+                      />
+                    </svg>
                 }
                 </div>
 
@@ -66,9 +76,9 @@ const MethodeSection = () => {
                 <p className="font-dm text-xs text-ardoise/70 mt-3 italic">{step.note}</p>
                 }
                 </div>
-              </Reveal>
+              </div>
             )}
-          </div>
+          </Reveal>
 
 
           <div className="text-center mt-4">
