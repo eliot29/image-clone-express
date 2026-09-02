@@ -52,10 +52,6 @@ const ContactSection = () => {
     <section id="audit" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="max-w-4xl mx-auto">
-          {/* PUNCHLINE — collaborateur numérique */}
-          <p className="txt-punchline text-navy text-center max-w-3xl mx-auto mb-12">
-            Construisons le <span className="text-navy font-extrabold underline decoration-or-mat decoration-4 underline-offset-4">collaborateur numérique</span> adapté à votre entreprise et vos équipes.
-          </p>
 
           <div className="text-center mb-4">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">
