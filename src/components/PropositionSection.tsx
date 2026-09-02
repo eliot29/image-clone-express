@@ -117,7 +117,7 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
 
 const PropositionSection = () => {
   return (
-    <section id="prestations" className="bg-blanc-casse py-6">
+    <section id="prestations" className="bg-gris-perle py-6">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl lg:max-w-6xl mx-auto">
 
@@ -129,7 +129,7 @@ const PropositionSection = () => {
 
           {/* Audit block - DESKTOP centered */}
           <div className="hidden md:flex justify-center mb-4">
-            <div className="inline-block bg-gris-perle rounded-2xl px-6 py-6 md:px-8 shadow-sm">
+            <div className="inline-block bg-card rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Audit gratuit
               </h3>
@@ -162,7 +162,7 @@ const PropositionSection = () => {
               <svg className="absolute -bottom-[6px] right-1/4 translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
-              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-navy font-bold whitespace-nowrap bg-blanc-casse px-3">
+              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-navy font-bold whitespace-nowrap bg-gris-perle px-3">
                 CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
             </div>
@@ -171,7 +171,7 @@ const PropositionSection = () => {
           {/* MOBILE : Audit + rail continu à gauche descendant vers les 2 blocs */}
           <div className="md:hidden mb-6">
             {/* Audit */}
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+            <div className="bg-card rounded-2xl px-4 py-5 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                 Audit gratuit
               </h3>
@@ -201,7 +201,7 @@ const PropositionSection = () => {
 
             {/* Bloc 1 - Conception IA */}
             <div>
-              <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm">
+              <div className="bg-card rounded-2xl px-4 py-5 shadow-sm">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                   Conception IA sur-mesure
                 </h3>
@@ -222,7 +222,7 @@ const PropositionSection = () => {
             </div>
 
             {/* Bloc 2 - Accompagnement */}
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm mt-4">
+            <div className="bg-card rounded-2xl px-4 py-5 shadow-sm mt-4">
                 <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
                   Accompagnement IA
                 </h3>
@@ -243,7 +243,7 @@ const PropositionSection = () => {
           </div>
 
           <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
+            <div className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
@@ -262,7 +262,7 @@ const PropositionSection = () => {
               </div>
             </div>
 
-            <div className="bg-gris-perle rounded-2xl px-4 py-5 shadow-sm flex flex-col">
+            <div className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Accompagnement IA
               </h3>
