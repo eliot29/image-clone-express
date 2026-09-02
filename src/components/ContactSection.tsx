@@ -49,19 +49,24 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="audit" className="bg-navy py-6">
-      <div className="container mx-auto px-6">
+    <section id="audit" className="bg-navy py-16 md:py-24">
+      <div className="section-wrap">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-4">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">
               <CalendarCheck size={24} className="text-or-mat" />
             </div>
           </div>
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-8 text-center">
+          {/* SOUS-PUNCHLINE 2 */}
+          <p className="txt-souspunchline text-blanc-casse text-center max-w-2xl mx-auto mb-6">
+            Construisons le <span className="text-or-mat">collaborateur numérique</span> adapté à votre entreprise et vos équipes.
+          </p>
+
+          <h2 className="txt-section text-blanc-casse mb-8 text-center">
             Diagnostic gratuit<br className="sm:hidden" /> <span className="text-or-mat sm:before:content-['·_']">20/30 min</span>
           </h2>
 
-          <p className="font-dm text-blanc-casse/70 leading-relaxed text-center max-w-2xl mx-auto mb-8">
+          <p className="txt-corps text-blanc-casse/80 text-center max-w-2xl mx-auto mb-8">
             Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
           </p>
 

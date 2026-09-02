@@ -106,7 +106,7 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
     <div className="min-w-0">
       <h4 className="font-dm font-bold text-base text-navy leading-tight">{p.title}</h4>
       {p.badge && (
-        <span className="block font-dm text-xs font-semibold text-or-mat">{p.badge}</span>
+        <span className="block font-dm text-xs font-semibold text-navy">{p.badge}</span>
       )}
       {p.tagline && (
         <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
@@ -162,7 +162,7 @@ const PropositionSection = () => {
               <svg className="absolute -bottom-[6px] right-1/4 translate-x-1/2 text-or-mat/70" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
                 <path d="M1 1 L9 12 L17 1" stroke="currentColor" strokeWidth="4" strokeLinecap="square" strokeLinejoin="miter" />
               </svg>
-              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap bg-blanc-casse px-3">
+              <span className="absolute left-1/2 -translate-x-1/2 bottom-0 font-dm text-xs tracking-wider text-navy font-bold whitespace-nowrap bg-blanc-casse px-3">
                 CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
             </div>
@@ -194,7 +194,7 @@ const PropositionSection = () => {
 
             {/* Label encadré centré */}
             <div className="flex justify-center mt-2 mb-3">
-              <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-or-mat font-bold whitespace-nowrap">
+              <span className="inline-block border border-or-mat rounded-md px-3 py-1 font-dm text-xs tracking-wider text-navy font-bold whitespace-nowrap">
                 CONCEPTION IA ET/OU ACCOMPAGNEMENT IA
               </span>
             </div>

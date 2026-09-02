@@ -47,11 +47,11 @@ const MethodeSection = () => {
 
           <div className="space-y-0">
             {steps.map((step, i) =>
-            <Reveal key={i} variant="left" delay={i * 110} className="flex gap-6 group">
+            <Reveal key={i} delay={i * 110} className="flex gap-6 group">
                 {/* Timeline */}
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-or-mat/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <span className="font-dm text-sm font-bold text-or-mat">{step.num}</span>
+                    <span className="font-dm text-sm font-bold text-navy">{step.num}</span>
                   </div>
                   {i < steps.length - 1 &&
                 <div className="w-px h-full bg-navy/15 my-1" />
@@ -63,7 +63,7 @@ const MethodeSection = () => {
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.note &&
-                <p className="font-dm text-xs text-or-mat mt-3 italic">{step.note}</p>
+                <p className="font-dm text-xs text-ardoise/70 mt-3 italic">{step.note}</p>
                 }
                 </div>
               </Reveal>
