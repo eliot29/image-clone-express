@@ -44,34 +44,27 @@ const PourquoiSection = () => {
   }, [zoomOpen]);
 
   return (
-    <section id="approche" className="bg-blanc-casse py-14 md:py-20">
+    <section id="approche" className="bg-navy py-14 md:py-20">
       <div className="section-wrap">
         <div className="text-center mb-8">
-          <h2 className="txt-section text-navy">Pourquoi Semaine 54 ?</h2>
+          <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
         </div>
-
-        {/* PUNCHLINE 3 */}
-        <Reveal className="mb-12">
-          <p className="txt-punchline text-navy text-left border-l-4 border-or-mat pl-6 max-w-3xl">
-            Mon approche vient du réel. Pas d'une démonstration théorique.
-          </p>
-        </Reveal>
 
         {/* RANGÉE 1 */}
         <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-stretch">
           {/* PARCOURS */}
           <Reveal className="flex flex-col justify-center">
-            <span className="txt-etiquette text-navy">Parcours</span>
-            <p className="txt-corps text-ardoise/70 mt-3 max-w-2xl">
-              Je suis <strong className="text-navy">Clément, 35 ans</strong>, à l'initiative de{" "}
-              <strong className="text-navy">Semaine 54</strong>. Après une dizaine d'années dans
-              différents métiers de la <strong className="text-navy">grande distribution</strong>,
+            <span className="txt-etiquette text-gris-bleu">Parcours</span>
+            <p className="txt-corps text-blanc-casse/80 mt-3 max-w-2xl">
+              Je suis <strong className="text-blanc-casse font-bold">Clément, 35 ans</strong>, à l'initiative de{" "}
+              <strong className="text-blanc-casse font-bold">Semaine 54</strong>. Après une dizaine d'années dans
+              différents métiers de la <strong className="text-blanc-casse font-bold">grande distribution</strong>,
               j'explore et utilise depuis plus de trois ans les{" "}
-              <strong className="text-navy">outils d'IA dans des contextes professionnels</strong>.
+              <strong className="text-blanc-casse font-bold">outils d'IA dans des contextes professionnels</strong>.
             </p>
 
             {/* SOUS-PUNCHLINE 1 */}
-            <p className="txt-souspunchline text-navy mt-6 pl-4 border-l-2 border-or-mat/70">
+            <p className="txt-souspunchline text-blanc-casse mt-6 pl-4 border-l-2 border-or-mat/70">
               Le déclic est venu en accompagnant une poissonnerie du Pays d'Iroise.
             </p>
           </Reveal>
@@ -79,19 +72,19 @@ const PourquoiSection = () => {
 
           {/* RÉSULTATS MESURÉS */}
           <Reveal className="h-full">
-          <div className="card-lift h-full bg-card rounded-xl shadow-card p-5 sm:p-6">
-            <span className="txt-etiquette text-navy">Résultats mesurés</span>
-            <p className="font-dm text-sm text-ardoise/70 leading-relaxed mt-2">
+          <div className="card-lift h-full bg-white/5 border border-blanc-casse/10 rounded-xl p-5 sm:p-6">
+            <span className="txt-etiquette text-gris-bleu">Résultats mesurés</span>
+            <p className="font-dm text-sm text-blanc-casse/70 leading-relaxed mt-2">
               Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
               {resultats.map((r) => (
                 <div
                   key={r.label}
-                  className="rounded-lg bg-or-mat/15 px-2 py-3 text-center"
+                  className="rounded-lg bg-white/5 border border-or-mat/25 px-2 py-3 text-center"
                 >
                   <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                  <div className="font-bold text-navy text-base sm:text-xl leading-none">
+                  <div className="font-bold text-or-mat text-base sm:text-xl leading-none">
                     <CountUp
                       value={r.value}
                       prefix={r.prefix}
@@ -99,7 +92,7 @@ const PourquoiSection = () => {
                       group={r.group}
                     />
                   </div>
-                  <div className="text-[11px] sm:text-xs text-ardoise/70 mt-1">{r.label}</div>
+                  <div className="text-[11px] sm:text-xs text-blanc-casse/70 mt-1">{r.label}</div>
                 </div>
               ))}
             </div>
@@ -109,22 +102,22 @@ const PourquoiSection = () => {
 
         {/* RANGÉE 2 — PUIS SON QUOTIDIEN, pleine largeur */}
         <Reveal className="mt-6">
-          <div className="card-lift h-full bg-card rounded-xl shadow-card p-5 sm:p-6">
-            <span className="txt-etiquette text-navy">Puis son quotidien</span>
-            <p className="font-dm text-sm text-ardoise/70 leading-relaxed mt-2 mb-4">
+          <div className="card-lift h-full bg-white/5 border border-blanc-casse/10 rounded-xl p-5 sm:p-6">
+            <span className="txt-etiquette text-gris-bleu">Puis son quotidien</span>
+            <p className="font-dm text-sm text-blanc-casse/70 leading-relaxed mt-2 mb-4">
               L'IA étendue au fonctionnement de tous les jours :
             </p>
-            <ul className="flex flex-wrap gap-2">
+            <Reveal as="ul" variant="card" stagger={70} className="flex flex-wrap gap-2">
               {solutions.map((s) => (
                 <li
                   key={s.label}
-                  className="flex items-center gap-2 rounded-full bg-gris-perle px-3 py-1.5"
+                  className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5"
                 >
                   <s.icon size={16} className="text-or-mat" />
-                  <span className="text-xs text-navy">{s.label}</span>
+                  <span className="text-xs text-blanc-casse">{s.label}</span>
                 </li>
               ))}
-            </ul>
+            </Reveal>
           </div>
         </Reveal>
 
@@ -143,7 +136,7 @@ const PourquoiSection = () => {
               loading="lazy"
             />
           </button>
-          <p className="text-[11px] text-ardoise/70 italic text-center mt-3">
+          <p className="text-[11px] text-blanc-casse/70 italic text-center mt-3">
             Cliquez pour agrandir
           </p>
         </Reveal>
