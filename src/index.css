@@ -209,3 +209,26 @@ footer[id] {
   }
 }
 
+
+/* ---- Système typographique (5 niveaux) ---- */
+@layer components {
+  .section-wrap {
+    @apply max-w-[1140px] mx-auto px-6;
+  }
+  .txt-punchline {
+    @apply font-dm font-extrabold text-[30px] sm:text-[38px] lg:text-[44px] leading-[1.15] tracking-[-0.02em];
+    text-wrap: balance;
+  }
+  .txt-section {
+    @apply font-dm font-extrabold text-[26px] sm:text-[32px] leading-tight;
+  }
+  .txt-souspunchline {
+    @apply font-dm font-semibold text-[19px] sm:text-[21px] leading-snug;
+  }
+  .txt-corps {
+    @apply font-dm font-normal text-[16px] sm:text-[17px] leading-relaxed;
+  }
+  .txt-etiquette {
+    @apply font-dm font-semibold text-[11px] uppercase tracking-[0.18em];
+  }
+}
