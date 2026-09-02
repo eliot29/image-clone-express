@@ -232,3 +232,9 @@ footer[id] {
     @apply font-dm font-semibold text-[11px] uppercase tracking-[0.18em];
   }
 }
+
+@layer components {
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+}
