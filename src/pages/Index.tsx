@@ -23,20 +23,13 @@ const Index = () => {
       <main>
         <HeroSection />
 
-        {/* PUNCHLINE 1 + ancrage territorial */}
-        <section className="bg-navy py-12 md:py-16">
-          <div className="section-wrap">
-            <Reveal variant="text">
-              <p className="txt-punchline text-blanc-casse text-center max-w-3xl mx-auto">
-                Même terrain, même langage. Le partenaire IA des{" "}
-                <span className="text-or-mat">PME bretonnes</span>.
-              </p>
-            </Reveal>
-            <Reveal variant="text" delay={120} className="mt-8">
-              <CarteBretagne onNavy />
-            </Reveal>
-          </div>
-        </section>
+        {/* PUNCHLINE 1 — bandeau navy */}
+        <PunchlineBand>
+          Maîtriser et tester les outils IA demande du temps.
+          <br />
+          <span className="text-or-mat">Ce temps, je l'ai pris.</span> Mon travail
+          consiste à vous faire gagner le vôtre.
+        </PunchlineBand>
 
         <ConceptSection />
         <PropositionSection />
@@ -44,20 +37,28 @@ const Index = () => {
         <PourquoiNousSection />
         <SecteursSection />
         <PhotosBandeau />
+
+        {/* PUNCHLINE 2 — légende-conclusion des photos */}
+        <PunchlineBand tone="filet">
+          Même terrain, même langage. Le partenaire IA des{" "}
+          <span className="text-or-mat">PME bretonnes</span>.
+        </PunchlineBand>
+
         <MethodeSection />
 
-        {/* PUNCHLINE 3 */}
-        <PunchlineBand tone="filet">
-          Mon approche vient du réel. Pas d'une démonstration théorique.
+        {/* PUNCHLINE 3 — bandeau or-mat */}
+        <PunchlineBand tone="or">
+          Des solutions autrefois réservées aux grandes entreprises sont désormais{" "}
+          <span className="font-bold">à la portée des PME</span>.
         </PunchlineBand>
 
         <OutilsSection />
         <SecuritySection />
 
-        {/* PUNCHLINE 4 */}
+        {/* PUNCHLINE 4 — bandeau navy */}
         <PunchlineBand rule>
-          Des solutions autrefois réservées aux grandes entreprises sont désormais{" "}
-          <span className="text-or-mat">à la portée des PME</span>.
+          Construisons le <span className="text-or-mat">collaborateur numérique</span>{" "}
+          adapté à votre entreprise et vos équipes.
         </PunchlineBand>
 
         <ContactSection />
