@@ -5,8 +5,8 @@ type PunchlineBandProps = {
   children: ReactNode;
   /** court filet or centré au-dessus du texte (variante navy) */
   rule?: boolean;
-  /** navy : bandeau pleine largeur · filet : fond clair, gros filet or à gauche */
-  tone?: "navy" | "filet";
+  /** navy : bandeau pleine largeur · filet : fond clair, filet or à gauche · or : bandeau or-mat */
+  tone?: "navy" | "filet" | "or";
   id?: string;
 };
 
@@ -16,7 +16,21 @@ const PunchlineBand = ({ children, rule = false, tone = "navy", id }: PunchlineB
       <section id={id} className="bg-blanc-casse py-12 md:py-16">
         <div className="section-wrap">
           <Reveal variant="text">
-            <p className="txt-punchline text-navy text-left border-l-[6px] border-or-mat pl-6 sm:pl-8 max-w-3xl">
+            <p className="txt-punchline text-navy text-left border-l-4 border-or-mat pl-6 sm:pl-8 max-w-3xl">
+              {children}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+    );
+  }
+
+  if (tone === "or") {
+    return (
+      <section id={id} className="bg-or-mat py-12 md:py-16">
+        <div className="section-wrap">
+          <Reveal variant="text">
+            <p className="txt-punchline text-navy text-center max-w-3xl mx-auto">
               {children}
             </p>
           </Reveal>
