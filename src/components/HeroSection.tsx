@@ -39,15 +39,16 @@ const HeroSection = () => {
               <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">Basé à Brest (Finistère)</span>
             </span>
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
+              <span className="font-dm text-sm text-navy font-medium">Agence IA pour TPE et PME bretonnes</span>
+            </span>
+            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
               <span className="font-dm text-sm text-navy font-medium">Automatisations & conseils IA sur-mesure</span>
             </span>
           </div>
 
-          {/* PUNCHLINE 1 */}
-          <h1 className="font-dm font-extrabold text-[28px] sm:text-[36px] lg:text-[40px] leading-[1.15] tracking-[-0.01em] text-navy max-w-4xl mx-auto py-10">
-            Maîtriser les outils IA demande du temps.
-            <br />
-            Ce temps, je l'ai pris. Mon travail consiste à vous faire <span className="text-or-mat">gagner le vôtre</span>.
+          {/* Punchline */}
+          <h1 className="font-dm font-bold text-lg sm:text-xl text-navy mb-6 max-w-full mx-auto leading-snug tracking-tight">
+            Gagnez du <span className="text-or-mat">temps</span>. Gagnez en <span className="text-or-mat">productivité</span>. Gagnez en <span className="text-or-mat">rentabilité</span>.
           </h1>
 
           {/* Punchline */}

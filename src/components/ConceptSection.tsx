@@ -51,6 +51,13 @@ const ConceptSection = () => {
             </Button>
           </div>
 
+          <div className="w-fit max-w-full mx-auto mt-4 bg-or-mat rounded-2xl px-5 py-3 shadow-sm">
+            <p className="font-dm font-bold text-navy leading-relaxed">
+              Maîtriser et tester les outils IA demande du temps.
+              <br />
+              Ce temps, je l'ai pris. Mon travail consiste à vous faire gagner le vôtre.
+            </p>
+          </div>
         </div>
       </div>
     </section>
