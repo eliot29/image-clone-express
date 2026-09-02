@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import Reveal from "@/components/secondary/Reveal";
 
 type CaseItem = {
   sector: string;
@@ -46,7 +47,7 @@ const CasConcretsSection = () => {
         </div>
 
         {/* Infinite scroll marquee */}
-        <div className="relative overflow-hidden">
+        <Reveal variant="card" className="relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-blanc-casse to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-blanc-casse to-transparent z-10 pointer-events-none" />
 
@@ -67,7 +68,7 @@ const CasConcretsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
 
         <div className="text-center mt-8">
           <Button variant="cta" size="lg" asChild>

@@ -17,7 +17,7 @@ const OutilsSection = () => {
                 {["Claude", "ChatGPT", "Gemini", "Notion AI", "Noota", "Copilot", "Perplexity"].map((tool) =>
               <span
                 key={`${setIdx}-${tool}`}
-                className="font-dm font-bold text-lg text-ardoise/70 hover:text-navy transition-colors whitespace-nowrap">
+                className="font-dm font-bold text-lg text-ardoise opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:text-navy transition-all duration-150 ease-out whitespace-nowrap">
                     {tool}
                   </span>
               )}
@@ -38,7 +38,7 @@ const OutilsSection = () => {
                 {integrations.map((name) =>
                   <span
                     key={`${setIdx}-${name}`}
-                    className="font-dm font-bold text-lg text-ardoise/70 hover:text-navy transition-colors whitespace-nowrap">
+                    className="font-dm font-bold text-lg text-ardoise opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:text-navy transition-all duration-150 ease-out whitespace-nowrap">
                     {name}
                   </span>
                 )}
