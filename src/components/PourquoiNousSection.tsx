@@ -100,7 +100,7 @@ const PourquoiSection = () => {
               Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
-              {resultats.map((r) => (
+              {resultats.map((r, i) => (
                 <div
                   key={r.label}
                   className="rounded-lg bg-white/5 border border-or-mat/25 px-2 py-3 text-center"
@@ -122,7 +122,19 @@ const PourquoiSection = () => {
                       prefix={r.prefix}
                       suffix={r.suffix}
                       group={r.group}
+                      delay={i * 200}
                       progress={statProgress}
+                      onProgress={(p) =>
+                        setBars((prev) =>
+                          prev[i] === p ? prev : prev.map((v, j) => (j === i ? p : v))
+                        )
+                      }
+                    />
+                  </div>
+                  <div className="h-[3px] w-full bg-blanc-casse/15 rounded-full mt-2 overflow-hidden">
+                    <div
+                      className="h-full bg-or-mat rounded-full origin-left"
+                      style={{ transform: `scaleX(${bars[i]})` }}
                     />
                   </div>
                   <div className="text-[11px] sm:text-xs text-blanc-casse/70 mt-1">{r.label}</div>
