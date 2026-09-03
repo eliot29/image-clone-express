@@ -28,13 +28,12 @@ const OutilsSection = () => {
               </div>
             )}
           </div>
-        </div>
+        </Reveal>
 
         <Reveal variant="text">
           <p className="txt-souspunchline text-navy mt-10 mb-6 text-center max-w-3xl mx-auto">
             Des outils qui s'intègrent à ceux que vous utilisez déjà :
           </p>
-        </Reveal>
         </Reveal>
         <Reveal variant="card" className="relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-blanc-casse to-transparent z-10 pointer-events-none" />
@@ -52,7 +51,7 @@ const OutilsSection = () => {
               </div>
             )}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>);
 };
