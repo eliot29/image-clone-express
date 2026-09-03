@@ -32,14 +32,14 @@ const steps = [
 
 const MethodeSection = () => {
   return (
-    <section id="methode" className="bg-gris-perle py-6">
-      <div className="container mx-auto px-6">
+    <section id="methode" className="bg-gris-perle py-14 md:py-20">
+      <div className="section-wrap">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          <div className="text-center mb-6">
-            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-4">
+          <Reveal variant="text" className="text-center mb-6">
+            <h2 className="txt-section text-navy mb-4">
               La méthode Semaine 54
             </h2>
-          </div>
+          </Reveal>
 
           <p className="font-dm text-ardoise/70 text-center mb-6">
             Un accompagnement structuré, étape par étape.

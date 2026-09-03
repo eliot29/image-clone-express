@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { ArrowRight, X, CalendarCheck } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
+import Reveal from "@/components/secondary/Reveal";
 
 const ContactSection = () => {
   const [open, setOpen] = useState(false);
@@ -59,16 +60,19 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <h2 className="txt-section text-navy mb-8 text-center">
-            Diagnostic gratuit<br className="sm:hidden" /> <span className="text-navy/70 sm:before:content-['·_']">20/30 min</span>
-          </h2>
+          <Reveal variant="text" className="text-center">
+            <h2 className="txt-section text-navy mb-8 text-center">
+              Diagnostic gratuit<br className="sm:hidden" /> <span className="text-navy/70 sm:before:content-['·_']">20/30 min</span>
+            </h2>
+          </Reveal>
 
-
+          <Reveal variant="text">
           <p className="txt-corps text-ardoise text-center max-w-2xl mx-auto mb-8">
             Un premier échange de 20 à 30 minutes pour comprendre votre activité, identifier vos tâches chronophages et voir si une solution pertinente existe. Sans engagement.
           </p>
+          </Reveal>
 
-          <div className="text-center mb-8">
+          <Reveal variant="text" className="text-center mb-8">
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
                 <Button variant="cta" size="lg" className="text-lg px-10 py-6">
@@ -82,7 +86,8 @@ const ContactSection = () => {
                     Être rappelé
                   </DialogTitle>
                 </DialogHeader>
-                <form onSubmit={handleSubmit} className="space-y-4 mt-2">
+                <form onSubmit={handleSubmit} className="mt-2">
+                <Reveal as="div" variant="card" stagger={60} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="nom" className="text-blanc-casse/80 font-dm text-sm">
                       Nom *
@@ -158,6 +163,7 @@ const ContactSection = () => {
                   <p className="text-blanc-casse/40 text-xs text-center font-dm">
                     Votre client mail s'ouvrira avec les informations pré-remplies.
                   </p>
+                </Reveal>
                 </form>
               </DialogContent>
             </Dialog>
@@ -173,7 +179,7 @@ const ContactSection = () => {
                 {"\n"}
               </p>
             </div>
-          </div>
+          </Reveal>
 
           <p className="font-dm text-ardoise/70 text-sm italic text-center">
             {"\n"}

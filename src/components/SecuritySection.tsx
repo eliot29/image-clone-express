@@ -1,10 +1,11 @@
 import { Shield, Scale } from "lucide-react";
+import Reveal from "@/components/secondary/Reveal";
 
 const SecuritySection = () => {
   return (
     <section className="bg-gris-perle py-12 md:py-16">
       <div className="section-wrap">
-        <div className="bg-card rounded-xl shadow-card p-8 max-w-3xl mx-auto">
+        <Reveal variant="card" className="bg-card rounded-xl shadow-card p-8 max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-6">
             <Shield size={22} className="text-or-mat shrink-0" />
             <h2 className="txt-section text-navy">Sécurité & RGPD</h2>
@@ -22,7 +23,7 @@ const SecuritySection = () => {
               obligations légales.
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

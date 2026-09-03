@@ -46,9 +46,9 @@ const PourquoiSection = () => {
   return (
     <section id="approche" className="bg-navy py-14 md:py-20">
       <div className="section-wrap">
-        <div className="text-center mb-8">
+        <Reveal variant="text" className="text-center mb-8">
           <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
-        </div>
+        </Reveal>
 
         {/* RANGÉE 1 */}
         <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-stretch">
@@ -84,7 +84,7 @@ const PourquoiSection = () => {
                   className="rounded-lg bg-white/5 border border-or-mat/25 px-2 py-3 text-center"
                 >
                   <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                  <div className="font-bold text-or-mat text-base sm:text-xl leading-none">
+                  <div className="font-bold text-or-mat text-[34px] sm:text-[42px] leading-none">
                     <CountUp
                       value={r.value}
                       prefix={r.prefix}
@@ -107,14 +107,19 @@ const PourquoiSection = () => {
             <p className="font-dm text-sm text-blanc-casse/70 leading-relaxed mt-2 mb-4">
               L'IA étendue au fonctionnement de tous les jours :
             </p>
-            <Reveal as="ul" variant="card" stagger={70} className="flex flex-wrap gap-2">
+            <Reveal
+              as="ul"
+              variant="card"
+              stagger={70}
+              className="grid grid-cols-2 lg:grid-cols-3 gap-px items-stretch bg-blanc-casse/10 rounded-lg overflow-hidden"
+            >
               {solutions.map((s) => (
                 <li
                   key={s.label}
-                  className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5"
+                  className="bg-navy p-4 flex flex-col items-center text-center gap-2"
                 >
-                  <s.icon size={16} className="text-or-mat" />
-                  <span className="text-xs text-blanc-casse">{s.label}</span>
+                  <s.icon size={22} strokeWidth={1.5} className="text-or-mat" />
+                  <span className="text-[14px] text-blanc-casse leading-snug">{s.label}</span>
                 </li>
               ))}
             </Reveal>
@@ -129,15 +134,25 @@ const PourquoiSection = () => {
             className="block w-full cursor-zoom-in"
             aria-label="Agrandir le schéma de l'écosystème IA de la poissonnerie"
           >
-            <img
-              src={SCHEMA_SRC}
-              alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
-              className="w-full rounded-xl shadow-card"
-              loading="lazy"
-            />
+            <div className="bg-blanc-casse rounded-xl p-4">
+              <img
+                src={SCHEMA_SRC}
+                alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
+                className="w-full rounded-lg"
+                loading="lazy"
+              />
+            </div>
           </button>
           <p className="text-[11px] text-blanc-casse/70 italic text-center mt-3">
             Cliquez pour agrandir
+          </p>
+        </Reveal>
+
+        {/* CONCLUSION */}
+        <Reveal variant="text" className="mt-12">
+          <div className="w-[60px] h-[3px] bg-or-mat mx-auto mb-6" />
+          <p className="txt-souspunchline text-blanc-casse text-center max-w-3xl mx-auto">
+            Mon approche vient du réel. Pas d'une démonstration théorique.
           </p>
         </Reveal>
       </div>
