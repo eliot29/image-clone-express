@@ -46,10 +46,10 @@ const SecteursSection = () => {
           <div className="flex gap-6 animate-marquee-reverse md:animate-marquee-reverse-slow hover:[animation-play-state:paused] py-2">
             {[...domains, ...domains].map((d, i) => (
               <div key={i} className="flex items-center gap-6 shrink-0">
-                <span className="font-dm text-sm font-medium text-gris-bleu whitespace-nowrap">
+                <span className="font-dm text-sm font-medium text-ardoise/80 whitespace-nowrap">
                   {d.label}
                 </span>
-                <span className="text-gris-bleu/60" aria-hidden="true">·</span>
+                <span className="text-ardoise/40" aria-hidden="true">·</span>
               </div>
             ))}
           </div>
@@ -79,10 +79,10 @@ const SecteursSection = () => {
           <div className="flex gap-6 animate-marquee-reverse md:animate-marquee-reverse-slow hover:[animation-play-state:paused] py-2">
             {[...solutions, ...solutions].map((s, i) => (
               <div key={i} className="flex items-center gap-6 shrink-0">
-                <span className="font-dm text-sm font-medium text-gris-bleu whitespace-nowrap">
+                <span className="font-dm text-sm font-medium text-ardoise/80 whitespace-nowrap">
                   {s.label}
                 </span>
-                <span className="text-gris-bleu/60" aria-hidden="true">·</span>
+                <span className="text-ardoise/40" aria-hidden="true">·</span>
               </div>
             ))}
           </div>
