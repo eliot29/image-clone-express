@@ -12,6 +12,9 @@ import {
 } from "lucide-react";
 import Reveal from "@/components/secondary/Reveal";
 import CountUp from "@/components/secondary/CountUp";
+import CursorGlow from "@/components/secondary/CursorGlow";
+import { useStickyProgress } from "@/hooks/useScrollFx";
+import { isFinePointer, prefersReducedMotion } from "@/lib/scroll-fx";
 
 const resultats = [
   { icon: Eye, value: 73000, prefix: "", suffix: "", group: true, label: "vues" },
@@ -33,6 +36,20 @@ const SCHEMA_SRC =
 
 const PourquoiSection = () => {
   const [zoomOpen, setZoomOpen] = useState(false);
+  const [pinned, setPinned] = useState(false);
+
+  useEffect(() => {
+    const check = () =>
+      setPinned(
+        window.innerWidth >= 1024 && isFinePointer() && !prefersReducedMotion()
+      );
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const { ref: pinRef, progress } = useStickyProgress<HTMLDivElement>(pinned);
+  const statProgress = pinned ? Math.min(progress * 1.4, 1) : undefined;
 
   useEffect(() => {
     if (!zoomOpen) return;
@@ -44,9 +61,13 @@ const PourquoiSection = () => {
   }, [zoomOpen]);
 
   return (
-    <section id="approche" className="bg-navy py-14 md:py-20">
-      <div className="section-wrap">
+    <section id="approche" className="relative bg-navy py-14 md:py-20">
+      <CursorGlow />
+      <div className="section-wrap relative">
         <Reveal variant="text" className="text-center mb-8">
+          <p className="txt-etiquette text-or-mat text-center mb-3">
+            Mon approche vient du réel. Pas d'une démonstration théorique.
+          </p>
           <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
         </Reveal>
 
@@ -85,12 +106,23 @@ const PourquoiSection = () => {
                   className="rounded-lg bg-white/5 border border-or-mat/25 px-2 py-3 text-center"
                 >
                   <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                  <div className="font-bold text-or-mat text-[34px] sm:text-[42px] leading-none">
+                  <div
+                    className="stat-focus font-bold text-or-mat text-[34px] sm:text-[42px] leading-none"
+                    style={
+                      statProgress !== undefined
+                        ? {
+                            filter: `blur(${(6 * (1 - statProgress)).toFixed(2)}px)`,
+                            transform: `scale(${(0.92 + 0.08 * statProgress).toFixed(3)})`,
+                          }
+                        : undefined
+                    }
+                  >
                     <CountUp
                       value={r.value}
                       prefix={r.prefix}
                       suffix={r.suffix}
                       group={r.group}
+                      progress={statProgress}
                     />
                   </div>
                   <div className="text-[11px] sm:text-xs text-blanc-casse/70 mt-1">{r.label}</div>
@@ -127,8 +159,9 @@ const PourquoiSection = () => {
           </div>
         </Reveal>
 
-        {/* SCHÉMA POISSONNERIE — pleine largeur */}
-        <Reveal className="mt-12">
+        {/* SCHÉMA POISSONNERIE — moment épinglé */}
+        <div ref={pinRef} className={pinned ? "mt-12 h-[180vh]" : "mt-12"}>
+        <Reveal className={pinned ? "sticky top-24" : ""}>
           <button
             type="button"
             onClick={() => setZoomOpen(true)}
@@ -148,14 +181,8 @@ const PourquoiSection = () => {
             Cliquez pour agrandir
           </p>
         </Reveal>
+        </div>
 
-        {/* CONCLUSION */}
-        <Reveal variant="text" className="mt-12">
-          <div className="w-[60px] h-[3px] bg-or-mat mx-auto mb-6" />
-          <p className="txt-souspunchline text-blanc-casse text-center max-w-3xl mx-auto">
-            Mon approche vient du réel. Pas d'une démonstration théorique.
-          </p>
-        </Reveal>
       </div>
 
       {/* ZOOM OVERLAY */}
