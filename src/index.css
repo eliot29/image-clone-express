@@ -311,7 +311,7 @@ footer[id] {
   width: 0;
   background: hsl(var(--or-mat));
   animation: word-underline 0.4s ease-out forwards;
-  animation-delay: inherit;
+  animation-delay: var(--ud, 900ms);
 }
 @keyframes word-underline {
   to { width: 100%; }
