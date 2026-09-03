@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Reveal from "@/components/secondary/Reveal";
 
 import conceptVisuel from "@/assets/puzzle-asset.json";
 
@@ -9,12 +10,14 @@ const ConceptSection = () => {
     <section id="concept" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="text-center">
-          <h2 className="txt-section text-navy mb-8">
-            L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
-            <span className="text-navy/70">Sous certaines conditions.</span>
-          </h2>
+          <Reveal variant="text" className="mb-8">
+            <h2 className="txt-section text-navy">
+              L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
+              <span className="text-navy/70">Sous certaines conditions.</span>
+            </h2>
+          </Reveal>
 
-          <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8 text-left">
+          <Reveal variant="card" stagger={70} className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8 text-left">
             <div className="flex-1 bg-card rounded-xl p-6 shadow-card card-lift">
               <p className="txt-corps text-ardoise mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
@@ -40,16 +43,16 @@ const ConceptSection = () => {
                 loading="lazy"
               />
             </div>
-          </div>
+          </Reveal>
 
-          <div className="text-center mt-8">
+          <Reveal variant="text" className="text-center mt-8">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-suffit-pas">
                 Comprendre l'approche Semaine 54
                 <ArrowRight size={16} />
               </Link>
             </Button>
-          </div>
+          </Reveal>
 
         </div>
       </div>
