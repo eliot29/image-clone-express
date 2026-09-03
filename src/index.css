@@ -390,17 +390,6 @@ footer[id] {
   transition: transform 400ms ease-out, box-shadow 150ms ease-out;
 }
 
-/* ---- Chiffres : passage flou → net pendant le comptage ---- */
-.stat-focus {
-  filter: blur(6px);
-  transform: scale(0.92);
-  transition: filter 0.5s ease-out, transform 0.5s ease-out;
-}
-.stat-focus:has(.counting),
-.stat-focus:has(.count-pop) {
-  filter: blur(0);
-  transform: scale(1);
-}
 
 /* ---- Accessibilité : mouvement réduit (réduction, pas suppression) ---- */
 @media (prefers-reduced-motion: reduce) {
