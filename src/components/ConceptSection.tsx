@@ -19,17 +19,17 @@ const ConceptSection = () => {
             </h2>
           </Reveal>
 
-          <Reveal variant="card" stagger={70} className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8 text-left">
-            <div className="flex-1 bg-card rounded-xl p-6 shadow-card card-lift">
-              <p className="txt-corps text-ardoise mb-4">
+          <Reveal variant="card" stagger={70} className="grid md:grid-cols-2 gap-6 items-stretch text-left">
+            <div className="card-lift bg-navy rounded-xl p-7 sm:p-9 flex flex-col justify-center">
+              <p className="txt-corps text-blanc-casse/85 mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
                 s'adapter à la réalité des entreprises.{" "}
-                <strong className="text-navy font-bold">
+                <strong className="text-blanc-casse font-bold">
                   Le vrai sujet : l'accompagnement et la personnalisation.
                 </strong>
               </p>
-              <p className="txt-corps text-ardoise">
-                <strong className="text-navy font-bold">
+              <p className="txt-corps text-blanc-casse/85">
+                <strong className="text-blanc-casse font-bold">
                   Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
                 </strong>
                 , pour des solutions d'intelligence artificielle construites sur
@@ -37,14 +37,16 @@ const ConceptSection = () => {
               </p>
             </div>
 
-            <div className="w-full max-w-[180px] md:max-w-[42%] lg:max-w-[38%] mx-auto md:mx-0 self-center shrink-0">
-              <img
-                ref={puzzleRef}
-                src={conceptVisuel.url}
-                alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                className="w-full h-auto object-contain rounded-xl"
-                loading="lazy"
-              />
+            <div className="card-lift bg-navy rounded-xl p-6 flex items-center justify-center">
+              <div className="bg-blanc-casse rounded-lg p-4 w-full">
+                <img
+                  ref={puzzleRef}
+                  src={conceptVisuel.url}
+                  alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                  className="w-full h-auto max-h-[340px] object-contain"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </Reveal>
 
