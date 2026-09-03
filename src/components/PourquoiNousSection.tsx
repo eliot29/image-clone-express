@@ -49,8 +49,7 @@ const PourquoiSection = () => {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const { ref: pinRef, progress } = useStickyProgress<HTMLDivElement>(pinned);
-  const statProgress = pinned ? Math.min(progress * 1.4, 1) : undefined;
+  const { ref: pinRef } = useStickyProgress<HTMLDivElement>(pinned);
 
   useEffect(() => {
     if (!zoomOpen) return;
@@ -107,24 +106,13 @@ const PourquoiSection = () => {
                   className="rounded-lg bg-white/5 border border-or-mat/25 px-2 py-3 text-center"
                 >
                   <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                  <div
-                    className="stat-focus font-bold text-or-mat text-[34px] sm:text-[42px] leading-none"
-                    style={
-                      statProgress !== undefined
-                        ? {
-                            filter: `blur(${(6 * (1 - statProgress)).toFixed(2)}px)`,
-                            transform: `scale(${(0.92 + 0.08 * statProgress).toFixed(3)})`,
-                          }
-                        : undefined
-                    }
-                  >
+                  <div className="stat-focus font-bold text-or-mat text-[34px] sm:text-[42px] leading-none">
                     <CountUp
                       value={r.value}
                       prefix={r.prefix}
                       suffix={r.suffix}
                       group={r.group}
                       delay={i * 200}
-                      progress={statProgress}
                       onProgress={(p) =>
                         setBars((prev) =>
                           prev[i] === p ? prev : prev.map((v, j) => (j === i ? p : v))
