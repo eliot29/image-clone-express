@@ -37,6 +37,7 @@ const SCHEMA_SRC =
 const PourquoiSection = () => {
   const [zoomOpen, setZoomOpen] = useState(false);
   const [pinned, setPinned] = useState(false);
+  const [bars, setBars] = useState<number[]>([0, 0, 0]);
 
   useEffect(() => {
     const check = () =>
