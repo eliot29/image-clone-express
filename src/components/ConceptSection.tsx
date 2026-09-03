@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/secondary/Reveal";
 import { useParallax } from "@/hooks/useScrollFx";
 
-import conceptVisuel from "@/assets/puzzle-asset.json";
+import conceptVisuel from "@/assets/puzzle-semaine54.png";
 
 const ConceptSection = () => {
   const puzzleRef = useParallax<HTMLImageElement>(20);
@@ -37,16 +37,14 @@ const ConceptSection = () => {
               </p>
             </div>
 
-            <div className="card-lift bg-navy rounded-xl p-6 flex items-center justify-center">
-              <div className="bg-blanc-casse rounded-lg p-4 w-full">
-                <img
-                  ref={puzzleRef}
-                  src={conceptVisuel.url}
-                  alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                  className="w-full h-auto max-h-[340px] object-contain"
-                  loading="lazy"
-                />
-              </div>
+            <div className="card-lift bg-navy rounded-xl p-6 relative min-h-[240px]">
+              <img
+                ref={puzzleRef}
+                src={conceptVisuel}
+                alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                className="absolute inset-6 w-[calc(100%-3rem)] h-[calc(100%-3rem)] object-contain"
+                loading="lazy"
+              />
             </div>
           </Reveal>
 
