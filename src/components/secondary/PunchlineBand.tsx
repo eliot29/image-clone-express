@@ -6,8 +6,8 @@ type PunchlineBandProps = {
   children: ReactNode;
   /** court filet or centré au-dessus du texte (variante navy) */
   rule?: boolean;
-  /** navy : bandeau pleine largeur · filet : fond clair, filet or à gauche · or : bandeau or-mat */
-  tone?: "navy" | "filet" | "or";
+  /** navy : bandeau pleine largeur · filet : fond clair, filet or à gauche */
+  tone?: "navy" | "filet";
   /** élargit la punchline (max-w-5xl au lieu de max-w-3xl) */
   wide?: boolean;
   id?: string;
