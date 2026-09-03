@@ -57,7 +57,7 @@ const CasConcretsSection = () => {
             {[...cases, ...cases].map((cas, i) => (
               <div
                 key={i}
-                className="card-lift h-full rounded-xl px-5 py-4 bg-card shadow-card min-w-[300px] max-w-[320px] shrink-0"
+                className="tilt-card h-full rounded-xl px-5 py-4 bg-card shadow-card min-w-[300px] max-w-[320px] shrink-0"
               >
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-dm font-bold text-base text-navy">{cas.sector}</h3>

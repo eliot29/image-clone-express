@@ -62,7 +62,7 @@ const SecteursSection = () => {
             {[...sectors, ...sectors].map((s, i) => (
               <div
                 key={i}
-                className="card-lift flex items-center gap-3 px-5 py-3 rounded-full bg-card shadow-card shrink-0"
+                className="tilt-card flex items-center gap-3 px-5 py-3 rounded-full bg-card shadow-card shrink-0"
               >
                 <div className="w-11 h-11 rounded-full bg-or-mat/15 flex items-center justify-center shrink-0">
                   <s.icon size={28} strokeWidth={1.5} className="text-or-mat" />

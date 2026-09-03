@@ -11,6 +11,8 @@ type CountUpProps = {
   group?: boolean;
   duration?: number;
   className?: string;
+  /** progression externe 0→1 (moment épinglé). Si fournie, pilote l'incrémentation. */
+  progress?: number;
 };
 
 const format = (n: number, group: boolean) =>
@@ -23,6 +25,7 @@ const CountUp = ({
   group = false,
   duration = 900,
   className = "",
+  progress,
 }: CountUpProps) => {
   const ref = useRef<HTMLSpanElement | null>(null);
   const [display, setDisplay] = useState(0);
@@ -30,6 +33,7 @@ const CountUp = ({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    if (progress !== undefined) return;
 
     const reduced =
       typeof window !== "undefined" &&
@@ -64,12 +68,15 @@ const CountUp = ({
       observer.disconnect();
       cancelAnimationFrame(raf);
     };
-  }, [value, duration]);
+  }, [value, duration, progress]);
+
+  const shown =
+    progress !== undefined ? Math.round(value * Math.min(Math.max(progress, 0), 1)) : display;
 
   return (
     <span ref={ref} className={className}>
       {prefix}
-      {format(display, group)}
+      {format(shown, group)}
       {suffix}
     </span>
   );
