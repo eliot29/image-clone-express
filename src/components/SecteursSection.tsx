@@ -60,15 +60,16 @@ const SecteursSection = () => {
           <Fades />
           <div className="flex gap-4 animate-marquee md:animate-marquee-slow hover:[animation-play-state:paused] py-2">
             {[...sectors, ...sectors].map((s, i) => (
-              <div
+              <TiltCard
                 key={i}
-                className="tilt-card flex items-center gap-3 px-5 py-3 rounded-full bg-card shadow-card shrink-0"
+                className="flex items-center gap-3 px-5 py-3 rounded-full bg-card shadow-card shrink-0"
               >
                 <div className="w-11 h-11 rounded-full bg-or-mat/15 flex items-center justify-center shrink-0">
                   <s.icon size={28} strokeWidth={1.5} className="text-or-mat" />
                 </div>
                 <span className="font-dm text-sm font-medium text-navy whitespace-nowrap">{s.label}</span>
-              </div>
+              </TiltCard>
+
             ))}
           </div>
         </Reveal>
