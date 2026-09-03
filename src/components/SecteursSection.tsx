@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/secondary/Reveal";
+import TiltCard from "@/components/secondary/TiltCard";
 import { Hammer, Scale, ShoppingBag, Building, UtensilsCrossed, Calculator, Users, Briefcase, Megaphone, FileText, BarChart3, Headphones, Bot, BrainCircuit, Zap, LayoutDashboard, PenTool, Radar } from "lucide-react";
 
 const domains = [
