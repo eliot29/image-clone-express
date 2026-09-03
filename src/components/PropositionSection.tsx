@@ -1,6 +1,7 @@
 import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, ArrowDownLeft, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import TiltCard from "@/components/secondary/TiltCard";
 
 const comprehension = [
   { icon: Eye, text: "Compréhension de votre activité" },
@@ -243,7 +244,7 @@ const PropositionSection = () => {
           </div>
 
           <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
-            <div className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
+            <TiltCard className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
@@ -260,9 +261,9 @@ const PropositionSection = () => {
                   </Link>
                 </Button>
               </div>
-            </div>
+            </TiltCard>
 
-            <div className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
+            <TiltCard className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Accompagnement IA
               </h3>
@@ -279,7 +280,7 @@ const PropositionSection = () => {
                   </Link>
                 </Button>
               </div>
-            </div>
+            </TiltCard>
           </div>
 
           <div className="flex justify-center mb-6">

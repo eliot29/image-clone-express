@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/secondary/Reveal";
+import { useParallax } from "@/hooks/useScrollFx";
 
 import conceptVisuel from "@/assets/puzzle-asset.json";
 
 const ConceptSection = () => {
+  const puzzleRef = useParallax<HTMLImageElement>(20);
   return (
     <section id="concept" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
@@ -37,6 +39,7 @@ const ConceptSection = () => {
 
             <div className="w-full max-w-[180px] md:max-w-[42%] lg:max-w-[38%] mx-auto md:mx-0 self-center shrink-0">
               <img
+                ref={puzzleRef}
                 src={conceptVisuel.url}
                 alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
                 className="w-full h-auto object-contain rounded-xl"

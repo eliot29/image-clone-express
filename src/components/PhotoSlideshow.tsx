@@ -25,7 +25,7 @@ const PhotoSlideshow = ({ images, label, interval = 3500, caption }: PhotoSlides
           src={src}
           alt={`${label} ${i + 1}`}
           loading="lazy"
-          className={`absolute inset-0 w-full h-full object-cover slow-zoom transition-opacity duration-1000 ${
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
         />

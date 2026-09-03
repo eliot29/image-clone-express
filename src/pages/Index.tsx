@@ -13,10 +13,12 @@ import ContactSection from "@/components/ContactSection";
 
 import FooterSection from "@/components/FooterSection";
 import PunchlineBand from "@/components/secondary/PunchlineBand";
+import ScrollProgressBar from "@/components/secondary/ScrollProgressBar";
 
 const Index = () => {
   return (
     <>
+      <ScrollProgressBar />
       <Navigation />
       <main>
         <HeroSection />
