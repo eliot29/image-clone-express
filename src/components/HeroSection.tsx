@@ -79,7 +79,7 @@ const HeroSection = () => {
                 .filter((_, i) => i % 2 === row);
               const track = [...items, ...items];
               return (
-                <div key={row} className="overflow-hidden">
+                <div key={row} className={`overflow-hidden ${row === 1 ? "opacity-70" : ""}`}>
                   <div
                     className={`flex w-max marquee-row ${
                       row === 0 ? "task-marquee-forward" : "task-marquee-reverse"
@@ -89,7 +89,7 @@ const HeroSection = () => {
                       <div
                         key={`${row}-${k}`}
                         className={`task-item flex items-center gap-2 sm:gap-3 text-ardoise font-dm whitespace-nowrap px-4 sm:px-6 ${
-                          row === 0 ? "text-[13px]" : "text-[12px] opacity-70"
+                          row === 0 ? "text-[13px]" : "text-[12px]"
                         }`}
                         style={{ ["--i" as string]: point.i }}
                       >
