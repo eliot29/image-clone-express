@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Reveal from "@/components/secondary/Reveal";
+import CursorGlow from "@/components/secondary/CursorGlow";
 
 type PunchlineBandProps = {
   children: ReactNode;
@@ -44,8 +45,9 @@ const PunchlineBand = ({ children, rule = false, tone = "navy", wide = false, id
   }
 
   return (
-    <section id={id} className="bg-navy py-12 md:py-16">
-      <div className="section-wrap">
+    <section id={id} className="relative bg-navy py-12 md:py-16">
+      <CursorGlow />
+      <div className="section-wrap relative">
         <Reveal variant="text">
           {rule && <div className="w-[60px] h-[3px] bg-or-mat mx-auto mb-6" />}
           <p className={`txt-punchline text-blanc-casse text-center ${widthClass} mx-auto`}>

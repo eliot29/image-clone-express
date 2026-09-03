@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/secondary/Reveal";
+import { useParallax } from "@/hooks/useScrollFx";
 
 
 const steps = [
@@ -31,6 +32,7 @@ const steps = [
 
 
 const MethodeSection = () => {
+  const schemaRef = useParallax<HTMLImageElement>(20);
   return (
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
@@ -91,6 +93,7 @@ const MethodeSection = () => {
           </div>
           <div className="mt-10 max-w-4xl mx-auto px-4">
             <img
+              ref={schemaRef}
               src="/__l5e/assets-v1/ebe3bc59-d136-4a3d-a49f-4afd35e0753f/methode-process.png"
               alt="Schéma du processus Semaine 54 : comprendre, concevoir, automatiser, faire évoluer et grandir ensemble"
               className="w-full rounded-xl shadow-lg"
