@@ -1,4 +1,4 @@
-import { Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
+import { Check, Clock, Mail, FileText, Share2, FolderOpen, Search, BarChart3, Image, PhoneCall } from "lucide-react";
 import CalculateurSection from "@/components/CalculateurSection";
 
 
@@ -6,7 +6,7 @@ import CalculateurSection from "@/components/CalculateurSection";
 const painPoints = [
 { icon: FileText, text: "Devis générés en quelques minutes" },
 { icon: Search, text: "Informations trouvées instantanément" },
-{ icon: Mail, text: "Relances clients envoyés automatiquement" },
+{ icon: Mail, text: "Relances clients envoyées automatiquement" },
 { icon: PhoneCall, text: "Appels entrants traités 24h/24" },
 { icon: Share2, text: "Réseaux sociaux alimentés sans effort" },
 { icon: FolderOpen, text: "Administratif traité sans y toucher" },
@@ -30,7 +30,7 @@ const HeroSection = () => {
           </div>
 
           {/* Punchline élégante */}
-          <p className="font-bold italic text-navy text-xs sm:text-sm mt-8 sm:mt-0 mb-8 leading-tight" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
+          <p className="font-medium text-navy text-[13px] mt-8 sm:mt-0 mb-8 leading-tight" style={{ fontFamily: "'Anonymous Pro', monospace" }}>
             {"\n"}
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -74,7 +74,9 @@ const HeroSection = () => {
             }}
           >
             {[0, 1].map((row) => {
-              const items = painPoints.filter((_, i) => i % 2 === row);
+              const items = painPoints
+                .map((p, i) => ({ ...p, i }))
+                .filter((_, i) => i % 2 === row);
               const track = [...items, ...items];
               return (
                 <div key={row} className="overflow-hidden">
@@ -86,10 +88,20 @@ const HeroSection = () => {
                     {track.map((point, k) => (
                       <div
                         key={`${row}-${k}`}
-                        className="flex items-center gap-2 sm:gap-3 text-ardoise font-dm text-xs sm:text-sm whitespace-nowrap px-4 sm:px-6"
+                        className={`task-item flex items-center gap-2 sm:gap-3 text-ardoise font-dm whitespace-nowrap px-4 sm:px-6 ${
+                          row === 0 ? "text-[13px]" : "text-[12px] opacity-70"
+                        }`}
+                        style={{ ["--i" as string]: point.i }}
                       >
                         <point.icon size={18} className="text-or-mat/60 shrink-0" />
-                        <span>{point.text}</span>
+                        <span className="relative inline-flex items-center pl-[17px]">
+                          <Check
+                            size={13}
+                            className="task-check absolute left-0 text-or-mat"
+                            aria-hidden="true"
+                          />
+                          {point.text}
+                        </span>
                       </div>
                     ))}
                   </div>
