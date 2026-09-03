@@ -22,9 +22,8 @@ const Index = () => {
         <HeroSection />
 
         {/* PUNCHLINE 1 — bandeau navy */}
-        <PunchlineBand>
-          Maîtriser et tester les outils IA demande du temps.
-          <br />
+        <PunchlineBand wide>
+          Maîtriser et tester les outils IA demande du temps.{" "}
           <span className="text-or-mat">Ce temps, je l'ai pris.</span> Mon travail
           consiste à vous faire gagner le vôtre.
         </PunchlineBand>
@@ -33,6 +32,13 @@ const Index = () => {
         <PropositionSection />
         <CasConcretsSection />
         <PourquoiNousSection />
+
+        {/* PUNCHLINE 3 — bandeau or-mat */}
+        <PunchlineBand tone="or">
+          Ma conclusion : ce qui était réservé aux grandes entreprises est
+          aujourd'hui <span className="font-bold">à la portée des PME</span>.
+        </PunchlineBand>
+
         <SecteursSection />
         <PhotosBandeau />
 
@@ -43,12 +49,6 @@ const Index = () => {
         </PunchlineBand>
 
         <MethodeSection />
-
-        {/* PUNCHLINE 3 — bandeau or-mat */}
-        <PunchlineBand tone="or">
-          Des solutions autrefois réservées aux grandes entreprises sont désormais{" "}
-          <span className="font-bold">à la portée des PME</span>.
-        </PunchlineBand>
 
         <OutilsSection />
         <SecuritySection />

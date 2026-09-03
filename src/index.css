@@ -196,6 +196,28 @@ footer[id] {
   }
 }
 
+/* ---- Traitement des tâches du bandeau hero ---- */
+@keyframes task-done {
+  0%, 82%  { opacity: 1; }
+  86%, 96% { opacity: .45; }
+  100%     { opacity: 1; }
+}
+@keyframes task-check-in {
+  0%, 82%  { opacity: 0; transform: scale(0.6); }
+  86%, 96% { opacity: 1; transform: scale(1); }
+  100%     { opacity: 0; transform: scale(0.6); }
+}
+.task-item {
+  animation: task-done 12s linear infinite;
+  animation-delay: calc(var(--i) * 1.3s);
+}
+.task-check {
+  opacity: 0;
+  transform: scale(0.6);
+  animation: task-check-in 12s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+  animation-delay: calc(var(--i) * 1.3s);
+}
+
 /* ---- Cascade d'ouverture du hero ---- */
 @keyframes hero-rise {
   from { opacity: 0; transform: translateY(18px); }
@@ -289,10 +311,14 @@ footer[id] {
   .hero-stagger > *,
   .slow-zoom,
   .task-marquee-forward,
-  .task-marquee-reverse {
+  .task-marquee-reverse,
+  .task-item {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+  }
+  .task-check {
+    display: none;
   }
   html {
     scroll-behavior: auto;

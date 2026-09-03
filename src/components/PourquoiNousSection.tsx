@@ -64,7 +64,8 @@ const PourquoiSection = () => {
             </p>
 
             {/* SOUS-PUNCHLINE 1 */}
-            <p className="txt-souspunchline text-blanc-casse mt-6 pl-4 border-l-2 border-or-mat/70">
+            <div className="w-[60px] h-[3px] bg-or-mat mx-auto mt-6 mb-4" />
+            <p className="txt-souspunchline text-blanc-casse text-center max-w-3xl mx-auto">
               Le déclic est venu en accompagnant une poissonnerie du Pays d'Iroise.
             </p>
           </Reveal>
