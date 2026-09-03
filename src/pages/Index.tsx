@@ -35,11 +35,6 @@ const Index = () => {
         <CasConcretsSection />
         <PourquoiNousSection />
 
-        {/* PUNCHLINE 3 — bandeau or-mat */}
-        <PunchlineBand tone="or">
-          Ma conclusion : ce qui était réservé aux grandes entreprises est
-          aujourd'hui <span className="font-bold">à la portée des PME</span>.
-        </PunchlineBand>
 
         <SecteursSection />
         <PhotosBandeau />

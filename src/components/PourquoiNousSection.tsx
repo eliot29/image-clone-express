@@ -65,8 +65,8 @@ const PourquoiSection = () => {
       <CursorGlow />
       <div className="section-wrap relative">
         <Reveal variant="text" className="text-center mb-8">
-          <p className="txt-etiquette text-or-mat text-center mb-3">
-            Mon approche vient du réel. Pas d'une démonstration théorique.
+          <p className="font-dm font-normal text-[18px] leading-snug text-blanc-casse/60 text-center max-w-2xl mx-auto mb-4">
+            Des solutions autrefois réservées aux grandes entreprises sont désormais à la portée des PME.
           </p>
           <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
         </Reveal>
@@ -182,6 +182,14 @@ const PourquoiSection = () => {
           </p>
         </Reveal>
         </div>
+
+        {/* CONCLUSION DE SECTION */}
+        <Reveal variant="text" className="text-center mt-12">
+          <div className="w-[60px] h-[3px] bg-or-mat mx-auto mb-4" />
+          <p className="txt-souspunchline text-blanc-casse text-center max-w-3xl mx-auto">
+            Mon approche vient du réel. Pas d'une démonstration théorique.
+          </p>
+        </Reveal>
 
       </div>
 
