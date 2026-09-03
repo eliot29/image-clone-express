@@ -86,8 +86,8 @@ const ContactSection = () => {
                     Être rappelé
                   </DialogTitle>
                 </DialogHeader>
-                <Reveal as="div" variant="card" stagger={60} className="mt-2">
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="mt-2">
+                <Reveal as="div" variant="card" stagger={60} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="nom" className="text-blanc-casse/80 font-dm text-sm">
                       Nom *
@@ -163,8 +163,8 @@ const ContactSection = () => {
                   <p className="text-blanc-casse/40 text-xs text-center font-dm">
                     Votre client mail s'ouvrira avec les informations pré-remplies.
                   </p>
-                </form>
                 </Reveal>
+                </form>
               </DialogContent>
             </Dialog>
 
