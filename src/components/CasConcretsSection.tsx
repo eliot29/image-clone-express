@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Reveal from "@/components/secondary/Reveal";
+import TiltCard from "@/components/secondary/TiltCard";
 
 type CaseItem = {
   sector: string;
@@ -55,9 +56,9 @@ const CasConcretsSection = () => {
 
           <div className="flex gap-4 items-stretch animate-marquee md:animate-marquee-slow hover:[animation-play-state:paused]">
             {[...cases, ...cases].map((cas, i) => (
-              <div
+              <TiltCard
                 key={i}
-                className="tilt-card h-full rounded-xl px-5 py-4 bg-card shadow-card min-w-[300px] max-w-[320px] shrink-0"
+                className="h-full rounded-xl px-5 py-4 bg-card shadow-card min-w-[300px] max-w-[320px] shrink-0"
               >
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-dm font-bold text-base text-navy">{cas.sector}</h3>
@@ -67,7 +68,7 @@ const CasConcretsSection = () => {
                 </div>
                 <p className="font-dm text-xs text-ardoise/70 mb-1.5 leading-snug">{cas.problem}</p>
                 <p className="font-dm text-xs text-ardoise leading-snug">{cas.solution}</p>
-              </div>
+              </TiltCard>
             ))}
           </div>
         </Reveal>
