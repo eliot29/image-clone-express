@@ -22,9 +22,8 @@ const Index = () => {
         <HeroSection />
 
         {/* PUNCHLINE 1 — bandeau navy */}
-        <PunchlineBand>
-          Maîtriser et tester les outils IA demande du temps.
-          <br />
+        <PunchlineBand wide>
+          Maîtriser et tester les outils IA demande du temps.{" "}
           <span className="text-or-mat">Ce temps, je l'ai pris.</span> Mon travail
           consiste à vous faire gagner le vôtre.
         </PunchlineBand>
