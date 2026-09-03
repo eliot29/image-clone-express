@@ -42,13 +42,10 @@ const CasConcretsSection = () => {
       <div className="section-wrap">
         <div className="text-center mb-8">
           <Reveal variant="text">
-            <p className="txt-souspunchline text-navy/80 mb-4 max-w-3xl mx-auto">
-              Mon approche vient du réel. Pas d'une démonstration théorique.
-            </p>
+            <h2 className="txt-section text-navy">
+              Quatre situations concrètes. Quatre gains mesurables.
+            </h2>
           </Reveal>
-          <h2 className="txt-section text-navy">
-            Quatre situations concrètes. Quatre gains mesurables.
-          </h2>
         </div>
 
         {/* Infinite scroll marquee */}
