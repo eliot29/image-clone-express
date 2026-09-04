@@ -66,7 +66,7 @@ font-dm text-xs font-semibold text-ardoise whitespace-nowrap">
         </div>
         <div className="bg-navy rounded-lg p-2.5">
           <div className="font-dm text-lg sm:text-xl font-bold text-or-mat">{gainHours}h</div>
-          <div className="font-dm text-[10px] leading-tight text-blanc-casse/60 mt-0.5">gain si automatisé</div>
+          <div className="font-dm text-[10px] leading-tight text-blanc-casse/80 mt-0.5">gain si automatisé</div>
         </div>
       </div>
     </div>
