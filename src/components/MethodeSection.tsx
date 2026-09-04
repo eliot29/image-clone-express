@@ -36,7 +36,7 @@ const MethodeSection = () => {
   return (
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
-        <div className="max-w-3xl lg:max-w-4xl mx-auto">
+        <div>
           <Reveal variant="text" className="text-center">
             <h2 className="txt-section text-navy">
               La méthode Semaine 54 : de l'automatisation à l'accompagnement

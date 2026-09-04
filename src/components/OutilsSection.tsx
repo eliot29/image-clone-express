@@ -1,12 +1,13 @@
 import Reveal from "@/components/secondary/Reveal";
 
-const integrations = ["Gmail", "HubSpot", "Google Sheets", "Slack", "Outlook Calendar", "Stripe", "Whatsapp", "Facebook"];
+const integrations = ["Gmail", "HubSpot", "Google Sheets", "Slack", "Outlook Calendar", "Stripe", "WhatsApp", "Facebook"];
 
 const OutilsSection = () => {
   return (
     <section className="bg-blanc-casse py-12 md:py-16">
       <div className="section-wrap">
         <Reveal variant="text">
+        <h2 className="txt-section text-navy text-center mb-6">Les outils IA que je maîtrise, connectés aux vôtres</h2>
         <p className="txt-souspunchline text-navy mb-6 text-center max-w-3xl mx-auto">
           Le marché a des centaines d'outils.{" "}
           <span className="font-bold text-navy">Mon rôle de partenaire : faire le tri pour vous.</span>

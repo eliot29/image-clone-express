@@ -33,7 +33,7 @@ const ConceptSection = () => {
                   </p>
                   <p className="txt-corps text-blanc-casse">
                     <strong className="text-white font-bold">
-                      Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
+                      J'accompagne les TPE et PME bretonnes
                     </strong>
                     , qui vient du terrain et non de l'informatique, pour des solutions d'intelligence artificielle construites sur
                     mesure, autour de votre métier et de votre organisation.
