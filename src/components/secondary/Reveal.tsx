@@ -33,6 +33,7 @@ const Reveal = ({
 }: RevealProps) => {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
+  const [wide, setWide] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -43,6 +44,9 @@ const Reveal = ({
       return;
     }
 
+    const isWide = window.innerWidth >= 1024;
+    setWide(isWide);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -52,7 +56,7 @@ const Reveal = ({
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0, rootMargin: isWide ? "0px 0px -28% 0px" : "0px 0px -10% 0px" }
     );
 
     observer.observe(el);
@@ -61,6 +65,7 @@ const Reveal = ({
 
   const Tag = as as "div";
   const itemClass = `reveal reveal-${variant} ${visible ? "is-visible" : ""}`;
+  const step = wide ? stagger * 1.7 : stagger;
 
   if (stagger > 0) {
     return (
