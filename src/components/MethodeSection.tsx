@@ -84,15 +84,15 @@ const MethodeSection = () => {
           </Reveal>
 
 
-          <div className="text-center mt-10">
+          <Reveal variant="text" className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode
                 <ArrowRight size={16} />
               </Link>
             </Button>
-          </div>
-          <div className="mt-10 max-w-4xl mx-auto px-4">
+          </Reveal>
+          <Reveal variant="card" className="mt-10 max-w-4xl mx-auto px-4">
             <img
               ref={schemaRef}
               src="/__l5e/assets-v1/ebe3bc59-d136-4a3d-a49f-4afd35e0753f/methode-process.png"
