@@ -23,6 +23,12 @@ const PhotosBandeau = () => {
           <PhotoSlideshow
             images={villes}
             label="Ville de Bretagne"
+            alts={[
+              "Brest — zone d'intervention Semaine 54",
+              "Rennes — zone d'intervention Semaine 54",
+              "Saint-Brieuc — zone d'intervention Semaine 54",
+              "Vannes — zone d'intervention Semaine 54",
+            ]}
             caption="Brest · Rennes · Saint-Brieuc · Vannes"
           />
         </div>
@@ -30,6 +36,12 @@ const PhotosBandeau = () => {
           <PhotoSlideshow
             images={metiers}
             label="Métier accompagné"
+            alts={[
+              "Artisan — automatisation IA pour les artisans et commerces bretons",
+              "Commerçant — automatisation IA pour les artisans et commerces bretons",
+              "Profession libérale — automatisation IA pour les artisans et commerces bretons",
+              "Atelier — automatisation IA pour les artisans et commerces bretons",
+            ]}
             interval={4200}
             caption="Artisans, commerces, professions libérales"
           />
