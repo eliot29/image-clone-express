@@ -20,7 +20,7 @@ const ConceptSection = () => {
           </Reveal>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch text-left">
-            <Reveal variant="card" delay={80} className="h-full">
+            <Reveal variant="left" delay={0} className="h-full">
               <div className="card-lift h-full bg-navy rounded-xl p-7 sm:p-9 flex flex-col justify-center">
                 <p className="txt-corps text-blanc-casse mb-4">
                   Les outils IA se multiplient. Beaucoup sont trop génériques pour
@@ -39,15 +39,17 @@ const ConceptSection = () => {
               </div>
             </Reveal>
 
-            <Reveal variant="card" delay={200} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[240px] border-2 border-or-mat">
-                <img
-                  ref={puzzleRef}
-                  src={conceptVisuel}
-                  alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                  className="absolute inset-6 w-[calc(100%-3rem)] h-[calc(100%-3rem)] object-contain"
-                  loading="lazy"
-                />
+            <Reveal variant="right" delay={120} className="h-full">
+              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[240px] flex items-center justify-center">
+                <div className="border-2 border-or-mat rounded-lg p-3 max-h-full flex items-center justify-center">
+                  <img
+                    ref={puzzleRef}
+                    src={conceptVisuel}
+                    alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                    className="max-w-full max-h-full w-auto h-auto object-contain"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </Reveal>
           </div>
