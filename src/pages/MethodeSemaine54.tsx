@@ -38,9 +38,9 @@ const MethodeSemaine54 = () => {
               <h2 id="qui" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 À qui s'adresse Semaine 54
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Semaine 54 s'adresse aux TPE et PME qui souhaitent <strong className="text-or-mat">gagner du temps</strong> <strong className="text-blanc-casse">sans complexifier leur fonctionnement</strong>, et sans engager un projet de transformation lourd. L'IA en entreprise ne concerne pas uniquement les dirigeants&nbsp;: tous les profils sont concernés dès qu'une partie du quotidien repose sur des <strong className="text-blanc-casse">tâches répétitives</strong> ou peu valorisantes.
+                  Semaine 54 s'adresse aux TPE et PME qui souhaitent <strong className="text-or-mat">gagner du temps</strong> <strong className="text-white">sans complexifier leur fonctionnement</strong>, et sans engager un projet de transformation lourd. L'IA en entreprise ne concerne pas uniquement les dirigeants&nbsp;: tous les profils sont concernés dès qu'une partie du quotidien repose sur des <strong className="text-white">tâches répétitives</strong> ou peu valorisantes.
                 </p>
 
                 <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Des profils variés, dans tous les services</h3>
@@ -55,14 +55,14 @@ const MethodeSemaine54 = () => {
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
-                      <span className="text-blanc-casse/85">{t}</span>
+                      <span className="text-blanc-casse">{t}</span>
                     </li>
                   ))}
                 </ul>
 
                 <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Les tâches concernées</h3>
                 <p>
-                  Dans la plupart des entreprises, une grande partie du temps est absorbée par des actions à <strong className="text-blanc-casse">faible valeur ajoutée</strong>&nbsp;:
+                  Dans la plupart des entreprises, une grande partie du temps est absorbée par des actions à <strong className="text-white">faible valeur ajoutée</strong>&nbsp;:
                 </p>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -77,14 +77,14 @@ const MethodeSemaine54 = () => {
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
-                      <span className="text-blanc-casse/85">{t}</span>
+                      <span className="text-blanc-casse">{t}</span>
                     </li>
                   ))}
                 </ul>
 
                 <h3 className="font-dm font-bold text-xl text-blanc-casse pt-2">Des gains rapidement significatifs</h3>
                 <p>
-                  Une automatisation bien ciblée, même sur une seule tâche, peut représenter <strong className="text-or-mat">plusieurs heures gagnées chaque semaine</strong>. Multipliés par le nombre de collaborateurs concernés, ces <strong className="text-blanc-casse">gains rapidement significatifs</strong> deviennent importants à l'échelle d'une équipe ou d'une entreprise. Les solutions s'intègrent dans votre organisation actuelle, s'appuient sur vos outils existants et respectent vos habitudes de travail.
+                  Une automatisation bien ciblée, même sur une seule tâche, peut représenter <strong className="text-or-mat">plusieurs heures gagnées chaque semaine</strong>. Multipliés par le nombre de collaborateurs concernés, ces <strong className="text-white">gains rapidement significatifs</strong> deviennent importants à l'échelle d'une équipe ou d'une entreprise. Les solutions s'intègrent dans votre organisation actuelle, s'appuient sur vos outils existants et respectent vos habitudes de travail.
                 </p>
               </div>
             </div>
@@ -159,7 +159,7 @@ const MethodeSemaine54 = () => {
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 Une logique simple&nbsp;: <span className="text-or-mat">pragmatisme</span>, <span className="text-or-mat">autonomie</span>, <span className="text-or-mat">progressivité</span>
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
                   La méthode Semaine 54 repose sur quelques principes simples, appliqués systématiquement.
                 </p>
@@ -180,7 +180,7 @@ const MethodeSemaine54 = () => {
                 </p>
                 <h3 className="font-dm font-bold text-xl text-or-mat pt-2">Un seul interlocuteur</h3>
                 <p>
-                  De l'audit jusqu'à la mise en service, vous échangez avec <strong className="text-blanc-casse">un seul interlocuteur</strong> en Bretagne. Pas de relais, pas de chef de projet intermédiaire. Le contexte est connu, les décisions sont rapides.
+                  De l'audit jusqu'à la mise en service, vous échangez avec <strong className="text-white">un seul interlocuteur</strong> en Bretagne. Pas de relais, pas de chef de projet intermédiaire. Le contexte est connu, les décisions sont rapides.
                 </p>
               </div>
             </div>
