@@ -19,9 +19,9 @@ const ConceptSection = () => {
             </h2>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-6 items-stretch text-left">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-5 items-stretch text-left">
             <Reveal variant="left" delay={0} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-6 sm:p-7 flex flex-col justify-start">
+              <div className="card-lift h-full bg-navy rounded-xl p-5 sm:p-6 flex flex-col justify-start">
 
                 <p className="txt-corps text-blanc-casse mb-4">
                   Les outils IA se multiplient. Beaucoup sont trop génériques pour
