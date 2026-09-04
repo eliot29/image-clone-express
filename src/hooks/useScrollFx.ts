@@ -9,7 +9,7 @@ import {
 const clamp01 = (n: number) => (n < 0 ? 0 : n > 1 ? 1 : n);
 
 /** Parallaxe verticale douce : -amplitude → +amplitude sur la traversée du viewport. */
-export function useParallax<T extends HTMLElement>(amplitude = 20) {
+export function useParallax<T extends HTMLElement>(amplitude = 48) {
   const ref = useRef<T | null>(null);
   useEffect(() => {
     const el = ref.current;
