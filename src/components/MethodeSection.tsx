@@ -32,7 +32,7 @@ const steps = [
 
 
 const MethodeSection = () => {
-  const schemaRef = useParallax<HTMLImageElement>(20);
+  const schemaRef = useParallax<HTMLImageElement>(48);
   return (
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
