@@ -10,7 +10,7 @@ const steps = [
   num: "01",
   title: "Diagnostic gratuit (20/30 min)",
   desc: "Visio ou téléphone. Comprendre votre activité, vos contraintes et vos objectifs. Identifier les tâches qui consomment le plus de temps et celles qui offrent le meilleur retour sur investissement. L'occasion de déterminer si le besoin relève d'une mise en place de solution ou d'un accompagnement.",
-  note: "Sans engagement. Aucune vente forcée."
+  note: "Sans engagement. Aucune vente forcée. Et le budget est rarement celui qu'on imagine."
 },
 {
   num: "02",
@@ -76,18 +76,13 @@ const MethodeSection = () => {
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.note &&
-                <p className="font-dm text-xs text-ardoise/70 mt-3 italic">{step.note}</p>
+                <p className="font-dm text-[14px] text-ardoise/80 mt-3">{step.note}</p>
                 }
                 </div>
               </div>
             )}
           </Reveal>
 
-          <Reveal variant="text" className="text-center mt-8">
-            <p className="txt-corps text-ardoise text-center max-w-2xl mx-auto">
-              Beaucoup renoncent avant même de demander, en imaginant un budget hors de portée. C'est souvent moins que ce qu'on croit — et le diagnostic est là pour le vérifier.
-            </p>
-          </Reveal>
 
           <Reveal variant="text" className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>
