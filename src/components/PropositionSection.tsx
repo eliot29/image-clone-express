@@ -90,10 +90,6 @@ const prestations = [
   }
 ];
 
-const validation = [
-  { icon: FlaskConical, text: "Test en conditions réelles" },
-  { icon: RefreshCw, text: "Ajustements selon les retours terrain" },
-];
 
 const engagements = [
   { icon: User, bold: "Un seul interlocuteur en Bretagne", rest: ", du diagnostic jusqu'à la mise en service" },
