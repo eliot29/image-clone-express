@@ -83,6 +83,11 @@ const MethodeSection = () => {
             )}
           </Reveal>
 
+          <Reveal variant="text" className="text-center mt-8">
+            <p className="txt-corps text-ardoise text-center max-w-2xl mx-auto">
+              Beaucoup renoncent avant même de demander, en imaginant un budget hors de portée. C'est souvent moins que ce qu'on croit — et le diagnostic est là pour le vérifier.
+            </p>
+          </Reveal>
 
           <Reveal variant="text" className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>

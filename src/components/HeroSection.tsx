@@ -39,12 +39,12 @@ const HeroSection = () => {
               { key: "brest", node: (
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-or-mat/10 border border-or-mat/20">
                   <span className="w-2 h-2 rounded-full bg-or-mat animate-pulse" />
-                  <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">Basé à Brest (Finistère)</span>
+                  <span className="font-dm text-sm text-or-mat font-medium tracking-wide uppercase">Basé à Plougonvelin · à 20 min de Brest</span>
                 </span>
               ) },
               { key: "agence", node: (
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-navy/5 border border-navy/10">
-                  <span className="font-dm text-sm text-navy font-medium">Agence IA pour TPE et PME bretonnes</span>
+                  <span className="font-dm text-sm text-navy font-medium">Finistère · Côtes-d'Armor · Morbihan</span>
                 </span>
               ) },
               { key: "auto", node: (

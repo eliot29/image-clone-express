@@ -170,10 +170,10 @@ const ContactSection = () => {
 
             <div className="mt-6 max-w-lg mx-auto">
               <p className="font-dm text-ardoise/70 text-sm leading-relaxed">
-                {"\n"}
+                Basé à Plougonvelin, j'interviens en Finistère, dans les Côtes-d'Armor et le Morbihan. Et je viens vous rencontrer.
               </p>
               <p className="font-dm text-ardoise/70 text-sm mt-3 leading-relaxed">
-                {"\n"}
+                Tôt le matin, en soirée, le samedi — et en journée sur rendez-vous.
               </p>
               <p className="font-dm text-ardoise/60 text-xs mt-2 italic">
                 {"\n"}
