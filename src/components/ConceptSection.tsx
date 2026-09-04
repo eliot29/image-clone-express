@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/secondary/Reveal";
-import { useParallax } from "@/hooks/useScrollFx";
+
 
 import conceptVisuel from "@/assets/puzzle-semaine54.png";
 
