@@ -50,7 +50,7 @@ const Index = () => {
         <OutilsSection />
         <SecuritySection />
 
-        {/* PUNCHLINE 4 — bandeau navy */}
+        {/* PUNCHLINE 3 — bandeau navy */}
         <PunchlineBand rule>
           Construisons le <span className="text-or-mat">collaborateur numérique</span>{" "}
           adapté à votre entreprise et vos équipes.
