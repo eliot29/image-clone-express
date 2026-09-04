@@ -24,10 +24,10 @@ const PhotosBandeau = () => {
             images={villes}
             label="Ville de Bretagne"
             alts={[
-              "Brest — zone d'intervention Semaine 54",
-              "Rennes — zone d'intervention Semaine 54",
-              "Saint-Brieuc — zone d'intervention Semaine 54",
-              "Vannes — zone d'intervention Semaine 54",
+              "Brest — zone d'intervention Semaine 54, automatisation IA",
+              "Rennes — zone d'intervention Semaine 54, automatisation IA",
+              "Saint-Brieuc — zone d'intervention Semaine 54, automatisation IA",
+              "Vannes — zone d'intervention Semaine 54, automatisation IA",
             ]}
             caption="Brest · Rennes · Saint-Brieuc · Vannes"
           />

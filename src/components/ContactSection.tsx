@@ -52,7 +52,7 @@ const ContactSection = () => {
   return (
     <section id="audit" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
-        <div className="max-w-4xl mx-auto">
+        <div>
 
           <Reveal variant="text" className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">

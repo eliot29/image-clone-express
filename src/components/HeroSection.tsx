@@ -141,7 +141,8 @@ const HeroSection = () => {
           </div>
 
 
-          <p className="txt-souspunchline text-ardoise mb-2 italic">
+          <div className="w-10 h-[2px] bg-or-mat mx-auto mb-4" />
+          <p className="txt-souspunchline text-navy mb-2">
             Et si toutes ces tâches se faisaient en autonomie ?
           </p>
 

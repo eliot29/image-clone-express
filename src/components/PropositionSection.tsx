@@ -1,4 +1,4 @@
-import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, ArrowDownLeft, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
+import { Eye, Target, User, ShieldCheck, Crosshair, ArrowRight, ArrowDown, ArrowDownLeft, Cog, GraduationCap, Filter, Workflow, Link2, RotateCcw, Lightbulb, MessageSquare, PenTool, Users, SlidersHorizontal, Ban, Compass, Calculator, Bot, Puzzle, Zap, Database, FileText, BarChart3, Briefcase, MousePointerClick, Search, CheckCircle2, Wallet, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import TiltCard from "@/components/secondary/TiltCard";
@@ -57,8 +57,7 @@ const prestations = [
     badge: "ChatGPT · Claude · Gemini · Copilot",
     tagline: null,
     items: [
-      { icon: MessageSquare, text: "Formation aux outils : ChatGPT, Claude, Gemini, Copilot" },
-      { icon: SlidersHorizontal, text: "Structuration des usages professionnels" },
+            { icon: SlidersHorizontal, text: "Structuration des usages professionnels" },
       { icon: PenTool, text: "Apprentissage des bons réflexes et du prompt" },
       { icon: Users, text: "Mise en pratique sur vos cas réels" }
     ],
@@ -91,10 +90,6 @@ const prestations = [
   }
 ];
 
-const validation = [
-  { icon: FlaskConical, text: "Test en conditions réelles" },
-  { icon: RefreshCw, text: "Ajustements selon les retours terrain" },
-];
 
 const engagements = [
   { icon: User, bold: "Un seul interlocuteur en Bretagne", rest: ", du diagnostic jusqu'à la mise en service" },
@@ -111,7 +106,7 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
         <span className="block font-dm text-xs font-semibold text-navy">{p.badge}</span>
       )}
       {p.tagline && (
-        <p className="font-dm text-xs italic text-ardoise/70 leading-snug mt-0.5">{p.tagline}</p>
+        <p className="font-dm text-[14px] text-ardoise/80 leading-snug mt-0.5">{p.tagline}</p>
       )}
     </div>
   </div>
@@ -119,12 +114,12 @@ const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
 
 const PropositionSection = () => {
   return (
-    <section id="prestations" className="bg-gris-perle py-6">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl lg:max-w-6xl mx-auto">
+    <section id="prestations" className="bg-gris-perle py-14 md:py-20">
+      <div className="section-wrap">
+        <div>
 
           <Reveal variant="text">
-            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
+            <h2 className="txt-section text-navy mb-5 text-center">
               Ce que je propose concrètement
             </h2>
           </Reveal>
@@ -136,7 +131,7 @@ const PropositionSection = () => {
           {/* Audit block - DESKTOP centered */}
           <Reveal variant="card" delay={160} className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-card rounded-2xl px-6 py-6 md:px-8 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm text-[19px] sm:text-[21px] font-bold text-navy mb-5 text-center">
                 Diagnostic gratuit
               </h3>
               <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 justify-center">
@@ -178,7 +173,7 @@ const PropositionSection = () => {
           <div className="md:hidden mb-6">
             {/* Audit */}
             <div className="bg-card rounded-2xl px-4 py-5 shadow-sm">
-              <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+              <h3 className="font-dm text-[19px] sm:text-[21px] font-bold text-navy mb-5 text-center">
                 Diagnostic gratuit
               </h3>
               <div className="flex flex-col gap-3">
@@ -208,7 +203,7 @@ const PropositionSection = () => {
             {/* Bloc 1 - Conception IA */}
             <div>
               <div className="bg-card rounded-2xl px-4 py-5 shadow-sm">
-                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                <h3 className="font-dm text-[19px] sm:text-[21px] font-bold text-navy mb-5 text-center">
                   Conception IA sur-mesure
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -229,7 +224,7 @@ const PropositionSection = () => {
 
             {/* Bloc 2 - Accompagnement */}
             <div className="bg-card rounded-2xl px-4 py-5 shadow-sm mt-4">
-                <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
+                <h3 className="font-dm text-[19px] sm:text-[21px] font-bold text-navy mb-5 text-center">
                   Accompagnement IA
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -250,7 +245,7 @@ const PropositionSection = () => {
 
           <Reveal variant="card" stagger={120} className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <TiltCard className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm text-[19px] sm:text-[21px] font-bold text-navy mb-5 text-center">
                 Conception IA sur-mesure
               </h3>
               <div className="flex flex-col gap-3">
@@ -269,7 +264,7 @@ const PropositionSection = () => {
             </TiltCard>
 
             <TiltCard className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
-              <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
+              <h3 className="font-dm text-[19px] sm:text-[21px] font-bold text-navy mb-5 text-center">
                 Accompagnement IA
               </h3>
               <div className="flex flex-col gap-3">
@@ -289,8 +284,8 @@ const PropositionSection = () => {
           </Reveal>
 
           <Reveal variant="card" className="flex justify-center mb-6">
-            <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-gris-perle shadow-sm">
-              <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
+            <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-card shadow-card">
+              <p className="txt-corps text-navy leading-relaxed text-center">
                 <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
                 <br />
                 <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
@@ -298,13 +293,16 @@ const PropositionSection = () => {
             </div>
           </Reveal>
 
-          <Reveal variant="text" delay={120} className="flex flex-wrap justify-center gap-3 mt-6">
-            <Button variant="ctaOutline" size="default" asChild>
-              <Link to="/secteurs">
-                À qui s'adresse Semaine 54 ?
-                <ArrowRight size={16} />
-              </Link>
-            </Button>
+          <Reveal variant="text" delay={120} className="flex justify-center mt-6">
+            {engagements.map((e, i) => (
+              <p key={i} className="txt-souspunchline text-navy text-center inline-flex items-center gap-2">
+                <e.icon size={20} className="text-or-mat shrink-0" />
+                <span>
+                  <span className="font-bold">{e.bold}</span>
+                  {e.rest}
+                </span>
+              </p>
+            ))}
           </Reveal>
         </div>
       </div>
