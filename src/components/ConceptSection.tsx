@@ -7,7 +7,7 @@ import Reveal from "@/components/secondary/Reveal";
 import conceptVisuel from "@/assets/puzzle-semaine54.png";
 
 const ConceptSection = () => {
-  const puzzleRef = useParallax<HTMLImageElement>(48);
+
   return (
     <section id="concept" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
