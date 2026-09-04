@@ -19,38 +19,40 @@ const ConceptSection = () => {
             </h2>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-4 md:gap-5 items-stretch text-left">
-            <Reveal variant="left" delay={0} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-5 sm:p-6 flex flex-col justify-start">
+          <div className="max-w-[920px] mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 items-stretch text-left">
+              <Reveal variant="left" delay={0} className="h-full">
+                <div className="card-lift h-full bg-navy rounded-xl p-6 flex flex-col justify-start">
 
-                <p className="txt-corps text-blanc-casse mb-4">
-                  Les outils IA se multiplient. Beaucoup sont trop génériques pour
-                  s'adapter à la réalité des entreprises.{" "}
-                  <strong className="text-white font-bold">
-                    Le vrai sujet : l'accompagnement et la personnalisation.
-                  </strong>
-                </p>
-                <p className="txt-corps text-blanc-casse">
-                  <strong className="text-white font-bold">
-                    Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
-                  </strong>
-                  , pour des solutions d'intelligence artificielle construites sur
-                  mesure, autour de votre métier et de votre organisation.
-                </p>
-              </div>
-            </Reveal>
+                  <p className="txt-corps text-blanc-casse mb-4">
+                    Les outils IA se multiplient. Beaucoup sont trop génériques pour
+                    s'adapter à la réalité des entreprises.{" "}
+                    <strong className="text-white font-bold">
+                      Le vrai sujet : l'accompagnement et la personnalisation.
+                    </strong>
+                  </p>
+                  <p className="txt-corps text-blanc-casse">
+                    <strong className="text-white font-bold">
+                      Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
+                    </strong>
+                    , qui vient du terrain et non de l'informatique, pour des solutions d'intelligence artificielle construites sur
+                    mesure, autour de votre métier et de votre organisation.
+                  </p>
+                </div>
+              </Reveal>
 
-            <Reveal variant="right" delay={120} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-5 sm:p-6 relative min-h-[160px] flex items-center justify-center">
-                <img
-                  src={conceptVisuel}
-                  alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                  className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
-                  loading="lazy"
-                />
-              </div>
-            </Reveal>
+              <Reveal variant="right" delay={120} className="h-full">
+                <div className="card-lift h-full bg-navy rounded-xl p-5 relative min-h-[180px] flex items-center justify-center">
+                  <img
+                    src={conceptVisuel}
+                    alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                    className="max-w-full max-h-[240px] w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
+                    loading="lazy"
+                  />
+                </div>
+              </Reveal>
 
+            </div>
           </div>
 
           <Reveal variant="text" delay={320} className="text-center mt-10">
