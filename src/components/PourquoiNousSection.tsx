@@ -64,15 +64,15 @@ const PourquoiSection = () => {
     <section id="approche" className="relative bg-navy py-14 md:py-20">
       <CursorGlow />
       <div className="section-wrap relative">
-        <Reveal variant="text" className="text-center mb-8">
-          <p className="font-dm font-normal text-[18px] leading-snug text-blanc-casse/60 text-center max-w-2xl mx-auto mb-4">
+        <Reveal variant="text" className="text-center mb-10">
+          <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
+          <p className="txt-souspunchline text-blanc-casse/85 text-center max-w-3xl mx-auto mt-5">
             Des solutions autrefois réservées aux grandes entreprises sont désormais à la portée des PME.
           </p>
-          <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
         </Reveal>
 
         {/* RANGÉE 1 */}
-        <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 lg:gap-10 items-stretch">
+        <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 md:gap-8 items-stretch">
           {/* PARCOURS */}
           <Reveal className="flex flex-col justify-center">
             <span className="txt-etiquette text-gris-bleu">Parcours</span>
