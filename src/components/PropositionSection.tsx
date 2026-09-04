@@ -97,7 +97,7 @@ const validation = [
 ];
 
 const engagements = [
-  { icon: User, bold: "Un seul interlocuteur en Bretagne", rest: ", de l'audit jusqu'à la mise en service" },
+  { icon: User, bold: "Un seul interlocuteur en Bretagne", rest: ", du diagnostic jusqu'à la mise en service" },
 ];
 
 const PrestationItem = ({ p }: { p: typeof prestations[number] }) => (
@@ -130,14 +130,14 @@ const PropositionSection = () => {
           </Reveal>
 
           <Reveal variant="text" delay={80}>
-          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
+          <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">diagnostic</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
           </Reveal>
 
           {/* Audit block - DESKTOP centered */}
           <Reveal variant="card" delay={160} className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-card rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
-                Audit gratuit
+                Diagnostic gratuit
               </h3>
               <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 justify-center">
                 {comprehension.map((item, i) =>
@@ -179,7 +179,7 @@ const PropositionSection = () => {
             {/* Audit */}
             <div className="bg-card rounded-2xl px-4 py-5 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl text-navy mb-5 text-center">
-                Audit gratuit
+                Diagnostic gratuit
               </h3>
               <div className="flex flex-col gap-3">
                 {comprehension.map((item, i) =>
