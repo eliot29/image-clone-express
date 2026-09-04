@@ -65,7 +65,7 @@ const Reveal = ({
 
   const Tag = as as "div";
   const itemClass = `reveal reveal-${variant} ${visible ? "is-visible" : ""}`;
-  const step = wide ? stagger * 1.7 : stagger;
+  const step = wide ? stagger * 2.2 : stagger;
 
   if (stagger > 0) {
     return (

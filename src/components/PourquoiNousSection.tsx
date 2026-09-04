@@ -61,7 +61,7 @@ const PourquoiSection = () => {
         {/* RANGÉE 1 */}
         <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-6 md:gap-8 items-stretch">
           {/* PARCOURS */}
-          <Reveal className="flex flex-col justify-center">
+          <Reveal variant="left" className="flex flex-col justify-center">
             <span className="txt-etiquette text-gris-bleu">Parcours</span>
             <p className="txt-corps text-blanc-casse mt-3 max-w-2xl">
               Je suis <strong className="text-white font-bold">Clément, 35 ans</strong>, à l'initiative de{" "}
@@ -80,7 +80,7 @@ const PourquoiSection = () => {
 
 
           {/* RÉSULTATS MESURÉS */}
-          <Reveal className="h-full">
+          <Reveal variant="right" delay={120} className="h-full">
           <div className="card-lift h-full bg-white/5 border border-blanc-casse/10 rounded-xl p-5 sm:p-6">
             <span className="txt-etiquette text-gris-bleu">Résultats mesurés</span>
             <p className="font-dm text-sm text-blanc-casse/80 leading-relaxed mt-2">
@@ -131,7 +131,7 @@ const PourquoiSection = () => {
             <Reveal
               as="ul"
               variant="card"
-              stagger={70}
+              stagger={110}
               className="grid grid-cols-2 lg:grid-cols-3 gap-px items-stretch bg-blanc-casse/10 rounded-lg overflow-hidden"
             >
               {solutions.map((s) => (

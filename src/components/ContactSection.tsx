@@ -87,7 +87,7 @@ const ContactSection = () => {
                   </DialogTitle>
                 </DialogHeader>
                 <form onSubmit={handleSubmit} className="mt-2">
-                <Reveal as="div" variant="card" stagger={60} className="space-y-4">
+                <Reveal as="div" variant="card" stagger={110} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="nom" className="text-blanc-casse/80 font-dm text-sm">
                       Nom *
