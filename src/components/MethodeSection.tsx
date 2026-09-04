@@ -37,10 +37,12 @@ const MethodeSection = () => {
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          <Reveal variant="text" className="text-center mb-10">
+          <Reveal variant="text" className="text-center">
             <h2 className="txt-section text-navy">
               La méthode Semaine 54
             </h2>
+          </Reveal>
+          <Reveal variant="text" delay={120} className="text-center mb-10">
             <p className="font-dm text-ardoise/70 text-center mt-4">
               Un accompagnement structuré, étape par étape.
             </p>
