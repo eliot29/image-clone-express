@@ -70,7 +70,7 @@ const MethodeSection = () => {
                 </div>
 
                 {/* Content */}
-                <div className={`${i < 3 ? 'pb-10' : 'pb-2'}`}>
+                <div className="pb-0">
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.note &&
@@ -82,7 +82,7 @@ const MethodeSection = () => {
           </Reveal>
 
 
-          <div className="text-center mt-4">
+          <div className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode
