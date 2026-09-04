@@ -12,14 +12,14 @@ const ConceptSection = () => {
     <section id="concept" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
         <div className="text-center">
-          <Reveal variant="text" className="mb-8">
+          <Reveal variant="text" className="mb-10">
             <h2 className="txt-section text-navy">
               L'IA, une solution de productivité.<br className="sm:hidden" />{" "}
               <span className="text-navy/70">Sous certaines conditions.</span>
             </h2>
           </Reveal>
 
-          <Reveal variant="card" stagger={70} className="grid md:grid-cols-2 gap-6 items-stretch text-left">
+          <Reveal variant="card" stagger={70} className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch text-left">
             <div className="card-lift bg-navy rounded-xl p-7 sm:p-9 flex flex-col justify-center">
               <p className="txt-corps text-blanc-casse/85 mb-4">
                 Les outils IA se multiplient. Beaucoup sont trop génériques pour
@@ -48,7 +48,7 @@ const ConceptSection = () => {
             </div>
           </Reveal>
 
-          <Reveal variant="text" className="text-center mt-8">
+          <Reveal variant="text" className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/pourquoi-ia-generique-ne-suffit-pas">
                 Comprendre l'approche Semaine 54

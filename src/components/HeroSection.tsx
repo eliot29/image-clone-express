@@ -23,7 +23,7 @@ const ACCENT_WORDS = new Set(["temps.", "productivité.", "rentabilité."]);
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 pt-20 pb-6 lg:pt-24 lg:pb-6 relative z-10">
+      <div className="container mx-auto px-6 pt-20 pb-14 lg:pt-24 lg:pb-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center hero-stagger">
           {/* Logo - hidden on mobile */}
           <div className="hidden sm:flex justify-center mt-12 mb-6">
