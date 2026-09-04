@@ -31,9 +31,9 @@ const Index = () => {
         </PunchlineBand>
 
         <ConceptSection />
+        <PourquoiNousSection />
         <PropositionSection />
         <CasConcretsSection />
-        <PourquoiNousSection />
 
 
         <SecteursSection />
