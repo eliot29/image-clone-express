@@ -41,7 +41,7 @@ const ConceptSection = () => {
             </Reveal>
 
             <Reveal variant="right" delay={120} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[200px] flex items-center justify-center">
+              <div className="card-lift h-full bg-navy rounded-xl p-5 sm:p-6 relative min-h-[160px] flex items-center justify-center">
                 <img
                   src={conceptVisuel}
                   alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
