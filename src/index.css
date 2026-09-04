@@ -123,11 +123,9 @@ footer[id] {
 .reveal-up {
   transform: translateY(24px);
 }
-.reveal-left {
-  transform: translateX(-28px);
-}
+.reveal-left,
 .reveal-right {
-  transform: translateX(28px);
+  transform: translateY(18px);
 }
 .reveal-scale {
   transform: scale(0.97);
@@ -135,6 +133,26 @@ footer[id] {
 .reveal.is-visible {
   opacity: 1;
   transform: none;
+}
+
+/* ---- Amplitudes desktop ---- */
+@media (min-width: 1024px) {
+  .reveal-text {
+    transform: translateY(40px);
+    transition-duration: 0.7s;
+  }
+  .reveal-card {
+    transform: translateY(48px) scale(0.96);
+    transition-duration: 0.8s;
+  }
+  .reveal-left {
+    transform: translateX(-56px);
+    transition-duration: 0.8s;
+  }
+  .reveal-right {
+    transform: translateX(56px);
+    transition-duration: 0.8s;
+  }
 }
 
 /* ---- Tracé qui se dessine au scroll ---- */
