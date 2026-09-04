@@ -106,7 +106,7 @@ const PourquoiSection = () => {
                   className="rounded-lg bg-white/5 border border-or-mat/25 px-2 py-3 text-center"
                 >
                   <r.icon size={16} className="text-or-mat mx-auto mb-1.5" />
-                  <div className="stat-focus font-bold text-or-mat text-[34px] sm:text-[42px] leading-none">
+                  <div className="font-bold text-or-mat text-[34px] sm:text-[42px] leading-none">
                     <CountUp
                       value={r.value}
                       prefix={r.prefix}
@@ -135,7 +135,7 @@ const PourquoiSection = () => {
         </div>
 
         {/* RANGÉE 2 — PUIS SON QUOTIDIEN, pleine largeur */}
-        <Reveal className="mt-6">
+        <Reveal className="mt-8">
           <div className="card-lift h-full bg-white/5 border border-blanc-casse/10 rounded-xl p-5 sm:p-6">
             <span className="txt-etiquette text-gris-bleu">Puis son quotidien</span>
             <p className="font-dm text-sm text-blanc-casse/70 leading-relaxed mt-2 mb-4">
@@ -161,7 +161,7 @@ const PourquoiSection = () => {
         </Reveal>
 
         {/* SCHÉMA POISSONNERIE — moment épinglé */}
-        <div ref={pinRef} className={pinned ? "mt-12 h-[180vh]" : "mt-12"}>
+        <div ref={pinRef} className={pinned ? "mt-10 h-[180vh]" : "mt-10"}>
         <Reveal className={pinned ? "sticky top-24" : ""}>
           <button
             type="button"
@@ -185,7 +185,7 @@ const PourquoiSection = () => {
         </div>
 
         {/* CONCLUSION DE SECTION */}
-        <Reveal variant="text" className="text-center mt-12">
+        <Reveal variant="text" className="text-center mt-10">
           <div className="w-[60px] h-[3px] bg-or-mat mx-auto mb-4" />
           <p className="txt-souspunchline text-blanc-casse text-center max-w-3xl mx-auto">
             Mon approche vient du réel. Pas d'une démonstration théorique.
