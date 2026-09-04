@@ -73,11 +73,11 @@ const CasConcretsSection = () => {
           </div>
         </Reveal>
 
-        <div className="text-center mt-10">
+        <Reveal variant="text" delay={120} className="text-center mt-10">
           <Button variant="cta" size="lg" asChild>
             <Link to="/secteurs">Mon secteur est-il concerné ?</Link>
           </Button>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
