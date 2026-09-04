@@ -37,17 +37,16 @@ const MethodeSection = () => {
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          <Reveal variant="text" className="text-center mb-6">
-            <h2 className="txt-section text-navy mb-4">
+          <Reveal variant="text" className="text-center mb-10">
+            <h2 className="txt-section text-navy">
               La méthode Semaine 54
             </h2>
+            <p className="font-dm text-ardoise/70 text-center mt-4">
+              Un accompagnement structuré, étape par étape.
+            </p>
           </Reveal>
 
-          <p className="font-dm text-ardoise/70 text-center mb-6">
-            Un accompagnement structuré, étape par étape.
-          </p>
-
-          <Reveal variant="card" stagger={120} className="space-y-0">
+          <Reveal variant="card" stagger={120} className="space-y-8">
             {steps.map((step, i) =>
             <div key={i} className="flex gap-6 group">
                 {/* Frise */}
@@ -71,7 +70,7 @@ const MethodeSection = () => {
                 </div>
 
                 {/* Content */}
-                <div className={`${i < 3 ? 'pb-10' : 'pb-2'}`}>
+                <div className="pb-0">
                   <h3 className="font-dm font-bold text-lg text-navy mb-2">{step.title}</h3>
                   <p className="font-dm text-sm text-ardoise/70 leading-relaxed">{step.desc}</p>
                   {step.note &&
@@ -83,7 +82,7 @@ const MethodeSection = () => {
           </Reveal>
 
 
-          <div className="text-center mt-4">
+          <div className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode

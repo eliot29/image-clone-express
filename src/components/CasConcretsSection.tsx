@@ -41,7 +41,7 @@ const CasConcretsSection = () => {
   return (
     <section id="cas" className="bg-blanc-casse py-14 md:py-20">
       <div className="section-wrap">
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <Reveal variant="text">
             <h2 className="txt-section text-navy">
               Quatre situations concrètes. Quatre gains mesurables.
@@ -73,7 +73,7 @@ const CasConcretsSection = () => {
           </div>
         </Reveal>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-10">
           <Button variant="cta" size="lg" asChild>
             <Link to="/secteurs">Mon secteur est-il concerné ?</Link>
           </Button>

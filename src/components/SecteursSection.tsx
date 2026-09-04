@@ -76,7 +76,7 @@ const SecteursSection = () => {
         </Reveal>
 
         {/* Bandeau solutions – texte léger */}
-        <Reveal variant="card" delay={240} className="relative overflow-hidden mb-8">
+        <Reveal variant="card" delay={240} className="relative overflow-hidden mb-10">
           <Fades />
           <div className="flex gap-6 animate-marquee-reverse md:animate-marquee-reverse-slow hover:[animation-play-state:paused] py-2">
             {[...solutions, ...solutions].map((s, i) => (

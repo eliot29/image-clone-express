@@ -6,7 +6,7 @@ const SecuritySection = () => {
     <section className="bg-gris-perle py-12 md:py-16">
       <div className="section-wrap">
         <Reveal variant="card" className="bg-card rounded-xl shadow-card p-8 max-w-3xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-10">
             <Shield size={22} className="text-or-mat shrink-0" />
             <h2 className="txt-section text-navy">Sécurité & RGPD</h2>
           </div>
