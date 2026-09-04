@@ -38,12 +38,12 @@ const AccompagnementIA = () => {
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 <span className="text-or-mat">Mieux utiliser l'IA</span> déjà à votre portée
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Toutes les entreprises n'ont pas besoin de développer des solutions techniques complexes. Pour beaucoup, le vrai sujet est de <strong className="text-blanc-casse">structurer les usages</strong> et de mieux utiliser les outils IA déjà accessibles&nbsp;: <strong className="text-or-mat">ChatGPT</strong>, <strong className="text-or-mat">Claude</strong>, <strong className="text-or-mat">Gemini</strong>, <strong className="text-or-mat">Copilot</strong>. Bien employés, ils suffisent à transformer le quotidien d'un service entier.
+                  Toutes les entreprises n'ont pas besoin de développer des solutions techniques complexes. Pour beaucoup, le vrai sujet est de <strong className="text-white">structurer les usages</strong> et de mieux utiliser les outils IA déjà accessibles&nbsp;: <strong className="text-or-mat">ChatGPT</strong>, <strong className="text-or-mat">Claude</strong>, <strong className="text-or-mat">Gemini</strong>, <strong className="text-or-mat">Copilot</strong>. Bien employés, ils suffisent à transformer le quotidien d'un service entier.
                 </p>
                 <p>
-                  L'enjeu est avant tout <strong className="text-blanc-casse">humain et organisationnel</strong>&nbsp;: aider les équipes à adopter l'IA sans la subir, dans un cadre clair et utile.
+                  L'enjeu est avant tout <strong className="text-white">humain et organisationnel</strong>&nbsp;: aider les équipes à adopter l'IA sans la subir, dans un cadre clair et utile.
                 </p>
                 <Highlight variant="soft-dark">
                   L'objectif est une <span className="text-or-mat">adoption progressive</span>, ancrée dans la pratique, qui produit des résultats sans bouleverser le quotidien.
@@ -110,9 +110,9 @@ const AccompagnementIA = () => {
               <p className="font-dm text-or-mat italic mb-5">
                 Adapter l'IA aux habitudes de travail et aux besoins réels.
               </p>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Donner accès à des outils IA ne suffit pas. Sans cadre, les usages deviennent rapidement désorganisés&nbsp;: chacun teste de son côté, les pratiques s'éparpillent, les résultats restent décevants. L'intégration consiste à <strong className="text-blanc-casse">structurer les usages</strong> dans la durée, dans un <strong className="text-blanc-casse">cadre clair</strong>, pour qu'ils deviennent réellement utiles à l'entreprise.
+                  Donner accès à des outils IA ne suffit pas. Sans cadre, les usages deviennent rapidement désorganisés&nbsp;: chacun teste de son côté, les pratiques s'éparpillent, les résultats restent décevants. L'intégration consiste à <strong className="text-white">structurer les usages</strong> dans la durée, dans un <strong className="text-white">cadre clair</strong>, pour qu'ils deviennent réellement utiles à l'entreprise.
                 </p>
 
                 <div className="bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
@@ -128,7 +128,7 @@ const AccompagnementIA = () => {
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
-                      <span className="text-blanc-casse/85">{t}</span>
+                      <span className="text-blanc-casse">{t}</span>
                     </li>
                   ))}
                 </ul>
@@ -143,7 +143,7 @@ const AccompagnementIA = () => {
                 </p>
 
                 <p>
-                  Cette étape évite l'écueil le plus fréquent&nbsp;: une IA présente partout, mais mal utilisée. Elle ancre des <strong className="text-blanc-casse">usages utiles, durables et partagés</strong> dans le fonctionnement réel de l'entreprise.
+                  Cette étape évite l'écueil le plus fréquent&nbsp;: une IA présente partout, mais mal utilisée. Elle ancre des <strong className="text-white">usages utiles, durables et partagés</strong> dans le fonctionnement réel de l'entreprise.
                 </p>
               </div>
             </div>
