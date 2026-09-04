@@ -10,10 +10,10 @@ const FooterSection = () => {
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-3 mb-1">
                 <h3 className="font-dm font-bold text-blanc-casse text-base uppercase tracking-wider">Contact</h3>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse hover:text-or-mat transition-colors">
+                <a href="https://www.facebook.com/share/1BaLLL6nDh/" target="_blank" rel="noopener noreferrer" className="text-blanc-casse hover:text-or-mat transition-colors">
                   <Facebook size={18} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-blanc-casse hover:text-or-mat transition-colors">
+                <a href="https://www.instagram.com/semaine54.ia" target="_blank" rel="noopener noreferrer" className="text-blanc-casse hover:text-or-mat transition-colors">
                   <Instagram size={18} />
                 </a>
               </div>
@@ -21,9 +21,9 @@ const FooterSection = () => {
                 <Phone size={16} className="text-or-mat" />
                 06 10 32 20 82
               </a>
-              <a href="mailto:semaine54ia@gmail.com" className="flex items-center gap-2 font-dm text-blanc-casse text-base hover:text-or-mat transition-colors">
+              <a href="mailto:contact@semaine54.com" className="flex items-center gap-2 font-dm text-blanc-casse text-base hover:text-or-mat transition-colors">
                 <Mail size={16} className="text-or-mat" />
-                semaine54ia@gmail.com
+                contact@semaine54.com
               </a>
             </div>
 
@@ -32,7 +32,7 @@ const FooterSection = () => {
               <h3 className="font-dm font-bold text-blanc-casse text-base uppercase tracking-wider mb-1">Localisation</h3>
               <div className="flex items-center gap-2 font-dm text-blanc-casse text-base">
                 <MapPin size={16} className="text-or-mat shrink-0" />
-                Basé à Brest (Finistère)
+                Basé à Plougonvelin (Finistère)
               </div>
               <p className="font-dm text-blanc-casse text-base">
                 Accompagnement des PME et TPE
@@ -42,8 +42,8 @@ const FooterSection = () => {
             {/* Col 3: Zone d'intervention */}
             <div className="flex flex-col items-center gap-3 text-center">
               <h3 className="font-dm font-bold text-blanc-casse text-base uppercase tracking-wider mb-1">Zone d'intervention</h3>
-              <p className="font-dm text-blanc-casse text-base">Finistère · Côtes-d'Armor</p>
-              <p className="font-dm text-blanc-casse text-base">Morbihan · Ille-et-Vilaine</p>
+              <p className="font-dm text-blanc-casse text-base">Finistère · Côtes-d'Armor · Morbihan</p>
+              <p className="font-dm text-blanc-casse text-base">Sur site ou en visio</p>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ const FooterSection = () => {
           <p className="font-dm text-or-mat text-lg flex-shrink-0">
             semaine54.fr<br />Site réalisé à l'aide d'intelligence artificielle
           </p>
-          <div className="w-[500px] flex-shrink-0">
+          <div className="w-[280px] flex-shrink-0">
             <img src="/logo-semaine54-blanc-new.svg" alt="Semaine 54" className="w-full h-auto" />
           </div>
         </div>
