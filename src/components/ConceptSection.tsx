@@ -40,18 +40,16 @@ const ConceptSection = () => {
             </Reveal>
 
             <Reveal variant="right" delay={120} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[240px] flex items-center justify-center">
-                <div className="border-2 border-or-mat rounded-lg p-3 max-h-full flex items-center justify-center">
-                  <img
-                    ref={puzzleRef}
-                    src={conceptVisuel}
-                    alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                    className="max-w-full max-h-full w-auto h-auto object-contain"
-                    loading="lazy"
-                  />
-                </div>
+              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[200px] flex items-center justify-center">
+                <img
+                  src={conceptVisuel}
+                  alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                  className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
+                  loading="lazy"
+                />
               </div>
             </Reveal>
+
           </div>
 
           <Reveal variant="text" delay={320} className="text-center mt-10">
