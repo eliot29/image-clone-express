@@ -63,21 +63,12 @@ const CountUp = ({
     let raf = 0;
     let timer = 0;
     let started = false;
-    const fallback = window.setTimeout(() => {
-      if (started) return;
-      started = true;
-      observer.disconnect();
-      setDisplay(value);
-      setDone(true);
-      notify.current?.(1);
-    }, 3000);
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting || started) return;
           started = true;
-          clearTimeout(fallback);
           observer.unobserve(entry.target);
           timer = window.setTimeout(() => {
             const start = performance.now();
@@ -98,7 +89,7 @@ const CountUp = ({
           }, delay);
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -5% 0px" }
+      { threshold: 0, rootMargin: "0px 0px -5% 0px" }
     );
 
     observer.observe(el);
@@ -106,7 +97,6 @@ const CountUp = ({
       observer.disconnect();
       cancelAnimationFrame(raf);
       clearTimeout(timer);
-      clearTimeout(fallback);
     };
   }, [value, duration, delay, progress]);
 

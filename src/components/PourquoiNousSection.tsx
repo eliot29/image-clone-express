@@ -53,7 +53,7 @@ const PourquoiSection = () => {
       <div className="section-wrap relative">
         <Reveal variant="text" className="text-center mb-10">
           <h2 className="txt-section text-blanc-casse">Pourquoi Semaine 54 ?</h2>
-          <p className="txt-souspunchline text-blanc-casse/85 text-center max-w-3xl mx-auto mt-5">
+          <p className="txt-souspunchline text-blanc-casse text-center max-w-3xl mx-auto mt-5">
             Des solutions autrefois réservées aux grandes entreprises sont désormais à la portée des PME.
           </p>
         </Reveal>
@@ -63,12 +63,12 @@ const PourquoiSection = () => {
           {/* PARCOURS */}
           <Reveal className="flex flex-col justify-center">
             <span className="txt-etiquette text-gris-bleu">Parcours</span>
-            <p className="txt-corps text-blanc-casse/80 mt-3 max-w-2xl">
-              Je suis <strong className="text-blanc-casse font-bold">Clément, 35 ans</strong>, à l'initiative de{" "}
-              <strong className="text-blanc-casse font-bold">Semaine 54</strong>. Après une dizaine d'années dans
-              différents métiers de la <strong className="text-blanc-casse font-bold">grande distribution</strong>,
+            <p className="txt-corps text-blanc-casse mt-3 max-w-2xl">
+              Je suis <strong className="text-white font-bold">Clément, 35 ans</strong>, à l'initiative de{" "}
+              <strong className="text-white font-bold">Semaine 54</strong>. Après une dizaine d'années dans
+              différents métiers de la <strong className="text-white font-bold">grande distribution</strong>,
               j'explore et utilise depuis plus de trois ans les{" "}
-              <strong className="text-blanc-casse font-bold">outils d'IA dans des contextes professionnels</strong>.
+              <strong className="text-white font-bold">outils d'IA dans des contextes professionnels</strong>.
             </p>
 
             {/* SOUS-PUNCHLINE 1 */}
@@ -83,7 +83,7 @@ const PourquoiSection = () => {
           <Reveal className="h-full">
           <div className="card-lift h-full bg-white/5 border border-blanc-casse/10 rounded-xl p-5 sm:p-6">
             <span className="txt-etiquette text-gris-bleu">Résultats mesurés</span>
-            <p className="font-dm text-sm text-blanc-casse/70 leading-relaxed mt-2">
+            <p className="font-dm text-sm text-blanc-casse/80 leading-relaxed mt-2">
               Une stratégie marketing pilotée par l'IA pour développer sa visibilité.
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-4">
@@ -113,7 +113,7 @@ const PourquoiSection = () => {
                       style={{ transform: `scaleX(${bars[i]})` }}
                     />
                   </div>
-                  <div className="text-[11px] sm:text-xs text-blanc-casse/70 mt-1">{r.label}</div>
+                  <div className="text-[11px] sm:text-xs text-blanc-casse/80 mt-1">{r.label}</div>
                 </div>
               ))}
             </div>
@@ -125,7 +125,7 @@ const PourquoiSection = () => {
         <Reveal className="mt-8">
           <div className="card-lift h-full bg-white/5 border border-blanc-casse/10 rounded-xl p-5 sm:p-6">
             <span className="txt-etiquette text-gris-bleu">Puis son quotidien</span>
-            <p className="font-dm text-sm text-blanc-casse/70 leading-relaxed mt-2 mb-4">
+            <p className="font-dm text-sm text-blanc-casse/80 leading-relaxed mt-2 mb-4">
               L'IA étendue au fonctionnement de tous les jours :
             </p>
             <Reveal
@@ -165,7 +165,7 @@ const PourquoiSection = () => {
               />
             </div>
           </button>
-          <p className="text-[11px] text-blanc-casse/70 italic text-center mt-3">
+          <p className="text-[11px] text-blanc-casse/80 italic text-center mt-3">
             Cliquez pour agrandir
           </p>
         </Reveal>

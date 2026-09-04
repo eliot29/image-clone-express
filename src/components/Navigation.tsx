@@ -46,7 +46,7 @@ const Navigation = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="nav-underline px-2 py-1.5 text-lg font-dm text-blanc-casse/80 hover:text-or-mat transition-colors whitespace-nowrap"
+                className="nav-underline px-2 py-1.5 text-lg font-dm text-blanc-casse hover:text-or-mat transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>

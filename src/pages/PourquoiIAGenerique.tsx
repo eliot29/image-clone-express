@@ -38,12 +38,12 @@ const PourquoiIAGenerique = () => {
               <h2 id="constat" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Le constat : trop d'outils, trop peu de résultats
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Les outils d'intelligence artificielle se multiplient à un rythme inédit. Chaque semaine, de nouvelles solutions apparaissent. La majorité des entreprises qui se lancent le font seules, sans diagnostic préalable, en s'appuyant sur des <strong className="text-blanc-casse">outils génériques</strong> pensés pour tout le monde, et donc adaptés à personne en particulier.
+                  Les outils d'intelligence artificielle se multiplient à un rythme inédit. Chaque semaine, de nouvelles solutions apparaissent. La majorité des entreprises qui se lancent le font seules, sans diagnostic préalable, en s'appuyant sur des <strong className="text-white">outils génériques</strong> pensés pour tout le monde, et donc adaptés à personne en particulier.
                 </p>
                 <p>
-                  Le discours sur l'IA est aujourd'hui partout. Les <strong className="text-blanc-casse">résultats concrets</strong>, eux, restent rares. Trois raisons expliquent l'essentiel de ces échecs.
+                  Le discours sur l'IA est aujourd'hui partout. Les <strong className="text-white">résultats concrets</strong>, eux, restent rares. Trois raisons expliquent l'essentiel de ces échecs.
                 </p>
 
                 <h3 className="font-dm font-bold text-xl text-or-mat pt-2">Absence de diagnostic</h3>
@@ -53,12 +53,12 @@ const PourquoiIAGenerique = () => {
 
                 <h3 className="font-dm font-bold text-xl text-or-mat pt-2">Mauvais calibrage</h3>
                 <p>
-                  Un outil IA générique n'est jamais adapté à un métier précis. Les prompts sont approximatifs, les workflows ne correspondent pas à la réalité des opérations, et les sorties produites manquent de qualité. Ce n'est pas l'IA qui est en cause&nbsp;: c'est <strong className="text-blanc-casse">l'absence de calibrage</strong> par rapport à un contexte réel.
+                  Un outil IA générique n'est jamais adapté à un métier précis. Les prompts sont approximatifs, les workflows ne correspondent pas à la réalité des opérations, et les sorties produites manquent de qualité. Ce n'est pas l'IA qui est en cause&nbsp;: c'est <strong className="text-white">l'absence de calibrage</strong> par rapport à un contexte réel.
                 </p>
 
                 <h3 className="font-dm font-bold text-xl text-or-mat pt-2">Aucun suivi</h3>
                 <p>
-                  Une formation IA délivrée à 40 entreprises en visio en même temps n'a quasiment aucun effet durable. Une solution installée puis abandonnée, faute d'<strong className="text-blanc-casse">accompagnement</strong>, finit oubliée au bout de quelques semaines. Sans suivi, l'IA ne s'ancre jamais dans le quotidien.
+                  Une formation IA délivrée à 40 entreprises en visio en même temps n'a quasiment aucun effet durable. Une solution installée puis abandonnée, faute d'<strong className="text-white">accompagnement</strong>, finit oubliée au bout de quelques semaines. Sans suivi, l'IA ne s'ancre jamais dans le quotidien.
                 </p>
 
                 <Highlight variant="accent-dark" className="text-center">
@@ -113,7 +113,7 @@ const PourquoiIAGenerique = () => {
               <h2 id="securite" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Sécurité des données, RGPD et IA souveraine
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
                   La question des données revient systématiquement, à juste titre. Une entreprise n'a pas à exposer ses informations clients, ses devis, ses contrats ou ses échanges internes pour gagner du temps. La sécurité fait partie intégrante du cadrage de chaque solution.
                 </p>
@@ -174,17 +174,17 @@ const PourquoiIAGenerique = () => {
               <h2 id="parcours" className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center" style={{ scrollMarginTop: '120px' }}>
                 Un AI Implémenteur de terrain, pas un théoricien
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Je suis <strong className="text-blanc-casse">Clément, 35 ans, fondateur de Semaine 54</strong>. J'ai exercé pendant une dizaine d'années plusieurs métiers dans la grande distribution. J'ai aussi brièvement vendu des sites internet, une expérience qui m'a appris ce que je ne voulais pas faire&nbsp;: conclure en un rendez-vous sans avoir compris l'entreprise en face.
+                  Je suis <strong className="text-white">Clément, 35 ans, fondateur de Semaine 54</strong>. J'ai exercé pendant une dizaine d'années plusieurs métiers dans la grande distribution. J'ai aussi brièvement vendu des sites internet, une expérience qui m'a appris ce que je ne voulais pas faire&nbsp;: conclure en un rendez-vous sans avoir compris l'entreprise en face.
                 </p>
                 <p>
                   Depuis plus de trois ans, je consacre cinq à huit heures par semaine à tester, documenter et expérimenter les outils d'intelligence artificielle. Ces tests, je les mène dans ma vie personnelle, dans mon quotidien professionnel et avec des chefs d'entreprise. Autant de contextes réels qui m'ont permis de comprendre ce qui fonctionne, et ce qui ne fonctionne pas. Ce temps investi, c'est du temps que vous n'avez pas à passer.
                 </p>
                 <p>
-                  Je ne suis pas ingénieur IA. Je suis un <strong className="text-or-mat">praticien de terrain</strong>, un <strong className="text-or-mat">AI Implémenteur</strong>. Mon rôle est de faire le tri dans un marché saturé, de <strong className="text-blanc-casse">comprendre votre métier avant de parler technologie</strong>, et de mettre en place ce qui produit un effet concret sur votre quotidien.
+                  Je ne suis pas ingénieur IA. Je suis un <strong className="text-or-mat">praticien de terrain</strong>, un <strong className="text-or-mat">AI Implémenteur</strong>. Mon rôle est de faire le tri dans un marché saturé, de <strong className="text-white">comprendre votre métier avant de parler technologie</strong>, et de mettre en place ce qui produit un effet concret sur votre quotidien.
                 </p>
-                <p className="italic text-blanc-casse/75">
+                <p className="italic text-blanc-casse/80">
                   Je travaille en langage clair, avec vos équipes. Vous gardez toujours la main sur vos données et vos décisions.
                 </p>
               </div>
@@ -227,7 +227,7 @@ const PourquoiIAGenerique = () => {
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 Une approche différente des agences et des formations classiques
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
                   Le marché propose souvent deux modèles. D'un côté, des agences qui vendent une solution en un rendez-vous, sans diagnostic sérieux. De l'autre, des formations génériques délivrées simultanément à des dizaines d'entreprises aux situations très différentes. Dans les deux cas, l'écart avec votre réalité est trop grand pour produire un effet durable.
                 </p>
@@ -248,7 +248,7 @@ const PourquoiIAGenerique = () => {
                   ))}
                 </ul>
                 <p>
-                  <strong className="text-blanc-casse">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong> pour des <strong className="text-blanc-casse">solutions construites sur-mesure</strong>, autour de votre métier et de votre organisation.
+                  <strong className="text-white">Semaine 54 est un partenaire dédié aux TPE et PME bretonnes</strong> pour des <strong className="text-white">solutions construites sur-mesure</strong>, autour de votre métier et de votre organisation.
                 </p>
               </div>
             </div>

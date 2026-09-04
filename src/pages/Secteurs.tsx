@@ -38,7 +38,7 @@ const Secteurs = () => {
       <header className="container mx-auto px-6 pt-8 pb-4">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-blanc-casse/60 hover:text-or-mat transition-colors font-dm text-sm mb-6"
+          className="inline-flex items-center gap-2 text-blanc-casse/80 hover:text-or-mat transition-colors font-dm text-sm mb-6"
         >
           <ArrowLeft size={16} />
           Retour à l'accueil
@@ -46,7 +46,7 @@ const Secteurs = () => {
         <h1 className="font-dm font-extrabold text-3xl sm:text-4xl text-blanc-casse mb-2">
           Mon secteur est-il concerné ?
         </h1>
-        <p className="font-dm text-blanc-casse/70 text-base max-w-2xl">
+        <p className="font-dm text-blanc-casse/80 text-base max-w-2xl">
           Chaque métier a ses irritants. Voici comment l'IA et l'automatisation
           peuvent concrètement vous faire gagner du temps.
         </p>
@@ -105,13 +105,13 @@ const Secteurs = () => {
               </p>
 
               <div className="mb-3">
-                <h3 className="font-dm text-xs font-semibold text-blanc-casse/60 uppercase tracking-wider mb-1.5">
+                <h3 className="font-dm text-xs font-semibold text-blanc-casse/80 uppercase tracking-wider mb-1.5">
                   Problèmes identifiés
                 </h3>
                 {secteur.problemes.map((p, i) => (
                   <p
                     key={i}
-                    className="font-dm text-xs text-blanc-casse/70 leading-relaxed mb-1"
+                    className="font-dm text-xs text-blanc-casse/80 leading-relaxed mb-1"
                   >
                     • {p}
                   </p>
@@ -119,7 +119,7 @@ const Secteurs = () => {
               </div>
 
               <div className="pt-3 border-t border-blanc-casse/10">
-                <h3 className="font-dm text-xs font-semibold text-blanc-casse/60 uppercase tracking-wider mb-2">
+                <h3 className="font-dm text-xs font-semibold text-blanc-casse/80 uppercase tracking-wider mb-2">
                   Solutions
                 </h3>
                 {secteur.solutions.map((sol, i) => (
@@ -127,10 +127,10 @@ const Secteurs = () => {
                     <span className="font-dm text-[10px] font-bold uppercase tracking-wider text-or-mat">
                       {sol.type}
                     </span>
-                    <p className="font-dm text-sm font-semibold text-blanc-casse/90 leading-snug">
+                    <p className="font-dm text-sm font-semibold text-blanc-casse leading-snug">
                       {sol.titre}
                     </p>
-                    <p className="font-dm text-xs text-blanc-casse/60 leading-snug">
+                    <p className="font-dm text-xs text-blanc-casse/80 leading-snug">
                       {sol.description}
                     </p>
                   </div>

@@ -98,7 +98,7 @@ const ContactSection = () => {
                       onChange={(e) => setNom(e.target.value)}
                       placeholder="Votre nom"
                       maxLength={100}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -112,7 +112,7 @@ const ContactSection = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="votre@email.com"
                       maxLength={255}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -126,7 +126,7 @@ const ContactSection = () => {
                       onChange={(e) => setTelephone(e.target.value)}
                       placeholder="06 00 00 00 00"
                       maxLength={20}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -139,7 +139,7 @@ const ContactSection = () => {
                       onChange={(e) => setCreneau(e.target.value)}
                       placeholder="Ex : mardi matin, en soirée après 18h…"
                       maxLength={150}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -153,14 +153,14 @@ const ContactSection = () => {
                       placeholder="Décrivez brièvement votre activité ou votre besoin..."
                       maxLength={1000}
                       rows={3}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/30 font-dm resize-none"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm resize-none"
                     />
                   </div>
                   <Button variant="cta" size="lg" type="submit" className="w-full text-base">
                     Envoyer
                     <ArrowRight size={18} />
                   </Button>
-                  <p className="text-blanc-casse/40 text-xs text-center font-dm">
+                  <p className="text-blanc-casse/80 text-xs text-center font-dm">
                     Votre client mail s'ouvrira avec les informations pré-remplies.
                   </p>
                 </Reveal>

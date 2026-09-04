@@ -22,15 +22,15 @@ const ConceptSection = () => {
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch text-left">
             <Reveal variant="card" delay={80} className="h-full">
               <div className="card-lift h-full bg-navy rounded-xl p-7 sm:p-9 flex flex-col justify-center">
-                <p className="txt-corps text-blanc-casse/85 mb-4">
+                <p className="txt-corps text-blanc-casse mb-4">
                   Les outils IA se multiplient. Beaucoup sont trop génériques pour
                   s'adapter à la réalité des entreprises.{" "}
-                  <strong className="text-blanc-casse font-bold">
+                  <strong className="text-white font-bold">
                     Le vrai sujet : l'accompagnement et la personnalisation.
                   </strong>
                 </p>
-                <p className="txt-corps text-blanc-casse/85">
-                  <strong className="text-blanc-casse font-bold">
+                <p className="txt-corps text-blanc-casse">
+                  <strong className="text-white font-bold">
                     Semaine 54 est un partenaire dédié aux TPE et PME bretonnes
                   </strong>
                   , pour des solutions d'intelligence artificielle construites sur
@@ -40,7 +40,7 @@ const ConceptSection = () => {
             </Reveal>
 
             <Reveal variant="card" delay={200} className="h-full">
-              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[240px]">
+              <div className="card-lift h-full bg-navy rounded-xl p-6 relative min-h-[240px] border-2 border-or-mat">
                 <img
                   ref={puzzleRef}
                   src={conceptVisuel}

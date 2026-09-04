@@ -38,12 +38,12 @@ const ConceptionIASurMesure = () => {
               <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-blanc-casse mb-5 text-center">
                 Des solutions techniques adaptées à votre métier
               </h2>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  La Conception IA sur-mesure regroupe les solutions <strong className="text-blanc-casse">conçues spécifiquement pour votre entreprise</strong>. Elles ne reposent pas sur un produit générique, mais sur ce dont vous avez réellement besoin au quotidien&nbsp;: un workflow précis, un assistant connecté à vos données, ou un outil simple pour remplacer un fonctionnement bricolé.
+                  La Conception IA sur-mesure regroupe les solutions <strong className="text-white">conçues spécifiquement pour votre entreprise</strong>. Elles ne reposent pas sur un produit générique, mais sur ce dont vous avez réellement besoin au quotidien&nbsp;: un workflow précis, un assistant connecté à vos données, ou un outil simple pour remplacer un fonctionnement bricolé.
                 </p>
                 <p>
-                  Ces solutions s'intègrent à vos <strong className="text-or-mat">outils existants</strong> (email, agenda, comptabilité…), <strong className="text-blanc-casse">suppriment les tâches répétitives</strong> et fiabilisent vos opérations en limitant les erreurs et les oublis. L'objectif est toujours le même&nbsp;: <strong className="text-or-mat">gain de temps réel</strong> pour vos équipes, sur ce qui crée vraiment de la valeur.
+                  Ces solutions s'intègrent à vos <strong className="text-or-mat">outils existants</strong> (email, agenda, comptabilité…), <strong className="text-white">suppriment les tâches répétitives</strong> et fiabilisent vos opérations en limitant les erreurs et les oublis. L'objectif est toujours le même&nbsp;: <strong className="text-or-mat">gain de temps réel</strong> pour vos équipes, sur ce qui crée vraiment de la valeur.
                 </p>
                 <p>
                   Trois grandes familles d'outils sont possibles, séparément ou combinées.
@@ -128,9 +128,9 @@ const ConceptionIASurMesure = () => {
               <p className="font-dm text-or-mat italic mb-5">
                 Un assistant connecté à vos données, qui vous fait gagner du temps chaque jour.
               </p>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Il ne s'agit pas d'un chatbot gadget. Un <strong className="text-or-mat">Assistant IA métier</strong> est un véritable assistant <strong className="text-blanc-casse">connecté à vos données</strong> et à vos documents internes. Il vous aide à <strong className="text-blanc-casse">retrouver rapidement une information</strong>, à <strong className="text-blanc-casse">synthétiser un dossier</strong>, à préparer une décision en quelques secondes là où vous mettriez plusieurs minutes — voire plusieurs heures — à la main.
+                  Il ne s'agit pas d'un chatbot gadget. Un <strong className="text-or-mat">Assistant IA métier</strong> est un véritable assistant <strong className="text-white">connecté à vos données</strong> et à vos documents internes. Il vous aide à <strong className="text-white">retrouver rapidement une information</strong>, à <strong className="text-white">synthétiser un dossier</strong>, à préparer une décision en quelques secondes là où vous mettriez plusieurs minutes — voire plusieurs heures — à la main.
                 </p>
 
                 <div className="bg-blanc-casse/5 border border-blanc-casse/15 rounded-xl p-6 mt-4">
@@ -146,7 +146,7 @@ const ConceptionIASurMesure = () => {
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
-                      <span className="text-blanc-casse/85">{t}</span>
+                      <span className="text-blanc-casse">{t}</span>
                     </li>
                   ))}
                 </ul>
@@ -214,9 +214,9 @@ const ConceptionIASurMesure = () => {
               <Highlight variant="accent-dark" className="text-center text-2xl sm:text-3xl font-extrabold mb-6">
                 Des <span className="text-or-mat">gains mesurables</span>, pas des promesses.
               </Highlight>
-              <div className="font-dm text-blanc-casse/85 leading-relaxed space-y-4">
+              <div className="font-dm text-blanc-casse leading-relaxed space-y-4">
                 <p>
-                  Chaque solution est pensée pour produire un effet concret, mesurable&nbsp;: <strong className="text-blanc-casse">temps gagné</strong> par semaine, <strong className="text-blanc-casse">erreurs évitées</strong>, fiabilité des opérations, <strong className="text-blanc-casse">charge mentale réduite</strong>. Les gains les plus fréquents observés sur des cas réels&nbsp;:
+                  Chaque solution est pensée pour produire un effet concret, mesurable&nbsp;: <strong className="text-white">temps gagné</strong> par semaine, <strong className="text-white">erreurs évitées</strong>, fiabilité des opérations, <strong className="text-white">charge mentale réduite</strong>. Les gains les plus fréquents observés sur des cas réels&nbsp;:
                 </p>
                 <ul className="space-y-3 pl-1">
                   {[
@@ -228,7 +228,7 @@ const ConceptionIASurMesure = () => {
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-or-mat mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-or-mat" />
-                      <span className="text-blanc-casse/85">{t}</span>
+                      <span className="text-blanc-casse">{t}</span>
                     </li>
                   ))}
                 </ul>
