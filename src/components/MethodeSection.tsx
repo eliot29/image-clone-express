@@ -100,7 +100,7 @@ const MethodeSection = () => {
               className="w-full rounded-xl shadow-lg"
               loading="lazy"
             />
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>);
