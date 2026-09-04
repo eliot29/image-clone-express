@@ -416,10 +416,14 @@ footer[id] {
     animation-duration: 40s !important;
   }
   .reveal {
-    transition-duration: 0.01ms !important;
-    transition-delay: 0ms !important;
-    opacity: 1 !important;
+    transition: opacity 0.6s ease-out !important;
     transform: none !important;
+  }
+  .reveal:not(.is-visible) {
+    opacity: 0;
+  }
+  .reveal.is-visible {
+    opacity: 1;
   }
   .tilt-card,
   .cursor-glow {
