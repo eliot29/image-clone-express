@@ -37,17 +37,16 @@ const MethodeSection = () => {
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          <Reveal variant="text" className="text-center mb-6">
-            <h2 className="txt-section text-navy mb-4">
+          <Reveal variant="text" className="text-center mb-10">
+            <h2 className="txt-section text-navy">
               La méthode Semaine 54
             </h2>
+            <p className="font-dm text-ardoise/70 text-center mt-4">
+              Un accompagnement structuré, étape par étape.
+            </p>
           </Reveal>
 
-          <p className="font-dm text-ardoise/70 text-center mb-6">
-            Un accompagnement structuré, étape par étape.
-          </p>
-
-          <Reveal variant="card" stagger={120} className="space-y-0">
+          <Reveal variant="card" stagger={120} className="space-y-8">
             {steps.map((step, i) =>
             <div key={i} className="flex gap-6 group">
                 {/* Frise */}
