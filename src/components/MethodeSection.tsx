@@ -39,7 +39,7 @@ const MethodeSection = () => {
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
           <Reveal variant="text" className="text-center">
             <h2 className="txt-section text-navy">
-              La méthode Semaine 54
+              La méthode Semaine 54 : de l'automatisation à l'accompagnement
             </h2>
           </Reveal>
           <Reveal variant="text" delay={120} className="text-center mb-10">

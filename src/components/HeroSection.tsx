@@ -23,13 +23,13 @@ const ACCENT_WORDS = new Set(["temps.", "productivité.", "rentabilité."]);
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative bg-blanc-casse overflow-hidden">
-      <div className="container mx-auto px-6 pt-20 pb-14 lg:pt-24 lg:pb-20 relative z-10">
+      <div className="section-wrap pt-20 pb-14 lg:pt-24 lg:pb-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center hero-stagger">
           {/* Logo - hidden on mobile */}
           <div className="hidden sm:flex justify-center mt-12 mb-6">
             <img
               src="/logo-semaine54-dark-new.svg"
-              alt="Semaine 54"
+              alt="Semaine 54 — automatisation et IA pour les TPE et PME bretonnes"
               className="h-20 lg:h-24 w-auto"
             />
           </div>
@@ -141,13 +141,13 @@ const HeroSection = () => {
           </div>
 
 
-          <p className="font-dm font-bold text-ardoise text-base sm:text-lg mb-2 italic">
+          <p className="txt-souspunchline text-ardoise mb-2 italic">
             Et si toutes ces tâches se faisaient en autonomie ?
           </p>
 
           {/* Punchline + calculateur dans un même bloc */}
           <div className="mt-3 bg-card rounded-2xl shadow-lg px-5 sm:px-10 py-8 sm:py-12 text-left max-w-5xl mx-auto">
-            <p className="font-bold text-navy text-lg sm:text-xl lg:text-3xl leading-snug text-center mb-6 text-balance">
+            <p className="font-bold text-navy text-[19px] sm:text-[22px] lg:text-[24px] leading-snug text-center mb-6 text-balance">
               Une année compte 52 semaines. Gagnez votre{" "}
               <span className="text-or-mat">Semaine 54</span>.
             </p>

@@ -94,24 +94,24 @@ const ContactCTA = ({
               <form onSubmit={handleSubmit} className="space-y-4 mt-2">
                 <div className="space-y-2">
                   <Label htmlFor={`${idPrefix}-nom`} className="text-blanc-casse/80 font-dm text-sm">Nom *</Label>
-                  <Input id={`${idPrefix}-nom`} value={nom} onChange={(e) => setNom(e.target.value)} placeholder="Votre nom" maxLength={100} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm" />
+                  <Input id={`${idPrefix}-nom`} value={nom} onChange={(e) => setNom(e.target.value)} placeholder="Votre nom" maxLength={100} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor={`${idPrefix}-email`} className="text-blanc-casse/80 font-dm text-sm">Email *</Label>
-                  <Input id={`${idPrefix}-email`} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="votre@email.com" maxLength={255} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm" />
+                  <Input id={`${idPrefix}-email`} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="votre@email.com" maxLength={255} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor={`${idPrefix}-tel`} className="text-blanc-casse/80 font-dm text-sm">Téléphone</Label>
-                  <Input id={`${idPrefix}-tel`} type="tel" value={telephone} onChange={(e) => setTelephone(e.target.value)} placeholder="06 00 00 00 00" maxLength={20} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm" />
+                  <Input id={`${idPrefix}-tel`} type="tel" value={telephone} onChange={(e) => setTelephone(e.target.value)} placeholder="06 00 00 00 00" maxLength={20} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor={`${idPrefix}-msg`} className="text-blanc-casse/80 font-dm text-sm">Message</Label>
-                  <Textarea id={`${idPrefix}-msg`} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Décrivez brièvement votre activité ou votre besoin..." maxLength={1000} rows={3} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm resize-none" />
+                  <Textarea id={`${idPrefix}-msg`} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Décrivez brièvement votre activité ou votre besoin..." maxLength={1000} rows={3} className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm resize-none" />
                 </div>
                 <Button variant="cta" size="lg" type="submit" className="w-full text-base">
                   Envoyer <ArrowRight size={18} />
                 </Button>
-                <p className="text-blanc-casse/80 text-xs text-center font-dm">Votre client mail s'ouvrira avec les informations pré-remplies.</p>
+                <p className="text-blanc-casse/50 text-xs text-center font-dm">Votre client mail s'ouvrira avec les informations pré-remplies.</p>
               </form>
             </DialogContent>
           </Dialog>

@@ -54,13 +54,10 @@ const ContactSection = () => {
       <div className="section-wrap">
         <div className="max-w-4xl mx-auto">
 
-          <div className="text-center mb-10">
+          <Reveal variant="text" className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-or-mat/20 mb-4">
               <CalendarCheck size={24} className="text-or-mat" />
             </div>
-          </div>
-
-          <Reveal variant="text" className="text-center">
             <h2 className="txt-section text-navy text-center">
               Diagnostic gratuit<br className="sm:hidden" /> <span className="text-navy/70 sm:before:content-['·_']">20/30 min</span>
             </h2>
@@ -76,14 +73,14 @@ const ContactSection = () => {
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
                 <Button variant="cta" size="lg" className="text-lg px-10 py-6">
-                  Être rappelé
+                  Demander mon diagnostic
                   <ArrowRight size={20} />
                 </Button>
               </DialogTrigger>
               <DialogContent className="bg-navy border-blanc-casse/10 sm:max-w-md">
                 <DialogHeader>
                   <DialogTitle className="font-dm font-extrabold text-xl text-blanc-casse text-center">
-                    Être rappelé
+                    Demander mon diagnostic
                   </DialogTitle>
                 </DialogHeader>
                 <form onSubmit={handleSubmit} className="mt-2">
@@ -98,7 +95,7 @@ const ContactSection = () => {
                       onChange={(e) => setNom(e.target.value)}
                       placeholder="Votre nom"
                       maxLength={100}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -112,7 +109,7 @@ const ContactSection = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="votre@email.com"
                       maxLength={255}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -126,7 +123,7 @@ const ContactSection = () => {
                       onChange={(e) => setTelephone(e.target.value)}
                       placeholder="06 00 00 00 00"
                       maxLength={20}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -139,7 +136,7 @@ const ContactSection = () => {
                       onChange={(e) => setCreneau(e.target.value)}
                       placeholder="Ex : mardi matin, en soirée après 18h…"
                       maxLength={150}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm"
                     />
                   </div>
                   <div className="space-y-2">
@@ -153,14 +150,14 @@ const ContactSection = () => {
                       placeholder="Décrivez brièvement votre activité ou votre besoin..."
                       maxLength={1000}
                       rows={3}
-                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/80 font-dm resize-none"
+                      className="bg-blanc-casse/5 border-blanc-casse/20 text-blanc-casse placeholder:text-blanc-casse/40 font-dm resize-none"
                     />
                   </div>
                   <Button variant="cta" size="lg" type="submit" className="w-full text-base">
                     Envoyer
                     <ArrowRight size={18} />
                   </Button>
-                  <p className="text-blanc-casse/80 text-xs text-center font-dm">
+                  <p className="text-blanc-casse/50 text-xs text-center font-dm">
                     Votre client mail s'ouvrira avec les informations pré-remplies.
                   </p>
                 </Reveal>
@@ -169,21 +166,14 @@ const ContactSection = () => {
             </Dialog>
 
             <div className="mt-6 max-w-lg mx-auto">
-              <p className="font-dm text-ardoise/70 text-sm leading-relaxed">
+              <p className="txt-corps text-ardoise/70 text-center leading-relaxed">
                 Basé à Plougonvelin, j'interviens en Finistère, dans les Côtes-d'Armor et le Morbihan. Et je viens vous rencontrer.
               </p>
-              <p className="font-dm text-ardoise/70 text-sm mt-3 leading-relaxed">
+              <p className="txt-corps text-ardoise/70 text-center mt-3 leading-relaxed">
                 Tôt le matin, en soirée, le samedi — et en journée sur rendez-vous.
-              </p>
-              <p className="font-dm text-ardoise/60 text-xs mt-2 italic">
-                {"\n"}
               </p>
             </div>
           </Reveal>
-
-          <p className="font-dm text-ardoise/70 text-sm italic text-center">
-            {"\n"}
-          </p>
         </div>
       </div>
     </section>
