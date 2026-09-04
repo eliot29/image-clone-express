@@ -2,6 +2,7 @@ import { Eye, Target, FlaskConical, RefreshCw, User, ShieldCheck, Crosshair, Arr
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import TiltCard from "@/components/secondary/TiltCard";
+import Reveal from "@/components/secondary/Reveal";
 
 const comprehension = [
   { icon: Eye, text: "Compréhension de votre activité" },
@@ -122,14 +123,18 @@ const PropositionSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl lg:max-w-6xl mx-auto">
 
-          <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
-            Ce que je propose concrètement
-          </h2>
+          <Reveal variant="text">
+            <h2 className="font-dm font-extrabold text-2xl sm:text-3xl text-navy mb-5 text-center">
+              Ce que je propose concrètement
+            </h2>
+          </Reveal>
 
+          <Reveal variant="text" delay={80}>
           <p className="font-dm text-ardoise/80 text-base mb-4 text-center">Après un <strong className="text-navy">audit</strong>, <strong className="text-navy">la solution la plus pertinente</strong><br className="sm:hidden" /> est définie à partir de <strong className="text-navy">votre réalité terrain</strong> :</p>
+          </Reveal>
 
           {/* Audit block - DESKTOP centered */}
-          <div className="hidden md:flex justify-center mb-4">
+          <Reveal variant="card" delay={160} className="hidden md:flex justify-center mb-4">
             <div className="inline-block bg-card rounded-2xl px-6 py-6 md:px-8 shadow-sm">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Audit gratuit
@@ -145,7 +150,7 @@ const PropositionSection = () => {
                 )}
               </ul>
             </div>
-          </div>
+          </Reveal>
 
           {/* Connecteur branché DESKTOP : Audit -> (IA sur-mesure | Accompagnement | les deux) */}
           <div className="hidden md:flex flex-col items-center mb-2" aria-hidden="true">
@@ -243,7 +248,7 @@ const PropositionSection = () => {
             </div>
           </div>
 
-          <div className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
+          <Reveal variant="card" stagger={120} className="hidden md:grid md:grid-cols-2 gap-4 mb-6 items-stretch">
             <TiltCard className="bg-card rounded-2xl px-4 py-5 shadow-sm flex flex-col">
               <h3 className="font-dm font-extrabold text-xl sm:text-2xl text-navy mb-5 text-center">
                 Conception IA sur-mesure
@@ -281,9 +286,9 @@ const PropositionSection = () => {
                 </Button>
               </div>
             </TiltCard>
-          </div>
+          </Reveal>
 
-          <div className="flex justify-center mb-6">
+          <Reveal variant="card" className="flex justify-center mb-6">
             <div className="inline-block rounded-2xl px-6 py-5 md:px-8 bg-gris-perle shadow-sm">
               <p className="font-dm text-navy text-base sm:text-lg leading-relaxed text-center">
                 <strong className="font-bold">Objectif : vous libérer des tâches</strong> chronophages, répétitives, mal maîtrisées.
@@ -291,16 +296,16 @@ const PropositionSection = () => {
                 <strong className="font-bold">Pour vous concentrer sur ce qui crée réellement de la valeur.</strong>
               </p>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-wrap justify-center gap-3 mt-6">
+          <Reveal variant="text" delay={120} className="flex flex-wrap justify-center gap-3 mt-6">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/secteurs">
                 À qui s'adresse Semaine 54 ?
                 <ArrowRight size={16} />
               </Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

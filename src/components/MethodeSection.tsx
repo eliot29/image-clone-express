@@ -32,15 +32,17 @@ const steps = [
 
 
 const MethodeSection = () => {
-  const schemaRef = useParallax<HTMLImageElement>(20);
+  const schemaRef = useParallax<HTMLImageElement>(48);
   return (
     <section id="methode" className="bg-gris-perle py-14 md:py-20">
       <div className="section-wrap">
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          <Reveal variant="text" className="text-center mb-10">
+          <Reveal variant="text" className="text-center">
             <h2 className="txt-section text-navy">
               La méthode Semaine 54
             </h2>
+          </Reveal>
+          <Reveal variant="text" delay={120} className="text-center mb-10">
             <p className="font-dm text-ardoise/70 text-center mt-4">
               Un accompagnement structuré, étape par étape.
             </p>
@@ -82,15 +84,15 @@ const MethodeSection = () => {
           </Reveal>
 
 
-          <div className="text-center mt-10">
+          <Reveal variant="text" className="text-center mt-10">
             <Button variant="ctaOutline" size="default" asChild>
               <Link to="/methode-semaine-54">
                 Découvrir la méthode
                 <ArrowRight size={16} />
               </Link>
             </Button>
-          </div>
-          <div className="mt-10 max-w-4xl mx-auto px-4">
+          </Reveal>
+          <Reveal variant="card" className="mt-10 max-w-4xl mx-auto px-4">
             <img
               ref={schemaRef}
               src="/__l5e/assets-v1/ebe3bc59-d136-4a3d-a49f-4afd35e0753f/methode-process.png"
@@ -98,7 +100,7 @@ const MethodeSection = () => {
               className="w-full rounded-xl shadow-lg"
               loading="lazy"
             />
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>);

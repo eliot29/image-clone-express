@@ -13,8 +13,7 @@ import {
 import Reveal from "@/components/secondary/Reveal";
 import CountUp from "@/components/secondary/CountUp";
 import CursorGlow from "@/components/secondary/CursorGlow";
-import { useStickyProgress } from "@/hooks/useScrollFx";
-import { isFinePointer, prefersReducedMotion } from "@/lib/scroll-fx";
+import { useParallax } from "@/hooks/useScrollFx";
 
 const resultats = [
   { icon: Eye, value: 73000, prefix: "", suffix: "", group: true, label: "vues" },
@@ -36,20 +35,8 @@ const SCHEMA_SRC =
 
 const PourquoiSection = () => {
   const [zoomOpen, setZoomOpen] = useState(false);
-  const [pinned, setPinned] = useState(false);
+  const schemaRef = useParallax<HTMLImageElement>(48);
   const [bars, setBars] = useState<number[]>([0, 0, 0]);
-
-  useEffect(() => {
-    const check = () =>
-      setPinned(
-        window.innerWidth >= 1024 && isFinePointer() && !prefersReducedMotion()
-      );
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-
-  const { ref: pinRef } = useStickyProgress<HTMLDivElement>(pinned);
 
   useEffect(() => {
     if (!zoomOpen) return;
@@ -161,8 +148,7 @@ const PourquoiSection = () => {
         </Reveal>
 
         {/* SCHÉMA POISSONNERIE — moment épinglé */}
-        <div ref={pinRef} className={pinned ? "mt-10 h-[180vh]" : "mt-10"}>
-        <Reveal className={pinned ? "sticky top-24" : ""}>
+        <Reveal variant="card" className="mt-10">
           <button
             type="button"
             onClick={() => setZoomOpen(true)}
@@ -171,6 +157,7 @@ const PourquoiSection = () => {
           >
             <div className="bg-blanc-casse rounded-xl p-4">
               <img
+                ref={schemaRef}
                 src={SCHEMA_SRC}
                 alt="Schéma de l'écosystème IA déployé pour la poissonnerie : automatisations, suivi et communication"
                 className="w-full rounded-lg"
@@ -182,7 +169,6 @@ const PourquoiSection = () => {
             Cliquez pour agrandir
           </p>
         </Reveal>
-        </div>
 
         {/* CONCLUSION DE SECTION */}
         <Reveal variant="text" className="text-center mt-10">
