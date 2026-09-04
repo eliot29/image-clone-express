@@ -5,9 +5,10 @@ interface PhotoSlideshowProps {
   label: string;
   interval?: number;
   caption?: string;
+  alts?: string[];
 }
 
-const PhotoSlideshow = ({ images, label, interval = 3500, caption }: PhotoSlideshowProps) => {
+const PhotoSlideshow = ({ images, label, interval = 3500, caption, alts }: PhotoSlideshowProps) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const PhotoSlideshow = ({ images, label, interval = 3500, caption }: PhotoSlides
         <img
           key={src}
           src={src}
-          alt={`${label} ${i + 1}`}
+          alt={alts?.[i] ?? `${label} ${i + 1}`}
           loading="lazy"
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
             i === index ? "opacity-100" : "opacity-0"

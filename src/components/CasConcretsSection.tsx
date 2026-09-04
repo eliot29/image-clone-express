@@ -5,7 +5,6 @@ import TiltCard from "@/components/secondary/TiltCard";
 
 type CaseItem = {
   sector: string;
-  location: string;
   problem: string;
   solution: string;
 };
@@ -13,25 +12,21 @@ type CaseItem = {
 const cases: CaseItem[] = [
   {
     sector: "Menuisier / Plombier",
-    location: "Pays d'Iroise",
     problem: "Devis rédigés manuellement. Signatures perdues par email.",
     solution: "Fiche chantier → calcul automatique → PDF → signature électronique → archivage.",
   },
   {
     sector: "Avocat / Notaire",
-    location: "Brest",
     problem: "Recherche juridique longue, outils grand public peu fiables et non confidentiels.",
     solution: "Assistant IA configuré pour interroger et synthétiser vos sources juridiques internes.",
   },
   {
     sector: "Commerce de proximité",
-    location: "Saint-Brieuc",
     problem: "Publications réseaux irrégulières, abandonnées faute de temps.",
     solution: "Calendrier éditorial défini une fois → génération assistée → publication planifiée.",
   },
   {
     sector: "Cabinet comptable / Agence de recrutement",
-    location: "Bretagne",
     problem: "Relances manuelles oubliées ou bâclées : impayés, candidats, prospects.",
     solution: "Déclencheur selon statut dossier → séquence d'emails personnalisés → suivi automatique.",
   },
@@ -44,8 +39,11 @@ const CasConcretsSection = () => {
         <div className="text-center mb-10">
           <Reveal variant="text">
             <h2 className="txt-section text-navy">
-              Quatre situations concrètes. Quatre gains mesurables.
+              Automatisation IA : quatre situations concrètes, quatre gains mesurables
             </h2>
+            <p className="txt-corps text-ardoise/80 text-center max-w-3xl mx-auto mt-4">
+              Des situations rencontrées chez les artisans, commerçants et professions libérales du Finistère, des Côtes-d'Armor et du Morbihan — de Brest à Quimper, de Saint-Brieuc à Lorient.
+            </p>
           </Reveal>
         </div>
 
@@ -60,14 +58,11 @@ const CasConcretsSection = () => {
                 key={i}
                 className="h-full rounded-xl px-5 py-4 bg-card shadow-card min-w-[300px] max-w-[320px] shrink-0"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-dm font-bold text-base text-navy">{cas.sector}</h3>
-                  <span className="font-dm text-[11px] font-semibold uppercase tracking-wider text-navy bg-or-mat/25 px-2 py-0.5 rounded-full shrink-0 ml-2">
-                    {cas.location}
-                  </span>
+                <div className="mb-2">
+                  <h3 className="font-dm font-bold text-[17px] text-navy">{cas.sector}</h3>
                 </div>
-                <p className="font-dm text-xs text-ardoise/70 mb-1.5 leading-snug">{cas.problem}</p>
-                <p className="font-dm text-xs text-ardoise leading-snug">{cas.solution}</p>
+                <p className="font-dm text-[14px] text-ardoise/70 mb-1.5 leading-snug">{cas.problem}</p>
+                <p className="font-dm text-[14px] text-ardoise leading-snug">{cas.solution}</p>
               </TiltCard>
             ))}
           </div>
