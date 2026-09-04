@@ -77,7 +77,7 @@ const Reveal = ({
             className: `${el.props.className ?? ""} ${itemClass}`.trim(),
             style: {
               ...(el.props.style ?? {}),
-              transitionDelay: `${delay + i * stagger}ms`,
+              transitionDelay: `${Math.round(delay + i * step)}ms`,
             },
           });
         })}
