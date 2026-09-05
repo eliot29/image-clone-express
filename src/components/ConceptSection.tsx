@@ -51,7 +51,7 @@ const ConceptSection = () => {
               </Reveal>
 
               <Reveal variant="right" delay={120} className="h-full">
-                <div className="card-lift h-full bg-navy rounded-xl relative min-h-[220px] p-6 sm:p-9 flex items-center justify-center">
+                <div className="card-lift h-full bg-navy rounded-xl relative min-h-[240px] md:min-h-0 p-6 sm:p-9">
                   {/* Haut */}
                   <div className="absolute top-0 left-0 right-0 h-6 sm:h-9 flex items-center justify-center pointer-events-none">
                     <span className="txt-etiquette text-or-mat">Adapter</span>
@@ -72,12 +72,15 @@ const ConceptSection = () => {
                       Connecter
                     </span>
                   </div>
-                  <img
-                    src={conceptVisuel}
-                    alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                    className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
-                    loading="lazy"
-                  />
+                  {/* Zone du puzzle, hors flux */}
+                  <div className="absolute inset-6 sm:inset-9 flex items-center justify-center">
+                    <img
+                      src={conceptVisuel}
+                      alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                      className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </Reveal>
 
