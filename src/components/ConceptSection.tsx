@@ -60,26 +60,22 @@ const ConceptSection = () => {
                   <div className="absolute bottom-0 left-0 right-0 h-6 sm:h-9 flex items-center justify-center pointer-events-none">
                     <span className="txt-etiquette text-or-mat">Accompagner</span>
                   </div>
-                  {/* Gauche */}
-                  <div className="absolute left-0 top-0 bottom-0 w-6 sm:w-9 flex items-center justify-center pointer-events-none">
-                    <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] rotate-180">
-                      Comprendre
-                    </span>
-                  </div>
-                  {/* Droite */}
-                  <div className="absolute right-0 top-0 bottom-0 w-6 sm:w-9 flex items-center justify-center pointer-events-none">
-                    <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl]">
-                      Connecter
-                    </span>
-                  </div>
                   {/* Zone du puzzle, hors flux */}
                   <div className="absolute inset-6 sm:inset-9 flex items-center justify-center">
-                    <img
-                      src={conceptVisuel}
-                      alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                      className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
-                      loading="lazy"
-                    />
+                    <div className="flex items-center justify-center gap-2 sm:gap-3 h-full max-w-full">
+                      <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] rotate-180 shrink-0">
+                        Comprendre
+                      </span>
+                      <img
+                        src={conceptVisuel}
+                        alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                        className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
+                        loading="lazy"
+                      />
+                      <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] shrink-0">
+                        Connecter
+                      </span>
+                    </div>
                   </div>
                 </div>
               </Reveal>
