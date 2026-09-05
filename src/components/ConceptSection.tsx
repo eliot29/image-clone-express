@@ -29,23 +29,22 @@ const ConceptSection = () => {
                     à la réalité des entreprises.
                   </p>
                   <p className="txt-corps text-blanc-casse mb-4">
-                    Le vrai sujet :{" "}
                     <strong className="text-or-mat font-bold">
-                      l'accompagnement et la personnalisation
+                      Le vrai sujet : l'accompagnement et la personnalisation.
                     </strong>
-                    .
                   </p>
                   <p className="txt-corps text-blanc-casse mb-4">
-                    Semaine 54 est{" "}
-                    <strong className="text-or-mat font-bold">intégrateur IA</strong> pour TPE
-                    et PME bretonnes, pour des solutions d'intelligence artificielle construites
-                    sur mesure.
+                    <strong className="text-or-mat font-bold">
+                      Semaine 54 est intégrateur IA pour TPE et PME bretonnes
+                    </strong>
+                    , pour des solutions d'intelligence artificielle construites sur mesure.
                   </p>
                   <p className="txt-corps text-blanc-casse">
-                    Une approche issue du monde de l'entreprise,{" "}
-                    <strong className="text-or-mat font-bold">pas celui de la tech</strong>.
-                    Parce qu'une bonne solution commence par{" "}
-                    <strong className="text-white font-bold">comprendre votre métier</strong>.
+                    <strong className="text-or-mat font-bold">
+                      Une approche issue du monde de l'entreprise
+                    </strong>
+                    , pas celui de la tech. Parce qu'une bonne solution commence par{" "}
+                    <strong className="text-or-mat font-bold">comprendre votre métier.</strong>
                   </p>
                 </div>
               </Reveal>
