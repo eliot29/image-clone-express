@@ -61,17 +61,19 @@ const ConceptSection = () => {
                     <span className="txt-etiquette text-or-mat">Accompagner</span>
                   </div>
                   {/* Zone du puzzle, hors flux */}
-                  <div className="absolute inset-6 sm:inset-9 flex items-center justify-center">
-                    <div className="flex items-center justify-center gap-2 sm:gap-3 h-full max-w-full">
+                  <div className="absolute inset-y-6 sm:inset-y-9 inset-x-0 flex items-center">
+                    <div className="flex-1 min-w-0 flex justify-center">
                       <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] rotate-180 shrink-0">
                         Comprendre
                       </span>
-                      <img
-                        src={conceptVisuel}
-                        alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                        className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
-                        loading="lazy"
-                      />
+                    </div>
+                    <img
+                      src={conceptVisuel}
+                      alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
+                      className="max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat shrink-0"
+                      loading="lazy"
+                    />
+                    <div className="flex-1 min-w-0 flex justify-center">
                       <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] shrink-0">
                         Connecter
                       </span>
