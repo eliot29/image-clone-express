@@ -51,23 +51,23 @@ const ConceptSection = () => {
               </Reveal>
 
               <Reveal variant="right" delay={120} className="h-full">
-                <div className="card-lift h-full bg-navy rounded-xl relative min-h-[220px] max-h-[340px] p-6 sm:p-10 flex items-center justify-center">
+                <div className="card-lift h-full bg-navy rounded-xl relative min-h-[220px] p-6 sm:p-9 flex items-center justify-center">
                   {/* Haut */}
-                  <div className="absolute top-0 left-0 right-0 flex justify-center pt-2 pointer-events-none">
+                  <div className="absolute top-0 left-0 right-0 h-6 sm:h-9 flex items-center justify-center pointer-events-none">
                     <span className="txt-etiquette text-or-mat">Adapter</span>
                   </div>
                   {/* Bas */}
-                  <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-2 pointer-events-none">
+                  <div className="absolute bottom-0 left-0 right-0 h-6 sm:h-9 flex items-center justify-center pointer-events-none">
                     <span className="txt-etiquette text-or-mat">Accompagner</span>
                   </div>
                   {/* Gauche */}
-                  <div className="absolute left-0 top-0 bottom-0 flex items-center pl-2 pointer-events-none">
+                  <div className="absolute left-0 top-0 bottom-0 w-6 sm:w-9 flex items-center justify-center pointer-events-none">
                     <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] rotate-180">
                       Comprendre
                     </span>
                   </div>
                   {/* Droite */}
-                  <div className="absolute right-0 top-0 bottom-0 flex items-center pr-2 pointer-events-none">
+                  <div className="absolute right-0 top-0 bottom-0 w-6 sm:w-9 flex items-center justify-center pointer-events-none">
                     <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl]">
                       Connecter
                     </span>
