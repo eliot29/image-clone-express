@@ -25,15 +25,27 @@ const ConceptSection = () => {
                 <div className="card-lift h-full bg-navy rounded-xl p-6 flex flex-col justify-start">
 
                   <p className="txt-corps text-blanc-casse mb-4">
-                    Les outils IA se multiplient. Beaucoup sont trop génériques pour
-                    s'adapter à la réalité des entreprises.{"\n\n"}
-                    <strong className="text-white font-bold">
-                      {"\n Le vrai sujet : l'accompagnement et la personnalisation."}
+                    Les outils IA se multiplient. Beaucoup sont trop génériques pour s'adapter
+                    à la réalité des entreprises.
+                  </p>
+                  <p className="txt-corps text-blanc-casse mb-4">
+                    Le vrai sujet :{" "}
+                    <strong className="text-or-mat font-bold">
+                      l'accompagnement et la personnalisation
                     </strong>
+                    .
+                  </p>
+                  <p className="txt-corps text-blanc-casse mb-4">
+                    Semaine 54 est{" "}
+                    <strong className="text-or-mat font-bold">intégrateur IA</strong> pour TPE
+                    et PME bretonnes, pour des solutions d'intelligence artificielle construites
+                    sur mesure.
                   </p>
                   <p className="txt-corps text-blanc-casse">
-                    Semaine 54 est intégrateur IA pour TPE et PME bretonnes, pour des solutions d'intelligence artificielle construites sur mesure.{" \n\n\n "}
-                    <span>Une approche issue du monde de l'entreprise, pas celui de la tech. Parce qu'une bonne solution commence par comprendre votre métier.</span>
+                    Une approche issue du monde de l'entreprise,{" "}
+                    <strong className="text-or-mat font-bold">pas celui de la tech</strong>.
+                    Parce qu'une bonne solution commence par{" "}
+                    <strong className="text-white font-bold">comprendre votre métier</strong>.
                   </p>
                 </div>
               </Reveal>
