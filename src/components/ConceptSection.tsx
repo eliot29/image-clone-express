@@ -29,8 +29,9 @@ const ConceptSection = () => {
                     à la réalité des entreprises.
                   </p>
                   <p className="txt-corps text-blanc-casse mb-4">
+                    Le vrai sujet :{" "}
                     <strong className="text-or-mat font-bold">
-                      Le vrai sujet : l'accompagnement et la personnalisation.
+                      l'accompagnement et la personnalisation.
                     </strong>
                   </p>
                   <p className="txt-corps text-blanc-casse mb-4">
