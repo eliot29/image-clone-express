@@ -28,14 +28,11 @@ const ConceptSection = () => {
                     Les outils IA se multiplient. Beaucoup sont trop génériques pour
                     s'adapter à la réalité des entreprises.{"\n\n"}
                     <strong className="text-white font-bold">
-                      {"\nLe vrai sujet : l'accompagnement et la personnalisation."}
+                      {"\n Le vrai sujet : l'accompagnement et la personnalisation."}
                     </strong>
                   </p>
                   <p className="txt-corps text-blanc-casse">
-                    <strong className="text-white font-bold">
-                      Semaine 54 accompagne les TPE et PME bretonnes
-                    </strong>
-                    {"\n"}Semaine 54 est intégrateur IA pour{"\n "}TPE et PME bretonnes, pour des solutions d'intelligence artificielle construites sur mesure.{"\n\n\n"}
+                    Semaine 54 est intégrateur IA pour TPE et PME bretonnes, pour des solutions d'intelligence artificielle construites sur mesure.{" \n\n\n "}
                     <span>Une approche issue du monde de l'entreprise, pas celui de la tech. Parce qu'une bonne solution commence par comprendre votre métier.</span>
                   </p>
                 </div>
