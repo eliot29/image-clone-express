@@ -29,8 +29,9 @@ const ConceptSection = () => {
                     à la réalité des entreprises.
                   </p>
                   <p className="txt-corps text-blanc-casse mb-4">
+                    Le vrai sujet :{" "}
                     <strong className="text-or-mat font-bold">
-                      Le vrai sujet : l'accompagnement et la personnalisation.
+                      l'accompagnement et la personnalisation.
                     </strong>
                   </p>
                   <p className="txt-corps text-blanc-casse mb-4">
@@ -50,11 +51,31 @@ const ConceptSection = () => {
               </Reveal>
 
               <Reveal variant="right" delay={120} className="h-full">
-                <div className="card-lift h-full bg-navy rounded-xl p-5 relative min-h-[180px] flex items-center justify-center">
+                <div className="card-lift h-full bg-navy rounded-xl relative min-h-[220px] max-h-[340px] p-6 sm:p-10 flex items-center justify-center">
+                  {/* Haut */}
+                  <div className="absolute top-0 left-0 right-0 flex justify-center pt-2 pointer-events-none">
+                    <span className="txt-etiquette text-or-mat">Adapter</span>
+                  </div>
+                  {/* Bas */}
+                  <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-2 pointer-events-none">
+                    <span className="txt-etiquette text-or-mat">Accompagner</span>
+                  </div>
+                  {/* Gauche */}
+                  <div className="absolute left-0 top-0 bottom-0 flex items-center pl-2 pointer-events-none">
+                    <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl] rotate-180">
+                      Comprendre
+                    </span>
+                  </div>
+                  {/* Droite */}
+                  <div className="absolute right-0 top-0 bottom-0 flex items-center pr-2 pointer-events-none">
+                    <span className="txt-etiquette text-or-mat [writing-mode:vertical-rl]">
+                      Connecter
+                    </span>
+                  </div>
                   <img
                     src={conceptVisuel}
                     alt="Schéma Semaine 54 entouré des pièces Métier, Équipe, Clients, Outils, Organisation, Données, Communication et Partenaires"
-                    className="max-w-full max-h-[240px] w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
+                    className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg border-2 border-or-mat"
                     loading="lazy"
                   />
                 </div>
